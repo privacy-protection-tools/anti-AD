@@ -134,7 +134,7 @@ class makeAddr{
 			}
 
 			foreach($rv as $rvv){
-				if(!$rk_found || (strpos($rvv, '.' . $rk) < 0)){
+				if(!$rk_found || (strpos($rvv, '.' . $rk) === false)){
 					$write_len += fwrite($fp, 'address=/' . $rvv . '/127.0.0.1' . "\n");
 				}
 			}
