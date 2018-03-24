@@ -1,9 +1,13 @@
 <?php
 //黑名单域名，即直接封杀主域名，效果就是只要是使用该域名及其下级所有域名的请求全部被阻挡，慎重使用
 
-return array( 	'cnzz.com' => array('.cnzz.com'), 
+return array( 	'cnzz.com' => array('.cnzz.com'),
+				'cnzz.net' => array('.cnzz.net'),
+				'cnzz.cn' => array('.cnzz.cn'),
 				'mediav.com' => array('.mediav.com'),
+				'360.cn' => array('.360.cn'),
 				'msn.com' => array('.msn.com'),
+				'tom.com' => array('.tom.com'),
 				'baihe.com' => array('.baihe.com'),
 				'jiayuan.com' => array('.jiayuan.com'),//世纪佳缘，嗯！没这需求
 				'qbao.com'	=> array('.qbao.com'), //钱宝网
@@ -14,6 +18,7 @@ return array( 	'cnzz.com' => array('.cnzz.com'),
 				'hexun.com' => array('.hexun.com'),
 				'2345.com' => array('.2345.com'),
 				'51.la' => array('.51.la'),
+				'55.la' => array('.55.la'),
 				'778669.com' => array('.778669.com', '778669.com'), //恶意网站
 				'ddns.name' => array('.ddns.name'),
 				'7clink.com' => array('.7clink.com'),
@@ -32,5 +37,5 @@ return array( 	'cnzz.com' => array('.cnzz.com'),
 				'dnset.com' => array('.dnset.com'),
 				
 
-				//'kankan.com' => array('.cpm.cm.kankan.com', '.float.kankan.com', '.stat.kankan.com'),
+				'kankan.com' => array('.cpm.cm.kankan.com', '.float.kankan.com', '.stat.kankan.com'),
 			);

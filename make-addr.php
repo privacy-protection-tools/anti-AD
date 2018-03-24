@@ -62,9 +62,11 @@ class makeAddr{
 		$str_reg .= '|\.su|\.world|\.io|\.trade|\.bet|\.im|\.fm|\.today|\.wang|\.rocks|\.vip|\.eu|\.run';
 		$str_reg .= '|\.online|\.website|\.cricket|\.date|\.men|\.ca|\.xxx|\.name|\.pl|\.be|\.il|\.gov|\.it';
 		$str_reg .= '|\.cl|\.tk|\.cz|\.hu|\.ro|\.vg|\.ws|\.nu|\.vn|\.lt|\.edu|\.lv|\.mx|\.by|\.gr|\.br|\.fi';
-		$str_reg .= '|\.pt|\.dk|\.se|\.at|\.id|\.ve|\.ir|\.ma|\.ch|\.nf|\.bg|\.ua|\.is|\.hr)';
+		$str_reg .= '|\.pt|\.dk|\.se|\.at|\.id|\.ve|\.ir|\.ma|\.ch|\.nf|\.bg|\.ua|\.is|\.hr|\.shop|\.xin|\.si|\.or';
+		$str_reg .= '|\.sk|\.kz';
+		$str_reg .= ')';
 
-		$str_reg .= '(\.cn|\.tw|\.uk|\.jp|\.kr|\.th|\.au|\.ua|\.so|\.br|\.sg|\.pt|\.ec|\.ar|\.my|\.tr)?)$/';
+		$str_reg .= '(\.cn|\.tw|\.uk|\.jp|\.kr|\.th|\.au|\.ua|\.so|\.br|\.sg|\.pt|\.ec|\.ar|\.my|\.tr|\.bd|\.mk)?)$/';
 		preg_match($str_reg, $str_domain,$matchs);
 
 		return strval($matchs[1]);
@@ -101,6 +103,8 @@ class makeAddr{
 			
 			$arr_domains[self::extract_main_domain($row[1])][] = $row[1];
 		}
+
+		$arr_domains = array_merge($arr_domains, $GLOBALS['arr_blacklist']);
 		return $arr_domains;
 	}
 
@@ -117,7 +121,7 @@ class makeAddr{
 			}
 
 			if(empty($rk)){//遗漏的域名，不会写入到最终的配置里
-				// print_r($rv);
+				print_r($rv);
 				continue;
 			}
 			if(!is_array($rv)){
