@@ -7,15 +7,15 @@
 
 * * *
 
-**`这里特别注意，这个东西是根据我自己的需求来写的，不一定具有普适性。`**
+####`这里特别注意，这个东西是根据我自己的需求来写的，不一定具有普适性。`
 
 但如果你刚好看到这里，那我就说一下：
 
-dnsmasq的配置我就不赘述，建议是配置一个include dnsmasq.d 这样的一个目录下面所有的*.conf文件
+dnsmasq的配置我就不赘述，建议是配置一个include dnsmasq.d 这样的一个目录下面所有的\*.conf文件
 
-运行php make-addr.php ,会去下载github上其他大神维护的address或者hosts列表，然后整理合并成一个文件。拿着这个文件放入到例如/etc/dnsmasq.d/的目录下，然后重启dnsmasq进程就能加载。更新依赖于其他大神的内容更新了。
+运行start.sh,会去下载easylist,koolproxy以及github上其他大神维护的address或者hosts列表，然后整理合并成一个文件。拿着这个文件放入到例如/etc/dnsmasq.d/的目录下，然后重启dnsmasq进程就能加载。更新依赖于其他大神的内容更新了。
 
-[adblock-for-dnsmasq.conf](https://raw.githubusercontent.com/gentlyx/anti-AD/master/adblock-for-dnsmasq.conf) 这个就是最终生成的配置文件，我会保持一定频率的更新，大约每月2次,所以，如果你打算直接下载我维护的这个文件，那可能不需要太高的频率
+[adblock-for-dnsmasq.conf](https://raw.githubusercontent.com/gentlyx/anti-AD/master/adblock-for-dnsmasq.conf) 这个是最终生成的配置文件，我会保持一定频率的更新，大约每月2次,所以，如果你打算直接下载我维护的这个文件，那可能不需要太高的频率
 
 black_domain_list.php 是用来配置黑名单的
 
