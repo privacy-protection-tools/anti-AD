@@ -63,13 +63,15 @@ class makeAddr{
 		$str_reg .= '|\.online|\.website|\.cricket|\.date|\.men|\.ca|\.xxx|\.name|\.pl|\.be|\.il|\.gov|\.it';
 		$str_reg .= '|\.cl|\.tk|\.cz|\.hu|\.ro|\.vg|\.ws|\.nu|\.vn|\.lt|\.edu|\.lv|\.mx|\.by|\.gr|\.br|\.fi';
 		$str_reg .= '|\.pt|\.dk|\.se|\.at|\.id|\.ve|\.ir|\.ma|\.ch|\.nf|\.bg|\.ua|\.is|\.hr|\.shop|\.xin|\.si|\.or';
-		$str_reg .= '|\.sk|\.kz';
+		$str_reg .= '|\.sk|\.kz|\.tt|\.so|\.gg|\.ms|\.ink';
 		$str_reg .= ')';
 
 		$str_reg .= '(\.cn|\.tw|\.uk|\.jp|\.kr|\.th|\.au|\.ua|\.so|\.br|\.sg|\.pt|\.ec|\.ar|\.my|\.tr|\.bd|\.mk)?)$/';
-		preg_match($str_reg, $str_domain,$matchs);
+		if(preg_match($str_reg, $str_domain,$matchs)){
+			return strval($matchs[1]);
+		}
 
-		return strval($matchs[1]);
+		return "";
 
 	}
 	
