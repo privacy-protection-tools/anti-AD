@@ -2,7 +2,7 @@
 //在命令行下运行，直接生成dnsmasq的去广告用途的配置文件
 //2017年12月31日
 
-set_time_limit(60);
+set_time_limit(600);
 
 if(PHP_SAPI != 'cli'){
 	die('nothing.');
@@ -13,18 +13,23 @@ $arr_blacklist = require('./black_domain_list.php');
 
 $arr_result = array();
 
+
+$easylist1 = file_get_contents('./easylistchina+easylist.txt');
+
+$arr_result = array_merge_recursive($arr_result, makeAddr::get_domain_from_easylist($easylist1));
+
+$easylist2 = file_get_contents('./koolproxy.txt');
+
+$arr_result = array_merge_recursive($arr_result, makeAddr::get_domain_from_easylist($easylist2));
+
+
 echo '开始下载host1....',"\n";
 $host1 = makeAddr::http_get('https://hosts.nfz.moe/full/hosts');
+$arr_result = array_merge_recursive($arr_result, makeAddr::get_domain_list($host1));
 
-$arr_result = makeAddr::get_domain_list($host1);
-//echo '开始下载host2....',"\n";
-//$host2 = makeAddr::http_get('https://raw.githubusercontent.com/vokins/yhosts/master/hosts.txt');
-//$arr_result = array_merge_recursive($arr_result, makeAddr::get_domain_list($host2));
-
-echo '开始下载host3....',"\n";
-$host3 = makeAddr::http_get('http://www.malwaredomainlist.com/hostslist/hosts.txt');
-
-$arr_result = array_merge_recursive($arr_result, makeAddr::get_domain_list($host3));
+echo '开始下载host2....',"\n";
+$host2 = makeAddr::http_get('http://www.malwaredomainlist.com/hostslist/hosts.txt');
+$arr_result = array_merge_recursive($arr_result, makeAddr::get_domain_list($host2));
 
 echo '写入文件大小：';
 var_dump(makeAddr::write_to_conf($arr_result, './adblock-for-dnsmasq.conf'));
@@ -40,7 +45,8 @@ class makeAddr{
 		curl_setopt($ch, CURLOPT_URL, $url);
 		curl_setopt($ch, CURLOPT_HTTPGET, 1);
 		curl_setopt($ch, CURLOPT_TIMEOUT, 30);
-	// 	curl_setopt($ch, CURLOPT_POSTFIELDS, $str);
+		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+		curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 		curl_setopt($ch, CURLOPT_USERAGENT, 'T_T angent 2.0.5/' . phpversion());
 		$result = curl_exec($ch);
@@ -62,16 +68,53 @@ class makeAddr{
 		$str_reg .= '|\.online|\.website|\.cricket|\.date|\.men|\.ca|\.xxx|\.name|\.pl|\.be|\.il|\.gov|\.it';
 		$str_reg .= '|\.cl|\.tk|\.cz|\.hu|\.ro|\.vg|\.ws|\.nu|\.vn|\.lt|\.edu|\.lv|\.mx|\.by|\.gr|\.br|\.fi';
 		$str_reg .= '|\.pt|\.dk|\.se|\.at|\.id|\.ve|\.ir|\.ma|\.ch|\.nf|\.bg|\.ua|\.is|\.hr|\.shop|\.xin|\.si|\.or';
-		$str_reg .= '|\.sk|\.kz|\.tt|\.so|\.gg|\.ms|\.ink';
+		$str_reg .= '|\.sk|\.kz|\.tt|\.so|\.gg|\.ms|\.ink|\.pro|\.work|\.click|\.link|\.ly';
 		$str_reg .= ')';
 
-		$str_reg .= '(\.cn|\.tw|\.uk|\.jp|\.kr|\.th|\.au|\.ua|\.so|\.br|\.sg|\.pt|\.ec|\.ar|\.my|\.tr|\.bd|\.mk)?)$/';
+		$str_reg .= '(\.cn|\.tw|\.uk|\.jp|\.kr|\.th|\.au|\.ua|\.so|\.br|\.sg|\.pt|\.ec|\.ar|\.my|\.tr|\.bd|\.mk|\.za)?)$/';
 		if(preg_match($str_reg, $str_domain,$matchs)){
 			return strval($matchs[1]);
 		}
 
 		return "";
 
+	}
+
+	public static function get_domain_from_easylist($str_easylist){
+		$strlen = strlen($str_easylist);
+		if($strlen < 10){
+			return array();
+		}
+
+		$str_easylist = $str_easylist . "\n"; //防止最后一行没有换行符
+
+		$i=0;
+		$arr_domains = array();
+		while($i < $strlen){
+			$end_pos = strpos($str_easylist, "\n", $i);
+			$line = trim(substr($str_easylist, $i, $end_pos - $i));
+			$i = $end_pos+1;
+			if(empty($line) || strlen($line) < 3){
+				continue;
+			}
+
+			if($line{0} != '|' || $line{1} != '|'){
+				continue;
+			}
+
+			if(preg_match('/^\|\|([0-9a-z\-\.]+[a-z]+)[^\/@#]*$/', $line, $matchs)){
+
+				if(substr($matchs[1], 0, 4) == 'www.'){
+					$row = substr($matchs[1], 3);
+				}else{
+					$row = '.' . $matchs[1];
+				}
+				$arr_domains[self::extract_main_domain($matchs[1])][] = $row;
+			}
+		}
+
+		$arr_domains = array_merge($arr_domains, $GLOBALS['arr_blacklist']);
+		return $arr_domains;
 	}
 	
 	public static function get_domain_list($str_hosts){
@@ -125,7 +168,7 @@ class makeAddr{
 			}
 
 			if(empty($rk)){//遗漏的域名，不会写入到最终的配置里
-				print_r($rv);
+				// print_r($rv);
 				continue;
 			}
 			if(!is_array($rv)){
@@ -133,7 +176,7 @@ class makeAddr{
 				continue;
 			}
 
-			array_unique($rv);
+			$rv = array_unique($rv);
 
 			$rk_found = false;
 			if(in_array('.' . $rk, $rv)){
