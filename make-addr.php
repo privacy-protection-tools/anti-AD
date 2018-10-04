@@ -14,13 +14,12 @@ $arr_blacklist = require('./black_domain_list.php');
 $arr_result = array();
 
 echo '开始下载host1....',"\n";
-$host1 = makeAddr::http_get('https://raw.githubusercontent.com/vokins/yhosts/master/dnsmasq/union.conf');
+$host1 = makeAddr::http_get('https://hosts.nfz.moe/full/hosts');
 
 $arr_result = makeAddr::get_domain_list($host1);
-echo '开始下载host2....',"\n";
-$host2 = makeAddr::http_get('https://raw.githubusercontent.com/vokins/yhosts/master/hosts.txt');
-
-$arr_result = array_merge_recursive($arr_result, makeAddr::get_domain_list($host2));
+//echo '开始下载host2....',"\n";
+//$host2 = makeAddr::http_get('https://raw.githubusercontent.com/vokins/yhosts/master/hosts.txt');
+//$arr_result = array_merge_recursive($arr_result, makeAddr::get_domain_list($host2));
 
 echo '开始下载host3....',"\n";
 $host3 = makeAddr::http_get('http://www.malwaredomainlist.com/hostslist/hosts.txt');
@@ -94,7 +93,9 @@ class makeAddr{
 			}
 			$line = strtolower(preg_replace('/[\s\t]+/', "/", $line));
 
-			if((strpos($line, '127.0.0.1') === false) && (strpos($line, '0.0.0.0') === false)){
+			if((strpos($line, '127.0.0.1') === false) && 
+				(strpos($line, '::') === false) && 
+				(strpos($line, '0.0.0.0') === false)){
 				continue;
 			}
 		
@@ -113,7 +114,8 @@ class makeAddr{
 	public static function write_to_conf($arr_result, $str_file){
 
 		$fp = fopen($str_file, 'w');
-		$write_len = 0;
+		$write_len = fwrite($fp, '#Date:' . date('YmdHis'). "\n");
+
 		foreach($arr_result as $rk => $rv){
 			if(array_key_exists($rk, $GLOBALS['arr_blacklist'])){//黑名单操作
 				foreach($GLOBALS['arr_blacklist'][$rk] as $bv){
