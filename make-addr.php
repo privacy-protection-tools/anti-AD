@@ -102,13 +102,14 @@ class makeAddr{
 				continue;
 			}
 
-			if(preg_match('/^\|\|([0-9a-z\-\.]+[a-z]+)[^\/@#]*$/', $line, $matchs)){
+			if(preg_match('/^\|\|([0-9a-z\-\.]+[a-z]+)[\^\$]*(image|third-party|script)?$/', $line, $matchs)){
 
 				if(substr($matchs[1], 0, 4) == 'www.'){
 					$row = substr($matchs[1], 3);
 				}else{
 					$row = '.' . $matchs[1];
 				}
+				
 				$arr_domains[self::extract_main_domain($matchs[1])][] = $row;
 			}
 		}
