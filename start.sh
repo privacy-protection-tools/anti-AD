@@ -2,7 +2,9 @@
 
 source /etc/profile
 
-cd $(dirname $(readlink -f "$0"))
+cd $(cd "$(dirname "$0")";pwd)
+echo pwd is: `pwd`
+
 echo '开始下载 easylist1...'
 wget -O easylistchina+easylist.txt https://easylist-downloads.adblockplus.org/easylistchina+easylist.txt
 

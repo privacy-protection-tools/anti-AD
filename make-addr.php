@@ -31,6 +31,9 @@ echo '开始下载host2....',"\n";
 $host2 = makeAddr::http_get('http://www.malwaredomainlist.com/hostslist/hosts.txt');
 $arr_result = array_merge_recursive($arr_result, makeAddr::get_domain_list($host2));
 
+
+$arr_result = array_merge($arr_result, $arr_blacklist);
+
 echo '写入文件大小：';
 var_dump(makeAddr::write_to_conf($arr_result, './adblock-for-dnsmasq.conf'));
 
@@ -114,7 +117,6 @@ class makeAddr{
 			}
 		}
 
-		$arr_domains = array_merge($arr_domains, $GLOBALS['arr_blacklist']);
 		return $arr_domains;
 	}
 	
@@ -151,7 +153,6 @@ class makeAddr{
 			$arr_domains[self::extract_main_domain($row[1])][] = $row[1];
 		}
 
-		$arr_domains = array_merge($arr_domains, $GLOBALS['arr_blacklist']);
 		return $arr_domains;
 	}
 
@@ -179,16 +180,13 @@ class makeAddr{
 
 			$rv = array_unique($rv);
 
-			$rk_found = false;
-			if(in_array('.' . $rk, $rv)){
+			if(in_array('.' . $rk, $rv) || in_array('www.' . $rk, $rv)){
 				$write_len += fwrite($fp, 'address=/.' . $rk . '/127.0.0.1' . "\n");
-				$rk_found = true;
+				continue;
 			}
 
 			foreach($rv as $rvv){
-				if(!$rk_found || (strpos($rvv, '.' . $rk) === false)){
 					$write_len += fwrite($fp, 'address=/' . $rvv . '/127.0.0.1' . "\n");
-				}
 			}
 		}
 
