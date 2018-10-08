@@ -21,4 +21,8 @@ if [ $? -ne 0 ];then
 	exit 1
 fi
 
-php make-addr.php
+/usr/local/php/bin/php make-addr.php
+
+git pull
+git commit -a -m "auto commit"
+git push https://gentlyx:3d5431cc8f2586effaee94efb7d39904db3a3a0c@github.com/gentlyx/anti-AD.git
