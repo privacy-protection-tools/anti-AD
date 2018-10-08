@@ -8,7 +8,7 @@
 既然是dnsmasq为主角，那么url中部分含有广告的path是无能为力的。
 * * *
 
-### 特别注意，我尽量保持列表adblock-for-dnsmasq.conf 的通用性,如果嫌麻烦，只要[下载adblock-for-dnsmasq.conf](https://raw.githubusercontent.com/gentlyx/anti-AD/master/adblock-for-dnsmasq.conf) 这个文件即可。
+### 我尽量保持列表adblock-for-dnsmasq.conf 的通用性。最简单的，只要[下载adblock-for-dnsmasq.conf](https://raw.githubusercontent.com/gentlyx/anti-AD/master/adblock-for-dnsmasq.conf) 这个文件即可。
 
 但如果你刚好看到这里，那我就说一下：
 
