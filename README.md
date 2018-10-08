@@ -9,12 +9,17 @@
 * * *
 
 ### 我尽量保持广告屏蔽列表的通用性。最简单的，只要[下载adblock-for-dnsmasq.conf](https://raw.githubusercontent.com/gentlyx/anti-AD/master/adblock-for-dnsmasq.conf) 这个文件即可。
+* * *
 
-但如果你刚好看到这里，那我就说一下：
+但如果你还有浓厚的兴趣，那我就说一下：
 
 dnsmasq的配置我就不赘述，建议是配置一个include dnsmasq.d 这样的一个目录下面所有的\*.conf文件
 
+#### 生成最新广告屏蔽列表的方法：
+
 运行start.sh,会去下载easylist,koolproxy以及github上其他大神维护的address或者hosts列表，然后整理合并成一个文件。拿着这个文件放入到例如/etc/dnsmasq.d/的目录下，然后重启dnsmasq进程就能加载。更新依赖于其他大神的内容更新了。
+
+make-addr.php 是php脚本的主文件，将下载的诸多源easylist，hosts，dnsconf文件合并成一个最终的广告屏蔽列表文件
 
 [adblock-for-dnsmasq.conf](https://raw.githubusercontent.com/gentlyx/anti-AD/master/adblock-for-dnsmasq.conf) 这个是最终生成的配置文件，我会保持一定频率的更新，大约每月2次,所以，如果你打算直接下载我维护的这个文件，那可能不需要太高的频率
 
