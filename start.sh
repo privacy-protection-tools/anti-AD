@@ -4,6 +4,7 @@ source /etc/profile
 
 cd $(cd "$(dirname "$0")";pwd)
 echo pwd is: `pwd`
+git pull
 
 echo '开始下载 easylist1...'
 wget -O easylistchina+easylist.txt https://easylist-downloads.adblockplus.org/easylistchina+easylist.txt
@@ -22,3 +23,7 @@ if [ $? -ne 0 ];then
 fi
 
 /usr/local/php/bin/php make-addr.php
+
+git add adblock-for-dnsmasq.conf
+git commit -am "auto commit"
+git push --force
