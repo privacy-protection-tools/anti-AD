@@ -9,6 +9,7 @@ if(PHP_SAPI != 'cli'){
 }
 
 $arr_blacklist = require('./black_domain_list.php');
+$arr_whitelist = require('./white_domain_list.php');
 
 
 $arr_result = array();
@@ -174,6 +175,9 @@ class makeAddr{
 				continue;
 			}
 			if(!is_array($rv)){
+				if(array_key_exists($rv, $GLOBALS['arr_whitelist'])){//白名单机制
+					continue;
+				}
 				$write_len += fwrite($fp, 'address=/' . $rv . '/127.0.0.1' . "\n");
 				continue;
 			}
@@ -186,7 +190,10 @@ class makeAddr{
 			}
 
 			foreach($rv as $rvv){
-					$write_len += fwrite($fp, 'address=/' . $rvv . '/127.0.0.1' . "\n");
+				if(array_key_exists($rvv, $GLOBALS['arr_whitelist'])){//白名单机制
+					continue;
+				}
+				$write_len += fwrite($fp, 'address=/' . $rvv . '/127.0.0.1' . "\n");
 			}
 		}
 
