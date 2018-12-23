@@ -6,7 +6,7 @@
 return array(
 
 	'cdn-thumb.fds.api.xiaomi.com'		=> true,
-	'.cdn-thumb.fds.api.xiaomi.com' 	=> true,
+	'.cdn-thumb.fds.api.xiaomi.com'		=> true,
 	'bce.baidu.com'						=> true,
 	'.bce.baidu.com'					=> true,
 	'b.bdstatic.com'					=> true,
