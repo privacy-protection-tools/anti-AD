@@ -15,7 +15,7 @@ if [ $? -ne 0 ];then
 fi
 
 echo '开始下载 easylist2...'
-wget -O koolproxy.txt https://kprule.com/koolproxy.txt
+wget --no-check-certificate -O koolproxy.txt https://kprule.com/koolproxy.txt
 
 if [ $? -ne 0 ];then
 	echo '下载失败，请重试'
