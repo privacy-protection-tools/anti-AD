@@ -14,16 +14,17 @@ if [ $? -ne 0 ];then
 	exit 1
 fi
 
-echo '开始下载 easylist2...'
-wget --no-check-certificate -O koolproxy.txt https://kprule.com/koolproxy.txt
+# echo '开始下载 easylist2...'
+# wget -O koolproxy.txt https://kprule.com/koolproxy.txt
 
-if [ $? -ne 0 ];then
-	echo '下载失败，请重试'
-	exit 1
-fi
+# if [ $? -ne 0 ];then
+# 	echo '下载失败，请重试'
+# 	exit 1
+# fi
 
 /usr/local/php/bin/php make-addr.php
 
 git add adblock-for-dnsmasq.conf
 git commit -am "auto commit"
 git push --force
+
