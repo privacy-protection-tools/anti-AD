@@ -10,4 +10,6 @@ return array(
 	'bce.baidu.com'						=> true,
 	'.bce.baidu.com'					=> true,
 	'b.bdstatic.com'					=> true,
+	'googleadapis.l.google.com'			=> true,
+	'.googleadapis.l.google.com'		=> true,
 );
