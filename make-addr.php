@@ -111,7 +111,7 @@ class makeAddr{
 				if(substr($matchs[1], 0, 4) == 'www.'){
 					$row = substr($matchs[1], 3);
 				}else{
-					$row = '.' . $matchs[1];
+					$row = $matchs[1];
 				}
 				
 				$arr_domains[self::extract_main_domain($matchs[1])][] = $row;
@@ -164,8 +164,14 @@ class makeAddr{
 
 		foreach($arr_result as $rk => $rv){
 			if(array_key_exists($rk, $GLOBALS['arr_blacklist'])){//黑名单操作
+
+				if(in_array($rk, $GLOBALS['arr_blacklist'][$rk]) || in_array('.' . $rk , $GLOBALS['arr_blacklist'][$rk])){
+					$write_len += fwrite($fp, 'address=/' . $rk . '/' . "\n");
+					continue;
+				}
+
 				foreach($GLOBALS['arr_blacklist'][$rk] as $bv){
-					$write_len += fwrite($fp, 'address=/' . $bv . '/127.0.0.1' . "\n");
+					$write_len += fwrite($fp, 'address=/' . $bv . '/' . "\n");
 				}
 				continue;
 			}
@@ -178,14 +184,14 @@ class makeAddr{
 				if(array_key_exists($rv, $GLOBALS['arr_whitelist'])){//白名单机制
 					continue;
 				}
-				$write_len += fwrite($fp, 'address=/' . $rv . '/127.0.0.1' . "\n");
+				$write_len += fwrite($fp, 'address=/' . $rv . '/' . "\n");
 				continue;
 			}
 
 			$rv = array_unique($rv);
 
 			if(in_array('.' . $rk, $rv) || in_array('www.' . $rk, $rv)){
-				$write_len += fwrite($fp, 'address=/.' . $rk . '/127.0.0.1' . "\n");
+				$write_len += fwrite($fp, 'address=/' . $rk . '/' . "\n");
 				continue;
 			}
 
@@ -193,7 +199,7 @@ class makeAddr{
 				if(array_key_exists($rvv, $GLOBALS['arr_whitelist'])){//白名单机制
 					continue;
 				}
-				$write_len += fwrite($fp, 'address=/' . $rvv . '/127.0.0.1' . "\n");
+				$write_len += fwrite($fp, 'address=/' . $rvv . '/' . "\n");
 			}
 		}
 
