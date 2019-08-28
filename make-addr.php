@@ -19,9 +19,9 @@ $easylist1 = file_get_contents('./easylistchina+easylist.txt');
 
 $arr_result = array_merge_recursive($arr_result, makeAddr::get_domain_from_easylist($easylist1));
 
-$easylist2 = file_get_contents('./koolproxy.txt');
+//$easylist2 = file_get_contents('./koolproxy.txt');
 
-$arr_result = array_merge_recursive($arr_result, makeAddr::get_domain_from_easylist($easylist2));
+//$arr_result = array_merge_recursive($arr_result, makeAddr::get_domain_from_easylist($easylist2));
 
 
 echo '开始下载host1....',"\n";
