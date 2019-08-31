@@ -12,4 +12,5 @@ return array(
 	'b.bdstatic.com'					=> true,
 	'googleadapis.l.google.com'			=> true,
 	'.googleadapis.l.google.com'		=> true,
+	'wangbase.com'						=> true,
 );

@@ -180,6 +180,11 @@ class makeAddr{
 				// print_r($rv);
 				continue;
 			}
+
+			if(array_key_exists($rk, $GLOBALS['arr_whitelist'])){//白名单机制
+				continue;
+			}
+
 			if(!is_array($rv)){
 				if(array_key_exists($rv, $GLOBALS['arr_whitelist'])){//白名单机制
 					continue;
