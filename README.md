@@ -5,24 +5,24 @@
 
 ## 快速使用
 
-1、下载[adblock-for-dnsmasq.conf](https://raw.githubusercontent.com/gentlyx/anti-AD/master/adblock-for-dnsmasq.conf) , 保存到你的dnsmasq配置的正确目录下；
-2、重启dnsmasq服务；
-3、已经生效了，enjoy it！
+1. 下载[adblock-for-dnsmasq.conf](https://raw.githubusercontent.com/gentlyx/anti-AD/master/adblock-for-dnsmasq.conf) , 保存到你的dnsmasq配置的正确目录下；
+2. 重启dnsmasq服务；
+3. 已经生效了，enjoy it！
 
 ## 个性化
 
 
 运行start.sh,会去下载easylist,yhosts,neohosts,cjxlist等其他大神维护的屏蔽列表，然后整理合并成一个文件。拿着这个文件放入到例如/etc/dnsmasq.d/的目录下，然后重启dnsmasq进程就能加载。更新依赖于其他大神的内容更新了。
 
-`adblock-for-dnsmasq.conf` - 这个是最终生成的配置文件，大约每月更新4次,所以，如果你打算直接下载我维护的这个文件，不需要太高的pull频率
+* `adblock-for-dnsmasq.conf` - 这个是最终生成的配置文件，大约每月更新4次,所以，如果你打算直接下载我维护的这个文件，不需要太高的pull频率
 
-`make-addr.php` - 是php脚本的主文件,执行php make-addr.php将更新配置文件
+* `make-addr.php` - 是php脚本的主文件,执行php make-addr.php将更新配置文件
 
-`black_domain_list.php` - 是用来配置域名黑名单，这个威力巨大，谨慎使用
+* `black_domain_list.php` - 是用来配置域名黑名单，这个威力巨大，谨慎使用
 
-`white_domain_list.php` - 白名单，优先级低于黑名单，即一个域名同时出现在黑白名单中时，将采用黑名单规则
+* `white_domain_list.php` - 白名单，优先级低于黑名单，即一个域名同时出现在黑白名单中时，将采用黑名单规则
 
-`block_domains.root.conf` - 这个文件是用来配置无论别人怎么更新，你都要保留的配置的，满足个性化需求，随心所欲。
+* `block_domains.root.conf` - 这个文件是用来配置无论别人怎么更新，你都要保留的配置的，满足个性化需求，随心所欲。
 
 
 ## 背景故事
