@@ -81,7 +81,9 @@ return array( 	'cnzz.com' => array('cnzz.com'),
 				'butlerelectricsupply.com' => array('.butlerelectricsupply.com', 'butlerelectricsupply.com'),
 				'cruisingsmallship.com' => array('.cruisingsmallship.com', 'cruisingsmallship.com'),
 				'frost-electric-supply.com' => array('.frost-electric-supply.com', 'frost-electric-supply.com'),
-				'iptvdeals.com' => array('.iptvdeals.com', 'iptvdeals.com'),
+				'iptvdeals.com' => array('iptvdeals.com'),
+				'appjiagu.com' => array('appjiagu.com'),
+				
 				'011211.cn' => array('.011211.cn'),
 				'013572.cn' => array('.013572.cn'),
 				'020wujin.cn' => array('.020wujin.cn'),
@@ -394,6 +396,4 @@ return array( 	'cnzz.com' => array('cnzz.com'),
 				'zszgjiejuw.mobi' => array('.zszgjiejuw.mobi'),
 				'zzasj.cn' => array('.zzasj.cn'),
 				'zzhssy.cn' => array('.zzhssy.cn'),
-				'onetad.com' => array(),//dead
-				'csheaven.com' => array(),//dead
 			);

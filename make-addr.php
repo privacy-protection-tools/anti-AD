@@ -29,7 +29,8 @@ $host1 = makeAddr::http_get('https://hosts.nfz.moe/full/hosts');
 $arr_result = array_merge_recursive($arr_result, makeAddr::get_domain_list($host1));
 
 echo '开始下载host2....',"\n";
-$host2 = makeAddr::http_get('http://www.malwaredomainlist.com/hostslist/hosts.txt');
+// $host2 = makeAddr::http_get('http://www.malwaredomainlist.com/hostslist/hosts.txt');
+$host2 = makeAddr::http_get('https://raw.githubusercontent.com/vokins/yhosts/master/hosts');
 $arr_result = array_merge_recursive($arr_result, makeAddr::get_domain_list($host2));
 
 
@@ -160,19 +161,23 @@ class makeAddr{
 	public static function write_to_conf($arr_result, $str_file){
 
 		$fp = fopen($str_file, 'w');
-		$write_len = fwrite($fp, '#Date:' . date('YmdHis'). "\n");
+		$write_len = fwrite($fp, '#TIME=' . date('YmdHis'). "\n");
+		$write_len = fwrite($fp, '#URL=https://github.com/gentlyxu/anti-AD' . "\n");
+
+		//集中塞入黑名单所有内容
+		foreach($GLOBALS['arr_blacklist'] as $bk => $bv){
+			if(in_array($bk, $bv) || in_array('.' . $bk , $bv)){
+				$write_len += fwrite($fp, 'address=/' . $bk . '/' . "\n");
+				continue;
+			}
+
+			foreach($bv as $bvv){
+				$write_len += fwrite($fp, 'address=/' . $bvv . '/' . "\n");
+			}
+		}
 
 		foreach($arr_result as $rk => $rv){
 			if(array_key_exists($rk, $GLOBALS['arr_blacklist'])){//黑名单操作
-
-				if(in_array($rk, $GLOBALS['arr_blacklist'][$rk]) || in_array('.' . $rk , $GLOBALS['arr_blacklist'][$rk])){
-					$write_len += fwrite($fp, 'address=/' . $rk . '/' . "\n");
-					continue;
-				}
-
-				foreach($GLOBALS['arr_blacklist'][$rk] as $bv){
-					$write_len += fwrite($fp, 'address=/' . $bv . '/' . "\n");
-				}
 				continue;
 			}
 
@@ -181,7 +186,8 @@ class makeAddr{
 				continue;
 			}
 
-			if(array_key_exists($rk, $GLOBALS['arr_whitelist'])){//白名单机制
+			//白名单机制，优先级低于黑名单，即某域名同时存在黑白名单中，那么它会在黑名单中生效
+			if(array_key_exists($rk, $GLOBALS['arr_whitelist'])){
 				continue;
 			}
 
