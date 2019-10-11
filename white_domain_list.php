@@ -12,6 +12,8 @@ return array(
 	'b.bdstatic.com'					=> true,
 	'googleadapis.l.google.com'			=> true,
 	'.googleadapis.l.google.com'		=> true,
+	'gstaticadssl.l.google.com'			=> true,
+	'gvt1.com'							=> true,
 	'wangbase.com'						=> true,
 	'l.qq.com'							=> true, //解决腾讯视频无法播放
 	'g.csdnimg.cn'						=> true, //csdn阅读更多
