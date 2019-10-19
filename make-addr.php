@@ -205,6 +205,9 @@ class makeAddr{
 						if(in_array(implode('.', $tmp_arr2), $rv)){
 							if(!in_array(implode('.', $tmp_arr2), $arr_written)){
 								$arr_written[] = implode('.', $tmp_arr2);
+                                if(array_key_exists(implode('.', $tmp_arr2), $GLOBALS['arr_whitelist'])){
+                                    continue;
+                                }
 								$write_len += fwrite($fp, 'address=/' . implode('.', $tmp_arr2) . '/' . "\n");
 							}
 							$written_flag = true;

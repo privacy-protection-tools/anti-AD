@@ -3,7 +3,6 @@
 source /etc/profile
 
 cd $(cd "$(dirname "$0")";pwd)
-echo pwd is: `pwd`
 git pull
 
 echo '开始下载 easylist1...'
@@ -39,7 +38,7 @@ if [ $? -ne 0 ];then
 fi
 
 
-PHP_RET=$(php make-addr.php)
+PHP_RET=$(/user/local/php/bin/php make-addr.php)
 
 git add adblock-for-dnsmasq.conf
 git commit -am "auto commit. script output--- $PHP_RET"
