@@ -17,4 +17,5 @@ return array(
 	'wangbase.com'						=> true,
 	'l.qq.com'							=> true, //解决腾讯视频无法播放
 	'g.csdnimg.cn'						=> true, //csdn阅读更多
+	'bce.baidu.com'						=> true, //csdn阅读更多
 );

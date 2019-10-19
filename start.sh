@@ -22,9 +22,26 @@ if [ $? -ne 0 ];then
 	exit 1
 fi
 
-/usr/local/php/bin/php make-addr.php
+echo '开始下载 hosts1...'
+wget -O hosts1 --timeout 30 https://hosts.nfz.moe/full/hosts
+
+if [ $? -ne 0 ];then
+	echo '下载失败，请重试'
+	exit 1
+fi
+
+echo '开始下载 hosts2...'
+wget -O hosts2 --timeout 60 https://raw.githubusercontent.com/vokins/yhosts/master/hosts
+
+if [ $? -ne 0 ];then
+	echo '下载失败，请重试'
+	exit 1
+fi
+
+
+PHP_RET=$(php make-addr.php)
 
 git add adblock-for-dnsmasq.conf
-git commit -am "auto commit"
+git commit -am "auto commit. script output--- $PHP_RET"
 git push --force
 
