@@ -80,6 +80,8 @@ return array( 	'cnzz.com' => array('cnzz.com'),
 				'cruisingsmallship.com' => array('.cruisingsmallship.com', 'cruisingsmallship.com'),
 				'frost-electric-supply.com' => array('.frost-electric-supply.com', 'frost-electric-supply.com'),
 				'iptvdeals.com' => array('iptvdeals.com'),
+				'baidu.com' => array('tuisong.baidu.com'),
+				'youdao.com' => array('corp.youdao.com'),
 				'crsspxl.com' => array('crsspxl.com'),
 				
 				'011211.cn' => array('.011211.cn'),
