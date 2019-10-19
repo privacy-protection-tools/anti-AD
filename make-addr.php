@@ -161,7 +161,7 @@ class makeAddr{
 
 		$fp = fopen($str_file, 'w');
 		$write_len = fwrite($fp, '#TIME=' . date('YmdHis'). "\n");
-		$write_len = fwrite($fp, '#URL=https://github.com/gentlyxu/anti-AD' . "\n");
+		$write_len += fwrite($fp, '#URL=https://github.com/gentlyxu/anti-AD' . "\n");
 
 		foreach($arr_result as $rk => $rv){
 
