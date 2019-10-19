@@ -38,7 +38,7 @@ if [ $? -ne 0 ];then
 fi
 
 
-PHP_RET=$(/user/local/php/bin/php make-addr.php)
+PHP_RET=$(/usr/local/php/bin/php make-addr.php)
 
 git add adblock-for-dnsmasq.conf
 git commit -am "auto commit. script output--- $PHP_RET"
