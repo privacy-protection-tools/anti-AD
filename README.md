@@ -34,7 +34,7 @@
 
 ## 欢迎提意见
 
-有屏蔽列表有任何建议，或者误杀，其他错误，各种意见 [请开issue](https://github.com/gentlyxu/anti-AD/issues/new)
+对于本工具，大家伙儿有任何建议，或者存在误杀，bug，其他错误，各种意见  [请开issue](https://github.com/gentlyxu/anti-AD/issues/new)
 
 
 ## 特别感谢
