@@ -40,7 +40,7 @@ fi
 
 PHP_RET=$(/usr/local/php/bin/php make-addr.php)
 
-git add adblock-for-dnsmasq.conf
+git add -A adblock-for-dnsmasq.conf hosts1 hosts2
 git commit -am "auto commit. script output--- $PHP_RET"
 git push --force
 
