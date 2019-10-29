@@ -7,6 +7,7 @@
 return array( 	'cnzz.com' => array('cnzz.com'),
 				'cnzz.net' => array('cnzz.net'),
 				'cnzz.cn' => array('cnzz.cn'),
+        'inmobi.cn' => array('inmobi.cn'),
 				'adview.cn' => array('adview.cn'),
 				'wrating.com' => array('wrating.com'),
 				'umengcloud.com' => array('umengcloud.com'),
