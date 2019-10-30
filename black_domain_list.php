@@ -4,10 +4,16 @@
 //这个文件主要定义针对hosts文件中不能泛域名解析而优化减少生成行数
 //对于个性化屏蔽的域名，全部移动到block_domains.root.conf中管理
 
-return array( 	'cnzz.com' => array('cnzz.com'),
+return array(
+				'cnzz.com' => array('cnzz.com'),
 				'cnzz.net' => array('cnzz.net'),
 				'cnzz.cn' => array('cnzz.cn'),
-        'inmobi.cn' => array('inmobi.cn'),
+				'inmobi.cn' => array('inmobi.cn'),
+				'snssdk.com' => array('is.snssdk.com', 'bds.snssdk.com'),
+				'qq.com' => array('bugly.qq.com', 'openmsf.3g.qq.com'),
+				'analysys.cn' => array('analysys.cn'),
+				'aliyuncs.com' => array('log.aliyuncs.com'),
+				'szy.cn' => array('dtlog.szy.cn'),
 				'adview.cn' => array('adview.cn'),
 				'wrating.com' => array('wrating.com'),
 				'umengcloud.com' => array('umengcloud.com'),
@@ -84,7 +90,7 @@ return array( 	'cnzz.com' => array('cnzz.com'),
 				'baidu.com' => array('tuisong.baidu.com'),
 				'youdao.com' => array('corp.youdao.com'),
 				'crsspxl.com' => array('crsspxl.com'),
-				
+
 				'011211.cn' => array('.011211.cn'),
 				'013572.cn' => array('.013572.cn'),
 				'020wujin.cn' => array('.020wujin.cn'),
