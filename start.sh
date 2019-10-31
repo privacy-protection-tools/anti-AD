@@ -46,9 +46,17 @@ if [ $? -ne 0 ];then
 	exit 1
 fi
 
+echo '开始下载 hosts3...'
+wget -O hosts3 --timeout 60 https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts
+
+if [ $? -ne 0 ];then
+	echo '下载失败，请重试'
+	exit 1
+fi
+
 
 PHP_RET=$(/usr/local/php/bin/php make-addr.php)
 
-git add -A adblock-for-dnsmasq.conf hosts1 hosts2
+git add -A adblock-for-dnsmasq.conf hosts1 hosts2 host3 *.txt
 git commit -am "auto commit. script output--- $PHP_RET"
 git push --force

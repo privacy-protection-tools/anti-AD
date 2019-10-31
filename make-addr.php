@@ -34,6 +34,9 @@ $arr_result = array_merge_recursive($arr_result, makeAddr::get_domain_list($host
 $host2 = file_get_contents('./hosts2');
 $arr_result = array_merge_recursive($arr_result, makeAddr::get_domain_list($host2));
 
+$host3 = file_get_contents('./hosts3');
+$arr_result = array_merge_recursive($arr_result, makeAddr::get_domain_list($host3));
+
 $arr_result = array_merge_recursive($arr_result, $arr_blacklist);
 
 echo 'Written file size:';
