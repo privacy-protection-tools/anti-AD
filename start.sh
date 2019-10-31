@@ -21,6 +21,15 @@ if [ $? -ne 0 ];then
 	exit 1
 fi
 
+echo '开始下载 easylist3...'
+wget -O fanboy-annoyance.txt --timeout 30 https://easylist.to/easylist/fanboy-annoyance.txt
+
+if [ $? -ne 0 ];then
+	echo '下载失败，请重试'
+	exit 1
+fi
+
+
 echo '开始下载 hosts1...'
 wget -O hosts1 --timeout 30 https://hosts.nfz.moe/full/hosts
 
@@ -43,4 +52,3 @@ PHP_RET=$(/usr/local/php/bin/php make-addr.php)
 git add -A adblock-for-dnsmasq.conf hosts1 hosts2
 git commit -am "auto commit. script output--- $PHP_RET"
 git push --force
-

@@ -23,6 +23,10 @@ $arr_result = array_merge_recursive($arr_result, makeAddr::get_domain_from_easyl
 $easylist2 = file_get_contents('./cjx-annoyance.txt');
 $arr_result = array_merge_recursive($arr_result, makeAddr::get_domain_from_easylist($easylist2));
 
+$easylist3 = file_get_contents('./fanboy-annoyance.txt');
+$arr_result = array_merge_recursive($arr_result, makeAddr::get_domain_from_easylist($easylist3));
+
+
 $host1 = file_get_contents('./hosts1');
 $arr_result = array_merge_recursive($arr_result, makeAddr::get_domain_list($host1));
 
@@ -53,7 +57,7 @@ class makeAddr{
 		$result = curl_exec($ch);
 		$errno = curl_errno($ch);
 		curl_close($ch);
-	
+
 		return $result;
 	}
 
@@ -113,14 +117,14 @@ class makeAddr{
 				}else{
 					$row = $matchs[1];
 				}
-				
+
 				$arr_domains[self::extract_main_domain($matchs[1])][] = $row;
 			}
 		}
 
 		return $arr_domains;
 	}
-	
+
 	public static function get_domain_list($str_hosts){
 		$strlen = strlen($str_hosts);
 		if($strlen < 10){
@@ -140,17 +144,17 @@ class makeAddr{
 			}
 			$line = strtolower(preg_replace('/[\s\t]+/', "/", $line));
 
-			if((strpos($line, '127.0.0.1') === false) && 
-				(strpos($line, '::') === false) && 
+			if((strpos($line, '127.0.0.1') === false) &&
+				(strpos($line, '::') === false) &&
 				(strpos($line, '0.0.0.0') === false)){
 				continue;
 			}
-		
+
 			$row = explode('/', $line);
 			if(strpos($row[1], '.') === false){
 				continue;
 			}
-			
+
 			$arr_domains[self::extract_main_domain($row[1])][] = $row[1];
 		}
 
@@ -205,9 +209,9 @@ class makeAddr{
 						if(in_array(implode('.', $tmp_arr2), $rv)){
 							if(!in_array(implode('.', $tmp_arr2), $arr_written)){
 								$arr_written[] = implode('.', $tmp_arr2);
-                                if(array_key_exists(implode('.', $tmp_arr2), $GLOBALS['arr_whitelist'])){
-                                    continue;
-                                }
+								if(array_key_exists(implode('.', $tmp_arr2), $GLOBALS['arr_whitelist'])){
+									continue;
+								}
 								$write_len += fwrite($fp, 'address=/' . implode('.', $tmp_arr2) . '/' . "\n");
 							}
 							$written_flag = true;
@@ -230,32 +234,3 @@ class makeAddr{
 		return $write_len;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
