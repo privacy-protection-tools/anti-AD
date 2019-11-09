@@ -9,6 +9,7 @@ return array(
 				'cnzz.net' => array('cnzz.net'),
 				'cnzz.cn' => array('cnzz.cn'),
 				'inmobi.cn' => array('inmobi.cn'),
+				'aliapp.org' => array('aliapp.org'),
 				'snssdk.com' => array('is.snssdk.com', 'bds.snssdk.com'),
 				'qq.com' => array('bugly.qq.com', 'openmsf.3g.qq.com'),
 				'analysys.cn' => array('analysys.cn'),
