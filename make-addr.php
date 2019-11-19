@@ -40,7 +40,7 @@ $arr_result = array_merge_recursive($arr_result, makeAddr::get_domain_list($host
 $arr_result = array_merge_recursive($arr_result, $arr_blacklist);
 
 echo 'Written file size:';
-echo makeAddr::write_to_conf($arr_result, './adblock-for-dnsmasq.conf');
+echo makeAddr::write_to_conf($arr_result, './adblock-for-dnsmasq.conf', 'q-filter.conf');
 
 
 
@@ -164,11 +164,16 @@ class makeAddr{
 		return $arr_domains;
 	}
 
-	public static function write_to_conf($arr_result, $str_file){
+	public static function write_to_conf($arr_result, $str_file, $q_file){
 
 		$fp = fopen($str_file, 'w');
+		$fp2 = fopen($q_file, 'w');
 		$write_len = fwrite($fp, '#TIME=' . date('YmdHis'). "\n");
 		$write_len += fwrite($fp, '#URL=https://github.com/gentlyxu/anti-AD' . "\n");
+		fwrite($fp2, '[TCP]' . "\n");
+		fwrite($fp2, 'USER-AGENT,com.apple.*,DIRECT' . "\n");
+		fwrite($fp2, 'USER-AGENT,FindMy*,DIRECT' . "\n");
+		fwrite($fp2, 'USER-AGENT,Maps*,DIRECT' . "\n");
 
 		foreach($arr_result as $rk => $rv){
 
@@ -186,6 +191,7 @@ class makeAddr{
 					continue;
 				}
 				$write_len += fwrite($fp, 'address=/' . $rv . '/' . "\n");
+				fwrite($fp2, 'HOST-SUFFIX,' . $rv . ',REJECT' . "\n");
 				continue;
 			}
 
@@ -193,6 +199,7 @@ class makeAddr{
 
 			if(in_array('.' . $rk, $rv) || in_array('www.' . $rk, $rv) || in_array($rk, $rv)){
 				$write_len += fwrite($fp, 'address=/' . $rk . '/' . "\n");
+				fwrite($fp2, 'HOST-SUFFIX,' . $rk . ',REJECT' . "\n");
 				continue;
 			}
 
@@ -216,6 +223,7 @@ class makeAddr{
 									continue;
 								}
 								$write_len += fwrite($fp, 'address=/' . implode('.', $tmp_arr2) . '/' . "\n");
+								fwrite($fp2, 'HOST-SUFFIX,' . implode('.', $tmp_arr2) . ',REJECT' . "\n");
 							}
 							$written_flag = true;
 							break;
@@ -229,10 +237,12 @@ class makeAddr{
 
 				$arr_written[] = $rvv;
 				$write_len += fwrite($fp, 'address=/' . $rvv . '/' . "\n");
+				fwrite($fp2, 'HOST-SUFFIX,' . $rvv . ',REJECT' . "\n");
 			}
 		}
 
 		fclose($fp);
+		fclose($fp2);
 
 		return $write_len;
 	}
