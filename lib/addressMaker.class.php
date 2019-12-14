@@ -10,30 +10,7 @@
  */
 
 
-class addressMaker{
-
-
-    /**
-     * http get 方法，一般用于下载文件
-     *
-     * @param $url
-     * @return bool|string
-     */
-    public static function http_get($url){
-        $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, $url);
-        curl_setopt($ch, CURLOPT_HTTPGET, 1);
-        curl_setopt($ch, CURLOPT_TIMEOUT, 30);
-        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_USERAGENT, '^_^ angent 2.2.5/' . phpversion());
-        $result = curl_exec($ch);
-        $errno = curl_errno($ch);
-        curl_close($ch);
-
-        return $result;
-    }
+class addressMaker {
 
     /**
      * 分离域名
@@ -60,7 +37,7 @@ class addressMaker{
         $str_reg .= ')';
 
         $str_reg .= '(\.cn|\.hk|\.tw|\.uk|\.jp|\.kr|\.th|\.au|\.ua|\.so|\.br|\.sg|\.pt|\.ec|\.ar|\.my|\.tr|\.bd|\.mk|\.za|\.mt)?)$/';
-        if(preg_match($str_reg, $str_domain,$matchs)){
+        if(preg_match($str_reg, $str_domain, $matchs)){
             return strval($matchs[1]);
         }
 
@@ -82,12 +59,12 @@ class addressMaker{
 
         $str_easylist = $str_easylist . "\n"; //防止最后一行没有换行符
 
-        $i=0;
+        $i = 0;
         $arr_domains = array();
         while($i < $strlen){
             $end_pos = strpos($str_easylist, "\n", $i);
             $line = trim(substr($str_easylist, $i, $end_pos - $i));
-            $i = $end_pos+1;
+            $i = $end_pos + 1;
             if(empty($line) || strlen($line) < 3){
                 continue;
             }
@@ -125,12 +102,12 @@ class addressMaker{
 
         $str_hosts = $str_hosts . "\n"; //防止最后一行没有换行符
 
-        $i=0;
+        $i = 0;
         $arr_domains = array();
         while($i < $strlen){
             $end_pos = strpos($str_hosts, "\n", $i);
             $line = trim(substr($str_hosts, $i, $end_pos - $i));
-            $i = $end_pos+1;
+            $i = $end_pos + 1;
             if(empty($line) || ($line{0} == '#')){//注释行忽略
                 continue;
             }
@@ -153,16 +130,11 @@ class addressMaker{
         return $arr_domains;
     }
 
-    public static function write_to_conf($arr_result, $str_file, $q_file){
+    public static function write_to_conf($arr_result, $str_file){
 
         $fp = fopen($str_file, 'w');
-        $fp2 = fopen($q_file, 'w');
-        $write_len = fwrite($fp, '#TIME=' . date('YmdHis'). "\n");
+        $write_len = fwrite($fp, '#TIME=' . date('YmdHis') . "\n");
         $write_len += fwrite($fp, '#URL=https://github.com/gentlyxu/anti-AD' . "\n");
-        fwrite($fp2, '[TCP]' . "\n");
-        fwrite($fp2, 'USER-AGENT,com.apple.*,DIRECT' . "\n");
-        fwrite($fp2, 'USER-AGENT,FindMy*,DIRECT' . "\n");
-        fwrite($fp2, 'USER-AGENT,Maps*,DIRECT' . "\n");
 
         foreach($arr_result as $rk => $rv){
 
@@ -180,7 +152,6 @@ class addressMaker{
                     continue;
                 }
                 $write_len += fwrite($fp, 'address=/' . $rv . '/' . "\n");
-                fwrite($fp2, 'HOST-SUFFIX,' . $rv . ',REJECT' . "\n");
                 continue;
             }
 
@@ -188,7 +159,6 @@ class addressMaker{
 
             if(in_array('.' . $rk, $rv) || in_array('www.' . $rk, $rv) || in_array($rk, $rv)){
                 $write_len += fwrite($fp, 'address=/' . $rk . '/' . "\n");
-                fwrite($fp2, 'HOST-SUFFIX,' . $rk . ',REJECT' . "\n");
                 continue;
             }
 
@@ -212,7 +182,6 @@ class addressMaker{
                                     continue;
                                 }
                                 $write_len += fwrite($fp, 'address=/' . implode('.', $tmp_arr2) . '/' . "\n");
-                                fwrite($fp2, 'HOST-SUFFIX,' . implode('.', $tmp_arr2) . ',REJECT' . "\n");
                             }
                             $written_flag = true;
                             break;
@@ -226,12 +195,10 @@ class addressMaker{
 
                 $arr_written[] = $rvv;
                 $write_len += fwrite($fp, 'address=/' . $rvv . '/' . "\n");
-                fwrite($fp2, 'HOST-SUFFIX,' . $rvv . ',REJECT' . "\n");
             }
         }
 
         fclose($fp);
-        fclose($fp2);
 
         return $write_len;
     }

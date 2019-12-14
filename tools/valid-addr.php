@@ -88,9 +88,12 @@ while (!feof($src_fp)) {
                 $dead_horse[$matches[1]]['empty']++;
             }
         } catch (Net_DNS2_Exception $e) {
-            //3=dns记录不存在
             if ($e->getCode() == 3) {
-                $dead_horse[$matches[1]]['dead']++;
+                $dead_horse[$matches[1]]['dead']++;//3=dns记录不存在
+            }elseif($e->getCode() == 2) {
+                $dead_horse[$matches[1]]['problem']++;//2=查询失败，dns服务器没有返回正确记录
+            }elseif($e->getCode() == 203){
+                $dead_horse[$matches[1]]['timeout']++;//203=查询超时
             } else {
                 echo date('m-d H:i:s'), "[", $matches[1], "]", $e->getMessage(), ",code:", $e->getCode(), "\n";
             }
@@ -107,4 +110,4 @@ try {
     echo date('m-d H:i:s'), "write file failed:", $e->getMessage(), "\t", $e->getCode(), "\n";
 }
 
-echo 'Time cost:', microtime(true) - START_TIME, "s\n";
+echo 'Time cost:', microtime(true) - START_TIME, "s, at", date('m-d H:i:s'), "\n";

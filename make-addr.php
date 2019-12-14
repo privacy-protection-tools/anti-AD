@@ -17,8 +17,8 @@ if(PHP_SAPI != 'cli'){
 	die('nothing.');
 }
 require('./lib/addressMaker.class.php');
-$arr_blacklist = require('./black_domain_list.php');
-$arr_whitelist = require('./white_domain_list.php');
+$arr_blacklist = require('./lib/black_domain_list.php');
+$arr_whitelist = require('./lib/white_domain_list.php');
 
 
 $arr_result = array();
@@ -37,7 +37,6 @@ $arr_result = array_merge_recursive($arr_result, addressMaker::get_domain_from_e
 $host1 = file_get_contents('./origin-files/hosts1');
 $arr_result = array_merge_recursive($arr_result, addressMaker::get_domain_list($host1));
 
-// $host2 = makeAddr::http_get('http://www.malwaredomainlist.com/hostslist/hosts.txt');
 $host2 = file_get_contents('./origin-files/hosts2');
 $arr_result = array_merge_recursive($arr_result, addressMaker::get_domain_list($host2));
 
