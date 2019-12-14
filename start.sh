@@ -6,7 +6,7 @@ cd $(cd "$(dirname "$0")";pwd)
 git pull
 
 echo '开始下载 easylist1...'
-wget -O easylistchina+easylist.txt --timeout 30 https://easylist-downloads.adblockplus.org/easylistchina+easylist.txt
+wget -O ./origin-files/easylistchina+easylist.txt --timeout 30 https://easylist-downloads.adblockplus.org/easylistchina+easylist.txt
 
 if [ $? -ne 0 ];then
 	echo '下载失败，请重试'
@@ -14,7 +14,7 @@ if [ $? -ne 0 ];then
 fi
 
 echo '开始下载 easylist2...'
-wget -O cjx-annoyance.txt --timeout 30 https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
+wget -O ./origin-files/cjx-annoyance.txt --timeout 30 https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 
 if [ $? -ne 0 ];then
 	echo '下载失败，请重试'
@@ -22,7 +22,7 @@ if [ $? -ne 0 ];then
 fi
 
 echo '开始下载 easylist3...'
-wget -O fanboy-annoyance.txt --timeout 30 https://easylist.to/easylist/fanboy-annoyance.txt
+wget -O ./origin-files/fanboy-annoyance.txt --timeout 30 https://easylist.to/easylist/fanboy-annoyance.txt
 
 if [ $? -ne 0 ];then
 	echo '下载失败，请重试'
@@ -31,7 +31,7 @@ fi
 
 
 echo '开始下载 hosts1...'
-wget -O hosts1 --timeout 30 https://hosts.nfz.moe/full/hosts
+wget -O ./origin-files/hosts1 --timeout 30 https://hosts.nfz.moe/full/hosts
 
 if [ $? -ne 0 ];then
 	echo '下载失败，请重试'
@@ -39,7 +39,7 @@ if [ $? -ne 0 ];then
 fi
 
 echo '开始下载 hosts2...'
-wget -O hosts2 --timeout 60 https://raw.githubusercontent.com/vokins/yhosts/master/hosts
+wget -O ./origin-files/hosts2 --timeout 60 https://raw.githubusercontent.com/vokins/yhosts/master/hosts
 
 if [ $? -ne 0 ];then
 	echo '下载失败，请重试'
@@ -47,7 +47,7 @@ if [ $? -ne 0 ];then
 fi
 
 echo '开始下载 hosts3...'
-wget -O hosts3 --timeout 60 https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts
+wget -O ./origin-files/hosts3 --timeout 60 https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts
 
 if [ $? -ne 0 ];then
 	echo '下载失败，请重试'
