@@ -92,6 +92,9 @@ return array(
 				'baidu.com' => array('tuisong.baidu.com'),
 				'youdao.com' => array('corp.youdao.com'),
 				'crsspxl.com' => array('crsspxl.com'),
+				'xiaomi.com' => array('data.mistat.intl.xiaomi.com', 'data.mistat.xiaomi.com', 'o2o.api.xiaomi.com'),
+				'miui.com' => array('hot.browser.intl.miui.com'),
+
 
 				'011211.cn' => array('.011211.cn'),
 				'013572.cn' => array('.013572.cn'),
