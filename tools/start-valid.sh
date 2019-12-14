@@ -1,4 +1,5 @@
 #!/bin/bash
+#每天运行一次
 
 source /etc/profile
 cd $(cd "$(dirname "$0")";pwd)

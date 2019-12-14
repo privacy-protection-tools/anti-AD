@@ -111,4 +111,4 @@ try{
     echo date('m-d H:i:s'), "write file failed:", $e->getMessage(), "\t", $e->getCode(), "\n";
 }
 
-echo 'Time cost:', microtime(true) - START_TIME, "s, at", date('m-d H:i:s'), "\n";
+echo 'Time cost:', microtime(true) - START_TIME, "s, at ", date('m-d H:i:s'), "\n";

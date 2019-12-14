@@ -79,5 +79,5 @@ while(!feof($src_fp)){
 
 //删除之前验证工具生成的中间结果
 foreach(array_merge($china_list_files, $dead_horse_files) as $f){
-//    unlink($f);
+    unlink($f);
 }
