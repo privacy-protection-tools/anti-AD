@@ -11,7 +11,7 @@
 
 set_time_limit(600);
 
-error_reporting(7);
+error_reporting(0);
 
 if(PHP_SAPI != 'cli'){
 	die('nothing.');
