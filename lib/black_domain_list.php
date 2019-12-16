@@ -110,7 +110,12 @@ return array(
     'taobao.com' => array('ip.taobao.com', 'fourier.taobao.com'),
     'aiclk.com' => array('aiclk.com'),
     '5ubei.com' => array('5ubei.com'),
-
+    'jpush.cn' => array('jpush.cn'),
+    'jpush.io' => array('jpush.io'),
+    'jiguang.cn' => array('jiguang.cn'),
+    'getui.com' => array('getui.com'),
+    'ebjvu.cn' => array('ebjvu.cn'),
+    'jumei.com' => array('adxapi.jumei.com', 'sd.int.jumei.com', 'sd.jumei.com'),
 
     '011211.cn' => array('.011211.cn'),
     '013572.cn' => array('.013572.cn'),
