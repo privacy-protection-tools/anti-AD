@@ -5,13 +5,14 @@
 //对于个性化屏蔽的域名，全部移动到block_domains.root.conf中管理
 
 return array(
+    'gepush.com' => array('gepush.com'),
     'cnzz.com' => array('cnzz.com'),
     'cnzz.net' => array('cnzz.net'),
     'cnzz.cn' => array('cnzz.cn'),
     'inmobi.cn' => array('inmobi.cn'),
     'aliapp.org' => array('aliapp.org'),
-    'snssdk.com' => array('is.snssdk.com', 'bds.snssdk.com'),
-    'qq.com' => array('bugly.qq.com', 'openmsf.3g.qq.com', 'mtrace.qq.com', 'btrace.qq.com'),
+    'snssdk.com' => array('is.snssdk.com', 'bds.snssdk.com', 'xlog.snssdk.com'),
+    'qq.com' => array('bugly.qq.com', 'openmsf.3g.qq.com', 'mtrace.qq.com', 'btrace.qq.com', 'mark.l.qq.com'),
     'analysys.cn' => array('analysys.cn'),
     'aliyuncs.com' => array('log.aliyuncs.com'),
     'mob.com' => array('mob.com'),
@@ -29,7 +30,6 @@ return array(
     '2345.com' => array('2345.com'),
     '51.la' => array('51.la'),
     '55.la' => array('55.la'),
-    '778669.com' => array('778669.com'), //恶意网站
     'ddns.name' => array('ddns.name'),
     '7clink.com' => array('7clink.com'),
     '88shu.cn' => array('88shu.cn'),
