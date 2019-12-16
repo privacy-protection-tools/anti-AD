@@ -40,7 +40,9 @@ fi
 
 
 echo '开始下载 hosts1...'
-wget -O ./origin-files/hosts1 --timeout 60 https://hosts.nfz.moe/full/hosts
+curl -o ./origin-files/hosts1 --connect-timeout 60 \
+ -s \
+ https://hosts.nfz.moe/full/hosts
 
 # shellcheck disable=SC2181
 if [ $? -ne 0 ];then
@@ -49,7 +51,9 @@ if [ $? -ne 0 ];then
 fi
 
 echo '开始下载 hosts2...'
-wget -O ./origin-files/hosts2 --timeout 60 https://raw.githubusercontent.com/vokins/yhosts/master/hosts
+curl -o ./origin-files/hosts2 --connect-timeout 60 \
+ -s \
+ https://raw.githubusercontent.com/vokins/yhosts/master/hosts
 
 # shellcheck disable=SC2181
 if [ $? -ne 0 ];then
@@ -58,7 +62,9 @@ if [ $? -ne 0 ];then
 fi
 
 echo '开始下载 hosts3...'
-wget -O ./origin-files/hosts3 --timeout 60 https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts
+curl -o ./origin-files/hosts3 --connect-timeout 60 \
+ -s \
+ https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts
 
 # shellcheck disable=SC2181
 if [ $? -ne 0 ];then
