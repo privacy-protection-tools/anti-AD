@@ -9,7 +9,6 @@
  *
  */
 
-
 class addressMaker {
 
     /**
@@ -37,8 +36,8 @@ class addressMaker {
         $str_reg .= ')';
 
         $str_reg .= '(\.cn|\.hk|\.tw|\.uk|\.jp|\.kr|\.th|\.au|\.ua|\.so|\.br|\.sg|\.pt|\.ec|\.ar|\.my|\.tr|\.bd|\.mk|\.za|\.mt)?)$/';
-        if(preg_match($str_reg, $str_domain, $matchs)){
-            return strval($matchs[1]);
+        if(preg_match($str_reg, $str_domain, $matches)){
+            return strval($matches[1]);
         }
 
         return "";
