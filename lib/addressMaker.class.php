@@ -73,15 +73,15 @@ class addressMaker {
                 continue;
             }
 
-            if(preg_match('/^\|\|([0-9a-z\-\.]+[a-z]+)[\^\$]*(image|third-party|script)?$/', $line, $matchs)){
+            if(preg_match('/^\|\|([0-9a-z\-\.]+[a-z]+)[\^\$]*(image|third-party|script|subdocument|popup)?(,.+)?$/', $line, $matches)){
 
-                if(substr($matchs[1], 0, 4) == 'www.'){
-                    $row = substr($matchs[1], 4);
+                if(substr($matches[1], 0, 4) == 'www.'){
+                    $row = substr($matches[1], 4);
                 }else{
-                    $row = $matchs[1];
+                    $row = $matches[1];
                 }
 
-                $arr_domains[self::extract_main_domain($matchs[1])][] = $row;
+                $arr_domains[self::extract_main_domain($matches[1])][] = $row;
             }
         }
 
@@ -96,7 +96,7 @@ class addressMaker {
      */
     public static function get_domain_list($str_hosts){
         $strlen = strlen($str_hosts);
-        if($strlen < 10){
+        if($strlen < 3){
             return array();
         }
 
@@ -123,7 +123,6 @@ class addressMaker {
             if(strpos($row[1], '.') === false){
                 continue;
             }
-
             $arr_domains[self::extract_main_domain($row[1])][] = $row[1];
         }
 
@@ -134,7 +133,7 @@ class addressMaker {
 
         $fp = fopen($str_file, 'w');
         $write_len = fwrite($fp, '#TIME=' . date('YmdHis') . "\n");
-        $write_len += fwrite($fp, '#URL=https://github.com/gentlyxu/anti-AD' . "\n");
+        $write_len += fwrite($fp, '#URL=https://github.com/privacy-protection-tools/anti-AD' . "\n");
 
         foreach($arr_result as $rk => $rv){
 
@@ -143,7 +142,7 @@ class addressMaker {
             }
 
             if(empty($rk)){//遗漏的域名，不会写入到最终的配置里
-                // print_r($rv);
+//                print_r($rv);
                 continue;
             }
 

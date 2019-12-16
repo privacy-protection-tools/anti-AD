@@ -24,26 +24,11 @@ $arr_whitelist = require('./lib/white_domain_list.php');
 $arr_result = array();
 
 
-$easylist1 = file_get_contents('./origin-files/easylistchina+easylist.txt');
-$arr_result = array_merge_recursive($arr_result, addressMaker::get_domain_from_easylist($easylist1));
+$easylist = file_get_contents('./origin-files/base-src-easylist.txt');
+$arr_result = array_merge_recursive($arr_result, addressMaker::get_domain_from_easylist($easylist));
 
-$easylist2 = file_get_contents('./origin-files/cjx-annoyance.txt');
-$arr_result = array_merge_recursive($arr_result, addressMaker::get_domain_from_easylist($easylist2));
-
-$easylist3 = file_get_contents('./origin-files/fanboy-annoyance.txt');
-$arr_result = array_merge_recursive($arr_result, addressMaker::get_domain_from_easylist($easylist3));
-
-
-$host1 = file_get_contents('./origin-files/hosts1');
-$arr_result = array_merge_recursive($arr_result, addressMaker::get_domain_list($host1));
-
-$host2 = file_get_contents('./origin-files/hosts2');
-$arr_result = array_merge_recursive($arr_result, addressMaker::get_domain_list($host2));
-
-$host3 = file_get_contents('./origin-files/hosts3');
-$arr_result = array_merge_recursive($arr_result, addressMaker::get_domain_list($host3));
-
-$arr_result = array_merge_recursive($arr_result, $arr_blacklist);
+$hosts = file_get_contents('./origin-files/base-src-hosts.txt');
+$arr_result = array_merge_recursive($arr_result, addressMaker::get_domain_list($hosts));
 
 echo 'Written file size:';
 echo addressMaker::write_to_conf($arr_result, './adblock-for-dnsmasq.conf', 'q-filter.conf');
