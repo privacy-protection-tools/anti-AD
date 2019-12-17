@@ -74,7 +74,7 @@ class addressMaker {
                 continue;
             }
 
-            if(preg_match('/^\|\|([0-9a-z\-\.]+[a-z]+)[\^\$]*(image|third-party|script)?(,.+)?$/', $line, $matches)){
+            if(preg_match('/^\|\|([0-9a-z\-\.]+[a-z]+)[\^\$]*([\~0-9a-zA-Z\.\-_]+,)?(image|third-party|script)(,.+)?$/', $line, $matches)){
 
                 if(substr($matches[1], 0, 4) == 'www.'){
                     $row = substr($matches[1], 4);
