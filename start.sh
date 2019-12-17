@@ -39,6 +39,18 @@ if [ $? -ne 0 ];then
 fi
 
 
+echo '开始下载 easylist4...'
+curl -o ./origin-files/easylist4.txt --connect-timeout 60 \
+ -s \
+https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
+
+# shellcheck disable=SC2181
+if [ $? -ne 0 ];then
+	echo '下载失败，请重试'
+	exit 1
+fi
+
+
 echo '开始下载 hosts1...'
 curl -o ./origin-files/hosts1 --connect-timeout 60 \
  -s \
