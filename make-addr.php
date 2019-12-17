@@ -32,6 +32,6 @@ $arr_result = array_merge_recursive($arr_result, addressMaker::get_domain_list($
 $arr_result = array_merge_recursive($arr_result, $arr_blacklist);
 
 echo 'Written file size:';
-echo addressMaker::write_to_conf($arr_result, writerFormat::DNSMASQ);
+echo addressMaker::write_to_conf($arr_result, writerFormat::EASYLIST);
 
 
