@@ -31,7 +31,15 @@ $arr_result = array_merge_recursive($arr_result, addressMaker::get_domain_list($
 
 $arr_result = array_merge_recursive($arr_result, $arr_blacklist);
 
-echo 'Written file size:';
-echo addressMaker::write_to_conf($arr_result, writerFormat::DNSMASQ);
+$reflect = new ReflectionClass('writerFormat');
+
+$formatterList = $reflect->getConstants();
+$arr_output = array();
+
+foreach ($formatterList as $name => $formatObj){
+    $arr_output[] = '['. $name . ']' . addressMaker::write_to_conf($arr_result, $formatObj);
+}
+
+echo implode('---', $arr_output);
 
 
