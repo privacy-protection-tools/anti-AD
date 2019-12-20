@@ -11,12 +11,12 @@
 
 ### 2. AdGuardHome
 1. 进入AdGuardHome过滤器页面，选择添加过滤器
-2. 输入名称 `anti-AD`，url地址：`https://anti-ad.oss-cn-shanghai.aliyuncs.com/anti-ad-easylist.txt`
+2. 输入名称 `anti-AD`，url地址：`https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt`
 3. 点击确认后即生效
 
 ### 3. Pi-Hole
 1. 进入Pi-Hole的配置界面
-2. 添加 `https://anti-ad.oss-cn-shanghai.aliyuncs.com/anti-ad-easylist.txt` 作为新的过滤器
+2. 添加 `https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt` 作为新的过滤器
 3. 保存后生效
 
 ## Changelog
