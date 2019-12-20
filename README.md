@@ -1,6 +1,6 @@
 # anti-AD v4
 
-##### anti-AD是综合著名广告过滤列表的高效广告屏蔽、隐私保护工具。能主动探测域名，支持国内外广告分开屏蔽，现已支持AdGuardHome，dnsmasq， Surge，Pi-Hole等
+##### anti-AD是综合著名广告过滤列表的高效广告屏蔽、隐私保护工具。能主动探测域名，支持国内外广告分开屏蔽，现已支持AdGuardHome，dnsmasq， Surge，Pi-Hole等优秀的网络组件。
 
 ## 快速使用
 
