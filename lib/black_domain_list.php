@@ -5,6 +5,7 @@
 //对于个性化屏蔽的域名，全部移动到block_domains.root.conf中管理
 
 return array(
+    'f2pool.com' => array('openvpn.f2pool.com'),
     'gepush.com' => array('gepush.com'),
     'cnzz.com' => array('cnzz.com'),
     'cnzz.net' => array('cnzz.net'),
