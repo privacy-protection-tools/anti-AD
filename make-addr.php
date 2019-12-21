@@ -9,43 +9,37 @@
  *
  */
 
+define('ROOT_DIR', __DIR__ . '/');
 set_time_limit(600);
-
 error_reporting(0);
 
 if(PHP_SAPI != 'cli'){
 	die('nothing.');
 }
-require('./lib/addressMaker.class.php');
-$arr_blacklist = require('./lib/black_domain_list.php');
-$arr_whitelist = require('./lib/white_domain_list.php');
 
+require ROOT_DIR . 'lib/writerFormat.class.php';
+require ROOT_DIR . 'lib/addressMaker.class.php';
+$arr_blacklist = require ROOT_DIR . 'lib/black_domain_list.php';
+$arr_whitelist = require ROOT_DIR . 'lib/white_domain_list.php';
 
 $arr_result = array();
+$easylist = file_get_contents('./origin-files/base-src-easylist.txt');
+$arr_result = array_merge_recursive($arr_result, addressMaker::get_domain_from_easylist($easylist));
 
-
-$easylist1 = file_get_contents('./origin-files/easylistchina+easylist.txt');
-$arr_result = array_merge_recursive($arr_result, addressMaker::get_domain_from_easylist($easylist1));
-
-$easylist2 = file_get_contents('./origin-files/cjx-annoyance.txt');
-$arr_result = array_merge_recursive($arr_result, addressMaker::get_domain_from_easylist($easylist2));
-
-$easylist3 = file_get_contents('./origin-files/fanboy-annoyance.txt');
-$arr_result = array_merge_recursive($arr_result, addressMaker::get_domain_from_easylist($easylist3));
-
-
-$host1 = file_get_contents('./origin-files/hosts1');
-$arr_result = array_merge_recursive($arr_result, addressMaker::get_domain_list($host1));
-
-$host2 = file_get_contents('./origin-files/hosts2');
-$arr_result = array_merge_recursive($arr_result, addressMaker::get_domain_list($host2));
-
-$host3 = file_get_contents('./origin-files/hosts3');
-$arr_result = array_merge_recursive($arr_result, addressMaker::get_domain_list($host3));
+$hosts = file_get_contents('./origin-files/base-src-hosts.txt');
+$arr_result = array_merge_recursive($arr_result, addressMaker::get_domain_list($hosts));
 
 $arr_result = array_merge_recursive($arr_result, $arr_blacklist);
 
-echo 'Written file size:';
-echo addressMaker::write_to_conf($arr_result, './adblock-for-dnsmasq.conf', 'q-filter.conf');
+$reflect = new ReflectionClass('writerFormat');
+
+$formatterList = $reflect->getConstants();
+$arr_output = array();
+
+foreach ($formatterList as $name => $formatObj){
+    $arr_output[] = '['. $name . ']' . addressMaker::write_to_conf($arr_result, $formatObj);
+}
+
+echo implode('---', $arr_output);
 
 

@@ -8,10 +8,11 @@
  *
  *
  */
-
+!defined('ROOT_DIR') && die('Access Denied.');
 
 class addressMaker {
 
+    const LINK_URL = 'https://github.com/privacy-protection-tools/anti-AD';
     /**
      * 分离域名
      *
@@ -37,8 +38,8 @@ class addressMaker {
         $str_reg .= ')';
 
         $str_reg .= '(\.cn|\.hk|\.tw|\.uk|\.jp|\.kr|\.th|\.au|\.ua|\.so|\.br|\.sg|\.pt|\.ec|\.ar|\.my|\.tr|\.bd|\.mk|\.za|\.mt)?)$/';
-        if(preg_match($str_reg, $str_domain, $matchs)){
-            return strval($matchs[1]);
+        if(preg_match($str_reg, $str_domain, $matches)){
+            return strval($matches[1]);
         }
 
         return "";
@@ -73,15 +74,15 @@ class addressMaker {
                 continue;
             }
 
-            if(preg_match('/^\|\|([0-9a-z\-\.]+[a-z]+)[\^\$]*(image|third-party|script)?$/', $line, $matchs)){
+            if(preg_match('/^\|\|([0-9a-z\-\.]+[a-z]+)\^(\$([^=]+?,)?(image|third-party|script)(,[^=]+)?)?$/', $line, $matches)){
 
-                if(substr($matchs[1], 0, 4) == 'www.'){
-                    $row = substr($matchs[1], 4);
+                if(substr($matches[1], 0, 4) == 'www.'){
+                    $row = substr($matches[1], 4);
                 }else{
-                    $row = $matchs[1];
+                    $row = $matches[1];
                 }
 
-                $arr_domains[self::extract_main_domain($matchs[1])][] = $row;
+                $arr_domains[self::extract_main_domain($matches[1])][] = $row;
             }
         }
 
@@ -96,7 +97,7 @@ class addressMaker {
      */
     public static function get_domain_list($str_hosts){
         $strlen = strlen($str_hosts);
-        if($strlen < 10){
+        if($strlen < 3){
             return array();
         }
 
@@ -123,18 +124,22 @@ class addressMaker {
             if(strpos($row[1], '.') === false){
                 continue;
             }
-
             $arr_domains[self::extract_main_domain($row[1])][] = $row[1];
         }
 
         return $arr_domains;
     }
 
-    public static function write_to_conf($arr_result, $str_file){
+    private static function write_conf_header($fp, $header){
+        $header = str_replace('{DATE}', date('YmdHis'), $header);
+        $header = str_replace('{URL}', self::LINK_URL, $header);
+        return fwrite($fp, $header);
+    }
 
-        $fp = fopen($str_file, 'w');
-        $write_len = fwrite($fp, '#TIME=' . date('YmdHis') . "\n");
-        $write_len += fwrite($fp, '#URL=https://github.com/gentlyxu/anti-AD' . "\n");
+    public static function write_to_conf($arr_result, $formatObj){
+
+        $fp = fopen(ROOT_DIR . $formatObj['filename'], 'w');
+        $write_len = self::write_conf_header($fp, $formatObj['header']);
 
         foreach($arr_result as $rk => $rv){
 
@@ -143,7 +148,7 @@ class addressMaker {
             }
 
             if(empty($rk)){//遗漏的域名，不会写入到最终的配置里
-                // print_r($rv);
+//                print_r($rv);
                 continue;
             }
 
@@ -151,14 +156,14 @@ class addressMaker {
                 if(array_key_exists($rv, $GLOBALS['arr_whitelist'])){//单个域名的白名单检查
                     continue;
                 }
-                $write_len += fwrite($fp, 'address=/' . $rv . '/' . "\n");
+                $write_len += fwrite($fp, str_replace('{DOMAIN}', $rv, $formatObj['format']) . "\n");
                 continue;
             }
 
             $rv = array_unique($rv);
 
             if(in_array('.' . $rk, $rv) || in_array('www.' . $rk, $rv) || in_array($rk, $rv)){
-                $write_len += fwrite($fp, 'address=/' . $rk . '/' . "\n");
+                $write_len += fwrite($fp, str_replace('{DOMAIN}', $rk, $formatObj['format']) . "\n");
                 continue;
             }
 
@@ -181,7 +186,7 @@ class addressMaker {
                                 if(array_key_exists(implode('.', $tmp_arr2), $GLOBALS['arr_whitelist'])){
                                     continue;
                                 }
-                                $write_len += fwrite($fp, 'address=/' . implode('.', $tmp_arr2) . '/' . "\n");
+                                $write_len += fwrite($fp, str_replace('{DOMAIN}', implode('.', $tmp_arr2), $formatObj['format']) . "\n");
                             }
                             $written_flag = true;
                             break;
@@ -194,7 +199,7 @@ class addressMaker {
                 }
 
                 $arr_written[] = $rvv;
-                $write_len += fwrite($fp, 'address=/' . $rvv . '/' . "\n");
+                $write_len += fwrite($fp, str_replace('{DOMAIN}', $rvv, $formatObj['format']) . "\n");
             }
         }
 

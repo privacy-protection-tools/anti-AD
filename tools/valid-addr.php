@@ -52,13 +52,14 @@ $r = new Net_DNS2_Resolver(array('nameservers' => array('223.5.5.5', '223.6.6.6'
 
 $src_fp = fopen($src_file, 'r');
 
+$cnt = 0;
+
 while(!feof($src_fp)){
     $row = fgets($src_fp, 512);
+    echo '[', date('m-d H:i:s'), '],', ++$cnt, "\n";
     if(empty($row)){
         continue;
     }
-
-    echo $row;
 
     if(preg_match('/^address=\/(.+)?\/$/', $row, $matches)){
         try{

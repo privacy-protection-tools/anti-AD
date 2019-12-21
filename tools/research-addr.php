@@ -46,12 +46,12 @@ if(count($arr_china_list) <= 0 && count($arr_dead_horse) <= 0){
 $black_list = require LIB_DIR . '/black_domain_list.php';
 
 $src_fp = fopen(SRC_FILE, 'r');
-$basic_fp = fopen(DIST_DIR . '/anti-ad-basic.conf', 'w');
-$full_fp = fopen(DIST_DIR . '/anti-ad-full.conf', 'w');
+$basic_fp = fopen(DIST_DIR . '/anti-ad-dnsmasq-basic.conf', 'w');
+$full_fp = fopen(DIST_DIR . '/anti-ad-dnsmasq-full.conf', 'w');
 $write_len = fwrite($basic_fp, '#TIME=' . date('YmdHis') . "\n");
-$write_len += fwrite($basic_fp, '#URL=https://github.com/gentlyxu/anti-AD' . "\n");
+$write_len += fwrite($basic_fp, '#URL=https://github.com/privacy-protection-tools/anti-AD' . "\n");
 $write_len = fwrite($full_fp, '#TIME=' . date('YmdHis') . "\n");
-$write_len += fwrite($full_fp, '#URL=https://github.com/gentlyxu/anti-AD' . "\n");
+$write_len += fwrite($full_fp, '#URL=https://github.com/privacy-protection-tools/anti-AD' . "\n");
 
 while(!feof($src_fp)){
     $row = fgets($src_fp, 512);
