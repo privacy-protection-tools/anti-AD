@@ -29,9 +29,9 @@
 ## jsDelivr镜像
 
 感谢 [@rufengsuixing](https://github.com/rufengsuixing) 的建议
-1. `adblock-for-dnsmasq.conf`: https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD/adblock-for-dnsmasq.conf
-2. `anti-ad-easylist.txt`: https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD/anti-ad-easylist.txt
-3. `anti-ad-surge.txt`: https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD/anti-ad-surge.txt
+1. `adblock-for-dnsmasq.conf`: https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD@master/adblock-for-dnsmasq.conf
+2. `anti-ad-easylist.txt`: https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD@master/anti-ad-easylist.txt
+3. `anti-ad-surge.txt`: https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD@master/anti-ad-surge.txt
 
 
 ## 个性化
