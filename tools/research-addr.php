@@ -49,9 +49,9 @@ $src_fp = fopen(SRC_FILE, 'r');
 $basic_fp = fopen(DIST_DIR . '/anti-ad-dnsmasq-basic.conf', 'w');
 $full_fp = fopen(DIST_DIR . '/anti-ad-dnsmasq-full.conf', 'w');
 $write_len = fwrite($basic_fp, '#TIME=' . date('YmdHis') . "\n");
-$write_len += fwrite($basic_fp, '#URL=https://github.com/gentlyxu/anti-AD' . "\n");
+$write_len += fwrite($basic_fp, '#URL=https://github.com/privacy-protection-tools/anti-AD' . "\n");
 $write_len = fwrite($full_fp, '#TIME=' . date('YmdHis') . "\n");
-$write_len += fwrite($full_fp, '#URL=https://github.com/gentlyxu/anti-AD' . "\n");
+$write_len += fwrite($full_fp, '#URL=https://github.com/privacy-protection-tools/anti-AD' . "\n");
 
 while(!feof($src_fp)){
     $row = fgets($src_fp, 512);
