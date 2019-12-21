@@ -11,16 +11,29 @@
 
 ## 快速使用
 
-1. 下载[adblock-for-dnsmasq.conf](https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/adblock-for-dnsmasq.conf), 保存到你的dnsmasq配置的正确目录下；
+### 1. dnsmasq
+1. 下载[adblock-for-dnsmasq.conf](https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/adblock-for-dnsmasq.conf) ([jsDelivr加速](https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD/adblock-for-dnsmasq.conf)), 保存到你的dnsmasq配置的正确目录下；
 2. 重启dnsmasq服务；
 3. 已经生效了，enjoy it！
 
+### 2. AdGuardHome
+1. 进入AdGuardHome过滤器页面，选择添加过滤器
+2. 输入名称 `anti-AD`，url地址：`https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt`([jsDelivr加速](https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD/anti-ad-easylist.txt))
+3. 点击确认后即生效
 ## jsDelivr镜像(测试加速效果不错)
+
+### 3. Pi-Hole
+1. 进入Pi-Hole的配置界面
+2. 添加 `https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt`([jsDelivr加速](https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD/anti-ad-easylist.txt)) 作为新的过滤器
+3. 保存后生效
+
+## jsDelivr镜像(经测试加速效果不错)
 
 感谢 [@rufengsuixing](https://github.com/rufengsuixing) 的建议
 1. `adblock-for-dnsmasq.conf`: https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD/adblock-for-dnsmasq.conf
 2. `anti-ad-easylist.txt`: https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD/anti-ad-easylist.txt
 3. `anti-ad-surge.txt`: https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD/anti-ad-surge.txt
+
 
 ## 个性化
 
