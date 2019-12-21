@@ -12,3 +12,7 @@ sed -E 's/address=\/(.+)?\//DOMAIN-SUFFIX,\1,REJECT/g' anti-ad-dnsmasq-basic.con
 sed -E 's/address=\/(.+)?\//DOMAIN-SUFFIX,\1,REJECT/g' anti-ad-dnsmasq-full.conf >anti-ad-surge-full.txt
 sed -i '3 i [RULE]' anti-ad-surge-basic.txt
 sed -i '3 i [RULE]' anti-ad-surge-full.txt
+
+cd ../tools
+
+rm -f std-split-tmp-list_*.out
