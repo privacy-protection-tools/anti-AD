@@ -17,5 +17,6 @@ return array(
 	'gvt3.com'							=> true,
 	'wangbase.com'						=> true,
 	'l.qq.com'							=> true, //解决腾讯视频无法播放
+	'dldir1.qq.com'					=> true, //qq下载安装包路径
 	'g.csdnimg.cn'						=> true, //csdn阅读更多
 );
