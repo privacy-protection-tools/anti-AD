@@ -118,6 +118,7 @@ return array(
     'getui.net' => array('getui.net'),
     'ebjvu.cn' => array('ebjvu.cn'),
     'jumei.com' => array('adxapi.jumei.com', 'sd.int.jumei.com', 'sd.jumei.com'),
+    'musical.ly' => array('applog.musical.ly'),
 
     '011211.cn' => array('.011211.cn'),
     '013572.cn' => array('.013572.cn'),
