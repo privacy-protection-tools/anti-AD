@@ -42,7 +42,7 @@ fi
 echo '开始下载 easylist4...'
 curl -o ./origin-files/easylist4.txt --connect-timeout 60 \
  -s \
-https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
+http://tools.yiclear.com/ChinaList2.0.txt
 
 # shellcheck disable=SC2181
 if [ $? -ne 0 ];then
