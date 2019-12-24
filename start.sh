@@ -98,7 +98,7 @@ cat easylist*.txt | grep -E "^@@\|\|?[^\^=\/:]+?\^[^\/=\*]+?$" | sort | uniq >wh
 cd ../
 
 PHP_RET=$(/usr/local/php/bin/php make-addr.php)
-
+/usr/local/php/bin/php tools/easylist-extend.php anti-ad-easylist.txt
 git add -A adblock-for-dnsmasq.conf origin-files/*
 git commit -am "auto commit. script output--- $PHP_RET"
 git push --force
