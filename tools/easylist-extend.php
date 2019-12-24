@@ -53,7 +53,7 @@ if(!is_file(WILDCARD_SRC) || !is_file(WHITERULE_SRC)){
 
 $src_fp = fopen($src_file, 'r');
 $wild_fp = fopen(WILDCARD_SRC, 'r');
-$new_fp = fopen($src_file . '.war', 'w');
+$new_fp = fopen($src_file . '.txt', 'w');
 
 $wrote_wild = array();
 $arr_wild_src = array();
@@ -103,13 +103,27 @@ while(!feof($src_fp)){
     fwrite($new_fp, $row);
 }
 
-try{
-    //TODO 白名单匹配优化条数，当前是全部写入
-    fwrite($new_fp, file_get_contents(WHITERULE_SRC));
-    fclose($src_fp);
-    fclose($new_fp);
-
-    echo 'Time cost:', microtime(true) - START_TIME, "s, at ", date('m-d H:i:s'), "\n";
-}catch(Exception $e){
-    echo date('m-d H:i:s'), "write file failed:", $e->getMessage(), "\t", $e->getCode(), "\n";
+//按需写入白名单规则
+$whiterule_fp = fopen(WHITERULE_SRC, 'r');
+while(!feof($whiterule_fp)){
+    $row = fgets($whiterule_fp, 1024);
+    if(empty($row) || $row{0} !== '@' || $row{1} !== '@'){
+        continue;
+    }
+    $matches = array();
+    if(!preg_match('/@@\|\|([0-9a-z\.\-\*]+?)\^/', $row, $matches)){
+        continue;
+    }
+    foreach($wrote_wild as $core_str => $val){
+        $match_rule = str_replace('*', '.*', $core_str);
+        if(preg_match("/\|${match_rule}\^/", $row)){
+            fwrite($new_fp, "@@||${matches[1]}^");
+        }
+    }
 }
+
+fclose($src_fp);
+fclose($new_fp);
+fclose($whiterule_fp);
+var_dump(rename($src_file . '.txt', $src_file));
+echo 'Time cost:', microtime(true) - START_TIME, "s, at ", date('m-d H:i:s'), "\n";
