@@ -91,7 +91,9 @@ cat hosts* | grep -v -E "^((#.*)|(\s*))$" \
  | sed s/0.0.0.0/127.0.0.1/g | sed s/::/127.0.0.1/g | sort \
  | uniq >base-src-hosts.txt
 
-cat easylist*.txt | grep -E "^\|\|[^\^]+\^.*$" | sort | uniq >base-src-easylist.txt
+cat easylist*.txt | grep -E "^\|\|[^\*\^]+?\^" | sort | uniq >base-src-easylist.txt
+cat easylist*.txt | grep -E "^\|\|?[^\^=\/:]+?\*[^\^=\/:]+?\^" | sort | uniq >wildcard-src-easylist.txt
+cat easylist*.txt | grep -E "^@@\|\|?[^\^=\/:]+?\^[^\/=\*]+?$" | sort | uniq >whiterule-src-easylist.txt
 
 cd ../
 
