@@ -1,6 +1,6 @@
 # anti-AD change log
 #### v4.1 (未发布)
-- easylist针对性优化，提取仍然存在的重复部分，抽象出模糊匹配、正则匹配
+- easylist针对性优化，支持通配符匹配，提升匹配效率
 - easylist列表引入白名单支持
 - 优化主动探测dns查询的效率
 - 待主动探测功能稳定后将开启自动push到github上
