@@ -51,6 +51,7 @@ return array(
     'kankan.com' => array('cpm.cm.kankan.com', 'float.kankan.com', 'stat.kankan.com'),
     'oadz.com' => array('oadz.com'),
     'dopa.com' => array('dopa.com'),
+    'dopa.com.cn' => array('dopa.com.cn'),
     'ok365.com' => array('ok365.com'),
     'adwo.com' => array('adwo.com'),
     'doubleclick.net' => array('doubleclick.net'),

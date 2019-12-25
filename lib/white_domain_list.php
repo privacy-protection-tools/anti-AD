@@ -6,9 +6,9 @@
 return array(
 
     'cdn-thumb.fds.api.xiaomi.com' => true,
-    '.cdn-thumb.fds.api.xiaomi.com' => true,
     'bce.baidu.com' => true,
     'b.bdstatic.com' => true,
+    'gss0.bdstatic.com' => true, //百度贴吧头像
     'googleadapis.l.google.com' => true, //解决google字体下载异常
     'gstaticadssl.l.google.com' => true, //解决google字体下载异常
     'gvt10.com' => true,
@@ -18,7 +18,7 @@ return array(
     'wangbase.com' => true,
     'l.qq.com' => true, //解决腾讯视频无法播放
     'dldir1.qq.com' => true, //qq下载安装包路径
-    'g.csdnimg.cn' => true, //csdn阅读更多
+    'cgi.connect.qq.com' => true, //qq互联
     'activate.adobe.com' => true,
     'ereg.adobe.com' => true,
     'hlrcv.stage.adobe.com' => true,
