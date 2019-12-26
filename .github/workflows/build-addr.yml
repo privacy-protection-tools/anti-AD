@@ -1,16 +1,26 @@
 name: Auto build new list
 
-on: 
+on:
   push:
-    branches: 
-      - dev
+    branches:
+      - master
   schedule:
     - cron: "1 13 */6 * *"
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
-    - name: Run start.sh
+    - uses: actions/checkout@master
+    - name: Run start-ci.sh
       run: |
-        ./start.sh
+        ./start-ci.sh
+    - name: Commit files
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git commit -m "Auto renew the anti-AD list." -a
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.PERSON_TOKEN }}
+        branch: 'master'
