@@ -1,4 +1,4 @@
-name: CI
+name: Auto build new list
 
 on: 
   push:
@@ -13,7 +13,4 @@ jobs:
     - uses: actions/checkout@v1
     - name: Run start.sh
       run: |
-        ls -l
-        pwd
-        php -v
-        echo test, and deploy your project.
+        ./start.sh
