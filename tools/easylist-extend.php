@@ -45,6 +45,7 @@ $ARR_MERGED_WILD_LIST = array(
     'gg*.51cto.com' => null,
     'log.*.hunantv.com' => null,
     '*.log.hunantv.com' => null,
+    'iflyad.*.openstorage.cn' => null,
 );
 
 if(PHP_SAPI != 'cli'){

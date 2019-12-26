@@ -109,6 +109,25 @@ return array(
         'ad.xiaomi.com',
         'admob.xiaomi.com',
     ),
+    'zhihu.com' => array(
+        'lc-push.zhihu.com',
+        'sugar.zhihu.com',
+        'appcloud2.in.zhihu.com',
+        'appcloud2.zhihu.com',
+        'zhihu-web-analytics.zhihu.com',
+
+    ),
+    'crashlytics.com' => array(
+        'crashlytics.com'
+    ),
+    'musical.ly' => array(
+        'log2.musical.ly',
+        'log.musical.ly',
+    ),
+    'adjust.com' => array(
+      'adjust.com'
+    ),
+
     'miui.com' => array('hot.browser.intl.miui.com', 'adv.sec.intl.miui.com'),
     'yuncheapp.cn' => array('client-log.yuncheapp.cn'),
     'mop.com' => array('motionlog.mop.com', 'ydadyunkong.mop.com', 'log.mop.com'),
