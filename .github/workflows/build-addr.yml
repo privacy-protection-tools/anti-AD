@@ -1,0 +1,19 @@
+name: CI
+
+on: 
+  push:
+    branches: 
+      - dev
+  schedule:
+    - cron: "1 13 */6 * *"
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run start.sh
+      run: |
+        ls -l
+        pwd
+        php -v
+        echo test, and deploy your project.
