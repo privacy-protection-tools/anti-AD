@@ -146,7 +146,7 @@ return array(
         'appcloud2.in.zhihu.com',
         'appcloud2.zhihu.com',
         'zhihu-web-analytics.zhihu.com',
-
+        'event.zhihu.com',
     ),
     'crashlytics.com' => array(
         'crashlytics.com'
