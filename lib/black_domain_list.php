@@ -12,8 +12,35 @@ return array(
     'cnzz.cn' => array('cnzz.cn'),
     'inmobi.cn' => array('inmobi.cn'),
     'aliapp.org' => array('aliapp.org'),
-    'snssdk.com' => array('is.snssdk.com', 'bds.snssdk.com', 'xlog.snssdk.com'),
-    'qq.com' => array('bugly.qq.com', 'openmsf.3g.qq.com', 'mtrace.qq.com', 'btrace.qq.com', 'mark.l.qq.com'),
+    'snssdk.com' => array(
+        'is.snssdk.com',
+        'bds.snssdk.com',
+        'xlog.snssdk.com'
+    ),
+    '51togic.com' => array(
+        'customstat.video.51togic.com',
+        'ad.video.51togic.com',
+        'backup.customstat.video.51togic.com',
+
+    ),
+    'qq.com' => array(
+        'bugly.qq.com',
+        'openmsf.3g.qq.com',
+        'mtrace.qq.com',
+        'btrace.qq.com',
+        'mark.l.qq.com',
+        'report.qq.com',
+        'rcgi.video.qq.com',
+    ),
+    'alibaba.com' => array(
+        'fourier.alibaba.com'
+    ),
+    'openstorage.cn' => array(
+        'iflyad.bjb.openstorage.cn'
+    ),
+    'cmpassport.com' => array(
+        'log1.cmpassport.com'
+    ),
     'analysys.cn' => array('analysys.cn'),
     'aliyuncs.com' => array('log.aliyuncs.com'),
     'mob.com' => array('mob.com'),
@@ -91,7 +118,11 @@ return array(
     'cruisingsmallship.com' => array('.cruisingsmallship.com', 'cruisingsmallship.com'),
     'frost-electric-supply.com' => array('.frost-electric-supply.com', 'frost-electric-supply.com'),
     'iptvdeals.com' => array('iptvdeals.com'),
-    'baidu.com' => array('tuisong.baidu.com'),
+    'baidu.com' => array(
+        'tuisong.baidu.com',
+        'ada.baidu.com',
+        'mbd.baidu.com',
+        ),
     'youdao.com' => array('corp.youdao.com'),
     'crsspxl.com' => array('crsspxl.com'),
     'talkingdata.net' => array('talkingdata.net'),
