@@ -15,7 +15,7 @@ return array(
     'gvt1.com' => true,
     'gvt2.com' => true,
     'gvt3.com' => true,
-    'wangbase.com' => true,
+    'wangbase.com' => true, //阮一峰同志的博客图片显示
     'l.qq.com' => true, //解决腾讯视频无法播放
     'dldir1.qq.com' => true, //qq下载安装包路径
     'cgi.connect.qq.com' => true, //qq互联
