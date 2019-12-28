@@ -120,8 +120,6 @@ return array(
     'iptvdeals.com' => array('iptvdeals.com'),
     'baidu.com' => array(
         'tuisong.baidu.com',
-        'ada.baidu.com',
-        'mbd.baidu.com',
         ),
     'youdao.com' => array('corp.youdao.com'),
     'crsspxl.com' => array('crsspxl.com'),
