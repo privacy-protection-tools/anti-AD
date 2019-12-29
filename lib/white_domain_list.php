@@ -23,6 +23,7 @@ return array(
     'wup.imtt.qq.com' => true, //qq浏览器书签
     'pacaio.match.qq.com' => true, //腾讯网qq登录
     'gia.jd.com' => true, //京东滑动验证码
+    'edge.yunjiasu.com' => true, //百度云加速javascript快速加载功能
 
 
     'activate.adobe.com' => true,
