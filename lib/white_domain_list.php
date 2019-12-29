@@ -19,6 +19,9 @@ return array(
     'l.qq.com' => true, //解决腾讯视频无法播放
     'dldir1.qq.com' => true, //qq下载安装包路径
     'cgi.connect.qq.com' => true, //qq互联
+    'stdl.qq.com' => true, //qq浏览器
+    'wup.imtt.qq.com' => true, //qq浏览器书签
+    'pacaio.match.qq.com' => true, //腾讯网qq登录
     'gia.jd.com' => true, //京东滑动验证码
 
 
