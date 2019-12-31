@@ -152,10 +152,22 @@ return array(
     'musical.ly' => array(
         'log2.musical.ly',
         'log.musical.ly',
+        'applog.musical.ly',
     ),
     'adjust.com' => array(
       'adjust.com'
     ),
+    'kuyun.com' => array(
+        'kuyun.com'
+    ),
+    'amazon.com' => array(
+        'device-messaging-na.amazon.com',
+        'todo-ta-g7g.amazon.com',
+    ),
+    'shareinstall.com.cn' => array(
+        'shareinstall.com.cn' //移动广告商
+    ),
+
 
     'miui.com' => array('hot.browser.intl.miui.com', 'adv.sec.intl.miui.com'),
     'yuncheapp.cn' => array('client-log.yuncheapp.cn'),
@@ -173,7 +185,7 @@ return array(
     'getui.net' => array('getui.net'),
     'ebjvu.cn' => array('ebjvu.cn'),
     'jumei.com' => array('adxapi.jumei.com', 'sd.int.jumei.com', 'sd.jumei.com'),
-    'musical.ly' => array('applog.musical.ly'),
+
 
     '011211.cn' => array('.011211.cn'),
     '013572.cn' => array('.013572.cn'),
