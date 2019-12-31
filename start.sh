@@ -42,7 +42,7 @@ fi
 echo '开始下载 easylist4...'
 curl -o ./origin-files/easylist4.txt --connect-timeout 60 \
  -s \
-http://tools.yiclear.com/ChinaList2.0.txt
+https://easylist.to/easylist/easyprivacy.txt
 
 # shellcheck disable=SC2181
 if [ $? -ne 0 ];then
