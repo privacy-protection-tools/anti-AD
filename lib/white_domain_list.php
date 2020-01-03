@@ -24,6 +24,7 @@ return array(
     'pacaio.match.qq.com' => true, //腾讯网qq登录
     'gia.jd.com' => true, //京东滑动验证码
     'edge.yunjiasu.com' => true, //百度云加速javascript快速加载功能
+    'cd.bendibao.com' => true, //成都本地宝
 
 
     'activate.adobe.com' => true,
