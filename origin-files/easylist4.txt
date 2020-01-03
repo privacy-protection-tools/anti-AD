@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202001011207
+! Version: 202001030922
 ! Title: EasyPrivacy
-! Last modified: 01 Jan 2020 12:07 UTC
+! Last modified: 03 Jan 2020 09:22 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -348,6 +348,7 @@
 /?livehit=
 /?mob.ct=
 /?record&key=
+/?swift-performance-tracking
 /_/lite/performance/*
 /__analytics/*
 /__dam.gif?
@@ -657,6 +658,7 @@
 /analytics/collector/*
 /analytics/content?
 /analytics/core.
+/analytics/data-
 /analytics/dealerfire/*
 /analytics/dfa.
 /analytics/dist/*
@@ -740,6 +742,7 @@
 /analytics_www.
 /AnalyticsEvent.
 /analyticsfeed.ashx?
+/analyticsFooter.
 /analyticsid.
 /analyticsjs.
 /analyticsjs/*
@@ -822,6 +825,7 @@
 /aspenanalytics.
 /aspstats/index.asp?
 /assets/analytics-
+/assets/analytics.
 /assets/analytics:
 /assets/beacons.js
 /assets/tracking-
@@ -1262,6 +1266,7 @@
 /collect.php?data=
 /collect/kf?
 /collect/pageview?
+/collect/sdk?
 /collect/stats?
 /collect/tracking.
 /collect?*&cid=
@@ -1417,6 +1422,7 @@
 /crmTracking.
 /cross-domain-cookie?
 /cross_pixels.
+/CrossDomainTracking/*
 /crtracker.
 /cs_api/log
 /CSAdobeTracking.
@@ -1490,6 +1496,7 @@
 /di-tealium.
 /Diagnostics?hit=
 /didna-pixel-
+/digital-data-enrichment.
 /digitalice_tag.js
 /dil_v6.4.js
 /disp_cnt.
@@ -1956,6 +1963,7 @@
 /global_analytics.
 /global_tracking.js
 /globalpagetracking.js
+/glogger.js
 /gmasst.gif?guid=
 /gn_analytics.
 /gn_tracking.
@@ -2752,6 +2760,7 @@
 /netupdate/live.php?
 /NetworkTracking.
 /neustar.beacon.
+/new-relic.
 /new.cnt.aspx?
 /newlog.php?
 /newrelic-gpt.
@@ -4070,6 +4079,7 @@
 /tracker/tracker-$domain=~bugs.chromium.org
 /tracker/tracker.js
 /tracker/trackView?
+/tracker/visitor/*
 /tracker2.js
 /tracker?*=
 /tracker_activityStream.
@@ -5502,6 +5512,7 @@ _mongo_stats/
 ||beusable.net^$third-party
 ||bfmio.com^$third-party
 ||bfoleyinteractive.com^$third-party
+||bgpng.me^$third-party
 ||bidr.io^$third-party
 ||bidswitch.net^$third-party
 ||bigcattracks.com^$third-party
@@ -7288,6 +7299,7 @@ _mongo_stats/
 ||sophi.io^$third-party
 ||sophus3.com^$third-party
 ||soska.us^$third-party
+||sp-prod.net^$third-party
 ||spamanalyst.com^$third-party
 ||spectate.com^$third-party
 ||speed-trap.com^$third-party
@@ -7812,6 +7824,7 @@ _mongo_stats/
 ||ybotvisit.com^$third-party
 ||ycctrk.co.uk^$third-party
 ||yellowbrix.com^$third-party
+||yext-pixel.com^$third-party
 ||ygsm.com^$third-party
 ||yieldbot.com^$third-party
 ||yieldify.com^$third-party
@@ -10790,7 +10803,7 @@ _mongo_stats/
 ||inq.com/tagserver/tracking/
 ||inq.com^*/onEvent?_
 ||insight.mintel.com^$third-party
-||insight.rapid7.com^
+||insight.rapid7.com^$third-party
 ||insights.gravity.com^
 ||insights.plista.com^$third-party
 ||insitez.blob.core.windows.net^
@@ -12926,6 +12939,7 @@ _mongo_stats/
 ||amazonaws.com^*/pzyche.js
 ||amcnets.com/cgi-bin/true-ip.cgi
 ||amd.com/us/as/vwo/vwo_
+||americanexpress.com/monitoring/
 ||amp.virginmedia.com^
 ||amy.gs/track/
 ||analysis.focalprice.com^
@@ -13922,6 +13936,8 @@ _mongo_stats/
 ||klout.com/ka.js
 ||knoxnews.com/metrics/
 ||kodakgallery.com^*/analytics_
+||kohls.com/_bm/_data
+||kohls.com/test_rum?
 ||kosmix.com^*.txt?pvid=
 ||kyte.tv/flash/MarbachMetricsOmniture.swf
 ||kyte.tv/flash/MarbachMetricsProvider.swf
@@ -14153,6 +14169,7 @@ _mongo_stats/
 ||my.com/v1/hit/
 ||myanimelist.net/static/logging.html
 ||mydirtyhobby.com/tracker
+||myfinance.com/api/au?
 ||myfitnesspal.com/assets/mfp_localytics.js
 ||mypaydayloan.com/setc.asp?
 ||mypoints.com/js/*ga.js?
@@ -15496,6 +15513,7 @@ _mongo_stats/
 ||cmp.pcworld.idg.com.au^
 ||cmp.techadvisor.co.uk^
 ||cmp.techhive.com^
+||commsvc.stern.de^
 ||eurogamer-uk.eurogamer.net^
 ||gazette-news-gb.gazette-news.co.uk^
 ||h-bid.com^$third-party
@@ -16902,6 +16920,8 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||cloudfront.net/opentag-*.js$domain=telegraph.co.uk
 @@||cloudfront.net^*/comscore.$script,domain=my5.tv
 @@||cloudfront.net^*/VisitorAPI.js$domain=financialpost.com
+@@||connect.squareup.com/payments/analytics/frame.html$subdocument
+@@||connect.squareupsandbox.com/payments/analytics/frame.html$subdocument
 @@||constantcontact.com/js/WebTracking/
 @@||coral-talk.ext.nile.works/talk/static/embed.js$domain=washingtonpost.com
 @@||coremetrics.com*/eluminate.js
@@ -16980,6 +17000,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||juxtacommons.org^*/heatmap.js$domain=juxtacommons.org
 @@||kbb.com/static/js/global/app-measurement$script
 @@||kentucky.com/mistats/finalizestats.js
+@@||kohls.com/ecustservice/js/sitecatalyst.js$script,~third-party
 @@||legendstracking.com/js/legends-tracking.js
 @@||lexus.com/lexus-share/js/tracking_omn/$xmlhttprequest
 @@||lightningmaps.org^*/piwik.js
@@ -17287,6 +17308,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||codicefl.shinystat.com/cgi-bin/getserver.cgi?$script,domain=3bmeteo.com|quotidiano.net|radioitalia.it
 @@||ensighten.com^*/Bootstrap.js$domain=williamhill.it
 @@||google-analytics.com/analytics.js$domain=carnesvizzera.ch
+@@||googletagmanager.com/gtag/js$script,domain=timparty.tim.it
 @@||googletagmanager.com/gtm.js?$domain=iphoneitalia.com|la7.it
 @@||ilsole24ore.com^*/fingerprint2.min.js?
 @@||imrworldwide.com/novms/*/ggcm*.js$domain=la7.it|sky.it|video.corriere.it
