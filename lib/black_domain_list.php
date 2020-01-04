@@ -13,7 +13,6 @@ return array(
     'inmobi.cn' => array('inmobi.cn'),
     'aliapp.org' => array('aliapp.org'),
     'snssdk.com' => array(
-        'is.snssdk.com',
         'bds.snssdk.com',
         'xlog.snssdk.com'
     ),
@@ -170,8 +169,6 @@ return array(
 
 
     'miui.com' => array('hot.browser.intl.miui.com', 'adv.sec.intl.miui.com'),
-    'yuncheapp.cn' => array('client-log.yuncheapp.cn'),
-    'mop.com' => array('motionlog.mop.com', 'ydadyunkong.mop.com', 'log.mop.com'),
     'amap.com' => array('logs.amap.com'),
     'tt114.net' => array('tt114.net'),
     'ip138.com' => array('api.ip138.com', 'cache.ip138.com'),
