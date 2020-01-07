@@ -48,6 +48,7 @@ $ARR_MERGED_WILD_LIST = array(
     'iflyad.*.openstorage.cn' => null,
     '*customstat*.51togic.com' => null,
     'appcloud*.zhihu.com' => null,
+    'sf*-ttcdn-tos.pstatp.com' => null,
 );
 
 if(PHP_SAPI != 'cli'){

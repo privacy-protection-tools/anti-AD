@@ -22,6 +22,12 @@ return array(
         'backup.customstat.video.51togic.com',
 
     ),
+    'amazonaws.com' => array(
+        'checkip.amazonaws.com', //获取真实外网ip接口
+    ),
+    'irs03.com' => array(
+        'irs03.com',
+    ),
     'qq.com' => array(
         'bugly.qq.com',
         'openmsf.3g.qq.com',
