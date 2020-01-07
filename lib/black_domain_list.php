@@ -28,6 +28,9 @@ return array(
     'irs03.com' => array(
         'irs03.com',
     ),
+    'bcelive.com' => array(
+        'httpdns.bcelive.com', //一个不支持https的httpdns服务，并不能反制运营商劫持
+    ),
     'qq.com' => array(
         'bugly.qq.com',
         'openmsf.3g.qq.com',
