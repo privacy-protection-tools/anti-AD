@@ -49,6 +49,7 @@ $ARR_MERGED_WILD_LIST = array(
     '*customstat*.51togic.com' => null,
     'appcloud*.zhihu.com' => null,
     'sf*-ttcdn-tos.pstatp.com' => null,
+    'ad*.molitv.cn' => null,
 );
 
 if(PHP_SAPI != 'cli'){

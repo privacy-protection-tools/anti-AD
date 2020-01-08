@@ -17,10 +17,10 @@ if(PHP_SAPI != 'cli'){
 	die('nothing.');
 }
 
-require ROOT_DIR . 'lib/writerFormat.class.php';
-require ROOT_DIR . 'lib/addressMaker.class.php';
 $arr_blacklist = require ROOT_DIR . 'lib/black_domain_list.php';
 $arr_whitelist = require ROOT_DIR . 'lib/white_domain_list.php';
+require ROOT_DIR . 'lib/writerFormat.class.php';
+require ROOT_DIR . 'lib/addressMaker.class.php';
 
 $arr_result = array();
 $easylist = file_get_contents('./origin-files/base-src-easylist.txt');

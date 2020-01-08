@@ -183,7 +183,39 @@ return array(
         'banners.itunes.apple.com',
         'iad.apple.com',
     ),
-
+    '51y5.net' => array(
+        '51y5.net', //wifi万能钥匙的推广
+    ),
+    'com.com' => array(
+        'com.com', //来自ublock的规则，恶意域名 https://isc.sans.edu/diary/.COM.COM+Used+For+Malicious+Typo+Squatting/20019
+    ),
+    'consensu.org' => array(
+        'consensu.org', //广告网址，例如：https://vendorlist.consensu.org/vendorlist.json
+    ),
+    'dnvod.tv' => array(
+        'dnvod.tv', //官网显示 此域名已停止服务 游戏业务暂停运营
+    ),
+    'gentags.net' => array(
+        'gentags.net', //第三方监测，例如：clk.gentags.net
+    ),
+    'mydas.mobi' => array(
+        'mydas.mobi', //移动广告商
+    ),
+    'soarfi.cn' => array(
+        'soarfi.cn',
+    ),
+    'starwave.com' => array(
+        'starwave.com',
+    ),
+    'tradetracker.net' => array(
+        'tradetracker.net', //广告联盟
+    ),
+    'uol.com.br' => array(
+        'uol.com.br',
+    ),
+    'rambler.ru' => array(
+        'rambler.ru'
+    ),
 
     'miui.com' => array('hot.browser.intl.miui.com', 'adv.sec.intl.miui.com'),
     'amap.com' => array('logs.amap.com'),

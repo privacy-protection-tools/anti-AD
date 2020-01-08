@@ -52,7 +52,6 @@ return array(
     'activation.cyberlink.com' => true,
     'cap.cyberlink.com' => true,
     'activation.easeus.com' => true,
-    'track.easeus.com' => true,
     'upd.faronicslabs.com' => true,
     'backup.lumion3d.com' => true,
     'backup.lumion3d.net' => true,
@@ -67,5 +66,4 @@ return array(
     'binaryage-leechgate.herokuapp.com' => true,
     'updates-s3.binaryage.com' => true,
     'reg.wisecleaner.com' => true,
-    'cbs.wondershare.com' => true,
 );
