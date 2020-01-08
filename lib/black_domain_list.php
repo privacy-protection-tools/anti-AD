@@ -175,6 +175,14 @@ return array(
     'shareinstall.com.cn' => array(
         'shareinstall.com.cn' //移动广告商
     ),
+    'atianqi.com' => array(
+        'atianqi.com' //广东南方新媒体股份有限公司
+    ),
+    'apple.com' => array(
+        'iadsdk.apple.com',
+        'banners.itunes.apple.com',
+        'iad.apple.com',
+    ),
 
 
     'miui.com' => array('hot.browser.intl.miui.com', 'adv.sec.intl.miui.com'),
