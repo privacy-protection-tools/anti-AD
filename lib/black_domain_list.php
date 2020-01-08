@@ -31,6 +31,9 @@ return array(
     'bcelive.com' => array(
         'httpdns.bcelive.com', //一个不支持https的httpdns服务，并不能反制运营商劫持
     ),
+    'tencentmusic.com' => array(
+        'ad.tencentmusic.com',
+    ),
     'qq.com' => array(
         'bugly.qq.com',
         'openmsf.3g.qq.com',
@@ -221,7 +224,7 @@ return array(
     'amap.com' => array('logs.amap.com'),
     'tt114.net' => array('tt114.net'),
     'ip138.com' => array('api.ip138.com', 'cache.ip138.com'),
-    'taobao.com' => array('ip.taobao.com', 'fourier.taobao.com'),
+    'taobao.com' => array('ip.taobao.com', 'fourier.taobao.com', 'accscdn.m.taobao.com', 'acs.m.taobao.com', 'acs.wapa.taobao.com'),
     'aiclk.com' => array('aiclk.com'),
     '5ubei.com' => array('5ubei.com'),
     'jpush.cn' => array('jpush.cn'),
