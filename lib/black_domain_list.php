@@ -219,6 +219,24 @@ return array(
     'rambler.ru' => array(
         'rambler.ru'
     ),
+    'zhanzhang.net' => array(
+        'zhanzhang.net', //网络推广
+    ),
+    'adroll.com' => array(
+        'adroll.com', //广告商
+    ),
+    'cnbanbao.com' => array(
+        'cnbanbao.com', //网络推广
+    ),
+    '4u.pl' => array(
+        '4u.pl', //访问统计
+    ),
+    'qihoo.com' => array(
+        'qihoo.com', //广告联盟
+    ),
+    'redditmedia.com' => array(
+        'redditmedia.com', //用户追踪
+    ),
 
     'miui.com' => array('hot.browser.intl.miui.com', 'adv.sec.intl.miui.com'),
     'amap.com' => array('logs.amap.com'),

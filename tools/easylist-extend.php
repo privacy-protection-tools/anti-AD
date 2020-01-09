@@ -50,6 +50,9 @@ $ARR_MERGED_WILD_LIST = array(
     'appcloud*.zhihu.com' => null,
     'sf*-ttcdn-tos.pstatp.com' => null,
     'ad*.molitv.cn' => null,
+    'ads*-adnow.com' => null,
+    'aeros*.tk' => null,
+    'analyzer*.fc2.com' => null,
 );
 
 if(PHP_SAPI != 'cli'){
@@ -149,5 +152,5 @@ while(!feof($whiterule_fp)){
 fclose($src_fp);
 fclose($new_fp);
 fclose($whiterule_fp);
-var_dump(rename($src_file . '.txt', $src_file));
+rename($src_file . '.txt', $src_file);
 echo 'Time cost:', microtime(true) - START_TIME, "s, at ", date('m-d H:i:s'), "\n";
