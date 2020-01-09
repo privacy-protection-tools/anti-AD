@@ -14,7 +14,9 @@ return array(
     'aliapp.org' => array('aliapp.org'),
     'snssdk.com' => array(
         'bds.snssdk.com',
-        'xlog.snssdk.com'
+        'xlog.snssdk.com',
+        'i.snssdk.com',
+        'is.snssdk.com',
     ),
     '51togic.com' => array(
         'customstat.video.51togic.com',
@@ -239,6 +241,9 @@ return array(
     ),
     'minisplat.cn' => array(
         'minisplat.cn',
+    ),
+    'bdurl.net' => array(
+        'dig.bdurl.net', //数据收集
     ),
 
     'miui.com' => array('hot.browser.intl.miui.com', 'adv.sec.intl.miui.com'),
