@@ -258,7 +258,6 @@ return array(
     'jiguang.cn' => array('jiguang.cn'),
     'getui.com' => array('getui.com'),
     'getui.net' => array('getui.net'),
-    'ebjvu.cn' => array('ebjvu.cn'),
     'jumei.com' => array('adxapi.jumei.com', 'sd.int.jumei.com', 'sd.jumei.com'),
 
 
