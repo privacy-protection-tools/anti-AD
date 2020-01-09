@@ -53,7 +53,7 @@ fi
 echo '开始下载 hosts1...'
 curl -o ./origin-files/hosts1 --connect-timeout 60 \
  -s \
- https://hosts.nfz.moe/full/hosts
+ https://raw.githubusercontent.com/neoFelhz/neohosts/gh-pages/full/hosts.txt
 
 # shellcheck disable=SC2181
 if [ $? -ne 0 ];then
