@@ -40,6 +40,6 @@ foreach ($formatterList as $name => $formatObj){
     $arr_output[] = '['. $name . ']' . addressMaker::write_to_conf($arr_result, $formatObj);
 }
 
-echo implode('---', $arr_output);
+//echo implode('---', $arr_output);
 
 
