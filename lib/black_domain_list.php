@@ -237,6 +237,9 @@ return array(
     'redditmedia.com' => array(
         'redditmedia.com', //用户追踪
     ),
+    'minisplat.cn' => array(
+        'minisplat.cn',
+    ),
 
     'miui.com' => array('hot.browser.intl.miui.com', 'adv.sec.intl.miui.com'),
     'amap.com' => array('logs.amap.com'),
