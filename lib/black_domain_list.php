@@ -133,6 +133,11 @@ return array(
     'iptvdeals.com' => array('iptvdeals.com'),
     'baidu.com' => array(
         'tuisong.baidu.com',
+        'usp1.baidu.com',
+        'sync.mobojoy.baidu.com',
+        'api.mobojoy.baidu.com',
+        'js.mobojoy.baidu.com',
+        'plugin.mobopay.baidu.com',
         ),
     'youdao.com' => array('corp.youdao.com'),
     'crsspxl.com' => array('crsspxl.com'),
@@ -150,6 +155,7 @@ return array(
         'ad.intl.xiaomi.com',
         'ad.xiaomi.com',
         'admob.xiaomi.com',
+        'file.market.xiaomi.com',
     ),
     'zhihu.com' => array(
         'lc-push.zhihu.com',
@@ -245,8 +251,30 @@ return array(
     'bdurl.net' => array(
         'dig.bdurl.net', //数据收集
     ),
+    'id1.cn' => array(
+        'id1.cn', //钓鱼网站
+    ),
+    'ts166.net' => array(
+        'ts166.net', //广告联盟
+    ),
+    'unity3d.com' => array(//u3d广告平台
+        'unityads.unity3d.com',
+        'ads-game-configuration-master.ads.prd.ie.internal.unity3d.com',
+        'cdp.cloud.unity3d.com',
+        'data-optout-service.uca.cloud.unity3d.com',
+        'thind-gke-euw.prd.data.corp.unity3d.com',
+    ),
 
-    'miui.com' => array('hot.browser.intl.miui.com', 'adv.sec.intl.miui.com'),
+    'miui.com' => array(
+        'hot.browser.intl.miui.com',
+        'activity.browser.intl.miui.com',
+        'adv.sec.intl.miui.com',
+        'api.brs.intl.miui.com',
+        'api.newsfeed.intl.miui.com',
+    ),
+    'kingsoft-office-service.com' => array(
+        'abroad-ad.kingsoft-office-service.com',
+    ),
     'amap.com' => array('logs.amap.com'),
     'tt114.net' => array('tt114.net'),
     'ip138.com' => array('api.ip138.com', 'cache.ip138.com'),
