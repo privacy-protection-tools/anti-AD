@@ -53,6 +53,7 @@ $ARR_MERGED_WILD_LIST = array(
     'ads*-adnow.com' => null,
     'aeros*.tk' => null,
     'analyzer*.fc2.com' => null,
+    'admicro*.vcmedia.vn' => null,
 );
 
 if(PHP_SAPI != 'cli'){
