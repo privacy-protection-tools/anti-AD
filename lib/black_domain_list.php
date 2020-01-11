@@ -271,6 +271,8 @@ return array(
         'adv.sec.intl.miui.com',
         'api.brs.intl.miui.com',
         'api.newsfeed.intl.miui.com',
+        'huangye.miui.com',
+        
     ),
     'kingsoft-office-service.com' => array(
         'abroad-ad.kingsoft-office-service.com',
