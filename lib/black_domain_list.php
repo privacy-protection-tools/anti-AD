@@ -290,6 +290,8 @@ return array(
     'getui.com' => array('getui.com'),
     'getui.net' => array('getui.net'),
     'jumei.com' => array('adxapi.jumei.com', 'sd.int.jumei.com', 'sd.jumei.com'),
+    '92caijing.com' => array('92caijing.com'), //广告联盟
+    'mm100.com' => array('mm100.com'), //广告联盟
 
 
     '011211.cn' => array('.011211.cn'),
