@@ -56,6 +56,19 @@ $ARR_MERGED_WILD_LIST = array(
     'admicro*.vcmedia.vn' => null,
 );
 
+$ARR_REGEX_LIST = array(
+    '/^01daa\.[a-z]+\.com$/' => null,
+    '/^9377[a-z]{2}\.com$/' => null,
+//    '/^[1-3]\.[0-9a-z\.\-]+\.(com|cn|net|org)$/' => null,
+//    '/^a1\.[0-9a-z\.]+\.(com|cn|org|net|me)$/' => null,
+    '/^ad([0-9]|m)?\.[0-9a-z\.\-]+\.([a-z]+)?$/' => null,
+    '/^affiliat(es|ion|e)\..+$/' => null,
+    '/^afgr[0-9]{1,2}\.com$/' => null,
+    '/^analytics(\-|\.).+$/' => null,
+    '/^counter(\-|\.).+$/' => null,
+    '/^pixels?\..+$/' => null,
+);
+
 if(PHP_SAPI != 'cli'){
     die('nothing.');
 }
@@ -84,6 +97,7 @@ $wild_fp = fopen(WILDCARD_SRC, 'r');
 $new_fp = fopen($src_file . '.txt', 'w');
 
 $wrote_wild = array();
+$wrote_regex = array();
 $arr_wild_src = array();
 
 while(!feof($wild_fp)){
@@ -112,6 +126,19 @@ while(!feof($src_fp)){
     }
 
     $matched = false;
+    foreach($ARR_REGEX_LIST as $regex_str => $regex_row){
+        if(preg_match($regex_str, substr(trim($row), 2, -1))){
+            $matched = true;
+            if(!array_key_exists($regex_str, $wrote_regex)){
+                fwrite($new_fp, "${regex_str}\n");
+                $wrote_regex[$regex_str] = 1;
+            }
+        }
+    }
+
+    if($matched){
+        continue;
+    }
 
     foreach ($arr_wild_src as $core_str => $wild_row){
         $match_rule = str_replace('*', '.*', $core_str);
