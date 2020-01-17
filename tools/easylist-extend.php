@@ -63,12 +63,12 @@ $ARR_REGEX_LIST = array(
     '/^9377[a-z]{2}\.com$/' => null,
 //    '/^[1-3]\.[0-9a-z\.\-]+\.(com|cn|net|org)$/' => null,
 //    '/^a1\.[0-9a-z\.]+\.(com|cn|org|net|me)$/' => null,
-    '/^ad([0-9]|m|s)?\.[0-9a-z\.\-]+\.([a-z]+)?$/' => null,
-    '/^affiliat(es|ion|e)\..+$/' => null,
+    '/^ad([0-9]|m|s)?\.[0-9a-z\.\-]+?(\.[a-z]+)?$/' => null,
+    '/^affiliat(es|ion|e)\./' => null,
     '/^afgr[0-9]{1,2}\.com$/' => null,
-    '/^analytics(\-|\.).+$/' => null,
-    '/^counter(\-|\.).+$/' => null,
-    '/^pixels?\..+$/' => null,
+    '/^analytics(\-|\.)/' => null,
+    '/^counter(\-|\.)/' => null,
+    '/^pixels?\./' => null,
 );
 
 $ARR_WHITE_RULE_LIST = array(

@@ -274,6 +274,13 @@ return array(
         'huangye.miui.com',
         
     ),
+    'jd.com' => array(
+        'mercury.jd.com', //大数据收集，用户行为埋点上报
+    ),
+    'ixigua.com' => array(
+        'v3-ad.ixigua.com', //移动广告
+    ),
+
     'kingsoft-office-service.com' => array(
         'abroad-ad.kingsoft-office-service.com',
     ),
