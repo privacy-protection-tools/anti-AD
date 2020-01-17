@@ -63,7 +63,7 @@ $ARR_REGEX_LIST = array(
     '/^9377[a-z]{2}\.com$/' => null,
 //    '/^[1-3]\.[0-9a-z\.\-]+\.(com|cn|net|org)$/' => null,
 //    '/^a1\.[0-9a-z\.]+\.(com|cn|org|net|me)$/' => null,
-    '/^ad([0-9]|m)?\.[0-9a-z\.\-]+\.([a-z]+)?$/' => null,
+    '/^ad([0-9]|m|s)?\.[0-9a-z\.\-]+\.([a-z]+)?$/' => null,
     '/^affiliat(es|ion|e)\..+$/' => null,
     '/^afgr[0-9]{1,2}\.com$/' => null,
     '/^analytics(\-|\.).+$/' => null,
@@ -164,6 +164,7 @@ while(!feof($src_fp)){
 }
 
 //按需写入白名单规则
+$wrote_whitelist = array();
 $whiterule = file(WHITERULE_SRC, FILE_SKIP_EMPTY_LINES);
 $ARR_WHITE_RULE_LIST = array_merge($ARR_WHITE_RULE_LIST, $whiterule);
 foreach ($ARR_WHITE_RULE_LIST as $row){
@@ -188,6 +189,10 @@ foreach ($ARR_WHITE_RULE_LIST as $row){
             ){
                 continue;
             }
+            if(array_key_exists($matches[1], $wrote_whitelist)){
+                continue;
+            }
+            $wrote_whitelist[$matches[1]] = null;
             fwrite($new_fp, "@@||${matches[1]}^\n");
         }
     }
