@@ -272,13 +272,16 @@ return array(
         'api.brs.intl.miui.com',
         'api.newsfeed.intl.miui.com',
         'huangye.miui.com',
-        
+
     ),
     'jd.com' => array(
         'mercury.jd.com', //大数据收集，用户行为埋点上报
     ),
     'ixigua.com' => array(
         'v3-ad.ixigua.com', //移动广告
+    ),
+    'huan.tv' => array(
+        'ads.huan.tv', //广告
     ),
 
     'kingsoft-office-service.com' => array(
