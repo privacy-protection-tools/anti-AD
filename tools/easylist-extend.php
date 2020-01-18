@@ -56,6 +56,8 @@ $ARR_MERGED_WILD_LIST = array(
     'aeros*.tk' => null,
     'analyzer*.fc2.com' => null,
     'admicro*.vcmedia.vn' => null,
+    'xn--xhq9mt12cf5v.*' => null,
+
 );
 
 $ARR_REGEX_LIST = array(
@@ -69,10 +71,26 @@ $ARR_REGEX_LIST = array(
     '/^analytics(\-|\.)/' => null,
     '/^counter(\-|\.)/' => null,
     '/^pixels?\./' => null,
+    '/^syma[a-z]\.cn$/' => null,
+    '/^widgets?\./' => null,
+    '/^webstats?\./' => null,
+    '/^track(er|ing)?\./' => null,
+    '/^tongji\./' => null,
+    '/^toolbar\./' => null,
+    '/^stats?\./' => null,
 );
 
 $ARR_WHITE_RULE_LIST = array(
     '@@||github.com^',
+    '@@||tracker.ipv6.scau.edu.cn^',
+    '@@||tracker.openbittorrent.com^',
+    '@@||tracker.chdbits.org^',
+    '@@||tracker.m-team.cc^',
+    '@@||tracker.keepfrds.com^',
+    '@@||tracker.hdcmct.org^',
+    '@@||tracker.fastdownload.xyz^',
+    '@@||tracker.bt4g.com^',
+    '@@||tracker.publictorrent.net^',
 );
 
 if(PHP_SAPI != 'cli'){
