@@ -64,7 +64,6 @@ return array(
     'www.bitsumactivationserver.com' => true,
     'licensing.tableausoftware.com' => true,
     'activation.cloud.techsmith.com' => true,
-    'binaryage-leechgate.herokuapp.com' => true,
     'updates-s3.binaryage.com' => true,
     'reg.wisecleaner.com' => true,
 );
