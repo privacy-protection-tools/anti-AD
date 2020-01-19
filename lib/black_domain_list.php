@@ -138,7 +138,7 @@ return array(
         'api.mobojoy.baidu.com',
         'js.mobojoy.baidu.com',
         'plugin.mobopay.baidu.com',
-        ),
+    ),
     'youdao.com' => array('corp.youdao.com'),
     'crsspxl.com' => array('crsspxl.com'),
     'talkingdata.net' => array('talkingdata.net'),
@@ -174,7 +174,7 @@ return array(
         'applog.musical.ly',
     ),
     'adjust.com' => array(
-      'adjust.com'
+        'adjust.com'
     ),
     'kuyun.com' => array(
         'kuyun.com'

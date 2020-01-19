@@ -6,6 +6,7 @@
  */
 
 !defined('ROOT_DIR') && die('Access Denied.');
+
 class writerFormat{
     /*dnsmasq支持格式的屏蔽广告列表*/
     const DNSMASQ = array(

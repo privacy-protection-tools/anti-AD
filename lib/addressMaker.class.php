@@ -10,9 +10,10 @@
  */
 !defined('ROOT_DIR') && die('Access Denied.');
 
-class addressMaker {
+class addressMaker{
 
     const LINK_URL = 'https://github.com/privacy-protection-tools/anti-AD';
+
     /**
      * 分离域名
      *
@@ -54,7 +55,7 @@ class addressMaker {
         $str_reg .= '(\.hk|\.tw|\.uk|\.jp|\.kr|\.th|\.au|\.ua|\.so|\.br|\.sg|\.pt|\.ec|\.ar|\.my';
         $str_reg .= '|\.tr|\.bd|\.mk|\.za|\.mt|\.sm|\.ge|\.kg|\.ke|\.de|\.ve|\.es|\.ru|\.pk|\.mx';
         $str_reg .= '|\.nz|\.py|\.pe|\.ph|\.pl|\.ng|\.pa|\.fj';
-        
+
         $str_reg .= ')?)$/';
         if(preg_match($str_reg, $str_domain, $matches)){
             return strval($matches[1]);

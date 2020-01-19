@@ -6,7 +6,7 @@
  * @author gently
  */
 
-class utils {
+class utils{
 
     /**
      * http get 方法，一般用于下载文件
