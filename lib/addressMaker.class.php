@@ -24,7 +24,15 @@ class addressMaker {
             return "";
         }
 
-        $str_reg = '/^(?:(?:[a-z0-9\-]+\.)*?|\.)?([a-z0-9\-]+(\.com|\.cn|\.net|\.org|\.me|\.co|\.info|\.cc|\.tv';
+        $str_reg = '/^(?:(?:[a-z0-9\-]+\.)*?|\.)?([a-z0-9\-]+(';
+        /************start CN域名的特殊处理规则，其中包括了各行政区特别后缀的cn域名*****************************/
+        $str_reg .= '\.ac\.cn|\.ah\.cn|\.bj\.cn|\.com\.cn|\.cq\.cn|\.fj\.cn|\.gd\.cn|\.gov\.cn|\.gs\.cn';
+        $str_reg .= '|\.gx\.cn|\.gz\.cn|\.ha\.cn|\.hb\.cn|\.he\.cn|\.hi\.cn|\.hk\.cn|\.hl\.cn|\.hn\.cn';
+        $str_reg .= '|\.jl\.cn|\.js\.cn|\.jx\.cn|\.ln\.cn|\.mo\.cn|\.net\.cn|\.nm\.cn|\.nx\.cn|\.org\.cn';
+        $str_reg .= '|\.qh\.cn|\.sc\.cn|\.sd\.cn|\.sh\.cn|\.sn\.cn|\.sx\.cn|\.tj\.cn|\.tw\.cn|\.xj\.cn';
+        $str_reg .= '|\.xz\.cn|\.yn\.cn|\.zj\.cn';
+        /************end CN域名的特殊处理规则，其中包括了各行政区特别后缀的cn域名******************************/
+        $str_reg .= '|\.cn|\.com|\.net|\.org|\.me|\.co|\.info|\.cc|\.tv';
         $str_reg .= '|\.pw|\.biz|\.top|\.win|\.bid|\.cf|\.club|\.ne|\.de|\.la|\.us|\.mobi|\.hn|\.asia';
         $str_reg .= '|\.jp|\.tw|\.am|\.hk|\.site|\.live|\.xyz|\.space|\.fr|\.es|\.nl|\.au|\.in|\.ru';
         $str_reg .= '|\.su|\.world|\.io|\.trade|\.bet|\.im|\.fm|\.today|\.wang|\.rocks|\.vip|\.eu|\.run';
@@ -42,7 +50,7 @@ class addressMaker {
         $str_reg .= '|\.gd|\.review|\.tc|\.mn|\.cool|\.monster|\.do|\.bi|\.news|\.boom|\.lol|\.events|\.jobs';
         $str_reg .= ')';
 
-        $str_reg .= '(\.cn|\.hk|\.tw|\.uk|\.jp|\.kr|\.th|\.au|\.ua|\.so|\.br|\.sg|\.pt|\.ec|\.ar|\.my';
+        $str_reg .= '(\.hk|\.tw|\.uk|\.jp|\.kr|\.th|\.au|\.ua|\.so|\.br|\.sg|\.pt|\.ec|\.ar|\.my';
         $str_reg .= '|\.tr|\.bd|\.mk|\.za|\.mt|\.sm|\.ge|\.kg|\.ke';
         $str_reg .= ')?)$/';
         if(preg_match($str_reg, $str_domain, $matches)){
