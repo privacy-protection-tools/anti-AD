@@ -57,6 +57,11 @@ $ARR_MERGED_WILD_LIST = array(
     'analyzer*.fc2.com' => null,
     'admicro*.vcmedia.vn' => null,
     'xn--xhq9mt12cf5v.*' => null,
+    'freecontent.*' => null,
+    'hostingcloud.*' => null,
+    'jshosting.*' => null,
+    'flightzy.*' => null,
+    'sunnimiq*.cf' => null,
 
 );
 
