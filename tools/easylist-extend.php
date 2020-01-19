@@ -73,11 +73,10 @@ $ARR_REGEX_LIST = array(
     '/^pixels?\./' => null,
     '/^syma[a-z]\.cn$/' => null,
     '/^widgets?\./' => null,
-    '/^webstats?\./' => null,
+    '/^(web)?stats?\./' => null,
     '/^track(er|ing)?\./' => null,
     '/^tongji\./' => null,
     '/^toolbar\./' => null,
-    '/^stats?\./' => null,
     '/^adservice\.google\./' => null,
 );
 
