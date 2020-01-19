@@ -78,6 +78,7 @@ $ARR_REGEX_LIST = array(
     '/^tongji\./' => null,
     '/^toolbar\./' => null,
     '/^stats?\./' => null,
+    '/^adservice\.google\./' => null,
 );
 
 $ARR_WHITE_RULE_LIST = array(
