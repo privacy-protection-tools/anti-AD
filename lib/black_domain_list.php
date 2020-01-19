@@ -304,6 +304,17 @@ return array(
     'mm100.com' => array('mm100.com'), //广告联盟
 
 
+    //一些电视盒子相关的屏蔽列表
+    'duiba.com.cn' => array('activity.m.duiba.com.cn'),
+    'tuiapple.com' => array('activity.tuiapple.com'),
+    'tudou.com' => array('ad.api.3g.tudou.com'),
+    'youku.com' => array('ad.api.3g.tudou.com', 'ad.api.mobile.youku.com'),
+    'sohu.com' => array('agn.aty.sohu.com'),
+    'gitv.tv' => array('api.cupid.ptqy.gitv.tv'),
+    'tatagou.com.cn' => array('api.tatagou.com.cn'),
+    'shandjj.com' => array('app.shandjj.com'),
+    'koudaitong.com' => array('tj.koudaitong.com'),
+
     '011211.cn' => array('011211.cn'),
     '013572.cn' => array('013572.cn'),
     '020wujin.cn' => array('020wujin.cn'),
