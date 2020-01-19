@@ -16,7 +16,8 @@ class addressMaker{
     const TMP_NO_STRICT = array( //临时需要关闭严格模式的主域名
         'herokuapp.com' => null,
         'vidoza.net' => null,
-        'nahnoji.cz' => null
+        'nahnoji.cz' => null,
+        'cloudfront.net' => null,
     );
 
     /**
