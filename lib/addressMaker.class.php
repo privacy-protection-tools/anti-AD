@@ -13,6 +13,11 @@
 class addressMaker{
 
     const LINK_URL = 'https://github.com/privacy-protection-tools/anti-AD';
+    const TMP_NO_STRICT = array( //临时需要关闭严格模式的主域名
+        'herokuapp.com' => null,
+        'vidoza.net' => null,
+        'nahnoji.cz' => null
+    );
 
     /**
      * 分离域名
@@ -68,10 +73,11 @@ class addressMaker{
     /**
      * 从 easylist类源文件中提取可用地址
      *
-     * @param $str_easylist
+     * @param String $str_easylist 原始的easylist列表字符串
+     * @param Boolean $strict_mode 严格模式，启用时将屏蔽该域所在的主域名，例如www.baidu.com，将获取到baidu.com并写入最终列表
      * @return array
      */
-    public static function get_domain_from_easylist($str_easylist){
+    public static function get_domain_from_easylist($str_easylist, $strict_mode = false){
         $strlen = strlen($str_easylist);
         if($strlen < 10){
             return array();
@@ -100,8 +106,12 @@ class addressMaker{
                 }else{
                     $row = $matches[1];
                 }
-
-                $arr_domains[self::extract_main_domain($matches[1])][] = $row;
+                $main_domain = self::extract_main_domain($matches[1]);
+                if($strict_mode && !array_key_exists($main_domain, self::TMP_NO_STRICT)){
+                    $arr_domains[$main_domain] = array($main_domain);
+                }else{
+                    $arr_domains[$main_domain][] = $row;
+                }
             }
         }
 
@@ -111,10 +121,11 @@ class addressMaker{
     /**
      * 从hosts或dnsmasq类文件中提取地址
      *
-     * @param $str_hosts
+     * @param String $str_hosts 原始的hosts字符串
+     * @param Boolean $strict_mode 严格模式，启用时将屏蔽该域所在的主域名，例如www.baidu.com，将获取到baidu.com并写入最终列表
      * @return array
      */
-    public static function get_domain_list($str_hosts){
+    public static function get_domain_list($str_hosts, $strict_mode = false){
         $strlen = strlen($str_hosts);
         if($strlen < 3){
             return array();
@@ -143,7 +154,12 @@ class addressMaker{
             if(strpos($row[1], '.') === false){
                 continue;
             }
-            $arr_domains[self::extract_main_domain($row[1])][] = $row[1];
+            $main_domain = self::extract_main_domain($row[1]);
+            if($strict_mode && !array_key_exists($main_domain, self::TMP_NO_STRICT)){
+                $arr_domains[$main_domain] = array($main_domain);
+            }else{
+                $arr_domains[$main_domain][] = $row[1];
+            }
         }
 
         return $arr_domains;

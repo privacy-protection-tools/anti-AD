@@ -84,12 +84,29 @@ if [ $? -ne 0 ];then
 	exit 1
 fi
 
+echo '开始下载 strict-hosts1...'
+curl -o ./origin-files/strict-hosts1 --connect-timeout 60 \
+ -s \
+ https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt
+
+# shellcheck disable=SC2181
+if [ $? -ne 0 ];then
+	echo '下载失败，请重试'
+	exit 1
+fi
+
 cd origin-files
 
 cat hosts* | grep -v -E "^((#.*)|(\s*))$" \
  | grep -v -E "^[0-9\.:]+\s+(ip6\-)?(localhost|loopback)$" \
  | sed s/0.0.0.0/127.0.0.1/g | sed s/::/127.0.0.1/g | sort \
  | uniq >base-src-hosts.txt
+
+cat strict-hosts* | grep -v -E "^((#.*)|(\s*))$" \
+ | grep -v -E "^[0-9\.:]+\s+(ip6\-)?(localhost|loopback)$" \
+ | sed s/0.0.0.0/127.0.0.1/g | sed s/::/127.0.0.1/g | sort \
+ | uniq >base-src-strict-hosts.txt
+
 
 cat easylist*.txt | grep -E "^\|\|[^\*\^]+?\^" | sort | uniq >base-src-easylist.txt
 cat easylist*.txt | grep -E "^\|\|?[^\^=\/:]+?\*[^\^=\/:]+?\^" | sort | uniq >wildcard-src-easylist.txt

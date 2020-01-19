@@ -29,6 +29,9 @@ $arr_result = array_merge_recursive($arr_result, addressMaker::get_domain_from_e
 $hosts = file_get_contents('./origin-files/base-src-hosts.txt');
 $arr_result = array_merge_recursive($arr_result, addressMaker::get_domain_list($hosts));
 
+$strict_hosts = file_get_contents('./origin-files/base-src-strict-hosts.txt');
+$arr_result = array_merge_recursive($arr_result, addressMaker::get_domain_list($strict_hosts, true));
+
 $arr_result = array_merge_recursive($arr_result, $arr_blacklist);
 
 $reflect = new ReflectionClass('writerFormat');
