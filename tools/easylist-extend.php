@@ -207,7 +207,7 @@ foreach ($ARR_WHITE_RULE_LIST as $row){
             $match_rule = "/${match_rule}/";
         }
         if(preg_match($match_rule, $matches[1])) {
-            $domain = addressMaker::extract_main_domain($matches[1]); //@TODO 注意！这里假设白名单域名无通配符
+            $domain = addressMaker::extract_main_domain($matches[1]);
             if(array_key_exists($domain, $black_domain_list) ||
                 (is_array($black_domain_list[$domain]) && in_array($matches[1], $black_domain_list[$domain]))
             ){
