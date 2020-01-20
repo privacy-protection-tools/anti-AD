@@ -302,6 +302,8 @@ return array(
     'jumei.com' => array('adxapi.jumei.com', 'sd.int.jumei.com', 'sd.jumei.com'),
     '92caijing.com' => array('92caijing.com'), //广告联盟
     'mm100.com' => array('mm100.com'), //广告联盟
+    'juyoufan.net' => array('juyoufan.net'), //博彩类
+    'hpplay.cn' => array('hpplay.cn'), //广告下发
 
 
     //一些电视盒子相关的屏蔽列表
