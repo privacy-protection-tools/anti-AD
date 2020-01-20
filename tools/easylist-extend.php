@@ -97,6 +97,7 @@ $ARR_WHITE_RULE_LIST = array(
     '@@||tracker.bt4g.com^',
     '@@||tracker.publictorrent.net^',
     '@@||tongji.kuwo.cn^',
+    '@@||tracker.hdsky.me^',
 );
 
 if(PHP_SAPI != 'cli'){

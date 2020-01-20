@@ -26,6 +26,7 @@ return array(
     'edge.yunjiasu.com' => true, //百度云加速javascript快速加载功能
     'cd.bendibao.com' => true, //成都本地宝
     'm.qpic.cn' => true, // qq，微信，QQ空间等用到的静态资源域名
+    'ipify.org' => true, // 获得公网 IP
 
 
     'activate.adobe.com' => true,
