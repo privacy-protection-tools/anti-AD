@@ -12,7 +12,7 @@ set_time_limit(0);
 error_reporting(7);
 
 define('START_TIME', microtime(true));
-define('ROOT_DIR', dirname(__DIR__). '/');
+define('ROOT_DIR', dirname(__DIR__) . '/');
 define('LIB_DIR', ROOT_DIR . 'lib/');
 
 $black_domain_list = require_once LIB_DIR . 'black_domain_list.php';
@@ -96,6 +96,12 @@ $ARR_WHITE_RULE_LIST = array(
     '@@||tracker.fastdownload.xyz^',
     '@@||tracker.bt4g.com^',
     '@@||tracker.publictorrent.net^',
+    '@@||tracker.totheglory.im^',
+    '@@||tracker.hdwing.com^',
+    '@@||tracker.czech-server.com^',
+    '@@||tracker.tambovnet.org^',
+    '@@||tracker.tekno3d.com^',
+    '@@||tracker.hdsky.me^',
     '@@||tongji.kuwo.cn^',
     '@@||tracker.hdsky.me^',
 );
@@ -170,7 +176,7 @@ while(!feof($src_fp)){
         continue;
     }
 
-    foreach ($arr_wild_src as $core_str => $wild_row){
+    foreach($arr_wild_src as $core_str => $wild_row){
         $match_rule = str_replace('*', '.*', $core_str);
         if(preg_match("/\|${match_rule}/", $row)){
             if(!array_key_exists($core_str, $wrote_wild)){
@@ -192,7 +198,7 @@ while(!feof($src_fp)){
 $wrote_whitelist = array();
 $whiterule = file(WHITERULE_SRC, FILE_SKIP_EMPTY_LINES);
 $ARR_WHITE_RULE_LIST = array_merge($ARR_WHITE_RULE_LIST, $whiterule);
-foreach ($ARR_WHITE_RULE_LIST as $row){
+foreach($ARR_WHITE_RULE_LIST as $row){
     if(empty($row) || $row{0} !== '@' || $row{1} !== '@'){
         continue;
     }
@@ -207,7 +213,7 @@ foreach ($ARR_WHITE_RULE_LIST as $row){
             $match_rule = str_replace('*', '.*', $core_str);
             $match_rule = "/${match_rule}/";
         }
-        if(preg_match($match_rule, $matches[1])) {
+        if(preg_match($match_rule, $matches[1])){
             $domain = addressMaker::extract_main_domain($matches[1]);
             if(array_key_exists($domain, $black_domain_list) ||
                 (is_array($black_domain_list[$domain]) && in_array($matches[1], $black_domain_list[$domain]))
