@@ -28,6 +28,7 @@ return array(
     'm.qpic.cn' => true, // qq，微信，QQ空间等用到的静态资源域名
     'ipify.org' => true, // 获得公网 IP
     'pass.1688.com' => true, // 阿里巴巴网站访问不正常
+    'cedexis.net' => true, // windowsupdate CNAME
 
 
     'activate.adobe.com' => true,
