@@ -22,7 +22,6 @@ define('WHITERULE_SRC', ROOT_DIR . 'origin-files/whiterule-src-easylist.txt');
 
 $ARR_MERGED_WILD_LIST = array(
     'ad*.udn.com' => null,
-    'cnt*rambler.ru' => null,
     '*.mgr.consensu.org' => null,
     'vs*.gzcu.u3.ucweb.com' => null,
     'ad*.goforandroid.com' => null,
@@ -85,25 +84,21 @@ $ARR_REGEX_LIST = array(
     '/^adservice\.google\./' => null,
 );
 
+//对通配符匹配或正则匹配增加的额外赦免规则
 $ARR_WHITE_RULE_LIST = array(
     '@@||github.com^',
-    '@@||tracker.ipv6.scau.edu.cn^',
-    '@@||tracker.openbittorrent.com^',
-    '@@||tracker.chdbits.org^',
-    '@@||tracker.m-team.cc^',
-    '@@||tracker.keepfrds.com^',
-    '@@||tracker.hdcmct.org^',
-    '@@||tracker.fastdownload.xyz^',
-    '@@||tracker.bt4g.com^',
-    '@@||tracker.publictorrent.net^',
-    '@@||tracker.totheglory.im^',
-    '@@||tracker.hdwing.com^',
-    '@@||tracker.czech-server.com^',
-    '@@||tracker.tambovnet.org^',
-    '@@||tracker.tekno3d.com^',
-    '@@||tracker.hdsky.me^',
     '@@||tongji.kuwo.cn^',
-    '@@||tracker.hdsky.me^',
+);
+
+//针对上游赦免规则anti-AD不予赦免的规则，即赦免名单的黑名单
+$ARR_WHITE_RULE_BLK_LIST = array(
+    '@@||ads.nipr.ac.jp^' => null,
+);
+
+//针对上游通配符规则中anti-AD不予采信的规则，即通配符黑名单
+$ARR_WILD_BLK_LIST = array(
+    'aff*.kolektiva.net' => null,
+    'cnt*rambler.ru' => null,
 );
 
 if(PHP_SAPI != 'cli'){
@@ -144,6 +139,20 @@ while(!feof($wild_fp)){
     if(!preg_match('/^\|\|?([\w\-\.\*]+?)\^(\$([^=]+?,)?(image|third-party|script)(,[^=]+)?)?$/', $wild_row, $matches)){
         continue;
     }
+
+    if(array_key_exists($matches[1], $ARR_WILD_BLK_LIST)){
+        continue;
+    }
+
+    $matched = false;
+    foreach($ARR_REGEX_LIST as $regex_str => $regex_row){
+        if(preg_match($regex_str, str_replace('*', '',$matches[1]))){
+            $matched = true;
+        }
+    }
+    if($matched){
+        continue;
+    }
     $arr_wild_src[$matches[1]] = $wild_row;
 }
 fclose($wild_fp);
@@ -178,11 +187,11 @@ while(!feof($src_fp)){
 
     foreach($arr_wild_src as $core_str => $wild_row){
         $match_rule = str_replace('*', '.*', $core_str);
+        if(!array_key_exists($core_str, $wrote_wild)){
+            fwrite($new_fp, "||${core_str}^\n");
+            $wrote_wild[$core_str] = 1;
+        }
         if(preg_match("/\|${match_rule}/", $row)){
-            if(!array_key_exists($core_str, $wrote_wild)){
-                fwrite($new_fp, "||${core_str}^\n");
-                $wrote_wild[$core_str] = 1;
-            }
             $matched = true;
             break;
         }
@@ -206,6 +215,11 @@ foreach($ARR_WHITE_RULE_LIST as $row){
     if(!preg_match('/@@\|\|([0-9a-z\.\-\*]+?)\^/', $row, $matches)){
         continue;
     }
+
+    if(array_key_exists("@@||${matches[1]}^", $ARR_WHITE_RULE_BLK_LIST)){
+        continue;
+    }
+
     foreach($wrote_wild as $core_str => $val){
         if($core_str{0} === '/'){
             $match_rule = $core_str;
