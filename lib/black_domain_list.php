@@ -304,6 +304,7 @@ return array(
     'mm100.com' => array('mm100.com'), //广告联盟
     'juyoufan.net' => array('juyoufan.net'), //博彩类
     'hpplay.cn' => array('hpplay.cn'), //广告下发
+    'supersonic.com' => array('logs.supersonic.com'), //交叉推广平台
 
 
     //一些电视盒子相关的屏蔽列表
