@@ -67,7 +67,7 @@ $ARR_MERGED_WILD_LIST = array(
 $ARR_REGEX_LIST = array(
     '/^01daa\.[a-z]+\.com$/' => null,
     '/^9377[a-z]{2}\.com$/' => null,
-//    '/^[1-3]\.[0-9a-z\.\-]+\.(com|cn|net|org)$/' => null,
+    '/^[1-3]\.[0-9a-z\.\-]+\.(com|cn|net|org|cc|me)$/' => null,
 //    '/^a1\.[0-9a-z\.]+\.(com|cn|org|net|me)$/' => null,
     '/^ad([0-9]|m|s)?\./' => null,
     '/^affiliat(es|ion|e)\./' => null,
@@ -97,7 +97,6 @@ $ARR_WHITE_RULE_BLK_LIST = array(
 
 //针对上游通配符规则中anti-AD不予采信的规则，即通配符黑名单
 $ARR_WILD_BLK_LIST = array(
-    'aff*.kolektiva.net' => null,
     'cnt*rambler.ru' => null,
 );
 
