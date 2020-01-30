@@ -290,7 +290,14 @@ return array(
     'amap.com' => array('logs.amap.com'),
     'tt114.net' => array('tt114.net'),
     'ip138.com' => array('api.ip138.com', 'cache.ip138.com'),
-    'taobao.com' => array('ip.taobao.com', 'fourier.taobao.com', 'accscdn.m.taobao.com', 'acs.m.taobao.com', 'acs.wapa.taobao.com'),
+    'taobao.com' => array(
+      'ip.taobao.com',
+      'fourier.taobao.com',
+      'accscdn.m.taobao.com',
+      'acs.m.taobao.com',
+      'acs.wapa.taobao.com',
+      'openjmacs.m.taobao.com',
+    ),
     'aiclk.com' => array('aiclk.com'),
     '5ubei.com' => array('5ubei.com'),
     'jpush.cn' => array('jpush.cn'),
@@ -305,6 +312,54 @@ return array(
     'juyoufan.net' => array('juyoufan.net'), //博彩类
     'hpplay.cn' => array('hpplay.cn'), //广告下发
     'supersonic.com' => array('logs.supersonic.com'), //交叉推广平台
+    'advmob.cn' => array('advmob.cn'), //交叉推广平台
+    'adnexus.mobi' => array('adnexus.mobi'), //广告平台
+    'mobileapptracking.com' => array('mobileapptracking.com'), //广告追踪
+    '360in.com' => array('360in.com'), //广告追踪
+    'ad4.com.cn' => array('ad4.com.cn'), //广告商
+    'adform.com' => array('adform.com'), //广告商
+    'adgoji.com' => array('adgoji.com'), //广告商
+    'adups.com' => array('adups.com'), //大数据收集
+    'crasheye.cn' => array('crasheye.cn'), //大数据收集
+    'adcome.cn' => array('adcome.cn'), //广告服务
+    'adsunflower.cn' => array('adsunflower.cn'), //广告服务
+    'bsclink.cn' => array('sdk.appadhoc.com.bsclink.cn'), //统计数据
+    'diditaxi.com.cn' => array('static.diditaxi.com.cn'), //统计数据
+    'dotui.cn' => array('dotui.cn'), //推送广告
+    'droid4x.cn' => array('log.droid4x.cn', 'mtlog.droid4x.cn', 'nlog.droid4x.cn'), //日志收集
+    'fmobi.cn' => array('api.sdk.fmobi.cn'), //广告sdk
+    'ht55.cn' => array('ht55.cn'), //赌博恶意网址
+    'huidakms.com.cn' => array('huidakms.com.cn'), //恶意网址
+    'immob.cn' => array('immob.cn'), //恶意网址
+    'inmobicdn.cn' => array('inmobicdn.cn'), //广告商
+    'inmobicdn.com' => array('inmobicdn.com'), //广告商
+    'inmobicdn.net' => array('inmobicdn.net'), //广告商
+    'intely.cn' => array('intely.cn'), //营销服务商
+    'lomark.cn' => array('lomark.cn'), //营销服务商
+    'p0y.cn' => array('p0y.cn'), //大数据服务商
+    'superads.cn' => array('superads.cn'), //广告商
+    'tv2phone.cn' => array('appwall.tv2phone.cn'),
+    'vivo.com.cn' => array(
+      'adlog.vivo.com.cn',
+      'adreq.vivo.com.cn',
+      'adsdk.vivo.com.cn',
+      'adsstatic.vivo.com.cn',
+      'adxlog.vivo.com.cn',
+      'stnetsdk.appstore.vivo.com.cn',
+      'monitor-stsdk.vivo.com.cn',
+      'onrt-stsdk.vivo.com.cn',
+      'ort-stsdk.vivo.com.cn',
+      'pnrt-stsdk.vivo.com.cn',
+      'prt-stsdk.vivo.com.cn',
+      'stnetsdk.vivo.com.cn',
+      'stsdk.vivo.com.cn',
+      'vcardsdkservice.vivo.com.cn',
+    ),
+    'vnet.cn' => array('vnet.cn'), //互联星空
+    'wannaplay.cn' => array('h5.wannaplay.cn'), //游戏广告
+    'waps.cn' => array('waps.cn'), //广告商
+    'yomob.com.cn' => array('yomob.com.cn'), //移动视频广告
+
 
 
     //一些电视盒子相关的屏蔽列表

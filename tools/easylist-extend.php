@@ -61,6 +61,9 @@ $ARR_MERGED_WILD_LIST = array(
     'jshosting.*' => null,
     'flightzy.*' => null,
     'sunnimiq*.cf' => null,
+    'admob.*' => null,
+    '*log.droid4x.cn' => null,
+    '*tsdk.vivo.com.cn' => null,
 
 );
 
