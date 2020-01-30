@@ -34,7 +34,7 @@
 ## 快速使用
 
 ### 1. dnsmasq
-1. 下载[adblock-for-dnsmasq.conf](https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/adblock-for-dnsmasq.conf) ([jsDelivr加速](https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD@master/adblock-for-dnsmasq.conf) | [cdn加速](https://raw.staticdn.net/privacy-protection-tools/anti-AD/master/adblock-for-dnsmasq.conf)), 保存到你的dnsmasq配置的正确目录下；
+1. 下载[adblock-for-dnsmasq.conf](https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/adblock-for-dnsmasq.conf) ([jsDelivr加速](https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD@master/adblock-for-dnsmasq.conf)), 保存到你的dnsmasq配置的正确目录下；
 2. 重启dnsmasq服务；
 3. 已经生效了，enjoy it！
 
