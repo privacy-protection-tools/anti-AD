@@ -30,6 +30,7 @@ return array(
     'pass.1688.com' => true, // 阿里巴巴网站访问不正常
     'cedexis.net' => true, // windowsupdate CNAME
     'y0.cn' => true, // 短网址服务，涉及本次丁香医生实时疫情页面 http://y0.cn/sari
+    'click.taobao.com' => true, //淘宝粉丝福利购
 
 
     'activate.adobe.com' => true,
