@@ -359,6 +359,12 @@ return array(
     'wannaplay.cn' => array('h5.wannaplay.cn'), //游戏广告
     'waps.cn' => array('waps.cn'), //广告商
     'yomob.com.cn' => array('yomob.com.cn'), //移动视频广告
+    'kochava.com' => array('kochava.com'), //移动大数据收集
+    'supersonicads.com' => array('supersonicads.com'), //广告聚合平台
+    'voodoo-ads.io' => array('voodoo-ads.io'), //广告平台
+    'voodoo.io' => array('crosspromo.voodoo.io'), //交叉推广
+    'inner-active.mobi' => array('inner-active.mobi'), //广告追踪
+    'adtilt.com' => array('adtilt.com'), //隐私收集
 
 
 
