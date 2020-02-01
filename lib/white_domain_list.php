@@ -31,6 +31,18 @@ return array(
     'cedexis.net' => true, // windowsupdate CNAME
     'y0.cn' => true, // 短网址服务，涉及本次丁香医生实时疫情页面 http://y0.cn/sari
     'click.taobao.com' => true, //淘宝粉丝福利购
+    't1.baidu.com' => true, //百度图片自有平台
+    't2.baidu.com' => true, //百度图片自有平台
+    't3.baidu.com' => true, //百度图片自有平台
+    't4.baidu.com' => true, //百度图片自有平台
+    't5.baidu.com' => true, //百度图片自有平台
+    't6.baidu.com' => true, //百度图片自有平台
+    't7.baidu.com' => true, //百度图片自有平台
+    't8.baidu.com' => true, //百度图片自有平台
+    't9.baidu.com' => true, //百度图片自有平台
+    't10.baidu.com' => true, //百度图片自有平台
+    't11.baidu.com' => true, //百度图片自有平台
+    't12.baidu.com' => true, //百度图片自有平台
 
 
     'activate.adobe.com' => true,
