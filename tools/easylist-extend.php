@@ -89,8 +89,9 @@ $ARR_REGEX_LIST = array(
 
 //对通配符匹配或正则匹配增加的额外赦免规则
 $ARR_WHITE_RULE_LIST = array(
-    '@@||github.com^',
-    '@@||tongji.*kuwo.cn^',
+    '@@||github.com^' => 0,
+    '@@||tongji.*kuwo.cn^' => 0,
+    '@@||ntp.org^' => 1, //针对上面正则表达式的一个赦免规则，例如：2.android.pool.ntp.org
 );
 
 //针对上游赦免规则anti-AD不予赦免的规则，即赦免名单的黑名单
@@ -207,9 +208,10 @@ while(!feof($src_fp)){
 
 //按需写入白名单规则
 $wrote_whitelist = array();
-$whiterule = file(WHITERULE_SRC, FILE_SKIP_EMPTY_LINES);
-$ARR_WHITE_RULE_LIST = array_merge($ARR_WHITE_RULE_LIST, $whiterule);
-foreach($ARR_WHITE_RULE_LIST as $row){
+$whiterule = file(WHITERULE_SRC, FILE_SKIP_EMPTY_LINES | FILE_IGNORE_NEW_LINES);
+$whiterule=array_fill_keys($whiterule, 0);
+$ARR_WHITE_RULE_LIST = array_merge($whiterule, $ARR_WHITE_RULE_LIST);
+foreach($ARR_WHITE_RULE_LIST as $row => $v){
     if(empty($row) || $row{0} !== '@' || $row{1} !== '@'){
         continue;
     }
@@ -219,6 +221,11 @@ foreach($ARR_WHITE_RULE_LIST as $row){
     }
 
     if(array_key_exists("@@||${matches[1]}^", $ARR_WHITE_RULE_BLK_LIST)){
+        continue;
+    }
+    if($v === 1){
+        $wrote_whitelist[$matches[1]] = null;
+        fwrite($new_fp, "@@||${matches[1]}^\n");
         continue;
     }
 
