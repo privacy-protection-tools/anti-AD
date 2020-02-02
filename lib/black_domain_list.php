@@ -15,8 +15,6 @@ return array(
     'snssdk.com' => array(
         'bds.snssdk.com',
         'xlog.snssdk.com',
-        'i.snssdk.com',
-        'is.snssdk.com',
     ),
     '51togic.com' => array(
         'customstat.video.51togic.com',
