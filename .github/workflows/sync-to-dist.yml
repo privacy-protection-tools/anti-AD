@@ -1,0 +1,13 @@
+name: sync list to dist
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run notification
+      run: curl --connect-timeout 60 -s -X POST -i -u ${{ secrets.GIT_USER }}:${{ secrets.SYNC_TOKEN }} https://api.github.com/repos/privacy-protection-tools/privacy-protection-tools.github.io/actions/runs/${{ secrets.RUNS_ID }}/rerun
