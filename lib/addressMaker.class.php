@@ -179,7 +179,10 @@ class addressMaker{
 
         foreach($arr_result as $rk => $rv){
 
-            if(array_key_exists($rk, $GLOBALS['arr_whitelist'])){//主域名在白名单的，整个不写入屏蔽列表
+            if(
+                array_key_exists($rk, $GLOBALS['arr_whitelist'])
+                && ($GLOBALS['arr_whitelist'][$rk] === 1)
+            ){//主域名在白名单的，并且标识为1的，整个不写入屏蔽列表,
                 continue;
             }
 
@@ -198,7 +201,9 @@ class addressMaker{
 
             $rv = array_unique($rv);
 
-            if(in_array('.' . $rk, $rv) || in_array('www.' . $rk, $rv) || in_array($rk, $rv)){
+            if((in_array('.' . $rk, $rv) || in_array('www.' . $rk, $rv) || in_array($rk, $rv))
+                && !array_key_exists($rk, $GLOBALS['arr_whitelist'])
+            ){
                 $write_len += fwrite($fp, str_replace('{DOMAIN}', $rk, $formatObj['format']) . "\n");
                 continue;
             }
@@ -218,11 +223,17 @@ class addressMaker{
                         $tmp_arr2 = array_slice($tmp_arr1, -1 * $tmp_pos);
                         if(in_array(implode('.', $tmp_arr2), $rv)){
                             if(!in_array(implode('.', $tmp_arr2), $arr_written)){
-                                $arr_written[] = implode('.', $tmp_arr2);
                                 if(array_key_exists(implode('.', $tmp_arr2), $GLOBALS['arr_whitelist'])){
                                     continue;
                                 }
-                                $write_len += fwrite($fp, str_replace('{DOMAIN}', implode('.', $tmp_arr2), $formatObj['format']) . "\n");
+                                $arr_written[] = implode('.', $tmp_arr2);
+                                $write_len += fwrite(
+                                    $fp,
+                                    str_replace('{DOMAIN}',
+                                        implode('.', $tmp_arr2),
+                                        $formatObj['format']
+                                    ) . "\n"
+                                );
                             }
                             $written_flag = true;
                             break;
