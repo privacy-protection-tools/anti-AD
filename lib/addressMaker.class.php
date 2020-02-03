@@ -203,6 +203,7 @@ class addressMaker{
 
             if((in_array('.' . $rk, $rv) || in_array('www.' . $rk, $rv) || in_array($rk, $rv))
                 && !array_key_exists($rk, $GLOBALS['arr_whitelist'])
+                && (1 !== $formatObj['full_domain'])
             ){
                 $write_len += fwrite($fp, str_replace('{DOMAIN}', $rk, $formatObj['format']) . "\n");
                 continue;
@@ -218,7 +219,7 @@ class addressMaker{
                 $tmp_arr1 = explode('.', $rvv);
                 $written_flag = false;
 
-                if(count($tmp_arr1) > 2){
+                if(count($tmp_arr1) > 2 && (1 !== $formatObj['full_domain'])){
                     for($tmp_pos = 3; $tmp_pos <= count($tmp_arr1); $tmp_pos++){
                         $tmp_arr2 = array_slice($tmp_arr1, -1 * $tmp_pos);
                         if(in_array(implode('.', $tmp_arr2), $rv)){

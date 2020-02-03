@@ -12,6 +12,7 @@ class writerFormat{
     const DNSMASQ = array(
         'format' => 'address=/{DOMAIN}/',
         'header' => "#VER={DATE}\n#URL={URL}\n",
+        'full_domain' => 0,
         'name' => 'dnsmasq',
         'filename' => 'adblock-for-dnsmasq.conf'
     );
@@ -20,6 +21,7 @@ class writerFormat{
     const EASYLIST = array(
         'format' => '||{DOMAIN}^',
         'header' => "!AdBlock-style blocklists\n!VER={DATE}\n!URL={URL}\n",
+        'full_domain' => 0,
         'name' => 'easylist',
         'filename' => 'anti-ad-easylist.txt'
     );
@@ -28,6 +30,7 @@ class writerFormat{
     const SURGE = array(
         'format' => 'DOMAIN-SUFFIX,{DOMAIN}',
         'header' => "#VER={DATE}\n#URL={URL}\n",
+        'full_domain' => 0,
         'name' => 'surge',
         'filename' => 'anti-ad-surge.txt'
     );
@@ -36,6 +39,7 @@ class writerFormat{
     const DOMAINS = array(
         'format' => '{DOMAIN}',
         'header' => "#VER={DATE}\n#URL={URL}\n",
+        'full_domain' => 1, //保留子域名，即使其上级域名
         'name' => 'domains',
         'filename' => 'anti-ad-domains.txt'
     );
