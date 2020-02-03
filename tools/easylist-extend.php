@@ -92,6 +92,7 @@ $ARR_WHITE_RULE_LIST = array(
     '@@||github.com^' => 0,
     '@@||tongji.*kuwo.cn^' => 0,
     '@@||ntp.org^' => 1, //针对上面正则表达式的一个赦免规则，例如：2.android.pool.ntp.org
+    '@@||courier-push-apple.com.akadns.net^' => 1, //强制加白, 苹果推送2.courier-push-apple.com.akadns.net
 );
 
 //针对上游赦免规则anti-AD不予赦免的规则，即赦免名单的黑名单
