@@ -9,5 +9,23 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Run notification
-      run: curl --connect-timeout 60 -s -X POST -i -u ${{ secrets.GIT_USER }}:${{ secrets.SYNC_TOKEN }} https://api.github.com/repos/privacy-protection-tools/privacy-protection-tools.github.io/actions/runs/${{ secrets.RUNS_ID }}/rerun
+    - name: clone the website
+      run: git clone https://github.com/privacy-protection-tools/privacy-protection-tools.github.io.git ~/website
+    - name: copy some list files
+      run: |
+        cp ./anti-ad-easylist.txt ~/website/easylist.txt
+        cp ./adblock-for-dnsmasq.conf ~/website/dnsmasq.conf
+        cp ./anti-ad-surge.txt ~/website/surge.txt
+    - name: Commit files
+      run: |
+        cd ~/website
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git commit -m "pull newest list." -a
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.PERSON_TOKEN }}
+        branch: 'master'
+        directory: '/home/runner/website'
+        repository: 'privacy-protection-tools/privacy-protection-tools.github.io'
