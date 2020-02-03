@@ -36,7 +36,7 @@ class writerFormat{
     const DOMAINS = array(
         'format' => '{DOMAIN}',
         'header' => "#VER={DATE}\n#URL={URL}\n",
-        'name' => 'surge',
+        'name' => 'domains',
         'filename' => 'anti-ad-domains.txt'
     );
 
