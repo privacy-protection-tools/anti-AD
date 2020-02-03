@@ -52,7 +52,7 @@
 
 ### 3. Pi-Hole
 1. 进入Pi-Hole的配置界面
-2. 添加 `https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt`([jsDelivr加速](https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD@master/anti-ad-easylist.txt)) 作为新的过滤器
+2. 添加 `https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-domains.txt`([jsDelivr加速](https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD@master/anti-ad-domains.txt)) 作为新的过滤器
 3. 保存后生效
 
 ## jsDelivr镜像加速
