@@ -8,7 +8,7 @@
 
 
 #### v4.3 (2020.02.04)
-- 引入无效域名、hosts剔除机制，大幅提升各过滤列表命中率
+- 引入无效域名、无效hosts剔除机制，大幅提升各过滤列表命中率
 - 为了更好的支持pi-hole，加入一个新的全域名列表 - `anti-ad-domains.txt`
 - 根据网友 [@xlighting2017](https://github.com/privacy-protection-tools/anti-AD/issues/29) 建议，更新surge到新的格式
 - 引入数个新的配置参数，对输出结果精确控制
