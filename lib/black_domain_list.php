@@ -240,9 +240,6 @@ return array(
     'qihoo.com' => array(
         'qihoo.com', //广告联盟
     ),
-    'redditmedia.com' => array(
-        'redditmedia.com', //用户追踪
-    ),
     'minisplat.cn' => array(
         'minisplat.cn',
     ),
