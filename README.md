@@ -6,6 +6,13 @@
 
 本工具是将各大著名的hosts，ad filter lists，adblock list等的列表进行合并去重，再进行一系列的抽象化，例如主动剔除失效域名、easylist优化模糊匹配、增强的黑白名单机制等措施，最终生成期望的高命中率列表。
 
+#### v4.3 (2020.02.04)
+- 引入无效域名、hosts剔除机制，大幅提升各过滤列表命中率
+- 为了更好的支持pi-hole，加入一个新的全域名列表 - `anti-ad-domains.txt`
+- 根据网友 [@xlighting2017](https://github.com/privacy-protection-tools/anti-AD/issues/29) 建议，更新surge到新的格式
+- 引入数个新的配置参数，对输出结果精确控制
+- 若干bug和逻辑修复
+
 #### v4.2.2 (2020.02.02)
 
 - 传统白名单增强模式，支持根域名单独加白而不影响其子域名
