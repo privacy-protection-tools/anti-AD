@@ -1,6 +1,6 @@
 # anti-AD v4
 
-##### anti-AD是目前市面上命中率最高的中文区广告过滤列表，实现了精确的广告屏蔽和隐私保护。现已支持AdGuardHome，dnsmasq， Surge，Pi-Hole等优秀的网络组件。
+##### anti-AD是目前中文区命中率最高的广告过滤列表，实现了精确的广告屏蔽和隐私保护。现已支持AdGuardHome，dnsmasq， Surge，Pi-Hole等优秀的网络组件。
 
 使用anti-AD能够屏蔽广告域名，能屏蔽电视盒子广告，屏蔽app内置广告，同时屏蔽了一些日志收集、大数据统计等涉及个人隐私信息的站点，能够保护个人隐私不被偷偷上传。
 
@@ -11,11 +11,11 @@
 ## 快速使用
 
 | 文件 	| raw链接 	| jsDelivr 	| 操作参考 	| 适用于 	|
-|:--------------------------	|:-------:	|:--------:	|:-------------------------------------------------------------------------------------------------------------------------------------------	|:---------------------------------------------	|
-| `adblock-for-dnsmasq.conf` 	| [raw链接](https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/adblock-for-dnsmasq.conf) 	| [jsDelivr](https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD@master/adblock-for-dnsmasq.conf) 	| 1. 下载过滤列表文件后, 保存到你的dnsmasq配置的正确目录下；<br>2. 重启dnsmasq服务；<br>3. 已经生效了，enjoy it。 	| dnsmasq及其衍生版本 	|
-| `anti-ad-easylist.txt` 	| [raw链接](https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt) 	| [jsDelivr](https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD@master/anti-ad-easylist.txt) 	| 1. 进入AdGuardHome过滤器页面；<br>2. 选择添加过滤器输入名称 anti-AD，url地址填raw链接或者jsDelivr；<br>3. 点击确认后即生效 	| AdGuardHome 	|
-| `anti-ad-domains.txt` 	| [raw链接](https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-domains.txt) 	| [jsDelivr](https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD@master/anti-ad-domains.txt) 	| 以Pi-Hole为例<br>1. 进入pi-hole设置界面<br>2. 添加本domains列表链接到pi-hole的过滤器列表中<br>3. 点击save & update<br>4. 更新成功后即可生效 	| Pi-Hole以及任何支持<br>域名过滤列表的工具。 	|
-| `anti-ad-surge.txt` 	| [raw链接](https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge.txt) 	| [jsDelivr](https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD@master/anti-ad-surge.txt) 	| 直接订阅本条链接，保存后生效 	| Surge或任何支持解析该<br>格式的广告过滤工具。 	|
+|:--------------------------------	|:------------:	|:--------:	|:-------------------------------------------------------------------------------------------------------------------------------------------	|:---------------------------------------------	|
+| `adblock-for-dnsmasq.conf` 	| [link](https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/adblock-for-dnsmasq.conf) 	| [jsDelivr](https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD@master/adblock-for-dnsmasq.conf) 	| 1. 下载过滤列表文件后, 保存到你的dnsmasq配置的正确目录下；<br>2. 重启dnsmasq服务；<br>3. 已经生效了，enjoy it。 	| dnsmasq及其衍生版本 	|
+| `anti-ad-easylist.txt` 	| [link](https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt) 	| [jsDelivr](https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD@master/anti-ad-easylist.txt) 	| 1. 进入AdGuardHome过滤器页面；<br>2. 选择添加过滤器输入名称 anti-AD，url地址填raw链接或者jsDelivr；<br>3. 点击确认后即生效 	| AdGuardHome 	|
+| `anti-ad-domains.txt` 	| [link](https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-domains.txt) 	| [jsDelivr](https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD@master/anti-ad-domains.txt) 	| 以Pi-Hole为例<br>1. 进入pi-hole设置界面<br>2. 添加本domains列表链接到pi-hole的过滤器列表中<br>3. 点击save & update<br>4. 更新成功后即可生效 	| Pi-Hole以及任何支持域名过滤列表的工具。 	|
+| `anti-ad-surge.txt` 	| [link](https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge.txt) 	| [jsDelivr](https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD@master/anti-ad-surge.txt) 	| 直接订阅本条链接，保存后生效 	| Surge或任何支持解析该格式的广告过滤工具。 	|
 
 ## 版本历史
 
