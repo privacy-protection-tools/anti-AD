@@ -222,16 +222,22 @@ class addressMaker{
                 if(count($tmp_arr1) > 2 && (1 !== $formatObj['full_domain'])){
                     for($tmp_pos = 3; $tmp_pos <= count($tmp_arr1); $tmp_pos++){
                         $tmp_arr2 = array_slice($tmp_arr1, -1 * $tmp_pos);
-                        if(in_array(implode('.', $tmp_arr2), $rv)){
-                            if(!in_array(implode('.', $tmp_arr2), $arr_written)){
-                                if(array_key_exists(implode('.', $tmp_arr2), $GLOBALS['arr_whitelist'])){
+                        $tmp_domain = implode('.', $tmp_arr2);
+                        if(array_key_exists($tmp_domain, $GLOBALS['arr_whitelist'])
+                            && (1 === $GLOBALS['arr_whitelist'][$tmp_domain])){
+                            $written_flag = true;
+                            break;
+                        }
+                        if(in_array($tmp_domain, $rv)){
+                            if(!in_array($tmp_domain, $arr_written)){
+                                if(array_key_exists($tmp_domain, $GLOBALS['arr_whitelist'])){
                                     continue;
                                 }
-                                $arr_written[] = implode('.', $tmp_arr2);
+                                $arr_written[] = $tmp_domain;
                                 $write_len += fwrite(
                                     $fp,
                                     str_replace('{DOMAIN}',
-                                        implode('.', $tmp_arr2),
+                                        $tmp_domain,
                                         $formatObj['format']
                                     ) . "\n"
                                 );

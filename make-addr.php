@@ -22,6 +22,11 @@ $arr_whitelist = require ROOT_DIR . 'lib/white_domain_list.php';
 require ROOT_DIR . 'lib/writerFormat.class.php';
 require ROOT_DIR . 'lib/addressMaker.class.php';
 
+//白名单机制增强，加入dead hosts
+$arr_dead_hosts = file(ROOT_DIR . 'origin-files/base-src-dead-hosts.txt', FILE_SKIP_EMPTY_LINES | FILE_IGNORE_NEW_LINES);
+$arr_dead_hosts=array_fill_keys($arr_dead_hosts, 1); //这里设置为1，表示命中的子域名同时加白
+$arr_whitelist = array_merge($arr_dead_hosts, $arr_whitelist);
+
 $arr_result = array();
 $easylist = file_get_contents('./origin-files/base-src-easylist.txt');
 $arr_result = array_merge_recursive($arr_result, addressMaker::get_domain_from_easylist($easylist));

@@ -2,6 +2,7 @@
 //white_domain_list
 //白名单机制...，白名单是
 //@date 2018年12月23日
+//如果value=1,则其下级域名全部加白（例如3级域名，则其4级子域名全部加白）
 
 return array(
 
@@ -12,7 +13,7 @@ return array(
     'googleadapis.l.google.com' => 0, //解决google字体下载异常
     'gstaticadssl.l.google.com' => 0, //解决google字体下载异常
     'gvt2.com' => 1, //gvt2，安卓系统相关
-    'wangbase.com' => 1, //阮一峰同志的博客图片显示，如果value=1并且是根域名，则整条加白
+    'wangbase.com' => 1, //阮一峰同志的博客图片显示
     'l.qq.com' => 0, //解决腾讯视频无法播放
     'dldir1.qq.com' => 0, //qq下载安装包路径
     'cgi.connect.qq.com' => 0, //qq互联

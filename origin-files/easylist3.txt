@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202002011222
+! Version: 202002040850
 ! Title: EasyPrivacy
-! Last modified: 01 Feb 2020 12:22 UTC
+! Last modified: 04 Feb 2020 08:50 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -106,6 +106,7 @@
 -tracking/ga-
 -tracking?referrer=
 -trackingScript.
+-unbxdAnalytics.
 -universal-analytics/
 -v1/tracking/
 -xtcore.js
@@ -693,6 +694,7 @@
 /analytics/js$script
 /analytics/klaviyo_
 /analytics/liferay-
+/analytics/listeners/*
 /analytics/logging
 /analytics/mbox.js
 /analytics/mbox_
@@ -1836,6 +1838,7 @@
 /ga-collect?
 /ga-custom-tracking.
 /ga-custom-vars.
+/ga-events.js
 /ga-explorations.
 /ga-integration-$script
 /ga-links.js
@@ -4884,6 +4887,7 @@
 =getSideStats&
 =googleanalytics_
 =metrics_profile&
+=pageImpression&
 =stats&action=
 =stats&apiVersion=
 =track_view&
@@ -6433,6 +6437,7 @@ _mongo_stats/
 ||iperceptions.com^$third-party
 ||ipfingerprint.com^$third-party
 ||ipgeolocation.io^$third-party
+||ipgp.net^$third-party
 ||ipify.org^$third-party
 ||ipinfo.info^$third-party
 ||ipinfodb.com^$third-party
@@ -11146,6 +11151,7 @@ _mongo_stats/
 ||tracker.softcube.com^
 ||tracker.timesgroup.com^
 ||tracker.twenga.
+||tracker.unbxdapi.com^
 ||tracker.wpserveur.net^
 ||trackerapi.truste.com^
 ||trackicollect.ibase.fr^$third-party
@@ -15519,7 +15525,6 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 ||hisense.com/ta.js
 ||ifeng.com/i?p=
 ||imgstat.baidu.com^
-||imp.appledaily.com^
 ||jcm.jd.com^
 ||jiayuan.com^*/pv.js
 ||js.kuwo.cn/stat/
@@ -16106,6 +16111,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||amplitude.com/libs/amplitude-$script,third-party
 @@||ampproject.org/v0/amp-geo-$script,domain=tasty.co
 @@||analytics.edgekey.net/html5/akamaihtml5-min.js$domain=abcnews.go.com|foxbusiness.com|foxnews.com
+@@||analytics.edgekey.net/ma_library/html5/html5_malibrary.js$script,domain=mxplayer.in
 @@||analytics.edgesuite.net/config/beacon-*.xml$domain=foxnews.com
 @@||analytics.edgesuite.net/html5/akamaihtml5-min.js$domain=abcnews.go.com|foxbusiness.com|foxnews.com|resignationbrewery.com|threenow.co.nz
 @@||analytics.logsss.com/logsss*.min.js$script,domain=rosegal.com
@@ -16114,7 +16120,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||ancestrycdn.com/ui-static/lib/tracking/$domain=ancestry.com
 @@||api-track.delhivery.com/track?waybillId=$~third-party,xmlhttprequest
 @@||api.academia.edu^*/stats?callback$script,~third-party
-@@||api.perfops.net^$script,xmlhttprequest,domain=dnsperf.com
+@@||api.perfops.net^$script,xmlhttprequest,domain=cdnperf.com|dnsperf.com
 @@||api.segment.io/v1/$xmlhttprequest,domain=instacart.com
 @@||api.vidaxl.com^*/trackingservice/customerportal/*?$xmlhttprequest,domain=tracking.vidaxl.com
 @@||aramex.co.nz/Umbraco/Api/Tracking/
@@ -16190,6 +16196,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||eplayerhtml5.performgroup.com/js/tsEplayerHtml5/js/Eplayer/js/quantcast/$script
 @@||events-collector.spot.im/api/$xmlhttprequest
 @@||evestment.com/api/analytics/$domain=evestment.com
+@@||evil-inc.com/comic/advertising-age/$~third-party,xmlhttprequest
 @@||fccbrea.org^*/swfaddress.js
 @@||fifa.com^*/webanalytics.js?
 @@||firstdirect.com^*/logging-code.js
@@ -16316,6 +16323,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||repco.co.nz/_ui/shared/js/analyticsmediator.js
 @@||res-x.com^*/Resonance.aspx?
 @@||retailmenot.com/__wsm.gif$ping,xmlhttprequest
+@@||rum.perfops.net/rum.min.js$script,domain=cdnperf.com
 @@||sahibinden.com/assets/analytics*.js$script
 @@||sbphototours.com/includes/AWStats.js$~third-party
 @@||scorecardresearch.com/beacon.js$domain=agame.com|allmusic.com|amctv.com|apl.tv|babycenter.com|bonappetit.com|calgaryherald.com|canada.com|cbc.ca|dailymail.co.uk|dailymotion.com|deviantart.com|discovery.com|doctoroz.com|edmontonjournal.com|fastcompany.com|financialpost.com|firstwefeast.com|hitfix.com|huffingtonpost.com|investigationdiscovery.com|landandfarm.com|last.fm|leaderpost.com|m.tmz.com|montrealgazette.com|nationalpost.com|newsday.com|ottawacitizen.com|outsideonline.com|radaronline.com|salon.com|sci2.tv|syfy.com|theprovince.com|thestar.com|thestarphoenix.com|thinkatheist.com|tlc.com|tmz.com|v3.co.uk|vancouversun.com|windsorstar.com
@@ -16335,6 +16343,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||static.atgsvcs.com/js/atgsvcs.js$domain=officedepot.com|shop.lego.com
 @@||static.parsely.com^$script,domain=express.co.uk
 @@||staticflickr.com^*/analytics-min.js$domain=flickr.com
+@@||supertaxi.com/webclient/scripts/tracking/tracking.js$script,~third-party
 @@||t.st/video/js/kGoogleAnalytics.js?$domain=thestreet.com
 @@||tagcommander.com^*/tc_$script
 @@||tags.news.com.au/prod/heartbeat/
@@ -16369,6 +16378,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||wordpress.org/extend/plugins/wp-slimstat/screenshot-$image,~third-party
 @@||wordpress.org/wp-slimstat/assets/banner-$image,~third-party
 @@||wp.com^*/google-analytics-for-wordpress/$domain=wordpress.org
+@@||wplogout.com/wp-content/uploads/*Google$image,~third-party
 @@||xfinity.com^*/Comcast.SelfService.Sitecatalyst.js
 @@||yandex.ru/metrika/watch.js$domain=engwords.net
 @@||yimg.com/ss/rapid3.js$script,domain=techcrunch.com
@@ -16501,7 +16511,6 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||aixifan.com^*/sensorsdata.min.js?$domain=acfun.cn
 @@||dynamicyield.com/api/$script,domain=zalora.com.hk|zalora.com.tw
 @@||google-analytics.com/analytics.js$domain=news.gamme.com.tw
-@@||imp.appledaily.com/js/nxm_tr_v20s.js
 @@||tianxun.com^*/js/tracker.js
 @@||uwants.com/include/*/swfaddress.js
 @@||vanclimg.com/js.ashx?*/google-analytics.js$domain=vancl.com
@@ -16517,7 +16526,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||analytics.ooyala.com/static/analytics.js$script,domain=humo.be
 @@||centprod.com/nd/assets/js/analytics.js$script,domain=centprod.com
 @@||d2zv6vzmaqao5e.cloudfront.net/css/foodticket/*_google_analytics.js
-@@||googletagmanager.com/gtm.js?$script,domain=mediamarkt.nl
+@@||googletagmanager.com/gtm.js$script,domain=beterbed.nl|mediamarkt.nl
 ! Finnish
 @@||adobedtm.com^*/satelliteLib-$script,domain=gigantti.fi
 @@||cnetcontent.com/jsc/h.js$domain=atea.fi
