@@ -40,6 +40,9 @@
 
 对于anti-AD，大家伙儿有任何建议，或者存在误杀，bug，其他错误，各种意见 [请开issue](https://github.com/privacy-protection-tools/anti-AD/issues/new/choose)
 
+加入QQ群更实时的交流：716981535 <br>
+![716981535](https://user-images.githubusercontent.com/1243610/73809320-de535780-480d-11ea-82f5-15d4c3ccb0c0.png)
+
 ## 特别感谢
 
 - [notracking/hosts-blocklists-scripts](https://github.com/notracking/hosts-blocklists-scripts) - 提供无效域名和无效hosts列表
