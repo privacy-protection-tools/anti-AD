@@ -50,7 +50,8 @@ return array(
         'iflyad.bjb.openstorage.cn'
     ),
     'cmpassport.com' => array(
-        'log1.cmpassport.com'
+        'log1.cmpassport.com',
+        'log.cmpassport.com',
     ),
     'analysys.cn' => array('analysys.cn'),
     'aliyuncs.com' => array('log.aliyuncs.com'),
@@ -254,7 +255,6 @@ return array(
     ),
     'unity3d.com' => array(//u3d广告平台
         'unityads.unity3d.com',
-        'ads-game-configuration-master.ads.prd.ie.internal.unity3d.com',
         'cdp.cloud.unity3d.com',
         'data-optout-service.uca.cloud.unity3d.com',
         'thind-gke-euw.prd.data.corp.unity3d.com',
