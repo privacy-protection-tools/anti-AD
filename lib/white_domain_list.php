@@ -42,6 +42,7 @@ return array(
     't11.baidu.com' => 0, //百度图片自有平台
     't12.baidu.com' => 0, //百度图片自有平台
     'bytedance.com' => 0, //字节跳动
+    'tbskip.taobao.com' => 1, //淘宝订单搜索相关
 
 
     'activate.adobe.com' => 0,
