@@ -43,6 +43,7 @@ return array(
     't12.baidu.com' => 0, //百度图片自有平台
     'bytedance.com' => 0, //字节跳动
     'tbskip.taobao.com' => 1, //淘宝订单搜索相关
+    'wl.jd.com' => 0, //修复京东pc首页加载异常
 
 
     'activate.adobe.com' => 0,
