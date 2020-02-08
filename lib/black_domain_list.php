@@ -87,7 +87,7 @@ return array(
     'behe.com' => array('behe.com'),
     'dnset.com' => array('dnset.com'),
     'yiqifa.com' => array('yiqifa.com'),
-    'kankan.com' => array('cpm.cm.kankan.com', 'float.kankan.com', 'stat.kankan.com'),
+    'kankan.com' => array('cm.kankan.com', 'float.kankan.com', 'stat.kankan.com'),
     'oadz.com' => array('oadz.com'),
     'dopa.com' => array('dopa.com'),
     'dopa.com.cn' => array('dopa.com.cn'),

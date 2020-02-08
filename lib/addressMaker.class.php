@@ -175,7 +175,7 @@ class addressMaker{
 
             if(
                 array_key_exists($rk, $GLOBALS['arr_whitelist'])
-                && ($GLOBALS['arr_whitelist'][$rk] === 1)
+                && ($GLOBALS['arr_whitelist'][$rk] > 0)
             ){//主域名在白名单的，并且标识为1的，整个不写入屏蔽列表,
                 continue;
             }
@@ -206,7 +206,7 @@ class addressMaker{
                 $written_flag = false;
                 $tmp_arr1_len = count($tmp_arr1);
 
-                if($tmp_arr1_len > 2 && (1 !== $formatObj['full_domain'])){
+                if($tmp_arr1_len > 2){
                     for($tmp_pos = 3; $tmp_pos <= $tmp_arr1_len; $tmp_pos++){
                         $tmp_arr2 = array_slice($tmp_arr1, -1 * $tmp_pos);
                         $tmp_domain = implode('.', $tmp_arr2);
@@ -215,7 +215,7 @@ class addressMaker{
                             $written_flag = true;
                             break;
                         }
-                        if(in_array($tmp_domain, $rv)){
+                        if((1 !== $formatObj['full_domain']) && in_array($tmp_domain, $rv)){
                             if(!in_array($tmp_domain, $arr_written)){
                                 if(array_key_exists($tmp_domain, $GLOBALS['arr_whitelist'])){
                                     continue;
