@@ -44,6 +44,7 @@ return array(
     'bytedance.com' => 0, //字节跳动
     'tbskip.taobao.com' => 1, //淘宝订单搜索相关
     'wl.jd.com' => 0, //修复京东pc首页加载异常
+    'tanx.com' => 0, //饿了么店铺异常
 
 
     'activate.adobe.com' => 0,
