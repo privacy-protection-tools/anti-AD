@@ -68,17 +68,17 @@ $ARR_MERGED_WILD_LIST = array(
 );
 
 $ARR_REGEX_LIST = array(
-    '/^01daa\.[a-z]+\.com$/' => null,
-    '/^9377[a-z]{2}\.com$/' => null,
+    '/01daa\.[a-z]+\.com$/' => null,
+    '/9377[a-z]{2}\.com$/' => null,
     '/^[1-3]\.[0-9a-z\.\-]+\.(com|cn|net|org|cc|me)$/' => null,
 //    '/^a1\.[0-9a-z\.]+\.(com|cn|org|net|me)$/' => null,
     '/^ad([0-9]|m|s)?\./' => null,
-    '/^affiliat(es|ion|e)\./' => null,
-    '/^afgr[0-9]{1,2}\.com$/' => null,
+    '/^([a-z0-9\-\.]+\.)?affiliat(es|ion|e)\./' => null,
+    '/afgr[0-9]{1,2}\.com$/' => null,
     '/^analytics(\-|\.)/' => null,
     '/^counter(\-|\.)/' => null,
     '/^pixels?\./' => null,
-    '/^syma[a-z]\.cn$/' => null,
+    '/syma[a-z]\.cn$/' => null,
     '/^widgets?\./' => null,
     '/^(web)?stats?\./' => null,
     '/^track(ing)?\./' => null,
