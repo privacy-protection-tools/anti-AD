@@ -2,7 +2,7 @@
 //white_domain_list
 //白名单机制...，白名单是
 //@date 2018年12月23日
-//如果value=1,则其下级域名全部加白（例如3级域名，则其4级子域名全部加白）
+//value=1,代表其下级域名全部加白（例如3级域名，则其4级子域名全部加白）
 
 return array(
 
@@ -45,7 +45,10 @@ return array(
     'tbskip.taobao.com' => 1, //淘宝订单搜索相关
     'wl.jd.com' => 0, //修复京东pc首页加载异常
 
-
+    'herokuapp.com' => 0,
+    'vidoza.net' => 0,
+    'nahnoji.cz' => 1,
+    'cloudfront.net' => 0,
     'activate.adobe.com' => 0,
     'ereg.adobe.com' => 0,
     'hlrcv.stage.adobe.com' => 0,

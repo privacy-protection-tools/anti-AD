@@ -13,12 +13,6 @@
 class addressMaker{
 
     const LINK_URL = 'https://github.com/privacy-protection-tools/anti-AD';
-    const TMP_NO_STRICT = array( //临时需要关闭严格模式的主域名
-        'herokuapp.com' => null,
-        'vidoza.net' => null,
-        'nahnoji.cz' => null,
-        'cloudfront.net' => null,
-    );
 
     /**
      * 分离域名
@@ -108,7 +102,7 @@ class addressMaker{
                     $row = $matches[1];
                 }
                 $main_domain = self::extract_main_domain($matches[1]);
-                if($strict_mode && !array_key_exists($main_domain, self::TMP_NO_STRICT)){
+                if($strict_mode && !array_key_exists($main_domain, $GLOBALS['arr_whitelist'])){
                     $arr_domains[$main_domain] = array($main_domain);
                 }else{
                     $arr_domains[$main_domain][] = $row;
@@ -156,7 +150,7 @@ class addressMaker{
                 continue;
             }
             $main_domain = self::extract_main_domain($row[1]);
-            if($strict_mode && !array_key_exists($main_domain, self::TMP_NO_STRICT)){
+            if($strict_mode && !array_key_exists($main_domain, $GLOBALS['arr_whitelist'])){
                 $arr_domains[$main_domain] = array($main_domain);
             }else{
                 $arr_domains[$main_domain][] = $row[1];
@@ -191,14 +185,6 @@ class addressMaker{
                 continue;
             }
 
-            if(!is_array($rv)){
-                if(array_key_exists($rv, $GLOBALS['arr_whitelist'])){//单个域名的白名单检查
-                    continue;
-                }
-                $write_len += fwrite($fp, str_replace('{DOMAIN}', $rv, $formatObj['format']) . "\n");
-                continue;
-            }
-
             $rv = array_unique($rv);
 
             if((in_array('.' . $rk, $rv) || in_array('www.' . $rk, $rv) || in_array($rk, $rv))
@@ -218,9 +204,10 @@ class addressMaker{
                 //合并三级域名逻辑
                 $tmp_arr1 = explode('.', $rvv);
                 $written_flag = false;
+                $tmp_arr1_len = count($tmp_arr1);
 
-                if(count($tmp_arr1) > 2 && (1 !== $formatObj['full_domain'])){
-                    for($tmp_pos = 3; $tmp_pos <= count($tmp_arr1); $tmp_pos++){
+                if($tmp_arr1_len > 2 && (1 !== $formatObj['full_domain'])){
+                    for($tmp_pos = 3; $tmp_pos <= $tmp_arr1_len; $tmp_pos++){
                         $tmp_arr2 = array_slice($tmp_arr1, -1 * $tmp_pos);
                         $tmp_domain = implode('.', $tmp_arr2);
                         if(array_key_exists($tmp_domain, $GLOBALS['arr_whitelist'])
