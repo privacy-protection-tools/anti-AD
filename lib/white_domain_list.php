@@ -45,6 +45,7 @@ return array(
     'tbskip.taobao.com' => 1, //淘宝订单搜索相关
     'wl.jd.com' => 0, //修复京东pc首页加载异常
     'tanx.com' => 0, //饿了么店铺异常
+    'promotion.aliyun.com' => 0, //阿里云控制台
 
 
     'activate.adobe.com' => 0,
