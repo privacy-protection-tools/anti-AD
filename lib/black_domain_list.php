@@ -43,9 +43,6 @@ return array(
         'report.qq.com',
         'rcgi.video.qq.com',
     ),
-    'alibaba.com' => array(
-        'fourier.alibaba.com'
-    ),
     'openstorage.cn' => array(
         'iflyad.bjb.openstorage.cn'
     ),
