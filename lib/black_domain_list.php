@@ -149,12 +149,10 @@ return array(
     'xiaomi.com' => array(
         'data.mistat.intl.xiaomi.com',
         'data.mistat.xiaomi.com',
-        'o2o.api.xiaomi.com',
         'adv.sec.miui.com',
         'ad.intl.xiaomi.com',
         'ad.xiaomi.com',
         'admob.xiaomi.com',
-        'file.market.xiaomi.com',
     ),
     'zhihu.com' => array(
         'lc-push.zhihu.com',
