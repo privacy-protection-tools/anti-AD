@@ -60,7 +60,6 @@ return array(
     'na1r.services.adobe.com' => 0,
     'licenses.adobe.com' => 1,
     'alcohol-soft.com' => 1,
-    'trial.alcohol-soft.com' => 0,
     'licenses.ashampoo.com' => 0,
     'bluesoleil.com' => 1,
     'activation.phaseone.com' => 0,
