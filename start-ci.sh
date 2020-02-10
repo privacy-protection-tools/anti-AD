@@ -90,7 +90,7 @@ cat strict-hosts*.txt | grep -v -E "^((#.*)|(\s*))$" \
 
 cat dead-hosts*.txt | grep -v -E "^(#|\!)" \
  | sort \
- | uniq >base-src-dead-hosts.txt
+ | uniq >base-dead-hosts.txt
 
 
 cat easylist*.txt | grep -E "^\|\|[^\*\^]+?\^" | sort | uniq >base-src-easylist.txt

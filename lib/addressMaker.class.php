@@ -70,9 +70,10 @@ class addressMaker{
      *
      * @param String $str_easylist 原始的easylist列表字符串
      * @param Boolean $strict_mode 严格模式，启用时将屏蔽该域所在的主域名，例如www.baidu.com，将获取到baidu.com并写入最终列表
+     * @param Array $arr_whitelist 白名单列表
      * @return array
      */
-    public static function get_domain_from_easylist($str_easylist, $strict_mode = false){
+    public static function get_domain_from_easylist($str_easylist, $strict_mode = false, $arr_whitelist = array()){
         $strlen = strlen($str_easylist);
         if($strlen < 10){
             return array();
@@ -102,7 +103,7 @@ class addressMaker{
                     $row = $matches[1];
                 }
                 $main_domain = self::extract_main_domain($matches[1]);
-                if($strict_mode && !array_key_exists($main_domain, $GLOBALS['arr_whitelist'])){
+                if($strict_mode && (!array_key_exists($main_domain, $arr_whitelist) || ($arr_whitelist[$main_domain] === 1))){
                     $arr_domains[$main_domain] = array($main_domain);
                 }else{
                     $arr_domains[$main_domain][] = $row;
@@ -118,9 +119,10 @@ class addressMaker{
      *
      * @param String $str_hosts 原始的hosts字符串
      * @param Boolean $strict_mode 严格模式，启用时将屏蔽该域所在的主域名，例如www.baidu.com，将获取到baidu.com并写入最终列表
+     * @param Array $arr_whitelist 白名单
      * @return array
      */
-    public static function get_domain_list($str_hosts, $strict_mode = false){
+    public static function get_domain_list($str_hosts, $strict_mode = false, $arr_whitelist = array()){
         $strlen = strlen($str_hosts);
         if($strlen < 3){
             return array();
@@ -150,7 +152,7 @@ class addressMaker{
                 continue;
             }
             $main_domain = self::extract_main_domain($row[1]);
-            if($strict_mode && !array_key_exists($main_domain, $GLOBALS['arr_whitelist'])){
+            if($strict_mode && (!array_key_exists($main_domain, $arr_whitelist) || ($arr_whitelist[$main_domain] === 1))){
                 $arr_domains[$main_domain] = array($main_domain);
             }else{
                 $arr_domains[$main_domain][] = $row[1];
@@ -160,92 +162,115 @@ class addressMaker{
         return $arr_domains;
     }
 
-    private static function write_conf_header($fp, $header){
+    private static function write_conf_header($fp, $header, $arr_params = array()){
         $header = str_replace('{DATE}', date('YmdHis'), $header);
         $header = str_replace('{URL}', self::LINK_URL, $header);
+
+        foreach($arr_params as $keyword => $val){
+            $header = str_replace('{' . $keyword . '}', $val, $header);
+        }
         return fwrite($fp, $header);
     }
 
-    public static function write_to_conf($arr_result, $formatObj){
+    /**
+     * 写入结果到最终文件
+     *
+     * @param array $arr_src
+     * @param $arr_format
+     * @param array $arr_whitelist
+     * @return false|int
+     */
+    public static function write_to_file(array $arr_src, array $arr_format, $arr_whitelist = array()){
 
-        $fp = fopen(ROOT_DIR . $formatObj['filename'], 'w');
-        $write_len = self::write_conf_header($fp, $formatObj['header']);
+        if(count($arr_src) < 1){
+            return false;
+        }
 
-        foreach($arr_result as $rk => $rv){
+        $str_result = '';
+        $line_count = 0;
+
+        $arr_written = [];
+        foreach($arr_src as $main_domain => $arr_subdomains){
+
+            if(array_key_exists($main_domain, $arr_whitelist) && ($arr_whitelist[$main_domain] > 0)){
+                continue;
+            }
+
+            if(empty($main_domain)){//不匹配记录（一般是不合法域名或者未收录的后缀）
+                continue;
+            }
+
+            $arr_subdomains = array_unique($arr_subdomains);
 
             if(
-                array_key_exists($rk, $GLOBALS['arr_whitelist'])
-                && ($GLOBALS['arr_whitelist'][$rk] > 0)
-            ){//主域名在白名单的，并且标识为1的，整个不写入屏蔽列表,
-                continue;
-            }
-
-            if(empty($rk)){//遗漏的域名，不会写入到最终的配置里
-//                print_r($rv);
-                continue;
-            }
-
-            $rv = array_unique($rv);
-
-            if((in_array('.' . $rk, $rv) || in_array('www.' . $rk, $rv) || in_array($rk, $rv))
-                && !array_key_exists($rk, $GLOBALS['arr_whitelist'])
-                && (1 !== $formatObj['full_domain'])
+                (1 !== $arr_format['full_domain'])
+                && (in_array($main_domain, $arr_subdomains) || in_array('www.' . $main_domain, $arr_subdomains))
+                && (!array_key_exists($main_domain, $arr_whitelist) || $arr_whitelist[$main_domain] > 0)
             ){
-                $write_len += fwrite($fp, str_replace('{DOMAIN}', $rk, $formatObj['format']) . "\n");
+                $str_result .= str_replace('{DOMAIN}', $main_domain, $arr_format['format']) . "\n";
+                $line_count ++;
                 continue;
             }
 
-            $arr_written = [];
-            foreach($rv as $rvv){
-                if(array_key_exists($rvv, $GLOBALS['arr_whitelist'])){
+            foreach($arr_subdomains as $subdomain){
+                if(array_key_exists($subdomain, $arr_whitelist)){
+                    continue;
+                }
+                if(1 === $arr_format['full_domain']){
+                    $str_result .= str_replace('{DOMAIN}', $subdomain, $arr_format['format']) . "\n";
+                    $line_count ++;
+                    $arr_written[] = $subdomain;
                     continue;
                 }
 
-                //合并三级域名逻辑
-                $tmp_arr1 = explode('.', $rvv);
-                $written_flag = false;
-                $tmp_arr1_len = count($tmp_arr1);
+                $arr_tmp_domain = explode('.', $subdomain);
+                $tmp_domain_len = count($arr_tmp_domain);
+                if($tmp_domain_len < 3){
+                    $str_result .= str_replace('{DOMAIN}', $subdomain, $arr_format['format']) . "\n";
+                    $line_count ++;
+                    $arr_written[] = $subdomain;
+                    continue;
+                }
 
-                if($tmp_arr1_len > 2){
-                    for($tmp_pos = 3; $tmp_pos <= $tmp_arr1_len; $tmp_pos++){
-                        $tmp_arr2 = array_slice($tmp_arr1, -1 * $tmp_pos);
-                        $tmp_domain = implode('.', $tmp_arr2);
-                        if(array_key_exists($tmp_domain, $GLOBALS['arr_whitelist'])
-                            && (1 === $GLOBALS['arr_whitelist'][$tmp_domain])){
-                            $written_flag = true;
-                            break;
+                $matched_flag = false;
+                for($pos = 3; $pos <= $tmp_domain_len; $pos ++){
+                    $arr_tmp = array_slice($arr_tmp_domain, -1 * $pos);
+                    $tmp = implode('.', $arr_tmp);
+                    if(array_key_exists($tmp, $arr_whitelist)){
+                        if($arr_whitelist[$tmp] === 1){
+                            $matched_flag = true;
+                        }else{
+                            $matched_flag = false;
+                            $arr_written[] = $tmp;
                         }
-                        if((1 !== $formatObj['full_domain']) && in_array($tmp_domain, $rv)){
-                            if(!in_array($tmp_domain, $arr_written)){
-                                if(array_key_exists($tmp_domain, $GLOBALS['arr_whitelist'])){
-                                    continue;
-                                }
-                                $arr_written[] = $tmp_domain;
-                                $write_len += fwrite(
-                                    $fp,
-                                    str_replace('{DOMAIN}',
-                                        $tmp_domain,
-                                        $formatObj['format']
-                                    ) . "\n"
-                                );
-                            }
-                            $written_flag = true;
-                            break;
+                        break;
+                    }elseif(($tmp === $subdomain) || in_array($tmp, $arr_subdomains)){
+                        if(!in_array($tmp, $arr_written)){
+                            $str_result .= str_replace('{DOMAIN}', $tmp, $arr_format['format']) . "\n";
+                            $line_count ++;
+                            $arr_written[] = $tmp;
                         }
+                        $matched_flag = true;
+                        break;
                     }
                 }
 
-                if(in_array($rvv, $arr_written) || $written_flag){
+                if($matched_flag){
                     continue;
                 }
 
-                $arr_written[] = $rvv;
-                $write_len += fwrite($fp, str_replace('{DOMAIN}', $rvv, $formatObj['format']) . "\n");
+                if(!in_array($subdomain, $arr_written)){
+                    $str_result .= str_replace('{DOMAIN}', $subdomain, $arr_format['format']) . "\n";
+                    $line_count ++;
+                    $arr_written[] = $subdomain;
+                }
             }
         }
+        unset($arr_written);
 
-        fclose($fp);
-
+        $fp = fopen(ROOT_DIR . $arr_format['filename'], 'w');
+        $write_len = self::write_conf_header($fp, $arr_format['header'], array('COUNT' => $line_count));
+        $write_len += fwrite($fp, $str_result);
         return $write_len;
     }
 }
