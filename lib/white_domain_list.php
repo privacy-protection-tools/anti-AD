@@ -49,6 +49,7 @@ return array(
     'wl.jd.com' => 0, //修复京东pc首页加载异常
     'tanx.com' => 0, //饿了么店铺异常
     'promotion.aliyun.com' => 0, //阿里云控制台
+    'rarbg.to' => 0, //BT站
 
 
     'herokuapp.com' => 0,
