@@ -216,12 +216,6 @@ class addressMaker{
                 if(array_key_exists($subdomain, $arr_whitelist)){
                     continue;
                 }
-                if(1 === $arr_format['full_domain']){
-                    $str_result .= str_replace('{DOMAIN}', $subdomain, $arr_format['format']) . "\n";
-                    $line_count ++;
-                    $arr_written[] = $subdomain;
-                    continue;
-                }
 
                 $arr_tmp_domain = explode('.', $subdomain);
                 $tmp_domain_len = count($arr_tmp_domain);
@@ -237,11 +231,9 @@ class addressMaker{
                     $arr_tmp = array_slice($arr_tmp_domain, -1 * $pos);
                     $tmp = implode('.', $arr_tmp);
                     if(array_key_exists($tmp, $arr_whitelist)){
-                        if($arr_whitelist[$tmp] === 1){
-                            $matched_flag = true;
-                        }else{
-                            $matched_flag = false;
-                            $arr_written[] = $tmp;
+                        $matched_flag = $arr_whitelist[$tmp] === 1;
+                        if($matched_flag){
+                            $arr_written[] = $subdomain;
                         }
                         break;
                     }elseif(($tmp === $subdomain) || in_array($tmp, $arr_subdomains)){
@@ -250,7 +242,7 @@ class addressMaker{
                             $line_count ++;
                             $arr_written[] = $tmp;
                         }
-                        $matched_flag = true;
+                        $matched_flag = 1 !== $arr_format['full_domain'];
                         break;
                     }
                 }

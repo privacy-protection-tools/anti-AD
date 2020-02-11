@@ -59,8 +59,6 @@ return array(
     'lmlicenses.wip4.adobe.com' => 0,
     'na1r.services.adobe.com' => 0,
     'licenses.adobe.com' => 1,
-    'lm.licenses.adobe.com' => 1,
-    'na2m-pr.licenses.adobe.com' => 1,
     'alcohol-soft.com' => 1,
     'licenses.ashampoo.com' => 0,
     'bluesoleil.com' => 1,
