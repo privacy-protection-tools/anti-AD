@@ -51,7 +51,6 @@ return array(
         'log.cmpassport.com',
     ),
     'analysys.cn' => array('analysys.cn'),
-    'aliyuncs.com' => array('log.aliyuncs.com'),
     'mob.com' => array('mob.com'),
     'szy.cn' => array('dtlog.szy.cn'),
     'adview.cn' => array('adview.cn'),
