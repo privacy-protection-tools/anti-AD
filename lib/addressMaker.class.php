@@ -200,6 +200,10 @@ class addressMaker{
                 continue;
             }
 
+            if(isset($arr_whitelist[$main_domain]) && (-1 === $arr_whitelist[$main_domain])){
+                unset($arr_whitelist[$main_domain]);
+            }
+
             $arr_subdomains = array_unique($arr_subdomains);
 
             if(
@@ -230,6 +234,10 @@ class addressMaker{
                 for($pos = 3; $pos <= $tmp_domain_len; $pos ++){
                     $arr_tmp = array_slice($arr_tmp_domain, -1 * $pos);
                     $tmp = implode('.', $arr_tmp);
+                    if(isset($arr_whitelist[$tmp]) && (-1 === $arr_whitelist[$tmp])){
+                        unset($arr_whitelist[$tmp]);
+                    }
+
                     if(array_key_exists($tmp, $arr_whitelist)){
                         $matched_flag = $arr_whitelist[$tmp] === 1;
                         if($matched_flag){
