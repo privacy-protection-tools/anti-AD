@@ -2,7 +2,10 @@
 //white_domain_list
 //白名单机制...，白名单是
 //@date 2018年12月23日
-//如果value=1,则其下级域名全部加白（例如3级域名，则其4级子域名全部加白）
+//value=-1,代表失效本条规则，暂只支持单域名（针对引入外部白名单时的精确控制）
+//value=0,代表仅加白单条域名
+//value=1,代表其下级域名全部加白（例如3级域名，则其4级子域名全部加白）
+//value=2,代表仅加白主域名及其子域名，即如果是主域名，加白全部，如果是子域名，加白命中的单条
 
 return array(
 
@@ -48,42 +51,37 @@ return array(
     'promotion.aliyun.com' => 0, //阿里云控制台
 
 
+    'herokuapp.com' => 0,
+    'vidoza.net' => 0,
+    'nahnoji.cz' => 1,
+    'cloudfront.net' => 0,
     'activate.adobe.com' => 0,
     'ereg.adobe.com' => 0,
     'hlrcv.stage.adobe.com' => 0,
-    'lm.licenses.adobe.com' => 0,
     'lmlicenses.wip4.adobe.com' => 0,
     'na1r.services.adobe.com' => 0,
-    'na2m-pr.licenses.adobe.com' => 0,
-    'serial.alcohol-soft.com' => 0,
-    'trial.alcohol-soft.com' => 0,
+    'licenses.adobe.com' => 1,
+    'alcohol-soft.com' => 1,
     'licenses.ashampoo.com' => 0,
-    'license.bluesoleil.com' => 0,
-    'license2.bluesoleil.com' => 0,
-    'license3.bluesoleil.com' => 0,
+    'bluesoleil.com' => 1,
     'activation.phaseone.com' => 0,
-    'apps.corel.com' => 0,
-    'mc.corel.com' => 0,
-    'origin-mc.corel.com' => 0,
-    'iws.corel.com' => 0,
-    'ipm.corel.com' => 0,
-    'sws.corel.com' => 0,
-    'dam.corel.com' => 0,
+    'corel.com' => 1,
     'dbregistration.cuteftp.com' => 0,
-    'activation.cyberlink.com' => 0,
-    'cap.cyberlink.com' => 0,
+    'cyberlink.com' => 1,
     'activation.easeus.com' => 0,
     'upd.faronicslabs.com' => 0,
-    'backup.lumion3d.com' => 0,
-    'backup.lumion3d.net' => 0,
-    'license.lumion3d.com' => 0,
-    'license.lumion3d.net' => 0,
+    'lumion3d.com' => 1,
+    'lumion3d.net' => 1,
     'act2.mediafour.com' => 0,
     'sams.nikonimaging.com' => 0,
     'license.piriform.com' => 0,
     'www.bitsumactivationserver.com' => 0,
     'licensing.tableausoftware.com' => 0,
-    'activation.cloud.techsmith.com' => 0,
-    'updates-s3.binaryage.com' => 0,
-    'reg.wisecleaner.com' => 0,
+    'techsmith.com' => 1,
+    'binaryage.com' => 1,
+    'wisecleaner.com' => 1,
+
+
+    'cpm.cm.kankan.com' => -1, //-1 失效本条规则，保持现状，即不加白本域名
+
 );
