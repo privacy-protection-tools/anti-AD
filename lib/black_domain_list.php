@@ -356,6 +356,11 @@ return array(
     'voodoo.io' => array('crosspromo.voodoo.io'), //交叉推广
     'inner-active.mobi' => array('inner-active.mobi'), //广告追踪
     'adtilt.com' => array('adtilt.com'), //隐私收集
+    'nextmedia.com' => array(
+        'imp.nextmedia.com', //行为追踪
+        'dev.imp.nextmedia.com',
+        'dev-imp.nextmedia.com',
+    ),
 
 
 
