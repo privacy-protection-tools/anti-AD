@@ -174,7 +174,6 @@ return array(
     ),
     'amazon.com' => array(
         'device-messaging-na.amazon.com',
-        'todo-ta-g7g.amazon.com',
     ),
     'shareinstall.com.cn' => array(
         'shareinstall.com.cn' //移动广告商
