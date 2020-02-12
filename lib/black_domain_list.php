@@ -51,7 +51,6 @@ return array(
         'log.cmpassport.com',
     ),
     'analysys.cn' => array('analysys.cn'),
-    'aliyuncs.com' => array('log.aliyuncs.com'),
     'mob.com' => array('mob.com'),
     'szy.cn' => array('dtlog.szy.cn'),
     'adview.cn' => array('adview.cn'),
@@ -175,7 +174,6 @@ return array(
     ),
     'amazon.com' => array(
         'device-messaging-na.amazon.com',
-        'todo-ta-g7g.amazon.com',
     ),
     'shareinstall.com.cn' => array(
         'shareinstall.com.cn' //移动广告商
