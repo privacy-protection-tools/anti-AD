@@ -11,7 +11,7 @@ class writerFormat{
     /*dnsmasq支持格式的屏蔽广告列表*/
     const DNSMASQ = array(
         'format' => 'address=/{DOMAIN}/',
-        'header' => "#VER={DATE}\n#URL={URL}\n#TOTAL_COUNT={COUNT}\n",
+        'header' => "#TITLE=anti-AD\n#VER={DATE}\n#URL={URL}\n#TOTAL_LINES={COUNT}\n",
         'full_domain' => 0,
         'name' => 'dnsmasq',
         'filename' => 'adblock-for-dnsmasq.conf',
@@ -39,7 +39,7 @@ class writerFormat{
     /*easylist 兼容格式的屏蔽广告列表*/
     const EASYLIST = array(
         'format' => '||{DOMAIN}^',
-        'header' => "!AdBlock-style blocklists\n!VER={DATE}\n!URL={URL}\n",
+        'header' => "!TITLE=anti-AD\n!VER={DATE}\n!URL={URL}\n!TOTAL_LINES=00000\n",
         'full_domain' => 0,
         'name' => 'easylist',
         'filename' => 'anti-ad-easylist.txt',
@@ -67,7 +67,7 @@ class writerFormat{
     /*Surge 兼容格式的屏蔽广告列表*/
     const SURGE = array(
         'format' => 'DOMAIN-SUFFIX,{DOMAIN}',
-        'header' => "#VER={DATE}\n#URL={URL}\n#TOTAL_COUNT={COUNT}\n",
+        'header' => "#TITLE=anti-AD\n#VER={DATE}\n#URL={URL}\n#TOTAL_LINES={COUNT}\n",
         'full_domain' => 0,
         'name' => 'surge',
         'filename' => 'anti-ad-surge.txt',
@@ -95,7 +95,7 @@ class writerFormat{
     /*Domains 格式的屏蔽广告列表，用于支持pi-hole等*/
     const DOMAINS = array(
         'format' => '{DOMAIN}',
-        'header' => "#VER={DATE}\n#URL={URL}\n#TOTAL_COUNT={COUNT}\n",
+        'header' => "#TITLE=anti-AD\n#VER={DATE}\n#URL={URL}\n#TOTAL_LINES={COUNT}\n",
         'full_domain' => 1, //保留子域名，即使其上级域名
         'name' => 'domains',
         'filename' => 'anti-ad-domains.txt',
