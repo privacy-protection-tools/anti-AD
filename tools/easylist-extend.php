@@ -70,7 +70,7 @@ $ARR_MERGED_WILD_LIST = array(
 $ARR_REGEX_LIST = array(
     '/01daa\.[a-z]+\.com$/' => null,
     '/9377[a-z]{2}\.com$/' => null,
-    '/^[1-3]\.[0-9a-z\.\-]+\.(com|cn|net|org|cc|me)$/' => null,
+    '/^[1-2]\.[0-9a-z\.\-]+\.(com|cn|net|cc|me)$/' => null,
 //    '/^a1\.[0-9a-z\.]+\.(com|cn|org|net|me)$/' => null,
     '/^ad([0-9]|m|s)?\./' => null,
     '/^([a-z0-9\-\.]+\.)?affiliat(es|ion|e)\./' => null,
@@ -90,9 +90,12 @@ $ARR_REGEX_LIST = array(
 //对通配符匹配或正则匹配增加的额外赦免规则
 $ARR_WHITE_RULE_LIST = array(
     '@@||tongji.*kuwo.cn^' => 0,
-    '@@||ntp.org^' => 1, //针对上面正则表达式的一个赦免规则，例如：2.android.pool.ntp.org
+    '@@||ntp.org^' => 1, //强制加白，针对上面正则表达式的一个赦免规则，例如：2.android.pool.ntp.org
     '@@||*push-apple.com.akadns.net^' => 1, //强制加白, 苹果推送2.courier-push-apple.com.akadns.net
-    '@@||tracking.epicgames.com' => 0,
+    '@@||tracking.epicgames.com^' => 0,
+    '@@||tracker.eu.org^' => 1, //强制加白，BT tracker，有形如2.tracker.eu.org的域
+    '@@||1.itzmx.com^' => 0, //PT tracker
+    '@@||stats.uptimerobot.com^' => 0, //uptimerobot监测相关
 );
 
 //针对上游赦免规则anti-AD不予赦免的规则，即赦免名单的黑名单
@@ -162,15 +165,19 @@ while(!feof($wild_fp)){
 fclose($wild_fp);
 
 $arr_wild_src = array_merge($arr_wild_src, $ARR_MERGED_WILD_LIST);
-
+$insert_pos = $written_size = $line_count = 0;
 while(!feof($src_fp)){
     $row = fgets($src_fp, 512);
     if(empty($row)){
         continue;
     }
 
+    if(($row{0} === '!') && (substr($row, 0, 13) === '!TOTAL_LINES=')){
+        $insert_pos = $written_size;
+    }
+
     if(!preg_match('/^\|.+?/', $row)){
-        fwrite($new_fp, $row);
+        $written_size += fwrite($new_fp, $row);
         continue;
     }
 
@@ -179,7 +186,8 @@ while(!feof($src_fp)){
         if(preg_match($regex_str, substr(trim($row), 2, -1))){
             $matched = true;
             if(!array_key_exists($regex_str, $wrote_wild)){
-                fwrite($new_fp, "${regex_str}\n");
+                $written_size += fwrite($new_fp, "${regex_str}\n");
+                $line_count++;
                 $wrote_wild[$regex_str] = 1;
             }
         }
@@ -192,7 +200,8 @@ while(!feof($src_fp)){
     foreach($arr_wild_src as $core_str => $wild_row){
         $match_rule = str_replace('*', '.*', $core_str);
         if(!array_key_exists($core_str, $wrote_wild)){
-            fwrite($new_fp, "||${core_str}^\n");
+            $written_size += fwrite($new_fp, "||${core_str}^\n");
+            $line_count++;
             $wrote_wild[$core_str] = 1;
         }
         if(preg_match("/\|${match_rule}/", $row)){
@@ -204,7 +213,8 @@ while(!feof($src_fp)){
     if($matched){
         continue;
     }
-    fwrite($new_fp, $row);
+    $written_size += fwrite($new_fp, $row);
+    $line_count++;
 }
 
 //按需写入白名单规则
@@ -227,6 +237,7 @@ foreach($ARR_WHITE_RULE_LIST as $row => $v){
     if($v === 1){
         $wrote_whitelist[$matches[1]] = null;
         fwrite($new_fp, "@@||${matches[1]}^\n");
+        $line_count++;
         continue;
     }
 
@@ -249,8 +260,13 @@ foreach($ARR_WHITE_RULE_LIST as $row => $v){
             }
             $wrote_whitelist[$matches[1]] = null;
             fwrite($new_fp, "@@||${matches[1]}^\n");
+            $line_count++;
         }
     }
+}
+
+if(($insert_pos > 0) && (fseek($new_fp, $insert_pos) === 0)){
+    fwrite($new_fp, "!TOTAL_LINES={$line_count}\n");
 }
 
 fclose($src_fp);
