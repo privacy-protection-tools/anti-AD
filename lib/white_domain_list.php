@@ -2,7 +2,7 @@
 //white_domain_list
 //白名单机制...，白名单是
 //@date 2018年12月23日
-//value=-1,代表失效本条规则，暂只支持单域名（针对引入外部白名单时的精确控制）
+//value=-1,代表失效本条规则，暂只支持单域名（针对引入外部白名单时的精确控制）,当处于strict_mode时，排除此key，单条关闭strict_mode
 //value=0,代表仅加白单条域名
 //value=1,代表其下级域名全部加白（例如3级域名，则其4级子域名全部加白）
 //value=2,代表仅加白主域名及其子域名，即如果是主域名，加白全部，如果是子域名，加白命中的单条
@@ -27,7 +27,7 @@ return array(
     'edge.yunjiasu.com' => 0, //百度云加速javascript快速加载功能
     'cd.bendibao.com' => 0, //成都本地宝
     'm.qpic.cn' => 0, // qq，微信，QQ空间等用到的静态资源域名
-    'ipify.org' => 0, // 获得公网 IP
+    'ipify.org' => 1, // 获得公网 IP
     'pass.1688.com' => 0, // 阿里巴巴网站访问不正常
     'cedexis.net' => 0, // windowsupdate CNAME
     'y0.cn' => 0, // 短网址服务，涉及本次丁香医生实时疫情页面 http://y0.cn/sari
@@ -52,10 +52,10 @@ return array(
     'rarbg.to' => 0, //BT站
 
 
-    'herokuapp.com' => 0,
-    'vidoza.net' => 0,
+    'herokuapp.com' => -1,
+    'vidoza.net' => -1,
     'nahnoji.cz' => 1,
-    'cloudfront.net' => 0,
+    'cloudfront.net' => -1,
 
     /**notracking 提议加白的一批域名 start**/
     'scribol.com' => 0,
