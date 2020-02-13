@@ -70,7 +70,7 @@ $ARR_MERGED_WILD_LIST = array(
 $ARR_REGEX_LIST = array(
     '/01daa\.[a-z]+\.com$/' => null,
     '/9377[a-z]{2}\.com$/' => null,
-    '/^[1-3]\.[0-9a-z\.\-]+\.(com|cn|net|org|cc|me)$/' => null,
+    '/^[1-2]\.[0-9a-z\.\-]+\.(com|cn|net|cc|me)$/' => null,
 //    '/^a1\.[0-9a-z\.]+\.(com|cn|org|net|me)$/' => null,
     '/^ad([0-9]|m|s)?\./' => null,
     '/^([a-z0-9\-\.]+\.)?affiliat(es|ion|e)\./' => null,
@@ -92,7 +92,9 @@ $ARR_WHITE_RULE_LIST = array(
     '@@||tongji.*kuwo.cn^' => 0,
     '@@||ntp.org^' => 1, //针对上面正则表达式的一个赦免规则，例如：2.android.pool.ntp.org
     '@@||*push-apple.com.akadns.net^' => 1, //强制加白, 苹果推送2.courier-push-apple.com.akadns.net
-    '@@||tracking.epicgames.com' => 0,
+    '@@||tracking.epicgames.com^' => 0,
+    '@@||tracker.eu.org^' => 1, //BT tracker
+    '@@||1.itzmx.com^' => 0, //PT tracker
 );
 
 //针对上游赦免规则anti-AD不予赦免的规则，即赦免名单的黑名单
