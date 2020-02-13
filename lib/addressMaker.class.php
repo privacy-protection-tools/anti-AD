@@ -180,10 +180,16 @@ class addressMaker{
      * @param array $arr_whitelist
      * @return false|int
      */
-    public static function write_to_file(array $arr_src, array $arr_format, $arr_whitelist = array()){
+    public static function write_to_file(array $arr_src, array $arr_format, array $arr_whitelist = array()){
 
         if(count($arr_src) < 1){
             return false;
+        }
+
+        foreach($arr_whitelist as $wlk => $wlv){
+            if(-1 === $wlv){
+                unset($arr_whitelist[$wlk]);
+            }
         }
 
         $str_result = '';
@@ -200,23 +206,23 @@ class addressMaker{
                 continue;
             }
 
-            if(isset($arr_whitelist[$main_domain]) && (-1 === $arr_whitelist[$main_domain])){
-                unset($arr_whitelist[$main_domain]);
-            }
-
-            $arr_subdomains = array_unique($arr_subdomains);
 
             if(
                 (1 !== $arr_format['full_domain'])
-                && (in_array($main_domain, $arr_subdomains) || in_array('www.' . $main_domain, $arr_subdomains))
-                && (!array_key_exists($main_domain, $arr_whitelist) || $arr_whitelist[$main_domain] > 0)
+                && (!array_key_exists($main_domain, $arr_whitelist))
+                && (in_array($main_domain, $arr_subdomains)
+                    || in_array('www.' . $main_domain, $arr_subdomains)
+                    || in_array('.' . $main_domain, $arr_subdomains)
+                    )
             ){
                 $str_result .= str_replace('{DOMAIN}', $main_domain, $arr_format['format']) . "\n";
                 $line_count ++;
                 continue;
             }
 
-            foreach($arr_subdomains as $subdomain){
+            $arr_subdomains = array_fill_keys($arr_subdomains, 2);
+
+            foreach($arr_subdomains as $subdomain => $__){
                 if(array_key_exists($subdomain, $arr_whitelist)){
                     continue;
                 }
@@ -234,17 +240,13 @@ class addressMaker{
                 for($pos = 3; $pos <= $tmp_domain_len; $pos ++){
                     $arr_tmp = array_slice($arr_tmp_domain, -1 * $pos);
                     $tmp = implode('.', $arr_tmp);
-                    if(isset($arr_whitelist[$tmp]) && (-1 === $arr_whitelist[$tmp])){
-                        unset($arr_whitelist[$tmp]);
-                    }
 
                     if(array_key_exists($tmp, $arr_whitelist)){
                         $matched_flag = $arr_whitelist[$tmp] === 1;
-                        if($matched_flag){
-                            $arr_written[$subdomain] = $pos;
-                        }
                         break;
-                    }elseif(($tmp === $subdomain) || in_array($tmp, $arr_subdomains)){
+                    }
+
+                    if(($tmp === $subdomain) || array_key_exists($tmp, $arr_subdomains)){
                         if(!array_key_exists($tmp, $arr_written)){
                             $str_result .= str_replace('{DOMAIN}', $tmp, $arr_format['format']) . "\n";
                             $line_count ++;
