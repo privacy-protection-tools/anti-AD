@@ -29,7 +29,6 @@ $ARR_MERGED_WILD_LIST = array(
     '*dnserror*.wo.com.cn' => null,
     '*mistat*.xiaomi.com' => null,
     'affrh20*.com' => null,
-    'gsp*.baidu.com' => null,
     'assoc-amazon.*' => null,
     'clkservice*.youdao.com' => null,
     'dsp*.youdao.com' => null,

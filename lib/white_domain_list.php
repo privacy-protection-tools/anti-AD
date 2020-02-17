@@ -51,6 +51,9 @@ return array(
     'promotion.aliyun.com' => 0, //阿里云控制台
     'rarbg.to' => 0, //BT站
     'gsp0.baidu.com' => 0, //百度贴吧相关
+    'gsp1.baidu.com' => 0, //百度贴吧相关
+    'gsp2.baidu.com' => 0, //百度贴吧相关
+    'gsp3.baidu.com' => 0, //百度贴吧相关
 
 
     'herokuapp.com' => -1,
