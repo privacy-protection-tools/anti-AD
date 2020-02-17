@@ -19,7 +19,7 @@ jobs:
       run: git clone https://gitee.com/privacy-protection-tools/anti-ad.git ~/gitee
     - name: copy some list files
       run: |
-        echo "https://${{ secrets.GITEE_USER }}:${{ secrets.GITEE_PASS }}@gitee.com/">~/.git-credentials
+        echo "https://${{ secrets.GITEE_USER }}:${{ secrets.GITEE_PASS }}@gitee.com">~/.git-credentials
         cp ./anti-ad-easylist.txt ~/gitee/easylist.txt
         cp ./adblock-for-dnsmasq.conf ~/gitee/dnsmasq.conf
         cp ./anti-ad-surge.txt ~/gitee/surge.txt
