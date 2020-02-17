@@ -3,7 +3,7 @@ name: sync list to gitee
 on:
   push:
     branches: 
-      - 'dev'
+      - 'master'
     paths: 
       - 'anti-ad-*.txt'
       - 'adblock-for-dnsmasq.conf'
@@ -19,9 +19,7 @@ jobs:
       run: git clone https://gitee.com/privacy-protection-tools/anti-ad.git ~/gitee
     - name: copy some list files
       run: |
-        echo "machine github.com">~/.netrc
-        echo "\tlogin ${{ secrets.GITEE_USER }}">>~/.netrc
-        echo "\tpassword ${{ secrets.GITEE_PASS }}">>~/.netrc
+        echo "https://${{ secrets.GITEE_USER }}:${{ secrets.GITEE_PASS }}@gitee.com/">~/.git-credentials
         cp ./anti-ad-easylist.txt ~/gitee/easylist.txt
         cp ./adblock-for-dnsmasq.conf ~/gitee/dnsmasq.conf
         cp ./anti-ad-surge.txt ~/gitee/surge.txt
@@ -29,8 +27,9 @@ jobs:
     - name: Commit files
       run: |
         cd ~/gitee
+        git config --global credential.helper store
         git config --local user.email "${{ secrets.GITEE_EMAIL }}"
-        git config --local user.name "GitHub Action"
+        git config --local user.name "gently"
         git add .
         git commit -m "pull newest list." -a
         git push -u origin master
