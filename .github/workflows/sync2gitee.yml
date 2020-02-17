@@ -1,0 +1,36 @@
+name: sync list to gitee
+
+on:
+  push:
+    branches: 
+      - 'master'
+    paths: 
+      - 'anti-ad-*.txt'
+      - 'adblock-for-dnsmasq.conf'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: clone the gitee
+      run: git clone https://gitee.com/privacy-protection-tools/anti-ad.git ~/gitee
+    - name: copy some list files
+      run: |
+        echo "machine github.com">~/.netrc
+        echo "\tlogin ${{ secrets.GITEE_USER }}">>~/.netrc
+        echo "\tpassword ${{ secrets.GITEE_PASS }}">>~/.netrc
+        cp ./anti-ad-easylist.txt ~/gitee/easylist.txt
+        cp ./adblock-for-dnsmasq.conf ~/gitee/dnsmasq.conf
+        cp ./anti-ad-surge.txt ~/gitee/surge.txt
+        cp ./anti-ad-domains.txt ~/gitee/domains.txt
+    - name: Commit files
+      run: |
+        cd ~/gitee
+        git config --local user.email "${{ secrets.GITEE_EMAIL }}"
+        git config --local user.name "GitHub Action"
+        git add .
+        git commit -m "pull newest list." -a
+        git push -u origin master
