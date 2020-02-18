@@ -55,6 +55,7 @@ return array(
     'gsp2.baidu.com' => 0, //百度贴吧相关
     'gsp3.baidu.com' => 0, //百度贴吧相关
     'c0.ifengimg.com' => 0, //凤凰网视频异常
+    '7moor.com' => 0, //山姆会员客服异常
 
 
     'herokuapp.com' => -1,
