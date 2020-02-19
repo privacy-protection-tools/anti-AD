@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202002131913
+! Version: 202002191649
 ! Title: CJX's Annoyance List
-! Last modified: 2020/02/13 19:13 +0800
+! Last modified: 2020/02/19 16:49 +0800
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/cjx82630/cjxlist
 !
@@ -9,7 +9,9 @@
 ! Supplement for "EasyList China+EasyList" & "EasyPrivacy"
 ! Removed Annoyances, Self-promotion & Privacy Protection on Chinese Websites
 ! Email (cjxlist@gmail.com)
+!#include cjx-ublock.txt
 !--------------------------General blocking filters---------------------------!
+/wiseatom/banner/pack_
 -bobo_recommend_
 /3dmgamegzh.png
 =mumumoniqi-piaochuang-
@@ -27,6 +29,8 @@
 /z.zolapp.
 =Ad_ZPlusGoods&
 !------------------------General element hiding rules-------------------------!
+###doyoo_mon_mask
+###doyoo_monitor
 ##.siteAnn1
 ###SOHU_MAIN > .module-cmt-float-bar
 ###appBottomIn
@@ -310,7 +314,6 @@
 ||med66.com/lamu/
 ||51cto.com/edu/blog/*box.js
 ||taisha.org/statics/js/pc2.0/common/form.bottom.
-||sohu.com/os/text/focus?
 ||autoimg.cn/club/v1Content/images/heycar
 ||china.cn/js/common/daniel_pop/
 ||chinaacc.com/lamu/*dl-
@@ -352,7 +355,6 @@
 ||kmf.com/da/do
 ||daiyanbao.com/flash/md
 ||banzou.name/qq/qq2.js
-||baidu.com/se/static/wiseatom/banner/pack_
 ||5888.tv/Js/topBanner.js
 ||dfcfw.com/zndh/
 ||jsdelivr.net/npm/live2d-
@@ -368,6 +370,14 @@
 ||3158.cn/static/js/fixbtm/
 ||house365.com/im_show/imshow.js
 !------------------------Specific element hiding rules------------------------!
+znds.com###diy_mobanbus_view_right2
+meijuxingqiu.com##.fixed-bottom-bar
+iqiyi.com##.m-hotWords-bottom
+3dmgame.com##A[href^="http://web.3dmgame.com/h5/game?"]
+hanjutv.com###widget-weixin
+ifeng.com##DIV[class^="enquiry_bottom"]
+ifeng.com##div[class^="bottom_box"]
+ifeng.com##div[class^="bottomSlide"]
 jinti.com###mei
 jinti.com##.fix-kefu
 huanqiu.com##.r-hqFashion
