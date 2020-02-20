@@ -70,6 +70,7 @@ return array(
     'c0.ifengimg.com' => 0, //凤凰网视频异常
     '7moor.com' => 0, //山姆会员客服异常
     'v.smtcdns.net' => 0, //影响部分B站直播
+    'gameone.com' => 0, //影响部分B站直播
 
 
     'herokuapp.com' => -1,
