@@ -71,6 +71,7 @@ return array(
     '7moor.com' => 0, //山姆会员客服异常
     'v.smtcdns.net' => 0, //影响部分B站直播
     'gameone.com' => 0, //影响部分B站直播
+    'ultraiso.net' => 1, //软碟通官网
 
 
     'herokuapp.com' => -1,
