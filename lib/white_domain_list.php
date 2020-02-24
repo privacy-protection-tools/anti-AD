@@ -77,6 +77,8 @@ return array(
     'ultraiso.net' => 1, //软碟通官网
     'mmstat.com' => 0, //修复优酷视频显示禁用了cookie
     'log.mmstat.com' => 0, //修复优酷视频显示禁用了cookie
+    'adm.10jqka.com.cn' => 0, //修复同花顺的tips异常
+    'cps.kaola.com' => 0, //考拉的cps，放行
 
 
     'herokuapp.com' => -1,

@@ -98,6 +98,7 @@ $ARR_WHITE_RULE_LIST = array(
 //    '@@||2.taobao.com^' => 1, //闲鱼
     '@@||track.sendcloud.org^' => 0, //邮件退订域名
     '@@||log.mmstat.com^' => 0, //修复优酷视频显示禁用了cookie
+    '@@||adm.10jqka.com.cn^' => 0, //同花顺
 );
 
 //针对上游赦免规则anti-AD不予赦免的规则，即赦免名单的黑名单
