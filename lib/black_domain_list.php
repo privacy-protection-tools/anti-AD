@@ -99,7 +99,6 @@ return array(
     'appjiagu.com' => array('appjiagu.com'),
     'amazon-adsystem.com' => array('amazon-adsystem.com'),
     'adnxs.com' => array('adnxs.com'),
-    'mmstat.com' => array('mmstat.com'),
     'linezing.com' => array('linezing.com'),
     'atdmt.com' => array('atdmt.com'),
     'flurry.com' => array('flurry.com'),

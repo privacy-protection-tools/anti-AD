@@ -75,6 +75,8 @@ return array(
     'v.smtcdns.net' => 0, //影响部分B站直播
     'gameone.com' => 0, //影响部分B站直播
     'ultraiso.net' => 1, //软碟通官网
+    'mmstat.com' => 0, //修复优酷视频显示禁用了cookie
+    'log.mmstat.com' => 0, //修复优酷视频显示禁用了cookie
 
 
     'herokuapp.com' => -1,

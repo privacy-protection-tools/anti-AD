@@ -63,7 +63,7 @@ $ARR_MERGED_WILD_LIST = array(
     'admob.*' => null,
     '*log.droid4x.cn' => null,
     '*tsdk.vivo.com.cn' => null,
-
+    '*.mmstat.com' => null,
 );
 
 $ARR_REGEX_LIST = array(
@@ -97,6 +97,7 @@ $ARR_WHITE_RULE_LIST = array(
     '@@||stats.uptimerobot.com^' => 0, //uptimerobot监测相关
 //    '@@||2.taobao.com^' => 1, //闲鱼
     '@@||track.sendcloud.org^' => 0, //邮件退订域名
+    '@@||log.mmstat.com^' => 0, //修复优酷视频显示禁用了cookie
 );
 
 //针对上游赦免规则anti-AD不予赦免的规则，即赦免名单的黑名单
