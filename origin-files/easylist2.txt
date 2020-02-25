@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202002192303
+! Version: 202002251225
 ! Title: Fanboy's Annoyance List
-! Last modified: 19 Feb 2020 23:03 UTC
+! Last modified: 25 Feb 2020 12:25 UTC
 ! Expires: 4 days (update frequency)
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -747,6 +747,7 @@ _backToTop.
 /wonderpush.
 /wordpress-fire-push/*
 _push_sw.
+_revotas_push.
 ! *** easylist:fanboy-addon/fanboy_social_general_block.txt ***
 -box-facebook_
 -box-twitter_
@@ -4482,6 +4483,7 @@ _youtube_social_
 /MarkupCookieConsent/*
 /mb_cookies.
 /meta/cookie-
+/meWantCookies*.js
 /miocookie_
 /mod_cookie/*
 /mod_cookiesaccept/*$~stylesheet
@@ -4522,6 +4524,7 @@ _youtube_social_
 /privacy-modal.js
 /privacy-policy.js
 /privacy-templates.js?
+/privacy/bundle-modern.js
 /privacy/cookie.
 /privacy_cookie.
 /privacy_policy.js
@@ -6812,6 +6815,7 @@ _site_cookie_
 ##.sidebarNewsletterAd
 ##.sidebar__newsletter
 ##.sidebar__signup
+##.sidebar__widget_subscribe
 ##.sidebar_email_signup
 ##.sidebar_newsletter_sign_up
 ##.sidebar_subscribe
@@ -7427,7 +7431,7 @@ _site_cookie_
 ###gotoTop
 ###gotoTopWrapper
 ###gotop
-###gototop
+###gototop:not(body)
 ###gp-to-top
 ###img_goTop
 ###infinite-footer-back-to-top-button
@@ -7803,16 +7807,16 @@ _site_cookie_
 ##.scroll-to-top-button
 ##.scroll-to-top-square:not(body)
 ##.scroll-to-top:not(body)
-##.scroll-top
 ##.scroll-top-arrow
 ##.scroll-top-btn
 ##.scroll-top-button
 ##.scroll-top-inner
 ##.scroll-top-wrapper
-##.scroll-up
+##.scroll-top:not(body):not(html)
 ##.scroll-up-button
 ##.scroll-up-button-wrapper
 ##.scroll-up-cta
+##.scroll-up:not(body):not(html)
 ##.scroll2top
 ##.scrollToTop
 ##.scrollToTopButton
@@ -7824,17 +7828,17 @@ _site_cookie_
 ##.scroll__to__top
 ##.scroll_to_top
 ##.scroll_to_top_icon
-##.scroll_top
+##.scroll_top:not(body):not(html)
 ##.scroll_top_btn
 ##.scrollbtntop
 ##.scrollto_top
-##.scrolltop
 ##.scrolltop-btn
+##.scrolltop:not(body):not(html)
 ##.scrolltotop
 ##.scrolltotopbutton
-##.scrollup
 ##.scrollup-container
-##.scroolTop
+##.scrollup:not(body):not(html)
+##.scroolTop:not(body):not(html)
 ##.sf-back-to-top
 ##.sh-back-to-top
 ##.show-top-button
@@ -21982,6 +21986,7 @@ _site_cookie_
 ###banniere_information_utilisation_cookies
 ###banrv_cookiecookie
 ###bar-cookie-consent
+###bar-cookies
 ###bar-header-cookie
 ###bar-zone-cookie-usage
 ###barAgreeWithCookies
@@ -22243,6 +22248,7 @@ _site_cookie_
 ###cea-divCookiePolicy
 ###celenus-cookies-container
 ###center_bandeau_cookie
+###cerekKullanimUyari
 ###ceva_toolbar_cookie
 ###cewe-accept-cookies
 ###cewe-permanent-info-bar
@@ -22303,6 +22309,7 @@ _site_cookie_
 ###cliSettingsPopup
 ###close-cookies
 ###closeCookeiInfo
+###closeGdprContent
 ###close_cnil
 ###clr-cookie-bar-container
 ###cm-cookie-accept
@@ -22871,6 +22878,7 @@ _site_cookie_
 ###cookie-policy-popin
 ###cookie-policy-popup
 ###cookie-policy-section
+###cookie-policy-sticky
 ###cookie-policy-strap
 ###cookie-policy-warning
 ###cookie-policy-wrap
@@ -22925,6 +22933,7 @@ _site_cookie_
 ###cookie-spacer
 ###cookie-statement
 ###cookie-stick2
+###cookie-sticky
 ###cookie-sticky-bar
 ###cookie-strapline
 ###cookie-strip
@@ -25923,6 +25932,7 @@ _site_cookie_
 ###mktzr_cookie_policy
 ###mlUsingCookies
 ###mm-content-cookies
+###mmMS--notification
 ###mm_t07_cookie_box
 ###mmmmm-cookies
 ###mms-cookie-disclaimer
@@ -26898,6 +26908,7 @@ _site_cookie_
 ###tv-cookie-1
 ###tv2-cookie-alert
 ###tv2cookiebar
+###tvlcookies
 ###tvsa-cookie
 ###twCookieConsent
 ###twcCookieDiv
@@ -27156,6 +27167,7 @@ _site_cookie_
 ###zone_cookie
 ###zp-footer-cookiesettings-overlay
 ###zse-cookie-container
+###zsmsg-policy
 ###zw_cookie_law_short_info
 ##.-cookies-notice
 ##.ABTastyPluginCookieConsentBanner
@@ -27300,6 +27312,7 @@ _site_cookie_
 ##.F6-cookies_w_js-entrypoint
 ##.G005-global-cookie-notification
 ##.GAcookies
+##.GDPR-Msg
 ##.GDPR-WelcomeBanner
 ##.GDPR-cookies
 ##.GDPR-toast
@@ -27478,6 +27491,7 @@ _site_cookie_
 ##.ajs-message
 ##.ak-cookies-banner
 ##.akf__cookie
+##.akismet_comment_form_privacy_notice
 ##.alert--cookie
 ##.alert--cookies
 ##.alert-bandeau-cookie
@@ -27800,6 +27814,7 @@ _site_cookie_
 ##.bms-cookie-container
 ##.bn-cookies
 ##.bnt_cookieBar
+##.bonialCmpBanner
 ##.borlabsCookieShow
 ##.bottom--cookie-bar
 ##.bottom--cookie-bar-overlay
@@ -28339,8 +28354,6 @@ _site_cookie_
 ##.cookie-consent.show
 ##.cookie-consent.shown
 ##.cookie-consent:not(body)
-##.cookie-consent__overlay
-##.cookie-consent__wrapper
 ##.cookie-cont
 ##.cookie-contain
 ##.cookie-container
@@ -30234,6 +30247,7 @@ _site_cookie_
 ##.gdpr-overlay
 ##.gdpr-overlay--initial
 ##.gdpr-overlay--video
+##.gdpr-overlay-container
 ##.gdpr-panel
 ##.gdpr-pn-container
 ##.gdpr-policy-bar
@@ -30523,6 +30537,7 @@ _site_cookie_
 ##.js-consent-panel
 ##.js-consent-popup
 ##.js-consent-react-root
+##.js-coockie
 ##.js-cookie
 ##.js-cookie-agree
 ##.js-cookie-alert
@@ -30827,6 +30842,7 @@ _site_cookie_
 ##.mgv-cookies-banner
 ##.mgxCookieConsent
 ##.mh5_CookieNotice
+##.mi-gdpr
 ##.mikit_bandeau_cookies
 ##.milibooCookie
 ##.min-cookiebanner
@@ -31816,6 +31832,7 @@ _site_cookie_
 ##.uk-cookies
 ##.uk-notify-message
 ##.uk-notify-message-info
+##.ukCookiePolicy
 ##.ulCookiePol
 ##.ultimize_cookie_notification_container
 ##.umuCookieMain
@@ -32129,6 +32146,7 @@ _site_cookie_
 ##div[class^="app_gdpr-"]
 ##div[class^="ccpa-notification-banner"]
 ##div[class^="cookie-banner"]
+##div[class^="cookie-consent_"]
 ##div[class^="cookie-container_"]
 ##div[class^="cookie-notification_"]
 ##div[class^="cookie-ui_"]
@@ -32247,6 +32265,8 @@ _site_cookie_
 ##ytd-consent-bump-renderer
 ##ytd-mealbar-promo-renderer
 ##ytg-notification-footer
+! pubpub.org (https://forums.lanik.us/viewtopic.php?p=153103)
+###page-wrapper-component > .legal-banner-component
 ! poki (https://github.com/ryanbr/fanboy-adblock/issues/1166)
 ###app-root.c > .z
 ! coches.net / vibbo.com / milanuncios.com / infojobs.net
@@ -32770,6 +32790,7 @@ _site_cookie_
 ||ichecknotifyfriends.info^$third-party
 ||iopushtech.com^$third-party
 ||irpush.com^$third-party
+||jubi.ai/buttonbot/$script,third-party
 ||kattepush.com^$third-party
 ||luckypushh.com^$third-party
 ||luravius.com^$third-party
@@ -32861,6 +32882,7 @@ _site_cookie_
 ||viapush.com^$third-party
 ||webpu.sh^$third-party
 ||webpush.jp^$third-party
+||webpushs.com^$third-party
 ||whitepush.biz^$third-party
 ||wonderpush.com^$third-party
 ||worldpush.co^$third-party
@@ -33508,6 +33530,7 @@ _site_cookie_
 ||consent.theneweuropean.co.uk^
 ||cookie.oup.com^
 ||dam.bbcchannels.com^*/outside-iframe.js
+||duotonesports.com^*/public/ccm
 ||emerse.com/consent.js
 ||freedoflondon.com/Styles/dialog-popup/jquery-ui.js
 ||gdpr.internetbrands.com^
@@ -33524,6 +33547,7 @@ _site_cookie_
 ||omgubuntu.co.uk/wp-content/plugins/omg-magnific/magnific.min.js
 ||onlive.co.uk/account/cookie_notice
 ||parliamentlive.tv/cookie/
+||privacy.claytonhomes.com^
 ||privacypolicy.trgr.be^
 ||propcom.co.uk/cookie/
 ||purevpn.com/loadGdprView
@@ -37283,6 +37307,7 @@ fool.co.uk##.fool-ecap-type-vanilla
 haymarketbooks.org##.footer--subscribe
 mediamatters.org##.footer--upper
 thefederalist.com##.footer-email
+techjunkie.com##.footer-form
 sweepstakesfanatics.com##.footer-optin
 thenewslens.com##.footer-right-zone
 haaretz.com##.footer-ruler
@@ -39571,6 +39596,7 @@ moneysavingexpert.com###alertBar
 ubet.com.mt###alert_message
 squarespace.com###announcement
 ao.com###aoMessageHolder
+myfitnesspal.com###app > div[class^="MFPApp-"] > div > footer + div[class]
 bing.com###b_notificationContainer
 uktv.co.uk###back-to-old-site
 cc.com###balaMainContainer
@@ -39814,6 +39840,7 @@ iboysoft.com###user_popup
 bunkerworld.com###userprompt
 factmag.com###vf-pop
 vive.com###vive-cookie-notice
+ritdye.com###vue-app > .v_bg\:peach-300
 sabanci.com###warning-bar
 dompe.com###warning-popup
 iflicks.in###welcome
@@ -39850,7 +39877,7 @@ sunweb.co.uk##.absolute-dialog
 greenfields.eu##.accept-alert
 akeebabackup.com,imunify360.com,luxos.com,reshade.me,v-tac.eu##.activebar-container
 ticketmaster.ca##.agree-terms
-adata.com,ahlulbayt.tv,altervista.org,askdifference.com,asklion.co.uk,bankid.com,cfainstitute.org,convert-my-image.com,costaclub.com,efinancialcareers.com,hattrick.org,kenweego.com,lawyersonline.co.uk,lifescience.net,linkedin.com,lonelyplanet.com,m-a.org.uk,nature.com,netweather.tv,norwegian.com,pozyx.io,supercell.com,theonlinesurgery.co.uk,tindie.com,ukpressonline.co.uk,vernemq.com,viewsonic.com,viewsoniceurope.com,youngsseafood.co.uk##.alert
+adata.com,ahlulbayt.tv,altervista.org,askdifference.com,asklion.co.uk,bankid.com,cfainstitute.org,convert-my-image.com,costaclub.com,efinancialcareers.com,hattrick.org,kenweego.com,lawyersonline.co.uk,lifescience.net,lonelyplanet.com,m-a.org.uk,nature.com,netweather.tv,norwegian.com,pozyx.io,supercell.com,theonlinesurgery.co.uk,tindie.com,ukpressonline.co.uk,vernemq.com,viewsonic.com,viewsoniceurope.com,youngsseafood.co.uk##.alert
 espn.com##.alert--fixed
 goodmorningamerica.com,historicengland.org.uk##.alert-banner
 labour.org.uk##.alert-bar-footer
@@ -39983,6 +40010,7 @@ themeflood.com##.gatewayContainer
 aviationweek.com##.gdpr
 downloadcrew.com##.ginger_banner
 ingwb.com##.glass
+linkedin.com##.global-alert
 houseoffraser.co.uk##.global-messages
 mozilla.org##.global-notice
 guggenheim.org##.guggen-consent
@@ -40159,7 +40187,7 @@ twitter.com##.r-13dxkaz.css-1dbjc4n
 niceareas.co.uk##.rayAlertBox
 hazlitt.net##.region-masthead-inner
 layar.com##.remarketing-banner
-pli-petronas.com,swatch.com##.reveal-modal-bg
+carhartt.com,pli-petronas.com,swatch.com##.reveal-modal-bg
 marsh.com##.reveal-modal-bg-white
 islamicfinder.org##.reveal-overlay
 ricola.com##.ricola-cookie-info
@@ -40233,7 +40261,6 @@ fontspring.com##.user_notice
 easeus.com##.usernotice_pop
 visualiq.com##.utilityBar
 singtel.com##.ux-consent-banner
-ritdye.com##.v_bg\:peach-300.l_p\:25-x.p_l\:0
 dailysabah.com##.veriAltBar
 robertozeno.com##.video-mask
 remosoftware.com##.visitornotice
@@ -40325,6 +40352,8 @@ mashable.com##.cookie-notice
 allmusic.com##.cookie-policy-box
 rp-online.de##.park-snackbar-cookies
 walmart.ca##.privacy-open > div > [class] > div[class^="css"]
+! Multi-national sites
+spot-a-shop.at,spot-a-shop.de,spot-a-shop.fi,spot-a-shop.fr,spot-a-shop.pl,spot-a-shop.se###__next > div > div > div[class^="css"]
 ! ------------------------Rules for international sites------------------------!
 ! *** easylist:fanboy-addon/fanboy_annoyance_international.txt ***
 ! 
@@ -42218,7 +42247,6 @@ xn--allestrungen-9ib.de###overlay
 uni-greifswald.de###piwik-flyin
 reddingo.ch###policy
 amtempo.de###popup
-spot-a-shop.de###popup-notifications
 ford-maiwald.de###popupDiv
 bka.de,bmjv.de,maurice-renck.de###privacy
 aqua-medic.de###privacy-info
@@ -42343,6 +42371,7 @@ airleben.de,datafox.de##.popup-banner
 ehl.de##.popup_bg
 audio-parts.de##.popup_notification
 bad-wildbad.de##.popupbox
+porschebank.at##.porschebank-statisticsOptBox
 brieffreund-gesucht.de##.privacy
 focus-arztsuche.de##.py-md.tracking-box
 deutscher-fenstershop.de##.rule_assept
@@ -42382,6 +42411,7 @@ winfuture.de##div[style^="position: fixed; bottom:"]
 bergische-energie.de##div[style^="position: fixed; top: 0px;"]
 werder.de##div[style^="position: fixed; top:"]
 bergische-energie.de##div[style^="width: calc"]
+oebv.net##form > div
 kalenderpedia.de##p
 fc-hansa.de##p[style="display: block; margin: 0px; padding: 10px 30px 10px 10px; color: rgb(255, 255, 255); font-size: 13px; line-height: 1.5;"]
 hl-live.de##table[width="1000"]
@@ -42440,7 +42470,7 @@ runinreims.com##.confidentialite
 planeteanimal.com,toutcomment.com##.consent
 lirelactu.fr##.container-0-5
 eco-systemes.fr,ffr.fr,midilibre.fr,quelpneu.com,sudouest.fr,tv7.com##.cookie
-118000.fr,adrea.fr,bpost.be,citus-kalix.fr,clique.tv,communauto.com,comparateur-energie.be,cuisineaz.com,degrouptest.com,epresse.fr,info-retraite.fr,intermarche.be,o2recrute.fr,ouestjob.com,parisjob.com,perfumesclub.fr,previssima.fr,service-public.fr,stb.com.tn,wemystic.fr,xxe.fr##.cookies
+118000.fr,adrea.fr,bpost.be,citus-kalix.fr,clique.tv,communauto.com,comparateur-energie.be,cuisineaz.com,degrouptest.com,epresse.fr,info-retraite.fr,intermarche.be,monsieur-meuble.com,o2recrute.fr,ouestjob.com,parisjob.com,perfumesclub.fr,previssima.fr,service-public.fr,stb.com.tn,wemystic.fr,xxe.fr##.cookies
 creavea.com##.creavea-banner-cookie-consent
 lexus.fr##.disclaimer
 molotov.tv##.eRnhI
@@ -42669,7 +42699,6 @@ kotimaa24.fi###kotimaa-cookie-notification
 telia.fi###lekaneBanner_privacyAnnouncement
 napsu.fi###napsu_cc
 sentraali.fi###popmake-4055
-spot-a-shop.fi###popup-notifications
 pihlajalinna.fi###root > div[aria-live="polite"][role="alert"]
 alppimatkat.fi###toast-container
 satakunnanautotalo.fi##.AVS-evasteseloste-container
@@ -43221,6 +43250,7 @@ rosbank.ru###gray_overlay
 sakharov-center.ru###kuk
 aquaphor.ru###modal-kuki
 forum-windows.net###ntf
+rgs.ru###rgs-main-context-bar
 linux-info.ru###trumpet_message
 drweb.ru##.SHOWIT-msg_showed
 ngnovoros.ru##._1TNYbgH
@@ -43371,6 +43401,7 @@ fdu.org.ua###pd_popup
 i.ua##.Disclaimer
 unian.ua##.cookies
 landrover.ua##.notificationBars
+ua-football.com##.policy-mes
 kinoafisha.ua##.privacy-modal
 ! 
 ! ---------- Vietnamese ----------
@@ -43388,6 +43419,7 @@ linnaleht.ee,ohtuleht.ee##.ntf-container
 ||cmp.pcwelt.de^
 ||consent.berliner-kurier.de^
 ||henryschein.at^*/CookieList.aspx
+||strato.de^*/consent.js
 ! 
 ! ---------- French ----------
 ! 
@@ -43586,13 +43618,13 @@ newinhomes.com#@#.rssFeed
 google.ad,google.ae,google.al,google.am,google.as,google.at,google.az,google.ba,google.be,google.bf,google.bg,google.bi,google.bj,google.bs,google.bt,google.by,google.ca,google.cat,google.cd,google.cf,google.cg,google.ch,google.ci,google.cl,google.cm,google.cn,google.co.ao,google.co.bw,google.co.ck,google.co.cr,google.co.id,google.co.il,google.co.in,google.co.jp,google.co.ke,google.co.kr,google.co.ls,google.co.ma,google.co.mz,google.co.nz,google.co.th,google.co.tz,google.co.ug,google.co.uk,google.co.uz,google.co.ve,google.co.vi,google.co.za,google.co.zm,google.co.zw,google.com,google.com.af,google.com.ag,google.com.ai,google.com.ar,google.com.au,google.com.bd,google.com.bh,google.com.bn,google.com.bo,google.com.br,google.com.bz,google.com.co,google.com.cu,google.com.cy,google.com.do,google.com.ec,google.com.eg,google.com.et,google.com.fj,google.com.gh,google.com.gi,google.com.gt,google.com.hk,google.com.jm,google.com.kh,google.com.kw,google.com.lb,google.com.ly,google.com.mm,google.com.mt,google.com.mx,google.com.my,google.com.na,google.com.nf,google.com.ng,google.com.ni,google.com.np,google.com.om,google.com.pa,google.com.pe,google.com.pg,google.com.ph,google.com.pk,google.com.pr,google.com.py,google.com.qa,google.com.sa,google.com.sb,google.com.sg,google.com.sl,google.com.sv,google.com.tj,google.com.tr,google.com.tw,google.com.ua,google.com.uy,google.com.vc,google.com.vn,google.cv,google.cz,google.de,google.dj,google.dk,google.dm,google.dz,google.ee,google.es,google.fi,google.fm,google.fr,google.ga,google.ge,google.gg,google.gl,google.gm,google.gp,google.gr,google.gy,google.hn,google.hr,google.ht,google.hu,google.ie,google.im,google.iq,google.is,google.it,google.je,google.jo,google.kg,google.ki,google.kz,google.la,google.li,google.lk,google.lt,google.lu,google.lv,google.md,google.me,google.mg,google.mk,google.ml,google.mn,google.ms,google.mu,google.mv,google.mw,google.ne,google.nl,google.no,google.nr,google.nu,google.pl,google.pn,google.ps,google.pt,google.ro,google.rs,google.ru,google.rw,google.sc,google.se,google.sh,google.si,google.sk,google.sm,google.sn,google.so,google.sr,google.st,google.td,google.tg,google.tk,google.tl,google.tm,google.tn,google.to,google.tt,google.vg,google.vu,google.ws,youtube.com#@#.rss_icon
 scribol.com#@#.scribol
 advids.co,cbdoilreview.org,fashiola.fr,galerieslafayette.com,mortgageguy.com.au,paperless-insurance.com,thepage.com.ua#@#.scroll-to-top
-channelnewsasia.com,dreamhost.com,kitacon.org,polskikoszyk.pl,posti.fi,redislabs.com#@#.scroll-top
-aklinizikesfedin.com,channelnewsasia.com,ew.com,indiatimes.com,letyshops.com,msn.com,people.com,southernliving.com,steptohealth.com,tele2.ru,wiemy.to#@#.scroll-up
+channelnewsasia.com,dreamhost.com,kitacon.org,polskikoszyk.pl,posti.fi,redislabs.com#@#.scroll-top:not(body):not(html)
+aklinizikesfedin.com,channelnewsasia.com,ew.com,indiatimes.com,letyshops.com,msn.com,people.com,southernliving.com,steptohealth.com,tele2.ru,wiemy.to#@#.scroll-up:not(body):not(html)
 krasnodar.ru#@#.scrollTop
-hyperoptic.com,playtech.co.nz,porozmawiajmyoit.pl,scan.co.uk#@#.scroll_top
-ltn.com.tw,theuptake.org#@#.scrolltop
+hyperoptic.com,playtech.co.nz,porozmawiajmyoit.pl,scan.co.uk#@#.scroll_top:not(body):not(html)
+ltn.com.tw,theuptake.org#@#.scrolltop:not(body):not(html)
 ap.www.namecheap.com#@#.scrolltotop
-chorus.co.nz,jdpower.com#@#.scrollup
+chorus.co.nz,jdpower.com#@#.scrollup:not(body):not(html)
 github.com,kifi.com,okcupid.com,retailmenot.com,zoom.us#@#.signup-email
 dualshockers.com#@#.socialfooter
 blackboat.com#@#.sqs-announcement-bar
@@ -43848,6 +43880,7 @@ flattr.com,gleam.io#@#.icon-instagram
 fora.ie,login.alibaba.com#@#.icon-linkedin
 rottentomatoes.com#@#.icon-rss
 football.fr,owncloud.org,theoldreader.com,trello.com#@#.icon-share
+techjunkie.com#@#.icon-social
 carsguide.com.au#@#.icon-social-facebook
 carsguide.com.au#@#.icon-social-linkedin
 flattr.com,gleam.io#@#.icon-soundcloud
@@ -43872,7 +43905,7 @@ cgtn.com,nbcnews.com,playosmo.com,trello.com,vimeo.com#@#.js-share
 twitter.com#@#.js-tweet-button
 alternativeto.net#@#.like-box
 facebook.com,forum.albiononline.com#@#.likeButton
-darudar.org,fimfiction.net,modworkshop.net#@#.like_button
+darudar.org,fimfiction.net,modworkshop.net,nasaspaceflight.com#@#.like_button
 deezer.com#@#.link-social
 busqueda.com.uy,linkedin.com,peerlyst.com#@#.linkedin.icon
 pan.baidu.com#@#.list-share
@@ -44207,7 +44240,7 @@ authy.com,breakoutlist.com,eff.org,facebook.com,github.com,github.io,google.ad,g
 acceptableads.org,battleforthenet.com,breakoutlist.com,easyicon.net,github.com,github.io,massivelyop.com,microsoft.com,rantlifestyle.com#@#img[alt="Reddit"]
 a2zapk.com,authy.com,battleforthenet.com,breakoutlist.com,clubbingtv.com,disqus.com,eff.org,github.com,github.io,gitlab.com,google.ad,google.ae,google.al,google.am,google.as,google.at,google.az,google.ba,google.be,google.bf,google.bg,google.bi,google.bj,google.bs,google.bt,google.by,google.ca,google.cat,google.cd,google.cf,google.cg,google.ch,google.ci,google.cl,google.cm,google.cn,google.co.ao,google.co.bw,google.co.ck,google.co.cr,google.co.id,google.co.il,google.co.in,google.co.jp,google.co.ke,google.co.kr,google.co.ls,google.co.ma,google.co.mz,google.co.nz,google.co.th,google.co.tz,google.co.ug,google.co.uk,google.co.uz,google.co.ve,google.co.vi,google.co.za,google.co.zm,google.co.zw,google.com,google.com.af,google.com.ag,google.com.ai,google.com.ar,google.com.au,google.com.bd,google.com.bh,google.com.bn,google.com.bo,google.com.br,google.com.bz,google.com.co,google.com.cu,google.com.cy,google.com.do,google.com.ec,google.com.eg,google.com.et,google.com.fj,google.com.gh,google.com.gi,google.com.gt,google.com.hk,google.com.jm,google.com.kh,google.com.kw,google.com.lb,google.com.ly,google.com.mm,google.com.mt,google.com.mx,google.com.my,google.com.na,google.com.nf,google.com.ng,google.com.ni,google.com.np,google.com.om,google.com.pa,google.com.pe,google.com.pg,google.com.ph,google.com.pk,google.com.pr,google.com.py,google.com.qa,google.com.sa,google.com.sb,google.com.sg,google.com.sl,google.com.sv,google.com.tj,google.com.tr,google.com.tw,google.com.ua,google.com.uy,google.com.vc,google.com.vn,google.cv,google.cz,google.de,google.dj,google.dk,google.dm,google.dz,google.ee,google.es,google.fi,google.fm,google.fr,google.ga,google.ge,google.gg,google.gl,google.gm,google.gp,google.gr,google.gy,google.hn,google.hr,google.ht,google.hu,google.ie,google.im,google.iq,google.is,google.it,google.je,google.jo,google.kg,google.ki,google.kz,google.la,google.li,google.lk,google.lt,google.lu,google.lv,google.md,google.me,google.mg,google.mk,google.ml,google.mn,google.ms,google.mu,google.mv,google.mw,google.ne,google.nl,google.no,google.nr,google.nu,google.pl,google.pn,google.ps,google.pt,google.ro,google.rs,google.ru,google.rw,google.sc,google.se,google.sh,google.si,google.sk,google.sm,google.sn,google.so,google.sr,google.st,google.td,google.tg,google.tk,google.tl,google.tm,google.tn,google.to,google.tt,google.vg,google.vu,google.ws,hackerone.com,incgamers.com,massivelyop.com,maxthon.com,microsoft.com,opendatacity.de,thoughtcatalog.com,twitter.com,vvhp.net,whatculture.com,whatthetech.com#@#img[alt="Twitter"]
 github.com,mezzacotta.net,theverge.com,twitter.com#@#img[alt="Vine"]
-a2zapk.com,github.com,maxthon.com,opendatacity.de,whatculture.com#@#img[alt="Youtube"]
+a2zapk.com,github.com,ixbt.com,maxthon.com,opendatacity.de,whatculture.com#@#img[alt="Youtube"]
 avira.com,facebook.com,github.com,github.io,megabus.com,theguardian.com,uservoice.com#@#img[alt="facebook"]
 discourse.org,github.com,github.io,megabus.com#@#img[alt="twitter"]
 allestörungen.de,github.com,github.io,keepa.com,marketplace.firefox.com,vvhp.net#@#img[title="Facebook"]
