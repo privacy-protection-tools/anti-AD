@@ -80,6 +80,9 @@ return array(
     'adm.10jqka.com.cn' => 0, //修复同花顺的tips异常
     'cps.kaola.com' => 0, //考拉的cps，放行
     'iteye.com' => 0, //某编程网站
+    'sf6-ttcdn-tos.pstatp.com' =>0, //字节跳动某CDN
+    'sf1-ttcdn-tos.pstatp.com' =>0, //字节跳动某CDN
+    'sf3-ttcdn-tos.pstatp.com' =>0, //字节跳动某CDN
 
 
     'herokuapp.com' => -1,
