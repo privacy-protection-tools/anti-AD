@@ -24,6 +24,8 @@ jobs:
         echo "https://${{ secrets.GITEE_USER }}:${{ secrets.GITEE_PASS }}@gitee.com">~/.git-credentials
         cp ./anti-ad-easylist.txt ~/gitee/easylist.txt
         cp ./adblock-for-dnsmasq.conf ~/gitee/dnsmasq.conf
+        cp ./adblock-for-dnsmasq.conf ~/gitee/anti-ad-for-dnsmasq.conf
+        cp ./anti-ad-smartdns.conf ~/gitee/anti-ad-for-smartdns.conf
         cp ./anti-ad-surge.txt ~/gitee/surge.txt
         cp ./anti-ad-domains.txt ~/gitee/domains.txt
     - name: Commit files
