@@ -8,6 +8,7 @@ on:
       - 'master'
     paths: 
       - 'anti-ad-*.txt'
+      - 'anti-ad-*.conf'
       - 'adblock-for-dnsmasq.conf'
 
 jobs:
@@ -23,6 +24,8 @@ jobs:
       run: |
         cp ./anti-ad-easylist.txt ~/website/easylist.txt
         cp ./adblock-for-dnsmasq.conf ~/website/dnsmasq.conf
+        cp ./adblock-for-dnsmasq.conf ~/website/anti-ad-for-dnsmasq.conf
+        cp ./anti-ad-smartdns.conf ~/website/ant-ad-for-smartdns.conf
         cp ./anti-ad-surge.txt ~/website/surge.txt
         cp ./anti-ad-domains.txt ~/website/domains.txt
     - name: Commit files
