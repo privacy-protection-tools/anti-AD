@@ -63,6 +63,7 @@ $ARR_MERGED_WILD_LIST = array(
     '*log.droid4x.cn' => null,
     '*tsdk.vivo.com.cn' => null,
     '*.mmstat.com' => null,
+    'sf*-ttcdn-tos.pstatp.com' => null,
 );
 
 $ARR_REGEX_LIST = array(
