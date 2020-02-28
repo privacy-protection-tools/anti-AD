@@ -93,12 +93,11 @@ $ARR_WHITE_RULE_LIST = array(
     '@@||*push-apple.com.akadns.net^' => 1, //强制加白, 苹果推送2.courier-push-apple.com.akadns.net
     '@@||tracking.epicgames.com^' => 0,
     '@@||tracker.eu.org^' => 1, //强制加白，BT tracker，有形如2.tracker.eu.org的域
-//    '@@||1.itzmx.com^' => 0, //PT tracker
     '@@||stats.uptimerobot.com^' => 0, //uptimerobot监测相关
-//    '@@||2.taobao.com^' => 1, //闲鱼
     '@@||track.sendcloud.org^' => 0, //邮件退订域名
     '@@||log.mmstat.com^' => 0, //修复优酷视频显示禁用了cookie
     '@@||adm.10jqka.com.cn^' => 0, //同花顺
+    '@@||center-h5api.m.taobao.com^' => 1, //h5页面
 );
 
 //针对上游赦免规则anti-AD不予赦免的规则，即赦免名单的黑名单
