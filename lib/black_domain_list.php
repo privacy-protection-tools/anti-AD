@@ -230,9 +230,6 @@ return array(
     '4u.pl' => array(
         '4u.pl', //访问统计
     ),
-    'qihoo.com' => array(
-        'qihoo.com', //广告联盟
-    ),
     'minisplat.cn' => array(
         'minisplat.cn',
     ),
