@@ -273,7 +273,7 @@ return array(
     ),
     'amap.com' => array('logs.amap.com'),
     'tt114.net' => array('tt114.net'),
-    'ip138.com' => array('api.ip138.com', 'cache.ip138.com'),
+    'ip138.com' => array('api.ip138.com'),
     'taobao.com' => array(
       'ip.taobao.com',
       'fourier.taobao.com',
