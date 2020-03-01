@@ -355,6 +355,28 @@ return array(
         'dev.imp.nextmedia.com',
         'dev-imp.nextmedia.com',
     ),
+    'sdo.com' => array(
+        'aa.sdo.com',//行为追踪
+        'dfp.aa.sdo.com',
+        'snyu.sdo.com',
+    ),
+    'wasu.cn' => array(
+        'acsystem.wasu.cn', //广告系统
+    ),
+    'sandai.net' => array(
+        'cpm.cm.sandai.net', //cpm广告
+    ),
+    'cdndm.com' => array(
+        'by.tel.cdndm.com', //行为收集
+    ),
+    'zol.com.cn' => array(
+        'p.zol.com.cn', //统计脚本
+    ),
+    'adm668.com' => array( //不良投注网站
+        'adm668.com',
+        'www.adm668.com'
+    ),
+
 
 
 
@@ -681,4 +703,37 @@ return array(
     'zszgjiejuw.mobi' => array('zszgjiejuw.mobi'),
     'zzasj.cn' => array('zzasj.cn'),
     'zzhssy.cn' => array('zzhssy.cn'),
+    '158aq.com' => array('158aq.com'),
+    '166br.com' => array('166br.com'),
+    '2yt.cn' => array('2yt.cn'),
+    '322927.com' => array('322927.com'),
+    '559gp.com' => array('559gp.com'),
+    'adszui.com' => array('adszui.com'),
+    'baimuyuan.com.cn' => array('baimuyuan.com.cn'),
+    'bibi100.com' => array('bibi100.com'),
+    'bjsncykyjctsbjxzx.cn' => array('bjsncykyjctsbjxzx.cn'),
+    'bontech-zh.com' => array('bontech-zh.com'),
+    'bxg68.com' => array('bxg68.com'),
+    'd9ad.com' => array('d9ad.com'),
+    'dapaogg.xyz' => array('dapaogg.xyz'),
+    'dreamine.com' => array('dreamine.com'),
+    'duoduo.net' => array('duoduo.net'),
+    'eeeqi.cn' => array('eeeqi.cn'),
+    'fxsqsng.com' => array('fxsqsng.com'),
+    'lee789.com' => array('lee789.com'),
+    'loupan99.com' => array('loupan99.com'),
+    'lrswl.com' => array('lrswl.com'),
+    'myhard.com' => array('myhard.com'),
+    'pagechoice.com' => array('pagechoice.com'),
+    'pee.cn' => array('pee.cn'),
+    'tenoad.com' => array('tenoad.com'),
+    'itruni.com' => array('itruni.com'),
+    'ucoz.com' => array('ucoz.com'),
+    'union001.com' => array('union001.com'),
+    'xiankandy.com' => array('xiankandy.com'),
+    'xifatime.com' => array('xifatime.com'),
+    'yjkyj.cn' => array('yjkyj.cn'),
+    'zamar.cn' => array('zamar.cn'),
+
+
 );
