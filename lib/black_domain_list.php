@@ -381,7 +381,6 @@ return array(
 
 
     //一些电视盒子相关的屏蔽列表
-    'duiba.com.cn' => array('activity.m.duiba.com.cn'),
     'tuiapple.com' => array('activity.tuiapple.com'),
     'tudou.com' => array('ad.api.3g.tudou.com'),
     'youku.com' => array('ad.api.3g.tudou.com', 'ad.api.mobile.youku.com'),
