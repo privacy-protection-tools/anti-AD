@@ -376,7 +376,29 @@ return array(
         'adm668.com',
         'www.adm668.com'
     ),
+    'jiguangzhuisu.com' => array(
+        'jiguangzhuisu.com', //怀疑是恶意网站，例如https://etc.jiguangzhuisu.com/701f41a599cdbf67cea081ed9abda6ee.js
+        //例如 https://etc.jiguangzhuisu.com/act.html
+        'etc.jiguangzhuisu.com',
+    ),
+    'aliyuncs.com' => array(
+        'sspmiaoshuo.cn-hangzhou.log.aliyuncs.com', //日志收集
+    ),
 
+    '186078.com' => array(
+        'api.186078.com',
+        '186078.com', //行为追踪，在https://etc.jiguangzhuisu.com/701f41a599cdbf67cea081ed9abda6ee.js
+    ),
+
+    'iask.cn' => array(
+        'iask.cn', //广告服务商
+        'pic.iask.cn',
+    ),
+
+    'iask.com.cn' => array(
+        'iask.com.cn', //广告服务商
+        'dw.iask.com.cn',
+    ),
 
 
 
