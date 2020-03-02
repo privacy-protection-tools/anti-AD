@@ -400,6 +400,13 @@ return array(
         'dw.iask.com.cn',
     ),
 
+    'dushu.io' => array(
+      'advertising.dushu.io', //广告域名
+    ),
+
+
+
+
 
 
     //一些电视盒子相关的屏蔽列表
