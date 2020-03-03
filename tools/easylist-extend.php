@@ -89,8 +89,8 @@ $ARR_REGEX_LIST = array(
 //对通配符匹配或正则匹配增加的额外赦免规则
 $ARR_WHITE_RULE_LIST = array(
     '@@||tongji.*kuwo.cn^' => 0,
-    '@@||ntp.org^' => 1, //强制加白，针对上面正则表达式的一个赦免规则，例如：2.android.pool.ntp.org
-    '@@||*push-apple.com.akadns.net^' => 1, //强制加白, 苹果推送2.courier-push-apple.com.akadns.net
+//    '@@||ntp.org^' => 1, //强制加白，针对上面正则表达式的一个赦免规则，例如：2.android.pool.ntp.org
+//    '@@||*push-apple.com.akadns.net^' => 1, //强制加白, 苹果推送2.courier-push-apple.com.akadns.net
     '@@||tracking.epicgames.com^' => 0,
     '@@||tracker.eu.org^' => 1, //强制加白，BT tracker，有形如2.tracker.eu.org的域
     '@@||stats.uptimerobot.com^' => 0, //uptimerobot监测相关

@@ -376,6 +376,57 @@ return array(
         'adm668.com',
         'www.adm668.com'
     ),
+    'jiguangzhuisu.com' => array(
+        'jiguangzhuisu.com', //怀疑是恶意网站，例如https://etc.jiguangzhuisu.com/701f41a599cdbf67cea081ed9abda6ee.js
+        //例如 https://etc.jiguangzhuisu.com/act.html
+        'etc.jiguangzhuisu.com',
+    ),
+    'aliyuncs.com' => array(
+        'sspmiaoshuo.cn-hangzhou.log.aliyuncs.com', //日志收集
+    ),
+
+    '186078.com' => array(
+        'api.186078.com',
+        '186078.com', //行为追踪，在https://etc.jiguangzhuisu.com/701f41a599cdbf67cea081ed9abda6ee.js
+    ),
+
+    'iask.cn' => array(
+        'iask.cn', //广告服务商
+        'pic.iask.cn',
+    ),
+
+    'iask.com.cn' => array(
+        'iask.com.cn', //广告服务商
+        'dw.iask.com.cn',
+    ),
+
+    'dushu.io' => array(
+      'advertising.dushu.io', //广告域名
+    ),
+
+    'unitychina.cn' => array(
+      'config.unityads.unitychina.cn',
+      'unityads.unitychina.cn',
+    ),
+
+    'upltv.com' => array(
+      'ads-sdk-cn.upltv.com',
+      'a-sta-cn.upltv.com',
+      'ads-sdk.upltv.com',
+      'report-ads-sdk.upltv.com',
+      'c-sta-cn.upltv.com',
+    ),
+
+    //上传分享wifi密码
+    'ggsafe.com' => array(
+      'ggsafe.com',
+      'wifi.ggsafe.com',
+    ),
+
+
+
+
+
 
 
 
@@ -383,7 +434,7 @@ return array(
     //一些电视盒子相关的屏蔽列表
     'tuiapple.com' => array('activity.tuiapple.com'),
     'tudou.com' => array('ad.api.3g.tudou.com'),
-    'youku.com' => array('ad.api.3g.tudou.com', 'ad.api.mobile.youku.com'),
+    'youku.com' => array('ad.api.3g.youku.com', 'ad.api.mobile.youku.com'),
     'sohu.com' => array('agn.aty.sohu.com'),
     'gitv.tv' => array('api.cupid.ptqy.gitv.tv'),
     'tatagou.com.cn' => array('api.tatagou.com.cn'),
