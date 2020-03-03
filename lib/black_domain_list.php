@@ -272,7 +272,7 @@ return array(
         'abroad-ad.kingsoft-office-service.com',
     ),
     'amap.com' => array('logs.amap.com'),
-    'tt114.net' => array('tt114.net'),
+    'tt114.net' => array('tt114.net'), //例如http://www.tt114.net/html/tlink.html
     'ip138.com' => array('api.ip138.com'),
     'taobao.com' => array(
       'ip.taobao.com',
@@ -283,7 +283,7 @@ return array(
       'openjmacs.m.taobao.com',
     ),
     'aiclk.com' => array('aiclk.com'),
-    '5ubei.com' => array('5ubei.com'),
+    '5ubei.com' => array('5ubei.com'), //统计类例如http://dnm.5ubei.com:7098/hlink.html
     'jpush.cn' => array('jpush.cn'),
     'jpush.io' => array('jpush.io'),
     'jiguang.cn' => array('jiguang.cn'),
@@ -424,6 +424,30 @@ return array(
     ),
 
 
+    //一窝恶意劫持搞推广的域名
+    'duoroumao.cn' => array(
+      's.duoroumao.cn', //广告分发，例如https://s.duoroumao.cn/yxs191.js
+      'duoroumao.cn',
+    ),
+    'geakr.com' => array(
+      'geakr.com', //广告 例如：https://www.geakr.com/tkl/cp.js?channel_id=3
+      'www.geakr.com',
+    ),
+    'qichetiemo.info' => array(
+      'qichetiemo.info',
+      'about.qichetiemo.info', //广告，例如 https://about.qichetiemo.info/apf/mkdjJSjcs113 ，此页面有js加密代码，应属于恶意网站
+    ),
+    'bbhyqp.com' => array(
+      'bbhyqp.com', //“澳门真金”。。推广页面 例如 https://bbhyqp.com/mifiqp/index.html
+    ),
+    'sntzq.com' => array(
+      'sntzq.com', //https://c.sntzq.com/init/proxy.html?v=1.2
+      'c.sntzq.com',
+    ),
+    '35kds.com' => array(
+      '35kds.com',
+      'n.35kds.com', //https://n.35kds.com/Exposead/index/?re=
+    ),
 
 
 
