@@ -67,21 +67,21 @@ $ARR_MERGED_WILD_LIST = array(
 );
 
 $ARR_REGEX_LIST = array(
-    '/01daa\.[a-z]+\.com$/' => null,
     '/9377[a-z]{2}\.com$/' => null,
     '/^(\S+\.)?ad([0-9]|m|s)?\./' => null,
     '/^(\S+\.)?affiliat(es|ion|e)\./' => null,
     '/afgr[0-9]{1,2}\.com$/' => null,
-    '/^analytics(\-|\.)/' => null,
-    '/^counter(\-|\.)/' => null,
+    '/^(\S+\.)?analytics(\-|\.)/' => null,
+    '/^(\S+\.)?counter(\-|\.)/' => null,
     '/^(\S+\.)?pixels?\./' => null,
     '/syma[a-z]\.cn$/' => null,
-    '/^widgets?\./' => null,
-    '/^(web)?stats?\./' => null,
-    '/^track(ing)?\./' => null,
-    '/^tongji\./' => null,
-    '/^toolbar\./' => null,
-    '/^adservice\.google\./' => null,
+    '/^(\S+\.)?widgets?\./' => null,
+    '/^(\S+\.)?(web)?stats?\./' => null,
+    '/^(\S+\.)?track(ing)?\./' => null,
+    '/^(\S+\.)?tongji\./' => null,
+    '/^(\S+\.)?toolbar\./' => null,
+    '/^(\S+\.)?adservice\.google\./' => null,
+    '/^(\S+\.)?d[0-9]+\.sina\.com\.cn/' => null,
 );
 
 //对通配符匹配或正则匹配增加的额外赦免规则
