@@ -448,6 +448,18 @@ return array(
       '35kds.com',
       'n.35kds.com', //https://n.35kds.com/Exposead/index/?re=
     ),
+    'mobaders.com' => array(
+        'mobaders.com', //行为统计，例如http://d1.mobaders.com/cnzzA/1260857752
+        'd1.mobaders.com',
+        'd2.mobaders.com',
+        'd3.mobaders.com',
+        'd4.mobaders.com',
+        'd5.mobaders.com',
+        'd6.mobaders.com',
+        'd7.mobaders.com',
+        'd8.mobaders.com',
+        'd9.mobaders.com',
+    ),
 
 
 
