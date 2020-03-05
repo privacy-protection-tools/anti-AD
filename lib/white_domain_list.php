@@ -81,9 +81,7 @@ return array(
     'cps.kaola.com' => 0, //考拉的cps，放行
     'iteye.com' => 0, //某编程网站
     'dl.360safe.com' => 0, //360驱动下载
-//    'sf6-ttcdn-tos.pstatp.com' =>0, //字节跳动某CDN
-//    'sf1-ttcdn-tos.pstatp.com' =>0, //字节跳动某CDN
-//    'sf3-ttcdn-tos.pstatp.com' =>0, //字节跳动某CDN
+    'resolver.msg.xiaomi.net' => 0, //小爱音箱语音识别
 
 
     'herokuapp.com' => -1,
