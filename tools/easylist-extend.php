@@ -85,6 +85,8 @@ $ARR_REGEX_LIST = array(
     '/delivery([0-9]{2}|dom|modo).com$/' => null,
     '/^(\S+\.)?[c-s]ads(abs|abz|ans|anz|ats|atz|del|ecs|ecz|ims|imz|ips|ipz|kis|kiz|oks|okz|one|pms|pmz)\.com/' => null,
     '/^(\S+\.)?(?!xn--)[^\.]{40,}\.[a-z]+(\.cn)?$/' => null, //超长域名
+    '/^(\S+\.)?11599[0-9a-z]{2,20}\.com$/' => null, //"澳门新葡京"系列
+    '/^(\S+\.)?61677[0-9a-z]{0,20}\.com$/' => null, //"澳门新葡京"系列
     // '/^(\S+\.)?(?=.*[a-f].*\.com$)(?=.*\d.*\.com$)[a-f0-9]{15,}\.com$/' => null,
 );
 

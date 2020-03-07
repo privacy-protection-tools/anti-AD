@@ -460,6 +460,25 @@ return array(
         'd8.mobaders.com',
         'd9.mobaders.com',
     ),
+    '61677.com' => array( //澳门新葡京
+        '61677.com',
+        'www.61677.com',
+    ),
+    '111ol.com' => array(
+        '111ol.com',
+        'www.111ol.com',
+        '111ol.111ol.com',
+    ),
+    '61677c.com' => array(
+        '61677c.com',
+    ),
+    'www-61677.com' => array(
+        'www-61677.com'
+    ),
+    '11599jgj.com' => array(
+        '11599jgj.com',
+        'www.11599jgj.com'
+    ),
 
 
 
