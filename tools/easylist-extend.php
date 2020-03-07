@@ -84,7 +84,8 @@ $ARR_REGEX_LIST = array(
     '/^(\S+\.)?sax[0-9ns]?\.sina\.com\.cn/' => null,
     '/delivery([0-9]{2}|dom|modo).com$/' => null,
     '/^(\S+\.)?[c-s]ads(abs|abz|ans|anz|ats|atz|del|ecs|ecz|ims|imz|ips|ipz|kis|kiz|oks|okz|one|pms|pmz)\.com/' => null,
-//    '/^(\S+\.)?[^\.]{48,}\.[a-z]+(\.cn)?$/' => null,
+    '/^(\S+\.)?(?!xn--)[^\.]{40,}\.[a-z]+(\.cn)?$/' => null, //超长域名
+    // '/^(\S+\.)?(?=.*[a-f].*\.com$)(?=.*\d.*\.com$)[a-f0-9]{15,}\.com$/' => null,
 );
 
 //对通配符匹配或正则匹配增加的额外赦免规则
