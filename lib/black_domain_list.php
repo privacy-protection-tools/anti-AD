@@ -479,6 +479,55 @@ return array(
         '11599jgj.com',
         'www.11599jgj.com'
     ),
+    'duote.com' => array( //https://zhuanlan.zhihu.com/p/111435102
+      'duote.com',
+      'www.duote.com',
+    ),
+    'zzb6.cn' => array(
+      'zzb6.cn',
+      'download.zzb6.cn',
+      'i.zzb6.cn',
+    ),
+    'xp666.com' => array(
+      'xp666.com',
+      'download.xp666.com',
+    ),
+    'dh810.com' => array(
+      'dh810.com',
+    ),
+    'dh820.com' => array(
+      'dh820.com',
+    ),
+    'bsrkt.com' => array(//http://www.bsrkt.com/diy/b/commander/tips/index.html
+      'bsrkt.com',
+      'www.bsrkt.com'
+    ),
+    'zjsyawqj.cn' => array(//http://js.zjsyawqj.cn/diy/b/commander/tips/default.js
+      'zjsyawqj.cn',
+      'www.zjsyawqj.cn',
+      'js.zjsyawqj.cn',
+      'download.zjsyawqj.cn',
+    ),
+    'v4dwkcv.com' => array(// http://c.v4dwkcv.com/html/click/23421_5605.html
+      'v4dwkcv.com',
+      'c.v4dwkcv.com',
+    ),
+    'he2d.com' => array(// 相关http://c.v4dwkcv.com/html/click/23421_5605.html
+      'ss2.he2d.com',
+      'he2d.com'
+    ),
+    'sdqoi2d.com' => array(// 统计 http://j.sdqoi2d.com/click/ffb.php
+      'j.sdqoi2d.com',
+      'sdqoi2d.com'
+    ),
+    'youhuiguan.com' => array(// 神药？ http://cr.youhuiguan.com/attachments/201908/28/20/3658-5lmj04.jpg
+      'youhuiguan.com',
+      'cr.youhuiguan.com'
+    ),
+    'doumaibiji.cn' => array(// http://diy.doumaibiji.cn/diy/js/b.js
+      'doumaibiji.cn',
+      'diy.doumaibiji.cn',
+    ),
 
 
 
