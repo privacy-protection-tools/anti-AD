@@ -62,7 +62,7 @@ return array(
     'miaozhen.com' => array('miaozhen.com'),
     'rubiconproject.com' => array('rubiconproject.com'),
     'adsame.com' => array('adsame.com'),
-    'hexun.com' => array('hexun.com'),
+    'hexun.com' => array('hxsame.hexun.com'),
     '2345.com' => array('2345.com'),
     '51.la' => array('51.la'),
     '55.la' => array('55.la'),
