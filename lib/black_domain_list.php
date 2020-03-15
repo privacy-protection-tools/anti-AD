@@ -528,6 +528,22 @@ return array(
       'doumaibiji.cn',
       'diy.doumaibiji.cn',
     ),
+    'oneplus.net' => array(
+        'open.oneplus.net',
+    ),
+    'live.com' => array(
+        'nexusrules.officeapps.live.com',
+        'nexus.officeapps.live.com',
+    ),
+    'twitter.com' => array(
+        'p.twitter.com',
+    ),
+    'nsimg.net' => array(
+        'm2.nsimg.net'
+    ),
+    'microsoft.com' => array(
+        'mobile.pipe.aria.microsoft.com'
+    ),
 
 
 
