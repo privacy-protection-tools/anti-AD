@@ -64,6 +64,7 @@ foreach($formatterList as $name => $formatObj){
     }
 
     $arr_src_domains = array_merge_recursive($arr_src_domains, $ARR_BLACKLIST);
+    ksort($arr_src_domains);
 
     $arr_output[] = '[' . $name . ']:' . addressMaker::write_to_file($arr_src_domains, $formatObj, $arr_tmp_whitelist);
 }
