@@ -82,6 +82,7 @@ return array(
     'iteye.com' => 0, //某编程网站
     'dl.360safe.com' => 0, //360驱动下载
     'resolver.msg.xiaomi.net' => 0, //小爱音箱语音识别
+    'api.sec.miui.com' => 0, //miui自带骚扰拦截相关
 
 
     'herokuapp.com' => -1,
