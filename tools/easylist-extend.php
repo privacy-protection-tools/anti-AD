@@ -112,6 +112,7 @@ $ARR_WHITE_RULE_BLK_LIST = array(
 //针对上游通配符规则中anti-AD不予采信的规则，即通配符黑名单
 $ARR_WILD_BLK_LIST = array(
     'cnt*rambler.ru' => null,
+    'um*.com' => null,
 );
 
 if(PHP_SAPI != 'cli'){
