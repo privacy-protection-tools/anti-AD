@@ -85,6 +85,7 @@ return array(
     'api.sec.miui.com' => 0, //miui自带骚扰拦截相关
     'iface2.iqiyi.com' => 0, //爱奇艺 相关视频推荐
     'apm3.music.163.com' => 0, //网易云音乐
+    'mbd.baidu.com' => 0, //百度百家号
 
 
     'herokuapp.com' => -1,
