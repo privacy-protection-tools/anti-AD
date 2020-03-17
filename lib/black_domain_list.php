@@ -544,6 +544,13 @@ return array(
     'microsoft.com' => array(
         'mobile.pipe.aria.microsoft.com'
     ),
+    'leixjun.com' => array(//恶意诱导下载app
+      'leixjun.com',
+      'zq2.leixjun.com',
+    ),
+    'xi9p.com' => array(//诈骗网址
+      'xi9p.com'
+    ),
 
 
 
