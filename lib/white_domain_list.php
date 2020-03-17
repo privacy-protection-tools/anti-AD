@@ -86,6 +86,8 @@ return array(
     'iface2.iqiyi.com' => 0, //爱奇艺 相关视频推荐
     'apm3.music.163.com' => 0, //网易云音乐
     'mbd.baidu.com' => 0, //百度百家号
+    'suo.im' => 0, //短网址服务
+    'hinet.net' => 0,
 
 
     'herokuapp.com' => -1,
