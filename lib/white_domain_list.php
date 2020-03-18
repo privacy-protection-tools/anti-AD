@@ -88,6 +88,7 @@ return array(
     'mbd.baidu.com' => 0, //百度百家号
     'suo.im' => 0, //短网址服务
     'hinet.net' => 0,
+    'hubpd.com' => 0, //党媒平台网址
 
 
     'herokuapp.com' => -1,
