@@ -552,6 +552,15 @@ return array(
       'xi9p.com'
     ),
 
+    'doukekan.cn' => array(//广告平台
+        'doukekan.cn',
+        'y3.doukekan.cn',
+    ),
+    'dzdkw9.cn' => array(//恶意推广 #65
+        'dzdkw9.cn',
+        'm.dzdkw9.cn',
+    ),
+
 
 
 

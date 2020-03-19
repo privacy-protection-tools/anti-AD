@@ -89,6 +89,8 @@ return array(
     'suo.im' => 0, //短网址服务
     'hinet.net' => 0,
     'hubpd.com' => 0, //党媒平台网址
+    'i.niupic.com' => 0, //免费图床地址
+    'api-game.meizu.com' => 0, //魅族商店更新游戏
 
 
     'herokuapp.com' => -1,
