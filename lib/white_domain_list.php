@@ -91,6 +91,7 @@ return array(
     'hubpd.com' => 0, //党媒平台网址
     'i.niupic.com' => 0, //免费图床地址
     'api-game.meizu.com' => 0, //魅族商店更新游戏
+    'image.uczzd.cn' => 0, //uc头条的图片 #67
 
 
     'herokuapp.com' => -1,
