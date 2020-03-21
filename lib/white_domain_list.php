@@ -92,6 +92,7 @@ return array(
     'i.niupic.com' => 0, //免费图床地址
     'api-game.meizu.com' => 0, //魅族商店更新游戏
     'image.uczzd.cn' => 0, //uc头条的图片 #67
+    'zconfig.alibabausercontent.com' => 0, //阿里云app登录失效 #69
 
 
     'herokuapp.com' => -1,
