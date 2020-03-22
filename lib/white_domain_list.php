@@ -96,6 +96,7 @@ return array(
     'dg.k.jd.com' => 0, //京东不能跳转app
     'orbit.jd.com' => 0, //京东不能跳转app
     'kepler.jd.com' => 0, //京东不能跳转app
+    'widget.weibo.com' => 0, //微博误杀
 
 
     'herokuapp.com' => -1,
