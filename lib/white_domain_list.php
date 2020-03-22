@@ -93,6 +93,9 @@ return array(
     'api-game.meizu.com' => 0, //魅族商店更新游戏
     'image.uczzd.cn' => 0, //uc头条的图片 #67
     'zconfig.alibabausercontent.com' => 0, //阿里云app登录失效 #69
+    'dg.k.jd.com' => 0, //京东不能跳转app
+    'orbit.jd.com' => 0, //京东不能跳转app
+    'kepler.jd.com' => 0, //京东不能跳转app
 
 
     'herokuapp.com' => -1,
