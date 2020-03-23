@@ -97,6 +97,7 @@ return array(
     'orbit.jd.com' => 0, //京东不能跳转app
     'kepler.jd.com' => 0, //京东不能跳转app
     'widget.weibo.com' => 0, //微博误杀
+    'sailthru.com' => 0, //误杀epicgame.com，因CNAME #73
 
 
     'herokuapp.com' => -1,
