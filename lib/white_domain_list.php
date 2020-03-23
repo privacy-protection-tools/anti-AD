@@ -98,6 +98,9 @@ return array(
     'kepler.jd.com' => 0, //京东不能跳转app
     'widget.weibo.com' => 0, //微博误杀
     'sailthru.com' => 0, //误杀epicgame.com，因CNAME #73
+    't1.58cdn.com.cn' => 0, // 58同城cdn #75
+    't2.58cdn.com.cn' => 0, // 58同城cdn #75
+    't3.58cdn.com.cn' => 0, // 58同城cdn #75
 
 
     'herokuapp.com' => -1,
