@@ -101,6 +101,9 @@ return array(
     't1.58cdn.com.cn' => 0, // 58同城cdn #75
     't2.58cdn.com.cn' => 0, // 58同城cdn #75
     't3.58cdn.com.cn' => 0, // 58同城cdn #75
+    'ddns.net' => 0, // #76
+    'pushbullet.com' => 0, // #77
+    'now.sh' => 0, // #78
 
 
     'herokuapp.com' => -1,
