@@ -104,6 +104,7 @@ return array(
     'ddns.net' => 0, // #76
     'pushbullet.com' => 0, // #77
     'now.sh' => 0, // #78
+    'zimuku.la' => 0, // #84
 
 
     'herokuapp.com' => -1,
