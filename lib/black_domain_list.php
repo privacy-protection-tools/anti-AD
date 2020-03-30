@@ -564,6 +564,10 @@ return array(
     'feeddsp.cn' => array(
         '1.feeddsp.cn', //游戏推广落地页
     ),
+    'huya.com' => array(
+        'ylog.huya.com', // #86
+    ),
+
 
 
 
