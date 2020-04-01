@@ -437,6 +437,16 @@ return array(
         'wan.2345.cn',
         'zhushou.2345.cn',
     ),
+    '19869.com' => array(
+        '19869.com',
+        'a.19869.com',
+        'b.19869.com',
+    ),
+    '1drj.com' => array( //第三方劫持
+        '1drj.com',
+        'md.1drj.com',
+        'xs.1drj.com',
+    ),
 
 
     //一窝恶意劫持搞推广的域名
