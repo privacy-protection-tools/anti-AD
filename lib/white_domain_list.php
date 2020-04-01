@@ -105,7 +105,7 @@ return array(
     'pushbullet.com' => 0, // #77
     'now.sh' => 0, // #78
     'zimuku.la' => 0, // #84
-    'graph.facebook.com' => 0, // #87
+    'qihucdn.com' => 0, // #89
 
 
 
