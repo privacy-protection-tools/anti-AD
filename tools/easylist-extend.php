@@ -62,6 +62,7 @@ $ARR_MERGED_WILD_LIST = array(
     '*tsdk.vivo.com.cn' => null,
     '*.mmstat.com' => null,
     'sf*-ttcdn-tos.pstatp.com' => null,
+    'f-log*.grammarly.io' => null,
 );
 
 $ARR_REGEX_LIST = array(

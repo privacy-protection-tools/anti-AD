@@ -42,6 +42,8 @@ return array(
         'mark.l.qq.com',
         'report.qq.com',
         'rcgi.video.qq.com',
+        'rlog.video.qq.com',
+
     ),
     'openstorage.cn' => array(
         'iflyad.bjb.openstorage.cn'
@@ -260,6 +262,7 @@ return array(
     ),
     'jd.com' => array(
         'mercury.jd.com', //大数据收集，用户行为埋点上报
+        'wl.jd.com',
     ),
     'ixigua.com' => array(
         'v3-ad.ixigua.com', //移动广告
@@ -383,6 +386,7 @@ return array(
     ),
     'aliyuncs.com' => array(
         'sspmiaoshuo.cn-hangzhou.log.aliyuncs.com', //日志收集
+        'arms-retcode.aliyuncs.com',
     ),
 
     '186078.com' => array(
@@ -542,7 +546,8 @@ return array(
         'm2.nsimg.net'
     ),
     'microsoft.com' => array(
-        'mobile.pipe.aria.microsoft.com'
+        'mobile.pipe.aria.microsoft.com',
+        'events.data.microsoft.com',
     ),
     'leixjun.com' => array(//恶意诱导下载app
       'leixjun.com',
@@ -566,6 +571,20 @@ return array(
     ),
     'huya.com' => array(
         'ylog.huya.com', // #86
+    ),
+
+    'grammarly.io' => array(
+        'f-log-extension.grammarly.io',
+        'f-log-mobile-ios.grammarly.io',
+        'f-log-at.grammarly.io',
+    ),
+    'ximalaya.com' => array(
+        'adse.wsa.ximalaya.com',
+        'linkeye.ximalaya.com',
+        'location.ximalaya.com',
+    ),
+    'googleapis.com' => array(
+        'footprints-pa.googleapis.com',
     ),
 
 
