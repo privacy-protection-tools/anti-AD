@@ -426,6 +426,17 @@ return array(
       'ggsafe.com',
       'wifi.ggsafe.com',
     ),
+    '2345.cn' => array(
+        '2345.cn', //广告联盟
+        'dl.2345.cn',
+        'download.2345.cn',
+        'houtai.2345.cn',
+        'jifen.2345.cn',
+        'jifendownload.2345.cn',
+        'minipage.2345.cn',
+        'wan.2345.cn',
+        'zhushou.2345.cn',
+    ),
 
 
     //一窝恶意劫持搞推广的域名
