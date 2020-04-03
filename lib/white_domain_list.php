@@ -106,6 +106,7 @@ return array(
     'now.sh' => 0, // #78
     'zimuku.la' => 0, // #84
     'qihucdn.com' => 0, // #89
+    'sqimg.qq.com' => 0, // #90
 
 
 
