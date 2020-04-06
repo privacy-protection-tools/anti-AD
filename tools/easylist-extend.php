@@ -107,6 +107,7 @@ $ARR_WHITE_RULE_LIST = array(
     '@@||app.adjust.com^' => 1, //https://github.com/AdguardTeam/AdGuardSDNSFilter/pull/186
     '@@||widget.weibo.com^' => 0, //微博外链
     '@@||uland.taobao.com^' => 1, //淘宝coupon #83
+    '@@||advertisement.taobao.com^' => 1, //CNAME 被杀，导致s.click.taobao.com等服务异常
 );
 
 //针对上游赦免规则anti-AD不予赦免的规则，即赦免名单的黑名单
