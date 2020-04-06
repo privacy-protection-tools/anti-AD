@@ -107,6 +107,7 @@ return array(
     'qihucdn.com' => 0, // #89
     'sqimg.qq.com' => 0, // #90
     'haohuo.snssdk.com' => 0, // 抖音订单列表
+    'acs.m.taobao.com' => 0, // #92
 
 
 
