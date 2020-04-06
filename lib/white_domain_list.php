@@ -107,6 +107,7 @@ return array(
     'zimuku.la' => 0, // #84
     'qihucdn.com' => 0, // #89
     'sqimg.qq.com' => 0, // #90
+    'haohuo.snssdk.com' => 0, // 抖音订单列表
 
 
 
