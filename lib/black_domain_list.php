@@ -146,7 +146,6 @@ return array(
     'xiaomi.com' => array(
         'data.mistat.intl.xiaomi.com',
         'data.mistat.xiaomi.com',
-        'adv.sec.miui.com',
         'ad.intl.xiaomi.com',
         'ad.xiaomi.com',
         'admob.xiaomi.com',
@@ -255,9 +254,11 @@ return array(
         'hot.browser.intl.miui.com',
         'activity.browser.intl.miui.com',
         'adv.sec.intl.miui.com',
+        'adv.sec.miui.com',
         'api.brs.intl.miui.com',
         'api.newsfeed.intl.miui.com',
         'huangye.miui.com',
+        'browser.miui.com',
 
     ),
     'jd.com' => array(
@@ -606,6 +607,9 @@ return array(
     ),
     'googleapis.com' => array(
         'footprints-pa.googleapis.com',
+    ),
+    'ebjvu.cn' => array(
+      'ebjvu.cn',
     ),
 
 
