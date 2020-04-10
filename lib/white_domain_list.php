@@ -108,6 +108,8 @@ return array(
     'sqimg.qq.com' => 0, // #90
     'haohuo.snssdk.com' => 0, // 抖音订单列表
     'acs.m.taobao.com' => 0, // #92
+    'perfops.net' => 0, // #96
+    'msg.video.qiyi.com' => 0, // #93
 
 
 
