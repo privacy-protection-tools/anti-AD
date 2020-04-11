@@ -110,6 +110,7 @@ return array(
     'acs.m.taobao.com' => 0, // #92
     'perfops.net' => 0, // #96
     'msg.video.qiyi.com' => 0, // #93
+    'img.zuoyebang.cc' => 0, // 作业帮拍照搜题
 
 
 
