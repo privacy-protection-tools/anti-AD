@@ -111,6 +111,7 @@ return array(
     'perfops.net' => 0, // #96
     'msg.video.qiyi.com' => 0, // #93
     'img.zuoyebang.cc' => 0, // 作业帮拍照搜题
+    'data.video.iqiyi.com' => 0, // 爱奇艺电视投屏
 
 
 
