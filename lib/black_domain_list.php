@@ -611,6 +611,9 @@ return array(
     'ebjvu.cn' => array(
       'ebjvu.cn',
     ),
+    'nvidia.com' => array(
+      'events.gfe.nvidia.com'
+    ),
 
 
 
