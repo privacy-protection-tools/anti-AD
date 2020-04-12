@@ -614,6 +614,26 @@ return array(
     'nvidia.com' => array(
       'events.gfe.nvidia.com'
     ),
+    'axbxgg.com' => array( // 恶意推广app下载
+      'axbxgg.com',
+      '2ydl.axbxgg.com',
+    ),
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
