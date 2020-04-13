@@ -618,6 +618,10 @@ return array(
       'axbxgg.com',
       '2ydl.axbxgg.com',
     ),
+    'rayjump.com' => array( // 广告域名 #98
+      'rayjump.com',
+      'adx-tk.rayjump.com',
+    ),
 
 
 
