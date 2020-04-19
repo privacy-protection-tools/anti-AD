@@ -109,6 +109,7 @@ $ARR_WHITE_RULE_LIST = array(
     '@@||uland.taobao.com^' => 1, //淘宝coupon #83
     '@@||advertisement.taobao.com^' => 1, //CNAME 被杀，导致s.click.taobao.com等服务异常
     '@@||baozhang.baidu.com^' => 1, //CNAME e.shifen.com 
+    '@@||tongji.edu.cn^' => 1, // 同济大学
 );
 
 //针对上游赦免规则anti-AD不予赦免的规则，即赦免名单的黑名单
