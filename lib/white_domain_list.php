@@ -113,7 +113,7 @@ return array(
     'img.zuoyebang.cc' => 0, // 作业帮拍照搜题
     'data.video.iqiyi.com' => 0, // 爱奇艺电视投屏
     'cp81.ott.cibntv.net' => 0, // CIBN云视听异常 #107
-
+    'sj.uukanshu.com' => 0, // 误杀 #110
 
 
     'herokuapp.com' => -1,
