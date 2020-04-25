@@ -114,6 +114,7 @@ return array(
     'data.video.iqiyi.com' => 0, // 爱奇艺电视投屏
     'cp81.ott.cibntv.net' => 0, // CIBN云视听异常 #107
     'sj.uukanshu.com' => 0, // 误杀 #110
+    'e.shifen.com' => 0, // 百度的某个cname域名，误杀严重
 
 
     'herokuapp.com' => -1,
