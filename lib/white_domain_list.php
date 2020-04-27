@@ -115,6 +115,7 @@ return array(
     'cp81.ott.cibntv.net' => 0, // CIBN云视听异常 #107
     'sj.uukanshu.com' => 0, // 误杀 #110
     'e.shifen.com' => 0, // 百度的某个cname域名，误杀严重
+    'gvt1.com' => 0, // google play #117
 
 
     'herokuapp.com' => -1,
