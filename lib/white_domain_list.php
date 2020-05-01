@@ -116,6 +116,7 @@ return array(
     'sj.uukanshu.com' => 0, // 误杀 #110
     'e.shifen.com' => 0, // 百度的某个cname域名，误杀严重
     'gvt1.com' => 0, // google play #117
+    'apiwz.midukanshu.com' => 0, // #120
 
 
     'herokuapp.com' => -1,
