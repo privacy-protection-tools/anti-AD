@@ -113,7 +113,12 @@ return array(
     'img.zuoyebang.cc' => 0, // 作业帮拍照搜题
     'data.video.iqiyi.com' => 0, // 爱奇艺电视投屏
     'cp81.ott.cibntv.net' => 0, // CIBN云视听异常 #107
-
+    'sj.uukanshu.com' => 0, // 误杀 #110
+    'e.shifen.com' => 0, // 百度的某个cname域名，误杀严重
+    'gvt1.com' => 0, // google play #117
+    'apiwz.midukanshu.com' => 0, // #120
+    'api.jr.mi.com' => 0, // #121
+    'graph.facebook.com' => 0, // #121
 
 
     'herokuapp.com' => -1,

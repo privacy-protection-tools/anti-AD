@@ -14,7 +14,6 @@ easylist=(
 
 hosts=(
   "https://raw.githubusercontent.com/neoFelhz/neohosts/gh-pages/full/hosts.txt"
-  "https://raw.githubusercontent.com/vokins/yhosts/master/hosts"
   "https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts"
   "https://www.malwaredomainlist.com/hostslist/hosts.txt"
 )
@@ -32,6 +31,8 @@ rm -f ./origin-files/easylist*
 rm -f ./origin-files/hosts*
 rm -f ./origin-files/strict-hosts*
 rm -f ./origin-files/dead-hosts*
+
+cp ./origin-files/yhosts-latest.txt ./origin-files/hosts1000.txt
 
 for i in "${!easylist[@]}"
 do
