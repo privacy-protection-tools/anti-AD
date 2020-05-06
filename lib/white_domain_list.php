@@ -118,7 +118,8 @@ return array(
     'gvt1.com' => 0, // google play #117
     'apiwz.midukanshu.com' => 0, // #120
     'api.jr.mi.com' => 0, // #121
-    'graph.facebook.com' => 0, // #121
+    'graph.facebook.com' => 0,
+    'image.box.xiaomi.com' => 0, // #124
 
 
     'herokuapp.com' => -1,
