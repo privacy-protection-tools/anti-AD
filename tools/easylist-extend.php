@@ -111,6 +111,7 @@ $ARR_WHITE_RULE_LIST = array(
     '@@||baozhang.baidu.com^' => 1, //CNAME e.shifen.com 
     '@@||tongji.edu.cn^' => 1, // 同济大学
     '@@||ad.siemens.com.cn^' => 1, // 西门子下载中心
+    '@@||sdkapi.sms.mob.com^' => 1, // 短信验证码 #127
 );
 
 //针对上游赦免规则anti-AD不予赦免的规则，即赦免名单的黑名单
