@@ -58,7 +58,7 @@ return array(
     'adview.cn' => array('adview.cn'),
     'wrating.com' => array('wrating.com'),
     'umengcloud.com' => array('umengcloud.com', 'ulogs.umengcloud.com'),
-    'umeng.com' => array('umeng.com'),
+    'umeng.com' => array('umeng.com', 'alogs.umeng.com'),
     'umeng.co' => array('umeng.co'),
     'dftoutiao.com' => array('dftoutiao.com'),
     'miaozhen.com' => array('miaozhen.com'),

@@ -120,6 +120,7 @@ return array(
     'api.jr.mi.com' => 0, // #121
     'graph.facebook.com' => 0,
     'image.box.xiaomi.com' => 0, // #124
+    'niuza.com' => 1, // #124
 
 
     'herokuapp.com' => -1,
