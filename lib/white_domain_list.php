@@ -121,6 +121,11 @@ return array(
     'graph.facebook.com' => 0,
     'image.box.xiaomi.com' => 0, // #124
     'niuza.com' => 1, // #124
+    'sourl.cn' => 0, // #123
+
+
+
+
 
 
     'herokuapp.com' => -1,
