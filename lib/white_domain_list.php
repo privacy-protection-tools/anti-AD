@@ -122,6 +122,7 @@ return array(
     'image.box.xiaomi.com' => 0, // #124
     'niuza.com' => 1, // #124
     'sourl.cn' => 0, // #123
+    'pp.ua' => 0, // #131
 
 
 
