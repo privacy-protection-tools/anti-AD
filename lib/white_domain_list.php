@@ -123,6 +123,7 @@ return array(
     'niuza.com' => 1, // #124
     'sourl.cn' => 0, // #123
     'pp.ua' => 0, // #131
+    'search.video.iqiyi.com' => 0, // #132
 
 
 
