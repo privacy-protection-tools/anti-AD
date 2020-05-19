@@ -124,6 +124,7 @@ return array(
     'sourl.cn' => 0, // #123
     'pp.ua' => 0, // #131
     'search.video.iqiyi.com' => 0, // #132
+    'wanproxy.127.net' => 0, // #137
 
 
 
