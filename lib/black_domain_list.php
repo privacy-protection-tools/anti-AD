@@ -622,9 +622,6 @@ return array(
       'rayjump.com',
       'adx-tk.rayjump.com',
     ),
-    'windows.com' => array( // 广告域名 #102
-      'activity.windows.com',
-    ),
 
 
 
