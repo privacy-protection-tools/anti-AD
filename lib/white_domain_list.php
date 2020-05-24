@@ -120,6 +120,16 @@ return array(
     'api.jr.mi.com' => 0, // #121
     'graph.facebook.com' => 0,
     'image.box.xiaomi.com' => 0, // #124
+    'niuza.com' => 1, // #124
+    'sourl.cn' => 0, // #123
+    'pp.ua' => 0, // #131
+    'search.video.iqiyi.com' => 0, // #132
+    'wanproxy.127.net' => 0, // #137
+    'shouji.360.cn' => 0, // #136
+
+
+
+
 
 
     'herokuapp.com' => -1,
