@@ -112,6 +112,8 @@ $ARR_WHITE_RULE_LIST = array(
     '@@||tongji.edu.cn^' => 1, // 同济大学
     '@@||ad.siemens.com.cn^' => 1, // 西门子下载中心
     '@@||sdkapi.sms.mob.com^' => 1, // 短信验证码 #127
+    '@@||stats.gov.cn^' => 1, // 国家统计局 #144
+    '@@||tj.gov.cn^' => 1,
 );
 
 //针对上游赦免规则anti-AD不予赦免的规则，即赦免名单的黑名单

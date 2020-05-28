@@ -126,6 +126,8 @@ return array(
     'search.video.iqiyi.com' => 0, // #132
     'wanproxy.127.net' => 0, // #137
     'shouji.360.cn' => 0, // #136
+    'ae01.alicdn.com' => 0, // #142
+    
 
 
 
