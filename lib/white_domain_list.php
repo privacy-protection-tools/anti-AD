@@ -128,6 +128,7 @@ return array(
     'shouji.360.cn' => 0, // #136
     'ae01.alicdn.com' => 0, // #142
     'pingjs.qq.com' => 0, // #143
+    'shifen.com' => 0, // 百度的cname
     
 
 
