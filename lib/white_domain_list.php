@@ -129,7 +129,10 @@ return array(
     'ae01.alicdn.com' => 0, // #142
     'pingjs.qq.com' => 0, // #143
     'shifen.com' => 0, // 百度的cname
-    
+    'f10.baidu.com' => 0, // 百度公众号图片
+    'f11.baidu.com' => 0, // 百度公众号图片
+    'f12.baidu.com' => 0, // 百度公众号图片
+    'bj.bcebos.com' => 0, // 百度云产品    
 
 
 
