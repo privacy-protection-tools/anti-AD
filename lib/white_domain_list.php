@@ -134,6 +134,7 @@ return array(
     'f12.baidu.com' => 0, // 百度公众号图片
     'bj.bcebos.com' => 0, // 百度云产品    
     'kingsoft.com' => 0, // 金山软件
+    'top.baidu.com' => 0, // 百度风云榜
 
     
     
