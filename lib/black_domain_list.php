@@ -619,6 +619,16 @@ return array(
       'rayjump.com',
       'adx-tk.rayjump.com',
     ),
+    'baicizhan.org' => array( // 百词斩
+        'advertise.baicizhan.org',
+    ),
+    'baicizhan.com' => array( // 百词斩
+        'advertise.baicizhan.com',
+    ),
+    'yiche.com' => array( // 易车ad
+        'adx.yiche.com',
+        'log.ycapp.yiche.com',
+    ),
 
 
 
