@@ -629,6 +629,9 @@ return array(
         'adx.yiche.com',
         'log.ycapp.yiche.com',
     ),
+    'csheaven.com' => array( // 总结到主域名上
+        'csheaven.com',
+    ),
 
 
 
