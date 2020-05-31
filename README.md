@@ -46,7 +46,7 @@ anti-AD在自我认知上始终是一个非主流的小众项目，受众群体�
 加入QQ群更实时的交流：716981535 <br>
 ![716981535](https://user-images.githubusercontent.com/1243610/73809320-de535780-480d-11ea-82f5-15d4c3ccb0c0.png)
 
-## 特别感谢
+## Special Thanks to
 
 - [notracking/hosts-blocklists-scripts](https://github.com/notracking/hosts-blocklists-scripts) - 提供无效域名和无效hosts列表
 - [Adblock Plus](https://adblockplus.org/) - 畅游清爽洁净的网络！
@@ -55,3 +55,8 @@ anti-AD在自我认知上始终是一个非主流的小众项目，受众群体�
 - [cjx82630/cjxlist](https://github.com/cjx82630/cjxlist) - Adblock Plus EasyList Lite与CJX's Annoyance List
 - _[@rufengsuixing](https://github.com/rufengsuixing) 提出的jsDelivr加速过滤列表下载的建议_
 - _[@xlighting2017](https://github.com/xlighting2017) 提供的[surge格式建议](https://github.com/privacy-protection-tools/anti-AD/issues/29)_
+- [ACL4SSR/ACL4SSR](https://github.com/ACL4SSR/ACL4SSR) - 一些常见APP的广告 @[wchqybs](https://github.com/wchqybs) in [#79](https://github.com/privacy-protection-tools/anti-AD/issues/79)
+- [ADgk.txt](https://gitee.com/banbendalao/adguard/raw/master/ADgk.txt)
+- [malwaredomainlist](https://www.malwaredomainlist.com/hostslist/hosts.txt)
+- [hoshsadiq/adblock-nocoin-list](https://github.com/hoshsadiq/adblock-nocoin-list)
+- [easylist.to](https://easylist.to/)
