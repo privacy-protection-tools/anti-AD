@@ -95,7 +95,10 @@ $ARR_REGEX_LIST = array(
     '/^(\S+\.)?abie[0-9]+\.top$/' => null, //连号
     '/^(\S+\.)?ad[0-9]{3,}m.com$/' => null, //连号
     '/^(\S+\.)?aj[0-9]{4,}.online$/' => null, //连号
+    '/^(\S+\.)?xpj[0-9]\.net$/' => null, //连号
+    '/^(\S+\.)?ylx-[0-9].com$/' => null, //连号
     '/^(\S+\.)?777\-?partners?\.(net|com)$/' => null, //组合
+    '/^(\S+\.)?voyage-prive\.[a-z]+(\.uk)?$/' => null, //组合
     
     // '/^(\S+\.)?(?=.*[a-f].*\.com$)(?=.*\d.*\.com$)[a-f0-9]{15,}\.com$/' => null,
 );
