@@ -127,8 +127,22 @@ return array(
     'wanproxy.127.net' => 0, // #137
     'shouji.360.cn' => 0, // #136
     'ae01.alicdn.com' => 0, // #142
-    
+    'pingjs.qq.com' => 0, // #143
+    'shifen.com' => 0, // 百度的cname
+    'f10.baidu.com' => 0, // 百度公众号图片
+    'f11.baidu.com' => 0, // 百度公众号图片
+    'f12.baidu.com' => 0, // 百度公众号图片
+    'bj.bcebos.com' => 0, // 百度云产品    
+    'kingsoft.com' => 0, // 金山软件
+    'top.baidu.com' => 0, // 百度风云榜
+    'aiseet.atianqi.com' => 0, // #147
 
+    
+    
+    
+    
+    
+    
 
 
 

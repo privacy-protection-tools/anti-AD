@@ -63,6 +63,8 @@ $ARR_MERGED_WILD_LIST = array(
     '*.mmstat.com' => null,
     'sf*-ttcdn-tos.pstatp.com' => null,
     'f-log*.grammarly.io' => null,
+    '24log.*' => null,
+    '24smi.*' => null,
 );
 
 $ARR_REGEX_LIST = array(
@@ -84,11 +86,21 @@ $ARR_REGEX_LIST = array(
     '/^(\S+\.)?sax[\dns]?\.sina\.com\.cn/' => null,
     '/delivery([\d]{2}|dom|modo).com$/' => null,
     '/^(\S+\.)?[c-s]ads(abs|abz|ans|anz|ats|atz|del|ecs|ecz|ims|imz|ips|ipz|kis|kiz|oks|okz|one|pms|pmz)\.com/' => null,
-    '/^([a-z\d\-]+\.)?(?!xn--)[^\.\/]{40,}\.(com|net|cn)(\.cn)?$/' => null, //超长域名
+    '/^(\S+\.)?([a-z\d\-]+\.)?(?!xn--)[^\.\/]{26,}\.(com|net|cn)(\.cn)?$/' => null, //超长域名
     '/^(\S+\.)?11599[\da-z]{2,20}\.com$/' => null, //"澳门新葡京"系列
     '/^(\S+\.)?61677[\da-z]{0,20}\.com$/' => null, //"澳门新葡京"系列
-    '/^(\S+\.)?[0-9a-f]{16,}\.com$/' => null, //16个字符以上的16进制域名
+    '/^(\S+\.)?[0-9a-f]{15,}\.com$/' => null, //15个字符以上的16进制域名
     '/^(\S+\.)?[0-9a-z]{16,}\.xyz$/' => null, //16个字符以上的.xyz域名
+    '/^(\S+\.)?6699[0-9]\.top$/' => null, //连号
+    '/^(\S+\.)?abie[0-9]+\.top$/' => null, //连号
+    '/^(\S+\.)?ad[0-9]{3,}m.com$/' => null, //连号
+    '/^(\S+\.)?aj[0-9]{4,}.online$/' => null, //连号
+    '/^(\S+\.)?xpj[0-9]\.net$/' => null, //连号
+    '/^(\S+\.)?ylx-[0-9].com$/' => null, //连号
+    '/^(\S+\.)?ali2[a-z]\.xyz$/' => null, //连号
+    '/^(\S+\.)?777\-?partners?\.(net|com)$/' => null, //组合
+    '/^(\S+\.)?voyage-prive\.[a-z]+(\.uk)?$/' => null, //组合
+    
     // '/^(\S+\.)?(?=.*[a-f].*\.com$)(?=.*\d.*\.com$)[a-f0-9]{15,}\.com$/' => null,
 );
 

@@ -34,6 +34,9 @@ rm -f ./origin-files/dead-hosts*
 
 cp ./origin-files/yhosts-latest.txt ./origin-files/hosts1000.txt
 
+curl --connect-timeout 60 -s -o - https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list \
+ | grep -F 'DOMAIN-SUFFIX,' | sed 's/DOMAIN-SUFFIX,/127.0.0.1 /g' >./origin-files/hosts999.txt
+
 for i in "${!easylist[@]}"
 do
   echo "开始下载 easylist${i}..."

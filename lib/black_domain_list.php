@@ -178,9 +178,6 @@ return array(
     'shareinstall.com.cn' => array(
         'shareinstall.com.cn' //移动广告商
     ),
-    'atianqi.com' => array(
-        'atianqi.com' //广东南方新媒体股份有限公司
-    ),
     'apple.com' => array(
         'iadsdk.apple.com',
         'banners.itunes.apple.com',
@@ -621,6 +618,19 @@ return array(
     'rayjump.com' => array( // 广告域名 #98
       'rayjump.com',
       'adx-tk.rayjump.com',
+    ),
+    'baicizhan.org' => array( // 百词斩
+        'advertise.baicizhan.org',
+    ),
+    'baicizhan.com' => array( // 百词斩
+        'advertise.baicizhan.com',
+    ),
+    'yiche.com' => array( // 易车ad
+        'adx.yiche.com',
+        'log.ycapp.yiche.com',
+    ),
+    'csheaven.com' => array( // 总结到主域名上
+        'csheaven.com',
     ),
 
 

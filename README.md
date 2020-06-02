@@ -1,4 +1,4 @@
-# anti-AD v4
+# anti-AD
 
 #### anti-AD是目前中文区命中率最高的广告过滤列表，实现了精确的广告屏蔽和隐私保护。现已支持AdGuardHome，dnsmasq， Surge，Pi-Hole，SmartDNS等网络组件。anti-AD的多种输出格式，完全满足常见的广告屏蔽工具、广告过滤工具的要求，我们始终坚持尽可能的保障每种输出格式的广告过滤效果一致。
 
@@ -6,9 +6,7 @@
 
 本工具是通过域名解析层来屏蔽广告和保护隐私的，其将各大著名的hosts，ad filter lists，adblock list等的列表进行合并去重，再进行一系列的抽象化，例如主动剔除失效域名、easylist优化模糊匹配、增强的黑白名单机制等措施，最终生成期望的高命中率列表。
 
-![dist](https://github.com/privacy-protection-tools/anti-AD/workflows/sync%20list%20to%20dist/badge.svg)
-
-## 快速使用(大陆用户建议使用下表中的加速地址)
+## 快速使用(可尝试gitee地址的加速效果)
 
 | 文件 	| raw 	| gitee 	| 操作参考 	| 适用于 	|
 | --------------------------------	|:------------------:	| -------- | -------------------------------------------------------------------------------------------------------------------------------------------	|---------------------------------------------	|
@@ -37,6 +35,10 @@
 
 #### [更多版本演进历史>>>](https://github.com/privacy-protection-tools/anti-AD/blob/master/changelog.md)
 
+## 一些补充的话
+
+anti-AD在自我认知上始终是一个非主流的小众项目，受众群体较为狭窄。项目一直坚持每一行代码面向全球互联网完全开源！anti-AD过滤列表的所有规则均来自上游列表和网友提交的issues，欢迎各界朋友审阅。在没有阅读代码或没有完全理解代码意图之前，本项目以及作者不再接受任何无端的质疑、猜忌，作者也不打算再浪费时间作出任何解释。
+
 ## 欢迎提issue
 
 对于anti-AD，大家伙儿有任何建议，或者存在误杀，bug，其他错误，各种意见 [请开issue](https://github.com/privacy-protection-tools/anti-AD/issues/new/choose)
@@ -44,7 +46,7 @@
 加入QQ群更实时的交流：716981535 <br>
 ![716981535](https://user-images.githubusercontent.com/1243610/73809320-de535780-480d-11ea-82f5-15d4c3ccb0c0.png)
 
-## 特别感谢
+## Special Thanks to
 
 - [notracking/hosts-blocklists-scripts](https://github.com/notracking/hosts-blocklists-scripts) - 提供无效域名和无效hosts列表
 - [Adblock Plus](https://adblockplus.org/) - 畅游清爽洁净的网络！
@@ -53,3 +55,8 @@
 - [cjx82630/cjxlist](https://github.com/cjx82630/cjxlist) - Adblock Plus EasyList Lite与CJX's Annoyance List
 - _[@rufengsuixing](https://github.com/rufengsuixing) 提出的jsDelivr加速过滤列表下载的建议_
 - _[@xlighting2017](https://github.com/xlighting2017) 提供的[surge格式建议](https://github.com/privacy-protection-tools/anti-AD/issues/29)_
+- [ACL4SSR/ACL4SSR](https://github.com/ACL4SSR/ACL4SSR) - 一些常见APP的广告 @[wchqybs](https://github.com/wchqybs) in [#79](https://github.com/privacy-protection-tools/anti-AD/issues/79)
+- [ADgk.txt](https://gitee.com/banbendalao/adguard/raw/master/ADgk.txt)
+- [malwaredomainlist](https://www.malwaredomainlist.com/hostslist/hosts.txt)
+- [hoshsadiq/adblock-nocoin-list](https://github.com/hoshsadiq/adblock-nocoin-list)
+- [easylist.to](https://easylist.to/)
