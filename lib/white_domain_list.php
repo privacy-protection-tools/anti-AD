@@ -136,6 +136,7 @@ return array(
     'kingsoft.com' => 0, // 金山软件
     'top.baidu.com' => 0, // 百度风云榜
     'aiseet.atianqi.com' => 0, // #147
+    'data.bilibili.com' => 0, // #148
 
     
     
