@@ -137,6 +137,8 @@ return array(
     'top.baidu.com' => 0, // 百度风云榜
     'aiseet.atianqi.com' => 0, // #147
     'data.bilibili.com' => 0, // #148
+    'get3.adobe.com' => 0, // #152
+    'ex.qq.com' => 0, // #153
 
     
     
