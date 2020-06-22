@@ -139,6 +139,7 @@ return array(
     'data.bilibili.com' => 0, // #148
     'get3.adobe.com' => 0, // #152
     'ex.qq.com' => 0, // #153
+    '1sapp.com' => 0, // #156
 
     
     

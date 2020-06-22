@@ -1,6 +1,20 @@
 ! Title: adgk手机去广告规则
 ! Homepage: http://adgk.net
 ! by:酷安@坂本dalao
+||app.market.xiaomi.com/apm/search?$replace=/searchTopAdApp//
+||app.market.xiaomi.com/apm/search/guidepage$replace=/.*/{}/
+||app.market.xiaomi.com/apm/search/suggestV2
+/AdCenter^
+getAds|
+||advertisement.glb.qnniu.com^
+||hd.browser.miui.com^
+||api.browser.miui.com/bsr/pref$replace=/"go_supermarket_disable":"false"/"go_supermarket_disable":"true"/
+||httpdns.browser.miui.com^
+||nav.browser.miui.com^
+xuehuayu.cn$$blockquote[tag-content="广告"]
+xuehuayu.cn$$img[class="nofancybox"]
+xuehuayu.cn$$h3[id="红包"]
+||iwx.mail.qq.com^
 ||adservice.
 ||open-adx.com^
 ||8nc8shot.txxx.com^
@@ -16,7 +30,6 @@
 ||advert-
 -advertise-
 ||advertise.
-||advertisement.
 ||m-ali.ykimg.com/product/image^
 ||h-adashx4yt.ut.taobao.com^
 ||beacon.sina.com.cn^
@@ -76,7 +89,6 @@ $$div[class="ad-content"]
 ||adx-log.pinduoduo.com^
 ||ma-adx.ctrip.com^
 ||madx.flyme.cn^
-||iwx.mail.qq.com/appinfo/
 ||knicks.jd.com^
 ||mars.jd.com^
 ||adsfs.
@@ -7393,7 +7405,6 @@ $$a[href="changhong886.com"]
 ||www.woai00.com/Scripts/*-hengfu.js
 ||caclick.baidu.com^
 ||*/jd/a.ashx
-^AdCenter^
 ||0o.868iy.cn^
 ||www.googletagmanager.com^
 /js/index/list.js
@@ -12183,7 +12194,6 @@ _xiuno_com_ad/
 ||zzyonghao.com^
 $popup,third-party,domain=downdv.com|rmdown.com|soyunpan.com|youtubeto.com
 ||189.gd^*.html?p=$popup,third-party
-||com/?aff=$popup,third-party
 ||com/?Intr=$popup,third-party
 /BadwebRemindPage.aspx?param=$popup,third-party
 /hndxweb/push$popup,third-party
@@ -25104,11 +25114,7 @@ QURna+inhOWImQ==
 ||hot.browser.miui.com^
 ||m.video.9ddm.com/api/a3/splash?
 /ad-agent/
-||adreq.vivo.com.cn^
-||ssp.vivo.com.cn/api/v1/reqAd
-||adlog.vivo.com.cn^
 ||adsdk.vivo.com.cn^
-||adxlog-adnet.vivo.com.cn^
 ||runative-syndicate.com^
 ||mp.miaomiaojia.cc^
 ||canxx.com/right.js
