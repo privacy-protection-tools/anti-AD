@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202006192103
+! Version: 202006212148
 ! Title: CJX's Annoyance List
-! Last modified: 2020/06/19 21:03 +0800
+! Last modified: 2020/06/21 21:48 +0800
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/cjx82630/cjxlist
 !
@@ -402,6 +402,8 @@
 ||huobaowang.com/meeting/js/hbchat.
 ||chinaacc.com/upload/*_mjy_
 !------------------------Specific element hiding rules------------------------!
+jingyingjiajiao.com##.bdgg
+jingyingjiajiao.com##DIV[style="width:auto;border: 1px solid #aaaaaa; position:fixed; bottom:1px; right:1px;z-index:2000"]
 baidu.com##.vip-member-pop-content
 baidu.com##.app-side-ad
 kanman.com###\5f _acgn-virtual-coin__
@@ -417,7 +419,6 @@ redocn.com##.big_vip_gg
 redocn.com##.small_vip_gg
 yutu.cn###botfocus-res
 edutt.com##.foot-fixed
-360kan.com##.eb-rightbox
 bjx.com.cn##.layer_right2
 dyhjw.com##.index_luckdraw
 rrys2019.com###indexNav1
@@ -602,7 +603,6 @@ epwk.com##.head_banner
 jd.com###m_common_tip
 taobao.com##.J_smartBanner
 appledaily.com###ebBannerTopDiv + A[href^="http://bit.ly/"]
-360kan.com###js-eb-bottomad
 tianyancha.com###banner_web
 vdianying.cc##div[style^="display:block !important;"]
 kuaibao.qq.com##.slider-box
