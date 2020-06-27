@@ -140,6 +140,7 @@ return array(
     'get3.adobe.com' => 0, // #152
     'ex.qq.com' => 0, // #153
     '1sapp.com' => 0, // #156
+    'dyn.ithome.com' => 0, // #157
 
     
     
