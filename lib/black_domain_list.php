@@ -632,6 +632,18 @@ return array(
     'csheaven.com' => array( // 总结到主域名上
         'csheaven.com',
     ),
+    'bckrono.cn' => array( // 恶意跳转下载app
+        'bckrono.cn',
+        'js.bckrono.cn',
+    ),
+    'yemnn.cn' => array( // 恶意跳转下载app
+        'yemnn.cn',
+    ),
+    'familytaste.cn' => array( // 恶意跳转下载app
+        'familytaste.cn',
+        's350.familytaste.cn',
+    ),
+    
 
 
 
