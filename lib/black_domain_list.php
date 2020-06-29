@@ -643,7 +643,12 @@ return array(
         'familytaste.cn',
         's350.familytaste.cn',
     ),
-    
+    'iyfsearch.com' => array(
+        'iyfsearch.com',
+    ),
+    'click.com.cn' => array(
+        'click.com.cn',
+    ),
 
 
 
