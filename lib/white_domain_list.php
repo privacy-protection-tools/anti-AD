@@ -223,5 +223,6 @@ return array(
 
     'cpm.cm.kankan.com' => -1, //-1 失效本条规则，保持现状，即不加白本域名
     'deliver.ifeng.com' => -1, //保留的dead-hosts，为了缩减其子域名
+    'ad.xiaomi.com' => -1, //保留的dead-hosts，为了缩减其子域名
 
 );
