@@ -143,8 +143,8 @@ return array(
     'dyn.ithome.com' => 0, // #157
     'sf6-ttcdn-tos.pstatp.com' => 0, // #159
     'api.tv.sohu.com' => 0, // 搜狐视频win app版不能使用
-
-    
+    'ip2location.com' => 0, // #163
+        
     
     
     

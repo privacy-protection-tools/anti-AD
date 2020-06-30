@@ -274,7 +274,6 @@ return array(
     ),
     'amap.com' => array('logs.amap.com'),
     'tt114.net' => array('tt114.net'), //例如http://www.tt114.net/html/tlink.html
-    'ip138.com' => array('api.ip138.com'),
     'taobao.com' => array(
       'ip.taobao.com',
       'fourier.taobao.com',
@@ -566,7 +565,6 @@ return array(
     ),
     'microsoft.com' => array(
         'mobile.pipe.aria.microsoft.com',
-        'events.data.microsoft.com',
     ),
     'leixjun.com' => array(//恶意诱导下载app
       'leixjun.com',
