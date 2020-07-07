@@ -145,6 +145,7 @@ return array(
     'api.tv.sohu.com' => 0, // 搜狐视频win app版不能使用
     'ip2location.com' => 0, // #163
     'livere.com' => 0, // #170
+    'ucan.25pp.com' => 0, // #171
         
     
     
