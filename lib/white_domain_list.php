@@ -146,6 +146,7 @@ return array(
     'ip2location.com' => 0, // #163
     'livere.com' => 0, // #170
     'ucan.25pp.com' => 0, // #171
+    'privateinternetaccess.com' => 0, // #174
         
     
     
