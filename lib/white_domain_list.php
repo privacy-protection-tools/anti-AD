@@ -162,6 +162,9 @@ return array(
     'vidoza.net' => -1,
     'nahnoji.cz' => 1,
     'cloudfront.net' => -1,
+    'amazonaws.com' => -1,
+    'github.io' => -1,
+    'blogspot.com' => -1,
 
     /**notracking 提议加白的一批域名 start**/
     'scribol.com' => 0,
@@ -227,5 +230,4 @@ return array(
     'cpm.cm.kankan.com' => -1, //-1 失效本条规则，保持现状，即不加白本域名
     'deliver.ifeng.com' => -1, //保留的dead-hosts，为了缩减其子域名
     'ad.xiaomi.com' => -1, //保留的dead-hosts，为了缩减其子域名
-
 );

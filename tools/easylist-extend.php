@@ -66,6 +66,11 @@ $ARR_MERGED_WILD_LIST = array(
     '24log.*' => null,
     '24smi.*' => null,
     'ad-*.wikawika.xyz' => null,
+    '*.ablen*.tk' => null,
+    '*.darking*.tk' => null,
+    '*.doubleclick*.xyz' => null,
+    '*.thepiratebay.*' => null,
+    '*.freecontent.*' => null,
 );
 
 $ARR_REGEX_LIST = array(

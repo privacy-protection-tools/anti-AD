@@ -56,7 +56,8 @@ anti-AD在自我认知上始终是一个非主流的小众项目，受众群体�
 - _[@rufengsuixing](https://github.com/rufengsuixing) 提出的jsDelivr加速过滤列表下载的建议_
 - _[@xlighting2017](https://github.com/xlighting2017) 提供的[surge格式建议](https://github.com/privacy-protection-tools/anti-AD/issues/29)_
 - [ACL4SSR/ACL4SSR](https://github.com/ACL4SSR/ACL4SSR) - 一些常见APP的广告 @[wchqybs](https://github.com/wchqybs) in [#79](https://github.com/privacy-protection-tools/anti-AD/issues/79)
-- [ADgk.txt](https://gitee.com/banbendalao/adguard/raw/master/ADgk.txt)
-- [malwaredomainlist](https://www.malwaredomainlist.com/hostslist/hosts.txt)
-- [hoshsadiq/adblock-nocoin-list](https://github.com/hoshsadiq/adblock-nocoin-list)
-- [easylist.to](https://easylist.to/)
+- [ADgk.txt](https://gitee.com/banbendalao/adguard/raw/master/ADgk.txt) - 鸣谢 坂本dalao
+- [malwaredomainlist](https://www.malwaredomainlist.com/hostslist/hosts.txt) - 恶意域名屏蔽列表
+- [hoshsadiq/adblock-nocoin-list](https://github.com/hoshsadiq/adblock-nocoin-list) - 恶意挖矿屏蔽列表
+- [easylist.to](https://easylist.to/) - 感谢提供出色的easylist
+- [ZeroDot1/CoinBlockerLists](https://gitlab.com/ZeroDot1/CoinBlockerLists) - 屏蔽恶意劫持挖矿

@@ -20,6 +20,7 @@ hosts=(
 
 strict_hosts=(
   "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt"
+  "https://zerodot1.gitlab.io/CoinBlockerLists/hosts_browser"
 )
 
 dead_hosts=(
