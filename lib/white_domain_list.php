@@ -147,7 +147,6 @@ return array(
     'livere.com' => 0, // #170
     'ucan.25pp.com' => 0, // #171
     'privateinternetaccess.com' => 0, // #174
-        
     
     
     
@@ -165,6 +164,8 @@ return array(
     'amazonaws.com' => -1,
     'github.io' => -1,
     'blogspot.com' => -1,
+    'cdn77.org' => -1,
+    'cloudflare.net' => -1,
 
     /**notracking 提议加白的一批域名 start**/
     'scribol.com' => 0,
