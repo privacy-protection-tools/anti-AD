@@ -158,6 +158,7 @@ return array(
 
 
     'herokuapp.com' => -1,
+    'netlify.com' => -1,
     'vidoza.net' => -1,
     'nahnoji.cz' => 1,
     'cloudfront.net' => -1,
