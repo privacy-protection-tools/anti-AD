@@ -147,6 +147,7 @@ return array(
     'livere.com' => 0, // #170
     'ucan.25pp.com' => 0, // #171
     'privateinternetaccess.com' => 0, // #174
+    'shopify.com' => 0, // #179
     
     
     
