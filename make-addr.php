@@ -18,6 +18,7 @@ if(PHP_SAPI != 'cli'){
     die('nothing.');
 }
 
+date_default_timezone_set('Asia/Shanghai');
 $ARR_BLACKLIST = require ROOT_DIR . 'lib/black_domain_list.php';
 $ARR_WHITELIST = require ROOT_DIR . 'lib/white_domain_list.php';
 require ROOT_DIR . 'lib/writerFormat.class.php';
