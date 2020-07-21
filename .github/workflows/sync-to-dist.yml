@@ -19,15 +19,15 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: clone the website
-      run: git clone https://github.com/privacy-protection-tools/privacy-protection-tools.github.io.git ~/website
+      run: git clone https://github.com/privacy-protection-tools/anti-ad.github.io.git ~/website
     - name: copy some list files
       run: |
-        cp ./anti-ad-easylist.txt ~/website/easylist.txt
-        cp ./adblock-for-dnsmasq.conf ~/website/dnsmasq.conf
-        cp ./adblock-for-dnsmasq.conf ~/website/anti-ad-for-dnsmasq.conf
-        cp ./anti-ad-smartdns.conf ~/website/anti-ad-for-smartdns.conf
-        cp ./anti-ad-surge.txt ~/website/surge.txt
-        cp ./anti-ad-domains.txt ~/website/domains.txt
+        cp ./anti-ad-easylist.txt ~/website/docs/easylist.txt
+        cp ./adblock-for-dnsmasq.conf ~/website/docs/dnsmasq.conf
+        cp ./adblock-for-dnsmasq.conf ~/website/docs/anti-ad-for-dnsmasq.conf
+        cp ./anti-ad-smartdns.conf ~/website/docs/anti-ad-for-smartdns.conf
+        cp ./anti-ad-surge.txt ~/website/docs/surge.txt
+        cp ./anti-ad-domains.txt ~/website/docs/domains.txt
     - name: Commit files
       run: |
         cd ~/website
@@ -41,4 +41,4 @@ jobs:
         github_token: ${{ secrets.PERSON_TOKEN }}
         branch: 'master'
         directory: '/home/runner/website'
-        repository: 'privacy-protection-tools/privacy-protection-tools.github.io'
+        repository: 'privacy-protection-tools/anti-ad.github.io'
