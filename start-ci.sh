@@ -9,7 +9,7 @@ easylist=(
   "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt"
   "https://easylist.to/easylist/fanboy-annoyance.txt"
   "https://easylist.to/easylist/easyprivacy.txt"
-  "https://gitee.com/banbendalao/adguard/raw/master/ADgk.txt"
+  "https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt"
 )
 
 hosts=(
