@@ -10,6 +10,7 @@ easylist=(
   "https://easylist.to/easylist/fanboy-annoyance.txt"
   "https://easylist.to/easylist/easyprivacy.txt"
   "https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt"
+   "https://gitee.com/xinggsf/Adblock-Rule/raw/master/mv.txt"
 )
 
 hosts=(
