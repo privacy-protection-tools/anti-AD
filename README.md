@@ -6,15 +6,15 @@
 
 本工具是通过域名解析层来屏蔽广告和保护隐私的，其将各大著名的hosts，ad filter lists，adblock list等的列表进行合并去重，再进行一系列的抽象化，例如主动剔除失效域名、easylist优化模糊匹配、增强的黑白名单机制等措施，最终生成期望的高命中率列表。
 
-## 快速使用(暂无加速地址)
+## 快速使用(使用官网地址，速度更稳定)
 
 | 文件 	| raw 	| 官网地址 	| 适用于 	|
 | --------------------------------	|:------------------:	| ----------------	|---------------------------------------------	|
-| `adblock-for-dnsmasq.conf` 	| [link](https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/adblock-for-dnsmasq.conf) 	| 官网🚀  	| [dnsmasq](http://www.thekelleys.org.uk/dnsmasq/doc.html)及其衍生版本 	|
-| `anti-ad-easylist.txt` 	| [link](https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt) 	| 官网🚀	| [AdGuardHome](https://github.com/AdguardTeam/AdGuardHome) 	|
-| `anti-ad-domains.txt` 	| [link](https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-domains.txt) 	| 官网🚀	| [Pi-Hole](https://github.com/pi-hole/pi-hole)以及任何支持域名过滤列表的工具。 	|
-| `anti-ad-surge.txt` 	| [link](https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge.txt) 	| 官网🚀 	| Surge或其他工具。 	|
-| `anti-ad-smartdns.conf` 	| [link](https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-smartdns.conf) 	| 官网🚀  | [SmartDNS](https://github.com/pymumu/smartdns) 	|
+| `adblock-for-dnsmasq.conf` 	| [link](https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/adblock-for-dnsmasq.conf) 	| [官网](https://anti-ad.net/anti-ad-for-dnsmasq.conf)🚀  	| [dnsmasq](http://www.thekelleys.org.uk/dnsmasq/doc.html)及其衍生版本 	|
+| `anti-ad-easylist.txt` 	| [link](https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt) 	| [官网](https://anti-ad.net/easylist.txt)🚀	| [AdGuardHome](https://github.com/AdguardTeam/AdGuardHome) 	|
+| `anti-ad-domains.txt` 	| [link](https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-domains.txt) 	| [官网](https://anti-ad.net/domains.txt)🚀	| [Pi-Hole](https://github.com/pi-hole/pi-hole)以及任何支持域名过滤列表的工具。 	|
+| `anti-ad-surge.txt` 	| [link](https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge.txt) 	| [官网](https://anti-ad.net/surge.txt)🚀 	| Surge或其他工具。 	|
+| `anti-ad-smartdns.conf` 	| [link](https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-smartdns.conf) 	| [官网](https://anti-ad.net/anti-ad-for-smartdns.conf)🚀  | [SmartDNS](https://github.com/pymumu/smartdns) 	|
 
 ## 版本历史
 
