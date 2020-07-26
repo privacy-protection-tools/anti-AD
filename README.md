@@ -8,13 +8,13 @@
 
 ## 快速使用(暂无加速地址)
 
-| 文件 	| raw 	| 加速 	| 操作参考 	| 适用于 	|
-| --------------------------------	|:------------------:	| -------- | -------------------------------------------------------------------------------------------------------------------------------------------	|---------------------------------------------	|
-| `adblock-for-dnsmasq.conf` 	| [link](https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/adblock-for-dnsmasq.conf) 	| 加速🚀 	| 1. 下载过滤列表文件后, 保存到你的dnsmasq配置的正确目录下；<br>2. 重启dnsmasq服务；<br>3. 已经生效了，enjoy it。 	| [dnsmasq](http://www.thekelleys.org.uk/dnsmasq/doc.html)及其衍生版本 	|
-| `anti-ad-easylist.txt` 	| [link](https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt) 	| 加速🚀	| 1. 进入AdGuardHome过滤器页面；<br>2. 选择添加过滤器输入名称 anti-AD，url地址填raw链接或者gitee；<br>3. 点击确认后即生效 	| [AdGuardHome](https://github.com/AdguardTeam/AdGuardHome) 	|
-| `anti-ad-domains.txt` 	| [link](https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-domains.txt) 	| 加速🚀	| 以Pi-Hole为例<br>1. 进入pi-hole设置界面<br>2. 添加本domains列表链接到pi-hole的过滤器列表中<br>3. 点击save & update<br>4. 更新成功后即可生效 	| [Pi-Hole](https://github.com/pi-hole/pi-hole)以及任何支持域名过滤列表的工具。 	|
-| `anti-ad-surge.txt` 	| [link](https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge.txt) 	| 加速🚀 	| 直接订阅本条链接，保存后生效 	| Surge或任何支持解析该格式的广告过滤工具。 	|
-| `anti-ad-smartdns.conf` 	| [link](https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-smartdns.conf) 	| 加速🚀 	| 1. 下载本过滤文件，放置在合适位置; <br>2. 在smartdns.conf中配置`conf-file`来关联;<br> 3. 重启smartdns服务，生效 	| [SmartDNS](https://github.com/pymumu/smartdns) 	|
+| 文件 	| raw 	| 官网地址 	| 适用于 	|
+| --------------------------------	|:------------------:	| ----------------	|---------------------------------------------	|
+| `adblock-for-dnsmasq.conf` 	| [link](https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/adblock-for-dnsmasq.conf) 	| 官网🚀  	| [dnsmasq](http://www.thekelleys.org.uk/dnsmasq/doc.html)及其衍生版本 	|
+| `anti-ad-easylist.txt` 	| [link](https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt) 	| 官网🚀	| [AdGuardHome](https://github.com/AdguardTeam/AdGuardHome) 	|
+| `anti-ad-domains.txt` 	| [link](https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-domains.txt) 	| 官网🚀	| [Pi-Hole](https://github.com/pi-hole/pi-hole)以及任何支持域名过滤列表的工具。 	|
+| `anti-ad-surge.txt` 	| [link](https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge.txt) 	| 官网🚀 	| Surge或其他工具。 	|
+| `anti-ad-smartdns.conf` 	| [link](https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-smartdns.conf) 	| 官网🚀  | [SmartDNS](https://github.com/pymumu/smartdns) 	|
 
 ## 版本历史
 
