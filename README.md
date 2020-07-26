@@ -10,11 +10,11 @@
 
 | 文件 	| raw 	| 官网地址 	| 适用于 	|
 | --------------------------------	|:------------------:	| ----------------	|---------------------------------------------	|
-| `adblock-for-dnsmasq.conf` 	| [link](https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/adblock-for-dnsmasq.conf) 	| [官网地址，更稳定](https://anti-ad.net/anti-ad-for-dnsmasq.conf) 	| [dnsmasq](http://www.thekelleys.org.uk/dnsmasq/doc.html)及其衍生版本 	|
-| `anti-ad-easylist.txt` 	| [link](https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt) 	| [官网地址，更稳定](https://anti-ad.net/easylist.txt)	| [AdGuardHome](https://github.com/AdguardTeam/AdGuardHome) 	|
-| `anti-ad-domains.txt` 	| [link](https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-domains.txt) 	| [官网地址，更稳定](https://anti-ad.net/domains.txt)	| [Pi-Hole](https://github.com/pi-hole/pi-hole)或其他。 	|
+| `adblock-for-dnsmasq.conf` 	| [link](https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/adblock-for-dnsmasq.conf) 	| [官网地址，更稳定](https://anti-ad.net/anti-ad-for-dnsmasq.conf) 	| dnsmasq及其衍生版本 	|
+| `anti-ad-easylist.txt` 	| [link](https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt) 	| [官网地址，更稳定](https://anti-ad.net/easylist.txt)	| AdGuardHome 	|
+| `anti-ad-domains.txt` 	| [link](https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-domains.txt) 	| [官网地址，更稳定](https://anti-ad.net/domains.txt)	| Pi-Hole或其他。 	|
 | `anti-ad-surge.txt` 	| [link](https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge.txt) 	| [官网地址，更稳定](https://anti-ad.net/surge.txt)	| Surge或其他工具。 	|
-| `anti-ad-smartdns.conf` 	| [link](https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-smartdns.conf) 	| [官网地址，更稳定](https://anti-ad.net/anti-ad-for-smartdns.conf) | [SmartDNS](https://github.com/pymumu/smartdns) 	|
+| `anti-ad-smartdns.conf` 	| [link](https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-smartdns.conf) 	| [官网地址，更稳定](https://anti-ad.net/anti-ad-for-smartdns.conf) | SmartDNS 	|
 
 ## 版本历史
 
