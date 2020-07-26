@@ -106,7 +106,9 @@ $ARR_REGEX_LIST = array(
     '/^(\S+\.)?ali2[a-z]\.xyz$/' => null, //连号
     '/^(\S+\.)?777\-?partners?\.(net|com)$/' => null, //组合
     '/^(\S+\.)?voyage-prive\.[a-z]+(\.uk)?$/' => null, //组合
-    
+    '/^(\S+\.)?e7[0-9]{2,4}\.(net|com)?$/' => null, //组合
+    '/^(\S+\.)?g[1-4][0-9]{8,9}\.com?$/' => null, //批量组合
+
     // '/^(\S+\.)?(?=.*[a-f].*\.com$)(?=.*\d.*\.com$)[a-f0-9]{15,}\.com$/' => null,
 );
 
@@ -234,7 +236,6 @@ while(!feof($src_fp)){
     }
 
     foreach($arr_wild_src as $core_str => $wild_row){
-//        $match_rule = str_replace('*', '.*', $core_str);
         $match_rule = str_replace(array('.', '*'), array('\\.', '.*'), $core_str);
         if(!array_key_exists($core_str, $wrote_wild)){
             $written_size += fwrite($new_fp, "||${core_str}^\n");
