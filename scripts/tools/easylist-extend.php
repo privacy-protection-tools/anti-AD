@@ -34,7 +34,7 @@ $ARR_MERGED_WILD_LIST = array(
     'dsp*.youdao.com' => null,
     'pussl*.com' => null,
     'putrr*.com' => null,
-    'ad.*.360.cn' => null,
+    'ad*.360.cn' => null,
     't*.a.market.xiaomi.com' => null,
     'ad*.bigmir.net' => null,
     'log*.molitv.cn' => null,
@@ -42,7 +42,6 @@ $ARR_MERGED_WILD_LIST = array(
     'cloudservice*.kingsoft-office-service.com' => null,
     'gg*.51cto.com' => null,
     'log.*.hunantv.com' => null,
-    '*.log.hunantv.com' => null,
     'iflyad.*.openstorage.cn' => null,
     '*customstat*.51togic.com' => null,
     'appcloud*.zhihu.com' => null,
@@ -66,11 +65,12 @@ $ARR_MERGED_WILD_LIST = array(
     '24log.*' => null,
     '24smi.*' => null,
     'ad-*.wikawika.xyz' => null,
-    '*.ablen*.tk' => null,
-    '*.darking*.tk' => null,
-    '*.doubleclick*.xyz' => null,
-    '*.thepiratebay.*' => null,
-    '*.freecontent.*' => null,
+    'ablen*.tk' => null,
+    'darking*.tk' => null,
+    'doubleclick*.xyz' => null,
+    'thepiratebay.*' => null,
+    'adserver.*' => null,
+    'advert*.*' => null,
 );
 
 $ARR_REGEX_LIST = array(
@@ -234,7 +234,8 @@ while(!feof($src_fp)){
     }
 
     foreach($arr_wild_src as $core_str => $wild_row){
-        $match_rule = str_replace('*', '.*', $core_str);
+//        $match_rule = str_replace('*', '.*', $core_str);
+        $match_rule = str_replace(array('.', '*'), array('\\.', '.*'), $core_str);
         if(!array_key_exists($core_str, $wrote_wild)){
             $written_size += fwrite($new_fp, "||${core_str}^\n");
             $line_count++;
@@ -281,8 +282,8 @@ foreach($ARR_WHITE_RULE_LIST as $row => $v){
         if($core_str{0} === '/'){
             $match_rule = $core_str;
         }else{
-            $match_rule = str_replace('*', '.*', $core_str);
-            $match_rule = "/${match_rule}/";
+            $match_rule = str_replace(array('.', '*'), array('\\.', '.*'), $core_str);
+            $match_rule = "/^${match_rule}/";
         }
         if(preg_match($match_rule, $matches[1])){
             $domain = addressMaker::extract_main_domain($matches[1]);
