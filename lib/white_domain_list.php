@@ -168,6 +168,10 @@ return array(
     'blogspot.com' => -1,
     'cdn77.org' => -1,
     'cloudflare.net' => -1,
+    'appspot.com' => -1,
+    'cpm.cm.kankan.com' => -1, //-1 失效本条规则，保持现状，即不加白本域名
+    'deliver.ifeng.com' => -1, //保留的dead-hosts，为了缩减其子域名
+    'ad.xiaomi.com' => -1, //保留的dead-hosts，为了缩减其子域名
 
     /**notracking 提议加白的一批域名 start**/
     'scribol.com' => 0,
@@ -228,9 +232,4 @@ return array(
     'techsmith.com' => 1,
     'binaryage.com' => 1,
     'wisecleaner.com' => 1,
-
-
-    'cpm.cm.kankan.com' => -1, //-1 失效本条规则，保持现状，即不加白本域名
-    'deliver.ifeng.com' => -1, //保留的dead-hosts，为了缩减其子域名
-    'ad.xiaomi.com' => -1, //保留的dead-hosts，为了缩减其子域名
 );
