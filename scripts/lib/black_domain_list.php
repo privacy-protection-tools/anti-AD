@@ -676,6 +676,11 @@ return array(
         'zbwowo.com',
         'cdn-7n-pt.zbwowo.com', // https://cdn-7n-pt.zbwowo.com/pjs/as/apias0.js?c=12
     ),
+    'ijinshan.com' => array(
+        'mobad.ijinshan.com',
+        'union.ijinshan.com',
+        'tj.ijinshan.com',
+    ),
 
 
 

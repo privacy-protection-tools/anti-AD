@@ -71,6 +71,17 @@ $ARR_MERGED_WILD_LIST = array(
     'thepiratebay.*' => null,
     'adserver.*' => null,
     'advert*.*' => null,
+    'clientlog*.music.163.com' => null,
+    'brucelead*.com' => null,
+    'gostats.*' => null,
+    'gralfusnzpo*.top' => null,
+    'oiwjcsh*.top' => null,
+    '*-analytics*.huami.com' => null,
+    'count*.pconline.com.cn' => null,
+    'qchannel*.cn' => null,
+    'sda*.xyz' => null,
+//    'ad-*.com' => null,
+//    'ad-*.net' => null,
 );
 
 $ARR_REGEX_LIST = array(
