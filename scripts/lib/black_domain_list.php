@@ -681,6 +681,11 @@ return array(
         'union.ijinshan.com',
         'tj.ijinshan.com',
     ),
+    'ifeng.com' => array(
+        'iaclick.ifeng.com',
+        'avideo.ifengcdn.com',
+        'cx.ifengbi.com',
+    ),
 
 
 
