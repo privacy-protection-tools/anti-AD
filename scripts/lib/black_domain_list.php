@@ -172,9 +172,6 @@ return array(
     'kuyun.com' => array(
         'kuyun.com'
     ),
-    'amazon.com' => array(
-        'device-messaging-na.amazon.com',
-    ),
     'shareinstall.com.cn' => array(
         'shareinstall.com.cn' //移动广告商
     ),
