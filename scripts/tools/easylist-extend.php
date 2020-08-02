@@ -144,6 +144,8 @@ $ARR_WHITE_RULE_LIST = array(
     '@@||stats.gov.cn^' => 1, // 国家统计局 #144
     '@@||tj.gov.cn^' => 1,
     '@@||sax.sina.com.cn^' => 1, // #155
+    '@@||api.ad-gone.com^' => 1, // #207
+    '@@||news-app.abumedia.yql.yahoo.com^' => 1, // #206
 );
 
 //针对上游赦免规则anti-AD不予赦免的规则，即赦免名单的黑名单
