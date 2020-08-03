@@ -683,6 +683,10 @@ return array(
         'avideo.ifengcdn.com',
         'cx.ifengbi.com',
     ),
+    'shllhz.net' => array( // #204
+        'shllhz.net',
+        'p.shllhz.net',
+    ),
 
 
 
