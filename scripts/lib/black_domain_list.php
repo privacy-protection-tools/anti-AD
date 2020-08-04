@@ -687,6 +687,9 @@ return array(
         'shllhz.net',
         'p.shllhz.net',
     ),
+    'pubghio.fun' => array(
+        'pubghio.fun', // #212, https://pubghio.fun/login?agency=200
+    ),
 
 
 
