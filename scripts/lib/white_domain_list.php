@@ -149,7 +149,8 @@ return array(
     'privateinternetaccess.com' => 0, // #174
     'shopify.com' => 0, // #179
     'co.in' => 0, //https://github.com/nextdns/metadata/issues/364 
-    '91mobiles.com' => 0, //https://github.com/nextdns/metadata/issues/364 
+    '91mobiles.com' => 0, // #215
+    'm.1234567.com.cn' => 0, // #213
     
     
     
