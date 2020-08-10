@@ -690,6 +690,10 @@ return array(
     'pubghio.fun' => array(
         'pubghio.fun', // #212, https://pubghio.fun/login?agency=200
     ),
+    'xladapi.izuiyou.com' => array( // 手机迅雷广告
+        'xladapi.izuiyou.com',
+        'xlstat.izuiyou.com',
+    ),
 
 
 
