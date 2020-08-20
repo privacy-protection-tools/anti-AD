@@ -151,6 +151,7 @@ return array(
     'co.in' => 0, //https://github.com/nextdns/metadata/issues/364 
     '91mobiles.com' => 0, // #215
     'm.1234567.com.cn' => 0, // #213
+    'woniu.com' => 0, // #227
     
     
     
