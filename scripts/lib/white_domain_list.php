@@ -152,6 +152,7 @@ return array(
     '91mobiles.com' => 0, // #215
     'm.1234567.com.cn' => 0, // #213
     'woniu.com' => 0, // #227
+    'du.163.com' => 0, // #229
     
     
     
