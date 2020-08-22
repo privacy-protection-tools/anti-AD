@@ -2,7 +2,7 @@ name: Auto build new list
 
 on:
   schedule:
-    - cron: "1 13 */6 * *"
+    - cron: "25 01 * * *"
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -15,6 +15,7 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
+        git add *
         git commit -m "Auto renew the anti-AD list." -a
     - name: Push changes
       uses: ad-m/github-push-action@master
