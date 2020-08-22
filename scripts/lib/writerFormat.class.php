@@ -95,7 +95,7 @@ class writerFormat{
     /*Surge DOMAIN-SET格式的屏蔽广告列表*/
     const SURGE2 = array(
         'format' => '.{DOMAIN}',
-        'header' => "#DOMAIN-SET,https://anti-ad.net/surge2.txt,REJECT\n#TITLE=anti-AD\n#VER={DATE}\n#URL={URL}\n#TOTAL_LINES={COUNT}\n",
+        'header' => "#TITLE=anti-AD\n#VER={DATE}\n#URL={URL}\n#TOTAL_LINES={COUNT}\n\n#DOMAIN-SET,https://anti-ad.net/surge2.txt,REJECT\n",
         'full_domain' => 0,
         'name' => 'surge2',
         'filename' => '../anti-ad-surge2.txt',
