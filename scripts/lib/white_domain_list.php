@@ -153,6 +153,7 @@ return array(
     'm.1234567.com.cn' => 0, // #213
     'woniu.com' => 0, // #227
     'du.163.com' => 0, // #229
+    'zaloapp.com' => 0, // #230
     
     
     
