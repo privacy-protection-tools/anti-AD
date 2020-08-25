@@ -5,21 +5,17 @@ source /etc/profile
 cd $(cd "$(dirname "$0")";pwd)
 
 easylist=(
-  "https://easylist-downloads.adblockplus.org/easylistchina+easylist.txt"
-  "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt"
-  "https://easylist.to/easylist/fanboy-annoyance.txt"
-  "https://easylist.to/easylist/easyprivacy.txt"
-  "https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt"
+  "http://anti.hth123.cn/easylist.txt"
+  "https://banbendalao.coding.net/p/adgk/d/ADgk/git/raw/master/ADgk.txt"
+  "https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt"
 )
 
 hosts=(
-  "https://raw.githubusercontent.com/neoFelhz/neohosts/gh-pages/full/hosts.txt"
-  "https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts"
+  "https://www.github.developerdan.com/hosts/lists/ads-and-tracking-extended.txt"
 )
 
 strict_hosts=(
-  "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt"
-  "https://zerodot1.gitlab.io/CoinBlockerLists/hosts_browser"
+  "https://www.github.developerdan.com/hosts/lists/tracking-aggressive-extended.txt"
 )
 
 dead_hosts=(
