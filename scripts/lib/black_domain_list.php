@@ -694,7 +694,112 @@ return array(
         'xladapi.izuiyou.com',
         'xlstat.izuiyou.com',
     ),
-
+    'idmchina.net' => array( // 假冒官网
+        'www.idmchina.net',
+        'idmchina.net',
+    ),
+    
+    'cntingyun.com' => array( // #234
+        'www.cntingyun.com',
+        'cntingyun.com',
+    ),
+    'networkbench.com' => array( // #234
+        'networkbench.com',
+        'www.networkbench.com',
+    ),
+    'tingyun.com' => array( // #234
+        'tingyun.com',
+        'www.tingyun.com',
+    ),
+    'appsmall.mobi' => array( // #234
+        'appsmall.mobi',
+        'www.appsmall.mobi',
+    ),
+    'babybubble.cn' => array( // #234
+        'www.babybubble.cn',
+        'babybubble.cn',
+    ),
+    'babymoment.net' => array( // #234
+        'www.babymoment.net',
+        'babymoment.net',
+    ),
+    'coolppa.cn' => array( // #234
+        'coolppa.cn',
+        'www.coolppa.cn',
+    ),
+    'effirst.cn' => array( // #234
+        'www.effirst.cn',
+        'effirst.cn',
+    ),
+    'effirst.com' => array( // #234
+        'www.effirst.com',
+        'effirst.com',
+    ),
+    'hdyzx.cn' => array( // #234
+        'hdyzx.cn',
+        'www.hdyzx.cn',
+    ),
+    'minippa.cn' => array( // #234
+        'www.minippa.cn',
+        'minippa.cn',
+    ),
+    'open-uc.cn' => array( // #234
+        'open-uc.cn',
+        'www.open-uc.cn',
+    ),
+    
+    'tinya1.cn' => array( // #234
+        'tinya1.cn',
+        'www.tinya1.cn',
+    ),
+    'tinyap2.cn' => array( // #234
+        'tinyap2.cn',
+        'www.tinyap2.cn',
+    ),
+    'tinypap.cn' => array( // #234
+        'tinypap.cn',
+        'www.tinypap.cn',
+    ),
+    'tinyppa.cn' => array( // #234
+        'tinyppa.cn',
+        'www.tinyppa.cn',
+    ),
+    'u-mob.cn' => array( // #234
+        'u-mob.cn',
+        'www.u-mob.cn',
+    ),
+    'ubibibi.com' => array( // #234
+        'ubibibi.com',
+        'www.ubibibi.com',
+    ),
+    'uc123.com' => array( // #234
+        'uc123.com',
+        'www.uc123.com',
+    ),
+    'ucdesk.cn' => array( // #234
+        'ucdesk.cn',
+        'www.ucdesk.cn',
+    ),
+    'ucfly.com' => array( // #234
+        'ucfly.com',
+        'www.ucfly.com',
+    ),
+    'ucweb.cn' => array( // #234
+        'ucweb.cn',
+        'www.ucweb.cn',
+    ),
+    'uflowx.com' => array( // #234
+        'uflowx.com',
+        'www.uflowx.com',
+    ),
+    'xiaomengquan.cn' => array( // #234
+        'xiaomengquan.cn',
+        'www.xiaomengquan.cn',
+    ),
+    'xmq123.cn' => array( // #234
+        'xmq123.cn',
+        'www.xmq123.cn',
+    ),
 
 
 
