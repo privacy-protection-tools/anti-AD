@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202008310025
+! Version: 202009010109
 ! Title: EasyPrivacy
-! Last modified: 31 Aug 2020 00:25 UTC
+! Last modified: 01 Sep 2020 01:09 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -3802,7 +3802,7 @@
 /smartrack/*
 /smartserve-
 /smarttag-prod.
-/smarttag.js
+/smarttag.*js
 /smarttag/smarttag-
 /smetrics.*/b/ss/*
 /smetrics.*/id?
@@ -6483,6 +6483,7 @@ _mongo_stats/
 ||g2971265025.co^$third-party
 ||g3169349360.co^$third-party
 ||g3367433695.co^$third-party
+||g3565518030.co^$third-party
 ||gaconnector.com^$third-party
 ||gameanalytics.com^$third-party
 ||gammachug.com^$third-party
@@ -12053,11 +12054,12 @@ _mongo_stats/
 ||fastly.net/sp.js
 ! Consent Trackers
 ||privacy-center.org^$third-party
-||privacy-mgmt.com^$third-party
+||privacy-mgmt.com^$script,third-party
 ! Unnecessary third-party scripts
 ||howsmyssl.com^$third-party
 ||js.trendmd.com^$script,subdocument,third-party
 ||nsg.symantec.com^$third-party
+||popup.laybuy.com^$subdocument,third-party
 ||privacy-policy.truste.com^$third-party
 ||seal.godaddy.com^$third-party
 ||seal.networksolutions.com^$third-party
@@ -15438,7 +15440,7 @@ _mongo_stats/
 ||oneid.mmstat.com^
 ! Port scanning Fingerprinting Trackers (Privacy and CPU abuse)
 ! https://nullsweep.com/why-is-this-website-port-scanning-me/
-/^https?:\/\/ir\.ebaystatic\.com\/rs\/v\/[a-zA-Z0-9]{18,}\.js/$script,domain=vipr.ebaydesc.com
+/^https?:\/\/ir\.ebaystatic\.com\/rs\/v\/[a-zA-Z0-9]{18,}\.js/$script,domain=ebay.at|ebay.be|ebay.ca|ebay.ch|ebay.cn|ebay.co.uk|ebay.com.au|ebay.com.hk|ebay.com.my|ebay.com.sg|ebay.de|ebay.es|ebay.fr|ebay.ie|ebay.it|ebay.nl|ebay.ph|ebay.pl|vipr.ebaydesc.com
 /^https?:\/\/nav\.sciencedirect\.com\/[a-zA-Z0-9]{14,}\.js/$script,domain=sciencedirect.com
 /^https?:\/\/pov\.spectrum\.net\/[a-zA-Z0-9]{14,}\.js/$script,domain=spectrum.net
 /^https?:\/\/tmx\.td\.com\/[a-z0-9]{14,18}\.js.*/$script,domain=mbna.ca|td.com
@@ -16748,6 +16750,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 ||paginegialle.it/cgi-bin/jimpres.cgi?
 ||paginegialle.it/engagement.js
 ||pornolupo.org/track.js
+||repstatic.it^*/nielsen_static_mapping_repubblica_
 ||sa.sky.it^
 ||seat.it/cgi-bin/getcod.cgi?
 ||servizi.unionesarda.it/controlli/
@@ -17425,8 +17428,8 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||puch-ersatzteile.at^*/google-analytics.min.js
 @@||px-cdn.net/api/v2/collector/ocaptcha$xmlhttprequest
 @@||quantcast.com/wp-content/themes/quantcast/$domain=quantcast.com
-@@||quantcast.mgr.consensu.org/cmp.js$script,domain=cyclingnews.com|ladbible.com
-@@||quantcast.mgr.consensu.org^*/cmp2.js$script,domain=independent.co.uk
+@@||quantcast.mgr.consensu.org/cmp.js$script,domain=cyclingnews.com|independent.co.uk|ladbible.com
+@@||quantcast.mgr.consensu.org^*/cmp2.js$script,domain=cyclingnews.com|independent.co.uk|ladbible.com
 @@||quantserve.com/quant.js$domain=apps.facebook.com|nymag.com
 @@||rasset.ie/dotie/js/tracker.js$domain=rte.ie
 @@||rba-screen.healthsafe-id.com/fp/tags.js$script,domain=myuhc.com
@@ -17441,6 +17444,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||scorecardresearch.com/beacon.js$domain=agame.com|allmusic.com|amctv.com|apl.tv|babycenter.com|bonappetit.com|calgaryherald.com|canada.com|cbc.ca|dailymail.co.uk|dailymotion.com|deviantart.com|discovery.com|doctoroz.com|edmontonjournal.com|fastcompany.com|financialpost.com|firstwefeast.com|hitfix.com|huffingtonpost.com|investigationdiscovery.com|landandfarm.com|last.fm|leaderpost.com|m.tmz.com|montrealgazette.com|nationalpost.com|newsday.com|ottawacitizen.com|outsideonline.com|radaronline.com|salon.com|sci2.tv|syfy.com|theprovince.com|thestar.com|thestarphoenix.com|thinkatheist.com|tlc.com|tmz.com|v3.co.uk|vancouversun.com|windsorstar.com
 @@||scorecardresearch.com/c2/plugins/streamsense_plugin_html5.js
 @@||scorecardresearch.com/c2/plugins/streamsense_plugin_theplatform.js
+@@||screen9.com/players/*/amber-google-analytics.esm.js$script,domain=api.screen9.com
 @@||sealserver.trustwave.com/seal.js$domain=zoom.us
 @@||sears.com^*/analytics.sitecatalyst.js
 @@||secure.logmein.com/scripts/Tracking/$script,domain=logme.in|logmein.com
@@ -17598,8 +17602,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 ! Heatmap
 @@||heatmap.it^$domain=heatmap.com|heatmap.it|heatmap.me|heatmap.org
 ! Google
-@@||google.*/analytics/css/$~third-party
-@@||google.*/analytics/js/$~third-party
+@@||google.com/analytics/$domain=analytics.google.com
 @@||gstatic.com^*/analytics.js$domain=google.com
 ! ----------------Allowlists to fix broken international sites-----------------!
 ! *** easylist:easyprivacy/easyprivacy_allowlist_international.txt ***
@@ -17611,6 +17614,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||analytics.edgekey.net/html5/akamaihtml5-min.js$domain=br.de
 @@||apps.derstandard.at^*/TrackingCookieCheck?$subdocument
 @@||asadcdn.com/adlib/pages/sport1.js$domain=sport1.de
+@@||cdn.privacy-mgmt.com^$subdocument,xmlhttprequest,domain=spiegel.de|welt.de
 @@||darmstadt.ui-traffic.de/mobile/webapp/bower_components/heatmap.js$domain=darmstadt.ui-traffic.de
 @@||deutschlandfunkkultur.de/themes/*/js.php?files=*,script/smarttag.js,$script,~third-party
 @@||energy.de^*/ivw.js?$domain=energy.de
@@ -17624,6 +17628,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||ksta.de^*/tracking/tracking.js$domain=ksta.de
 @@||orginio.de/api/analytics/$~third-party,xmlhttprequest
 @@||rtl.de^*/videotracking.min.js$domain=rtl.de
+@@||sp-prod.net/wrapperMessagingWithoutDetection.js$script,domain=welt.de
 @@||spatialbuzz.com/piwik/piwik.js$domain=spatialbuzz.com
 @@||spiegel.de/layout/js/http/netmind-$script
 @@||sunday.de/skin/*/googleanalytics.js$script
