@@ -154,6 +154,7 @@ return array(
     'woniu.com' => 0, // #227
     'du.163.com' => 0, // #229
     'zaloapp.com' => 0, // #230
+    'manhuachi.com' => 0, // #238
     
     
     
