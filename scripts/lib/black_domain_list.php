@@ -800,6 +800,34 @@ return array(
         'xmq123.cn',
         'www.xmq123.cn',
     ),
+    'dabaicai.cn' => array( // #240
+        'dabaicai.cn',
+        'www.dabaicai.cn',
+    ),
+    'diannaodian.com' => array( // #240
+        'diannaodian.com',
+        'www.diannaodian.com',
+    ),
+    'laomaotao.com' => array( // #240
+        'laomaotao.com',
+        'www.laomaotao.com',
+    ),
+    'myfeng.cn' => array( // #240
+        'myfeng.cn',
+        'www.myfeng.cn',
+    ),
+    'laomaotao.net' => array( // #240
+        'laomaotao.net',
+        'www.laomaotao.net',
+    ),
+    'winbaicai.com' => array( // #240
+        'winbaicai.com',
+        'www.winbaicai.com',
+    ),
+    'dabaicai.com' => array( // #240
+        'dabaicai.com',
+        'www.dabaicai.com',
+    ),
 
 
 
