@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202008281017
+! Version: 202009091546
 ! Title: CJX's Annoyance List
-! Last modified: 2020/08/28 10:17 +0800
+! Last modified: 2020/09/09 15:46 +0800
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/cjx82630/cjxlist
 !
@@ -409,7 +409,12 @@
 ||xuexila.com^*-xxl.js
 ||sogoucdn.com/translate/ssr/static/img/banner-
 ||cls.cn/v2/web/ad?
+||aisixiang.com/images/*-20
 !------------------------Specific element hiding rules------------------------!
+baidu.com###copyright + .banner
+whcykj.cn###BDBridgeInviteWrap
+whcykj.cn###InviteContainerl
+whcykj.cn##.swt_bottom
 qiaobutang.com##.fixed-footer-wrap
 fanyi.baidu.com###app-read
 pan.baidu.com##.phone-banner
@@ -1287,6 +1292,7 @@ m.babytree.com##script + a[class]
 /v.gif?logtype=
 /yesky/js/counter/*
 /zcool-analytics.js
+||pv.cheshi.com^
 ||tracking.kdnet.net^
 ||lnd.com.cn/sys/real_calc.js
 ||sogou.com/dr/p1.gif
