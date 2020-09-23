@@ -156,6 +156,7 @@ return array(
     'zaloapp.com' => 0, // #230
     'manhuachi.com' => 0, // #238
     'push2.eastmoney.com' => 0, // #239
+    'slashdot.org' => 0, // #242
     
     
     
