@@ -158,6 +158,7 @@ return array(
     'push2.eastmoney.com' => 0, // #239
     'slashdot.org' => 0, // #242
     'iwx.mail.qq.com' => 0, // #243
+    'ename.net' => 0, // #246
     
     
     
