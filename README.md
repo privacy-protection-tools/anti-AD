@@ -51,7 +51,7 @@ anti-AD在自我认知上始终是一个非主流的小众项目，受众群体�
 - [notracking/hosts-blocklists-scripts](https://github.com/notracking/hosts-blocklists-scripts) - 提供无效域名和无效hosts列表
 - [Adblock Plus](https://adblockplus.org/) - 畅游清爽洁净的网络！
 - [neoFelhz/neohosts](https://github.com/neoFelhz/neohosts) - 自由·负责·克制 去广告 Hosts 项目
-- [vokins/yhosts](https://github.com/vokins/yhosts) - yhosts
+- [vokins/yhosts](https://github.com/vokins/yhosts) - yhosts（该源已停止维护）
 - [cjx82630/cjxlist](https://github.com/cjx82630/cjxlist) - Adblock Plus EasyList Lite与CJX's Annoyance List
 - _[@rufengsuixing](https://github.com/rufengsuixing) 提出的jsDelivr加速过滤列表下载的建议_
 - _[@xlighting2017](https://github.com/xlighting2017) 提供的[surge格式建议](https://github.com/privacy-protection-tools/anti-AD/issues/29)_
