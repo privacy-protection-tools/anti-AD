@@ -161,6 +161,7 @@ return array(
     'ename.net' => 0, // #246
     'api.iplay.163.com' => 0, // #247
     'minorshort.weixin.qq.com' => 0, // 微信滑动验证码 
+    'pusher.com' => 0, // #248
     
     
     
