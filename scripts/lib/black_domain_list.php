@@ -828,6 +828,34 @@ return array(
         'dabaicai.com',
         'www.dabaicai.com',
     ),
+    'fancydsp.com' => array( // fancyapi.com同备案号
+        'fancydsp.com',
+        'www.fancydsp.com',
+    ),
+    'fancydigital.com.cn' => array( // fancyapi.com同备案号
+        'fancydigital.com.cn',
+        'www.fancydigital.com.cn',
+    ),
+    'fancydmp.com' => array( // fancyapi.com同备案号
+        'fancydmp.com',
+        'www.fancydmp.com',
+    ),
+    'adfancy.com.cn' => array( // fancyapi.com同备案号
+        'adfancy.com.cn',
+        'www.adfancy.com.cn',
+    ),
+    'fancysmp.com' => array( // fancyapi.com同备案号
+        'fancysmp.com',
+        'www.fancysmp.com',
+    ),
+    'fancysocialtalk.com' => array( // fancyapi.com同备案号
+        'fancysocialtalk.com',
+        'www.fancysocialtalk.com',
+    ),
+    '188api.com' => array( // fancyapi.com同备案号
+        '188api.com',
+        'www.188api.com',
+    ),
 
 
 
