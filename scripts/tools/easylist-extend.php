@@ -82,6 +82,18 @@ $ARR_MERGED_WILD_LIST = array(
     'sda*.xyz' => null,
     'ad-*.com' => null,
     'ad-*.net' => null,
+    'webads.*' => null,
+    'web-stat.*' => null,
+    'waframedia*.*' => null,
+    'wafmedia*.*' => null,
+    'voluumtrk*.com' => null,
+    'vmm-satellite*.com' => null,
+    'vente-unique.*' => null,
+    'vegaoo*.*' => null,
+    'umtrack*.com' => null,
+    'grjs0*.com' => null,
+    'imglnk*.com' => null,
+    
 );
 
 $ARR_REGEX_LIST = array(
@@ -119,6 +131,7 @@ $ARR_REGEX_LIST = array(
     '/^(\S+\.)?voyage-prive\.[a-z]+(\.uk)?$/' => null, //组合
     '/^(\S+\.)?e7[0-9]{2,4}\.(net|com)?$/' => null, //组合
     '/^(\S+\.)?g[1-4][0-9]{8,9}\.com?$/' => null, //批量组合
+    '/^(\S+\.)?hg[0-9]{4,5}\.com?$/' => null, //批量组合
 
     // '/^(\S+\.)?(?=.*[a-f].*\.com$)(?=.*\d.*\.com$)[a-f0-9]{15,}\.com$/' => null,
 );
