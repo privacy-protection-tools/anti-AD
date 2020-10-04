@@ -272,12 +272,12 @@ return array(
     'amap.com' => array('logs.amap.com'),
     'tt114.net' => array('tt114.net'), //例如http://www.tt114.net/html/tlink.html
     'taobao.com' => array(
-      'ip.taobao.com',
-      'fourier.taobao.com',
-      'accscdn.m.taobao.com',
-      'acs.m.taobao.com',
-      'acs.wapa.taobao.com',
-      'openjmacs.m.taobao.com',
+        'ip.taobao.com',
+        'fourier.taobao.com',
+        'accscdn.m.taobao.com',
+        'acs.m.taobao.com',
+        'acs.wapa.taobao.com',
+        'openjmacs.m.taobao.com',
     ),
     'aiclk.com' => array('aiclk.com'),
     '5ubei.com' => array('5ubei.com'), //统计类例如http://dnm.5ubei.com:7098/hlink.html
@@ -321,20 +321,20 @@ return array(
     'superads.cn' => array('superads.cn'), //广告商
     'tv2phone.cn' => array('appwall.tv2phone.cn'),
     'vivo.com.cn' => array(
-      'adlog.vivo.com.cn',
-      'adreq.vivo.com.cn',
-      'adsdk.vivo.com.cn',
-      'adsstatic.vivo.com.cn',
-      'adxlog.vivo.com.cn',
-      'stnetsdk.appstore.vivo.com.cn',
-      'monitor-stsdk.vivo.com.cn',
-      'onrt-stsdk.vivo.com.cn',
-      'ort-stsdk.vivo.com.cn',
-      'pnrt-stsdk.vivo.com.cn',
-      'prt-stsdk.vivo.com.cn',
-      'stnetsdk.vivo.com.cn',
-      'stsdk.vivo.com.cn',
-      'vcardsdkservice.vivo.com.cn',
+        'adlog.vivo.com.cn',
+        'adreq.vivo.com.cn',
+        'adsdk.vivo.com.cn',
+        'adsstatic.vivo.com.cn',
+        'adxlog.vivo.com.cn',
+        'stnetsdk.appstore.vivo.com.cn',
+        'monitor-stsdk.vivo.com.cn',
+        'onrt-stsdk.vivo.com.cn',
+        'ort-stsdk.vivo.com.cn',
+        'pnrt-stsdk.vivo.com.cn',
+        'prt-stsdk.vivo.com.cn',
+        'stnetsdk.vivo.com.cn',
+        'stsdk.vivo.com.cn',
+        'vcardsdkservice.vivo.com.cn',
     ),
     'vnet.cn' => array('vnet.cn'), //互联星空
     'wannaplay.cn' => array('h5.wannaplay.cn'), //游戏广告
@@ -399,26 +399,26 @@ return array(
     ),
 
     'dushu.io' => array(
-      'advertising.dushu.io', //广告域名
+        'advertising.dushu.io', //广告域名
     ),
 
     'unitychina.cn' => array(
-      'config.unityads.unitychina.cn',
-      'unityads.unitychina.cn',
+        'config.unityads.unitychina.cn',
+        'unityads.unitychina.cn',
     ),
 
     'upltv.com' => array(
-      'ads-sdk-cn.upltv.com',
-      'a-sta-cn.upltv.com',
-      'ads-sdk.upltv.com',
-      'report-ads-sdk.upltv.com',
-      'c-sta-cn.upltv.com',
+        'ads-sdk-cn.upltv.com',
+        'a-sta-cn.upltv.com',
+        'ads-sdk.upltv.com',
+        'report-ads-sdk.upltv.com',
+        'c-sta-cn.upltv.com',
     ),
 
     //上传分享wifi密码
     'ggsafe.com' => array(
-      'ggsafe.com',
-      'wifi.ggsafe.com',
+        'ggsafe.com',
+        'wifi.ggsafe.com',
     ),
     '2345.cn' => array(
         '2345.cn', //广告联盟
@@ -445,27 +445,27 @@ return array(
 
     //一窝恶意劫持搞推广的域名
     'duoroumao.cn' => array(
-      's.duoroumao.cn', //广告分发，例如https://s.duoroumao.cn/yxs191.js
-      'duoroumao.cn',
+        's.duoroumao.cn', //广告分发，例如https://s.duoroumao.cn/yxs191.js
+        'duoroumao.cn',
     ),
     'geakr.com' => array(
-      'geakr.com', //广告 例如：https://www.geakr.com/tkl/cp.js?channel_id=3
-      'www.geakr.com',
+        'geakr.com', //广告 例如：https://www.geakr.com/tkl/cp.js?channel_id=3
+        'www.geakr.com',
     ),
     'qichetiemo.info' => array(
-      'qichetiemo.info',
-      'about.qichetiemo.info', //广告，例如 https://about.qichetiemo.info/apf/mkdjJSjcs113 ，此页面有js加密代码，应属于恶意网站
+        'qichetiemo.info',
+        'about.qichetiemo.info', //广告，例如 https://about.qichetiemo.info/apf/mkdjJSjcs113 ，此页面有js加密代码，应属于恶意网站
     ),
     'bbhyqp.com' => array(
-      'bbhyqp.com', //“澳门真金”。。推广页面 例如 https://bbhyqp.com/mifiqp/index.html
+        'bbhyqp.com', //“澳门真金”。。推广页面 例如 https://bbhyqp.com/mifiqp/index.html
     ),
     'sntzq.com' => array(
-      'sntzq.com', //https://c.sntzq.com/init/proxy.html?v=1.2
-      'c.sntzq.com',
+        'sntzq.com', //https://c.sntzq.com/init/proxy.html?v=1.2
+        'c.sntzq.com',
     ),
     '35kds.com' => array(
-      '35kds.com',
-      'n.35kds.com', //https://n.35kds.com/Exposead/index/?re=
+        '35kds.com',
+        'n.35kds.com', //https://n.35kds.com/Exposead/index/?re=
     ),
     'mobaders.com' => array(
         'mobaders.com', //行为统计，例如http://d1.mobaders.com/cnzzA/1260857752
@@ -499,53 +499,53 @@ return array(
         'www.11599jgj.com'
     ),
     'duote.com' => array( //https://zhuanlan.zhihu.com/p/111435102
-      'duote.com',
-      'www.duote.com',
+        'duote.com',
+        'www.duote.com',
     ),
     'zzb6.cn' => array(
-      'zzb6.cn',
-      'download.zzb6.cn',
-      'i.zzb6.cn',
+        'zzb6.cn',
+        'download.zzb6.cn',
+        'i.zzb6.cn',
     ),
     'xp666.com' => array(
-      'xp666.com',
-      'download.xp666.com',
+        'xp666.com',
+        'download.xp666.com',
     ),
     'dh810.com' => array(
-      'dh810.com',
+        'dh810.com',
     ),
     'dh820.com' => array(
-      'dh820.com',
+        'dh820.com',
     ),
     'bsrkt.com' => array(//http://www.bsrkt.com/diy/b/commander/tips/index.html
-      'bsrkt.com',
-      'www.bsrkt.com'
+        'bsrkt.com',
+        'www.bsrkt.com'
     ),
     'zjsyawqj.cn' => array(//http://js.zjsyawqj.cn/diy/b/commander/tips/default.js
-      'zjsyawqj.cn',
-      'www.zjsyawqj.cn',
-      'js.zjsyawqj.cn',
-      'download.zjsyawqj.cn',
+        'zjsyawqj.cn',
+        'www.zjsyawqj.cn',
+        'js.zjsyawqj.cn',
+        'download.zjsyawqj.cn',
     ),
     'v4dwkcv.com' => array(// http://c.v4dwkcv.com/html/click/23421_5605.html
-      'v4dwkcv.com',
-      'c.v4dwkcv.com',
+        'v4dwkcv.com',
+        'c.v4dwkcv.com',
     ),
     'he2d.com' => array(// 相关http://c.v4dwkcv.com/html/click/23421_5605.html
-      'ss2.he2d.com',
-      'he2d.com'
+        'ss2.he2d.com',
+        'he2d.com'
     ),
     'sdqoi2d.com' => array(// 统计 http://j.sdqoi2d.com/click/ffb.php
-      'j.sdqoi2d.com',
-      'sdqoi2d.com'
+        'j.sdqoi2d.com',
+        'sdqoi2d.com'
     ),
     'youhuiguan.com' => array(// 神药？ http://cr.youhuiguan.com/attachments/201908/28/20/3658-5lmj04.jpg
-      'youhuiguan.com',
-      'cr.youhuiguan.com'
+        'youhuiguan.com',
+        'cr.youhuiguan.com'
     ),
     'doumaibiji.cn' => array(// http://diy.doumaibiji.cn/diy/js/b.js
-      'doumaibiji.cn',
-      'diy.doumaibiji.cn',
+        'doumaibiji.cn',
+        'diy.doumaibiji.cn',
     ),
     'oneplus.net' => array(
         'open.oneplus.net',
@@ -565,11 +565,11 @@ return array(
         'events.data.microsoft.com',
     ),
     'leixjun.com' => array(//恶意诱导下载app
-      'leixjun.com',
-      'zq2.leixjun.com',
+        'leixjun.com',
+        'zq2.leixjun.com',
     ),
     'xi9p.com' => array(//诈骗网址
-      'xi9p.com'
+        'xi9p.com'
     ),
 
     'doukekan.cn' => array(//广告平台
@@ -602,18 +602,18 @@ return array(
         'footprints-pa.googleapis.com',
     ),
     'ebjvu.cn' => array(
-      'ebjvu.cn',
+        'ebjvu.cn',
     ),
     'nvidia.com' => array(
-      'events.gfe.nvidia.com'
+        'events.gfe.nvidia.com'
     ),
     'axbxgg.com' => array( // 恶意推广app下载
-      'axbxgg.com',
-      '2ydl.axbxgg.com',
+        'axbxgg.com',
+        '2ydl.axbxgg.com',
     ),
     'rayjump.com' => array( // 广告域名 #98
-      'rayjump.com',
-      'adx-tk.rayjump.com',
+        'rayjump.com',
+        'adx-tk.rayjump.com',
     ),
     'baicizhan.org' => array( // 百词斩
         'advertise.baicizhan.org',
@@ -698,7 +698,7 @@ return array(
         'www.idmchina.net',
         'idmchina.net',
     ),
-    
+
     'cntingyun.com' => array( // #234
         'www.cntingyun.com',
         'cntingyun.com',
@@ -747,7 +747,7 @@ return array(
         'open-uc.cn',
         'www.open-uc.cn',
     ),
-    
+
     'tinya1.cn' => array( // #234
         'tinya1.cn',
         'www.tinya1.cn',
@@ -858,22 +858,75 @@ return array(
     ),
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    // 一批运营商劫持域名
+    '17gouwuba.com' => array('17gouwuba.com', 'www.17gouwuba.com'),
+    '189zj.cn' => array('189zj.cn', 'www.189zj.cn'),
+    '285680.com' => array('285680.com', 'www.285680.com'),
+    '51chumoping.com' => array('51chumoping.com', 'www.51chumoping.com'),
+    '51mld.cn' => array('51mld.cn', 'www.51mld.cn'),
+    '51mypc.cn' => array('51mypc.cn', 'www.51mypc.cn'),
+    '58mingtian.cn' => array('58mingtian.cn', 'www.58mingtian.cn'),
+    '6d63d3.com' => array('6d63d3.com', 'www.6d63d3.com'),
+    'q1qfc323.com' => array('q1qfc323.com', 'www.q1qfc323.com'),
+    '91veg.com' => array('91veg.com', 'www.91veg.com'),
+    '9s6q.cn' => array('9s6q.cn', 'www.9s6q.cn'),
+    'adsensor.org' => array('adsensor.org', 'www.adsensor.org'),
+    'appcpi.net' => array('appcpi.net', 'www.appcpi.net'),
+    'baiwanchuangyi.com' => array('baiwanchuangyi.com', 'www.baiwanchuangyi.com'),
+    'beilamusi.com' => array('beilamusi.com', 'www.beilamusi.com'),
+    'biteti.com' => array('biteti.com', 'www.biteti.com'),
+    'bulldogcpi.com' => array('bulldogcpi.com', 'www.bulldogcpi.com'),
+    'cishantao.com' => array('cishantao.com', 'www.cishantao.com'),
+    'clotfun.mobi' => array('clotfun.mobi', 'www.clotfun.mobi'),
+    'clotfun.online' => array('clotfun.online', 'www.clotfun.online'),
+    'cszlks.com' => array('cszlks.com', 'www.cszlks.com'),
+    'cudaojia.com' => array('cudaojia.com', 'www.cudaojia.com'),
+    'dugesheying.com' => array('dugesheying.com', 'www.dugesheying.com'),
+    'fan-yong.com' => array('fan-yong.com', 'www.fan-yong.com'),
+    'feih.com.cn' => array('feih.com.cn', 'www.feih.com.cn'),
+    'fkku194.com' => array('fkku194.com', 'www.fkku194.com'),
+    'freedrive.cn' => array('freedrive.cn', 'www.freedrive.cn'),
+    'go2cloud.org' => array('go2cloud.org', 'www.go2cloud.org'),
+    'gouwubang.com' => array('gouwubang.com', 'www.gouwubang.com'),
+    'gzxnlk.com' => array('gzxnlk.com', 'www.gzxnlk.com'),
+    'haloapps.com' => array('haloapps.com', 'www.haloapps.com'),
+    'haoshengtoys.com' => array('haoshengtoys.com', 'www.haoshengtoys.com'),
+    'hyunke.com' => array('hyunke.com', 'www.hyunke.com'),
+    'ichaosheng.com' => array('ichaosheng.com', 'www.ichaosheng.com'),
+    'idealads.net' => array('idealads.net', 'www.idealads.net'),
+    'ishop789.com' => array('ishop789.com', 'www.ishop789.com'),
+    'jsncke.com' => array('jsncke.com', 'www.jsncke.com'),
+    'jwg365.cn' => array('jwg365.cn', 'www.jwg365.cn'),
+    'kawo77.com' => array('kawo77.com', 'www.kawo77.com'),
+    'kumihua.com' => array('kumihua.com', 'www.kumihua.com'),
+    'maipinshangmao.com' => array('maipinshangmao.com', 'www.maipinshangmao.com'),
+    'mdfull.com' => array('mdfull.com', 'www.mdfull.com'),
+    'mlnbike.com' => array('mlnbike.com', 'www.mlnbike.com'),
+    'mobjump.com' => array('mobjump.com', 'www.mobjump.com'),
+    'newapi.com' => array('newapi.com', 'www.newapi.com'),
+    'outbrain.com' => array('outbrain.com', 'www.outbrain.com'),
+    'pinzhitmall.com' => array('pinzhitmall.com', 'www.pinzhitmall.com'),
+    'qichexin.com' => array('qichexin.com', 'www.qichexin.com'),
+    'qutaobi.com' => array('qutaobi.com', 'www.qutaobi.com'),
+    'sdkclick.com' => array('sdkclick.com', 'www.sdkclick.com'),
+    'smgru.net' => array('smgru.net', 'www.smgru.net'),
+    'taoggou.com' => array('taoggou.com', 'www.taoggou.com'),
+    'tcxshop.com' => array('tcxshop.com', 'www.tcxshop.com'),
+    'tiaolianbao.com' => array('tiaolianbao.com', 'www.tiaolianbao.com'),
+    'topitme.com' => array('topitme.com', 'www.topitme.com'),
+    'tuipenguin.com' => array('tuipenguin.com', 'www.tuipenguin.com'),
+    'tuitiger.com' => array('tuitiger.com', 'www.tuitiger.com'),
+    'websd8.com' => array('websd8.com', 'www.websd8.com'),
+    'wx16999.com' => array('wx16999.com', 'www.wx16999.com'),
+    'xchmai.com' => array('xchmai.com', 'www.xchmai.com'),
+    'ygyzx.cn' => array('ygyzx.cn', 'www.ygyzx.cn'),
+    'yinmong.com' => array('yinmong.com', 'www.yinmong.com'),
+    'yitaopt.com' => array('yitaopt.com', 'www.yitaopt.com'),
+    'yjqiqi.com' => array('yjqiqi.com', 'www.yjqiqi.com'),
+    'yukhj.com' => array('yukhj.com', 'www.yukhj.com'),
+    'yumimobi.com' => array('yumimobi.com', 'www.yumimobi.com'),
+    'zlne800.com' => array('zlne800.com', 'www.zlne800.com'),
+    'zzd6.com' => array('zzd6.com', 'www.zzd6.com'),
 
 
     // 一批广告公司和大数据公司域名 #223
@@ -977,7 +1030,6 @@ return array(
     'igetui.com' => array('igetui.com', 'www.igetui.com'),
     'pusure.com' => array('pusure.com', 'www.pusure.com'),
     'viyouhui.com' => array('viyouhui.com', 'www.viyouhui.com'),
-
 
 
     //一些电视盒子相关的屏蔽列表
