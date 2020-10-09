@@ -189,6 +189,7 @@ $ARR_WHITE_RULE_LIST = array(
     '@@||api.ad-gone.com^' => 1, // #207
     '@@||news-app.abumedia.yql.yahoo.com^' => 1, // #206
     '@@||meizu.coapi.moji.com^' => 1, // #217
+    '@@||track.cpau.info^' => 1, // #251
 );
 
 //针对上游赦免规则anti-AD不予赦免的规则，即赦免名单的黑名单
