@@ -856,6 +856,15 @@ return array(
         '188api.com',
         'www.188api.com',
     ),
+    'rdtk.io' => array( // #253
+        'rdtk.io',
+        'jtuzd.rdtk.io',
+    ),
+    'c4frc.info' => array( // #253
+        'c4frc.info',
+    ),
+    
+    
 
 
     // 一批运营商劫持域名
