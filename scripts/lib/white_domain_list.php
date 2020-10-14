@@ -163,6 +163,7 @@ return array(
     'minorshort.weixin.qq.com' => 0, // 微信滑动验证码 
     'pusher.com' => 0, // #248
     'bluehost.com' => 0, // #249
+    'hosting24.com' => 0, // #252
     
     
     
