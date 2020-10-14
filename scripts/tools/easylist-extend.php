@@ -267,7 +267,7 @@ while(!feof($src_fp)){
         continue;
     }
 
-    if(($row{0} === '!') && (substr($row, 0, 13) === '!TOTAL_LINES=')){
+    if(($row{0} === '!') && (substr($row, 0, 13) === '!Total lines:')){
         $insert_pos = $written_size;
     }
 
@@ -361,7 +361,7 @@ foreach($ARR_WHITE_RULE_LIST as $row => $v){
 }
 
 if(($insert_pos > 0) && (fseek($new_fp, $insert_pos) === 0)){
-    fwrite($new_fp, "!TOTAL_LINES={$line_count}\n");
+    fwrite($new_fp, "!Total lines: {$line_count}\n");
 }
 
 fclose($src_fp);
