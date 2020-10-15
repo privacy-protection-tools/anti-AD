@@ -164,6 +164,7 @@ return array(
     'pusher.com' => 0, // #248
     'bluehost.com' => 0, // #249
     'hosting24.com' => 0, // #252
+    'pdc.micloud.xiaomi.net' => 0, // #256
     
     
     
