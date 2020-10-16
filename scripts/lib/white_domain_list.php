@@ -127,7 +127,7 @@ return array(
     'wanproxy.127.net' => 0, // #137
     'shouji.360.cn' => 0, // #136
     'ae01.alicdn.com' => 0, // #142
-    'pingjs.qq.com' => 0, // #143
+   // 'pingjs.qq.com' => 0, // #143
     'shifen.com' => 0, // 百度的cname
     'f10.baidu.com' => 0, // 百度公众号图片
     'f11.baidu.com' => 0, // 百度公众号图片
