@@ -134,6 +134,7 @@ return array(
         'api.mobojoy.baidu.com',
         'js.mobojoy.baidu.com',
         'plugin.mobopay.baidu.com',
+        'dj1.baidu.com',
     ),
     'youdao.com' => array('corp.youdao.com'),
     'crsspxl.com' => array('crsspxl.com'),
@@ -863,9 +864,33 @@ return array(
     'c4frc.info' => array( // #253
         'c4frc.info',
     ),
+    '163.com' => array(
+        'crash.163.com',
+    ),
+    '360.cn' => array(
+        'mclean.f.360.cn',
+        'vconf.f.360.cn',
+    ),
     
     
-
+    
+    
+    
+    
+    // 批量添加域名
+    '0202.com.tw' =>array('0202.com.tw', 'www.0202.com.tw'),
+    '0757kd.cn' =>array('0757kd.cn', 'www.0757kd.cn'),
+    '07634.com' =>array('07634.com', 'www.07634.com'),
+    '0pengl.com' =>array('0pengl.com', 'www.0pengl.com'),
+    '1001movies.com' =>array('1001movies.com', 'www.1001movies.com'),
+    '1008691.com' =>array('1008691.com', 'www.1008691.com'),
+    '123counters.com' =>array('123counters.com', 'www.123counters.com'),
+    'crash.163.com' =>array('crash.163.com', 'www.crash.163.com'),
+    '166f.com' =>array('166f.com', 'www.166f.com'),
+    '17chezhan.com' =>array('17chezhan.com', 'www.17chezhan.com'),
+    '17youzi.com' =>array('17youzi.com', 'www.17youzi.com'),
+    '91756.cn' =>array('91756.cn', 'www.91756.cn'),
+    'adups.cn' =>array('adups.cn', 'www.adups.cn'),
 
     // 一批运营商劫持域名
     '17gouwuba.com' => array('17gouwuba.com', 'www.17gouwuba.com'),
