@@ -166,6 +166,8 @@ return array(
     'hosting24.com' => 0, // #252
     'pdc.micloud.xiaomi.net' => 0, // #256
     'valf.atm.cp31.ott.cibntv.net' => 0, // #257
+    'sf1-ttcdn-tos.pstatp.com' => 0, // #258
+    'sf3-ttcdn-tos.pstatp.com' => 0, // #258
     
     
     
