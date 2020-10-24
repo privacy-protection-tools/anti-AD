@@ -168,6 +168,7 @@ return array(
     'valf.atm.cp31.ott.cibntv.net' => 0, // #257
     'sf1-ttcdn-tos.pstatp.com' => 0, // #258
     'sf3-ttcdn-tos.pstatp.com' => 0, // #258
+    'upload.cc' => 0, // #262
     
     
     
