@@ -169,6 +169,7 @@ return array(
     'sf1-ttcdn-tos.pstatp.com' => 0, // #258
     'sf3-ttcdn-tos.pstatp.com' => 0, // #258
     'upload.cc' => 0, // #262
+    'yql.yahoo.com' => 0, // #263
     
     
     
