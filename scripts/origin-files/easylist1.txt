@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202010230726
+! Version: 202010272250
 ! Title: CJX's Annoyance List
-! Last modified: 2020/10/23 07:26 +0800
+! Last modified: 2020/10/27 22:50 +0800
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/cjx82630/cjxlist
 !
@@ -412,6 +412,7 @@
 ||cls.cn/v2/web/ad?
 ||aisixiang.com/images/*-20
 ||yiihuu.com/assets/common/yh/js/yh.ad.
+||guokr.com/apis/flowingboard/item/guokrapp_
 !------------------------Specific element hiding rules------------------------!
 csdn.net##.toolbar-advert
 cnitpm.com##.erweima
@@ -1283,7 +1284,7 @@ m.babytree.com##script + a[class]
 @@||th7.cn/sanda2015/css/ads.js
 @@||lancdn.com/landian/public/js/ads.js
 @@||qbox.me/static/js/ads.js$domain=linux.cn
-@@/adview_pic_$domain=doutula.com|fastadmin.net|xclient.info
+@@/adview_pic_$domain=doutula.com|fastadmin.net|toolfk.com|xclient.info
 @@||fm.ipinyou.$domain=ipinyou.com.cn
 @@||fm.p0y.cn^$domain=ipinyou.com.cn
 !--------------------------------Tracking Systems-----------------------------!
