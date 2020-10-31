@@ -172,6 +172,10 @@ return array(
     'yql.yahoo.com' => 0, // #263
     'naifei.shop' => 0, // #267
     'tagtic.cn' => 0, // #266
+    'settings-win.data.microsoft.com' => 0, // #268
+    'db5-eap.settings-win.data.microsoft.com.akadns.net' => 0, // #268
+    'db5.settings-win.data.microsoft.com.akadns.net' => 0, // #268
+    'geo.settings-win.data.microsoft.com.akadns.net' => 0, // #268
     
     
     
