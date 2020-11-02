@@ -176,6 +176,7 @@ return array(
     'db5-eap.settings-win.data.microsoft.com.akadns.net' => 0, // #268
     'db5.settings-win.data.microsoft.com.akadns.net' => 0, // #268
     'geo.settings-win.data.microsoft.com.akadns.net' => 0, // #268
+    'printfriendly.com' => 0, // #272
     
     
     
