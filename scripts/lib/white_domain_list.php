@@ -170,6 +170,13 @@ return array(
     'sf3-ttcdn-tos.pstatp.com' => 0, // #258
     'upload.cc' => 0, // #262
     'yql.yahoo.com' => 0, // #263
+    'naifei.shop' => 0, // #267
+    'tagtic.cn' => 0, // #266
+    'settings-win.data.microsoft.com' => 0, // #268
+    'db5-eap.settings-win.data.microsoft.com.akadns.net' => 0, // #268
+    'db5.settings-win.data.microsoft.com.akadns.net' => 0, // #268
+    'geo.settings-win.data.microsoft.com.akadns.net' => 0, // #268
+    'printfriendly.com' => 0, // #272
     'cnnic.cn' => 0, #274
     'ss.cnnic.cn' => 0, #274
     'www.cnnic.cn' => 0, #274
