@@ -170,6 +170,13 @@ return array(
     'sf3-ttcdn-tos.pstatp.com' => 0, // #258
     'upload.cc' => 0, // #262
     'yql.yahoo.com' => 0, // #263
+    'cnnic.cn' => 0, #274
+    'ss.cnnic.cn' => 0, #274
+    'www.cnnic.cn' => 0, #274
+    'cnnic.net' => 0, #274
+    'www.cnnic.net' => 0, #274
+    'cnnic.net.cn' => 0, #274
+    'www.cnnic.net.cn' => 0, #274
     
     
     
