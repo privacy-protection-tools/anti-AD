@@ -185,6 +185,7 @@ return array(
     'cnnic.net.cn' => 0, #274
     'www.cnnic.net.cn' => 0, #274
     'c.gj.qq.com' => 0, #273
+    'isee.weishi.qq.com' => 0, #270
     
     
     
