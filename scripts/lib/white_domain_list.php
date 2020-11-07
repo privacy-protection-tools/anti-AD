@@ -186,6 +186,7 @@ return array(
     'www.cnnic.net.cn' => 0, #274
     'c.gj.qq.com' => 0, #273
     'isee.weishi.qq.com' => 0, #270
+    'direct.wap.zol.com.cn' => 0, #275
     
     
     
