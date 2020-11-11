@@ -871,6 +871,11 @@ return array(
         'mclean.f.360.cn',
         'vconf.f.360.cn',
     ),
+    'gsgsr.xyz' => array(
+        'gsgsr.xyz',
+        'www.gsgsr.xyz',
+        'gdp.gsgsr.xyz',
+   ),
     
     
     
