@@ -193,6 +193,7 @@ $ARR_WHITE_RULE_LIST = array(
     '@@||track.cpau.info^' => 1, // #251
     '@@||passport.bobo.com^' => 1, // #265
     '@@||stat.jseea.cn^' => 1, // #279
+    '@@||widget.intercom.io^' => 1, // #280
 );
 
 //针对上游赦免规则anti-AD不予赦免的规则，即赦免名单的黑名单
