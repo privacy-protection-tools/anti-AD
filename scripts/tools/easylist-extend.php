@@ -181,6 +181,7 @@ $ARR_WHITE_RULE_LIST = array(
     '@@||advertisement.taobao.com^' => 1, //CNAME 被杀，导致s.click.taobao.com等服务异常
     '@@||baozhang.baidu.com^' => 1, //CNAME e.shifen.com 
     '@@||tongji.edu.cn^' => 1, // 同济大学
+    '@@||tongji.cn^' => 1, // 同济大学 #281
     '@@||ad.siemens.com.cn^' => 1, // 西门子下载中心
     '@@||sdkapi.sms.mob.com^' => 1, // 短信验证码 #127
     '@@||stats.gov.cn^' => 1, // 国家统计局 #144
