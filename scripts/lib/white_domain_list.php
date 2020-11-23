@@ -187,6 +187,7 @@ return array(
     'c.gj.qq.com' => 0, #273
     'isee.weishi.qq.com' => 0, #270
     'direct.wap.zol.com.cn' => 0, #275
+    'imop.com' => 0, #283
     
     
     
