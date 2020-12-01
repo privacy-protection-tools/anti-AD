@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202011261325
+! Version: 202011291806
 ! Title: CJX's Annoyance List
-! Last modified: 2020/11/26 13:25 +0800
+! Last modified: 2020/11/29 18:06 +0800
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/cjx82630/cjxlist
 !
@@ -164,7 +164,6 @@
 ||gtimg.com/pingjs/ext2020/dc2017/dist/m_tips/tips.js
 ||gz-chengkao.com/js/duo.js
 ||hahamx.cn/images/banner/
-||hanjutv.com/public/js/layer/layer.js
 ||hao123img.com/v4/MB/xU/jy/VY/YX/MBxUjyVYYX.js
 ||heiguang.com/_r/2015/js/hrBottomBar.
 ||hexun.com/2016/pc/618.swf
@@ -417,6 +416,7 @@
 ||w3cschool.cn/index/*Advert
 ||sinaimg.cn/news/pushApp/index2/static/js/index.
 !------------------------Specific element hiding rules------------------------!
+xdf.cn##.popup-wrap
 sina.com.cn##.redPacketCont
 offcn.com###offcn_yx
 3dmgame.com##.modAD
@@ -543,7 +543,6 @@ znds.com###diy_mobanbus_view_right2
 meijuxingqiu.com##.fixed-bottom-bar
 iqiyi.com##.m-hotWords-bottom
 3dmgame.com##A[href^="http://web.3dmgame.com/h5/game?"]
-hanjutv.com###widget-weixin
 ifeng.com##DIV[class^="enquiry_bottom"]
 ifeng.com##div[class^="bottom_box"]
 ifeng.com##div[class^="bottomSlide"]
@@ -1081,7 +1080,6 @@ nen.com.cn##.for3gagzy
 tmall.com##.fp-lazyload-con[data-path*="/floor-ad-"]
 it168.com##.fu1020_box
 eastmoney.com##.fund-pop
-hanjutv.com##.ggw_fr
 55haitao.com##.global-dialog
 1kkk.com,dm5.com##.guide
 baixing.com##.guide-video-app
