@@ -190,7 +190,6 @@ return array(
     'imop.com' => 0, #283
     'mobilelog.kugou.com' => 0, #286
     'bssdlbig.kugou.com' => 0, #286
-    'pingjs.qq.com' => 0, #284, #143 依赖加载该域名下的js文件，屏蔽了通常影响页面正常加载
     
     
     
