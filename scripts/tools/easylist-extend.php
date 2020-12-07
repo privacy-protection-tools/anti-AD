@@ -34,7 +34,6 @@ $ARR_MERGED_WILD_LIST = array(
     'dsp*.youdao.com' => null,
     'pussl*.com' => null,
     'putrr*.com' => null,
-    'ad*.360.cn' => null,
     't*.a.market.xiaomi.com' => null,
     'ad*.bigmir.net' => null,
     'log*.molitv.cn' => null,
