@@ -190,6 +190,7 @@ return array(
     'imop.com' => 0, #283
     'mobilelog.kugou.com' => 0, #286
     'bssdlbig.kugou.com' => 0, #286
+    'tvzhe.com' => 0, #290
     
     
     
