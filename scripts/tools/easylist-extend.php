@@ -270,7 +270,7 @@ while(!feof($src_fp)){
         continue;
     }
 
-    if(($row{0} === '!') && (substr($row, 0, 13) === '!Total lines:')){
+    if((substr($row, 0, 1) === '!') && (substr($row, 0, 13) === '!Total lines:')){
         $insert_pos = $written_size;
     }
 
