@@ -1,6 +1,9 @@
 name: Auto build new list
 
 on:
+  push:
+    branches: 
+      - master
   schedule:
     - cron: "25 01 */3 * *"
 jobs:
