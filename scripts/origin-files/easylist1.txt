@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202012221810
+! Version: 202012271857
 ! Title: CJX's Annoyance List
-! Last modified: 2020/12/22 18:10 +0800
+! Last modified: 2020/12/27 18:57 +0800
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/cjx82630/cjxlist
 !
@@ -420,7 +420,16 @@
 ||iviewui.com/v1/*?name=
 ||sinaimg.cn/news/article/article_qcode
 ||niuacc.com/static/common/js/145.js
+||yyetss.com/static/modal.js
 !------------------------Specific element hiding rules------------------------!
+bilibili.com##.video-page-game-card
+ldmnq.com##.dialog-game
+hupu.com###game-center-entrance-container
+hupu.com##DIV[class^="game-center-"]
+sina.cn###j_toTop ~ .fl_suspension_template
+sina.cn##.zhidi
+sina.cn###j_gotop ~ .fl_suspension_template
+sina.cn##.sw_c0.fix_top
 niuacc.com##.masks
 niuacc.com##.yure
 niuacc.com##.botLm-container
