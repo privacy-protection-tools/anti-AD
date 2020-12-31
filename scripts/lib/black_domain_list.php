@@ -876,6 +876,12 @@ return array(
         'www.gsgsr.xyz',
         'gdp.gsgsr.xyz',
    ),
+   'zmzfile.com' => array( #299
+        'zmzfile.com',
+   ),
+   'playcvn.com' => array( #299
+        'playcvn.com',
+   ),
     
     
     
