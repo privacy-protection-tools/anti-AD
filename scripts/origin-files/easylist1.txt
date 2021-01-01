@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202012271857
+! Version: 202012312126
 ! Title: CJX's Annoyance List
-! Last modified: 2020/12/27 18:57 +0800
+! Last modified: 2020/12/31 21:26 +0800
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/cjx82630/cjxlist
 !
@@ -421,6 +421,7 @@
 ||sinaimg.cn/news/article/article_qcode
 ||niuacc.com/static/common/js/145.js
 ||yyetss.com/static/modal.js
+||pcauto.com.cn/zt/*_dialog/cjx-pc-half_
 !------------------------Specific element hiding rules------------------------!
 bilibili.com##.video-page-game-card
 ldmnq.com##.dialog-game
