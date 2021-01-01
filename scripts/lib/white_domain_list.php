@@ -193,6 +193,7 @@ return array(
     'tvzhe.com' => 0, #290
     'stats.gc.apple.com' => 0, #296
     'img1.sj.qq.com' => 0, #294
+    'live.simcitybuildit.com' => 0, #303
     
     
     
