@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202101062306
+! Version: 202101091721
 ! Title: CJX's Annoyance List
-! Last modified: 2021/01/06 23:06 +0800
+! Last modified: 2021/01/09 17:21 +0800
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/cjx82630/cjxlist
 !
@@ -70,6 +70,7 @@
 ||ntalker.com^
 ||pop800.com^$third-party
 ||soperson.com^$third-party
+||tawk.to^$third-party
 ||tui.cnzz.net^$third-party
 ||wpa.b.qq.com/cgi/wpa.php?
 ||zoosnet.net^$third-party
@@ -422,7 +423,9 @@
 ||yyetss.com/static/modal.js
 ||pcauto.com.cn/zt/*_dialog/cjx-pc-half_
 ||thepaper.cn/bottomBanner_
+||iiikefu.com/wp-content/plugins/halfdata-green-popups/js/lepopup.js
 !------------------------Specific element hiding rules------------------------!
+ke.qq.com##.bottom-bar
 699pic.com###landlord
 699pic.com##.springtime-floatLink
 699pic.com##.springtime-pop
@@ -1349,6 +1352,7 @@ m.babytree.com##script + a[class]
 /v.gif?logtype=
 /yesky/js/counter/*
 /zcool-analytics.js
+||pstatp.com/toutiao/push.js
 ||pv.cheshi.com^
 ||tracking.kdnet.net^
 ||lnd.com.cn/sys/real_calc.js
