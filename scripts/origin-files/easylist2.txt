@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202101130225
+! Version: 202101160247
 ! Title: Fanboy's Annoyance List
-! Last modified: 13 Jan 2021 02:25 UTC
+! Last modified: 16 Jan 2021 02:47 UTC
 ! Expires: 4 days (update frequency)
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -3738,6 +3738,7 @@ _youtube_social_
 -consent-banner.
 -cookie-banner-
 -cookie-banner.
+-cookie-bar.
 -cookie-cnil.
 -cookie-consent-$~script
 -cookie-consent.$~script
@@ -3745,6 +3746,7 @@ _youtube_social_
 -cookie-consent/$~script
 -cookie-dialog.
 -cookie-filter/$script
+-cookie-form.lib.
 -cookie-law-popup.
 -cookie-law.$~script
 -cookie-law/$script
@@ -3769,6 +3771,7 @@ _youtube_social_
 -eu-cookies/$script
 -eucookie.
 -gdpr-compliance/
+-gdpr-consents/
 -gdpr-cookie-$~script
 -gdpr-min.
 -gdpr-popup.
@@ -3778,6 +3781,7 @@ _youtube_social_
 -privacy-cookie-
 -quantcast-cmp/
 -rodo.min.js
+-tracking-consent.
 -wordpress-cookie-
 .advertisingCookie.
 .bpcookies.
@@ -3803,14 +3807,16 @@ _youtube_social_
 .fscookieconsent.
 .gdpr-banner.
 .gdpr.js
+.gdpr.min
 .javascript.gdpr.
 .notificationCookies.
 .PrivacyDataNotice.
 /1_cookie.
-/2018-gdpr.js
+/2018-gdpr.
 /24cookiebar.
 /24cookiebarutils.
 /?spu_action=*spu_load&
+/?tx_z7cookiemanager
 /__cookie_js.php
 /ac_cookiesvalidation/*
 /accept-cookie.
@@ -3828,6 +3834,7 @@ _youtube_social_
 /ajw_gdpr.
 /alertcookie.
 /alertcookies.
+/am2-gdpr-public.
 /amCookieApproval.
 /amgdpr/*
 /amp-consent-
@@ -3860,6 +3867,7 @@ _youtube_social_
 /bt.cookies.
 /bundle-gdpr.min.js
 /cc-cookie-consent/*
+/cc_cookie.
 /ccm19.js
 /ccm19/*
 /cCookiesH.
@@ -3868,6 +3876,7 @@ _youtube_social_
 /check_cookie_
 /CheckCookie.
 /checkCookie?$script
+/checkCookieConsent/*
 /cipr-cookie-opt-out/*
 /cm-body.js
 /cmp-banner.js
@@ -3877,7 +3886,9 @@ _youtube_social_
 /cmp.bundle.js
 /cmp.complete.bundle.js
 /cmp/cmp.js
+/cmp/cmp.min.js
 /cmp/cmpui-
+/cmp/consent-
 /cmp/int_cmp.
 /cmp/privacy_manager?
 /cmp/tmcookie.
@@ -3901,6 +3912,7 @@ _youtube_social_
 /coCookiesDisclaimer.
 /component-CookieConsent.
 /consent-banner-
+/consent-dialog.
 /consent-management.js
 /consent-manager.
 /consent-tracking-
@@ -3909,6 +3921,8 @@ _youtube_social_
 /consent/message.js
 /consent_non-eu.
 /consentcontroller.fallback/epaas.
+/consentcookie.js
+/consentcookie.min.js
 /ConsentTracking-
 /consentUI/*
 /coobann/*
@@ -3916,6 +3930,8 @@ _youtube_social_
 /cookie-alert.
 /cookie-bandeau.
 /cookie-banner
+/cookie-banner-
+/cookie-banner/*
 /cookie-banners.
 /cookie-bar-
 /cookie-bar.
@@ -3924,10 +3940,12 @@ _youtube_social_
 /cookie-check.js
 /cookie-choices.
 /cookie-compliance.
+/cookie-consent-
 /cookie-consent-filter-
 /cookie-consent-manager.
 /cookie-consent-modals.
 /cookie-consent-overlay.
+/cookie-consent-settings-
 /cookie-consent.
 /cookie-consent/*
 /cookie-consent?
@@ -3945,6 +3963,7 @@ _youtube_social_
 /cookie-law-$~script
 /cookie-law-info-public.js
 /cookie-law.js
+/cookie-layer-
 /cookie-madeincima.
 /cookie-madeincima/*
 /cookie-manager.
@@ -3962,6 +3981,7 @@ _youtube_social_
 /cookie-overlay-
 /cookie-partner-list.
 /cookie-policy-
+/cookie-policy.css
 /cookie-policy.js
 /cookie-policy.min.
 /cookie-policy/*
@@ -4003,6 +4023,7 @@ _youtube_social_
 /cookie/policy-
 /cookie/require-
 /cookie/support-
+/cookie/uccb-
 /cookie2.jsx
 /cookie_acceptance_
 /cookie_ack/*
@@ -4102,6 +4123,7 @@ _youtube_social_
 /cookieLaw-vanilla.js
 /cookielaw.$~stylesheet
 /cookielaw/*
+/cookielaw_mip.
 /cookielawinfo.$~script
 /CookieLawProduct/*
 /cookielegal.
@@ -4114,6 +4136,7 @@ _youtube_social_
 /cookiemonster.mg
 /cookieMonster.min.js
 /cookiemsg.
+/cookieMunchr.
 /cookienote/*
 /cookienotice-
 /cookienotice.
@@ -4125,6 +4148,7 @@ _youtube_social_
 /CookieNotifier.
 /cookienotify-
 /cookieok.js
+/cookieopt-min.
 /cookieparty.
 /cookieplugin/cookie.
 /cookiepolicy-
@@ -4212,7 +4236,7 @@ _youtube_social_
 /CookieSettingsManager?
 /cookiesgdpr?
 /cookiesJS.
-/cookiesLayer.js
+/cookiesLayer.
 /cookieslegal.
 /cookiesLegales.
 /CookiesManager.
@@ -4231,11 +4255,13 @@ _youtube_social_
 /cookiewarning.
 /cookiewarning?
 /cookiewet.
+/cookieWidget.
 /cpol/cookiepolicy.
 /css/gdpr.$~stylesheet
 /cuk_core.js
 /cuk_core.min.js
 /custom/cookies.
+/data-consent.
 /dc-cookie-
 /dg-cookie.
 /didomi.js
@@ -4252,7 +4278,9 @@ _youtube_social_
 /dsgvoCC.js
 /dw-cookies-
 /dx/cmpui.
+/dywc.js
 /easy-cookies-
+/echonetcookie.
 /ecookie_check/*
 /edcc.js
 /ee-cookies-min.
@@ -4263,6 +4291,7 @@ _youtube_social_
 /ercookiebar.
 /et_gdpr_
 /eu-cookie-$~script,~stylesheet
+/eu-cookie-law-
 /eu-cookie.
 /eu-cookie/*
 /EU-cookielaw.
@@ -4271,7 +4300,7 @@ _youtube_social_
 /eu_cookies.
 /eu_privacy.js
 /eu_rp_cookie.
-/euc_cookie.js
+/euc_cookie.
 /eucookie.
 /EUcookie/*
 /eucookiecompliance.
@@ -4289,10 +4318,13 @@ _youtube_social_
 /evidon-banner.
 /evidon-cmp.
 /evidon-sitenotice-tag.
+/ext/jscookieconsent
+/ext/kmacookies
 /eznovacookieconsent.
 /Flurrybox_EnhancedPrivacy/*
 /fp_cookie.
 /fxCookiesV3.
+/g361-cookies-
 /g4cookies.
 /gdpr-assets-
 /gdpr-banner.
@@ -4308,15 +4340,17 @@ _youtube_social_
 /gdpr-desc
 /gdpr-lfc.
 /gdpr-min.
+/gdpr-popup.
 /gdpr-public.
 /gdpr-transparency-
 /gdpr-v2.
 /gdpr.eu.htm
 /gdpr.htm
 /gdpr.js
-/gdpr.min.js
+/gdpr.min.
 /gdpr/assets/*
 /gdpr/bundle.
+/gdpr/cmp/*
 /GDPR/consentStorage.
 /gdpr/cookie-
 /gdpr/CookieConsent
@@ -4324,16 +4358,20 @@ _youtube_social_
 /gdpr/disp.js
 /gdpr/gdpr-
 /gdpr/gdpr.$script
+/gdpr/gdpr.js
 /gdpr/gdpr_
 /gdpr/img/*
 /gdpr/messaging.
 /gdpr/optInCookieSSR?
 /gdpr/script_
+/gdpr/spd.
+/gdpr/third-party-
 /gdpr_check.
 /gdpr_consent.
 /gdpr_css/*
 /gdpr_footer.
 /gdpr_js/*
+/gdpr_ncoi.
 /gdpr_notice.
 /gdpr_optout.
 /gdpr_plugin.
@@ -4342,6 +4380,7 @@ _youtube_social_
 /GDPRCard/*
 /gdprcompliance/*
 /gdprcookie.
+/gdprmain/*
 /GDPRModalCounter.
 /gdprnotice.
 /gdprpopup.
@@ -4357,6 +4396,7 @@ _youtube_social_
 /headerCookies_
 /hi-cookie-
 /homepage-cookie-
+/hw-cookie-
 /i_CookieConsent.
 /iab-vendorlist.
 /ibeugdpr.
@@ -4366,6 +4406,7 @@ _youtube_social_
 /icocookies.
 /icon/cookie-
 /idg-consent.
+/idxcookies/*
 /ig_cookie_
 /ik-rgpd.
 /im_eucookie.
@@ -4407,6 +4448,7 @@ _youtube_social_
 /legal/cookies/?
 /legal_cookie.
 /legalcookie.
+/leyCookies.
 /libraries/cookie.
 /ll_cookie_
 /lma-cookie.
@@ -4421,14 +4463,18 @@ _youtube_social_
 /mod_cookiesaccept/*$~stylesheet
 /mod_jbcookies/*
 /mpc_cookie_
+/mq_cookieconsent/*
+/msmCookieConsent.
 /mweb.cookie/*$script
 /mws-cookie-
+/neo-cookie-
 /newprivacypolicy.
 /newprivacypolicytest.
 /nfaCookies.
 /nibirumail.cookie.min.js
 /nl-cookie-law.js
 /notification.js*browserId=$script
+/nsd-cookie-
 /o-cookielaw.
 /ocgcookie?
 /oil.*-RELEASE.min.js
@@ -4446,6 +4492,7 @@ _youtube_social_
 /plugins/cookie-$~script,~stylesheet
 /plugins/gdpr/*
 /pm_assets/privacy/*$script
+/policies/gdpr.
 /policy_cookie.
 /policy_cookieCMP.
 /policyaccept.
@@ -4478,6 +4525,7 @@ _youtube_social_
 /pum-site-scripts-
 /pum-site-scripts.
 /pwcookielaw.js
+/pxpcookies.
 /quantastCmp.js
 /rb/cookie/*
 /rbicookiepolicy.
@@ -4517,6 +4565,7 @@ _youtube_social_
 /skb-cookie/*
 /sm-oo-consent-
 /sm-oo-consent.
+/sm-policy-banner.
 /smart-cookie-
 /sncmp.min.js
 /sni_cookie_privacy/*
@@ -4528,6 +4577,7 @@ _youtube_social_
 /syncCookie/*
 /syno_cookie_
 /tarteaucitron.
+/tcf/cookie.
 /terms_of_service.js
 /thcookie.
 /tm.cookie.js
@@ -4541,6 +4591,7 @@ _youtube_social_
 /tracking/get?
 /trackingProtection/*
 /trustArcHelper.js
+/trwcookieconsent/*
 /ttCmpApi.min.js
 /ttgcookieconsent-
 /TWCCookies/*
@@ -4552,6 +4603,7 @@ _youtube_social_
 /uk-cookie-
 /ukcookie.
 /um-gdpr.
+/unitb-cmp.
 /uploads/GDPR-
 /usecookies.js
 /usocookies.
@@ -4610,6 +4662,7 @@ _cookiebar.
 _cookiebar_
 _cookieCgu.
 _CookieConsent.js
+_cookieconsent/
 _cookielaw_mip.
 _CookieLegalNotice.
 _cookieMsgBox/
@@ -4627,9 +4680,11 @@ _europecookielaw.
 _gdpr_callback_
 _gdpr_consent.
 _gdpr_cookie_
+_hw_cookie_dialog.
 _js__cookie_functions.
 _logikamentecookielaw/
 _site_cookie_
+_vpcookieconsent/
 ! https://github.com/AdguardTeam/AdguardFilters/blob/master/AnnoyancesFilter/sections/cookies_specific.txt#L53
 /pp-t-a-c.js$script
 ! ------------------------General element hiding rules-------------------------!
@@ -6986,6 +7041,7 @@ _site_cookie_
 ##.slide-in--newsletter
 ##.slidedown-newsletter
 ##.slider_newsletter-container
+##.slideup-newsletter-optin
 ##.sm_newsletter
 ##.small-newsletter
 ##.sml_subscribe_widget
@@ -10848,7 +10904,6 @@ _site_cookie_
 ###socializethis
 ###socialleft
 ###sociallinks
-###socialmedia
 ###socialmedia-bottom
 ###socialmedia-icons
 ###socialmedia-share
@@ -18034,6 +18089,7 @@ _site_cookie_
 ##.sib-shareButton
 ##.sics-component__footer__secondary-social
 ##.sics-component__sharebar
+##.side-article-share
 ##.side-facebook
 ##.side-pinterest
 ##.side-post-social
@@ -19628,7 +19684,6 @@ _site_cookie_
 ##.socialmedia-container
 ##.socialmedia-menu
 ##.socialmedia-side
-##.socialmedia:not(html):not(body)
 ##.socialmediaDetails
 ##.socialmedia_article_linkbox
 ##.socialmedia_float
@@ -25709,6 +25764,8 @@ _site_cookie_
 ###dxm_ckScr_injected
 ###dy-cookieInfo-container
 ###dy_cookiebar_001
+###dywc
+###dywc_bglayer
 ###e-privacy-message
 ###e2e-cookie-banner
 ###e3cookie
@@ -25732,6 +25789,8 @@ _site_cookie_
 ###ecl-notification
 ###ecl_notification
 ###eclcookie
+###ecomas-scch-ex
+###ecomas-scch-ex-bg
 ###econda-pp2-banner
 ###ecookie
 ###ecookie_banner
@@ -26694,6 +26753,7 @@ _site_cookie_
 ###leycookies
 ###leydecookies
 ###lf_cookie_msg
+###lgpd-wrapper
 ###lh-consent-dialog
 ###light_cookies_bar
 ###lineCookieInfo
@@ -27076,6 +27136,7 @@ _site_cookie_
 ###openCookie
 ###openglobal_privacy_widget
 ###optanon
+###optin-bannerDiv
 ###optin-bar
 ###optin-optin-header
 ###optinCookie
@@ -33870,6 +33931,7 @@ _site_cookie_
 ##web-cookie-consent
 ##wp-cookie-notification-banner
 ##xk-cookie-policy-warning
+##yd-cookie-notice
 ##yg-cookie-confirm
 ##ytd-app ~ iron-overlay-backdrop
 ##ytd-consent-bump-renderer
@@ -35064,6 +35126,7 @@ _site_cookie_
 ||flashscore.fr^*/build/notifications.
 ||horoscope.fr/notifications/
 ||push.neko-san.fr^
+||tut.by/push/
 ! *** easylist:fanboy-addon/fanboy_social_specific_block.txt ***
 ||3dmark.com/proxycon/images/front-some-fb.png
 ||5movies.to/share.php
@@ -35195,7 +35258,7 @@ _site_cookie_
 ||emerse.com/consent.js
 ||freedoflondon.com/Styles/dialog-popup/jquery-ui.js
 ||freetls.fastly.net/main/sd-cmp-$domain=spanishdict.com
-||fundingchoicesmessages.google.com^$domain=gameblog.fr|smallseotools.com|telegram.hr|wordreference.com
+||fundingchoicesmessages.google.com^$domain=apkmirror.com|gameblog.fr|smallseotools.com|telegram.hr|wordreference.com
 ||gdpr.internetbrands.com^
 ||gdpr.prisa.com^
 ||government-and-constitution.org/js/consent.js
@@ -39074,6 +39137,7 @@ reclaimthenet.org##.elementor-element-7fc59b9
 alriyadhdaily.com,democracynow.org,emigrate2.co.uk,pjmedia.com,townhall.com##.email
 hermanmiller.com,refinery29.com##.email-acquisition
 smarteranalyst.com##.email-alerts-pops
+flightconnections.com##.email-box
 playboy.com##.email-collection
 kveller.com##.email-form
 thegatewaypundit.com##.email-list-subscribe
@@ -39577,6 +39641,7 @@ viamichelin.at,viamichelin.be,viamichelin.ch,viamichelin.co.uk,viamichelin.com,v
 billboard.com##.top-cover-image
 thrillist.com##.top-header
 counterpunch.org##.topfixedtrailer-color
+tut.by##.toster-popup
 thenation.com##.tout
 independent.co.uk##.tp-active
 scotsman.com##.tp-container-inner
@@ -39939,6 +40004,7 @@ food.com##.pushdown-message
 thechivery.com##.wheelio_holder
 reddit.com##.xPromoAppStoreFooter
 ! International
+aerzteblatt.de###pushy
 romait.it##.alert
 sindonews.com##.notif-box
 clarin.com##.notification-popup
@@ -41515,6 +41581,7 @@ debenhams.com###debCNwrap
 tunngle.net###delirioBiscottoso
 binary.com###dialog_notification
 biodiv.be,bitmoji.com,clementoni.com,decisiondeskhq.com,greybox.com,liveradio.ie,snp.org,volksbuehne.berlin###disclaimer
+owasp.org###disclaimer-container
 ebu.ch###disclamerContainer
 goccl.co.uk###divMessage
 microsoft.com###divNRMain
@@ -41984,7 +42051,7 @@ spotify.com##.mh-message-bar
 mitele.es##.mitele-consent
 transparency.org##.mk-c-modal
 amazon.com##.mo-wp
-airnewzealand.eu,przekroj.pl,qv.co.nz##.modal
+airnewzealand.eu,przekroj.pl,qv.co.nz,thelittleboxoffice.com##.modal
 airnewzealand.eu,arlingtoncemetery.mil,arthrex.com,axminster.co.uk,daf.be,daf.co.uk,daf.com,daf.fr,daf.global,daf.nl,daf.ru,daf.se,daftrucks.de,daftrucks.dk,daftrucks.it,daftrucks.pl,daftrucks.sk,ferratum.co.uk,fiveguys.co.uk,kon-boot.com,lam.co.mz,medtronic.com,primaresearch.org,qv.co.nz##.modal-backdrop
 myanimelist.net##.modal-container
 myanimelist.net##.modal-content
@@ -42139,6 +42206,7 @@ daft.ie##.strapline-container
 lykke.com##.styled__Banner-hg6ib8-0
 meteoblue.com##.successMessage
 spiceworks.com##.sui-site-message-container
+outage.report##.swal2-container
 haier.com##.swiper-slide-img-txt
 games2gether.com##.system-notification-container
 socioinform.com##.t886
@@ -43660,6 +43728,7 @@ leparisien.fr##.barrePartage
 lesechos.fr##.bloc-suiveznous
 bfmtv.com##.btn-reseaux
 sportetstyle.fr##.bttw
+gossip-room.fr##.bubblegum
 rtl.be##.bulle_nombre
 rfm.fr##.communities
 rtl.be##.count
@@ -44483,6 +44552,7 @@ diebayerische.de,fanbike.de,speicherguide.de##.consent
 usz.ch##.consentManagement
 borgware.de,buffalo.de,daparto.de,del.org,donaukurier.de,matratzen-concord.de,model-kartei.de,pyur.com,signal-iduna.de,spartanien.de,starcar.de,unumotors.com##.cookie
 capcom-germany.de,dtstudyclub.de,insel-sylt.de,medela.de,parfumsclub.de,reifenlehmann.de,selfhost.de,spie.de,svww.de##.cookies
+stadtwerke-luebz.de##.data-consent
 hilzingen.de,wurmberg.de##.datenschutz
 die-linke.de,dielinke.berlin,lexus.at,lexus.de##.disclaimer
 jobscout24.ch##.disclaimer-message
@@ -44501,6 +44571,7 @@ unifilm.de##.form-dsgvo
 frankonia.de##.fr-c-message
 jesus.de##.gaoop
 tipp24.com##.gdpr
+nick.de##.generic-text-wrap
 galeria-kaufhof.de##.gk-stickymessage
 autoscout24.ch,motoscout24.ch##.global-banner
 brigitte.de,essen-und-trinken.de,geo.de##.guj-cb
@@ -45529,7 +45600,10 @@ rgs.ru###rgs-main-context-bar
 linux-info.ru###trumpet_message
 drweb.ru##.SHOWIT-msg_showed
 ngnovoros.ru##._1TNYbgH
+oreluniver.ru##.accept
 bancaintesa.ru##.agreement-substrate
+podrozerowerowe.info##.appriseOuter
+podrozerowerowe.info##.appriseOverlay
 tvguru.ru##.c-modal
 hashrating.com##.cookie
 glavred.info,unian.net##.cookies
@@ -45540,6 +45614,7 @@ patee.ru##.informer2
 kinoby.ru##.message-alert
 shophair.ru##.modal_popup_sessid_box
 landrover.ru##.notificationBars
+kamkabel.ru##.panel_152_wp
 pegast.ru##.pgs-top
 66.ru##.t-i-agree
 ! 
@@ -45704,6 +45779,7 @@ infiniti-vietnam.com.vn##.c_128
 ! 
 ||byom.de/js/cookie.de.js
 ||cmp.pcwelt.de^
+||cmp.tvspielfilm.de^
 ||consent.berliner-kurier.de^
 ||consent.gutefrage.net^
 ||henryschein.at^*/CookieList.aspx
@@ -45844,6 +45920,7 @@ infiniti-vietnam.com.vn##.c_128
 ! 
 ! ---------- Slovak ----------
 ! 
+||cookies.teraz.sk^
 ! 
 ! ---------- Slovenian ----------
 ! 
@@ -46034,7 +46111,6 @@ wsqn.pl#@##social_container
 base.de#@##social_footer
 ghostery.com#@##social_media
 nextinpact.com#@##socialbar
-net-kanker.nl#@##socialmedia
 arte.tv,lenta.ru#@##socials
 youtube.com#@##subscribe-button
 feedburner.com#@##subscribe-options
@@ -46159,7 +46235,7 @@ virgilio.it#@#.fix-share
 twitter.com#@#.follow-bar
 mixer.com#@#.follow-block
 coub.com,twitch.tv,twitter.com#@#.follow-btn
-500px.com,academia.edu,peerlyst.com,shitposter.club,smashcast.tv,stream.me,tumblr.com,twitch.tv,twitter.com,xing.com,zhihu.com#@#.follow-button
+500px.com,academia.edu,crackwatch.com,peerlyst.com,shitposter.club,smashcast.tv,stream.me,tumblr.com,twitch.tv,twitter.com,xing.com,zhihu.com#@#.follow-button
 medium.com#@#.follow-label
 mixcloud.com,shitposter.club,twitter.com#@#.follow-text
 linkedin.com#@#.follow-widget
@@ -46401,6 +46477,8 @@ welt.de#@#.socialMedia
 wweek.com#@#.socialRight
 oculus.com#@#.socialTwitter
 gorod.mos.ru#@#.social__facebook
+tut.by#@#.social__item
+tut.by#@#.social__list
 gorod.mos.ru#@#.social__twitter
 iq-student-accommodation.com#@#.social_bar
 zik.ua#@#.social_block
@@ -46425,7 +46503,6 @@ wuala.com#@#.socialboxp
 esselungajob.it,jobs.jnj.com,jobs.kroger.com,realogy.com#@#.socialbutton
 clientsfromhell.net#@#.socialbuttons
 gamepedia.com#@#.sociallink
-heise.de,megabus.com,thenextweb.com#@#.socialmedia
 belgafiles.com,chaturbate.com,eska.pl,gog.com,se.pl#@#.socials
 aktuality.sk#@#.socials-link
 aktuality.sk#@#.socials-wrapper
@@ -46437,11 +46514,11 @@ listenonrepeat.com#@#.ssk-facebook
 cbsnews.com#@#.std-social
 streetsblog.org,thinkprogress.org#@#.sticky-share
 stumbleupon.com#@#.stumble-button
-amazon.co.uk,amazon.com,amazon.com.au,amazon.de,amazon.fr,gitlab.com,last.fm,reddit.com,store.google.com,twitch.tv,xhamster.com#@#.subscribe-button
+amazon.co.uk,amazon.com,amazon.com.au,amazon.de,amazon.fr,gitlab.com,last.fm,reddit.com,rutube.ru,store.google.com,twitch.tv,xhamster.com#@#.subscribe-button
 fewo-direkt.de,nvidia.pl#@#.subscribe-container
 nvidia.pl#@#.subscribe-text
 first-class-and-more.de,geekgamer.tv#@#.subscribe-widget
-greenlemon.me,mozvr.com,pianetamilan.it,sheensay.ru#@#.tag-social
+greenlemon.me,mozvr.com,pianetamilan.it,radiospada.org,sheensay.ru#@#.tag-social
 twitch.tv#@#.tw-icon
 twitch.tv#@#.tw-share
 chinadaily.com.cn,twitch.tv#@#.twBox
@@ -46635,11 +46712,10 @@ rituals.com#@#.cookie-bar:not(body)
 egmont.com#@#.cookie-bar:not(body):not(html)
 zeist.hu.nl#@#.cookie-block
 lg.com#@#.cookie-check
-dovoba.de#@#.cookie-consent
 zwijsen.nl#@#.cookie-consent-container
 zwijsen.nl#@#.cookie-consent-content
 zwijsen.nl#@#.cookie-consent-wrapper
-codra.net,dovoba.de,medicinenet.com#@#.cookie-consent:not(body)
+codra.net,dovoba.de,medicinenet.com#@#.cookie-consent:not(body):not(html)
 bokadirekt.se,danbolig.dk,hongkong.fi,rusta.com,xmradio.nl#@#.cookie-content
 danbolig.dk,skuola.net#@#.cookie-dialog
 ikks.com#@#.cookie-footer
@@ -46990,6 +47066,7 @@ yoigo.com#@#thor-cookies
 @@||ameli.fr/sites/all/modules/custom/ameli_tarte_au_citron/js/*/tarteaucitron.$script
 @@||amigosmuseoreinasofia.org/assets/js/cookiecuttr/jquery.cookie.js
 @@||bccmilano.it/framework/js/cookies.dyn.js
+@@||betterdiscordlibrary.com/assets/js/libraries/cookie.js$script,~third-party
 @@||candidat.pole-emploi.fr^*/modules/jquery-eu-cookie-law-popup.js$script
 @@||cdn.privacy-mgmt.com^$domain=telegraph.co.uk
 @@||cdn.rp.pl/cmp/cmp.min.js
@@ -47002,6 +47079,7 @@ yoigo.com#@#thor-cookies
 @@||consent.truste.com/notice?$script,domain=forbes.it
 @@||cookist.it^*/remote-gdpr.min.js
 @@||cyrk-zalewski.com.pl^*/CookieInfo.js$script
+@@||dashnet.org/experiments/cookie/cookie.png$image,~third-party
 @@||ebok.vectra.pl/components/layout/cookie-bar/
 @@||fanpage.it^*/remote-gdpr.min.js
 @@||firkloveren.no/skin/$script,stylesheet
@@ -47281,6 +47359,7 @@ yoigo.com#@#thor-cookies
 @@||fyre.co/*/facebook_share_post.png
 @@||gamingsociety.pl/wp-content/themes/$image
 @@||gannett-cdn.com^*/googleplus-user-account.js
+@@||gcdn.co^*/social-sprite.webp$image,domain=tut.by
 @@||ge.tt/s/images/twitter-extension-icon.png
 @@||ge.tt/s/images/twitter-signin.png
 @@||gearbest.com/imagecache/*/images/styleimg/share.png
@@ -47376,6 +47455,7 @@ yoigo.com#@#thor-cookies
 @@||joinsnapcard.com/thema/img/reddit.png
 @@||joyreactor.cc/images/icon_social.png
 @@||jrjimg.cn/js.do?f=/share/js/
+@@||jsdelivr.net/npm/sharer.js
 @@||jsfiddle.net^$generichide
 @@||junglevibe2.net/min/?$script
 @@||kcrw.com^*/images/social-icons-$image,domain=kcrw.com
