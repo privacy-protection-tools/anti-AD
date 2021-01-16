@@ -198,6 +198,7 @@ return array(
     'azureedge.net' => 0, #309
     'surge.sh' => 0, // qq group, @frank
     'ccclub.cmbchina.com' => 0, // #313
+    'adv.ccb.com' => 0, // #316
     
     
     
