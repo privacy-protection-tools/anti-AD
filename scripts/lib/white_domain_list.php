@@ -199,6 +199,7 @@ return array(
     'surge.sh' => 0, // qq group, @frank
     'ccclub.cmbchina.com' => 0, // #313
     'adv.ccb.com' => 0, // #316
+    'conac.cn' => 0, // #317
     
     
     
