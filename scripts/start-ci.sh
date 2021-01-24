@@ -15,6 +15,7 @@ easylist=(
 hosts=(
   "https://raw.githubusercontent.com/neoFelhz/neohosts/gh-pages/full/hosts.txt"
   "https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts"
+  "https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt"
 )
 
 strict_hosts=(
