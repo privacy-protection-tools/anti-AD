@@ -200,7 +200,8 @@ return array(
     'ccclub.cmbchina.com' => 0, // #313
     'adv.ccb.com' => 0, // #316
     'conac.cn' => 0, // #317
-    
+    'mix.sina.com.cn' => 0, // #320
+
     
     
     
