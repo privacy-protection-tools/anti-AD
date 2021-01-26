@@ -906,6 +906,10 @@ return array(
         'da.mgtv.com',
         'video.da.mgtv.com',
    ),
+   'wwads.cn' => array( #323
+        'wwads.cn',
+        'www.wwads.cn',
+   ),
     
     
     
