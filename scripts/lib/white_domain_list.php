@@ -201,6 +201,7 @@ return array(
     'adv.ccb.com' => 0, // #316
     'conac.cn' => 0, // #317
     'mix.sina.com.cn' => 0, // #320
+    'jwpcdn.com' => 0, // #322
 
     
     
