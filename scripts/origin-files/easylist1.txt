@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202101271009
+! Version: 202101281908
 ! Title: CJX's Annoyance List
-! Last modified: 2021/01/27 10:09 +0800
+! Last modified: 2021/01/28 19:08 +0800
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/cjx82630/cjxlist
 !
@@ -427,6 +427,7 @@
 ||51cto.com/home/web/js/new_login/iframe.js
 ||sinaimg.cn/large/007drMcOly1gfnqzv8a7ij30xc02nwfr.jpg
 ||mydrivers.com/2021/www/nianhuojie.png
+||sinaimg.cn^*/yyy_pop
 !------------------------Specific element hiding rules------------------------!
 sina.com.cn##.f_app_screen_wrap
 sina.com.cn###commonSideBar
