@@ -1047,6 +1047,12 @@ return array(
     'tenddata.com.cn' => array('tenddata.com.cn', 'www.tenddata.com.cn'),
     'tenddata.net' => array('tenddata.net', 'www.tenddata.net'),
     'tengyuncloud.cn' => array('tengyuncloud.cn', 'www.tengyuncloud.cn'),
+    'tendata.cn' => array('tendata.cn', 'www.tendata.cn'),
+    'tendata.net' => array('tendata.net', 'www.tendata.net'),
+    'tendata.com' => array('tendata.com', 'www.tendata.com'),
+    'talkingdata.net' => array('talkingdata.net', 'www.talkingdata.net'),
+    'appcpa.co' => array('appcpa.co', 'www.appcpa.co'),
+    
     'udrig.com' => array('udrig.com', 'www.udrig.com'),
     'xdrig.com' => array('xdrig.com', 'www.xdrig.com'),
     'xuefenxi.com' => array('xuefenxi.com', 'www.xuefenxi.com'),
