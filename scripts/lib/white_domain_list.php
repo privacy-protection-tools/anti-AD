@@ -203,6 +203,7 @@ return array(
     'mix.sina.com.cn' => 0, // #320
     'jwpcdn.com' => 0, // #322
     'retcode.taobao.com' => 0, // #312
+    '3975.com' => 0, // #326
 
     
     

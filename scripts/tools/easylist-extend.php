@@ -194,6 +194,7 @@ $ARR_WHITE_RULE_LIST = array(
     '@@||stat.jseea.cn^' => 1, // #279
     '@@||widget.intercom.io^' => 1, // #280
     '@@||track.toggl.com^' => 1, // #307
+    '@@||www.msftconnecttest.com^' => 1, // #327
 );
 
 //针对上游赦免规则anti-AD不予赦免的规则，即赦免名单的黑名单
