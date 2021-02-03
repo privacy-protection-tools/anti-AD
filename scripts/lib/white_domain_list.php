@@ -204,6 +204,7 @@ return array(
     'jwpcdn.com' => 0, // #322
     'retcode.taobao.com' => 0, // #312
     '3975.com' => 0, // #326
+    'air.1688.com' => 0, // #331
 
     
     
