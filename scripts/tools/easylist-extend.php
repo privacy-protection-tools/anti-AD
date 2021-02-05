@@ -197,6 +197,7 @@ $ARR_WHITE_RULE_LIST = array(
     '@@||www.msftconnecttest.com^' => 1, // #327
     '@@||storage.live.com^' => 1, // #333
     '@@||skyapi.onedrive.live.com^' => 1, // #333
+    '@@||counter-strike.net^' => 1, // #332
 );
 
 //针对上游赦免规则anti-AD不予赦免的规则，即赦免名单的黑名单
