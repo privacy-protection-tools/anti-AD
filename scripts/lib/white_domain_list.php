@@ -205,6 +205,7 @@ return array(
     'retcode.taobao.com' => 0, // #312
     '3975.com' => 0, // #326
     'air.1688.com' => 0, // #331
+    'continuum.dds.microsoft.com' => 0, // #335
 
     
     
