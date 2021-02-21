@@ -206,6 +206,10 @@ return array(
     '3975.com' => 0, // #326
     'air.1688.com' => 0, // #331
     'continuum.dds.microsoft.com' => 0, // #335
+    'sec.resource.xiaomi.net' => 0, // #328
+    'api.cortana.ai' => 0, // #338
+    'mazu.3g.qq.com' => 0, // #340
+    'umiwi.com' => 0, // #341
 
     
     
