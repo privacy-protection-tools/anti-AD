@@ -210,6 +210,9 @@ return array(
     'api.cortana.ai' => 0, // #338
     'mazu.3g.qq.com' => 0, // #340
     'umiwi.com' => 0, // #341
+    'xmpush.xiaomi.com' => 0, // #343
+    'doublecklick.net' => 1, // 拼写错误的域名，https://github.com/privacy-protection-tools/anti-AD/pull/347/files
+    'issuecdn.baidupcs.com' => 0, // #350
 
     
     
