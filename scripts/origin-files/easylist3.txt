@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202102190058
+! Version: 202102220144
 ! Title: EasyPrivacy
-! Last modified: 19 Feb 2021 00:58 UTC
+! Last modified: 22 Feb 2021 01:44 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -3259,6 +3259,7 @@
 /pageviews_counter.
 /PageviewsTracker.
 /pap.swf?
+/parsely-events.
 /parsely.js
 /particles/analytics.
 /partner/transparent_pixel-$image
@@ -5471,13 +5472,18 @@ cgi-bin/counter
 ||meetrics.netbb-
 ! Email tracking pixels
 -track-email-open?
+.alcmpn.com/
+.app.returnpath.net/
 .bhphotovideo.com/mo/
 .bluekai.com/*?e_id_
 .cmail19.com/t/
 .cmail19.com/ti/
+.cmail20.com/t/
+.ct.sendgrid.net/
 .delivery-status.com/open?
 .demdex.net/event?
 .duolingo.com/open/
+.efeedbacktrk.com/$third-party
 .emltrk.com/
 .epicgames.com/O/
 .flipboard.com/usage?
@@ -5486,34 +5492,46 @@ cgi-bin/counter
 .innologica.com/t/
 .intercom-mail.com/q/
 .kijiji.ca/r/
+.list-manage.com/track/
 .members.babbel.com/mo/
+.ne16.com/do/
 .publish0x.com/t/
 .sendcloud.net/track/
 .sendibm1.com/mk/
 .simplicitycrm.com/rd/
-.spotify.com/ss/
 .starbucks.com/a/
 .webex.com/q/
 .wix.com/_api/ping/
 .zalando.com/images/probe.png
 /1x1_usermatch.gif?
+/ap.lijit.com/*
+/beacon.krxd.net/*
+/click.email.
 /clicks.email.
 /cmail2.com/t/
 /email-pixel?
 /email/open?
+/emimp/*$image
 /eo?_t=$image
 /exmo.email/open.html
 /link.coindesk.com/img/*
+/link.e-mail.*/mo/$image
 /lzdmailer.letter.open?
+/mail.sparksport.co.nz/forms/read/*
+/media.sailthru.com/*.gif
 /open.aspx?
+/page.bsigroup.com/*
 /pixel-prod.
+/pixel?cid=
 /sendmail.backerupdate.com/t/*
 /sptracking.
+/ss/o/*.gif
 /track/open.php?
 /track/open?
 /trcksp.
 /wf/open?upn=$image
 ://email.*/e/o/
+_ad_impression.
 ! DNS checks
 /DNSCheck.js
 /DNSChecker.js
@@ -5782,6 +5800,7 @@ _mongo_stats/
 ||g6338698720.co^
 ||g6536783055.co^
 ||g6734867390.co^
+||g6932951725.co^
 ||mors22.com^
 ||nxakpj4ac8gkd53.info^
 ||propeller-tracking.com^
@@ -8632,6 +8651,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||shroughtened.com^$third-party
 ||sm-epsilon.com^$third-party
 ||snd.tc^$third-party
+||subscribers.com^$third-party
 ||truenat.bid^$third-party
 ||truepush.com^$third-party
 ||urbanairship.com^$third-party
@@ -11805,6 +11825,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||ptracker.nurturehq.com^
 ||ptsc.shoplocal.com^
 ||pub.sheknows.com^
+||public.cobrowse.oraclecloud.com/rely/storage/
 ||publicbroadcasting.net/analytics/
 ||pulsar.ebay.com^$third-party
 ||purevideo.com^*/pvshim.gif?
@@ -17800,6 +17821,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 ! Vietnamese
 ||log.ttbc-hcm.gov.vn^
 ||logsbin.dantri.com.vn^
+||stats.muasamcong.gov.vn^
 ! Indonesian
 ||analytic20.detik.com^
 ||ktracker.kumparan.com^
@@ -17947,6 +17969,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||audioeye.com/ae.js$domain=woodlanddirect.com
 @@||azureedge.net/prod/smi/loader-config.json$domain=pressdemocrat.com
 @@||azureedge.net^*/eventtracking.js$domain=crimemapping.com
+@@||bam.nr-data.net^$script,domain=kapwing.com
 @@||banned.video/videojs-event-tracking/dist/videojs-event-tracking.js$script,domain=banned.video|infowars.com
 @@||barclays.co.uk/content/dam/$script
 @@||barclays.co.uk/touchclarity/mbox.js
@@ -18080,7 +18103,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||google-analytics.com/plugins/ua/ec.js$script,domain=health2000.co.nz
 @@||google.com/js/gweb/analytics/autotrack.js$domain=gradleplease.appspot.com|www.google.com
 @@||googletagmanager.com/gtag/js$script,domain=ally.com|anchor.fm|foxnews.com|gamespot.com|honeystinger.com|m.putlocker.how|neighborhoodpostcards.com|playphrase.me|ryanair.com|schwab.com
-@@||googletagmanager.com/gtm.js$domain=action.com|ads.spotify.com|adsoup.com|aim.steelseries.com|airasia.com|asus.com|bhaskar.com|broadcom.com|bsa-whitelabel.com|chipotle.com|complex.com|computerworlduk.com|coolermaster.com|cyclingnews.com|desigual.com|drumstick.com|ebuyer.com|elevationscu.com|fortune.com|foxnews.com|gamepix.com|git-tower.com|google.com|gumtree.com|hbomax.com|health2000.co.nz|indy100.com|insideevs.com|itv.com|jobs.net|keygames.com|magicjack.com|medibank.com.au|moviefone.com|nestio.com|newsarama.com|newsletter.co.uk|newsy.com|nfl.com|nflgamepass.com|onesignal.com|optus.com.au|overwatchleague.com|pioneer.eu|poliigon.com|porsche.com|postable.com|readyrefresh.com|realestate.co.nz|rebtel.com|redbull.com|rockstargames.com|rollingstone.com|royalbank.com|rozetka.com.ua|scotsman.com|sixflags.com|starbucks.ca|support.amd.com|talktalk.co.uk|techradar.com|theta.tv|toto.co.jp|toysrus.ca|trademe.nz|usmagazine.com|vimeo.com|weightwatchers.com|woodlanddirect.com|wwe.com
+@@||googletagmanager.com/gtm.js$domain=action.com|ads.spotify.com|adsoup.com|aim.steelseries.com|airasia.com|asus.com|atptour.com|bhaskar.com|broadcom.com|bsa-whitelabel.com|chipotle.com|complex.com|computerworlduk.com|coolermaster.com|cyclingnews.com|desigual.com|drumstick.com|ebuyer.com|elevationscu.com|fortune.com|foxnews.com|gamepix.com|git-tower.com|google.com|gumtree.com|hbomax.com|health2000.co.nz|indy100.com|insideevs.com|itv.com|jobs.net|keygames.com|magicjack.com|medibank.com.au|moviefone.com|nestio.com|newsarama.com|newsletter.co.uk|newsy.com|nfl.com|nflgamepass.com|onesignal.com|optus.com.au|overwatchleague.com|pioneer.eu|poliigon.com|porsche.com|postable.com|readyrefresh.com|realestate.co.nz|rebtel.com|redbull.com|rockstargames.com|rollingstone.com|royalbank.com|rozetka.com.ua|scotsman.com|sixflags.com|starbucks.ca|support.amd.com|talktalk.co.uk|techradar.com|theta.tv|toto.co.jp|toysrus.ca|trademe.nz|usmagazine.com|vimeo.com|weightwatchers.com|woodlanddirect.com|wwe.com
 @@||gov.au/Scripts/ga.js$script,~third-party
 @@||guce.advertising.com/collectIdentifiers$domain=guce.advertising.com
 @@||hearstapps.com/static/comscore.$script,domain=womenshealthmag.com
@@ -18114,6 +18137,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||iwin.com/gtm.json$~third-party,xmlhttprequest
 @@||jabra.com/api/Analytics/$xmlhttprequest,domain=jabra.com
 @@||jbj.co.uk^*/analytics.js$script,~third-party
+@@||js-agent.newrelic.com/nr-spa-$script,domain=kapwing.com
 @@||jsrdn.com/s/cs.js$domain=distro.tv
 @@||jwpcdn.com/player/plugins/googima/*/googima.js$script,domain=ladbible.com
 @@||kaxsdc.com/collect/sdk$xmlhttprequest,domain=vanillaereward.com
@@ -18600,6 +18624,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||repstatic.it/minify/sites/common/config_webtrekk_$script,domain=video.repubblica.it
 @@||repstatic.it^*/Nielsen.js
 @@||repubblica.it/pw/pw.js?deskurl=$domain=gelocal.it|ilsecoloxix.it|lastampa.it
+@@||synlab.it^*/angular-google-analytics.js
 @@||thron.com/shared/plugins/tracking/current/tracking-library-min.js$domain=dainese.com
 @@||timvision.it/libs/fingerprint/fingerprint.js
 @@||tiscali.it/js/webtrends/$script,domain=mail.tiscali.it
