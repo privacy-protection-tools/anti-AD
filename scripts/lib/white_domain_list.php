@@ -214,6 +214,7 @@ return array(
     'doublecklick.net' => 1, // 拼写错误的域名，https://github.com/privacy-protection-tools/anti-AD/pull/347/files
     'issuecdn.baidupcs.com' => 0, // #350
     'duiba.com.cn' => 0, // #352
+    'trib.al' => 0, // #357
 
     
     
