@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202102272135
+! Version: 202103021532
 ! Title: CJX's Annoyance List
-! Last modified: 2021/02/27 21:35 +0800
+! Last modified: 2021/03/02 15:32 +0800
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/cjx82630/cjxlist
 !
@@ -532,7 +532,6 @@ douyu.com##.ActPayDialog
 baidu.com##.reader-pop-manager-view-containter
 jingyingjiajiao.com##.bdgg
 jingyingjiajiao.com##DIV[style="width:auto;border: 1px solid #aaaaaa; position:fixed; bottom:1px; right:1px;z-index:2000"]
-baidu.com##.vip-member-pop-content
 baidu.com##.app-side-ad
 kanman.com###\5f _acgn-virtual-coin__
 ifeng.com##a[class^="bookrack-"]

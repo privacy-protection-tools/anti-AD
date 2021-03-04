@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202103010106
+! Version: 202103040121
 ! Title: EasyPrivacy
-! Last modified: 01 Mar 2021 01:06 UTC
+! Last modified: 04 Mar 2021 01:21 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -1310,6 +1310,7 @@
 /clicktale.
 /clicktale/*
 /clicktale_
+/clicktalecdn.
 /ClickTaleFilter.
 /clicktrack-*.gif?
 /ClickTrack.
@@ -1760,6 +1761,7 @@
 /elqnow/*
 /elqscr.js
 /elqtracking.
+/elqtrk.
 /elt.gif?
 /eluminate?
 /email/track/*$image
@@ -3126,6 +3128,7 @@
 /omnidiggthis|
 /omnipagetrack.
 /omniture-app-measurement.
+/omniture-scode-prod.
 /omniture-visitorapi.
 /omniture.*&ref=
 /omniture.do;$image
@@ -6954,6 +6957,7 @@ _mongo_stats/
 ||getrockerbox.com^$third-party
 ||getsmartcontent.com^$third-party
 ||getsmartlook.com^$third-party
+||getstat.net^$third-party
 ||getstatistics.se^$third-party
 ||getviously.com^$third-party
 ||gez.io^$third-party
@@ -8761,6 +8765,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||foxpush.com^$third-party
 ||foxpush.net^$third-party
 ||getback.ch^$third-party
+||getpush.net^$third-party
 ||getpushmonkey.com^$third-party
 ||getsupernova.com^$third-party
 ||gravitec.net^$third-party
@@ -11163,6 +11168,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||dreamhost.com/*.cgi?$image,third-party
 ||drift.com/impressions/
 ||drift.com/track
+||drlimmode9ddd.cloudfront.net^
 ||dt1pxsve3tgas.cloudfront.net^
 ||dtym7iokkjlif.cloudfront.net/dough/
 ||du4rq1xqh3i1k.cloudfront.net^
@@ -14641,6 +14647,8 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||intercom.io/messenger/web/metrics
 ||internetslang.com/jass/$script
 ||intg.snapchat.com^
+||intuitcdn.net/analytics/
+||intuitvisitorid.api.intuit.com^
 ||investegate.co.uk/Weblogs/IGLog.aspx?
 ||iono.fm/tracking?
 ||ip-adress.com/gl?r=
@@ -16236,6 +16244,10 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||zylom.com^*/global_tracking.jsp?
 ||zylom.com^*/tracking_spotlight.js
 ||zytpirwai.net/track/
+! whatleaks.com
+||dns.whatleaks.com^
+||p0f.whatleaks.com
+||whatleaks.com/check_ports/?
 ! TraceDock
 ||apollo.plein.be^
 ||app1.maatwerkonline.nl^
@@ -16290,7 +16302,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||bestbuy.com/resource/
 ||bmoharris.com/staticweb/
 ||buybuybaby.com/content/
-||cibc.com/clientlibs/
 ||discover.com/staticweb/
 ||discovercard.com/clientlibs/
 ||ebay.com/nkfytkqtoxtljvzbxhr.js$script,domain=ebay.com
@@ -16299,6 +16310,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||ebaystatic.com^*/g52yxhxv2mzcbealmlkri4kn5av.js$script,domain=ebay.com
 ||eddiebauer.com/resource/
 ||finishline.com/fufhpqdn/
+||fredmeyer.com/kkhepdqgay/
 ||groupon.com/resource/
 ||kohls.com/libraries/
 ||localhost^$third-party,domain=globo.com
@@ -16311,7 +16323,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||sierra.com/resource/
 ||src.ebay-us.com/*=usllpic$script,domain=ebay.com
 ||staples.com/yuolsoiifpm/
-||usbank.com/publicwww/
 ! genieesspv https://github.com/easylist/easylist/issues/6471
 /^https?:\/\/js.*\/t\/[0-9]{3}\/[0-9]{3}\/[a-z0-9]{7,8}\.js/$script,third-party
 ! Fingerprint
@@ -16546,7 +16557,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||twch.20min.ch^
 ||vg247.com/wp-content/themes/vg247/scripts/mvg247-fsm.js
 ! CNAME
-||klaviyo.map.fastly.net^
 ! Eulerian
 ||0sbm.consobaby.co.uk^
 ||319dn.dieti-natura.com^
@@ -18125,7 +18135,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||cdn-ds.com/analytics/sockjs.js$script,domain=tuttleclickgenesis.com
 @@||cdn-net.com/cc.js$script,domain=uber.com|ubereats.com
 @@||cdn.optimizely.com/js/*.js$domain=compassion.com|creditsesame.com|freeshipping.com|heroku.com|historyvault.com|imageshack.com
-@@||certona.net^*/scripts/resonance.js$script,domain=canadiantire.ca
+@@||certona.net^*/scripts/resonance.js$script,domain=canadiantire.ca|finishline.com
 @@||changenow.io/js/tracking.js$script
 @@||chasecdn.com^*/@ccb-blueanalytics/$script,domain=chase.com
 @@||check.ddos-guard.net/check.js$script
@@ -18239,6 +18249,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||hitfile.net/platform/js/fdlogger/fdlogger.js$script,~third-party
 @@||hmhco.com/one/js/conf/trackjs.config.$script,~third-party,xmlhttprequest
 @@||hobbyking.com^*/gtm.js$script,~third-party
+@@||homedepotrebates11percent.com/js/third-party/angulartics-google-analytics/dist/angulartics-ga.min.js$script,~third-party
 @@||hopx.cedexis.com^$xmlhttprequest,domain=play.aetv.com|play.history.com|play.mylifetime.com
 @@||hscta.net/cta/current.js$script,domain=aucfan.com
 @@||i-scmp.com/production/mixpanel.$domain=scmp.com
@@ -18314,6 +18325,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||nike.com^*/optimizely.browser.umd.min.js$script,~third-party
 @@||nintendo.com/apps/noa/scripts/analytics.js
 @@||noaa.gov/maps/resources/scripts/ga.js$script,~third-party
+@@||noodid.ee/chordQuiz/$~third-party
 @@||nyt.com/analytics/json-$script,domain=nytimes.com
 @@||nyt.com/bi/js/tagx/tagx.js$domain=nytimes.com
 @@||nytimes.com^*/EventTracker.js
