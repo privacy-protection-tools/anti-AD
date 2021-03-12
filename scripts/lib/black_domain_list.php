@@ -135,6 +135,7 @@ return array(
         'js.mobojoy.baidu.com',
         'plugin.mobopay.baidu.com',
         'dj1.baidu.com',
+        'isite.baidu.com',
     ),
     'youdao.com' => array('corp.youdao.com'),
     'crsspxl.com' => array('crsspxl.com'),
