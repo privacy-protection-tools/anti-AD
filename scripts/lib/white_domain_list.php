@@ -215,6 +215,7 @@ return array(
     'issuecdn.baidupcs.com' => 0, // #350
     'duiba.com.cn' => 0, // #352
     'trib.al' => 0, // #357
+    'ccmp.eu' => 0, // #365
 
     
     
