@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202103021532
+! Version: 202103161943
 ! Title: CJX's Annoyance List
-! Last modified: 2021/03/02 15:32 +0800
+! Last modified: 2021/03/16 19:43 +0800
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/cjx82630/cjxlist
 !
@@ -57,6 +57,7 @@
 ||5etv.com^$third-party
 ||bobo.com^$third-party
 ||cir-smart.baidu.com^
+||bjmantis.net^
 ||crs.baidu.com^
 ||goutong.baidu.com^
 ||knet.cn^$third-party
@@ -432,6 +433,10 @@
 ||gushiwen.org/getTicket.aspx
 ||51cto.com/edu/center/js/interaction_iframe.js
 !------------------------Specific element hiding rules------------------------!
+baidu.com##.opening-season-dialog
+iqihang.com##.xf_right
+qianlima.com###bg
+qianlima.com##.seo400
 to8to.com##.layer-red-box
 tvbs.com.tw##.smart_banner
 wenku.baidu.com##.header-wrapper > .fixed-activity-bar
