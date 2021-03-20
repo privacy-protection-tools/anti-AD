@@ -216,6 +216,7 @@ return array(
     'duiba.com.cn' => 0, // #352
     'trib.al' => 0, // #357
     'ccmp.eu' => 0, // #365
+    'alissl.ucdl.pp.uc.cn' => 0, // #370
 
     
     
