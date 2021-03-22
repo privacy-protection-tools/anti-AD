@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202103182343
+! Version: 202103220213
 ! Title: EasyPrivacy
-! Last modified: 18 Mar 2021 23:43 UTC
+! Last modified: 22 Mar 2021 02:13 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -844,6 +844,7 @@
 /api/stat?
 /api/statz
 /api/tracing?
+/api/track?guid
 /api/tracking/*
 /api/v1/collector
 /api/v1/metrics
@@ -1384,6 +1385,7 @@
 /collect/view?
 /collect?*&cid=
 /collect?*&tid=
+/collect?appName
 /collect?callback=
 /collect?d=
 /collect?data=
@@ -3274,6 +3276,7 @@
 /performance.fcgi?
 /performance_timing/*
 /performance_tracker-
+/performanceMetrics?
 /performancetimer.js
 /perimeterx/*
 /permalink-tracker.html?
@@ -4888,7 +4891,6 @@
 /videojs-tracking.
 /videojs.ga.
 /videolog?vid=
-/videotrack.js
 /VideoTracking.
 /videotracking/*
 /vidtrack.
@@ -5062,6 +5064,7 @@
 /weizenbock/dist/*
 /wf-beacon-
 /wffm-cookies.
+/wfmanalytics/*
 /wget?*&referer=
 /wh_tracking.
 /where-go-add.js
@@ -5495,6 +5498,7 @@ cgi-bin/counter
 .list-manage.com/track/
 .maillist-manage.com/clicks/$image
 .members.babbel.com/mo/
+.mjt.lu/oo/$image
 .ne16.com/do/
 .oculus.com/collect/
 .pstmrk.it/open/
@@ -5531,7 +5535,7 @@ cgi-bin/counter
 /lzdmailer.letter.open?
 /mail-tracking/*$image
 /mail.sparksport.co.nz/forms/read/*
-/media.sailthru.com/*.gif
+/media.sailthru.com/5ik/1k4/9/*.gif
 /open.aspx?
 /page.bsigroup.com/*
 /pixel-prod.
@@ -6547,6 +6551,7 @@ _mongo_stats/
 ||dwin2.com^$third-party
 ||dynameex.com^$third-party
 ||dynamicyield.com^$third-party
+||dynatrace.com^$third-party,domain=~dynatracelabs.com
 ||dynatracesaas.com^$third-party
 ||dyntrk.com^$third-party
 ||e-contenta.com^$third-party
@@ -6790,6 +6795,7 @@ _mongo_stats/
 ||getconversion.net^$third-party
 ||getdrip.com^$third-party
 ||getfreebl.com^$third-party
+||getpublica.com^$third-party
 ||getrockerbox.com^$third-party
 ||getsmartcontent.com^$third-party
 ||getsmartlook.com^$third-party
@@ -7367,7 +7373,7 @@ _mongo_stats/
 ||mytictac.com^$third-party
 ||mytrack.pro^$third-party
 ||myusersonline.com^$third-party
-||myvisualiq.net^$third-party
+||myvisualiq.net^$image,script,third-party
 ||mywebstats.com.au^$third-party
 ||mywebstats.org^$third-party
 ||n74s9.com^$third-party
@@ -10796,6 +10802,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||counter.cam-content.com^
 ||counter.digits.com^
 ||counter.hyipexplorer.com^
+||counter.jdi5.com^
 ||counter.maases.com^
 ||counter.packa2.cz^
 ||counter.powweb.com^
@@ -11004,7 +11011,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||dxwgpw0lkcum5.cloudfront.net^
 ||dy2xcjk8s1dbz.cloudfront.net^
 ||dymlo6ffhj97l.cloudfront.net^
-||dynatrace.com/jstag/$third-party
 ||dyv1bugovvq1g.cloudfront.net^
 ||e-activist.com^*/broadcast.record.message.open.do?
 ||e-merchant.com/^*/edr.js$third-party
@@ -13937,6 +13943,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||dilbert.com^*&tracker$script
 ||dippic.com/cgi-bin/index_dl.cgi?
 ||direct-events-collector.spot.im^
+||discord.com^*/science
 ||discordapp.com^*/track
 ||discordbots.org/api/auctions/impression
 ||discover-metrics.cloud.seek.com.au^
@@ -15544,6 +15551,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||tidaltv.com/Ping.aspx
 ||tiktok.com/api/impression/
 ||tiktok.com/captcha/report
+||time.is/img/nod.png$image
 ||timeslogtn.timesnow.tv^
 ||timesofisrael.com/js/rgb_app.js
 ||timesrecordnews.com/metrics/
@@ -16010,6 +16018,8 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||dns.whatleaks.com^
 ||p0f.whatleaks.com
 ||whatleaks.com/check_ports/?
+! mooc tracker (https://github.com/easylist/easylist/issues/7457)
+/mooc/controllers/course_ajax.php
 ! Adobe
 ||lightning.ncaa.com/launch/$script
 ! Bing
@@ -21246,6 +21256,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 ||siteinfo.libero.it^
 ||smsaffari.it/count_new.php?
 ||spaziogames.it/ajax/player_impression.ashx?
+||stats.dreamsub.cc^
 ||stats.splinder.com^
 ||stats.stylight.it^
 ||tantifilm.top^*/ping
@@ -21784,7 +21795,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||google-analytics.com/plugins/ga/inpage_linkid.js$domain=westernunion.com
 @@||google.com/js/gweb/analytics/autotrack.js$domain=gradleplease.appspot.com|www.google.com
 @@||googletagmanager.com/gtag/js$script,domain=honeystinger.com|m.putlocker.how
-@@||googletagmanager.com/gtm.js$domain=ads.spotify.com|aim.steelseries.com|atptour.com|bsa-whitelabel.com|chipotle.com|easternbank.com|hbomax.com|medibank.com.au|newsletter.co.uk|nflgamepass.com|pioneer.eu|porsche.com|readyrefresh.com|redbull.com|royalbank.com|scotsman.com|trademe.co.nz
+@@||googletagmanager.com/gtm.js$domain=ads.spotify.com|aim.steelseries.com|atptour.com|bsa-whitelabel.com|chipotle.com|complex.com|cyclingnews.com|easternbank.com|hbomax.com|medibank.com.au|newsletter.co.uk|nflgamepass.com|pioneer.eu|porsche.com|readyrefresh.com|redbull.com|royalbank.com|scotsman.com|trademe.co.nz
 @@||gov.au/Scripts/ga.js$script,~third-party
 @@||guce.advertising.com/collectIdentifiers$domain=guce.advertising.com
 @@||hearstapps.com/static/comscore.$script,domain=womenshealthmag.com
@@ -21977,9 +21988,10 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 ! Opera/Safari (buggy 3rd-party implementations)
 ! https://forums.lanik.us/viewtopic.php?f=64&t=45603&p=158333
 @@||bugsnag.com^$~third-party,domain=app.bugsnag.com
-! Consent Fixes
+! Consent and video Fixes
 @@||sourcepoint.telegraph.co.uk^$~third-party,xmlhttprequest
-@@||sourcepointcmp.bloomberg.com/ccpa.js$script,domain=bloomberg.com
+@@||sourcepointcmp.bloomberg.*/ccpa.js$script,domain=bloomberg.co.jp|bloomberg.com
+@@||sourcepointcmp.bloomberg.*/mms/get_site_data$xmlhttprequest,domain=bloomberg.co.jp|bloomberg.com
 ! Downdetector Consent
 @@||googletagservices.com/tag/js/gpt.js$domain=allestoringen.be|allestoringen.nl|allestörungen.at|allestörungen.ch|allestörungen.de|downdetector.ae|downdetector.ca|downdetector.cl|downdetector.co.nz|downdetector.co.uk|downdetector.co.za|downdetector.com|downdetector.com.ar|downdetector.com.au|downdetector.com.br|downdetector.com.co|downdetector.cz|downdetector.dk|downdetector.ec|downdetector.es|downdetector.fi|downdetector.fr|downdetector.gr|downdetector.hk|downdetector.hr|downdetector.hu|downdetector.id|downdetector.ie|downdetector.in|downdetector.it|downdetector.jp|downdetector.mx|downdetector.my|downdetector.no|downdetector.pe|downdetector.ph|downdetector.pk|downdetector.pl|downdetector.pt|downdetector.ro|downdetector.ru|downdetector.se|downdetector.sg|downdetector.sk|downdetector.web.tr
 ! Cloudflare hcaptcha test
