@@ -924,6 +924,10 @@ return array(
         'xiaozhuvideo.cn',
         'www.xiaozhuvideo.cn',
    ),
+   'wikawika.xyz' => array( #375
+        'ad-display.wikawika.xyz',
+        'ad-channel.wikawika.xyz',
+   ),
     
     
     
