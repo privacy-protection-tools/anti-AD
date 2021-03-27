@@ -218,6 +218,7 @@ return array(
     'ccmp.eu' => 0, // #365
     'alissl.ucdl.pp.uc.cn' => 0, // #370
     'c3pool.com' => 0, // #371
+    'wtradv.market.xiaomi.com' => 0, // #377
 
     
     
