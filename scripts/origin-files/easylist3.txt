@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202104100200
+! Version: 202104130144
 ! Title: EasyPrivacy
-! Last modified: 10 Apr 2021 02:00 UTC
+! Last modified: 13 Apr 2021 01:44 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -3437,6 +3437,7 @@
 /planetstat.
 /platform-analytics-
 /plausible.js
+/player/stats.php?
 /player_counter.ashx?
 /PlayerDashboardLoggingService.svc/json/StartSession?
 /playerlogger.
@@ -5549,6 +5550,7 @@ cgi-bin/counter
 /1x1_usermatch.gif?
 /ap.lijit.com/*
 /beacon.krxd.net/*
+/beaconimages.netflix.net/*$image
 /click.email.$image
 /clicks.email.$image
 /cmail2.com/t/
@@ -5822,6 +5824,7 @@ _mongo_stats/
 ! -----------------Third-party tracking domains-----------------!
 ! *** easylist:easyprivacy/easyprivacy_trackingservers.txt ***
 ! Revolving trackers
+||apxl.io^
 ||g2178927685.co^
 ||g2377012020.co^
 ||g2575096355.co^
@@ -7044,6 +7047,7 @@ _mongo_stats/
 ||instana.io^$third-party
 ||instant.page^$third-party
 ||instapage.com^$third-party,domain=~pagedemo.co
+||instapagemetrics.com^$third-party
 ||instore.biz^$third-party
 ||intelimet.com^$third-party
 ||intelli-direct.com^$third-party
@@ -10689,6 +10693,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||chanalytics.merchantadvantage.com^
 ||chartaca.com.s3.amazonaws.com^
 ||check.ddos-guard.net^$third-party
+||check.deadlinefunnel.com^$third-party
 ||checkout.com/logger/
 ||chicoryapp.com/widget_v2/
 ||choicestream.com^*/pixel/
@@ -10877,7 +10882,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||d10gj7yjsfriaj.cloudfront.net^
 ||d10lpsik1i8c69.cloudfront.net^
 ||d11a2fzhgzqe7i.cloudfront.net^
-||d15kdpgjg3unno.cloudfront.net^
 ||d169bbxks24g2u.cloudfront.net^
 ||d16fk4ms6rqz1v.cloudfront.net^
 ||d18p8z0ptb8qab.cloudfront.net^
@@ -11128,6 +11132,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||facebook.com/method/links.getstats?
 ||facebook.com/tr$third-party
 ||fairfax.com.au/js/track/
+||fastcdn.co/js/sptw.js
 ||fcmatch.google.com^
 ||fcmatch.youtube.com^
 ||feed.informer.com/fdstats
@@ -12242,6 +12247,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||tracking.g2crowd.com^
 ||tracking.godatafeed.com^
 ||tracking.hivecloud.net^
+||tracking.hyros.com^
 ||tracking.interweave.com^$third-party
 ||tracking.jotform.com^
 ||tracking.keywee.co^
@@ -12251,6 +12257,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||tracking.listhub.net^
 ||tracking.livingsocial.com^
 ||tracking.magnetmail.net^
+||tracking.markethero.io^
 ||tracking.maxcdn.com^$third-party
 ||tracking.menamarketplace.com^
 ||tracking.monsido.com^
@@ -13422,6 +13429,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||informers.sinoptik.ua^
 ||mgz.com.ua/counter.php?
 ||top.zp.ua/counter/
+||tracker.esputnik.com^
 ! Vietnamese
 ||analytics.yomedia.vn^
 ||f-emc.ngsp.gov.vn^
@@ -14016,7 +14024,9 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||drudgereport.com/js/responsive-
 ||drugs.com/api/logger/
 ||dsm.com^*/searchenginetracking.js
+||duckduckgo.com/t.js
 ||duckduckgo.com/t/
+||duckduckgo.com/y.js
 ||dumpster.cam4.com^
 ||dvdempire.com/images/empty2.asp
 ||dvdempire.com/include/user/empty2.asp?
@@ -14732,6 +14742,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||modernsalon.com/includes/sc_video_tracking.js
 ||momtastic.com/libraries/pebblebed/js/pb.track.js
 ||moneysupermarket.com^*/ProphetInsert.js
+||monitor.channel4.com^
 ||monitor.ebay.com^
 ||monkeyquest.com/monkeyquest/static/js/ga.js
 ||monstercrawler.com/__kl.gif
@@ -15140,6 +15151,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||rt.rakuten.co.jp^$~xmlhttprequest
 ||rta.dailymail.co.uk^
 ||rta2.metro.co.uk^
+||rta2.newzit.com^
 ||rte.ie/player/playertracker.js
 ||rtn.thestar.com^
 ||rum.kobo.com^
@@ -16122,11 +16134,13 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 /^https?:\/\/.*[a-f0-9]{6,}\.cdn.*\.forter\.com\//$script,third-party
 ||forter.com/events
 ||forter.com/prop.json$ping
+||forter.com/vchk2
 ! Airbnb facebook tracking
 ||airbnb.*/facebook_advanced_matchings?
 ! PerimeterX
 ||apartmenttherapy.com/jAYekY18/
 ||auctionzip.com/eKtvxkQ2/
+||bhphotovideo.com/3D8mkYG1/init.js
 ||bloomberg.com/8FCGYgk4/init.js
 ||booktopia.com.au/px_section_fetch/
 ||carbon38.com/7G7BfRT2/
