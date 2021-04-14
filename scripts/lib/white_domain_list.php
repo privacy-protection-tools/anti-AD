@@ -219,6 +219,8 @@ return array(
     'alissl.ucdl.pp.uc.cn' => 0, // #370
     'c3pool.com' => 0, // #371
     'wtradv.market.xiaomi.com' => 0, // #377
+    'update.avlyun.sec.miui.com' => 0, // #387
+    'sugar.zhihu.com' => 0, // #380
 
     
     
