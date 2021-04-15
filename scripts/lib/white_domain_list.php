@@ -221,6 +221,7 @@ return array(
     'wtradv.market.xiaomi.com' => 0, // #377
     'update.avlyun.sec.miui.com' => 0, // #387
     'sugar.zhihu.com' => 0, // #380
+    'chtbl.com' => 0, // #390
 
     
     
