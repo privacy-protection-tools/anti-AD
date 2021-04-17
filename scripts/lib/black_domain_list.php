@@ -936,6 +936,9 @@ return array(
         'pcidata.cn',
         'spi.pcidata.cn',
    ),
+   '3.cn' => array( #392
+        'atom-log.3.cn',
+   ),
     
     
     
