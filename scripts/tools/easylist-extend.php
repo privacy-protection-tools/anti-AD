@@ -378,4 +378,5 @@ if(($insert_pos > 0) && (fseek($new_fp, $insert_pos) === 0)){
 fclose($src_fp);
 fclose($new_fp);
 rename($src_file . '.txt', $src_file);
+file_put_contents($src_file . '.md5', md5_file($src_file));
 echo 'Time cost:', microtime(true) - START_TIME, "s, at ", date('m-d H:i:s'), "\n";
