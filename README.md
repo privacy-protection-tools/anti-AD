@@ -64,3 +64,5 @@ anti-AD在自我认知上始终是一个非主流的小众项目，受众群体�
 - [easylist.to](https://easylist.to/) - 感谢提供出色的easylist
 - [ZeroDot1/CoinBlockerLists](https://gitlab.com/ZeroDot1/CoinBlockerLists) - 屏蔽恶意劫持挖矿
 - [crazy-max/WindowsSpyBlocker](https://github.com/crazy-max/WindowsSpyBlocker/) - to block spying and tracking on Windows systems.
+- [![phpstorm](./others/icon-phpstorm.png)](https://www.jetbrains.com/zh-cn/opensource/) - 感谢phpstorm对开源项目的支持！
+
