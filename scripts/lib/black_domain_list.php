@@ -939,6 +939,18 @@ return array(
    '3.cn' => array( #392
         'atom-log.3.cn',
    ),
+   'gz-data.com' => array( #402
+        'gz-data.com',
+        'www.gz-data.com',
+   ),
+   'gzads.com' => array( #402
+        'gzads.com',
+        'www.gzads.com',
+    ),
+    'gozendata.com' => array( #402
+        'gozendata.com',
+        'www.gozendata.com',
+    ),
     
     
     
