@@ -273,7 +273,7 @@ return array(
     'kingsoft-office-service.com' => array(
         'abroad-ad.kingsoft-office-service.com',
     ),
-    'amap.com' => array('logs.amap.com'),
+    'amap.com' => array('logs.amap.com','dualstack-logs.amap.com'),
     'tt114.net' => array('tt114.net'), //例如http://www.tt114.net/html/tlink.html
     'taobao.com' => array(
         'ip.taobao.com',

@@ -126,7 +126,7 @@ $ARR_MERGED_WILD_LIST = array(
 
 $ARR_REGEX_LIST = array(
     '/9377[a-z]{2}\.com$/' => null,
-    '/^(\S+\.)?ad([\d]+|m|s)?\./' => null,
+    '/^(\S+\.)?ad(s?[\d]+|m|s)?\./' => null,
     '/^(\S+\.)?affiliat(es|ion|e)\./' => null,
     '/afgr[\d]{1,2}\.com$/' => null,
     '/^(\S+\.)?analytics(\-|\.)/' => null,
