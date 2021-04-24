@@ -126,7 +126,7 @@ $ARR_MERGED_WILD_LIST = array(
 
 $ARR_REGEX_LIST = array(
     '/9377[a-z]{2}\.com$/' => null,
-    '/^(\S+\.)?ad([\d]|m|s)?\./' => null,
+    '/^(\S+\.)?ad([\d]+|m|s)?\./' => null,
     '/^(\S+\.)?affiliat(es|ion|e)\./' => null,
     '/afgr[\d]{1,2}\.com$/' => null,
     '/^(\S+\.)?analytics(\-|\.)/' => null,
@@ -202,6 +202,9 @@ $ARR_WHITE_RULE_LIST = array(
     '@@||ftp.bmp.ovh^' => 1, // #353
     '@@||profile*.se.360.cn^' => 1, // #381
     '@@||pic.iask.cn^' => 1, // #397
+    '@@||ad.jp^' => 1, // #399
+    '@@||ad.azure.com^' => 1, // #399
+    '@@||ad.cityu.edu.hk^' => 1, // #398
 );
 
 //针对上游赦免规则anti-AD不予赦免的规则，即赦免名单的黑名单
