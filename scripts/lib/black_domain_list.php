@@ -160,6 +160,7 @@ return array(
         'appcloud2.zhihu.com',
         'zhihu-web-analytics.zhihu.com',
         'event.zhihu.com',
+        'udd1i5.zhihu.com', #395
     ),
     'crashlytics.com' => array(
         'crashlytics.com'
@@ -1005,11 +1006,6 @@ return array(
         'dbc.pkkjxs.cn',
         'www.pkkjxs.cn',
         'windows.pkkjxs.cn',
-    ),
-    'windows.pkkjxs.cn' => array( #400
-        'pkkjxs.cn',
-        'dbc.pkkjxs.cn',
-        'www.pkkjxs.cn',
     ),
     
     
