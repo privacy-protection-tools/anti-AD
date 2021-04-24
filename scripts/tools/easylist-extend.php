@@ -205,6 +205,9 @@ $ARR_WHITE_RULE_LIST = array(
     '@@||ad.jp^' => 1, // #399
     '@@||ad.azure.com^' => 1, // #399
     '@@||ad.cityu.edu.hk^' => 1, // #398
+    '@@||edge-enterprise.activity.windows.com^' => 1, // #401
+    '@@||edge.activity.windows.com^' => 1, // #401
+    
 );
 
 //针对上游赦免规则anti-AD不予赦免的规则，即赦免名单的黑名单
