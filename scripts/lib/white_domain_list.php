@@ -222,6 +222,7 @@ return array(
     'update.avlyun.sec.miui.com' => 0, // #387
     'sugar.zhihu.com' => 0, // #380
     'chtbl.com' => 0, // #390
+    'huoying666.com' => 0, // #405
 
     
     
