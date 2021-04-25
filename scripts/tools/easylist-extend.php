@@ -122,12 +122,17 @@ $ARR_MERGED_WILD_LIST = array(
     'usage*.*' => null,
     'wlmonitor*.*' => null,
     'zjtoolbar*.*' => null,
+    'engage.3m*' => null,
+    '*.actonservice.com' => null,
 );
 
 $ARR_REGEX_LIST = array(
     '/9377[a-z]{2}\.com$/' => null,
     '/^(\S+\.)?ad(s?[\d]+|m|s)?\./' => null,
-    '/^(\S+\.)?affiliat(es|ion|e)\./' => null,
+    '/^(\S+\.)?advert/' => null, // TODO 覆盖面很大
+    '/^(\S+\.)?affiliat/' => null, // TODO 覆盖面很大
+    '/^(\S+\.)?s?metrics\./' => null, // TODO 覆盖面很大
+//     '/^(\S+\.)?affiliat(es|ion|e)\./' => null,
     '/afgr[\d]{1,2}\.com$/' => null,
     '/^(\S+\.)?analytics(\-|\.)/' => null,
     '/^(\S+\.)?counter(\-|\.)/' => null,
@@ -161,6 +166,8 @@ $ARR_REGEX_LIST = array(
     '/^(\S+\.)?e7[0-9]{2,4}\.(net|com)?$/' => null, //组合
     '/^(\S+\.)?g[1-4][0-9]{8,9}\.com?$/' => null, //批量组合
     '/^(\S+\.)?hg[0-9]{4,5}\.com?$/' => null, //批量组合
+    '/^(\S+\.)?333[1-9]{2}[0-9]{2}\.com?$/' => null, //批量组合
+    '/^(\S+\.)?5551[0-9]{3}\.com?$/' => null, //批量组合
 
     // '/^(\S+\.)?(?=.*[a-f].*\.com$)(?=.*\d.*\.com$)[a-f0-9]{15,}\.com$/' => null,
 );
