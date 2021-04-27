@@ -214,6 +214,7 @@ $ARR_WHITE_RULE_LIST = array(
     '@@||ad.cityu.edu.hk^' => 1, // #398
     '@@||edge-enterprise.activity.windows.com^' => 1, // #401
     '@@||edge.activity.windows.com^' => 1, // #401
+    '@@||tracking-protection.cdn.mozilla.net^' => 1, // #407
     
 );
 
