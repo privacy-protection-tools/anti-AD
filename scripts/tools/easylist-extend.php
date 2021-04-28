@@ -124,6 +124,14 @@ $ARR_MERGED_WILD_LIST = array(
     'zjtoolbar*.*' => null,
     'engage.3m*' => null,
     '*.actonservice.com' => null,
+    '*-cor0*.api.p001.1drv.com' => null,
+    '*33*-*.1drv.com' => null,
+    '2cnjuh34j*.com' => null,
+    'ssc.southpark*' => null,
+    'tr.*.espmp-*fr.net' => null,
+    'tdep.vacansoleil.*' => null,
+    'da.hornbach.*' => null,
+    '*us*watcab*.blob.core.windows.net' => null,
 );
 
 $ARR_REGEX_LIST = array(
