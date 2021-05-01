@@ -21,7 +21,7 @@ define('WILDCARD_SRC', ROOT_DIR . 'origin-files/wildcard-src-easylist.txt');
 define('WHITERULE_SRC', ROOT_DIR . 'origin-files/whiterule-src-easylist.txt');
 
 $ARR_MERGED_WILD_LIST = array(
-    'ad*.udn.com$dnstype=~A' => null,
+    'ad*.udn.com$dnstype=A|CNAME' => null,
     '*.mgr.consensu.org' => null,
     'vs*.gzcu.u3.ucweb.com' => null,
     'ad*.goforandroid.com' => null,
@@ -137,7 +137,7 @@ $ARR_MERGED_WILD_LIST = array(
 $ARR_REGEX_LIST = array(
     '/9377[a-z]{2}\.com$/' => null,
     '/^(\S+\.)?ad(s?[\d]+|m|s)?\./' => null,
-    '/^(\S+\.)?advert/$dnstype=~A' => null, // TODO 覆盖面很大
+    '/^(\S+\.)?advert/$dnstype=~CNAME' => null, // TODO 覆盖面很大
     '/^(\S+\.)?affiliat(es?[0-9a-z]*?|ion[0-9\-a-z]*?|ly[0-9a-z\-]*?)\./' => null, // fixed #406
     '/^(\S+\.)?s?metrics\./' => null, // TODO 覆盖面很大
     '/afgr[\d]{1,2}\.com$/' => null,
