@@ -59,7 +59,7 @@ $ARR_MERGED_WILD_LIST = array(
     '*log.droid4x.cn' => null,
     '*tsdk.vivo.com.cn' => null,
     '*.mmstat.com' => null,
-    //'sf*-ttcdn-tos.pstatp.com' => null,
+//    'sf*-ttcdn-tos.pstatp.com' => null,
     'f-log*.grammarly.io' => null,
     '24log.*' => null,
     '24smi.*' => null,
@@ -132,6 +132,7 @@ $ARR_MERGED_WILD_LIST = array(
     'tdep.vacansoleil.*' => null,
     'da.hornbach.*' => null,
     '*us*watcab*.blob.core.windows.net' => null,
+    'xn--wxtr9fwyxk9c.*' => null,
 );
 
 $ARR_REGEX_LIST = array(
@@ -294,11 +295,12 @@ while(!feof($wild_fp)){
     if($matched){
         continue;
     }
-    $arr_wild_src[$matches[1]] = $wild_row;
+    $arr_wild_src[$matches[1]] = [];
 }
 fclose($wild_fp);
 
 $arr_wild_src = array_merge($arr_wild_src, $ARR_MERGED_WILD_LIST);
+
 $insert_pos = $written_size = $line_count = 0;
 while(!feof($src_fp)){
     $row = fgets($src_fp, 512);
@@ -333,6 +335,7 @@ while(!feof($src_fp)){
                 $line_count++;
                 $wrote_wild[$regex_str] = 1;
             }
+            break;
         }
     }
 
@@ -341,19 +344,25 @@ while(!feof($src_fp)){
     }
 
     foreach($arr_wild_src as $core_str => $wild_row){
-        $match_rule = str_replace(array('.', '*'), array('\\.', '.*'), $core_str);
-        if(!array_key_exists($core_str, $wrote_wild)){
-            $arr_wild_sub = explode('$', $core_str);
-            if(count($arr_wild_sub) > 1){
-                $written_size += fwrite($new_fp, "||${arr_wild_sub[0]}^\$${arr_wild_sub[1]}\n");
-            }else{
-                $written_size += fwrite($new_fp, "||${core_str}^\n");
-            }
-
-            $line_count++;
-            $wrote_wild[$core_str] = 1;
+        $arr_wild_sub = explode('$', $core_str);
+        $match_rule = '';
+        if(count($arr_wild_sub) > 1){
+            $match_rule = str_replace(array('.', '*', '-'), array('\\.', '.*', '\\-'), $arr_wild_sub[0]);
+        }else{
+            $match_rule = str_replace(array('.', '*', '-'), array('\\.', '.*', '\\-'), $core_str);
         }
+
         if(preg_match("/\|${match_rule}/", $row)){
+            if(!array_key_exists($core_str, $wrote_wild)){
+                if(count($arr_wild_sub) > 1){
+                    $written_size += fwrite($new_fp, "||${arr_wild_sub[0]}^\$${arr_wild_sub[1]}\n");
+                }else{
+                    $written_size += fwrite($new_fp, "||${core_str}^\n");
+                }
+
+                $line_count++;
+                $wrote_wild[$core_str] = 1;
+            }
             $matched = true;
             break;
         }
@@ -369,7 +378,7 @@ while(!feof($src_fp)){
 //按需写入白名单规则
 $wrote_whitelist = array();
 $whiterule = file(WHITERULE_SRC, FILE_SKIP_EMPTY_LINES | FILE_IGNORE_NEW_LINES);
-$whiterule=array_fill_keys($whiterule, 0);
+$whiterule = array_fill_keys($whiterule, 0);
 $ARR_WHITE_RULE_LIST = array_merge($whiterule, $ARR_WHITE_RULE_LIST);
 foreach($ARR_WHITE_RULE_LIST as $row => $v){
     if(empty($row) || substr($row, 0, 1) !== '@' || substr($row, 1, 1) !== '@'){
