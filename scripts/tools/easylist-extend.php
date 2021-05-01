@@ -222,7 +222,8 @@ $ARR_WHITE_RULE_LIST = array(
     '@@||edge-enterprise.activity.windows.com^' => 1, // #401
     '@@||edge.activity.windows.com^' => 1, // #401
     '@@||tracking-protection.cdn.mozilla.net^' => 1, // #407
-    
+    '@@||skydrivesync.policies.live.net^' => 1, // #409
+
 );
 
 //针对上游赦免规则anti-AD不予赦免的规则，即赦免名单的黑名单
