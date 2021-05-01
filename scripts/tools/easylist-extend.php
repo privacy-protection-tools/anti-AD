@@ -352,7 +352,7 @@ while(!feof($src_fp)){
             $match_rule = str_replace(array('.', '*', '-'), array('\\.', '.*', '\\-'), $core_str);
         }
 
-        if(preg_match("/\|${match_rule}/", $row)){
+        if(preg_match("/\|(\S+\.)?${match_rule}/", $row)){
             if(!array_key_exists($core_str, $wrote_wild)){
                 if(count($arr_wild_sub) > 1){
                     $written_size += fwrite($new_fp, "||${arr_wild_sub[0]}^\$${arr_wild_sub[1]}\n");
