@@ -138,7 +138,7 @@ $ARR_MERGED_WILD_LIST = array(
 $ARR_REGEX_LIST = array(
     '/9377[a-z]{2}\.com$/' => null,
     '/^(\S+\.)?ad(s?[\d]+|m|s)?\./' => null,
-    '/^(\S+\.)?advert/$dnstype=~CNAME' => null, // TODO 覆盖面很大
+//    '/^(\S+\.)?advert/$dnstype=~CNAME' => null, // TODO dnstype工作不正常，暂时关闭此规则
     '/^(\S+\.)?affiliat(es?[0-9a-z]*?|ion[0-9\-a-z]*?|ly[0-9a-z\-]*?)\./' => null, // fixed #406
     '/^(\S+\.)?s?metrics\./' => null, // TODO 覆盖面很大
     '/afgr[\d]{1,2}\.com$/' => null,
