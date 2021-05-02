@@ -20,6 +20,11 @@
 
 ## 版本历史
 
+#### v4.5.0 (2021.05.02)
+- 重构工具`easylist-extend.php`，优化提升3倍执行效率
+- 修复一部分小bug
+- 开始支持[AdGuardHome新的modifiers](https://github.com/AdguardTeam/AdGuardHome/wiki/Hosts-Blocklists#modifiers)语法(目前测试阶段，adgh本身解析还有bug)
+
 
 #### v4.3 (2020.02.04)
 - 引入无效域名、无效hosts剔除机制，大幅提升各过滤列表命中率
@@ -27,13 +32,6 @@
 - 根据网友 [@xlighting2017](https://github.com/privacy-protection-tools/anti-AD/issues/29) 建议，更新surge的格式
 - 引入数个新的配置参数，对输出结果精确控制
 - 若干bug和逻辑修复
-
-#### v4.2.2 (2020.02.02)
-
-- 传统白名单增强模式，支持根域名单独加白而不影响其子域名
-- 开始支持自动同步到另一个repo，自动发布更新
-- 开始引入官网，逐步建设完善
-- 修复一些逻辑bug
 
 #### [更多版本演进历史>>>](https://github.com/privacy-protection-tools/anti-AD/blob/master/changelog.md)
 

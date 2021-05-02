@@ -1,5 +1,10 @@
 # anti-AD change log
 
+#### v4.5.0 (2021.05.02)
+- 重构工具`easylist-extend.php`，优化提升3倍执行效率
+- 修复一部分小bug
+- 开始支持[AdGuardHome新的modifiers](https://github.com/AdguardTeam/AdGuardHome/wiki/Hosts-Blocklists#modifiers)语法(目前测试阶段，adgh本身解析还有bug)
+
 #### v4.3 (2020.02.04)
 - 引入无效域名、无效hosts剔除机制，大幅提升各过滤列表命中率
 - 为了更好的支持pi-hole，加入一个新的全域名列表 - `anti-ad-domains.txt`
