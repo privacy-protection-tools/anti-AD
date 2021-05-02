@@ -731,7 +731,7 @@ foreach($arr_wild_src as $wild_rule => $wild_value){
 }
 
 $line_count += substr_count($src_content, "\n");
-$src_content = str_replace("!Total lines: 00000\n", '!Total lines: ' . $line_count . "\n" . $attached_content, $src_content);
+$src_content = str_replace("!Total lines: 00000\n", '!Total lines: ' . ($line_count - 4) . "\n" . $attached_content, $src_content);
 
 file_put_contents($src_file, $src_content);
 file_put_contents($src_file . '.md5', md5_file($src_file));
