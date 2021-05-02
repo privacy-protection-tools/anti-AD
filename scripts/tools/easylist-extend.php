@@ -714,10 +714,10 @@ foreach($arr_wild_src as $wild_rule => $wild_value){
     $tmp_replaced_content = '';
     $attached_content .= '||' . $wild_rule;
     if($wild_value && is_array($wild_value) && $wild_value['m']){
-        $attached_content .= $wild_value['m'];
+        $attached_content .= '^' . $wild_value['m'] . "\n";
+    }else{
+        $attached_content .= "^\n";
     }
-
-    $attached_content .= "^\n";
 
     $line_count++;
 
