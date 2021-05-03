@@ -1007,22 +1007,6 @@ return array(
         'www.pkkjxs.cn',
         'windows.pkkjxs.cn',
     ),
-    'actonservice.com' => array( #精简域名
-        'actonservice.com',
-    ),
-    'daraz.com' => array( # 精简域名，太长了，似乎是个电商平台
-        'daraz.com',
-    ),
-    'llnw.net' => array( # 精简域名，这是个cdn服务商，可能误杀
-        'llnw.net',
-    ),
-    'windows.com' => array( #精简域名，这个是windows推送服务？
-        'wns.windows.com',
-    ),
-    'uc.cn' => array(
-        'coral-task.uc.cn',
-        'applogios.uc.cn', // uc log
-    ),
     
     
     
@@ -1576,5 +1560,32 @@ return array(
     'yjkyj.cn' => array('yjkyj.cn'),
     'zamar.cn' => array('zamar.cn'),
 
+    'actonservice.com' => array( #精简域名
+        'actonservice.com',
+    ),
+    'daraz.com' => array( # 精简域名，太长了，似乎是个电商平台
+        'daraz.com',
+    ),
+    'llnw.net' => array( # 精简域名，这是个cdn服务商，可能误杀
+        'llnw.net',
+    ),
+    'windows.com' => array( #精简域名，这个是windows推送服务？
+        'wns.windows.com',
+    ),
+    'uc.cn' => array( // dns日志提取
+        'coral-task.uc.cn',
+        'applogios.uc.cn', // uc log
+    ),
+    'sm.cn' => array( // dns日志提取
+        'huichuan-mc.sm.cn',
+        'huichuan.sm.cn',
+        'zzd.sm.cn',
+    ),
+    'alibaba.com' => array( // dns日志提取
+        'fourier.alibaba.com',
+    ),
+    'jj.cn' => array( // dns日志提取
+        'stat.m.jj.cn',
+    ),
 
 );
