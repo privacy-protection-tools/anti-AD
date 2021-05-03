@@ -1019,6 +1019,10 @@ return array(
     'windows.com' => array( #精简域名，这个是windows推送服务？
         'wns.windows.com',
     ),
+    'uc.cn' => array(
+        'coral-task.uc.cn',
+        'applogios.uc.cn', // uc log
+    ),
     
     
     
