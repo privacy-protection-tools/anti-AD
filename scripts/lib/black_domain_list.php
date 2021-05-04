@@ -1579,7 +1579,6 @@ return array(
     'sm.cn' => array( // dns日志提取
         'huichuan-mc.sm.cn',
         'huichuan.sm.cn',
-        'zzd.sm.cn',
     ),
     'alibaba.com' => array( // dns日志提取
         'fourier.alibaba.com',
