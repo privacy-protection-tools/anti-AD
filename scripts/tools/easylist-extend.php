@@ -224,6 +224,7 @@ $ARR_WHITE_RULE_LIST = array(
     '@@||edge.activity.windows.com^' => 1, // #401
     '@@||tracking-protection.cdn.mozilla.net^' => 1, // #407
     '@@||skydrivesync.policies.live.net^' => 1, // #409
+    '@@||dxcloud.episerver.net^' => 1, // #418
 
 );
 

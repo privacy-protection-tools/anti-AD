@@ -223,6 +223,8 @@ return array(
     'sugar.zhihu.com' => 0, // #380
     'chtbl.com' => 0, // #390
     'huoying666.com' => 0, // #405
+    'u.huoying666.com' => 0, // #405
+
 
 
 
