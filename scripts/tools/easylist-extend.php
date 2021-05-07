@@ -138,7 +138,7 @@ $ARR_MERGED_WILD_LIST = array(
 $ARR_REGEX_LIST = array(
     '/^(\S+\.)?9377[a-z0-9]{2}\.com$/' => ['m' => '$dnstype=A'],
     '/^(\S+\.)?ad(s?[\d]+|m|s)?\./' => null,
-    '/^(\S+\.)?advert/' => ['m' => '$denyallow=alibabacorp.com|alibabadns.com'],
+    '/^(\S+\.)?advert/' => ['m' => '$denyallow=alibabacorp.com|alibabadns.com|alibabacorp.sm.cn'],
     '/^(\S+\.)?affiliat(es?[0-9a-z]*?|ion[0-9\-a-z]*?|ly[0-9a-z\-]*?)\./' => null, // fixed #406
     '/^(\S+\.)?s?metrics\./' => null, // TODO 覆盖面很大
     '/^(\S+\.)?afgr[\d]{1,2}\.com$/' => null,
