@@ -1,7 +1,7 @@
 !Title: anti-AD
-!Version: 20210507094727
+!Version: 20210507230631
 !Homepage: https://github.com/privacy-protection-tools/anti-AD
-!Total lines: 39365
+!Total lines: 39363
 @@||ads.taboola.com^
 @@||tracker.eu.org^
 @@||stats.uptimerobot.com^
@@ -39,8 +39,6 @@
 @@||tracking-protection.cdn.mozilla.net^
 @@||skydrivesync.policies.live.net^
 @@||dxcloud.episerver.net^
-@@||advertisement.*.alibabadns.com^
-@@||advertisement.alibabacorp.sm.cn^
 /^(\S+\.)?9377[a-z0-9]{2}\.com$/$dnstype=A
 /^(\S+\.)?ad(s?[\d]+|m|s)?\./
 @@||ads.amazon^
@@ -51,7 +49,7 @@
 @@||ads.tiktok.com^
 @@||ads.twitter.com^
 @@||adm.10jqka.com.cn^
-/^(\S+\.)?advert/
+/^(\S+\.)?advert/$denyallow=alibabacorp.com|alibabadns.com
 /^(\S+\.)?affiliat(es?[0-9a-z]*?|ion[0-9\-a-z]*?|ly[0-9a-z\-]*?)\./
 /^(\S+\.)?s?metrics\./
 /^(\S+\.)?afgr[\d]{1,2}\.com$/

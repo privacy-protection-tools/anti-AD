@@ -138,7 +138,7 @@ $ARR_MERGED_WILD_LIST = array(
 $ARR_REGEX_LIST = array(
     '/^(\S+\.)?9377[a-z0-9]{2}\.com$/' => ['m' => '$dnstype=A'],
     '/^(\S+\.)?ad(s?[\d]+|m|s)?\./' => null,
-    '/^(\S+\.)?advert/' => null, // TODO dnstype工作不正常，目前主要影响ali系的CNAME，专门加了白名单
+    '/^(\S+\.)?advert/' => ['m' => '$denyallow=alibabacorp.com|alibabadns.com'],
     '/^(\S+\.)?affiliat(es?[0-9a-z]*?|ion[0-9\-a-z]*?|ly[0-9a-z\-]*?)\./' => null, // fixed #406
     '/^(\S+\.)?s?metrics\./' => null, // TODO 覆盖面很大
     '/^(\S+\.)?afgr[\d]{1,2}\.com$/' => null,
@@ -225,8 +225,6 @@ $ARR_WHITE_RULE_LIST = array(
     '@@||tracking-protection.cdn.mozilla.net^' => 1, // #407
     '@@||skydrivesync.policies.live.net^' => 1, // #409
     '@@||dxcloud.episerver.net^' => 1, // #418
-    '@@||advertisement.*.alibabadns.com^' => 1, // #410 ,TODO 等dnstype工作正常就去除
-    '@@||advertisement.alibabacorp.sm.cn^' => 1, // #412, TODO 等dnstype工作正常就去除
 );
 
 //针对上游赦免规则anti-AD不予赦免的规则，即赦免名单的黑名单
