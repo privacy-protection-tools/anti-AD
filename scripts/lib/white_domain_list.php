@@ -224,6 +224,8 @@ return array(
     'chtbl.com' => 0, // #390
     'huoying666.com' => 0, // #405
     'u.huoying666.com' => 0, // #405
+    'hsforms.com' => 0, // #420
+    'hsforms.net' => 0, // #420
 
 
 
