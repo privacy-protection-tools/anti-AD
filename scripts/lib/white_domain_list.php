@@ -226,6 +226,7 @@ return array(
     'u.huoying666.com' => 0, // #405
     'hsforms.com' => 0, // #420
     'hsforms.net' => 0, // #420
+    'jx.cn' => 0, // #423
 
 
 
