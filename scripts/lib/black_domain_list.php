@@ -262,6 +262,8 @@ return array(
     'jd.com' => array(
         'mercury.jd.com', //大数据收集，用户行为埋点上报
         'wl.jd.com',
+        'blackhole.m.jd.com', // #428
+        'firevent.jd.com', // #428
     ),
     'ixigua.com' => array(
         'v3-ad.ixigua.com', //移动广告
