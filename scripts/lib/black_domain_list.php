@@ -588,7 +588,6 @@ return array(
     ),
     'microsoft.com' => array(
         'mobile.pipe.aria.microsoft.com',
-        'events.data.microsoft.com',
     ),
     'leixjun.com' => array(//恶意诱导下载app
         'leixjun.com',

@@ -229,6 +229,8 @@ $ARR_WHITE_RULE_LIST = array(
     '@@||login-ishare.iask.com.cn^' => 1, // #429
     '@@||wechat.ishare.iask.com.cn^' => 1, // #429
     '@@||dw.iask.com.cn^' => 1, // #429
+    '@@||settings-win.data.microsoft.com^' => 1, // #426
+    '@@||insideruser.microsoft.com^' => 1, // #426
 );
 
 //针对上游赦免规则anti-AD不予赦免的规则，即赦免名单的黑名单
