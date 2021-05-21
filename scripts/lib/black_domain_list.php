@@ -1009,6 +1009,26 @@ return array(
         'www.pkkjxs.cn',
         'windows.pkkjxs.cn',
     ),
+    'telegram-cn.org' => array( #431
+        'telegram-cn.org',
+        'www.telegram-cn.org',
+    ),
+    'telegram-vip.com' => array( #431
+        'telegram-vip.com',
+        'www.telegram-vip.com',
+    ),
+    'telegramcn.org' => array( #431
+        'telegramcn.org',
+        'www.telegramcn.org',
+    ),
+    'telegrcn.org' => array( #431
+        'telegrcn.org',
+        'www.telegrcn.org',
+    ),
+    'telegramsvip.com' => array( #431
+        'telegramsvip.com',
+        'www.telegramsvip.com',
+    ),
     
     
     
