@@ -227,6 +227,7 @@ return array(
     'hsforms.com' => 0, // #420
     'hsforms.net' => 0, // #420
     'jx.cn' => 0, // #423
+    'qualtrics.com' => 0, // #434
 
 
 
