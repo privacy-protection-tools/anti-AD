@@ -22,12 +22,20 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
       # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
+      - name: Run
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          sh ./scripts/make-all-list.sh
+          git stash -u
+          git checkout dev
+          git checkout stash@{0}^3 -- adblock-for-dnsmasq.conf
+          git checkout stash@{0}^3 -- anti-ad-*
+          git add *
+          git commit -am "Auto renew the anti-AD list."
+          git stash clear
+      - name: push
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.PERSON_TOKEN }}
+          branch: 'dev'
+      
