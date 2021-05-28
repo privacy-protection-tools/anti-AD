@@ -25,7 +25,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run
         run: |
-          sh ./scripts/make-all-list.sh
+          sh ./scripts/build-list.sh
           git stash -u
           git checkout dev
           git checkout stash@{0}^3 -- adblock-for-dnsmasq.conf
