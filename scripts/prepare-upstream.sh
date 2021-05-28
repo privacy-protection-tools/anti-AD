@@ -109,10 +109,3 @@ cat easylist*.txt | grep -E "^\|\|?([^\^=\/:]+)?\*([^\^=\/:]+)?\^" | sort | uniq
 cat easylist*.txt | grep -E "^@@\|\|?[^\^=\/:]+?\^([^\/=\*]+)?$" | sort | uniq >whiterule-src-easylist.txt
 
 cd ../
-
-php make-addr.php
-echo
-cp ../anti-ad-easylist.txt ../anti-ad-adguard.txt
-php ./tools/adguard-extend.php ../anti-ad-adguard.txt
-echo 
-php ./tools/easylist-extend.php ../anti-ad-easylist.txt
