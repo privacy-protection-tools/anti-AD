@@ -25,6 +25,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run
         run: |
+          sudo update-alternatives --set php /usr/bin/php7.4
           /bin/bash ./scripts/build-list.sh
           git stash -u
           git checkout dev
