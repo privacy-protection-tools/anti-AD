@@ -30,6 +30,7 @@ jobs:
       - name: Run
         run: |
           sudo update-alternatives --set php /usr/bin/php7.4
+          git checkout scripts
           /bin/bash ./scripts/build-list.sh
           git stash -u
           git checkout dev
