@@ -230,6 +230,11 @@ return array(
     'qualtrics.com' => 0, // #434
     'assets.ckjr001.com' => 0, // #433
     'kpstaticbj.wx.ckjr001.com' => 0, // #433
+    'www.supportxmr.com.cdn.cloudflare.net' => 0, // #436
+    'www.supportxmr.com' => 0, // #436
+    'supportxmr.com' => 0, // #436
+    'pool.supportxmr.com' => 0, // #436
+    'pool-de.supportxmr.com' => 0, // #436
 
 
 
