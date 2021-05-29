@@ -1,16 +1,15 @@
 name: sync list to dist
 
 on:
-  schedule:
-    - cron: "16 13 */3 * *"
   push:
     branches: 
       - 'master'
     paths: 
-      - 'anti-ad-*.txt'
-      - 'anti-ad-*.conf'
-      - 'anti-ad-*.yaml'
+      - 'anti-ad-**.*'
       - 'adblock-for-dnsmasq.conf'
+  schedule:
+    - cron: "16 13 */3 * *"
+  workflow_dispatch:
 
 jobs:
   build:
