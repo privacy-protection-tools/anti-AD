@@ -3,10 +3,6 @@
 name: download upstream
 
 on:
-  push:
-    branches: [ adlist-maker ]
-    paths:
-      - '**.php'
   schedule:
     - cron:  '30 18 */3 * *'
   workflow_dispatch:
@@ -32,6 +28,7 @@ jobs:
       - name: push
         uses: ad-m/github-push-action@master
         with:
+          branch: 'adlist-maker'
           github_token: ${{ secrets.PERSON_TOKEN }}
       - name: sync
         run: |
