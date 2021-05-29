@@ -21,10 +21,10 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - name: co master
+      - name: co dev
         uses: actions/checkout@v2
         with:
-          ref: 'master'
+          ref: 'dev'
 
       # Runs a set of commands using the runners shell
       - name: Run
@@ -35,7 +35,7 @@ jobs:
           git checkout scripts
           /bin/bash ./scripts/build-list.sh
           git stash -u
-          git checkout master
+          git checkout dev
           git checkout stash@{0}^3 -- adblock-for-dnsmasq.conf
           git checkout stash@{0}^3 -- anti-ad-*
           git add *
@@ -45,5 +45,5 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.PERSON_TOKEN }}
-          branch: 'master'
+          branch: 'dev'
       
