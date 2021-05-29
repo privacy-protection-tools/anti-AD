@@ -1,2 +1,0 @@
-<?php
-die('anti-AD');
