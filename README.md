@@ -47,8 +47,9 @@ anti-AD在自我认知上始终是一个非主流的小众项目，受众群体�
 加入QQ群更实时的交流：716981535 <br>
 ![716981535](https://user-images.githubusercontent.com/1243610/73809320-de535780-480d-11ea-82f5-15d4c3ccb0c0.png)
 
-## Special Thanks to
+## Special Thanks To
 
+- [fanboy-annoyance](https://easylist.to/easylist/fanboy-annoyance.txt) - 优秀的easylist列表
 - [notracking/hosts-blocklists-scripts](https://github.com/notracking/hosts-blocklists-scripts) - 提供无效域名和无效hosts列表
 - [Adblock Plus](https://adblockplus.org/) - 畅游清爽洁净的网络！
 - [neoFelhz/neohosts](https://github.com/neoFelhz/neohosts) - 自由·负责·克制 去广告 Hosts 项目
