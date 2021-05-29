@@ -3,6 +3,7 @@
 
 //这个文件主要定义针对hosts文件中不能泛域名解析而优化减少生成行数
 //对于个性化屏蔽的域名，全部移动到block_domains.root.conf中管理
+//
 
 return array(
     'f2pool.com' => array('openvpn.f2pool.com'),
