@@ -37,4 +37,7 @@ jobs:
         with:
           github_token: ${{ secrets.PERSON_TOKEN }}
           branch: 'master'
+      - name: sync
+        run: |
+          curl -s -m 30 -X POST "$GITHUB_API_URL/repos/$GITHUB_REPOSITORY/actions/workflows/sync-to-dist.yml/dispatches" -H "Accept: application/vnd.github.v3+json" -H "Authorization: token ${{ secrets.PERSON_TOKEN }}" -d '{"ref":"master"}'
       
