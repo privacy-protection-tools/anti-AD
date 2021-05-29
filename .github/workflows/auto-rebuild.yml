@@ -6,7 +6,7 @@ name: Auto rebuild anti-AD list
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [ scripts ]
+    branches: [ adlist-maker ]
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -32,7 +32,7 @@ jobs:
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action[bot]"
           sudo update-alternatives --set php /usr/bin/php7.4
-          git checkout scripts
+          git checkout adlist-maker
           /bin/bash ./scripts/build-list.sh
           git stash -u
           git checkout dev
