@@ -39,7 +39,7 @@ class writerFormat{
     /*easylist 兼容格式的屏蔽广告列表*/
     const EASYLIST = array(
         'format' => '||{DOMAIN}^',
-        'header' => "!Title: anti-AD\n!Version: {DATE}\n!Homepage: {URL}\n!!!note! If you use \"AdGuard\", please load https://anti-ad.net/adguard.txt\n!!!This list only applies to \"AdGuard Home\".\n!Total lines: 00000\n",
+        'header' => "!Title: anti-AD\n!Version: {DATE}\n!Homepage: {URL}\n!!!note! If you are using \"AdGuard\", please load https://anti-ad.net/adguard.txt\n!!!This list only applies to \"AdGuard Home\".\n!Total lines: 00000\n",
         'full_domain' => 0,
         'name' => 'easylist',
         'filename' => '../anti-ad-easylist.txt',
