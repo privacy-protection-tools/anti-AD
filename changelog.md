@@ -1,5 +1,11 @@
 # anti-AD change log
 
+#### v4.5.1 (2021.05.31)
+- 移动构建脚本到[另一个分支](/privacy-protection-tools/anti-AD/tree/adlist-maker)，让默认分支看起来更干净
+- github Actions的针对性优化，优化自动构建逻辑
+- anti-AD仍然是一个完全开源的项目
+- 没有了
+
 #### v4.5.0 (2021.05.02)
 - 重构工具`easylist-extend.php`，优化提升3倍执行效率
 - 修复一部分小bug

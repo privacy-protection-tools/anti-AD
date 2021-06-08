@@ -21,18 +21,16 @@
 
 ## 版本历史
 
+#### v4.5.1 (2021.05.31)
+- 移动构建脚本到[另一个分支](/privacy-protection-tools/anti-AD/tree/adlist-maker)，让默认分支看起来更干净
+- github Actions的针对性优化，优化自动构建逻辑
+- anti-AD仍然是一个完全开源的项目
+- 没有了
+
 #### v4.5.0 (2021.05.02)
 - 重构工具`easylist-extend.php`，优化提升3倍执行效率
 - 修复一部分小bug
 - 开始支持[AdGuardHome新的modifiers](https://github.com/AdguardTeam/AdGuardHome/wiki/Hosts-Blocklists#modifiers)语法(目前测试阶段，adgh本身解析还有bug)
-
-
-#### v4.3 (2020.02.04)
-- 引入无效域名、无效hosts剔除机制，大幅提升各过滤列表命中率
-- 为了更好的支持pi-hole，加入一个新的全域名列表 - `anti-ad-domains.txt`
-- 根据网友 [@xlighting2017](https://github.com/privacy-protection-tools/anti-AD/issues/29) 建议，更新surge的格式
-- 引入数个新的配置参数，对输出结果精确控制
-- 若干bug和逻辑修复
 
 #### [更多版本演进历史>>>](https://github.com/privacy-protection-tools/anti-AD/blob/master/changelog.md)
 
