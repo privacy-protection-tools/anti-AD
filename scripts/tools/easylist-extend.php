@@ -232,6 +232,7 @@ $ARR_WHITE_RULE_LIST = array(
     '@@||settings-win.data.microsoft.com^' => 1, // #426
     '@@||insideruser.microsoft.com^' => 1, // #426
     '@@||metrics.vrch.at^' => 1, // #440
+    '@@||trackings.post.japanpost.jp^' => 1, // #441
 );
 
 //针对上游赦免规则anti-AD不予赦免的规则，即赦免名单的黑名单
