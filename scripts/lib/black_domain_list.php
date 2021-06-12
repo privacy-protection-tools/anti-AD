@@ -1028,9 +1028,15 @@ return array(
         'telegramsvip.com',
         'www.telegramsvip.com',
     ),
-    
-    
-    
+    'ucweb.com' => array( // #442
+        'px-intl.ucweb.com',
+        'gjapplog.ucweb.com',
+    ),
+    'uc.cn' => array( // #442
+        'gjapplog.uc.cn',
+        'applog.ucdns.uc.cn',
+    ),
+
     
     // 批量添加域名
     '0202.com.tw' =>array('0202.com.tw', 'www.0202.com.tw'),
