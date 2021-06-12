@@ -1032,10 +1032,6 @@ return array(
         'px-intl.ucweb.com',
         'gjapplog.ucweb.com',
     ),
-    'uc.cn' => array( // #442
-        'gjapplog.uc.cn',
-        'applog.ucdns.uc.cn',
-    ),
 
     
     // 批量添加域名
@@ -1602,6 +1598,8 @@ return array(
     'uc.cn' => array( // dns日志提取
         'coral-task.uc.cn',
         'applogios.uc.cn', // uc log
+        'gjapplog.uc.cn', // #442
+        'applog.ucdns.uc.cn', // #442
     ),
     'sm.cn' => array( // dns日志提取
         'huichuan-mc.sm.cn',
