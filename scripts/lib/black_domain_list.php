@@ -1032,6 +1032,14 @@ return array(
         'px-intl.ucweb.com',
         'gjapplog.ucweb.com',
     ),
+    'tradplus.cn' => array( // #444
+        'tradplus.cn',
+    ),
+    'tradplus.com' => array( // #444
+        'tradplus.com',
+    ),
+    
+    
 
     
     // 批量添加域名
