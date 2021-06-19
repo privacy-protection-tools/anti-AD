@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202106151250
+! Version: 202106191647
 ! Title: Fanboy's Annoyance List
-! Last modified: 15 Jun 2021 12:50 UTC
+! Last modified: 19 Jun 2021 16:47 UTC
 ! Expires: 4 days (update frequency)
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -3935,7 +3935,7 @@ _youtube_social_
 /cookie-prompt.
 /cookie-reglement.
 /cookie-richtlinie.
-/cookie-script.
+/cookie-script.$domain=~cookie-script.com
 /cookie-service/*
 /cookie-terms.
 /cookie-warning.
@@ -5090,6 +5090,7 @@ _vpcookieconsent/
 ###js-outbrain-relateds
 ###js-outbrain-under-article
 ###outbrain
+###outbrain-section
 ###outbrain1
 ###outbrainWidget
 ###outbrain_widget_0
@@ -5726,6 +5727,7 @@ _vpcookieconsent/
 ###overlayPopinNewsletter
 ###pcm-subscribe
 ###pf-newsletter-form
+###piano-newsletter-inline
 ###pnlFooterNewsletterSignup
 ###popinNewsletter
 ###popular-newsletter
@@ -6318,6 +6320,7 @@ _vpcookieconsent/
 ##.ft_newsletter
 ##.ftop-scrolltop
 ##.ftr-nwsltr
+##.fuzoBox--newsletter
 ##.fxs_suscribe
 ##.g1-newsletter
 ##.gcap-layout-popup
@@ -6923,6 +6926,7 @@ _vpcookieconsent/
 ##.ph-optin
 ##.piano--sidebar
 ##.piano-inline-promo
+##.piano-newsletter
 ##.plugin-newsletter
 ##.plugin-newsletter__inner
 ##.pmc-newsletter
@@ -8064,7 +8068,6 @@ _vpcookieconsent/
 ##.mk-go-top
 ##.mnmd-go-top
 ##.mod-totop
-##.move-top
 ##.ms-scroll-to-top-button
 ##.mvp-fly-top
 ##.mvp-to-top
@@ -20499,6 +20502,7 @@ _vpcookieconsent/
 ##.tw_icn
 ##.tw_icon
 ##.tw_share
+##.twd-footer-social-stripe
 ##.tweet-article
 ##.tweet-btn
 ##.tweet-btn-container
@@ -25610,6 +25614,7 @@ _vpcookieconsent/
 ###cookinfo
 ###cookinfoDIV
 ###cookinfo_container
+###cookirPolicy
 ###cookis-bg
 ###cookis-box
 ###cookistop
@@ -26047,6 +26052,7 @@ _vpcookieconsent/
 ###enablecookies
 ###enedue_cookieBox
 ###enhanced-privacy-popup
+###ensConsentWidget
 ###ensModalWrapper[aria-labelledby*="Consent"]
 ###ensNotifyBanner
 ###ens_pr_mini.ens_pr_mini
@@ -28339,6 +28345,7 @@ _vpcookieconsent/
 ###vueGdpr
 ###vue_cookielaw
 ###vvc_cookie
+###vwdCookieBar
 ###w-cookies-notice
 ###w18lara_tgplugin_consent
 ###w2u_cookie_notice
@@ -29203,6 +29210,7 @@ _vpcookieconsent/
 ##.block-cookies-dialog-block
 ##.block-cookies-information
 ##.block-cookies-popup
+##.block-cookies-warning
 ##.block-info-cookie
 ##.block-lsw-cookie
 ##.block-notification--cookies
@@ -31083,6 +31091,7 @@ _vpcookieconsent/
 ##.cookies-directive
 ##.cookies-disclaimer
 ##.cookies-disclaimer-bar
+##.cookies-disclaimer-wrapper
 ##.cookies-disclosure-overlay
 ##.cookies-div
 ##.cookies-div-footer
@@ -31751,8 +31760,8 @@ _vpcookieconsent/
 ##.eu-cookie
 ##.eu-cookie-banner
 ##.eu-cookie-bar-notification
-##.eu-cookie-compliance-banner
 ##.eu-cookie-compliance-banner-info
+##.eu-cookie-compliance-banner:not(body):not(html)
 ##.eu-cookie-compliance-popup-open
 ##.eu-cookie-info
 ##.eu-cookie-law
@@ -32094,6 +32103,7 @@ _vpcookieconsent/
 ##.gdprLegalNotification
 ##.gdprManagerMessage
 ##.gdprMessage
+##.gdprModal__placeholder
 ##.gdprNotice
 ##.gdprPopup
 ##.gdpr[data-gdpr-popup]
@@ -32438,6 +32448,7 @@ _vpcookieconsent/
 ##.js-cookie-message
 ##.js-cookie-monster-overlay
 ##.js-cookie-msg
+##.js-cookie-notation
 ##.js-cookie-notice
 ##.js-cookie-notification
 ##.js-cookie-notification-banner
@@ -34640,7 +34651,6 @@ _vpcookieconsent/
 ||getmailcounter.com^$third-party
 ||getresponse.com^$third-party
 ||getscoutapp.com^$third-party
-||getsitecontrol.com^$third-party
 ||getsmily.com^$third-party
 ||githubbadge.appspot.com^$third-party
 ||givealittle.co.nz/widget/$subdocument,third-party
@@ -35534,6 +35544,7 @@ _vpcookieconsent/
 ||aish.com^*-Subscribe-
 ||aish.com^*/Newsletter-
 ||amazonaws.com^*/subscription/
+||artdaily.cc/subscribe.html
 ||attn.com/survey
 ||bestbuy.com^*/email_submission_modal.
 ||bluntforcetruth.com^*/newsletter.
@@ -35574,6 +35585,7 @@ _vpcookieconsent/
 ||premierchristianradio.com^*/Stay-informed-
 ||pym.nprapps.org^$domain=dw.com
 ||reclaimthenet.org^*/subs.jpg
+||researchnews.cc/subscribe.html
 ||revntv.com^*-Subscribe-
 ||rferl.org/a/29791891.html
 ||sassyhongkong.com^*-mailchimp-
@@ -39202,6 +39214,9 @@ newsweek.com##.subscribe-block-wrapper
 time.com##.subscription-cta
 stuff.co.nz##.support-brief-container
 stuff.co.nz##.ta.t9.t8
+pjmedia.com##.thm-piano-bottom
+pjmedia.com,townhall.com##.thm-piano-eop
+redstate.com##.tp-container-inner
 thenationalpulse.com##.widget_media_image
 youtube.com##.ytd-statement-banner-renderer
 zerohedge.com##[class^="Banner_"]
@@ -39437,7 +39452,7 @@ thepostgame.com###pageModalDimmed
 perezhilton.com###ph_classic_nlf
 perezhilton.com###ph_classic_nlf_bg
 adage.com###piano-inline_nsl
-newstatesman.com,radioandmusic.com###popup
+artdaily.cc,newstatesman.com,radioandmusic.com,researchnews.cc###popup
 thegolfnewsnet.com###popup-box-gfcr-1
 space.com,tomshardware.co.uk,tomshardware.com###popup-modal
 thrillist.com###popup-signup
@@ -39672,6 +39687,7 @@ gq-magazine.co.uk##.c-infobar-wrapper
 newstalkzb.co.nz##.c-promo
 nature.com##.c-site-messages
 politico.com##.california-playbook-sign-up-right-rail
+a16z.com##.call-to-action
 npr.org##.callout
 cars.com##.captureFormEditorial
 time.com##.cartoon-newsletter-container
@@ -39702,6 +39718,7 @@ cheatsheet.com##.cs-related-links
 nytimes.com##.css-mlcs8h.shown
 recipetineats.com##.cta
 thecourier.co.uk##.cta--bg
+axios.com##.cta--modal
 rewire.news##.cta-a
 gazette-news.co.uk,worcesternews.co.uk,yourlocalguardian.co.uk##.cta-component-half-width
 digg.com##.cta-stories
@@ -39898,6 +39915,7 @@ thenewcivilrightsmovement.com##.join
 braindecoder.com##.join-widget
 thedodo.com##.join-widget-container
 authoritynutrition.com##.joinus
+plough.com##.jotform-feedback-link
 wired.com##.journey-template--in-content
 newatlas.com##.jqmOverlay
 smarteranalyst.com##.jquery-modal
@@ -40642,6 +40660,7 @@ buzzfeed.com##div[id^="mod-newsletter-signup-"]
 ! #include easylist_cookie/easylist_cookie_specific_uBO.txt
 ! #include fanboy_annoyance_specific_uBO.txt
 ! *** easylist:fanboy-addon/fanboy_notifications_specific_hide.txt ***
+tbsnews.net###___tbspushdiv
 kizi.com###kizi-popover-dialog
 livejapan.com###ptcd_modal_dialog
 google.com###pushdown
@@ -40687,6 +40706,7 @@ reddit.com##.AppSelectorModal__body
 financialexpress.com,indianexpress.com##.app-btn
 ebay.com##.app-download-banner
 sportskeeda.com##.app-download-modal
+gumtree.com.au##.app-download-wrapper
 cricbuzz.com##.cbz-leaderboard-banner
 9gag.com##.download-app-container
 9gag.com##.get-the-app-banner
@@ -41649,6 +41669,7 @@ fusion.net,onegreenplanet.org,ryot.org##.reveal-modal-bg
 gdnonline.com##.right
 thehindubusinessline.com##.right-promo
 ehow.com##.right-rail-promo
+dailycaller.com##.rounded-full
 bing.com##.rq_stxt
 belivehotels.com##.rrss
 artstation.com##.s-bar
@@ -42528,6 +42549,7 @@ huawei.com##.ReadPolicy
 drweb.com##.SHOWIT-msg_showed
 cnn.com##.TermsOfService__component
 mtn.co.za##.Toast
+lareviewofbooks.org##.Toastify
 6abc.com,abc11.com,abc13.com,abc30.com,abc7.com,abc7chicago.com,abc7news.com,abc7ny.com##.Tooltip
 hotcleaner.com##.V9
 hotcleaner.com##.XNKr
@@ -42721,6 +42743,7 @@ linkedin.com##.global-alert
 houseoffraser.co.uk##.global-messages
 mozilla.org##.global-notice
 wankz.com##.global-notif
+cookiebot.com##.granify-widget-container
 guggenheim.org##.guggen-consent
 office.com##.headPopup
 veeam.com##.header-component__messages-overlay
@@ -43250,6 +43273,7 @@ wdr.de##a[href="#goToHead"]
 antennebrandenburg.de,conleys.de,israelheute.com,radioberlin.de,vodafone.de##a[href="#top"]
 ||focus.de/fol/pics/special/informiert.gif
 ||gluecksdetektiv.de/wp-content/plugins/easy-fancybox-pro/
+||google.com/search?$popup,domain=lolmt2.com
 ||mdsngpush.finanzen.net^
 ||stncdn.it^*/smartbanner.
 ||valentins.de^*/glyphicon_up.
@@ -43695,6 +43719,7 @@ eprice.it###fastRegBottom
 bastabugie.it###feed
 creditofondiario.eu###financity-footer-back-to-top-button
 ilgiornale.it###footer_map_col_1
+financecommunity.it###footernews
 ilquotidianodellazio.it###form-newsletter
 advisoronline.it###formSubscriptionDiv
 autobelle.it###freccetta
@@ -43721,6 +43746,7 @@ callipo.com###nav_up
 sacecomponents.com###neko-to-top
 gamblingitalia.com,lacnews24.it,lintellettualedissidente.it,misya.info,monitorimmobiliare.it,radiospeaker.it,rivistastudio.com,silhouettedonna.it,soldioggi.it,sscnapoli.it,termometropolitico.com,termometropolitico.it,terranuova.it,valgardena.it###newsletter
 distribuzionemoderna.info###nsl
+virgilio.it###ob_sf
 lasicilia.it###overbox_ticker_newsstand
 it.hisamitsu###pageTop
 ansa.it###pg-slide
@@ -44909,6 +44935,11 @@ lescienze.it,unica.it##.seguici
 askanews.it##.seguici_footer
 chiesi.com##.seguicisu
 superguidatv.it##.sgtv_divRowContent_messenger_subscribe
+giornaleradio.fm##.sh_fb
+giornaleradio.fm##.sh_li
+giornaleradio.fm##.sh_te
+giornaleradio.fm##.sh_tw
+giornaleradio.fm##.sh_wa
 alfredopedulla.com,amica.it,areanapoli.it,autoline-eu.it,basketinside.com,blogtivvu.com,brundisium.net,carpicalcionews.it,cdt.ch,cittaceleste.it,comune.torino.it,coopcasarsa.it,corriere.it,corsedimoto.com,deejay.it,famigliacristiana.it,fantamagazine.com,fcinter1908.it,foodnetwork.it,forzaroma.info,funweek.it,gazzamercato.it,gazzetta.it,gettyimages.it,golssip.it,ildolomiti.it,ilmilanista.it,ilsecoloxix.it,ilsussidiario.net,intesasanpaolo.com,isaechia.it,itasportpress.it,juvenews.eu,landrover.it,lastampa.it,lifegate.it,mediagol.it,megasesso.com,metropolitano.it,miur.gov.it,mobilita.org,mondoudinese.it,numericalcio.it,padovasport.tv,paginegialle.it,panorama.it,passioneinter.com,pianetagenoa1893.net,pianetamilan.it,ravennanotizie.it,repubblica.it,reteimprese.it,sassuolocalcionews.it,sportavellino.it,supereva.it,tag43.it,tenniscircus.com,tivusat.tv,toronews.net,trend-online.com,tuttobolognaweb.it,violanews.com##.share
 ilmeteo.net##.shared
 mediaset.it,meteo.it##.shr
@@ -46514,6 +46545,7 @@ aquaphor.ru###modal-kuki
 forum-windows.net###ntf
 rgs.ru###rgs-main-context-bar
 linux-info.ru###trumpet_message
+gamefuelmasters.ru##.H5Cmzb7vlc1Q28uw4l-Bv
 drweb.ru##.SHOWIT-msg_showed
 ngnovoros.ru##._1TNYbgH
 oreluniver.ru##.accept
@@ -46896,6 +46928,7 @@ infiniti-vietnam.com.vn##.c_128
 ||tmgrup.com.tr^*/tmdconsent-
 ! 
 ! ---------- Ukrainian ----------
+||consent.themeteocompany.com^
 ! ---------------------------------Allowlists----------------------------------!
 ! *** easylist:fanboy-addon/fanboy_annoyance_allowlist_general_hide.txt ***
 nasa.gov#@##BackToTop
@@ -47276,7 +47309,7 @@ pinterest.com#@#.pinterestComponentShare
 marieclaire.ru#@#.pinterestShare
 privatecore.com#@#.post-fb
 facebook.com#@#.post-fb-like
-23-59.com.ua,dietetycy.org.pl,freerider.ro,gaystarnews.com,kliknijwzdrowie.pl,maze.fr,pokoleniesmart.pl,pruszkow.pl,thewire.in,tidssonen.no,truepundit.com,vanillamagazine.it,velodaily.ru#@#.post-share-container
+23-59.com.ua,dietetycy.org.pl,freerider.ro,gaystarnews.com,greekcitytimes.com,kliknijwzdrowie.pl,maze.fr,pokoleniesmart.pl,pruszkow.pl,thewire.in,tidssonen.no,truepundit.com,vanillamagazine.it,velodaily.ru#@#.post-share-container
 imgur.com#@#.post-share-panel
 reddit.com#@#.post-sharing
 ain.ua,guildwars2.com#@#.post-social
@@ -47405,6 +47438,7 @@ f-secure.com,howtogeek.com#@#.social-media-buttons
 telepolis.pl#@#.social-media-icons
 chorus.co.nz#@#.social-media-links
 schuermann.eu#@#.social-media-list
+hopin.com#@#.social-media:not(html):not(body)
 insideover.com#@#.social-menu
 e-gezondheid.be,e-sante.be,e-sante.fr#@#.social-networks
 nvidia.pl#@#.social-newsletter
@@ -47635,7 +47669,7 @@ pekao.com.pl#@##gdpr-popup
 mirjan24.pl#@##gdpr:not(body):not(html):not(input):not(button)
 airfrance.ae,airfrance.am,airfrance.at,airfrance.be,airfrance.bf,airfrance.bg,airfrance.bj,airfrance.ca,airfrance.cd,airfrance.cg,airfrance.ch,airfrance.cl,airfrance.cm,airfrance.co.ao,airfrance.co.il,airfrance.co.jp,airfrance.co.kr,airfrance.co.th,airfrance.co.uk,airfrance.co.za,airfrance.com,airfrance.com.ar,airfrance.com.au,airfrance.com.br,airfrance.com.cn,airfrance.com.co,airfrance.com.do,airfrance.com.eg,airfrance.com.hk,airfrance.com.jo,airfrance.com.kh,airfrance.com.lb,airfrance.com.mx,airfrance.com.tr,airfrance.com.tw,airfrance.com.uy,airfrance.cz,airfrance.de,airfrance.dj,airfrance.dk,airfrance.dz,airfrance.es,airfrance.fi,airfrance.fr,airfrance.ga,airfrance.gf,airfrance.gp,airfrance.hr,airfrance.ht,airfrance.hu,airfrance.id,airfrance.ie,airfrance.in,airfrance.it,airfrance.lu,airfrance.ma,airfrance.mg,airfrance.ml,airfrance.mq,airfrance.mu,airfrance.my,airfrance.nc,airfrance.ne,airfrance.ng,airfrance.nl,airfrance.no,airfrance.pa,airfrance.pe,airfrance.pf,airfrance.pl,airfrance.pt,airfrance.re,airfrance.ro,airfrance.rs,airfrance.ru,airfrance.sa,airfrance.se,airfrance.sg,airfrance.si,airfrance.sk,airfrance.sn,airfrance.tg,airfrance.tn,airfrance.ua,airfrance.us,airfrance.vn#@##gdpr_popin
 taloon.com#@##gdprpopup
-ansa.it,capital.it,huffingtonpost.it,m2o.it,meteo.it,rockol.it,video.deejay.it,video.espresso.repubblica.it,video.ilsecoloxix.it,video.lanuovasardegna.it,video.lastampa.it,video.rep.repubblica.it,video.repubblica.it#@##iubenda-cs-banner
+ansa.it,capital.it,huffingtonpost.it,leggo.it,m2o.it,meteo.it,rockol.it,video.deejay.it,video.espresso.repubblica.it,video.ilsecoloxix.it,video.lanuovasardegna.it,video.lastampa.it,video.rep.repubblica.it,video.repubblica.it#@##iubenda-cs-banner
 krone.at#@##krn-privacy-center
 bosch-mobility-solutions.com#@##m-cookie-overlay
 imoradar24.ro#@##modal-cookies
@@ -47784,7 +47818,7 @@ airfrance.ae,airfrance.am,airfrance.at,airfrance.be,airfrance.bf,airfrance.bg,ai
 totalcasino.pl#@#.gdpr-popup
 wufoo.com#@#.gdpr-prompt
 booking.pobeda.aero,coastalliving.com,commercialtrucktrader.com,cookinglight.com,esselunga.it,essence.com,ew.com,food.com,fortune.com,gct.com,golf.com,health.com,hellogiggles.com,instyle.com,metallica.com,mirjan24.pl,my.games,nytimes.com,people.com,realsimple.com,si.com,southernliving.com,time.com,travelandleisure.com#@#.gdpr:not(body):not(html)
-ansa.it#@#.iubenda-cs-content
+ansa.it,leggo.it#@#.iubenda-cs-content
 suzuki.co.nz#@#.js-cookie
 geleidehond.nl#@#.js-cookie-alert
 uniroyal.pl#@#.js-cookie-banner
@@ -48111,7 +48145,7 @@ yoigo.com#@#thor-cookies
 @@||idg.se/idg-consent.min.js$script
 @@||internazionale.it/assets/js/cookies_gdpr.js?
 @@||iubenda.com/cookie_solution/$script,domain=iphoneitalia.com|quotidiano.net
-@@||iubenda.com^$script,subdocument,xmlhttprequest,domain=105.net|3bmeteo.com|ansa.it|capital.it|huffingtonpost.it|ilmessaggero.it|m2o.it|mediaset.it|meteo.it|quotidiano.net|r101.it|radiomontecarlo.net|rockol.it|video.deejay.it|video.espresso.repubblica.it|video.ilsecoloxix.it|video.lanuovasardegna.it|video.lastampa.it|video.rep.repubblica.it|video.repubblica.it|virginradio.it
+@@||iubenda.com^$script,subdocument,xmlhttprequest,domain=105.net|3bmeteo.com|ansa.it|capital.it|huffingtonpost.it|ilmessaggero.it|leggo.it|m2o.it|mediaset.it|meteo.it|quotidiano.net|r101.it|radiomontecarlo.net|rockol.it|video.deejay.it|video.espresso.repubblica.it|video.ilsecoloxix.it|video.lanuovasardegna.it|video.lastampa.it|video.rep.repubblica.it|video.repubblica.it|virginradio.it
 @@||kalaydo.de^*/cookie-consent.jsc.js$domain=kalaydo.de
 @@||kjellmann.no^*/cookielaw/css/cookielaw.css$stylesheet
 @@||meine.postbank.de/translations/*-cookieDisclaimer-*.json$~third-party,xmlhttprequest
