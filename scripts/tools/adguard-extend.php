@@ -26,7 +26,7 @@ $ARR_MERGED_WILD_LIST = array(
     'vs*.gzcu.u3.ucweb.com' => null,
     'ad*.goforandroid.com' => null,
     'bs*.9669.cn' => null,
-    '*serror*.wo.com.cn' => ['m' => '$dnstype=A|CNAME'],
+    '*serror*.wo.com.cn' => null,
     '*mistat*.xiaomi.com' => null,
     'affrh20*.com' => null,
     'assoc-amazon.*' => null,
