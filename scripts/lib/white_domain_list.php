@@ -236,6 +236,7 @@ return array(
     'pool.supportxmr.com' => 0, // #436
     'pool-de.supportxmr.com' => 0, // #436
     'minergate.com' => 0, // #439
+    'imagetwist.com' => 0, // #447
 
 
 
