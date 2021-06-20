@@ -133,6 +133,7 @@ $ARR_MERGED_WILD_LIST = array(
     'da.hornbach.*' => null,
     '*us*watcab*.blob.core.windows.net' => null,
     'xn--wxtr9fwyxk9c.*' => null,
+    'tuiguang.*' => null,
 );
 
 $ARR_REGEX_LIST = array(
