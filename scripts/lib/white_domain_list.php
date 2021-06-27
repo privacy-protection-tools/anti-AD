@@ -239,6 +239,8 @@ return array(
     'imagetwist.com' => 0, // #447
     'www.kanjiantu.com' => 0, // #451
     'kanjiantu.com' => 0, // #451
+    'edge-enterprise.activity.windows.com' => 0, // #401
+    'edge.activity.windows.com' => 0, // #401
 
 
 
