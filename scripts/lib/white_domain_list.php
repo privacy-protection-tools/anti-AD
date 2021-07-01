@@ -241,6 +241,7 @@ return array(
     'kanjiantu.com' => 0, // #451
     'edge-enterprise.activity.windows.com' => 0, // #401
     'edge.activity.windows.com' => 0, // #401
+    'ahd.ruten.com.tw' => 0, // #453
 
 
 
