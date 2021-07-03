@@ -611,6 +611,9 @@ return array(
     ),
     'huya.com' => array(
         'ylog.huya.com', // #86
+        'metric.huya.com', // https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
+        'statwup.huya.com', // https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
+        'e-stat.huya.com', // https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
     ),
 
     'grammarly.io' => array(
