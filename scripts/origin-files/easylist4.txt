@@ -1,4 +1,4 @@
-! Version: 20210709171522
+! Version: 20210714000600
 ! Title: adgk手机去广告规则
 ! Homepage: https://github.com/banbendalao/ADgk
 ! by: 坂本dalao
@@ -49,7 +49,6 @@ t66y.com$$script[tag-content="r9aeadS"]
 ||lc-cn-n1-shared.com^
 ||daa.shuzilm.cn^
 ||sdk.api.bjshcw.com^
-/:\d{5}\//$third-party,domain=~copymanga.com
 ||api2.coolapk.com/v6/feed/detail^$replace=/hotSponsorCard//
 ||api2.coolapk.com/v6/feed/detail^$replace=/detailSponsorCard//
 ||pinlue.com/style/js/common.js
@@ -204,7 +203,7 @@ game.eroge.xyz$$a[onclick="trackOutboundLink"]
 ||othstr.beacon.qq.com^
 ||ssp.qq.com^
 _ad/*.js*$domain=~mp.weixin.qq.com
-||evtubescms.phncdn.com^$mp4
+||evtubescms.phncdn.com^$redirect=noopmp4-1s
 ||logs.nandu.com^
 /log.gif^
 ||log.snssdk.com^
@@ -576,7 +575,6 @@ vikacg.com$$a[onclick="trackOutboundLink"]
 /ad_video_report
 /video_ad_iframe
 ||tracker*.qcloud.com^
-/1.gif^
 /js/20X4.js
 /js/fumeiti.js
 /ssads.js
@@ -843,11 +841,11 @@ $$div[class="ad-content"]
 /[a-z]+\d+\.cnzz\./
 ||m.sm.cn$third-party
 $$div[class="-ad-"]
-||data.video.ptqy.gitv.tv/videos/other/$mp4
+||data.video.ptqy.gitv.tv/videos/other/$redirect=noopmp4-1s
 ##div.a_mu,tr.ad,div.wp.a_f,div.a_fl.a_cb,div.a_fr.a_cb
 v*-dy.ixigua.com/*/video/m/$app=~com.ss.android.ugc.aweme
 ||img.piaosugo.com*.jpg
-||atm.cp31.ott.cibntv.net$media,MP4
+||atm.cp31.ott.cibntv.net$media,redirect=noopmp4-1s
 /imgad^
 ||cpoml.iask.sina.com.cn^$empty
 ||sl.sogoucdn.com/semob$empty,popup
@@ -1136,7 +1134,6 @@ www.iqiyi.com/*.html##.rightpcadv,.pca-img
 58.com##.bban,.fcj_leftfix,#brand_bottom_banner,#home_fl_wrap,#pc_banner,#brand_top_banner
 5857.com###b_downfile
 590103.idv.tw##.ads160_600-widget
-591hx.com##div.banner,img[alt*="���"]
 5di.tv###topnotice,#sponsorAdDiv,.yhq,.wx-yqgz,.layui-layer-shade,[height="90"]
 5dm.tv##[src*="sinaimg.cn"]
 5imx.com###diy1,[width="166"],.ad3,.ad2
@@ -6422,8 +6419,8 @@ youku.com##.right-sidepopup,div[id^=ab_v_],li.js-draw,#yk-player-curtain
 ||adashbc.m.taobao.com/rest^$third-party
 ||api-ad.sensetime.com/sensear/v2/sdk/*$third-party
 ||bd.hd.sohu.com/mobile_stat/stat^$app=com.sohu.sohuvideo
-||dx-bdcdncnc.inter.71edge.com/videos/other^$domain=iqiyi.com,mp4
-||v-dd*.*edge.com/videos/other^$domain=iqiyi.com,mp4
+||dx-bdcdncnc.inter.71edge.com/videos/other^$domain=iqiyi.com,redirect=noopmp4-1s
+||v-dd*.*edge.com/videos/other^$domain=iqiyi.com,redirect=noopmp4-1s
 ||pic0.iqiyipic.com/common/*/*.jpg$domain=iqiyi.com,third-party
 ||api.weibo.cn/2/push^$third-party
 ||homepage-gw.jd.com/npromotion^$third-party
@@ -6446,7 +6443,7 @@ m.cr173.com###down_d1_1,UL.g-theme-ul,DIV.g-game-recomd g-relate-cms,DIV.f-morea
 ||m.haiduomi.com/template/vfed/asset/js/sidebar.js?v=3.1.0$domain=m.haiduomi.com
 ||sdk.pigqq.com/discover^
 @@||e.crashlytics.com/spi/v2/events$app=com.gedoor.monkeybook
-||lmbsy.qq.com/flv^$domain=v.qq.com,mp4
+||lmbsy.qq.com/flv^$domain=v.qq.com,redirect=noopmp4-1s
 ||api.huoshan.com/gecko/server^$app=com.ss.android.article.news
 ||s*z.pstatp.com/site/download/app/pl/news_article/68004/ss_plugin_config.json$app=com.ss.android.article.news
 ||pic*.58cdn.com.cn/brandpic/car^$app=com.ss.android.article.news
@@ -8469,7 +8466,7 @@ $$span[class="dmcenterb"]
 ||ddl.3g567.com^
 ||bzclk.baidu.com^
 $$div[class="bannerBottom"]
-||*/videos/other*.f4v*$mp4,domain=www.iqiyi.com|m.iqiyi.com
+||*/videos/other*.f4v*$redirect=noopmp4-1s,domain=www.iqiyi.com|m.iqiyi.com
 m.aliyun.com###guid-1351324
 ||www.wesiedu.com^
 ||m.xuwm6.cn^
@@ -9210,7 +9207,7 @@ baidu.com$$section[class="hint-fold-results-wrapper hint-no-fold"]
 ||omlube.com^
 ||ch-hr12333.com^
 ||iche88.cn^
-||data.video.iqiyi.com/videos/other/*.mp4?*random=ad$mp4
+||data.video.iqiyi.com/videos/other/*.mp4?*random=ad$redirect=noopmp4-1s
 ||app.market.xiaomi.com/apm/search/hotword?searchHotSource
 ||app.market.xiaomi.com/apm/secondfloor?
 ||video-api.yql.yahoo.com^lcvfar.com^
