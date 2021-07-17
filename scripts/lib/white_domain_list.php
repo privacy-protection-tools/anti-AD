@@ -242,6 +242,7 @@ return array(
     'edge-enterprise.activity.windows.com' => 0, // #401
     'edge.activity.windows.com' => 0, // #401
     'ahd.ruten.com.tw' => 0, // #453
+    'cdn.ark.qq.com' => 0, // #461
 
 
 
