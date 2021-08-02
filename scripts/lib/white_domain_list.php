@@ -247,6 +247,7 @@ return array(
     'stat.10jqka.com.cn' => 0, // #463
     'ozone.10jqka.com.cn' => 0, // #463
     'gleam.io' => 0, // #472
+    'sogoucdn.com' => 0, // #471
 
 
 
