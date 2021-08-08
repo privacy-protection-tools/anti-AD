@@ -1041,6 +1041,10 @@ return array(
     'tradplus.com' => array( // #444
         'tradplus.com',
     ),
+    'qutaovip.com' => array( // #473
+        'qutaovip.com',
+        'api-ads.qutaovip.com',
+    ),
     
     
 
