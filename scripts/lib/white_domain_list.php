@@ -265,6 +265,7 @@ return array(
     'd3tglifpd8whs6.cloudfront.net' => 0, // #470
     'd3tsytm1wtjqo2.cloudfront.net' => 0, // #470
     'd5nxst8fruw4z.cloudfront.net' => 0, // #470
+    'whoami.akamai.net' => 0, // #208
 
 
 
