@@ -249,9 +249,22 @@ return array(
     'gleam.io' => 0, // #472
     'sogoucdn.com' => 0, // #471
     'widget.gleamjs.io' => 0, // #472
-
-
-
+    'ipapi.co' => 0, // #470
+    'ip-adress.com' => 0, // #470
+    'ip-api.com' => 0, // #470
+    'ipinfodb.com' => 0, // #470
+    'ipstack.com' => 0, // #470
+    'd10lpsik1i8c69.cloudfront.net' => 0, // #470
+    'd1z2jf7jlzjs58.cloudfront.net' => 0, // #470
+    'd1zgderxoe1a.cloudfront.net' => 0, // #470
+    'd2na2p72vtqyok.cloudfront.net' => 0, // #470
+    'd2r1yp2w7bby2u.cloudfront.net' => 0, // #470
+    'd2wy8f7a9ursnm.cloudfront.net' => 0, // #470
+    'd31qbv1cthcecs.cloudfront.net' => 0, // #470
+    'd35u1vg1q28b3w.cloudfront.net' => 0, // #470
+    'd3tglifpd8whs6.cloudfront.net' => 0, // #470
+    'd3tsytm1wtjqo2.cloudfront.net' => 0, // #470
+    'd5nxst8fruw4z.cloudfront.net' => 0, // #470
 
 
 
