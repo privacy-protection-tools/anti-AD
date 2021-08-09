@@ -1059,6 +1059,7 @@ return array(
     ),
     'oray.net' => array( // #464
         'sl-log.oray.net',
+        'pubsub02.oray.net',
     ),
 
     
