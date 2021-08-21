@@ -237,6 +237,7 @@ $ARR_WHITE_RULE_LIST = array(
     '@@||track.aliexpress.com^' => 1, // #446
     '@@||s.mvconf.f.360.cn^' => 1, // #462
     '@@||widget.1688.com^' => 1, // #469
+    '@@||api.huangye.miui.com^' => 1, // #476
 );
 
 //针对上游赦免规则anti-AD不予赦免的规则，即赦免名单的黑名单
