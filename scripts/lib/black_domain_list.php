@@ -1053,8 +1053,6 @@ return array(
     ),
     'oray.com' => array( // #464
         'tk.oray.com',
-        'pgy.oray.com',
-        'pgy-api.oray.com',
         'sl-tk.oray.com',
     ),
     'oray.net' => array( // #464
