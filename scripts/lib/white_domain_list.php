@@ -266,6 +266,7 @@ return array(
     'd3tsytm1wtjqo2.cloudfront.net' => 0, // #470
     'd5nxst8fruw4z.cloudfront.net' => 0, // #470
     'whoami.akamai.net' => 0, // #208
+    'kaipuyun.cn' => 0, // #479
 
 
 
