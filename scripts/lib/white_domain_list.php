@@ -269,6 +269,7 @@ return array(
     'kaipuyun.cn' => 0, // #479
     'fraudmetrix.cn' => 1, // #480
     'fp.tongdun.net' => 0, // #480
+    'kaptcha.com' => 0, // #481
 
 
 
