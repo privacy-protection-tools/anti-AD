@@ -271,6 +271,7 @@ return array(
     'fp.tongdun.net' => 0, // #480
     'kaptcha.com' => 0, // #481
     'dfcfw.com' => 0, // #482
+    'msedge.net' => 0, // #478
 
 
 
