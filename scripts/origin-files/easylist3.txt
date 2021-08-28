@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202108251211
+! Version: 202108281654
 ! Title: EasyPrivacy
-! Last modified: 25 Aug 2021 12:11 UTC
+! Last modified: 28 Aug 2021 16:54 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -4870,6 +4870,7 @@
 /wadsAdsLoaded/*
 /wanalytics/*
 /watchonline_cookies.
+/wbstats/index/*
 /wcount.php?
 /wdg/tracking-
 /wdg_tracking-
@@ -5110,6 +5111,8 @@
 ://tracking.*/event
 ://tracking.*/tr.js
 ://utm.$domain=~utm.akindi.com|~utm.arc.nasa.gov|~utm.edu|~utm.io|~utm.md|~utm.pansa.pl|~utm.pharos360.com|~utoronto.ca
+;type=eligibleimpression;
+;type=pixel;
 =comscoreAdobeDpvCall&
 =getSideStats&
 =googleanalytics_
@@ -6072,7 +6075,6 @@ _mongo_stats/
 ||capturly.com^$third-party
 ||carambo.la^$third-party
 ||caramel.press^$third-party
-||carrotquest.io^$third-party
 ||casalemedia.com^$third-party
 ||cashburners.com^$third-party
 ||cashcount.com^$third-party
@@ -10270,6 +10272,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||api-location-prd.pelcro.com^$domain=newsweek.com
 ||api.bit.ly/*/clicks?$third-party
 ||api.blink.net/a/
+||api.carrottrack.io^$third-party
 ||api.collarity.com/cws/*http
 ||api.wipmania.com^
 ||apm-engine.meteor.com^$third-party,xmlhttprequest
@@ -10279,6 +10282,8 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||app.yesware.com/t/$third-party
 ||appdynamics.com/geo/$third-party
 ||appinthestore.com/click/
+||apple.com/hvr/mw/v1/spile
+||apple.com/mw/v1/reportAnalytics
 ||apple.www.letv.com^
 ||appliedsemantics.com/images/x.gif
 ||appmifile.com^*/stat/
@@ -14206,6 +14211,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||yandex.*/clck/$~ping
 ||yandex.*/count/
 ||yandex.com/clck/
+||yeptube.com/collect
 ||yimg.com/aaq/wf/wf-darla-
 ||yoox.it/storage/rd/yorb/
 ||youjizzlive.com/api/metrics
@@ -14369,7 +14375,6 @@ techxplore.com##.embed-responsive-trendmd
 ||sourcepoint-mms.mylifetime.com^
 ||sourcepoint.theguardian.com^
 ||sourcepoint.vice.com^
-||sourcepointcmp.bloomberg.com^
 ||telegraph.co.uk/telegraph-advertising/tmg-cmp.min.js
 ||trustarc.mgr.consensu.org/get?
 ||twch.20min.ch^
@@ -24819,7 +24824,6 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ! Consent and video Fixes
 @@||sourcepoint.telegraph.co.uk^$~third-party,xmlhttprequest
 @@||sourcepointcmp.bloomberg.*/ccpa.js$script,domain=bloomberg.co.jp|bloomberg.com
-@@||sourcepointcmp.bloomberg.*/mms/get_site_data$xmlhttprequest,domain=bloomberg.co.jp|bloomberg.com
 ! Cloudflare hcaptcha test
 @@/cdn-cgi/images/trace/captcha/js/h/transparent.gif$image,~third-party
 ! CNAME (Specific allowlists)
@@ -24994,7 +24998,6 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ! 
 @@||adobedtm.com^*/satelliteLib-$script,domain=gigantti.fi
 @@||api.cxense.com/public/widget/data?json=$script,domain=ksml.fi|savonsanomat.fi
-@@||api.etherscan.io/api$domain=sushiswap.fi
 @@||assets.strossle.com/strossle-widget-sdk/$script,domain=como.fi|episodi.fi|fum.fi|inferno.fi|rumba.fi|soundi.fi|tilt.fi
 @@||certona.net^*/resonance.js$domain=zooplus.fi
 @@||d2wzl9lnvjz3bh.cloudfront.net/frosmo.easy.js$domain=lippu.fi
@@ -25079,6 +25082,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ! ---------- Japanese ----------
 ! 
 @@||a8.net/svt/$image,domain=samplefan.com
+@@||ad.pr.ameba.jp/tpc/list/$xmlhttprequest
 @@||adobedtm.com^*-libraryCode_source.min.js$script,domain=disneyplus.disney.co.jp
 @@||adobedtm.com^*/mbox-contents-$script,domain=fcbarcelona.jp|sony.jp
 @@||adobedtm.com^*/satelliteLib-$script,domain=fcbarcelona.jp|radiko.jp|sony.jp
@@ -25109,7 +25113,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||flipdesk.jp/wp/wp-content/themes/flipdesk/images/analytics3.png$image
 @@||game-tsutaya.tsite.jp/pc/common/scripts/analytics/s_code_ggame.js
 @@||googleadservices.com/pagead/conversion_async.js$script,domain=jp.square-enix.com
-@@||googletagmanager.com/gtm.js$script,domain=anond.hatelabo.jp|book.impress.co.jp|cyclestyle.net|hatenacorp.jp|kakuyomu.jp|nap-camp.com|radiko.jp|stage.parco.jp|viviennewestwood-tokyo.com|ymobile.jp
+@@||googletagmanager.com/gtm.js$script,domain=anond.hatelabo.jp|book.impress.co.jp|cyclestyle.net|dengekionline.com|hatenacorp.jp|kakuyomu.jp|nap-camp.com|radiko.jp|stage.parco.jp|viviennewestwood-tokyo.com|ymobile.jp
 @@||howtonote.jp/google-analytics/$image,~third-party
 @@||in.treasuredata.com/js/*api_key$script,domain=retty.me
 @@||k-img.com/javascripts/modules/rst/analytics.js?$domain=tabelog.com
