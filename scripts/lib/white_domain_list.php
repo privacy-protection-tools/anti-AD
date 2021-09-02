@@ -272,6 +272,7 @@ return array(
     'kaptcha.com' => 0, // #481
     'dfcfw.com' => 0, // #482
     'msedge.net' => 0, // #478
+    'ecard.shenzhentong.com' => 0, // #486
 
 
 
