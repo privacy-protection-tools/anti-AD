@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202109071650
+! Version: 202109101301
 ! Title: EasyPrivacy
-! Last modified: 07 Sep 2021 16:50 UTC
+! Last modified: 10 Sep 2021 13:01 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -18,6 +18,7 @@
 &callback=hitStats_
 &event=view&
 &EventType=Impression&
+&hitType=pageview&
 &http_referer=$script,xmlhttprequest,domain=~facebook.com
 &mf_referrer=
 &pageReferrer=
@@ -2192,7 +2193,7 @@
 /headupstats.gif?
 /healthanalytics.js
 /heatmap_log.js
-/HeatmapSessionRecording/*
+/HeatmapSessionRecording/*$domain=~plugins.matomo.org|~shop.matomo.org
 /hg?hc=&hb=*&vjs=
 /hgct?hc=&hb=*&vjs=
 /hints.netflame.cc/*
@@ -2661,6 +2662,7 @@
 /logAdv.
 /logaholictracker.
 /logAjaxErr_
+/LogAmpHit?
 /LogAnalysisTracker/*
 /logAutoMicroConversion?
 /logclick.
@@ -3276,11 +3278,13 @@
 /pixel/email/*$image
 /pixel/ga-
 /pixel/gtm-
+/pixel/host/?
 /pixel/img/*
 /pixel/impression/*
 /pixel/js/*$third-party
 /pixel/sbs?
 /Pixel/Script/Behavior?
+/pixel/stats/?
 /pixel/stream/*
 /pixel/view?
 /pixel/visit?
@@ -5608,6 +5612,7 @@ _mongo_stats/
 ||g8715710740.co^
 ||g8913795075.co^
 ||g9111879410.co^
+||glimr.io^
 ||i218435.net^
 ||impactcdn.com^
 ||irs01.com^
@@ -6177,7 +6182,6 @@ _mongo_stats/
 ||conduze.com^$third-party
 ||config.parsely.com^$third-party
 ||confirmational.com^$third-party
-||confirmit.com^$third-party
 ||connectif.cloud^$third-party
 ||contactmonkey.com^$third-party
 ||contemporaryceremonies.ca^$third-party
@@ -6617,7 +6621,7 @@ _mongo_stats/
 ||giddyuptrk.com^$third-party
 ||gigcount.com^$third-party
 ||gim.co.il^$third-party
-||glancecdn.net^$third-party
+||glancecdn.net^$third-party,domain=~glance.net
 ||glanceguide.com^$third-party
 ||glassboxcdn.com^$third-party
 ||glassboxdigital.io^$third-party
@@ -10113,6 +10117,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||alexa.com/minisiteinfo/$third-party
 ||alexa.com/traffic/
 ||alexandria.marfeelcdn.com^
+||algolia.io/1/events?
 ||algolia.io/1/isalive
 ||alibaba.com/ts?
 ||alipay.com/service/clear.png?
@@ -10181,6 +10186,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||analytics.erepublic.com^
 ||analytics.facebook.com^$third-party
 ||analytics.favcy.com^
+||analytics.firespring.com^
 ||analytics.foresee.com^
 ||analytics.google.com^$third-party
 ||analytics.groupe-seb.com^
@@ -10556,6 +10562,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||conde.io/beacon
 ||condenastdigital.com/content?$third-party
 ||confiant-integrations.global.ssl.fastly.net^
+||confirmit.com/wix/inline.aspx?
 ||connect.bolt.com/v1/log
 ||connect.facebook.net/signals/$third-party
 ||connect.facebook.net^*/fbds.js$third-party
@@ -12756,6 +12763,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||marktplaats.net/cnt/
 ||npo.nl/divolte/tt/web-event?$domain=zapp.nl
 ||sp.dpgmedia.net^
+||stat.24liveplus.com^
 ||statistics.rbi-nl.com^
 ||ugent.be/js/log.js
 ! Estonian
@@ -13209,7 +13217,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||about.me/track?
 ||academia.edu/record_hit
 ||accuterm.com/data/stat.js
-||acronymfinder.com/~/st/af.js
+||acronymfinder.com/~/tr.ashx
 ||activate.latimes.com/pc/caltimes/?pulse2001=
 ||active.com/ig.track.js
 ||adc-js.nine.com.au^
@@ -13247,6 +13255,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||amnesty.org/collect/
 ||analyselog.dx.com^
 ||analytics-proxy.springboard.com^
+||analytics.academy.com^
 ||analytics.adfreetime.com^
 ||analytics.archive.org^
 ||analytics.brave.com^
@@ -13641,6 +13650,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||metricsishare.rediff.com^
 ||metro.co.uk/base/rta/
 ||metroweekly.com/tools/blog_add_visitor/
+||mi.academy.com/p/js/1.js
 ||miao.baidu.com^
 ||microsoft.com/collect/
 ||microsoft.com/Collector/
@@ -13759,6 +13769,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||retargeting.vistaprint.com^
 ||rfk.biglots.com^
 ||roblox.com/www/e.png?
+||rps-uk.rockpapershotgun.com^
 ||rs.mail.ru^
 ||rss-loader.com/track/
 ||rt.newswire.ca^
@@ -14190,6 +14201,7 @@ techxplore.com##.embed-responsive-trendmd
 ||lancome-usa.com/IZ/PXq99AlOxk/init.js
 ||lulus.com/px/client/main.min.js
 ||madlan.co.il/o4wPDYYd/init.js
+||mouser.com/4UAZUiaI/init.js
 ||nyxcosmetics.com/IZ/PXLZNv2dn4/init.js
 ||octopart.com/kdRQnL15/init.js
 ||priceline.com/9aTjSd0n/init.js
@@ -24190,6 +24202,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||wssgmstats.vibbo.com^
 ||wsstats.coches.net^
 ! Swedish
+||aftonbladet.se/cnp-assets/glimr-sdk.js
 ||ai.idg.se^
 ||analytics.elx.cloud^
 ||ax.idg.se^
@@ -24375,7 +24388,9 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||googleoptimize.com/optimize.js$script,domain=tentree.ca
 @@||googletagmanager.com/gtm.js$domain=ads.spotify.com
 @@||gstatic.com^*/firebase-performance-standalone.js$script,domain=flightradar24.com
+@@||healthgateway.gov.bc.ca/snowplow.js$~third-party
 @@||humaninterest.com/api/analytics/$script,~third-party
+@@||js.taplytics.com/jssdk/$domain=foxnews.com
 @@||kbctouch.kbc.be^*/dynatrace-$script,~third-party
 @@||lenovo.com/fea/js/adobeAnalytics/adobeAnalytics-searchComponent.js$xmlhttprequest,domain=lenovo.com
 @@||live.house.gov/js/analytics.$script,~third-party
@@ -24866,14 +24881,14 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||frosmo.com^$xmlhttprequest,domain=kauppahalli24.fi
 @@||googletagmanager.com/gtm.js$script,domain=cdon.fi|como.fi|episodi.fi|fum.fi|inferno.fi|rumba.fi|soundi.fi|tilt.fi|veho.fi
 @@||high.auriro.net/http/600x400/$image,domain=afterdawn.com|hardware.fi
-@@||images.sprinklecontent.com^$image,domain=como.fi|episodi.fi|fum.fi|inferno.fi|rumba.fi|soundi.fi|tilt.fi
+@@||images.sprinklecontent.com^$image,domain=como.fi|episodi.fi|fum.fi|inferno.fi|kaaoszine.fi|rumba.fi|soundi.fi|tilt.fi
 @@||inpref.s3.amazonaws.com/frosmo.easy.js$domain=kauppahalli24.fi
 @@||inpref.s3.amazonaws.com/sites/$script,domain=kauppahalli24.fi
 @@||leiki.com/focus/$script,domain=anna.fi|como.fi|episodi.fi|fum.fi|inferno.fi|kaksplus.fi|rumba.fi|seura.fi|soundi.fi|tilt.fi
 @@||lekane.net/lekane/dialogue-tracking.js?$script
 @@||nettix.fi^*_analytics.js$domain=nettiauto.com|nettikaravaani.com|nettikone.com|nettimokki.com|nettimoto.com|nettivaraosa.com
 @@||scdn.cxense.com/cx.js$script,domain=ksml.fi|savonsanomat.fi
-@@||widgets.spklw.com/v1/$xmlhttprequest,domain=como.fi|episodi.fi|fum.fi|inferno.fi|rumba.fi|soundi.fi|tilt.fi
+@@||widgets.spklw.com/v1/$xmlhttprequest,domain=como.fi|episodi.fi|fum.fi|inferno.fi|kaaoszine.fi|rumba.fi|soundi.fi|tilt.fi
 @@||widgets.sprinklecontent.com/v2/$script,xmlhttprequest,domain=como.fi|episodi.fi|fum.fi|inferno.fi|rumba.fi|soundi.fi|tilt.fi
 ! 
 ! ---------- Hebrew ----------
