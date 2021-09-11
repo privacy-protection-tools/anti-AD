@@ -1059,6 +1059,9 @@ return array(
         'sl-log.oray.net',
         'pubsub02.oray.net',
     ),
+    'bcebos.com' => array( // #489
+        'staticsns.cdn.bcebos.com',
+    ),
 
     
     // 批量添加域名
