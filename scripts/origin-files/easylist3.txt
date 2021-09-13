@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202109101301
+! Version: 202109131736
 ! Title: EasyPrivacy
-! Last modified: 10 Sep 2021 13:01 UTC
+! Last modified: 13 Sep 2021 17:36 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -3759,6 +3759,7 @@
 /SetSabreAnalyticsCookie.
 /setTDUID.do?
 /sfCounter/*
+/sfsites/auraAnalytics
 /sgtracker.js
 /share/analytics?
 /shareCounts.
@@ -5145,6 +5146,7 @@
 ?event=tracking:ajax
 ?eventtype=impression&pid=
 ?eventtype=request&pid=
+?log=stats-
 ?logType=impression&
 ?logType=trackEvent&
 ?pageviews=$third-party
@@ -10725,7 +10727,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||daq0d0aotgq0f.cloudfront.net^
 ||dash.getsitecontrol.com^
 ||data.alexa.com^
-||data.beop.io^
 ||data.circulate.com^
 ||data.gosquared.com^$third-party
 ||data.imakenews.com^$third-party
@@ -10964,6 +10965,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||gatehousemedia.com/wickedlocal/ip.js
 ||gateway.foresee.com^
 ||gcion.com/gcion.ashx?
+||gecko.space/count.js
 ||geckofoot.com/gfcounterimg.aspx?
 ||geckofoot.com/gfvisitormap.aspx?
 ||gem.com/api/o/$image,third-party
@@ -11790,6 +11792,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||sulia.com/papi/sulia_partner.js/$third-party
 ||sundaysky.com/sst.gif?
 ||sundaysky.com/vop/$third-party
+||sunlightmetrics.b-cdn.net^
 ||sunset.com/tia/
 ||survey.interquest.com^
 ||survey.io/log?
@@ -12220,7 +12223,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||xp.apple.com^$~ping
 ||yandexadexchange.net^
 ! Appcues
-/^https?:\/\/fast\.appcues\.com\/[0-9]{4,6}\.js/
+||fast.appcues.com^$script,third-party
 ! taboola
 ||am-vid-events.taboola.com^
 ||convsgmp.taboola.com^
@@ -13325,6 +13328,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||capitalone.com/collector/
 ||cbc.ca/g/stats/
 ||cbsimg.net/js/cbsi/dw.js
+||cc-api-data.adobe.io^
 ||centerblog.net/stats.js
 ||chatroll.com/t.gif
 ||cheezburger.com/api/visitor
@@ -13444,6 +13448,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||events.turbosquid.com^
 ||evs.sgmt.loom.com^$script
 ||expedia.*/cl/
+||expressvpn.com/__px.gif?
 ||exr-mms.expertreviews.co.uk^
 ||extendoffice.com/analytics.js
 ||extremetech.com/cszn/js/z0WVjCBSEeGLoxIxOQVEwQ.min.js
@@ -13491,6 +13496,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||ga.nsimg.net^
 ||gaiaonline.com/internal/mkt_t.php?
 ||gak.webtoons.com^
+||gala.spiceworks.com^
 ||gamedistribution.com/collect?
 ||gc.newsweek.com^
 ||gekko.spiceworks.com^
@@ -13687,6 +13693,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||nm.newegg.com^
 ||noodle.backmarket.io^
 ||nordstrom.com/log
+||norton.com/service/norton/head?
 ||novelcool.com/files/js/yh_tj.js
 ||nysun.com/tracker.js
 ||nyt.com/ads/tpc-check.html$domain=nytimes.com
@@ -13919,6 +13926,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||spanids.dictionary.com^
 ||spanids.thesaurus.com^
 ||spanishdict.com/page-view-metadata
+||spankbang.com^$ping
 ||speed.cloudflare.com/__log
 ||squirrel.ethanelientz.com^
 ||squirrel.honeysqueeze.app^
@@ -14057,6 +14065,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||vimeocdn.com/js_opt/logging_combined.min.js
 ||visit.theglobeandmail.com^
 ||visitors.sourcingmap.com^
+||visualstudio.com/v2/track
 ||vivid.money/projectx/$ping
 ||vk.com/js/lib/px.js
 ||vortex.hulu.com^
@@ -14096,7 +14105,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||xfinity.com/z8ufpC5q/
 ||xhcdn.com/js/track.
 ||xing.com/logjam/
-||xoxo5-eng.spankbang.com^
+||xoxo6-eng.spankbang.com^
 ||xstats.evoload.io^
 ||yahoo.com/beacon/
 ||yahoo.net/pixel.gif
@@ -23657,6 +23666,9 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||on.cc^*/checkrev.gif?
 ||p-log.ykimg.com^
 ||p.data.cctv.com^
+||pan.baidu.com/api/report/
+||pan.baidu.com/pcloud/counter/refreshcount?
+||pan.baidu.com/recent/report?
 ||pb.i.sogou.com^
 ||people.cn/js/pa.js
 ||pingback.sogou.com^
@@ -23745,6 +23757,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||trace.qq.com^
 ||track.sohu.com^
 ||tracker.ai.xiaomi.com^
+||tracker.tv.sohu.com^
 ||trackjay.cool3c.com^
 ||tv.sohu.com/upload/trace/
 ||uestat.video.qiyi.com^
@@ -24392,7 +24405,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||humaninterest.com/api/analytics/$script,~third-party
 @@||js.taplytics.com/jssdk/$domain=foxnews.com
 @@||kbctouch.kbc.be^*/dynatrace-$script,~third-party
-@@||lenovo.com/fea/js/adobeAnalytics/adobeAnalytics-searchComponent.js$xmlhttprequest,domain=lenovo.com
+@@||lenovo.com/fea/js/adobeAnalytics/$script,~third-party,xmlhttprequest
 @@||live.house.gov/js/analytics.$script,~third-party
 @@||online.tivo.com/assets/tve/common/js/vendor/jsnlog/$script,~third-party
 @@||realtor.com/rentals/api/optimizely.js$script,~third-party
@@ -24882,10 +24895,11 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||googletagmanager.com/gtm.js$script,domain=cdon.fi|como.fi|episodi.fi|fum.fi|inferno.fi|rumba.fi|soundi.fi|tilt.fi|veho.fi
 @@||high.auriro.net/http/600x400/$image,domain=afterdawn.com|hardware.fi
 @@||images.sprinklecontent.com^$image,domain=como.fi|episodi.fi|fum.fi|inferno.fi|kaaoszine.fi|rumba.fi|soundi.fi|tilt.fi
-@@||inpref.s3.amazonaws.com/frosmo.easy.js$domain=kauppahalli24.fi
+@@||inpref.s3.amazonaws.com/frosmo.easy.js$domain=elisa.fi|kauppahalli24.fi
 @@||inpref.s3.amazonaws.com/sites/$script,domain=kauppahalli24.fi
 @@||leiki.com/focus/$script,domain=anna.fi|como.fi|episodi.fi|fum.fi|inferno.fi|kaksplus.fi|rumba.fi|seura.fi|soundi.fi|tilt.fi
 @@||lekane.net/lekane/dialogue-tracking.js?$script
+@@||mpsnare.iesnare.com/snare.js$script,domain=power.fi
 @@||nettix.fi^*_analytics.js$domain=nettiauto.com|nettikaravaani.com|nettikone.com|nettimokki.com|nettimoto.com|nettivaraosa.com
 @@||scdn.cxense.com/cx.js$script,domain=ksml.fi|savonsanomat.fi
 @@||widgets.spklw.com/v1/$xmlhttprequest,domain=como.fi|episodi.fi|fum.fi|inferno.fi|kaaoszine.fi|rumba.fi|soundi.fi|tilt.fi
@@ -24962,7 +24976,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||ad.pr.ameba.jp/tpc/list/$xmlhttprequest
 @@||adobedtm.com^*-libraryCode_source.min.js$script,domain=disneyplus.disney.co.jp
 @@||adobedtm.com^*/mbox-contents-$script,domain=fcbarcelona.jp|sony.jp
-@@||adobedtm.com^*/satelliteLib-$script,domain=fcbarcelona.jp|radiko.jp|sony.jp
+@@||adobedtm.com^*/satelliteLib-$script,domain=fcbarcelona.jp|radiko.jp|sony.jp|support.nec-lavie.jp
 @@||allabout.co.jp/mtx_cnt.js$script,~third-party
 @@||analytics.edgekey.net/config/$xmlhttprequest,domain=nhk.or.jp
 @@||analytics.edgekey.net/html5/akamaihtml5-min.js$domain=nhk.or.jp
@@ -24987,6 +25001,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||disneyplus.disney.co.jp/view/vendor/analytics/$~third-party
 @@||docodoco.jp^*/docodoco?key=$script,domain=jrtours.co.jp
 @@||e-stat.go.jp/modules/custom/retrieve/src/js/stat.js?$script,~third-party
+@@||fast.appcues.com^$script,domain=initial.inc
 @@||flipdesk.jp/wp/wp-content/themes/flipdesk/images/analytics3.png$image
 @@||game-tsutaya.tsite.jp/pc/common/scripts/analytics/s_code_ggame.js
 @@||googleadservices.com/pagead/conversion_async.js$script,domain=jp.square-enix.com
