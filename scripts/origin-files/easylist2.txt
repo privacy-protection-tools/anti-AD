@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202109131736
+! Version: 202109161717
 ! Title: Fanboy's Annoyance List
-! Last modified: 13 Sep 2021 17:36 UTC
+! Last modified: 16 Sep 2021 17:17 UTC
 ! Expires: 4 days (update frequency)
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -926,7 +926,7 @@ _revotas_push.
 -redes-pinteres.
 -redes-twitter.
 -redes-youtube.
--share-bar/
+-share-bar/$~stylesheet
 -share-button.$~xmlhttprequest
 -share-buttons.$~xmlhttprequest
 -share-buttons/$~stylesheet
@@ -22824,6 +22824,7 @@ _vpcookieconsent/
 ###as-cookie-cutter
 ###askCookies
 ###askToAcceptCookies
+###ask_cookie_low
 ###ask_cookie_ok
 ###askcook
 ###askcookies
@@ -29821,6 +29822,7 @@ _vpcookieconsent/
 ##.consent-dialog:not(body):not(html)
 ##.consent-holder
 ##.consent-layer
+##.consent-management-alert
 ##.consent-management-simple
 ##.consent-manager-layer
 ##.consent-message
@@ -39273,6 +39275,7 @@ libertyunyielding.com##.widget-around-the-web
 tokyohive.com##.widget-block
 androidauthority.com##.widget-container
 fatherly.com##.widget-form
+elzaburu.es##.widget-suscriptflech-class
 ads.dollartree.com##.widgetContainer
 phonearena.com##.widget[style="min-height: 260px;"]
 wired.com##.widget_WiredWidgetsDartAds
@@ -41021,7 +41024,6 @@ stereogum.com##.zergnet-holder
 newyorker.com##div[class^="NewsletterSubscribe_"]
 buzzfeed.com##div[id^="mod-newsletter-signup-"]
 ! Include ubO specific
-! #include easylist_cookie/easylist_cookie_specific_uBO.txt
 ! #include fanboy_annoyance_specific_uBO.txt
 ! *** easylist:fanboy-addon/fanboy_notifications_specific_hide.txt ***
 tbsnews.net###___tbspushdiv
@@ -42010,6 +42012,7 @@ bossip.com,esquire.com,fashionmagazine.com,foxnews.com,sassyhongkong.com,sassyma
 foodnetwork.com,kitchendaily.com##.pinit
 9gag.tv,bulova.com,cnn.com,fraghero.com,inhabitat.com,latintimes.com,nymag.com,opensiteexplorer.org,tweaktown.com,vulture.com,yahoo.com,yourdailymedia.com##.pinterest
 lhw.com##.pintrest
+streamingrant.com##.plugin-ss-sticky
 cleodesktop.com##.plustop
 audacy.com##.podcast-lead__social
 polygon.com##.polygon_social
@@ -42238,6 +42241,7 @@ upi.com##.t
 ziddu.com##.tablebg[width="443"]
 okgoals.com##.tabrow
 theintercept.com##.talk-slot-comment-actions
+freeudemycourses.me##.tds_icon_box2_wrap.tdm-content-horiz-left
 playboy.com##.tell-your-friends
 itproportal.com##.tenancy-buttons
 razorianfly.com##.textwidget > .social_profile
@@ -42619,7 +42623,6 @@ cbc.ca###alert_modal
 squarespace.com###announcement
 ao.com###aoMessageHolder
 myfitnesspal.com###app > div[class^="MFPApp-"] > div > footer + div[class]
-bing.com###b_notificationContainer
 uktv.co.uk###back-to-old-site
 cc.com###balaMainContainer
 best-sound.com,shadycharacters.co.uk,whatsapp.com###banner
@@ -43160,7 +43163,6 @@ veeam.com##.header-component__messages-overlay
 igvault.com##.header-perm
 hivehome.com##.header-stacked-message
 start.fyi##.headnote
-bing.com##.hpn_top_container
 devhut.net##.ht-notification-section
 huawei.com##.huawei-bootom-cookie
 zeroturnaround.com##.hud
@@ -43533,6 +43535,7 @@ globaltuners.com,psychomedia.qc.ca,speedtestcustom.com,zerochan.net##div[style^=
 podbean.com##div[style^="z-index: 999999; position: fixed;"]
 invezz.com##div[x-data="CookieConsent()"]
 my.games##header > .gdpr
+shaw.ca##notification-block
 weatherbug.com##notification-footer
 satispay.com##p[class^="cookie-banner"]
 opentip.kaspersky.com##section[data-t="cks-dsc"] > div > div
@@ -43572,7 +43575,6 @@ msn.com##.cookieBanner
 github.com##.hx_cookie-banner
 rp-online.de##.park-snackbar-cookies
 walmart.ca##.privacy-open > div > [class] > div[class^="css"]
-bing.com##div[data-cookie]
 ! Multi-national sites
 spot-a-shop.at,spot-a-shop.de,spot-a-shop.fi,spot-a-shop.fr,spot-a-shop.pl,spot-a-shop.se###__next > div > div > div[class^="css"]
 ! Include ubO specific
@@ -43901,6 +43903,7 @@ jarir.com##a[title="top"]
 ! 
 ! ---------- Chinese Site Specific Hiding Rules ----------
 ! 
+jzhx.net###DivBayWindow
 acfun.cn###btn-top-shortcut
 699pic.com###landlord
 thestandnews.com###mc_embed_signup
@@ -47077,6 +47080,7 @@ lisa.ru##.disclamer
 ozon.ru##.i4
 friday.ru##.information
 patee.ru##.informer2
+5ka.ru##.message
 iblitzmods.ru,kinoby.ru##.message-alert
 shophair.ru##.modal_popup_sessid_box
 landrover.ru##.notificationBars
@@ -48336,7 +48340,8 @@ samsung.com,xlbygg.se#@#.cookiewarning
 vaillant.de,xlbygg.se#@#.cookiewarning:not(body):not(html)
 apkpure.com#@#.cp-banner
 bccnapoli.it,spalferrara.it,thetechsutra.com#@#.cp-overlay
-e-dym.pl#@#.cp-popup
+e-dym.pl,earthsky.org#@#.cp-popup
+earthsky.org#@#.cp-popup-container:not(body):not(html)
 seguro.elespanol.com#@#.didomi-notice-banner
 myrobotcenter.at,myrobotcenter.co.uk,myrobotcenter.de#@#.ec-gtm-cookie-directive
 acloudguru.com,appfairness.org#@#.elementor-popup-modal.dialog-widget
@@ -49083,7 +49088,6 @@ yoigo.com#@#thor-cookies
 @@||joyreactor.cc/images/icon_social.png
 @@||jrjimg.cn/js.do?f=/share/js/
 @@||jsdelivr.net/npm/sharer.js
-@@||jsfiddle.net^$generichide
 @@||junglevibe2.net/min/?$script
 @@||kcrw.com^*/images/social-icons-$image,domain=kcrw.com
 @@||keepa.com/img/social/Google.svg
