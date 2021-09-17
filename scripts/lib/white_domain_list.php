@@ -273,6 +273,9 @@ return array(
     'dfcfw.com' => 0, // #482
     'msedge.net' => 0, // #478
     'ecard.shenzhentong.com' => 0, // #486
+    'supportxmr.com' => 0, // #490
+    'minexmr.com' => 0, // #490
+    'appdownload.alicdn.com' => 0, // #491
 
 
 
