@@ -35,6 +35,7 @@ rm -f ./origin-files/dead-hosts*
 
 cp ./origin-files/yhosts-latest.txt ./origin-files/hosts1000.txt
 cp ./origin-files/some-else.txt ./origin-files/dead-hosts444.txt
+cp ./origin-files/anti-ad-origin-block.txt ./origin-files/hosts007.txt
 
 curl --connect-timeout 60 -s -o - https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list \
  | grep -F 'DOMAIN-SUFFIX,' | sed 's/DOMAIN-SUFFIX,/127.0.0.1 /g' >./origin-files/hosts999.txt
