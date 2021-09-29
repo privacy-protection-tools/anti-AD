@@ -1062,6 +1062,9 @@ return array(
     'bcebos.com' => array( // #489
         'staticsns.cdn.bcebos.com',
     ),
+    'pglstatp-toutiao.com' => array( // #494
+        'pglstatp-toutiao.com',
+    ),
 
     
     // 批量添加域名
