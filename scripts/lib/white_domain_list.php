@@ -276,6 +276,8 @@ return array(
     'supportxmr.com' => 0, // #490
     'minexmr.com' => 0, // #490
     'appdownload.alicdn.com' => 0, // #491
+    'pv.sohu.com' => 0, // #493
+    'zconfig.alibabausercontent.com' => 0, // #495
 
 
 
