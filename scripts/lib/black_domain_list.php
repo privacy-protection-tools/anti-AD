@@ -1065,6 +1065,9 @@ return array(
     'pglstatp-toutiao.com' => array( // #494
         'pglstatp-toutiao.com',
     ),
+    'netease.com' => array( // #496
+        'mam6.netease.com',
+    ),
 
     
     // 批量添加域名

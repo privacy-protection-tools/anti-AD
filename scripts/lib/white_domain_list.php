@@ -278,6 +278,7 @@ return array(
     'appdownload.alicdn.com' => 0, // #491
     'pv.sohu.com' => 0, // #493
     'zconfig.alibabausercontent.com' => 0, // #495
+    'proofpoint.com' => 0, // #497
 
 
 
