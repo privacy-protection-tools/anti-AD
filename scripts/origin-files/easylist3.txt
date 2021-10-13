@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202110101601
+! Version: 202110131705
 ! Title: EasyPrivacy
-! Last modified: 10 Oct 2021 16:01 UTC
+! Last modified: 13 Oct 2021 17:05 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -3394,6 +3394,7 @@
 /processUserCookie?
 /prod-analytics.
 /prod-client-js-logger/*
+/prod/log_preprocess
 /prodtracker?
 /production/analytics.
 /profile_tracker.
@@ -7913,7 +7914,6 @@ _mongo_stats/
 ||surveyscout.com^$third-party
 ||surveywriter.com^$third-party
 ||survicate.com^$third-party
-||swcs.jp^$third-party
 ||swfstats.com^$third-party
 ||swiss-counter.com^$third-party
 ||synergy-e.com^$third-party
@@ -10162,6 +10162,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||analytics.avanser.com.au^
 ||analytics.aweber.com^
 ||analytics.bigcommerce.com^
+||analytics.bitrix.info^
 ||analytics.brandcrumb.com^
 ||analytics.carambo.la^
 ||analytics.chegg.com^
@@ -10386,6 +10387,8 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||branch.io^$third-party
 ||brandcdn.com/pixel/
 ||bravenet.com/counter/
+||browser.events.data.microsoft.com^
+||browser.pipe.aria.microsoft.com^
 ||bs.yandex.ru^
 ||bucklemail.com/a/$image
 ||bufferapp.com/wf/open?upn=$third-party
@@ -10476,7 +10479,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||cllctr.roistat.com^
 ||cloudapp.net/l/
 ||clouderrorreporting.googleapis.com^
-||cloudflare.com/cdn-cgi/trace$third-party,domain=~isbgpsafeyet.com
+||cloudflare.com/cdn-cgi/trace$third-party,domain=~isbgpsafeyet.com|~wyndhamdestinations.com
 ||cloudfront-labs.amazonaws.com^
 ||cloudfront.net*/keywee.min.js
 ||cloudfront.net*/sp.js|
@@ -10731,7 +10734,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||data.circulate.com^
 ||data.gosquared.com^$third-party
 ||data.imakenews.com^$third-party
-||data.microsoft.com/OneCollector/
 ||data.minute.ly^
 ||data.nexxt.com^
 ||data.queryly.com^
@@ -10838,7 +10840,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||ensighten.com/error/e.php?
 ||epimg.net/js/gdt/
 ||epl.paypal-communication.com^$script
-||epnt.ebay.com^
 ||epromote.co.za/track/
 ||erne.co/tags?
 ||errors.snackly.co^
@@ -11584,6 +11585,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||qzzr.com/_uid.gif
 ||r.mail.ru^$script
 ||rackcdn.com/gate.js
+||rackcdn.com/stf.js
 ||radiotime.com/Report.ashx?
 ||radiotime.com/reports/
 ||ramp.purch.com^
@@ -12122,6 +12124,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||wco.crownpeak.com^
 ||weather.ca/counter.gif?
 ||web-soft.in/counters/
+||web.vortex.data.microsoft.com^
 ||web1.51.la^
 ||webedia.fr/js/gs.js
 ||weblog.livesport.eu^
@@ -13286,7 +13289,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||arstechnica.com/keys/arstechnica.com/p.js
 ||atrack.allposters.com^
 ||ats.alot.com^
-||auth4-eng.spankbang.com^
 ||avitop.com/aviation/hitlist.asp
 ||baidu.com^*/mwb2.gif?
 ||baidu.com^*/wb.gif?
@@ -13397,6 +13399,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||discord.com/api/*/science
 ||discover-metrics.cloud.seek.com.au^
 ||discover.com/QaiuqHH6L7OpQ2dSZzdDRhs6/
+||dmtgvn.com/wrapper/js/common-engine.js$domain=rt.com
 ||docs.github.com/events
 ||domainit.com/scripts/track.js
 ||dominos.co.uk/qRgAwS/
@@ -13481,6 +13484,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||fp.measure.office.com^
 ||fpa-cdn.arstechnica.com^
 ||fpa-events.decrypt.co^
+||fpt.microsoft.com^
 ||france24.com^*/_ws/urgent
 ||freebiesms.com/tracker.aspx?
 ||freepik.com/_ga?
@@ -13577,6 +13581,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||intent.cmo.com.au^
 ||intent.goodgearguide.com.au^
 ||intent.pcworld.idg.com.au^
+||internal-ana.spankbang.com^
 ||internetslang.com/jass/
 ||intg.snapchat.com^
 ||intuitcdn.net/analytics/
@@ -13657,13 +13662,12 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||metroweekly.com/tools/blog_add_visitor/
 ||mi.academy.com/p/js/1.js
 ||miao.baidu.com^
-||microsoft.com/collect/
-||microsoft.com/Collector/
 ||mms.cnn.com^
 ||modanisa.com/al/j/analytics.js
 ||moneycontrol.com/news/services/get_comscore_pageview/
 ||monitor.channel4.com^
 ||mov.t-mobile.com/p/js/1.js
+||movetv.com/sa-events
 ||mps.nbcuni.com/request/page/json/params/*&adunits=$xmlhttprequest
 ||msn.com/collect/
 ||msn.com/OneCollector/
@@ -13996,6 +14000,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||theconversation.com/javascripts/lib/content_tracker_hook.js
 ||thedailybeast.com/static/js/thirdparty.
 ||thefreedictionary.com/_/tr.ashx?
+||thriftbooks.com/scripts/sp.js
 ||tiktok.com/captcha/report
 ||tilanalytics.timesinternet.in^
 ||time.is/img/nod.png
@@ -14362,6 +14367,8 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ! *.omtrdc.net (needs to be removed)
 ! *.demdex.net (needs to be removed)
 ! *.bred4tula.com (needs to be removed)
+! 
+||primate.dmarcdigests.com^
 ! 
 ! a8.net (https://github.com/AdguardTeam/cname-trackers/blob/master/trackers/a8_net.md)
 ||a8.01cloud.jp^
@@ -24230,6 +24237,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||qq.com/qqcom/
 ||qq.com/report.cgi?
 ||qq.com/report/$image,xmlhttprequest
+||qq.com/report|
 ||qq.com/stdlog
 ||qreport.qunar.com^
 ||qzone.qq.com/wspeed.qq.com^
@@ -24808,6 +24816,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ! Vietnamese
 ||log.ttbc-hcm.gov.vn^
 ||logsbin.dantri.com.vn^
+||pixel.coccoc.com^
 ||stats.muasamcong.gov.vn^
 ||track-srv.vietnamnet.vn^
 ! Specific blocking filters necessary for sites allowlisting with $genericblock filter option
@@ -24962,6 +24971,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||gstatic.com^*/firebase-performance-standalone.js$script,domain=flightradar24.com
 @@||healthgateway.gov.bc.ca/snowplow.js$~third-party
 @@||humaninterest.com/api/analytics/$script,~third-party
+@@||js.monitor.azure.com/scripts/$script,domain=microsoft.com
 @@||js.taplytics.com/jssdk/$domain=foxnews.com
 @@||kbctouch.kbc.be^*/dynatrace-$script,~third-party
 @@||lenovo.com/fea/js/adobeAnalytics/$script,~third-party,xmlhttprequest
@@ -25415,6 +25425,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||dynamicyield.com/api/$script,domain=zalora.com.hk|zalora.com.tw
 @@||g.csdnimg.cn^*/trackad.js$script,domain=csdn.net
 @@||google-analytics.com/analytics.js$domain=news.gamme.com.tw
+@@||gtimg.com/qqcdn/*/beacon.min.js$script,domain=qq.com
 @@||hk.on.cc/js/v4/urchin.js
 @@||tianxun.com^*/js/tracker.js
 @@||tianyancha.com^*/sensorsdata.$script,~third-party
