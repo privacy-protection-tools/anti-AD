@@ -279,6 +279,8 @@ return array(
     'pv.sohu.com' => 0, // #493
     'zconfig.alibabausercontent.com' => 0, // #495
     'proofpoint.com' => 0, // #497
+    'mini.eastday.com' => 0, // #500
+    'dftoutiao.com' => 0, // #500
 
 
 
