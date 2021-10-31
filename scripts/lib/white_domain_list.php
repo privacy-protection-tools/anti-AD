@@ -282,6 +282,7 @@ return array(
     'mini.eastday.com' => 0, // #500
     'dftoutiao.com' => 0, // #500
     'dcms.1688.com' => 0, // #499
+    'da.mmarket.com' => 0, // #501
 
 
 
