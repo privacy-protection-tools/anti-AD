@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202111011802
+! Version: 202111041742
 ! Title: EasyPrivacy
-! Last modified: 01 Nov 2021 18:02 UTC
+! Last modified: 04 Nov 2021 17:42 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -48,6 +48,7 @@
 -click-tracker.
 -ClickTale.
 -comscore.
+-content-tracking.
 -criteo.
 -datacollection.
 -didomi.js
@@ -689,6 +690,7 @@
 /analytics?http_referer
 /analytics?token=
 /analytics?url=
+/analytics?vv_events=
 /analytics_embed.
 /analytics_frame.
 /analytics_functions.
@@ -2776,7 +2778,7 @@
 /matomo-tracking.
 /matomo.js$domain=~github.com
 /matomo.php
-/matomo/*$domain=~github.com|~matomo.org|~wordpress.org
+/matomo/*$domain=~github.com|~hub.docker.com|~matomo.org|~wordpress.org
 /maxymiser.
 /Maxymiser/*
 /mbcom.tracking.
@@ -6538,6 +6540,7 @@ _mongo_stats/
 ||exelator.com^$third-party
 ||exitbee.com^$third-party
 ||exitmonitor.com^$third-party
+||exorigos.com^$third-party
 ||exovueplatform.com^$third-party
 ||experianmarketingservices.digital^$third-party
 ||explore-123.com^$third-party
@@ -8957,6 +8960,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||lamplow.com^$third-party
 ||laughcloth.com^$third-party
 ||leaplunchroom.com^$third-party
+||leftliquid.com^
 ||levelbehavior.com^$third-party
 ||livelylaugh.com^
 ||lizardslaugh.com^$third-party
@@ -9080,6 +9084,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||squeakzinc.com^$third-party
 ||squealingturn.com^$third-party
 ||squirrelhands.com^$third-party
+||stakingsmile.com^
 ||staleshow.com^$third-party
 ||stalesummer.com^$third-party
 ||steadfastsound.com^$third-party
@@ -10368,6 +10373,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||b-aws.aol.com^
 ||b.bedop.com^
 ||b5media.com/bbpixel.php
+||b7tp47v2nb3x-a.akamaihd.net^
 ||b8cdn.com^*/analytics.js
 ||bab.frb.io^
 ||backstage.funnelenvy.com^
@@ -13307,6 +13313,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||amethyst.zappos.com^
 ||amnesty.org/collect/
 ||analyselog.dx.com^
+||analytics-api.dvdfab.cn^
 ||analytics-proxy.springboard.com^
 ||analytics.academy.com^
 ||analytics.adfreetime.com^
@@ -24592,6 +24599,8 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||tracker.publico.pt^
 ||uai.com.br^*/analytics.js
 ||uol.com.br/stats?
+! Romania
+||views.romaniatv.net^
 ! Russian
 ||2ch.hk^*/tracker.js?
 ||2gis.ru/_/log
@@ -24895,6 +24904,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||cdn.cxense.com^$script,domain=bizjournals.com|marketwatch.com
 @@||cleverpush.com/channel/$script,domain=bsdex.de
 @@||community.brave.com/t/$xmlhttprequest
+@@||d1km2unb2600pw.cloudfront.net/assets/tracking-history-popup-$script,domain=collectplus.yodel.co.uk
 @@||d2wy8f7a9ursnm.cloudfront.net^$script,domain=staples.ca
 @@||d41.co/tags/ff-2.min.js$domain=ads.spotify.com
 @@||daan.dev/wp-content/*/caos-supports-google-analytics-$image,~third-party
@@ -25014,7 +25024,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||google-analytics.com/analytics.js$domain=beinsports.com|brooklinen.com|jackbox.tv|k2radio.com|koel.com|kowb1290.com|tracking.narvar.com|westernunion.com
 @@||google-analytics.com/plugins/ga/inpage_linkid.js$domain=westernunion.com
 @@||googletagmanager.com/gtag/js$script,domain=honeystinger.com|kawasaki.com|m.putlocker.how|mediaite.com|schwab.com
-@@||googletagmanager.com/gtm.js$domain=atptour.com|bsa-whitelabel.com|chipotle.com|complex.com|crello.com|cyclingnews.com|cypress.io|easternbank.com|fortune.com|nflgamepass.com|nordvpn.com|pioneer.eu|royalbank.com|scotsman.com|trademe.co.nz
+@@||googletagmanager.com/gtm.js$domain=atptour.com|bsa-whitelabel.com|chipotle.com|complex.com|crello.com|cyclingnews.com|cypress.io|easternbank.com|fortune.com|nflgamepass.com|nordvpn.com|pioneer.eu|royalbank.com|scotsman.com|soundguys.com|trademe.co.nz
 @@||gov.au/Scripts/ga.js$script,~third-party
 @@||guce.advertising.com/collectIdentifiers$domain=guce.advertising.com
 @@||hearstapps.com/static/comscore.$script,domain=womenshealthmag.com
@@ -25501,6 +25511,8 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||api.cxense.com/public/widget/data|$xmlhttprequest,domain=friday.kodansha.co.jp
 @@||assets.adobedtm.com^*-librarycode_source.min.js$script,domain=mora.jp
 @@||atwiki.jp/common/_img/spacer.gif?$image,domain=atwiki.jp
+@@||bdash-cloud.com/recommend-script/$script,domain=junonline.jp
+@@||bdash-cloud.com/tracking-script/*/tracking.js$domain=junonline.jp
 @@||browser.sentry-cdn.com^$domain=marshmallow-qa.com
 @@||carsensor.net/usedcar/modules/clicklog_top_lp_revo.php$xmlhttprequest
 @@||cdn.cxense.com/cx.cce.js$domain=tarzanweb.jp
@@ -25523,7 +25535,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||game-tsutaya.tsite.jp/pc/common/scripts/analytics/s_code_ggame.js
 @@||googleadservices.com/pagead/conversion_async.js$script,domain=jp.square-enix.com
 @@||googletagmanager.com/gtag/js$script,domain=dholic.co.jp
-@@||googletagmanager.com/gtm.js$script,domain=anond.hatelabo.jp|benesse-style-care.co.jp|book.impress.co.jp|cyclestyle.net|dengekionline.com|dholic.co.jp|hatenacorp.jp|kakuyomu.jp|mangaseek.net|nap-camp.com|radiko.jp|stage.parco.jp|viviennewestwood-tokyo.com|ymobile.jp
+@@||googletagmanager.com/gtm.js$script,domain=anond.hatelabo.jp|benesse-style-care.co.jp|book.impress.co.jp|cyclestyle.net|dengekionline.com|dholic.co.jp|hatenacorp.jp|junonline.jp|kakuyomu.jp|mangaseek.net|nap-camp.com|radiko.jp|stage.parco.jp|viviennewestwood-tokyo.com|ymobile.jp
 @@||howtonote.jp/google-analytics/$image,~third-party
 @@||in.treasuredata.com/js/*api_key$script,domain=retty.me
 @@||justmyshop.com/gate/criteo/product-id.js$~third-party
@@ -25578,6 +25590,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||cloudfront.net/autoTracker.min.js$domain=direkte.vg.no
 @@||epub.ekh.no/*/static/analytics.js
 @@||google-analytics.com/analytics.js$domain=tv3play.no
+@@||googletagmanager.com/gtag/js$script,domain=xl-bygg.no
 @@||googletagmanager.com/gtm.js$script,domain=telia.no
 @@||klpinteraktiv.klp.no^*/Tracking.js?
 @@||postnord.no/api/tracking/$~third-party
