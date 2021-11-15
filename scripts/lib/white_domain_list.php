@@ -284,6 +284,7 @@ return array(
     'dcms.1688.com' => 0, // #499
     'da.mmarket.com' => 0, // #501
     'log-upload.mihoyo.com' => 0, // #502
+    'wl.spotify.com' => 0, // #508
 
 
 
