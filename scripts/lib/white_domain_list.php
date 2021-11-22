@@ -285,6 +285,7 @@ return array(
     'da.mmarket.com' => 0, // #501
     'log-upload.mihoyo.com' => 0, // #502
     'wl.spotify.com' => 0, // #508
+    's1.wp.com' => 0, // #510
 
 
 
