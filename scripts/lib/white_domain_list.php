@@ -286,6 +286,7 @@ return array(
     'log-upload.mihoyo.com' => 0, // #502
     'wl.spotify.com' => 0, // #508
     's1.wp.com' => 0, // #510
+    'lc-cn-n1-shared.com' => 0, // #512
 
 
 
