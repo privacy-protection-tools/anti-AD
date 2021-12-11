@@ -1068,6 +1068,9 @@ return array(
     'netease.com' => array( // #496
         'mam6.netease.com',
     ),
+    'cibntv.net' => array( // #507
+        'vali-g1.cp31.ott.cibntv.net',
+    ),
 
     
     // 批量添加域名
