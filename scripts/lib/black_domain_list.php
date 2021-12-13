@@ -1072,7 +1072,7 @@ return array(
         'vali-g1.cp31.ott.cibntv.net',
     ),
     'byteimg.com' => array(
-        'p6-ad-sign.byteimg.com/', // #513
+        'p6-ad-sign.byteimg.com', // #513
     ),
 
     
