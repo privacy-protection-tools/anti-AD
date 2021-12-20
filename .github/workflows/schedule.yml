@@ -12,4 +12,4 @@ jobs:
     steps:
       - name: Run a multi-line script
         run: |
-          curl -s -m 30 -X POST "$GITHUB_API_URL/repos/$GITHUB_REPOSITORY/actions/workflows/download-upstream.yml/dispatches" -H "Accept: application/vnd.github.v3+json" -H "Authorization: token ${{ secrets.ANTIAD_PERSONAL_TOKEN }}" -d '{"ref":"adlist-maker"}'
+          curl -s -m 30 -X POST "$GITHUB_API_URL/repos/$GITHUB_REPOSITORY/actions/workflows/download-upstream.yml/dispatches" -H "Accept: application/vnd.github.v3+json" -H "Authorization: token ${{ secrets.ANTIAD_PERSONAL_TOKEN }}" -d
