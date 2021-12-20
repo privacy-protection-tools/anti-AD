@@ -27,7 +27,7 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           branch: 'adlist-maker'
-          github_token: ${{ secrets.PERSON_TOKEN }}
+          github_token: ${{ secrets.ANTIAD_PERSONAL_TOKEN }}
       - name: rebuild list
         run: |
-          curl -s -m 30 -X POST "$GITHUB_API_URL/repos/$GITHUB_REPOSITORY/actions/workflows/auto-rebuild.yml/dispatches" -H "Accept: application/vnd.github.v3+json" -H "Authorization: token ${{ secrets.PERSON_TOKEN }}" -d '{"ref":"adlist-maker"}'
+          curl -s -m 30 -X POST "$GITHUB_API_URL/repos/$GITHUB_REPOSITORY/actions/workflows/auto-rebuild.yml/dispatches" -H "Accept: application/vnd.github.v3+json" -H "Authorization: token ${{ secrets.ANTIAD_PERSONAL_TOKEN }}" -d '{"ref":"adlist-maker"}'
