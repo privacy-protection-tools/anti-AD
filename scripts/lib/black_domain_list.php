@@ -1635,7 +1635,7 @@ return array(
         'llnw.net',
     ),
     'windows.com' => array( #精简域名，这个是windows推送服务？
-        'wns.windows.com',
+        'hk2.wns.windows.com', // 不能直接屏蔽wns.windows.com #532
     ),
     'uc.cn' => array( // dns日志提取
         'coral-task.uc.cn',
