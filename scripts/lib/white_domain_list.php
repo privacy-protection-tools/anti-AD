@@ -293,6 +293,7 @@ return array(
     'threatbook.cn' => 0, // #522
     'gofile.io' => -1, // #525
     'err.taobao.com' => 0, // #521
+    'boxer.baidu.com' => 0, // #535
 
 
 
