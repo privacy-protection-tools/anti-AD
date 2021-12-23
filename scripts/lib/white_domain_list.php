@@ -294,6 +294,7 @@ return array(
     'gofile.io' => -1, // #525
     'err.taobao.com' => 0, // #521
     'boxer.baidu.com' => 0, // #535
+    'simplyhired.com' => 0, // #536
 
 
 
