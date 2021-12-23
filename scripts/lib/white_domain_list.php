@@ -295,6 +295,7 @@ return array(
     'err.taobao.com' => 0, // #521
     'boxer.baidu.com' => 0, // #535
     'simplyhired.com' => 0, // #536
+    'x6img.com' => 0, // #537
 
 
 
