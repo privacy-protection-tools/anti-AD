@@ -22,6 +22,7 @@ const WHITERULE_SRC = ROOT_DIR . 'origin-files/whiterule-src-easylist.txt';
 
 $ARR_MERGED_WILD_LIST = array(
     'ad*.udn.com$dnstype=A|CNAME' => null,
+    'p*-ad-sign.byteimg.com' => null, // #529
     '*.mgr.consensu.org' => null,
     'vs*.gzcu.u3.ucweb.com' => null,
     'ad*.goforandroid.com' => null,
