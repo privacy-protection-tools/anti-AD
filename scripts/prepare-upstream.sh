@@ -5,7 +5,8 @@ source /etc/profile
 cd $(cd "$(dirname "$0")";pwd)
 
 easylist=(
-  "https://easylist-downloads.adblockplus.org/easylistchina+easylist.txt"
+  "https://easylist-downloads.adblockplus.org/easylist.txt"
+  "https://filters.adtidy.org/windows/filters/224_optimized.txt"
   "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt"
   "https://easylist.to/easylist/fanboy-annoyance.txt"
   "https://easylist.to/easylist/easyprivacy.txt"
