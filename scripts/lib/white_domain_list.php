@@ -296,6 +296,8 @@ return array(
     'boxer.baidu.com' => 0, // #535
     'simplyhired.com' => 0, // #536
     'x6img.com' => 0, // #537
+    'p-l.play.aiseet.atianqi.com' => 0, // #538
+    'news-l.play.aiseet.atianqi.com' => 0, // #538
 
 
 
