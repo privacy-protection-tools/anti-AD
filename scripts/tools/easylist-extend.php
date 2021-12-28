@@ -242,6 +242,7 @@ $ARR_WHITE_RULE_LIST = array(
     '@@||ads.privacy.qq.com^' => 1, // #505
     '@@||future.biz.weibo.com^' => 1, // #527
     '@@||ad-putting.gw.zt-express.com^' => 1, // #534
+    '@@||api.onedrive.com^' => 1, // #540
 );
 
 //针对上游赦免规则anti-AD不予赦免的规则，即赦免名单的黑名单
