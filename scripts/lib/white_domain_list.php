@@ -298,6 +298,24 @@ return array(
     'x6img.com' => 0, // #537
     'p-l.play.aiseet.atianqi.com' => 0, // #538
     'news-l.play.aiseet.atianqi.com' => 0, // #538
+    'bitbucket.io' => 0, #503
+    'ename.com.cn' => 0, #503
+    'baixing.com' => 0, #503
+    'aizhigu.com.cn' => 0, #503
+    'clarins.com.cn' => 0, #503
+    'jav321.com' => 0, #503
+    'knet.cn' => 0, #503
+    'pepsico.com.cn' => 0, #503
+    's11.cn' => 0, #503
+    'snap.com' => 0, #503
+    'nejmqianyan.cn' => 0, #503
+    'w8.com.cn' => 0, #503
+    'watchtimes.com.cn' => 0, #503
+    'whhd.gov.cn' => 0, #503
+    'xifuquan.com' => 0, #503
+    'xj-n-tax.gov.cn' => 0, #503
+    'zazhipu.com' => 0, #503
+    'ztgame.com' => 0, #503
 
 
 

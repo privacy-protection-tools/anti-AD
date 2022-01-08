@@ -67,7 +67,6 @@ return array(
     'hexun.com' => array('hxsame.hexun.com'),
     '2345.com' => array('2345.com'),
     '51.la' => array('51.la'),
-    '55.la' => array('55.la'),
     'ddns.name' => array('ddns.name'),
     '7clink.com' => array('7clink.com'),
     '88shu.cn' => array('88shu.cn'),
