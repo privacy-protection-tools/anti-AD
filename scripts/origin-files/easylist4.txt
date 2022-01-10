@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202201071831
+! Version: 202201101828
 ! Title: EasyPrivacy
-! Last modified: 07 Jan 2022 18:31 UTC
+! Last modified: 10 Jan 2022 18:28 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -772,6 +772,7 @@
 /api/tracing?
 /api/track?guid
 /api/tracking/*
+/api/trk?
 /api/v1/collector
 /api/v1/metrics
 /api/v1/stat?
@@ -4372,6 +4373,7 @@
 /track/view|
 /track/visitors/?
 /track/visits/?
+/track/w-pixel?
 /track2.php
 /track?*&event=
 /track?_event=
@@ -4732,6 +4734,7 @@
 /trk.*/tracking.
 /trk.gif?
 /trk.php?
+/trk/api/*
 /trk2.*/open?$image
 /trk?t=$image
 /trk_tb.
@@ -4986,6 +4989,7 @@
 /wdg/tracking-
 /wdg_tracking-
 /web-analytics.
+/web-analytics/*
 /web-api/log/*
 /web-vitals.
 /web-vitals/*
@@ -5364,6 +5368,7 @@ cgi-bin/counter
 .emltrk.com/
 .epicgames.com/O/
 .eventim.de/op/$image
+.everestengagement.com/$image
 .eviq.org.au/CMSModules/$image
 .flipboard.com/usage?
 .getblueshift.com/q/
@@ -5372,6 +5377,7 @@ cgi-bin/counter
 .innologica.com/t/
 .intercom-mail.com/q/
 .intercom-mail.com/via/$image
+.keap-link011.com/$image
 .keap-link015.com/$image
 .kijiji.ca/r/
 .klclick.com/$image
@@ -5395,6 +5401,7 @@ cgi-bin/counter
 .sendibm1.com/mk/
 .simplicitycrm.com/rd/
 .smartrmail.co/o/$image
+.southwest.com/r/$image
 .sparkpostmail2.com/q/$image
 .spmailtechnolo.com/q/$image
 .spreadshirt.net/mo/$image
@@ -5460,6 +5467,7 @@ cgi-bin/counter
 /track/open?
 /tracking.fanbridge.com/*
 /tracking.srv2.de/op/*$image
+/tracking/email.php
 /trcksp.
 /wf/open?upn=$image
 ://email.*/e/o/
@@ -5755,7 +5763,6 @@ _mongo_stats/
 ||g990421676.co^
 ||gbqofs.com^
 ||geoedge.be^
-||gigafyde.dev^
 ||glimr.io^
 ||glookup.info^
 ||go-mpulse.net^
@@ -7067,7 +7074,6 @@ _mongo_stats/
 ||kameleoon.eu^$third-party
 ||kampyle.com^$third-party
 ||kantartns.lt^$third-party
-||kaptcha.com^$third-party
 ||kaxsdc.com^$third-party
 ||keen.io^$third-party,domain=~keen.github.io|~keen.io
 ||keyade.com^$third-party
@@ -8482,7 +8488,7 @@ _mongo_stats/
 ||zuyapixel.com^$third-party
 ||zuzab.com^$third-party
 ! Block ping
-$ping
+$ping,third-party
 ! https://www.opensubtitles.org/
 $third-party,xmlhttprequest,domain=opensubtitles.org
 ! https://blog.confiant.com/the-trend-of-client-side-fingerprinting-in-cloaked-landing-pages-21915eb473df
@@ -8801,8 +8807,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||nexioniect.com^
 ||nfwebminer.com^$third-party
 ||niematego.tk^$third-party
-||nimiq.com^$third-party
-||nimiq.watch^$third-party
 ||nimiqpool.com^$third-party
 ||nimiqtest.net^$third-party
 ||nimpool.io^$third-party
@@ -8818,6 +8822,8 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||party-vqgdyvoycc.now.sh^$third-party
 ||pertholin.com^$third-party
 ||play.mix.kinostuff.com^
+||pool.nimiq.watch^$third-party
+||pool.nimiqchain.info^$third-party
 ||pr0gram.org^$third-party
 ||rand.com.ru^
 ||reauthenticator.com^
@@ -11963,6 +11969,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||icu.getstorybox.com^
 ||id.google.com/verify/
 ||id.verticalhealth.net/script.js?partnerid=
+||iddu1vvb7sk8-a.akamaihd.net^
 ||iheart.com/events
 ||imageshack.us^*/thpix.gif
 ||imgfarm.com/images/nocache/tr/*.gif?$image
@@ -13248,6 +13255,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||dd6zx4ibq538k.cloudfront.net^
 ||ddrvjrfwnij7n.cloudfront.net^
 ||di2xwvxz1jrvu.cloudfront.net^
+||dkupaw9ae63a8.cloudfront.net^
 ||dl1d2m8ri9v3j.cloudfront.net^
 ||dn34cbtcv9mef.cloudfront.net^
 ||dnn506yrbagrg.cloudfront.net^
@@ -25964,7 +25972,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||accounts.nintendo.com/account/js/pages/$script,~third-party
 @@||adobedtm.com/*-source.min.js$script,domain=atresplayer.com|backcountry.com|bt.com|dollargeneral.com|kroger.com|personal.natwest.com|verizon.com
 @@||adobedtm.com/*_source.min.js$script,domain=backcountry.com|kroger.com
-@@||adobedtm.com/extensions/$script,domain=apple.com|foodnetwork.com|verizon.com
+@@||adobedtm.com/extensions/$script,domain=apple.com|bravotv.com|foodnetwork.com|verizon.com
 @@||adobedtm.com/launch-$script,xmlhttprequest
 @@||adobedtm.com^*/launch-$script,xmlhttprequest
 @@||adobedtm.com^*/mbox-contents-$script,domain=absa.co.za|americanexpress.com|backcountry.com|costco.com|fcbarcelona.com|firststatesuper.com.au|hgtv.com|lenovo.com|lowes.com|nfl.com|oprah.com|pnc.com|shoppersdrugmart.ca|usanetwork.com|vanityfair.com|wired.com|wowway.net
@@ -26037,17 +26045,19 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||humaninterest.com/api/analytics/$script,~third-party
 @@||js.monitor.azure.com/scripts/$script,domain=microsoft.com
 @@||js.taplytics.com/jssdk/$domain=foxnews.com
-@@||kaptcha.com/collect/sdk?$domain=vanillagift.com
 @@||kbctouch.kbc.be^*/dynatrace-$script,~third-party
 @@||lenovo.com/fea/js/adobeAnalytics/$script,~third-party,xmlhttprequest
 @@||live.house.gov/js/analytics.$script,~third-party
+@@||mparticle.com/js/v2/*/mparticle.js$script,domain=cnbc.com
 @@||musiclab.chromeexperiments.com/bin/lib/angulartics-google-analytics.js
 @@||natureetdecouvertes.com^*/pixel.png$~third-party
+@@||nike.com^*/optimizely.browser.umd.min.js$~third-party
 @@||online.tivo.com/assets/tve/common/js/vendor/jsnlog/$script,~third-party
 @@||onlinebanking.usbank.com/TUX/public/libs/adobe/appmeasurement.js$script,~third-party
 @@||oyster.com/wp-content/plugins/smartertravel-shared/assets/js/tracking.min.js$~third-party
 @@||realtor.com/rentals/api/optimizely.js$script,~third-party
 @@||researchintel.com^*/feedback.asp$xmlhttprequest,domain=intel.com
+@@||rfksrv.com/rfk/js/*/init.js$script,domain=riteaid.com
 @@||sammobile.com/wp-content/themes/sammobile-6/assets/js/newrelic.js$~third-party
 @@||shop.bmw.com.au/assets/analytics-setup.js$~third-party
 @@||smartrevise.online/css/analytics.min.css$~third-party
