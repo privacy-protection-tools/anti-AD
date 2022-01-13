@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202201101828
+! Version: 202201131128
 ! Title: EasyPrivacy
-! Last modified: 10 Jan 2022 18:28 UTC
+! Last modified: 13 Jan 2022 11:28 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -560,6 +560,7 @@
 /analytics-js.
 /analytics-js/*
 /analytics-min.js
+/analytics-minimal.
 /analytics-ping.
 /analytics-plugin/*
 /analytics-post-
@@ -5450,6 +5451,7 @@ cgi-bin/counter
 /notifications.googleapis.com/email/t/*
 /notifications/beacon/*
 /open.aspx?
+/open.html?$image
 /page.bsigroup.com/*
 /pixel-prod.
 /pixel?cid=
@@ -5957,6 +5959,7 @@ _mongo_stats/
 ||admother.com^$third-party
 ||adobedtm.com^$third-party,domain=~adobe.com
 ||adobetag.com^$third-party
+||adobetarget.com^$third-party
 ||adoftheyear.com^$third-party
 ||adoric-om.com^$third-party
 ||adpaths.com^$third-party
@@ -7510,7 +7513,6 @@ _mongo_stats/
 ||pdbu.net^$third-party
 ||pdst.fm^$script,third-party
 ||peerius.com^$third-party
-||pendo.io^$third-party
 ||percentmobile.com^$third-party
 ||perf-serving.com^$third-party
 ||perfalytics.com^$third-party
@@ -11993,9 +11995,9 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||infosniper.net/locate-ip-on-map.php
 ||infusionsoft.com^*/getTrackingCode?
 ||ingest.make.rvapps.io^
-||inmoment.com.au/intercept/
-||inmoment.com/intercept/
-||inmoment.com/websurvey/
+||inmoment.com.au/intercept/$third-party
+||inmoment.com/intercept/$third-party
+||inmoment.com/websurvey/$third-party
 ||innogamescdn.com/media/js/metrics-
 ||inphonic.com/tracking/
 ||inq.com^*/onEvent?_
@@ -14266,8 +14268,8 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||a-reporting.nytimes.com^
 ||a.electerious.com^
 ||aa.avvo.com^
-||aax-eu-dub.amazon.com^
-||aax-us-iad.amazon.com^
+||aax-eu-dub.amazon.com^$script
+||aax-us-iad.amazon.com^$script
 ||ab-machine.forbes.com^
 ||ab.fanatical.com^
 ||abcnews.com/assets/dtci/js/abcnews_visitorId.js
@@ -15077,6 +15079,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||stats.wwitv.com^
 ||streamstats.prd.dlive.tv^
 ||streamta.pe/stat/
+||streamta.site/stat/
 ||streamtape.com/stat/
 ||strtapeadblock.club/stat/
 ||strtpe.link/stat/
@@ -15188,6 +15191,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||ultimedia.com/deliver/statistiques/
 ||umami.wakarimasen.moe^
 ||uniqlo.com/us/elgnisolqinu.js
+||unity3d.com/v1/events
 ||unsplash.com/a/third-party/snow-
 ||unsplash.com/nmetrics
 ||upi.com/story/stat/
@@ -25665,6 +25669,8 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||ss.lv/counter/
 ||stats.tunt.lv^
 ||tanks.lv/top/stats.php
+! Lithuanian
+||lrytas.lt/counter/
 ! Norwegian
 ||click.vgnett.no^
 ||nrk.no^*/stats/
@@ -26033,6 +26039,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||d41.co/tags/ff-2.min.js$domain=ads.spotify.com
 @@||daan.dev/wp-content/*/caos-supports-google-analytics-$image,~third-party
 @@||dashboard.unity3d.com/services/analytics/$~third-party
+@@||etsy.com/api/v3/ajax/bespoke/*log_performance_metrics=$~third-party
 @@||geo.gorillanation.com/geo.php$script,domain=sherdog.com
 @@||gettingpersonal.co.uk^*/scripts/app/shared/googleanalytics.js$script,~third-party
 @@||glenat.com^*/static/analytics.js$script,~third-party
@@ -26427,7 +26434,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||geo.kaloo.ga/json/$script,domain=tagesspiegel.de
 @@||google-analytics.com/analytics.js$domain=saturn.at|schweizerfleisch.ch|vox.de
 @@||google-analytics.com/plugins/ua/ec.js$domain=saturn.at
-@@||googletagmanager.com/gtm.js$domain=bunte.de|computerbild.de|finanzen.at|finanzen.net|freenet-funk.de|radiorur.de|saturn.at|sport1.de|vox.de
+@@||googletagmanager.com/gtm.js$domain=bunte.de|computerbild.de|finanzen.at|finanzen.net|freenet-funk.de|idealo.at|idealo.de|radiorur.de|saturn.at|sport1.de|vox.de
 @@||img.adnz.co^$image,domain=finanzen.ch
 @@||imrworldwide.com/novms/*/ggcm*.js$domain=tvnow.de
 @@||kameleoon.com/geolocation.gif$domain=welt.de
