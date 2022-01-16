@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202201131128
+! Version: 202201161141
 ! Title: Fanboy's Annoyance List
-! Last modified: 13 Jan 2022 11:28 UTC
+! Last modified: 16 Jan 2022 11:41 UTC
 ! Expires: 4 days (update frequency)
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -460,9 +460,11 @@ _site/gotop.
 -push-notifications/
 /amp-user-notification-
 /amp-web-push-
+/assets/www/notification.
 /av/push-
 /build/push.js
 /checkPush.js
+/content/js/push.js
 /fcmPush.js
 /FeedifySW.js
 /flying_push.
@@ -3779,7 +3781,7 @@ _youtube_social_
 /cookie-check.js
 /cookie-choices.
 /cookie-compliance.
-/cookie-consent-$domain=~github.com|~gitlab.com
+/cookie-consent-$domain=~cookielaw.org|~github.com|~gitlab.com
 /cookie-consent.
 /cookie-consent/*
 /cookie-consent?
@@ -7117,6 +7119,7 @@ m###teaser-newsletter
 ##.article-signup_wrapper
 ##.article-slidein-newsletter
 ##.article-subscribe-container
+##.article-subscription-widget
 ##.article-tile-newsletter
 ##.article-tools-newsletter
 ##.article__content-sign-up
@@ -27903,6 +27906,7 @@ m###teaser-newsletter
 ###privacy-policies-banner
 ###privacy-policy
 ###privacy-policy-banner
+###privacy-policy-global-message
 ###privacy-policy-link-wrapper
 ###privacy-policy-modal
 ###privacy-policy-notice
@@ -30392,6 +30396,7 @@ m###teaser-newsletter
 ##.cookie-min-panel
 ##.cookie-modal
 ##.cookie-modal-message
+##.cookie-mode__wrap
 ##.cookie-module
 ##.cookie-module-wrapper
 ##.cookie-monster
@@ -32161,6 +32166,7 @@ m###teaser-newsletter
 ##.eurocookie
 ##.eut-privacy-wrapper
 ##.ev-cookie-banner
+##.evaste-container
 ##.evasteseloste
 ##.evidon-banner
 ##.evo-gdpr-box
@@ -34572,8 +34578,10 @@ m###teaser-newsletter
 ##[aria-describedby="cookieprivacy"]
 ##[aria-describedby="cookies-policy-message"]
 ##[aria-describedby="dialog-eu-cookie-law"]
+##[aria-describedby^="cookie-wall-"]
 ##[aria-label="cookieconsent"]
 ##[aria-labelledby="cookie-dialog"]
+##[aria-labelledby="cookie-wall-heading"]
 ##[aria-labelledby="ui-dialog-title-cookiebox"]
 ##[class^="CookieMessage_"]
 ##[class^="FooterGDPR"]
@@ -35944,7 +35952,7 @@ m###teaser-newsletter
 ||widget.clym-sdk.net^$third-party
 ||wpcc.io^$third-party
 ! privacy-mgmt.com
-||cdn.privacy-mgmt.com^$domain=idealo.co.uk|justthenews.com|jyllands-posten.dk|pricespy.co.uk|sky.com
+||cdn.privacy-mgmt.com^$domain=idealo.co.uk|justthenews.com|jyllands-posten.dk|pricespy.co.uk|sky.com|wsj.com
 ! Consent Trackers
 ||opencmp.net^$script,third-party
 ||privacy-mgmt.com^$third-party,domain=~11freunde.de|~ad.nl|~autobild.de|~bike-bild.de|~bild.de|~boerse-online.de|~bold.dk|~businessinsider.de|~bz-berlin.de|~caramia.de|~clever-tanken.de|~computerbild.de|~derstandard.at|~dilbert.com|~edelblech.de|~ekstrabladet.dk|esgentside.com|~faz.net|~finanzen.at|~finanzen.ch|~finanzen.net|~fitbook.de|~gentside.com|~gentside.de|~giga.de|~gofeminin.de|~heise.de|~idealo.at|~idealo.co.uk|~idealo.de|~idealo.es|~idealo.fr|~idealo.it|~immonet.de|~insider.com|~kombi.de|~manager-magazin.de|~maxisciences.com|~meinestadt.de|~metal-hammer.de|~musikexpress.de|~myhomebook.de|~n24.de|~noizz.de|~ohmymag.com|~onmeda.de|~politico.eu|~rollingstone.de|~spiegel.de|~sport1.de|~sportbild.de|~stylebook.de|~techbook.de|~telegraph.co.uk|~testbild.de|~transfermarkt.at|~transfermarkt.ch|~transfermarkt.co.uk|~transfermarkt.com|~transfermarkt.com.tr|~transfermarkt.de|~transfermarkt.fr|~transfermarkt.it|~transfermarkt.nl|~transfermarkt.pl|~transfermarkt.pt|~transfermarkt.us|~travelbook.de|~tvspielfilm.de|~utopia.de|~vip.de|~vtm.begmt.com|~welt.de|~wieistmeineip.at|~wieistmeineip.ch|~wieistmeineip.de|~zuio.tv
@@ -40268,6 +40276,7 @@ kiplinger.com###kip-login
 kiplinger.com###kip-today-signup
 livemint.com###lastAd
 tfln.co###leadgen
+axios.com###localCTA--chicago
 broadcastingcable.com###login_subscribe
 entrepreneur.com###magazine-promo
 neonnettle.com###mailList
@@ -40587,6 +40596,7 @@ crainsnewyork.com##.crain-newsletter-v2-wrapper
 mysteriesrunsolved.com##.cs-entry__subscribe
 cheatsheet.com##.cs-related-links
 mysteriesrunsolved.com##.cs-site-subscribe
+techbomb.ca##.elementor-popup-modal
 nzherald.co.nz##.email-boost
 breakingnews.ie##.flex.bg-gray-900.pt-12
 howtogeek.com##.footer-email
@@ -40763,6 +40773,7 @@ abc15.com##.modal--content
 ba-bamail.com,blogtalkradio.com,breakingdefense.com,martechadvisor.com,medicalnewstoday.com,nordvpn.com,playfield.io,poolsupplies.com,pv-magazine.com##.modal-backdrop
 atimes.com,jns.org##.modal-overlay
 blogtalkradio.com##.modal-scrollable
+ensemblemagazine.co.nz##.modal-subscribe
 campaignlive.co.uk,thirdsector.co.uk##.modalOverlay
 campaignlive.co.uk,thirdsector.co.uk##.modalWrap
 zerohedge.com##.modal__container
@@ -41612,6 +41623,7 @@ simkl.com##.SimklTVFooterShare
 avon.com,businessinsider.com,designboom.com,highstakesdb.com,hurriyetdailynews.com,revision3.com,veteranstoday.news##.Social
 tasteofhome.com##.TOH-follow-us
 citizentv.co.ke##.Telegram
+grammarly.com##._3fq8S-container
 ocaholic.co.uk##.a2a_counter
 datacenterdynamics.com##.a2a_default_style
 forwardprogressives.com,ocaholic.ch##.a2a_kit
@@ -42712,6 +42724,7 @@ theregister.com###RegCTBWF
 king.com###SiteMessages
 valleyvet.com###ToU_float
 digit-photo.com###TwGi0pOnXb-page
+warnerbros.com###WB-floating-notice
 postojnska-jama.eu###\5f iCD
 warnerbros.fr###_EAPM
 calorieking.com###__next > .MuiPaper-root
@@ -42800,7 +42813,7 @@ netcraft.com###consent-form
 niwa.co.nz###consent-request
 c21stores.com###consent-tracking
 predesto.com###consent-wrapper
-krunker.io###consentBlock
+krunker.io,moomoo.io###consentBlock
 sporx.com###consentdiv
 hampel-auctions.com###consentmanager
 dovizborsa.com###container > #tools._h4
@@ -43253,6 +43266,7 @@ blocksite.co##.dialog-widget-content
 designmodo.com##.dialogContainer
 scaleway.com##.didiff-hide
 dropbox.com##.dig-Snackbar
+lg.com##.dimmed
 countwordsfree.com,earthcp.com,foxsports.com.au,lexus.com.cy,lexus.ie,news.com.au##.disclaimer
 taste.com.au##.disclaimer-note
 news.com.au##.disclaimer-text
@@ -43416,7 +43430,7 @@ myanimelist.net##.modal-container
 myanimelist.net##.modal-content
 environmental-finance.com##.modal-dialog
 oranum.com##.modal-inner
-digimobil.es##.modal-overlay
+digimobil.es,youinvest.co.uk##.modal-overlay
 barclays.net##.modal-pecr
 usnews.com##.modal-window
 sekwens.com##.module-abovebox
@@ -43775,6 +43789,7 @@ eteknix.com###cookie-law-info-bar
 depositfiles.com,dfiles.eu,dfiles.ru###cookie_popup
 adblockplus.org###cookiebar
 tweaktown.com###cookies_footer_sec
+cbs.com,disneyplus.com,open.spotify.com###onetrust-consent-sdk
 tf1.fr###tc-privacy-wrapper
 shirtsofcotton.com###udtDark
 bild.de,welt.de##.as-oil
@@ -46742,7 +46757,7 @@ vertaa.fi##.cg-89.cg-97
 datakauppa.fi##.cli-modal-backdrop
 jenkki.fi##.container-agree
 kitchentime.fi,makujakauppa.fi##.cookie
-blogit.fi,ilmainensanakirja.fi,telsu.fi##.cookies
+blogit.fi,ilmainensanakirja.fi,tekniikkaosat.fi,telsu.fi##.cookies
 matkahuolto.fi##.css-jlvvqa
 ifolor.fi##.dialogBanner--align-bottom
 epressi.com##.lpcn
@@ -47440,7 +47455,7 @@ sakharov-center.ru###kuk
 aquaphor.ru###modal-kuki
 forum-windows.net###ntf
 cmoto.ru###oct-policy
-alterexit.info###pop
+alter-science.info,alterexit.info###pop
 rgs.ru###rgs-main-context-bar
 linux-info.ru###trumpet_message
 smpbank.ru##.E_KUV0ozvj
@@ -47491,6 +47506,7 @@ dcciv.ru,obozrevatel.com##.t657__wrapper
 vega-protect.ru##.t886
 shop.philips.ru##.test-mode
 pfr.gov.ru##.user-data-processing-wrapper
+warthunder.ru##.wt-cb
 yoomoney.ru##div[class^="Gdpr__StyledGdpr-"]
 pik-broker.ru##div[class^="cookie_cookie_"]
 ! 
@@ -48573,7 +48589,6 @@ danskebank.fi#@##cookie-text
 gamer.nl#@##cookie-wall
 birdpix.nl,nederpix.nl#@##cookieAccept
 media.netflix.com#@##cookieAlert
-blog.google#@##cookieBar
 dehn.de,search.itaa.be#@##cookieConsent
 indebuurt.nl,tweakers.net#@##cookieContainer
 researchaffiliates.com#@##cookieDialog
