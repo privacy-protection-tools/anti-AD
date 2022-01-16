@@ -316,6 +316,7 @@ return array(
     'xj-n-tax.gov.cn' => 0, #503
     'zazhipu.com' => 0, #503
     'ztgame.com' => 0, #503
+    'yximgs.com' => 0, #554
 
 
 
