@@ -254,7 +254,6 @@ return array(
         'adv.sec.miui.com',
         'api.brs.intl.miui.com',
         'api.newsfeed.intl.miui.com',
-        'huangye.miui.com',
         'browser.miui.com',
 
     ),
