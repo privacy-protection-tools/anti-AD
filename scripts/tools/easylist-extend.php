@@ -245,6 +245,7 @@ $ARR_WHITE_RULE_LIST = array(
     '@@||api.onedrive.com^' => 1, // #540
     '@@||files.1drv.com^' => 1, // #540
     '@@||skyapi.live.net^' => 1, // #540
+    '@@||adm.crowdicity.com^' => 1, // #560
 );
 
 //针对上游赦免规则anti-AD不予赦免的规则，即赦免名单的黑名单
