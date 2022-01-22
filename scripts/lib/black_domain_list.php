@@ -1076,6 +1076,10 @@ return array(
         'gvt2.com', // #558
     ),
     
+    '95516.com' => array(
+        'ads.95516.com', // #552
+    ),
+    
     // 批量添加域名
     '0202.com.tw' =>array('0202.com.tw', 'www.0202.com.tw'),
     '0757kd.cn' =>array('0757kd.cn', 'www.0757kd.cn'),

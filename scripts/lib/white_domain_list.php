@@ -317,6 +317,8 @@ return array(
     'zazhipu.com' => 0, #503
     'ztgame.com' => 0, #503
     'yximgs.com' => 0, #554
+    'cdn.cnbj1.fds.api.mi-img.com' => 0, #556
+    'browser.mi-img.com' => 0, #556
 
 
 
