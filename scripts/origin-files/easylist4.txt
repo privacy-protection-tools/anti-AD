@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202201251718
+! Version: 202201281702
 ! Title: EasyPrivacy
-! Last modified: 25 Jan 2022 17:18 UTC
+! Last modified: 28 Jan 2022 17:02 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -1795,6 +1795,7 @@
 /event?t=view&
 /event?token=
 /event?tub_id=
+/event_log/*
 /event_logger
 /event_logging/*
 /event_tracker?_
@@ -3600,6 +3601,7 @@
 /referadd?
 /referal-cookie.
 /referer.gif?
+/referer/visitor/*
 /refererRecord.
 /referral_tracker.
 /referral_tracking.
@@ -4120,6 +4122,7 @@
 /stats/ping?
 /stats/pv.
 /stats/record.php?
+/stats/search-log
 /stats/services/*
 /stats/survey.
 /stats/track.asp?
@@ -11875,6 +11878,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||geckofoot.com/gfvisitormap.aspx?
 ||gem.com/api/o/$image,third-party
 ||gemius.mgr.consensu.org^
+||genesis.malwarebytes.com^
 ||geni.us/snippet.js
 ||geni.us/snippet.min.js
 ||geo.ertya.com^
@@ -12940,6 +12944,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||tracking.menamarketplace.com^
 ||tracking.monsido.com^
 ||tracking.musixmatch.com^
+||tracking.olx-st.com^
 ||tracking.pacharge.com^
 ||tracking.plattformad.com^$third-party
 ||tracking.plinga.de^
@@ -13624,6 +13629,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||events.newsroom.bi^
 ||events.sk.ht^
 ||free.fr/services/compteur_page.php?
+||get-trust-zone.info/api_ip_info.php?
 ||humanoid.fr/register-impression?
 ||i-services.net^*/compteur.php?
 ||jvc.gg^*/traffic.js
@@ -15088,6 +15094,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||stats.cardschat.com^
 ||stats.cdngeek.com^$domain=edugeek.net
 ||stats.clear-media.com^
+||stats.davidickedelivery.com^
 ||stats.dnaindia.com^
 ||stats.fs.com^
 ||stats.gateio.ch^
@@ -15154,6 +15161,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||thriftbooks.com/scripts/sp.js
 ||tiendeo.*/_statsapi/
 ||tiktok.com/captcha/report
+||tiktok.com/whale/
 ||tilanalytics.timesinternet.in^
 ||time.is/img/nod.png
 ||tms.eharmony.ca^
@@ -15178,6 +15186,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||tracking.engineering.cloud.seek.com.au^
 ||tracking.epicgames.com^
 ||tracking.hsn.com^
+||tracking.shopstyle.co.uk^
 ||tracking.shopstyle.com^
 ||tracking.unrealengine.com^
 ||tradingview.com/ping
@@ -26028,6 +26037,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||analytics.tercept.com/js/ga.js$script,~third-party
 @@||analytics.twitter.com^$domain=analytics.twitter.com
 @@||ancestrycdn.com/ui-static/lib/tracking/$domain=ancestry.com
+@@||apc-pli.com/api/tracking/$~third-party,xmlhttprequest
 @@||api.cxense.com/public/widget/data?$domain=bizjournals.com|marketwatch.com|wsj.com
 @@||api.getmakerlog.com/discussions/$~third-party,websocket,xmlhttprequest
 @@||api.ipify.org^$script,domain=right-on.co.jp
@@ -26144,7 +26154,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||chessfriends.com/js/live/GoogleAnalytics.js?$~third-party
 @@||circuitv.com/assets/js/analytics.js$~third-party
 @@||cloud.talend.com/api/ipaas/services/analytics/$~third-party,xmlhttprequest
-@@||cloudflare.com/cdn-cgi/trace$domain=myair2.resmed.com
+@@||cloudflare.com/cdn-cgi/trace$domain=infyspringboard.onwingspan.com|myair2.resmed.com
 @@||cloudflareinsights.com/beacon.min.js$script,domain=app.uniswap.org
 @@||cloudfront.net/atrk.js$domain=luxuryrealestate.com
 @@||cloudfront.net/vis_opt.js$script,domain=gre.magoosh.com
@@ -26408,6 +26418,8 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||zappos.com/js/trackingPixel/mercentTracker.js
 @@||zylom.com/images/site/zylom/scripts/google-analytics.js
 @@||zynga.com/current/iframe/track.php?$domain=apps.facebook.com
+! https://github.com/easylist/easylist/issues/10565
+@@||googletagmanager.com/gtm.js$domain=blaklader.at|blaklader.be|blaklader.ca|blaklader.com|blaklader.cz|blaklader.de|blaklader.dk|blaklader.ee|blaklader.es|blaklader.fi|blaklader.fr|blaklader.ie|blaklader.it|blaklader.nl|blaklader.no|blaklader.pl|blaklader.se|blaklader.uk
 ! https://github.com/easylist/easylist/issues/8662
 @@/analyticsmediator.$script,domain=mysortimo.be|mysortimo.co.uk|mysortimo.com|mysortimo.com.au|mysortimo.de|mysortimo.dk|mysortimo.es|mysortimo.fr|mysortimo.no|mysortimo.se
 ! Opera/Safari (buggy 3rd-party implementations)
