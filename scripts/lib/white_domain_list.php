@@ -325,6 +325,7 @@ return array(
     'down.360safe.com' => 0, #577
     'soup.v.qq.com' => 0, #576
     'live-trace.bilibili.com' => 0, #561, #517
+    'live800.com' => 0, #573
 
 
 
