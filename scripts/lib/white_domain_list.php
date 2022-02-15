@@ -320,6 +320,7 @@ return array(
     'cdn.cnbj1.fds.api.mi-img.com' => 0, #556
     'browser.mi-img.com' => 0, #556
     'pic.imgdb.cn' => 0, #565
+    'ip-tracker.org' => 0, #578
 
 
 
