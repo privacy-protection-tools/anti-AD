@@ -322,6 +322,7 @@ return array(
     'pic.imgdb.cn' => 0, #565
     'ip-tracker.org' => 0, #578
     'is.snssdk.com' => 0, #579
+    'down.360safe.com' => 0, #577
 
 
 
