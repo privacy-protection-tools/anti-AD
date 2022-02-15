@@ -1080,6 +1080,12 @@ return array(
         'ads.95516.com', // #552
     ),
     
+    'dealmoon.com' => array(
+        'analytics.dealmoon.com', // #575
+    ),
+    
+    
+    
     // 批量添加域名
     '0202.com.tw' =>array('0202.com.tw', 'www.0202.com.tw'),
     '0757kd.cn' =>array('0757kd.cn', 'www.0757kd.cn'),
