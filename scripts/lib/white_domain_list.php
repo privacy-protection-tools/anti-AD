@@ -326,6 +326,7 @@ return array(
     'soup.v.qq.com' => 0, #576
     'live-trace.bilibili.com' => 0, #561, #517
     'live800.com' => 0, #573
+    'www.meipian7.cn' => 0, #586
 
 
 
