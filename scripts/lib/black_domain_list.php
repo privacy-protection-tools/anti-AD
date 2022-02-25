@@ -1106,6 +1106,10 @@ return array(
     'wosms.cn' => array(
         'auth.wosms.cn', // #547
     ),
+    'zijieapi.com' => array(
+        'ads5-normal-hl.zijieapi.com', // #592
+        'ads3-normal-hl.zijieapi.com', // #592
+    ),
     
     
     
