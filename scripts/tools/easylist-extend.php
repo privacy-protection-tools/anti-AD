@@ -249,6 +249,7 @@ $ARR_WHITE_RULE_LIST = array(
     '@@||iufostworldcongress-singapore.com^' => 1, // #563
     '@@||ad.ext.azure.com^' => 1, // #581
     '@@||ad.ext.azure.cn^' => 1, // #581
+    '@@||torproject.org^' => 1, // #591
 );
 
 //针对上游赦免规则anti-AD不予赦免的规则，即赦免名单的黑名单
