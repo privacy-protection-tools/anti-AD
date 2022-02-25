@@ -1113,6 +1113,19 @@ return array(
     'cncrk.com' => array(
         'js.cncrk.com', // #583
     ),
+    'dianshihome.com' => array(
+        'api.dianshihome.com', // #571
+        'cdn.dianshihome.com', // #571
+    ),
+    'dianshige.com' => array(
+        'api.dianshige.com', // #571
+    ),
+    'tvfuwu.com' => array(
+        'pushapi.tvfuwu.com', // #571
+    ),
+    'cdnimg.org' => array(
+        'pushapi.cdnimg.org', // #571
+    ),
     
     
     
