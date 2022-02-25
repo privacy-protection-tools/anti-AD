@@ -1083,6 +1083,29 @@ return array(
     'dealmoon.com' => array(
         'analytics.dealmoon.com', // #575
     ),
+    'cmpassport.com' => array(
+        'cmpassport.com', // #547
+        'config.cmpassport.com', // #547
+        'www.cmpassport.com', // #547
+        'wap.cmpassport.com', // #547
+    ),
+    'wo.cn' => array(
+        'hmrz.wo.cn', // #547
+        'id.mail.wo.cn', // #547
+        'mdn.open.wo.cn', // #547
+    ),
+    '189.cn' => array(
+        'e.189.cn', // #547
+    ),
+    'id6.me' => array(
+        'id6.me', // #547
+    ),
+    'wostore.cn' => array(
+        'opencloud.wostore.cn', // #547
+    ),
+    'wosms.cn' => array(
+        'auth.wosms.cn', // #547
+    ),
     
     
     
