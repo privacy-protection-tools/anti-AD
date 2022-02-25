@@ -1110,6 +1110,9 @@ return array(
         'ads5-normal-hl.zijieapi.com', // #592
         'ads3-normal-hl.zijieapi.com', // #592
     ),
+    'cncrk.com' => array(
+        'js.cncrk.com', // #583
+    ),
     
     
     
