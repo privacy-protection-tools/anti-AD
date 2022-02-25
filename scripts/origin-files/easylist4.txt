@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202202221701
+! Version: 202202251707
 ! Title: EasyPrivacy
-! Last modified: 22 Feb 2022 17:01 UTC
+! Last modified: 25 Feb 2022 17:07 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -330,6 +330,7 @@
 /acounter.php?
 /act_pagetrack.
 /action/analytics
+/ActionLogger?
 /activetrackphp.php?
 /activities/logger/*
 /activity-track/?
@@ -769,6 +770,7 @@
 /api/analytics|
 /api/cmp_tracker
 /api/ComScorePageView
+/api/ipv4check?
 /api/log?
 /api/lt/ref?
 /api/metrics$other
@@ -5123,6 +5125,7 @@
 /wpblog.gif?
 /wpengine-analytics/*
 /wprum.
+/wps-visitor-counter/*
 /wpstatistics/*
 /wrapper/metrics/*
 /Wrappers?cmd=
@@ -5754,7 +5757,6 @@ _mongo_stats/
 ||bidswitch.net^
 ||bkrtx.com^
 ||bluekai.com^
-||bmcdn2.com^
 ||bonne-terre-data-layer.com^
 ||bounceexchange.com^
 ||briskeagle.io^
@@ -5820,11 +5822,13 @@ _mongo_stats/
 ||impactcdn.com^
 ||impactradius-event.com^
 ||imrworldwide.com^
+||imzahrwl.xyz^
 ||innerskinresearch.com^
 ||instantfox.co^
 ||irs01.com^
 ||krxd.net^
 ||ldnlyap.com^
+||leadhit.io^
 ||liadm.com^
 ||liveyield.com^
 ||lltrck.com^
@@ -6308,6 +6312,7 @@ _mongo_stats/
 ||callmeasurement.com^$third-party
 ||callrail.com^$third-party
 ||callreports.com^$third-party
+||calltouch.ru^$third-party
 ||calltrackingmetrics.com^$third-party
 ||calltracks.com^$third-party
 ||campaigncog.com^$third-party
@@ -10423,7 +10428,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||antvoice.com^$third-party
 ||atraxio.com^$third-party
 ||audiencesquare.com^$third-party
-||browsiprod.com^$third-party
 ||canalstat.com^$third-party
 ||carts.guru^$third-party
 ||casualstat.com^$third-party
@@ -12952,6 +12956,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||tracker.keywordintent.com^
 ||tracker.marinsoftware.com^
 ||tracker.mrpfd.com^
+||tracker.nitropay.com^
 ||tracker.roitesting.com^
 ||tracker.softcube.com^
 ||tracker.timesgroup.com^
@@ -14367,6 +14372,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||acronymfinder.com/~/tr.ashx
 ||activate.latimes.com/pc/caltimes/?pulse2001=
 ||active.com/ig.track.js
+||adblockstreamtape.site/stat/
 ||adc-js.nine.com.au^
 ||adc.9news.com.au^
 ||adc.api.nine.com.au^
@@ -14905,6 +14911,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||nytimes.com/svc/nyt/data-layer?
 ||nytimes.com/v1/purr-cache
 ||nzpages.co.nz/modules/common/track.js
+||odysee.com/reports/
 ||online-umwandeln.de/analytics.js
 ||ophan.theguardian.com^
 ||optimize-stats.voxmedia.com^
@@ -26036,6 +26043,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||cpt-static.gannettdigital.com/universal-web-client/master/latest/elements/vendor/adobe/
 @@||cqcounter.com^$domain=cqcounter.com
 @@||cvs.com/shop-assets/js/VisitorAPI.js$~third-party
+@@||d1igp3oop3iho5.cloudfront.net^*/zaius.js$script,domain=subscriptions.management
 @@||d1km2unb2600pw.cloudfront.net/assets/tracking-history-popup-$script,domain=collectplus.yodel.co.uk
 @@||d2wy8f7a9ursnm.cloudfront.net/v4/bugsnag.min.js$script,domain=einthusan.tv
 @@||d2wy8f7a9ursnm.cloudfront.net^$script,domain=staples.ca
@@ -26135,6 +26143,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||js.sentry-cdn.com^$script,domain=book.dmm.com|jobs.ch|pizzahut.com.au
 @@||js.taplytics.com/jssdk/$domain=foxnews.com
 @@||jsrdn.com/s/$script,domain=distro.tv
+@@||jumbe.zaius.com/v2/zaius.gif?$domain=subscriptions.management
 @@||jwpcdn.com/player/plugins/googima/*/googima.js$script,domain=ladbible.com
 @@||kaptcha.com/collect/sdk?$domain=wyze.com
 @@||kawasaki.com/Scripts/Analytics/BaseAnalytics.js$script,~third-party
@@ -26809,6 +26818,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||marktest.pt/netscope-gemius.js$script,domain=ojogo.pt
 @@||netmede.pt/code/ga.min.js$script,domain=netmede.pt
 @@||nostv.pt^*/angulartics-google-analytics.js?
+@@||serasaexperian.com.br/dist/scripts/fingerprint2.js$~third-party
 @@||siteapps.com^$script,domain=netcombo.com.br
 @@||splunk-heavyforwarder-public.vtex.com:8088/services/collector/event$xmlhttprequest,domain=loja3m.com.br
 @@||stats.g.doubleclick.net/dc.js$domain=netcombo.com.br
@@ -26848,6 +26858,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||leroymerlin.ru/config/analytics.js$script
 @@||matchid.adfox.yandex.ru/?url=$script,domain=ctc.ru
 @@||mc.yandex.ru/metrika/tag.js$script,domain=auto.yandex|coddyschool.com
+@@||mealty.ru/js/ga_events.js$~third-party
 @@||megafon.ru/static/?files=*/tealeaf.js
 @@||mts.ru/app/vendor/angular-google-analytics.min.js
 @@||mycargo.rzd.ru/dst/scripts/common/analytics-helper.js$~third-party
