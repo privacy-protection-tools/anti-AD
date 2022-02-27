@@ -329,6 +329,9 @@ return array(
     'www.meipian7.cn' => 0, #586
     'creativecommons.org' => 0, #588
     'go.pardot.com' => 0, #569
+    'gbfek.dfcfw.com' => 0, #593
+    'dfscdn.dfcfw.com' => 0, #593
+    'empic.dfcfw.com' => 0, #593
 
 
 
