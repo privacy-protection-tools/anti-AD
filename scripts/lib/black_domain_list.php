@@ -1094,9 +1094,6 @@ return array(
         'id.mail.wo.cn', // #547
         'mdn.open.wo.cn', // #547
     ),
-    '189.cn' => array(
-        'e.189.cn', // #547
-    ),
     'id6.me' => array(
         'id6.me', // #547
     ),
