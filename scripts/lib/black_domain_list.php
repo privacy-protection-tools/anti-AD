@@ -48,10 +48,6 @@ return array(
     'openstorage.cn' => array(
         'iflyad.bjb.openstorage.cn'
     ),
-    'cmpassport.com' => array(
-        'log1.cmpassport.com',
-        'log.cmpassport.com',
-    ),
     'analysys.cn' => array('analysys.cn'),
     'mob.com' => array('mob.com'),
     'szy.cn' => array('dtlog.szy.cn'),
@@ -1084,10 +1080,10 @@ return array(
         'analytics.dealmoon.com', // #575
     ),
     'cmpassport.com' => array(
-        'cmpassport.com', // #547
         'config.cmpassport.com', // #547
-        'www.cmpassport.com', // #547
         'wap.cmpassport.com', // #547
+	'log1.cmpassport.com',
+        'log.cmpassport.com',
     ),
     'wo.cn' => array(
         'hmrz.wo.cn', // #547
