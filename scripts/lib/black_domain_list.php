@@ -1081,7 +1081,6 @@ return array(
     ),
     'cmpassport.com' => array(
         'config.cmpassport.com', // #547
-        'wap.cmpassport.com', // #547
 	'log1.cmpassport.com',
         'log.cmpassport.com',
     ),
