@@ -250,6 +250,7 @@ $ARR_WHITE_RULE_LIST = array(
     '@@||ad.ext.azure.com^' => 1, // #581
     '@@||ad.ext.azure.cn^' => 1, // #581
     '@@||torproject.org^' => 1, // #591
+    '@@||api.browser.miui.com^' => 1, // #585
 );
 
 //针对上游赦免规则anti-AD不予赦免的规则，即赦免名单的黑名单
