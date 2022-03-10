@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202203071833
+! Version: 202203101805
 ! Title: EasyPrivacy
-! Last modified: 07 Mar 2022 18:33 UTC
+! Last modified: 10 Mar 2022 18:05 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -1986,6 +1986,7 @@
 /ga-targets.js
 /ga-track-
 /ga-track.
+/ga-tracker-
 /ga-tracker.
 /ga-tracking-
 /ga-tracking/*
@@ -2156,7 +2157,7 @@
 /GomezTracking.
 /google-analyticator/*
 /google-analytics-$~image
-/google-analytics.$~image
+/google-analytics.$~image,$third-party,domain=~comed.com|~secure.exeloncorp.com
 /google-analytics/*$domain=~stackexchange.com|~superuser.com
 /google-nielsen-analytics.
 /google-tag-manager.
@@ -2219,8 +2220,6 @@
 /gov-tracking.min.js
 /gPageTracking.
 /grappler/log/*
-/gravity-beacon-
-/gravity-beacon.js
 /grumi-ip.js
 /gs-analytics-
 /gs-analytics.
@@ -2602,6 +2601,7 @@
 /krux-sass-helper.
 /krux.js
 /ktag/*
+/LandingPageHitLog.aspx?
 /landings-pixel?
 /LastClick/js?
 /layer_log.php?p=
@@ -5246,7 +5246,7 @@
 ://geoip.*/country.json
 ://ivwextern.
 ://lightning.*/launch/
-://matomo.
+://matomo.$domain=~matomo.org
 ://metrika.*/analytics.
 ://mint.*/?js
 ://piwik.$domain=~matomo.org|~piwik.pro
@@ -5743,6 +5743,7 @@ _mongo_stats/
 ! *** easylist:easyprivacy/easyprivacy_trackingservers.txt ***
 ! Non-flagged (Generic blocks)
 ||520886.xyz^
+||8672.site^
 ||a1webstrategy.com^
 ||adnext.co^
 ||adrtx.net^
@@ -5765,7 +5766,9 @@ _mongo_stats/
 ||bounceexchange.com^
 ||briskeagle.io^
 ||briskpelican.io^
+||brontops.com^
 ||bydst.com^
+||capturehighered.net^
 ||cloudwp.io^
 ||cpx.to^
 ||crsspxl.com^
@@ -5832,6 +5835,7 @@ _mongo_stats/
 ||innerskinresearch.com^
 ||instantfox.co^
 ||irs01.com^
+||k5a.io^
 ||krxd.net^
 ||ldnlyap.com^
 ||leadhit.io^
@@ -6001,6 +6005,7 @@ _mongo_stats/
 ||adchemy-content.com^$third-party
 ||adchemy.com^$third-party
 ||addfreestats.com^$third-party
+||addwish.com^$third-party
 ||adelixir.com^$third-party
 ||adform.net^$third-party
 ||adfox.ru^$third-party
@@ -6323,6 +6328,7 @@ _mongo_stats/
 ||calltrackingmetrics.com^$third-party
 ||calltracks.com^$third-party
 ||campaigncog.com^$third-party
+||campaignmonitor.com^$third-party
 ||canddi.com^$third-party
 ||canlytics.com^$third-party
 ||canopylabs.com^$third-party
@@ -6370,6 +6376,7 @@ _mongo_stats/
 ||clarivoy.com^$third-party
 ||cleananalytics.com^$third-party
 ||clearbitjs.com^$third-party
+||clerk.io^$third-party
 ||cleveritics.com^$third-party
 ||clevi.com^$third-party
 ||click-url.com^$third-party
@@ -7196,6 +7203,7 @@ _mongo_stats/
 ||leadmanagerfx.com^$third-party
 ||leadpages.net^$third-party
 ||leadsius.com^$third-party
+||leadsleap.com^$third-party
 ||leadsmonitor.io^$third-party
 ||leadsrx.com^$third-party
 ||leafmedia.io^$third-party
@@ -7596,7 +7604,7 @@ _mongo_stats/
 ||peruse.ai^$third-party
 ||petametrics.com^$third-party
 ||pghub.io^$third-party
-||pgs.io^$third-party
+||pgs.io^$third-party,domain=~publicgood.com
 ||phenompeople.com^$third-party
 ||phonalytics.com^$third-party
 ||phone-analytics.com^$third-party
@@ -11348,9 +11356,8 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||appsolutions.com/hitme?$third-party
 ||appspot.com/analytics/
 ||appspot.com/api/track/
-||appspot.com/collect
 ||appspot.com/display?
-||appspot.com/event
+||appspot.com/event?
 ||appspot.com/stats?
 ||appspot.com/take?
 ||arclk.net/trax?
@@ -12003,7 +12010,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||grabnetworks.com/beacons/
 ||grabnetworks.com/ping?
 ||graphcomment.com/api/thread/*/stats
-||gravity.com^*/beacons/
 ||green-griffin-860.appspot.com^
 ||gsp1.baidu.com^
 ||gstatic.com/gadf/ga_dyn.js
@@ -14394,6 +14400,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||acronymfinder.com/~/tr.ashx
 ||activate.latimes.com/pc/caltimes/?pulse2001=
 ||active.com/ig.track.js
+||adblockstreamtape.art/stat/
 ||adblockstreamtape.fr/stat/
 ||adblockstreamtape.site/stat/
 ||adc-js.nine.com.au^
@@ -14887,6 +14894,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||metricsishare.rediff.com^
 ||metro.co.uk/base/rta/
 ||metroweekly.com/tools/blog_add_visitor/
+||mewe.com/ubk4jrxn.js
 ||mi.academy.com/p/js/1.js
 ||miao.baidu.com^
 ||mms.cnn.com^
@@ -15314,6 +15322,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||uber.com/careers/apply/_log
 ||ubereats.com/_events
 ||ubereats.com/_track
+||ubuyanalytics.ubuy.com^
 ||ucoz.com/stat/
 ||ucweb.com/collect/
 ||udemy.com/api-2.0/visits/me/funnel-logs/
@@ -15645,6 +15654,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ! ||clickmail.stubhub.com^
 ! ||go.fvtc.edu^
 ||clickmail.stubhub.com^$image,script
+||email.mg.everyonesocial.com^$image,script
 ! *.omtrdc.net (needs to be removed)
 ! *.demdex.net (needs to be removed)
 ! *.bred4tula.com (needs to be removed)
@@ -24726,7 +24736,6 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||email.mail.floatme.io^
 ||email.mail.primexbt.com^
 ||email.member.theknot.com^
-||email.mg.everyonesocial.com^
 ||email.pray.com^
 ||email.social.f5.com^
 ||email.strava.com^
@@ -24973,6 +24982,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ! *** easylist:easyprivacy/easyprivacy_specific_international.txt ***
 ! German
 ||adtm.chip.de^
+||analytics.daasrv.net^
 ||analytics.deutscher-apotheker-verlag.de^
 ||analytics.moviepilot.de^
 ||arlt.com/analytics/
@@ -25999,7 +26009,6 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||api.ipstack.com/check$domain=blockfi.com|withpersona.com
 @@||api.perfops.net^$script,xmlhttprequest,domain=cdnperf.com|dnsperf.com
 @@||appboycdn.com^*/appboy.min.js$script,domain=bakkt.com
-@@||appspot.com/event/$xmlhttprequest,domain=crab.fit
 @@||appspot.com/static/js/tracker/$script,domain=bugs.avm99963.com
 @@||aramex.co.nz/Umbraco/Api/Tracking/$~third-party
 @@||atl-paas.net/analytics/event
@@ -26096,6 +26105,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||easy-firmware.com/templates/default/html/*/assets/js/fingerprint2.min.js$script,~third-party
 @@||easyship.com/api/v1/track/$xmlhttprequest,domain=trackmyshipment.co
 @@||eatstreet.com/api/v2/tracking/$~third-party
+@@||ec.europa.eu/eurostat/databrowser/assets/analytics/piwik.js$script,~third-party
 @@||ect.se.com/cbt/app/js/util/angularytics.min.js$script,~third-party
 @@||editorx.com/_api/*count?type$~third-party
 @@||ensighten.com^*/Bootstrap.js$domain=americanexpress.com|britishairways.com|capitalone.com|caranddriver.com|cart.autodesk.com|citi.com|citizensbank.com|dell.com|fidelity.com|france24.com|homedepot.com|hp.com|norton.com|rfi.fr|sbs.com.au|sfgate.com|staples.com|t-mobile.com|target.com|verizonwireless.com|williamhill.com|womenshealthmag.com|zales.com
@@ -26278,15 +26288,16 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||sahibinden.com/assets/analytics*.js$script
 @@||sammobile.com/wp-content/themes/sammobile-6/assets/js/newrelic.js$~third-party
 @@||savjee.be/uploads/2020-10-27-effect-adblockers-on-google-analytics-vs-plausible/$~third-party
-@@||scorecardresearch.com/c2/plugins/streamingtag_plugin_jwplayer.js
 @@||scorecardresearch.com/c2/plugins/streamsense_plugin_html5.js
 @@||scorecardresearch.com/c2/plugins/streamsense_plugin_theplatform.js
 @@||scorecardresearch.com/internal-c2/plugins/streamingtag_plugin_jwplayer.js
+@@||scorecardresearch.com^*/streamingtag_plugin_jwplayer.js
 @@||screen9.com/players/*/amber-google-analytics.esm.js$script,domain=api.screen9.com
 @@||sealserver.trustwave.com/seal.js$domain=zoom.us
 @@||secure.logmein.com/scripts/Tracking/$script,domain=logme.in|logmein.com
 @@||sephora.com/js/ufe/isomorphic/thirdparty/fp.min.js$script,~third-party
 @@||serve-ts.amagi.tv^*/beacon?$xmlhttprequest,domain=watch.truecrimenetworktv.com
+@@||shoonya.finvasia.com/fingerprint2.min.js$script,~third-party
 @@||shop.bmw.com.au/assets/analytics-setup.js$~third-party
 @@||shopify.com/*assets/pixel.gif$image,domain=metrovac.com
 @@||shopify.com/shopifycloud/boomerang/shopify-boomerang-$domain=rydewear.com
@@ -26445,7 +26456,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||api.cxense.com/public/widget/data?$script,domain=handelsblatt.com
 @@||apps.derstandard.at^*/TrackingCookieCheck?$subdocument
 @@||assets.adobedtm.com^*-source.min.js$domain=manager-magazin.de
-@@||bilder-a.akamaihd.net/ip/js/ipdvdc/ipdvdc.min.js$domain=n-tv.de|toggo.de
+@@||bilder-a.akamaihd.net/ip/js/ipdvdc/ipdvdc.min.js$domain=n-tv.de|toggo.de|vip.de
 @@||businessclick.ch/index.js$domain=finanzen.ch
 @@||cdn.cxense.com/cx.js$script,domain=handelsblatt.com
 @@||darmstadt.ui-traffic.de/mobile/webapp/bower_components/heatmap.js$domain=darmstadt.ui-traffic.de
@@ -26486,7 +26497,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||sunday.de/skin/*/googleanalytics.js$script
 @@||taboola.com/libtrc/$script,domain=bild.de|bz-berlin.de|computerbild.de|fitbook.de|jetzt.de|metal-hammer.de|musikexpress.de|noizz.de|rollingstone.de|stylebook.de|sueddeutsche.de|techbook.de|travelbook.de|welt.de|wieistmeineip.at|wieistmeineip.ch|wieistmeineip.de
 @@||taboola.com^*/json?tim=$domain=sueddeutsche.de
-@@||technical-service.net^$xmlhttprequest,domain=n-tv.de
+@@||technical-service.net^$xmlhttprequest,domain=n-tv.de|vip.de
 @@||tipico.de/js/modules/fingerprintjs2/fingerprint2.min.js$script,~third-party
 @@||toggo.de/static/js/sourcepoint.js$domain=toggo.de
 @@||track.nzz.ch^$script,~third-party
@@ -26506,6 +26517,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||adobedtm.com^*/satelliteLib-$script,domain=fcbarcelona.fr|laredoute.be|laredoute.ch|laredoute.fr|lci.fr|nrj.fr|tou.tv
 @@||amazon-adsystem.com/aax2/apstag.js$script,domain=programme-tv.net
 @@||caf.fr^*/smarttag.js$script,~third-party
+@@||cdiscount.com/Js/tracking/cdtmv2.js$script,~third-party
 @@||cdn.trustcommander.net/privacy$script,domain=tf1.fr
 @@||chronopost.fr/tracking-no-cms/resources/js/lib/atinternet/smarttag.prod.$script
 @@||connect.facebook.net^*/fbevents.js$domain=elinoi.com
@@ -26595,6 +26607,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||optimizely.addmilk.nl^$image,domain=simyo.nl
 @@||quantcast.mgr.consensu.org/tcfv2/cmp2.js$script,domain=clint.be
 @@||stock.skoda.be/assets/scripts/analytics/$script,~third-party
+@@||travelbags.nl^*/web-vitals.$~third-party
 @@||vpro.nl^*/vpro-analytics/Analytics.js$xmlhttprequest
 ! 
 ! ---------- Finnish ----------
