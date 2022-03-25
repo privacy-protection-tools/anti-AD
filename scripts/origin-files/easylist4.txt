@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202203221749
+! Version: 202203251834
 ! Title: EasyPrivacy
-! Last modified: 22 Mar 2022 17:49 UTC
+! Last modified: 25 Mar 2022 18:34 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -1280,6 +1280,7 @@
 /client-event.axd?
 /client-logging-bundle-
 /client-metrics/?target
+/client-tracking-sync.
 /client.rum.
 /client_pathlog.asp?
 /clientdatacollector/*
@@ -3366,7 +3367,6 @@
 /pixel/impression/*
 /pixel/js/*$third-party
 /pixel/PageStatistics.gif?
-/pixel/sbe?
 /pixel/sbs?
 /Pixel/Script/Behavior?
 /pixel/stats/?
@@ -5496,6 +5496,7 @@ cgi-bin/counter
 /link.morningbrew.com/img/*.gif
 /link.news.*/mo/*$image
 /link.pbtech.co.nz/mo/*$image
+/links1.strava.com/*$image
 /lzdmailer.letter.open?
 /mail-tracking/*$image
 /mail.sparksport.co.nz/forms/read/*
@@ -5776,7 +5777,6 @@ _mongo_stats/
 ||briskpelican.io^
 ||brontops.com^
 ||bydst.com^
-||capturehighered.net^
 ||click360.io^
 ||cloudwp.io^
 ||cpx.to^
@@ -6203,6 +6203,7 @@ _mongo_stats/
 ||avmws.com^$third-party
 ||awasete.com^$third-party
 ||awesomelytics.com^$third-party
+||awfonts.com^$script,third-party
 ||awin1.com^$third-party
 ||awstrack.me^$third-party
 ||axf8.net^$third-party
@@ -6352,6 +6353,7 @@ _mongo_stats/
 ||captify.co.uk^$third-party
 ||captivate.ai^$third-party
 ||captora.com^$third-party
+||capturehighered.net^$third-party
 ||capturemedia.network^$third-party
 ||capturly.com^$third-party
 ||carambo.la^$third-party
@@ -12503,6 +12505,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||penton.com/analytics/
 ||perf-events.cloud.unity3d.com^
 ||perf.dugout.com^
+||perf.hsforms.com^
 ||perfdrive.com/aperture/aperture.js
 ||perfops.net/rom3/
 ||performgroup.com/metrics/
@@ -12973,6 +12976,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||track.contently.com^
 ||track.cordial.io^
 ||track.digitalriver.com^
+||track.hubspot.com^
 ||track.juno.com^
 ||track.mailerlite.com^
 ||track.mituo.cn^
@@ -14887,6 +14891,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||linkedin.com/litms/utag/
 ||linkedin.com/platform-telemetry/
 ||linkedin.com/sensorCollect/
+||links.strava.com^$image
 ||linktr.ee/events
 ||livehdcams.com/api/events
 ||livehdcams.com/api/metrics
@@ -15695,6 +15700,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ! Used as a clickthrough
 ! ||clickmail.stubhub.com^
 ! ||go.fvtc.edu^
+! ||links.strava.com^
 ||clickmail.stubhub.com^$image,script
 ||email.mg.everyonesocial.com^$image,script
 ! *.omtrdc.net (needs to be removed)
@@ -24949,7 +24955,6 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||links.playon.tv^
 ||links.schnucks.com^
 ||links.sheroes.in^
-||links.strava.com^
 ||links.t.blueapron.com^
 ||links.t.wine.com^
 ||links.thedyrt.com^
@@ -26247,6 +26252,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||logmein.com/js/tracking.js$domain=logme.in|logmein.com
 @@||lowesgiftcardbonus.com/js/third-party/angulartics-google-analytics/dist/angulartics-ga.min.js$script,~third-party
 @@||lr-ingest.io/logger.min.js$script,domain=pumpkin.care
+@@||matomo.miraheze.org/matomo.js$script,~third-party
 @@||maxmind.com/geoip/$xmlhttprequest,domain=bandai-hobby.net|elgato.com|filld.com|ibanez.com
 @@||maxmind.com^*/geoip.js$domain=aljazeera.com|ballerstatus.com|bikemap.net|carltonjordan.com|cashu.com|coolsport.tv|dereon.com|dr.dk|everydaysource.com|fab.com|girlgames4u.com|incgamers.com|ip-address.cc|maaduu.com|qatarairways.com|sat-direction.com|sotctours.com|stoli.com|vibe.com
 @@||maxmind.com^*/geoip2.js$domain=boostedboards.com|donorschoose.org|elgato.com|fallout4.com|filld.com|ibanez.com|metronews.ca|mtv.com.lb|runningheroes.com|teslamotors.com
@@ -26394,6 +26400,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||track.shipstation.com/collections/trackingEvents.js$~third-party
 @@||tracking.narvar.com/tracking/$~third-party
 @@||tracking.narvar.com/trackinginfo/$~third-party
+@@||trackonomics.net/client/$script,domain=popsugar.com
 @@||travel-assets.com/platform-analytics-prime/$domain=chase.com
 @@||trendyol.com/delivery-tracking-query-api/$~third-party
 @@||trueaccordengage.com/tae/api/v1/collectors/$~third-party
