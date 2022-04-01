@@ -1,8 +1,8 @@
-! Checksum: ox/34ItoiHBTXnbELu1oxw
+! Checksum: WKoCBq21U9a0Tfv4DZvViQ
 ! Title: AdGuard Chinese filter (Optimized)
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.0.52.3
-! TimeUpdated: 2022-03-31T17:02:41+00:00
+! Version: 2.0.52.9
+! TimeUpdated: 2022-04-01T16:30:56+00:00
 ! Expires: 4 days (update frequency)
 #%#var AG_onLoad=function(func){if(document.readyState==="complete"||document.readyState==="interactive")func();else if(document.addEventListener)document.addEventListener("DOMContentLoaded",func);else if(document.attachEvent)document.attachEvent("DOMContentLoaded",func)};
 #%#var AG_removeElementById = function(id) { var element = document.getElementById(id); if (element && element.parentNode) { element.parentNode.removeChild(element); }};
@@ -292,6 +292,7 @@
 ||zjgfq.com^$third-party
 ||ad.juksy.com^
 ||ads.tvb.com^
+18comic.*#@#img[style*="300px"]
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js|$domain=m.twfanti.com
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=noopjs,domain=m.twfanti.com,important
 slashview.com#@#.adsbygoogle
@@ -772,7 +773,6 @@ freedidi.com##.sidebar-content > div[id^="custom_html-"]
 life.tw##div[style="width:630px;height:700px;"]
 cw.com.tw##.banner
 cw.com.tw##.cw__advertising
-18comic.vip##.bot-per > *
 ||jmcomic1.cc/iframe_v*?type=exo&idzone=
 dianyingim.com##iframe[src="/buffer.html"]
 ||js-js.oss-cn-beijing.aliyuncs.com/mnpc-umeng.js$domain=dianyingim.com
@@ -1691,9 +1691,9 @@ tvbs.com.tw###news_detail_div > div[align="center"]
 tvbs.com.tw###news_detail_div > strong > a[rel="noreferrer"]
 boylove.cc##.reader-home-swiper
 emome.net##.source_advertising
-18comic.vip##.top-a2db
-18comic.vip##.modal-body > ul.pop-list
-18comic.vip##.bot-per
+18comic.*##.top-a2db
+18comic.*##.modal-body > ul.pop-list
+18comic.*##.bot-per
 ||ad.digitimes.com.tw/*_bigbutton.jpg
 ||alicdn2.mangafunc.fun^*/ads/
 lsj.ac##div[class="col-12"] > div[class="poster"]
@@ -3184,6 +3184,7 @@ ubmcmm.baidustatic.com
 ##div[id^="ad_thread"]
 ##div[id^="adv-"].adv
 ##div[id^="photo-header-title-content-text-dall"]
+##div[onclick*="?i_code="]
 ##div[onclick*=".leyu"]
 ##div[style=" max-width:1000px;  margin:0 auto;"] > a > img[height="120px"]
 ##div[style=" max-width:1000px;  margin:0 auto;"] > a > img[height="60px"]
@@ -18946,6 +18947,8 @@ $script,subdocument,third-party,websocket,xmlhttprequest,domain=00ksw.com|01zww.
 @@||pstatp.com/cdn/*/jquery/$script,domain=bxwx11.com
 @@||zmtt.net^$script,domain=luoqiuzw.com
 !#Novels ads union
+||wulongqiyi.com^
+||shenfagg.com^
 ##a[href$=".120ydrayy.com"]
 ##a[href*=".1956hl.com/"]
 ##a[href*=".233787.com/"]
@@ -23654,3 +23657,4 @@ fqsousou.com,kengso.com#@#.user-share
 @@||youku.com/cms/player/userinfo/
 @@||youku.com/cms/playlog/get?
 ||hjfile.cn/analytics/site/TrackEvent.js
+@@||hdslb.com/bfs/cm/cm-sdk/static/js/bili-collect.js
