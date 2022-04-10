@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202204071555
+! Version: 202204101103
 ! Title: EasyPrivacy
-! Last modified: 07 Apr 2022 15:55 UTC
+! Last modified: 10 Apr 2022 11:03 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -1371,6 +1371,7 @@
 /collector/pageview
 /collector?report=
 /collectStats;
+/collectsysteminfo?
 /com_joomla-visites/*
 /com_joomlawatch/*
 /common/analytics.js
@@ -1679,7 +1680,7 @@
 /DynamicAnalytics.
 /dynamictag.
 /dynamicyield/*
-/dynatrace-$domain=~dynatrace.com|~github.com
+/dynatrace-$~image,domain=~dynatrace.com|~github.com|~github.io
 /dynaTraceMonitor^
 /dynimpression?rkey=
 /e.gif?
@@ -4917,7 +4918,7 @@
 /vglnk.js
 /vgwort/*
 /video-ga.js
-/video.counters.js
+/video.counters.
 /video/tracking.js
 /video_count.php?
 /videoanalytic/*
@@ -5542,6 +5543,11 @@ cgi-bin/counter
 _ad_impression.
 ! Pinterest
 /_/trace/trace/*
+! real time web analytics
+/rrweb-script.
+/rrweb.js
+/rrweb.min.js
+/rrweb/*
 ! DNS checks
 /DNSCheck.js
 /DNSChecker.js
@@ -5802,6 +5808,7 @@ _mongo_stats/
 ||dm-event.net^
 ||dmpxs.com^
 ||dratingmaject.com^
+||dynatrace-managed.com^
 ||e1e.io^
 ||efreecode.com^
 ||emycewiw.xyz^
@@ -5926,6 +5933,7 @@ _mongo_stats/
 ||trkbc.com^
 ||tru.am^
 ||truffle.bid^
+||trx-hub.com^
 ||tryzens-analytics.com^
 ||turboeagle.co^
 ||turbolion.io^
@@ -10819,6 +10827,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||gmossp-sp.jp^$third-party
 ||gsspcln.jp^$third-party
 ||gyro-n.com^$third-party
+||h-cast.jp^$third-party
 ||hitgraph.jp^$third-party
 ||i2ad.jp^$third-party
 ||i2i.jp^$third-party
@@ -14372,12 +14381,14 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||top.elec.ru^
 ||track.recreativ.ru^
 ||track.spacepush.ru^
+||tracker.comagic.ru^
 ||tracking.gpm-rtv.ru^
 ||tracking.retailrocket.net^
 ||traktor.ru^*/counter.php?
 ||ulogin.ru/js/stats.js
 ||upstats.yadro.ru^
 ||uptolike.com/widgets/*/imp?
+||visitor-microservice.ext.p-a.im^
 ||webtrack.biz^$third-party
 ||xn--e1aaipcdgnfsn.su^*/counter.php
 ||yandeg.ru/count/
@@ -15083,6 +15094,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||qz.com/log
 ||r.bbci.co.uk^
 ||r.my.com^
+||ranker.com/api/tr?
 ||rankhit.china.com^
 ||realestate.com.au^*/p.js
 ||realitytvworld.com/images/pixel.gif
@@ -15097,6 +15109,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||rfk.biglots.com^
 ||roblox.com/www/e.png?
 ||roblox.com^*/_/1px.gif
+||roistat.com^*/addVisit?
 ||rps-p2.rockpapershotgun.com^
 ||rps-uk.rockpapershotgun.com^
 ||rs.mail.ru^
@@ -25086,6 +25099,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||fc.vodafone.de^
 ||froglytics.eventfrog.ch^
 ||geoip.finanzen.net^
+||gmx.net/monitoring/
 ||golem.de/staticrl/scripts/golem_cpxl_
 ||hartgeld.com/cgi-sys/Count.cgi?
 ||heise.de/ivw-bin/ivw/cp/
@@ -25108,6 +25122,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||px.derstandard.at^
 ||rem-track.bild.de^
 ||responder.wt.heise.de^
+||ricardo.ch/api/browser-statistics/
 ||rt.bunte.de^
 ||schnaeppchenfuchs.com/js/default-
 ||squirrel.cividi.ch^
@@ -25669,6 +25684,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||count.upc.rakuten.co.jp^
 ||dmm.com/analytics/
 ||dmm.com/imp?
+||dxlive.com/js/dtrace.js
 ||fensi.plus^*/tracking/
 ||gizmodo.jp/api/SurveyCountCollection?
 ||goo.ne.jp^*/vltracedmd.js
@@ -26089,7 +26105,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||api.ipify.org^$script,domain=right-on.co.jp
 @@||api.ipify.org^$xmlhttprequest,domain=247sports.com|account.pennytel.com.au|equinoxplus.com|speedcheck.ky
 @@||api.ipinfodb.com^$xmlhttprequest,domain=management30.com
-@@||api.ipstack.com/check$domain=blockfi.com|withpersona.com
+@@||api.ipstack.com/check$domain=blockfi.com|get-in.com|withpersona.com
 @@||api.perfops.net^$script,xmlhttprequest,domain=cdnperf.com|dnsperf.com
 @@||appboycdn.com^*/appboy.min.js$script,domain=bakkt.com
 @@||appspot.com/static/js/tracker/$script,domain=bugs.avm99963.com
@@ -26228,7 +26244,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||google-analytics.com/plugins/ga/inpage_linkid.js$domain=westernunion.com
 @@||googleoptimize.com/optimize.js$script,domain=inquirer.com|tentree.ca
 @@||googletagmanager.com/gtag/js$script,domain=honeystinger.com|kawasaki.com|m.putlocker.how|mediaite.com|schwab.com
-@@||googletagmanager.com/gtm.js$domain=acehardware.com|ads.spotify.com|atptour.com|bsa-whitelabel.com|ccleaner.com|chipotle.com|complex.com|crello.com|cyclingnews.com|cypress.io|doodle.com|easternbank.com|flytap.com|fortune.com|kedronparkhotel.com.au|level.travel|nflgamepass.com|nordvpn.com|petsathome.com|pioneer.eu|primeoak.co.uk|royalbank.com|scotsman.com|soundguys.com|stressless.com|support.creative.com|trademe.co.nz|uniqlo.com
+@@||googletagmanager.com/gtm.js$domain=acehardware.com|ads.spotify.com|atptour.com|bsa-whitelabel.com|ccleaner.com|chipotle.com|complex.com|crello.com|cyclingnews.com|cypress.io|doodle.com|easternbank.com|flytap.com|fortune.com|kedronparkhotel.com.au|level.travel|nflgamepass.com|nordvpn.com|oakandfort.com|petsathome.com|pioneer.eu|primeoak.co.uk|royalbank.com|scotsman.com|soundguys.com|stressless.com|support.creative.com|trademe.co.nz|uniqlo.com|uqr.to
 @@||gov.au/Scripts/ga.js$script,~third-party
 @@||gstatic.com^*/firebase-performance-standalone.js$script,domain=flightradar24.com
 @@||guce.advertising.com/collectIdentifiers$domain=guce.advertising.com
