@@ -338,6 +338,7 @@ return array(
     'pdst.fm' => 0, #603
     'licensebuttons.net' => 0, #609
     'wmflabs.org' => 0, #611
+    'jsinfo.net' => 0, #613
 
 
 
