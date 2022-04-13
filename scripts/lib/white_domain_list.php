@@ -337,6 +337,7 @@ return array(
     'd.getpocket.com' => 0, #602
     'pdst.fm' => 0, #603
     'licensebuttons.net' => 0, #609
+    'wmflabs.org' => 0, #611
 
 
 
