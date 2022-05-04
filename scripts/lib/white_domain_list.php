@@ -339,6 +339,9 @@ return array(
     'licensebuttons.net' => 0, #609
     'wmflabs.org' => 0, #611
     'jsinfo.net' => 0, #613
+    'uol.com.br' => 0, #632
+    'ntalker.com' => 0, #626
+    'img.shouji.sogou.com' => 0, #623
 
 
 
