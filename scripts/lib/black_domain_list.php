@@ -1115,6 +1115,57 @@ return array(
     'cdnimg.org' => array(
         'pushapi.cdnimg.org', // #571
     ),
+    'telegrem.org' => array(
+        'telegrem.org', // #616
+    ),
+    'tcgnclibk.xyz' => array(
+        'tcgnclibk.xyz', // #616
+    ),
+    'telegramstr.com' => array(
+        'telegramstr.com', // #616
+    ),
+    'telegramv.com' => array(
+        'telegramv.com', // #616
+    ),
+    'telegramim.org' => array(
+        'telegramim.org', // #616
+    ),
+    'teleylc.com' => array(
+        'teleylc.com', // #616
+    ),
+    'teleylm.com' => array(
+        'teleylm.com', // #616
+    ),
+    'telegrcn.com' => array(
+        'telegrcn.com', // #616
+    ),
+    'telepang.com' => array(
+        'telepang.com', // #616
+    ),
+    'telegramos.org' => array(
+        'telegramos.org', // #616
+    ),
+    'telegvam.org' => array(
+        'telegvam.org', // #616
+    ),
+    'telegramyy.com' => array(
+        'telegramyy.com', // #616
+    ),
+    'telegram-china.org' => array(
+        'telegram-china.org', // #616
+    ),
+    'teledai.com' => array(
+        'teledai.com', // #616
+    ),
+    'telegramim.org' => array(
+        'telegramim.org', // #616
+    ),
+    'telegmcn.org' => array(
+        'telegmcn.org', // #616
+    ),
+    'telegram-cn.org' => array(
+        'telegram-cn.org', // #616
+    ),
     
     
     
