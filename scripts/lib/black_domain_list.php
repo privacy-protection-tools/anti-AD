@@ -206,9 +206,6 @@ return array(
     'tradetracker.net' => array(
         'tradetracker.net', //广告联盟
     ),
-    'uol.com.br' => array(
-        'uol.com.br',
-    ),
     'rambler.ru' => array(
         'rambler.ru'
     ),
