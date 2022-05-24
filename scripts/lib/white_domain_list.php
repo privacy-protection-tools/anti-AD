@@ -342,6 +342,9 @@ return array(
     'uol.com.br' => 0, #632
     'ntalker.com' => 0, #626
     'img.shouji.sogou.com' => 0, #623
+    'mo.res.wpscdn.cn' => 0, #636
+    'qhres2.com' => 0, #638
+    'rumble.com' => 0, #639
 
 
 
