@@ -1166,7 +1166,12 @@ return array(
     'telegram-cn.org' => array(
         'telegram-cn.org', // #616
     ),
-    
+    'ali213.net' => array(
+        'click.ali213.net', // #633
+    ),
+    'gjctwh.cn' => array(
+        'gjctwh.cn', // #637
+    ),
     
     
     // 批量添加域名
