@@ -147,6 +147,7 @@ return array(
         'ad.intl.xiaomi.com',
         'ad.xiaomi.com',
         'admob.xiaomi.com',
+        't1.market.xiaomi.com', // #630
     ),
     'zhihu.com' => array(
         'lc-push.zhihu.com',
@@ -1171,6 +1172,9 @@ return array(
     ),
     'gjctwh.cn' => array(
         'gjctwh.cn', // #637
+    ),
+    'weibo.com' => array(
+        'fastimage.uve.weibo.com', // #629
     ),
     
     
