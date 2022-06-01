@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202205311643
+! Version: 202206011638
 ! Title: EasyPrivacy
-! Last modified: 31 May 2022 16:43 UTC
+! Last modified: 01 Jun 2022 16:38 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -801,7 +801,6 @@
 /apilog?
 /apis/cpt.php?
 /apis/facebook_conversion
-/apitracking.
 /apixel?
 /app-measurement?
 /app/tracking/*
@@ -1699,6 +1698,7 @@
 /dynamictag.
 /dynamicyield/*
 /dynatrace-$~image,domain=~dynatrace.com|~github.com|~github.io
+/dynatrace.$domain=~dynatrace.com|~github.com|~github.io
 /dynaTraceMonitor^
 /dynimpression?rkey=
 /e.gif?
@@ -5430,7 +5430,8 @@ cgi-bin/counter
 ! Email tracking pixels
 &mi_ecmp=
 -track-email-open?
-.acemlna.com/Prod/link-tracker?
+.acemlna.com/Prod/link-tracker?$image
+.acemlnb.com/Prod/link-tracker?$image
 .alcmpn.com/
 .app.returnpath.net/
 .aveda.com/t/$image
@@ -5541,6 +5542,7 @@ cgi-bin/counter
 /gridinbound.blob.core.
 /impression?mkevt=
 /is-tracking-pixel-
+/link-tracker?*&l=open&
 /link.coindesk.com/img/*
 /link.divenewsletter.com/img/*$image
 /link.e-mail.*/mo/*$image
@@ -5811,6 +5813,7 @@ _mongo_stats/
 ! -----------------Third-party tracking domains-----------------!
 ! *** easylist:easyprivacy/easyprivacy_trackingservers.txt ***
 ! Non-flagged (Generic blocks)
+||1cros.net^
 ||2022welcome.com^
 ||31daa5lnq.de^
 ||520886.xyz^
@@ -7080,6 +7083,7 @@ _mongo_stats/
 ||hivps.xyz^$third-party
 ||hmstats.com^$third-party
 ||hockeystack.com^$third-party
+||holdonstranger.com^$third-party
 ||horzrb.com^$third-party
 ||hospitality-optimizer.com^$third-party
 ||host-tracker.com^$third-party
@@ -12434,6 +12438,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||lycos.com/hb.js
 ||m.addthisedge.com^
 ||m.media-amazon.com/images/S/sash/PNsNtF7MLhjOEin.js$domain=imdb.com
+||ma.logsss.com^
 ||magnify.net/decor/track/
 ||mail-app.com/pvtracker/
 ||mail.ru/dstat?
@@ -12826,6 +12831,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||s.beop.io^
 ||s.clickability.com^
 ||s.clickiocdn.com^
+||s.logsss.com^
 ||s.pinimg.com/ct/core.js
 ||s.sniphub.com^
 ||s.srvsynd.com^
@@ -14648,6 +14654,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||adobe.io/system/log
 ||adv.drtuber.com^
 ||advancedmp3players.co.uk/support/visitor/index.php?
+||affiliate.gearbest.com^$image,third-party
 ||affiliates.treasureisland.com^
 ||affiliates.vpn.ht^
 ||agoda.com/api/pixel/
@@ -15312,6 +15319,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||scloud.online/stat/
 ||scoot.co.uk/ajax/log_
 ||search.aol.com/beacon/
+||search.brave.com/api/feedback$~third-party
 ||search.ch/audit/
 ||searchenginejournal.com/xcs0MhRsfxHG.js
 ||searchiq.co/api/tr?
@@ -26380,6 +26388,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||1001trackstats.com/api/$xmlhttprequest,domain=songstats.com
 @@||1trackapp.com/static/tracking/$script,stylesheet,~third-party
 @@||9cdn.net^*/js/tracking/$script,domain=nine.com.au
+@@||accounts.intuit.com/fe_logger?$~third-party
 @@||accounts.nintendo.com/account/js/pages/$script,~third-party
 @@||admin.memberspace.com/sites/*/analytics/views$~third-party
 @@||adobedtm.com/*-libraryCode_source.min.js$script,domain=ally.com|crave.ca
@@ -26910,8 +26919,6 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||googletagmanager.com/gtm.js$domain=bunte.de|computerbild.de|finanzen.at|finanzen.net|freenet-funk.de|idealo.at|idealo.de|radiorur.de|saturn.at|sport1.de|vox.de
 @@||img.adnz.co^$image,domain=finanzen.ch
 @@||imrworldwide.com/novms/*/ggcm*.js$domain=tvnow.de
-@@||jobmorgen.de/Scripts/ApiTracking.js$~third-party
-@@||jobs.pnp.de/Scripts/ApiTracking.js$~third-party
 @@||kameleoon.com/geolocation.gif$domain=welt.de
 @@||kameleoon.com/ip.gif$domain=welt.de
 @@||kameleoon.eu/ip.gif$domain=welt.de
@@ -26933,7 +26940,6 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||showheroes.com/spot/iframe?pageurl=$script,subdocument,domain=bz-berlin.de|kochbar.de|rtl.de|rtl2.de
 @@||spatialbuzz.com/piwik/piwik.js$domain=spatialbuzz.com
 @@||spiegel.de/layout/js/http/netmind-$script
-@@||stellen.donaukurier.de/Scripts/ApiTracking.js?$script,~third-party
 @@||stuttgarter-nachrichten.de/cre-1.0/tracking/call.js?$script,~third-party
 @@||stuttgarter-nachrichten.de/cre-1.0/tracking/tracking.js$script,~third-party
 @@||sunday.de/skin/*/googleanalytics.js$script
