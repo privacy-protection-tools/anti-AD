@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202206041120
+! Version: 202206071747
 ! Title: EasyPrivacy
-! Last modified: 04 Jun 2022 11:20 UTC
+! Last modified: 07 Jun 2022 17:47 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -1845,6 +1845,7 @@
 /events/pixel/*$image
 /events/pixelEvent
 /events/track/*
+/events/view?
 /events?data=
 /events?rpId=
 /eventsBeacon?
@@ -2791,6 +2792,7 @@
 /logger?d=
 /logger?description=
 /logging-code.
+/logging/ClientEvent
 /logging/log-
 /logging/log.do
 /logging/logjs
@@ -3525,6 +3527,7 @@
 /pubimppixel/*
 /public/analytics.js
 /public/statsd
+/public/visit/record
 /public/visitor.json?
 /public/visitor/create?
 /publisher:getClientId?key=
@@ -4221,6 +4224,7 @@
 /statstracker?
 /statsupdater.
 /statsVisitesAnnonces?
+/stattag.js
 /stattracker-
 /status-beacon/*
 /StatV1?
@@ -4927,6 +4931,7 @@
 /v1/page-hit
 /v1/pixel.js
 /v1/pixel?
+/v1/stats/track
 /v1/tracker.js
 /v2/tracking/*
 /v4/analytics.
@@ -5427,6 +5432,7 @@ _webiq.
 _wiselog_
 _xiti_js-
 cgi-bin/counter
+||internal-matomo.
 ||meetrics.netbb-
 ! Email tracking pixels
 &mi_ecmp=
@@ -5827,6 +5833,7 @@ _mongo_stats/
 ||adrtx.net^
 ||affvantage.com^
 ||agkn.com^
+||allvideometrika.com^
 ||altopd.com^
 ||analysis.fi^
 ||apeagle.io^
@@ -5856,6 +5863,7 @@ _mongo_stats/
 ||cxt.ms^
 ||cybba.solutions^
 ||czx5eyk0exbhwp43ya.biz^
+||datatechonert.com^
 ||demdex.net^
 ||dispatchunique.com^
 ||dispatchvegasplus.com^
@@ -6003,6 +6011,7 @@ _mongo_stats/
 ||turboeagle.co^
 ||turbolion.io^
 ||tvpixel.com^
+||tzegilo.com^
 ||ugdturner.com^
 ||v1sts.me^
 ||venusrevival.com^
@@ -6460,7 +6469,7 @@ _mongo_stats/
 ||cdnmaster.com^$third-party
 ||cdnopw.com^$third-party
 ||cedexis.com^$third-party
-||cedexis.net^$third-party
+||cedexis.net^$script,third-party
 ||celebros-analytics.com^$third-party
 ||celebrus.com^$third-party
 ||center.io^$third-party
@@ -11877,6 +11886,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||curated.fieldtest.cc^
 ||custom.search.yahoo.co.jp/images/window/*.gif
 ||customerlobby.com/ctrack-
+||customfingerprints.bablosoft.com^
 ||cws.conviva.com^
 ||d.rcmd.jp^$image
 ||d.shareaholic.com^
@@ -13318,6 +13328,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||userway.org/api/v1/stats
 ||utils.global-e.com/set?
 ||utle.tech426.com^
+||v-h.tv/pixel/
 ||v.shopify.com^
 ||va.tawk.to/log
 ||vanilladev.com/analytics.
@@ -13507,6 +13518,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||d1t9uctetvi0tu.cloudfront.net^
 ||d1uanozc5el74n.cloudfront.net^
 ||d1wirc5qsdb1y5.cloudfront.net^
+||d1wix2gc2cgqis.cloudfront.net^
 ||d1xfq2052q7thw.cloudfront.net^
 ||d1yu67rmchodpo.cloudfront.net^
 ||d1z2jf7jlzjs58.cloudfront.net^
@@ -14160,6 +14172,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||marktplaats.net/cnt/
 ||npo.nl/divolte/tt/web-event?$domain=zapp.nl
 ||pijper.io/visits/
+||rmgdapfnccsharpprd.azurewebsites.net^
 ||sp.dpgmedia.net^
 ||stat.24liveplus.com^
 ||statistics.rbi-nl.com^
@@ -14374,6 +14387,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||cm-exchange.toast.com^
 ||log.adplex.co.kr^
 ||log.cizion.com^
+||log.mofa.go.kr^
 ||log.targetpush.co.kr^
 ||megadata.co.kr^
 ||mtag.mman.kr^
@@ -14969,6 +14983,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||flirt4free.com/pixel/
 ||flyasiana.com/ykjEIhcZLYg2zoOOoA/
 ||foodcouture.net/public_html/ra/script.php
+||formula1.com/api/track
 ||foursquare.com/v2/private/logactions
 ||foxsports.com.au/akam/
 ||fp.measure.office.com^
@@ -25823,6 +25838,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||stat.super.cz^
 ||statistics.csob.cz^
 ! Dutch
+||aa.tweakers.nl^
 ||analytics.rambla.be^
 ||bol.com/tracking/
 ||businessinsider.nl^*/tr.php
@@ -25858,6 +25874,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||tracking.voordeeluitjes.nl^
 ||tweakers.net/x/scripts/min/TyYQlL.js
 ||tweakers.net^*&p=$image
+||u299.libelle-lekker.be^
 ||vroom.be^*/stats.js?
 ||vroom.be^*/stats.php?
 ||webstatistieken.xs4all.nl^
@@ -26629,7 +26646,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||jbj.co.uk^*/analytics.js$script,~third-party
 @@||js-agent.newrelic.com/nr-spa-$script,domain=kapwing.com
 @@||js.monitor.azure.com/scripts/$script,domain=microsoft.com
-@@||js.sentry-cdn.com^$script,domain=book.dmm.com|jobs.ch|pizzahut.com.au
+@@||js.sentry-cdn.com^$script,domain=book.dmm.com|interacty.me|jobs.ch|pizzahut.com.au
 @@||js.taplytics.com/jssdk/$domain=foxnews.com
 @@||jsrdn.com/s/$script,domain=distro.tv
 @@||jumbe.zaius.com/v2/zaius.gif?$domain=subscriptions.management
