@@ -346,6 +346,7 @@ return array(
     'qhres2.com' => 0, #638
     'rumble.com' => 0, #639
     '37signals.com' => 0, #647
+    'stackpathdns.com' => 0, #645
 
 
 
