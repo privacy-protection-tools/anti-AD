@@ -397,7 +397,6 @@ return array(
     ),
     'aliyuncs.com' => array(
         'sspmiaoshuo.cn-hangzhou.log.aliyuncs.com', //日志收集
-        'arms-retcode.aliyuncs.com',
     ),
 
     '186078.com' => array(
