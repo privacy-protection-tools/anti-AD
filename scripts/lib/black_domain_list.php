@@ -1180,6 +1180,40 @@ return array(
         'mclean.50union.com', // https://github.com/deep-bhatt/huawei-block-list/blob/badc2ffe5ba651bfba7c8b92c5009a79d609c7eb/huawei-block-host.txt#L31
         'mvconf.50union.com', // https://github.com/deep-bhatt/huawei-block-list/blob/badc2ffe5ba651bfba7c8b92c5009a79d609c7eb/huawei-block-host.txt#L32
     ),
+    '8289.tv' => array( // #641
+        '8289.tv',
+    ),
+    'postex10.com' => array( // #641
+        'postex10.com',
+        'land3.postex10.com',
+    ),
+    'rscc3.cc' => array( // #641
+        'rscc3.cc',
+        'stat.rscc3.cc',
+    ),
+    'eib2.cc' => array( // #641
+        'eib2.cc',
+        'app.eib2.cc',
+    ),
+    'mlsjh.com' => array( // #641
+        'mlsjh.com',
+        'mh1.mlsjh.com',
+    ),
+    'dvkbfj.cn' => array( // #641
+        'dvkbfj.cn',
+        'www.dvkbfj.cn',
+    ),
+    '4rw6x0b.cn' => array( // #641
+        '4rw6x0b.cn',
+        '5rd25e.4rw6x0b.cn',
+    ),
+    'sujev.cn' => array( // #641
+        'sujev.cn',
+        'e5m2gp.sujev.cn',
+    ),
+    'kktly.cn' => array( // #641
+        'kktly.cn',
+    ),
     
     
     // 批量添加域名
