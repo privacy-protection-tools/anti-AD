@@ -254,6 +254,7 @@ $ARR_WHITE_RULE_LIST = array(
     '@@||pixel.prime.amazon.dev^' => 1, // #604
     '@@||track.landmarkglobal.com^' => 1, // #631
     '@@||microsoftazuresponsorships.com^' => 1, // #648
+    '@@||metrics.icloud.com^' => 1, // #658
 );
 
 //针对上游赦免规则anti-AD不予赦免的规则，即赦免名单的黑名单
