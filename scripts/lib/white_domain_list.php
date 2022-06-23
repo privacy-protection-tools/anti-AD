@@ -348,6 +348,7 @@ return array(
     '37signals.com' => 0, #647
     'stackpathdns.com' => 0, #645
     'msg.douyu.com' => 0, #649
+    'hot.browser.miui.com' => 0, #655
 
 
 
