@@ -1174,6 +1174,12 @@ return array(
     'weibo.com' => array(
         'fastimage.uve.weibo.com', // #629
     ),
+    '50union.com' => array( // #644
+        '50union.com',
+        'www.50union.com',
+        'mclean.50union.com', // https://github.com/deep-bhatt/huawei-block-list/blob/badc2ffe5ba651bfba7c8b92c5009a79d609c7eb/huawei-block-host.txt#L31
+        'mvconf.50union.com', // https://github.com/deep-bhatt/huawei-block-list/blob/badc2ffe5ba651bfba7c8b92c5009a79d609c7eb/huawei-block-host.txt#L32
+    ),
     
     
     // 批量添加域名
