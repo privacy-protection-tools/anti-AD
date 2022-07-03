@@ -351,6 +351,7 @@ return array(
     'hot.browser.miui.com' => 0, #655
     'linksnappy.com' => 0, #656
     'szlong.weixin.qq.com' => 0, #659
+    'metrics.icloud.com' => 0, #661
 
 
 
