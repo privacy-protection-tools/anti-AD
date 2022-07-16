@@ -357,6 +357,7 @@ return array(
     'ctrip.com' => 0, #666
     'sv.aq.qq.com' => 0, #664
     'nmobi.kuwo.cn' => 0, #665
+    'msedge.net' => 0, #671
 
 
 
