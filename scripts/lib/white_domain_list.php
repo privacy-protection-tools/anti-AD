@@ -358,6 +358,7 @@ return array(
     'sv.aq.qq.com' => 0, #664
     'nmobi.kuwo.cn' => 0, #665
     'msedge.net' => 0, #671
+    'govdelivery.com' => 0, #674
 
 
 
