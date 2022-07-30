@@ -1214,7 +1214,12 @@ return array(
     'kktly.cn' => array( // #641
         'kktly.cn',
     ),
-    
+    'swallowcrockerybless.com' => array( // #673
+        'swallowcrockerybless.com',
+    ),
+    'entirelysacrament.com' => array( // #673
+        'entirelysacrament.com',
+    ),
     
     // 批量添加域名
     '0202.com.tw' =>array('0202.com.tw', 'www.0202.com.tw'),
