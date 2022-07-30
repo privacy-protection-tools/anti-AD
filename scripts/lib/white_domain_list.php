@@ -360,6 +360,7 @@ return array(
     'msedge.net' => 0, #671
     'govdelivery.com' => 0, #674
     'www.meipian7.cn' => 0, #672
+    'jimdo.com' => 0, #675
 
 
 
