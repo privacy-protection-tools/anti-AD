@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202208131312
+! Version: 202208161559
 ! Title: EasyPrivacy
-! Last modified: 13 Aug 2022 13:12 UTC
+! Last modified: 16 Aug 2022 15:59 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -359,6 +359,7 @@
 /AdBlockDetection/scriptForGA.
 /AdCookies.js
 /AdCount/*
+/add_anonymous_identifier
 /add_page_view?
 /add_stats
 /add_utm_links.
@@ -3891,6 +3892,7 @@
 /SEMTracking.
 /send-impressions.html
 /sendLogs?cid
+/sensefuel/tracking/*
 /sensor.modern.ncl.
 /sensor/statistic?
 /sensorsdata-
@@ -6012,6 +6014,7 @@ _mongo_stats/
 ||lite-cdn.com^
 ||liveyield.com^
 ||lltrck.com^
+||lmepbq.com^
 ||loloclicks.biz^
 ||lsdm.co^
 ||maggieeatstheangel.com^
@@ -7832,7 +7835,6 @@ _mongo_stats/
 ||pixelinteractivemedia.com^$third-party
 ||pixelpop.co^$third-party
 ||pixelrevenue.com^$third-party
-||pixels.ai^$third-party
 ||pixfuture.com^$third-party
 ||pjatr.com^$third-party
 ||pjtra.com^$third-party
@@ -11433,6 +11435,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||allanalpass.com/track/
 ||alooma.com/track/
 ||alooma.io/track/?
+||am.i.mullvad.net^$third-party
 ||amatomu.com/link/log/
 ||amatomu.com/log.php?
 ||amazon.com/gp/*&linkCode$third-party
@@ -11535,6 +11538,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||analytics.pagefly.io^
 ||analytics.piksel.com^
 ||analytics.pinterest.com^$third-party
+||analytics.pixels.ai^
 ||analytics.pointdrive.linkedin.com^
 ||analytics.pop2watch.com^
 ||analytics.prezly.com^
@@ -12165,6 +12169,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||felix.data.tm-awx.com^
 ||filament-stats.herokuapp.com^
 ||filesonic.com/referral/$third-party
+||fingerprinter-production.herokuapp.com^
 ||fiorenetwork.com/aparatvast/log.php?
 ||firebaselogging-pa.googleapis.com^
 ||firecrux.com/track/$xmlhttprequest
@@ -12527,8 +12532,8 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||loglady.skypicker.com^
 ||logs-api.shoprunner.com^
 ||logs.animaapp.com^
-||logs.datadoghq.com^$domain=~app.datadoghq.com
-||logs.datadoghq.eu^$domain=~app.datadoghq.eu
+||logs.datadoghq.com^$third-party
+||logs.datadoghq.eu^$third-party
 ||logs.spilgames.com^
 ||logs.thebloggernetwork.com^
 ||logs.viadata.store^
@@ -13501,6 +13506,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||widgeo.net/tracking.php?
 ||widget-pixels.outbrain.com^
 ||widget.quantcast.com^
+||widget.trustpilot.com/stats/
 ||widgetbox.com/syndication/track/
 ||widgethost.com/pax/counter.js?
 ||widgetserver.com/metrics/
@@ -13845,6 +13851,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||analytics.praetor.im^$third-party
 ||andyhoppe.com/count/
 ||api.fanmatics.com/event
+||artemis-cdn.ocdn.eu^
 ||audimark.de/tracking/
 ||bcs-computersysteme.com/cgi-local/hiddencounter/
 ||beagle.prod.tda.link^
@@ -14208,7 +14215,8 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||bnr.alza.cz^
 ||counter.cnw.cz^
 ||h.imedia.cz^
-||h.seznam.cz^
+||h.seznam.cz/hit/
+||h.seznam.cz/js/dot-small.js
 ||hit.skrz.cz^
 ||i.imedia.cz^
 ||log.cpex.cz^
@@ -14525,7 +14533,9 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||terra.com.br/metrics/
 ||track.e7r.com.br^
 ||track.noddus.com^
+||tracker.tolvnow.com^
 ||trrsf.com.br/metrics/
+||visit-prod-us.occa.ocs.oraclecloud.com^
 ||webstats.sapo.pt^
 ||xl.pt/api/stats.ashx?
 ! Romanian
@@ -15085,6 +15095,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||g.pcmag.com^
 ||ga.dx.com^
 ||ga.nsimg.net^
+||gadgets360.com/analytics.js
 ||gaiaonline.com/internal/mkt_t.php?
 ||gak.webtoons.com^
 ||gamedistribution.com/collect?
@@ -15701,6 +15712,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||touch.myntra.com^
 ||toyota.com/analytics/
 ||tr.clickstay.com^
+||tr.www.cloudflare.com^
 ||track-visit.monday.com^
 ||track.dictionary.com^
 ||track.kueez.com^
@@ -26298,6 +26310,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||g.bit.pt^
 ||g.bitmag.com.br^
 ||geoip.ativo.com^
+||globo-ab.globo.com^
 ||globo.com/geo?
 ||jsuol.com.br/aud/$script
 ||lancenet.com.br/pw.js
@@ -26609,10 +26622,11 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||ancestrycdn.com/ui-static/lib/tracking/$domain=ancestry.com
 @@||apc-pli.com/api/tracking/$~third-party,xmlhttprequest
 @@||api-analytics.magstimconnect.net^$~third-party
+@@||api-js.datadome.co/js/$domain=sso.garena.com
 @@||api.cxense.com/public/widget/data?$domain=bizjournals.com|marketwatch.com|wsj.com
 @@||api.getmakerlog.com/discussions/$~third-party,websocket,xmlhttprequest
 @@||api.ipify.org^$script,domain=right-on.co.jp
-@@||api.ipify.org^$xmlhttprequest,domain=247sports.com|account.pennytel.com.au|bicyclebluebook.com|equinoxplus.com|speedcheck.ky
+@@||api.ipify.org^$xmlhttprequest,domain=247sports.com|account.pennytel.com.au|bicyclebluebook.com|equinoxplus.com|speedcheck.ky|urbanswan.com
 @@||api.ipinfodb.com^$xmlhttprequest,domain=management30.com
 @@||api.ipstack.com/check$domain=blockfi.com|get-in.com|withpersona.com
 @@||api.perfops.net^$script,xmlhttprequest,domain=cdnperf.com|dnsperf.com
@@ -26774,7 +26788,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||google-analytics.com/plugins/ga/inpage_linkid.js$domain=westernunion.com
 @@||googleoptimize.com/optimize.js$script,domain=inquirer.com|lodgecastiron.com|tentree.ca
 @@||googletagmanager.com/gtag/js$script,domain=carhartt-wip.com|cbslocal.com|honeystinger.com|kawasaki.com|livongo.com|m.putlocker.how|mediaite.com|schwab.com|toptal.com|virginplus.ca
-@@||googletagmanager.com/gtm.js$domain=acehardware.com|ads.spotify.com|aeromexico.com|atptour.com|backcountry.com|bsa-whitelabel.com|carhartt-wip.com|ccleaner.com|chipotle.com|complex.com|crello.com|cyclingnews.com|cypress.io|doodle.com|easternbank.com|flytap.com|formula1.com|fortune.com|gorillamind.com|gumtree.com|harveynorman.co.nz|harveynorman.com.au|jn.pt|kedronparkhotel.com.au|level.travel|mcgeeandco.com|nflgamepass.com|nordvpn.com|nourison.com|oakandfort.com|petsathome.com|pioneer.eu|primeoak.co.uk|qrcode-monkey.com|royalbank.com|scotsman.com|soundguys.com|stressless.com|support.creative.com|trademe.co.nz|tumi.com|uniqlo.com|uqr.to
+@@||googletagmanager.com/gtm.js$domain=acehardware.com|ads.spotify.com|aeromexico.com|atptour.com|backcountry.com|bsa-whitelabel.com|carhartt-wip.com|ccleaner.com|chipotle.com|complex.com|crello.com|cyclingnews.com|cypress.io|doodle.com|easternbank.com|flytap.com|formula1.com|fortune.com|gorillamind.com|gumtree.com|harveynorman.co.nz|harveynorman.com.au|independent.co.uk|jn.pt|kedronparkhotel.com.au|level.travel|mcgeeandco.com|nflgamepass.com|nordvpn.com|nourison.com|oakandfort.com|petsathome.com|pioneer.eu|primeoak.co.uk|qrcode-monkey.com|royalbank.com|scotsman.com|soundguys.com|stressless.com|support.creative.com|trademe.co.nz|tumi.com|uniqlo.com|uqr.to
 @@||gov.au/Scripts/ga.js$script,~third-party
 @@||gstatic.com^*/firebase-performance-standalone.js$script,domain=flightradar24.com
 @@||guce.advertising.com/collectIdentifiers$~third-party
@@ -26804,6 +26818,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||iwin.com/gtm.json$~third-party,xmlhttprequest
 @@||jbj.co.uk^*/analytics.js$script,~third-party
 @@||js-agent.newrelic.com/nr-spa-$script,domain=kapwing.com
+@@||js.datadome.co/tags.js$script,domain=sso.garena.com
 @@||js.monitor.azure.com/scripts/$script,domain=microsoft.com
 @@||js.sentry-cdn.com^$script,domain=book.dmm.com|interacty.me|jobs.ch|pizzahut.com.au
 @@||js.taplytics.com/jssdk/$domain=foxnews.com
@@ -26975,6 +26990,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||supertaxi.com/webclient/scripts/tracking/tracking.js$script,~third-party
 @@||support.brother.com^*/js/analytics.js$script,~third-party
 @@||survey.userneeds.com^$subdocument,domain=foreca.com|forecaweather.com
+@@||switchfly.com/static/108f088/resources/shopping/.build/scripts/analytics-$script,domain=reise-services.americanexpress.de|travel.americanexpress.co.uk|viaggi.americanexpress.it
 @@||t.st/video/js/kGoogleAnalytics.js?$domain=thestreet.com
 @@||taboola.com/libtrc/impl.$script,domain=businessinsider.com|insider.com
 @@||tag.aticdn.net^*/smarttag.js$domain=rte.ie
