@@ -252,6 +252,7 @@ $ARR_WHITE_RULE_LIST = array(
     '@@||torproject.org^' => 1, // #591
     '@@||api.browser.miui.com^' => 1, // #585
     '@@||pixel.prime.amazon.dev^' => 1, // #604
+    '@@||ku.dk^' => 1, // #680
     '@@||track.landmarkglobal.com^' => 1, // #631
     '@@||microsoftazuresponsorships.com^' => 1, // #648
     '@@||metrics.icloud.com^' => 1, // #658
