@@ -1220,6 +1220,12 @@ return array(
     'entirelysacrament.com' => array( // #673
         'entirelysacrament.com',
     ),
+    '2345.cc' => array( // #683
+        '2345.cc',
+    ),
+    'yes115.com' => array( // #683
+        'yes115.com',
+    ),
     
     // 批量添加域名
     '0202.com.tw' =>array('0202.com.tw', 'www.0202.com.tw'),
