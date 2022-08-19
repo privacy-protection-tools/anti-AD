@@ -43,7 +43,7 @@ return array(
         'report.qq.com',
         'rcgi.video.qq.com',
         'rlog.video.qq.com',
-
+        'ad.browser.qq.com', // #682
     ),
     'openstorage.cn' => array(
         'iflyad.bjb.openstorage.cn'
