@@ -361,6 +361,7 @@ return array(
     'govdelivery.com' => 0, #674
     'meipian7.cn' => 0, #672
     'jimdo.com' => 0, #675
+    'gm.mmstat.com' => 0, #680
 
 
 
