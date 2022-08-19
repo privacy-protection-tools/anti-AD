@@ -363,6 +363,7 @@ return array(
     'jimdo.com' => 0, #675
     'gm.mmstat.com' => 0, #680
     'as.mgtv.com' => 0, #678
+    'adobe-campaign.com' => 0, #681
 
 
 
