@@ -147,7 +147,6 @@ return array(
         'ad.intl.xiaomi.com',
         'ad.xiaomi.com',
         'admob.xiaomi.com',
-        't1.market.xiaomi.com', // #630
     ),
     'zhihu.com' => array(
         'lc-push.zhihu.com',
