@@ -367,6 +367,7 @@ return array(
     'ssl-cdn.static.browser.mi-img.com' => 0, #689
     'meitubeauty.meitudata.com' => 0, #688
     'my-material.zone1.meitudata.com' => 0, #688
+    'profile.csdnimg.cn' => 0, #687
 
 
 
