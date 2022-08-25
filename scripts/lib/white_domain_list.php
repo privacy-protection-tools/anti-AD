@@ -364,6 +364,7 @@ return array(
     'gm.mmstat.com' => 0, #680
     'as.mgtv.com' => 0, #678
     'adobe-campaign.com' => 0, #681
+    'ssl-cdn.static.browser.mi-img.com' => 0, #689
 
 
 
