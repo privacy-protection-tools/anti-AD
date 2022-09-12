@@ -1067,10 +1067,6 @@ return array(
         'gvt2.com', // #558
     ),
     
-    '95516.com' => array(
-        'ads.95516.com', // #552
-    ),
-    
     'dealmoon.com' => array(
         'analytics.dealmoon.com', // #575
     ),
