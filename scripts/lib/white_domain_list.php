@@ -369,6 +369,7 @@ return array(
     'my-material.zone1.meitudata.com' => 0, #688
     'profile.csdnimg.cn' => 0, #687
     'db-ip.com' => 0, #699
+    'geotrust.com' => 0, #701
 
 
 
