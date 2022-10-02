@@ -1221,6 +1221,26 @@ return array(
     'yes115.com' => array( // #683
         'yes115.com',
     ),
+    'fkw.com' => array( // #698
+        'datareport.fkw.com',
+    ),
+    'xiaohongshu.com' => array( // #704
+        's.xiaohongshu.com',
+        'crash.xiaohongshu.com',
+		'apppush-sh5.xiaohongshu.com',
+		'flash.xiaohongshu.com',
+		'referee.xiaohongshu.com',
+		'edith.xiaohongshu.com',
+		'vi.xiaohongshu.com',
+		'v.xiaohongshu.com',
+		'ci.xiaohongshu.com',
+		'store.xiaohongshu.com',
+		'starry.xiaohongshu.com',
+		'apppush.xiaohongshu.com',
+    ),
+    'todesk.com' => array( // #704
+        'st.todesk.com',
+    ),
     
     // 批量添加域名
     '0202.com.tw' =>array('0202.com.tw', 'www.0202.com.tw'),
