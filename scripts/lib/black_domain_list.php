@@ -1230,7 +1230,6 @@ return array(
 		'apppush-sh5.xiaohongshu.com',
 		'flash.xiaohongshu.com',
 		'referee.xiaohongshu.com',
-		'edith.xiaohongshu.com',
 		'vi.xiaohongshu.com',
 		'v.xiaohongshu.com',
 		'ci.xiaohongshu.com',
