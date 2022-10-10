@@ -370,6 +370,7 @@ return array(
     'profile.csdnimg.cn' => 0, #687
     'db-ip.com' => 0, #699
     'geotrust.com' => 0, #701
+    'salon.com' => 0, #711
 
 
 
