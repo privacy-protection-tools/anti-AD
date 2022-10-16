@@ -1231,8 +1231,6 @@ return array(
 		'flash.xiaohongshu.com',
 		'referee.xiaohongshu.com',
 		'vi.xiaohongshu.com',
-		'v.xiaohongshu.com',
-		'ci.xiaohongshu.com',
 		'store.xiaohongshu.com',
 		'starry.xiaohongshu.com',
 		'apppush.xiaohongshu.com',
