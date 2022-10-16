@@ -371,6 +371,8 @@ return array(
     'db-ip.com' => 0, #699
     'geotrust.com' => 0, #701
     'salon.com' => 0, #711
+    'mini2015.qq.com' => 0, #710
+    'alimama.com' => 0, #710
 
 
 

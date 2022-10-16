@@ -92,7 +92,6 @@ return array(
     'adk2x.com' => array('adk2x.com'),
     'inmobi.com' => array('inmobi.com'),
     'alimama.cn' => array('alimama.cn'),
-    'alimama.com' => array('alimama.com'),
     'appjiagu.com' => array('appjiagu.com'),
     'amazon-adsystem.com' => array('amazon-adsystem.com'),
     'adnxs.com' => array('adnxs.com'),
