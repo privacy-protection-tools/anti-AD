@@ -373,6 +373,7 @@ return array(
     'salon.com' => 0, #711
     'mini2015.qq.com' => 0, #710
     'alimama.com' => 0, #710
+    'hqq.tv' => 0, #725
 
 
 
