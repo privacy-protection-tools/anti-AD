@@ -223,9 +223,6 @@ return array(
     'minisplat.cn' => array(
         'minisplat.cn',
     ),
-    'bdurl.net' => array(
-        'dig.bdurl.net', //数据收集
-    ),
     'id1.cn' => array(
         'id1.cn', //钓鱼网站
     ),
