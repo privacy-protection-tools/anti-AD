@@ -22,7 +22,6 @@ jobs:
         run: |
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action[bot]"
-          sudo update-alternatives --set php /usr/bin/php7.4
           git checkout adlist-maker
           /bin/bash ./scripts/build-list.sh
           git stash -u
