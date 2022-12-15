@@ -19,7 +19,7 @@ jobs:
         run: |
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action[bot]"
-          sudo update-alternatives --set php /usr/bin/php7.4
+          # sudo update-alternatives --set php /usr/bin/php7.4
           /bin/bash ./scripts/prepare-upstream.sh
           git add *
           git commit -am "download upstream."
