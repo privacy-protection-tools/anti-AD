@@ -1,9 +1,18 @@
 [Adblock Plus 1.1]
-! Version: 202212150704
+! Version: 202212161230
 ! Title: EasyPrivacy
-! Last modified: 15 Dec 2022 07:04 UTC
+! Last modified: 16 Dec 2022 12:30 UTC
 ! Expires: 6 days (update frequency)
-%include easylist:template_header.txt
+! *** easylist:template_header.txt ***
+! 
+! Please report any unblocked adverts or problems
+! in the forums (https://forums.lanik.us/)
+! or via e-mail (easylist@protonmail.com).
+! 
+! Homepage: https://easylist.to/
+! Licence: https://easylist.to/pages/licence.html
+! GitHub issues: https://github.com/easylist/easylist/issues
+! GitHub pull requests: https://github.com/easylist/easylist/pulls
 ! 
 ! -----------------General tracking systems-----------------!
 ! *** easylist:easyprivacy/easyprivacy_general.txt ***
@@ -998,6 +1007,7 @@
 /beacon/get/*
 /beacon/info?
 /beacon/init?
+/beacon/media?
 /beacon/metrics
 /beacon/page?
 /beacon/perf
@@ -4001,6 +4011,7 @@
 /shinystat.
 /shinystat_
 /shopify-boomerang-
+/shopify-event.gif?
 /shopify/track
 /shopify_stats.js
 /showcounter.$domain=~showcounter.com
@@ -4378,7 +4389,6 @@
 /tagmanager/pptm.
 /tagmgmt/bootstrap.
 /tagomnitureengine.js
-/tags/angular-
 /tags?session_id=
 /TagSvc/*
 /tagx.js
@@ -6144,7 +6154,6 @@ _mongo_stats/
 ||mm-api.agency^
 ||monu.delivery^
 ||mors22.com^
-||mradx.net^
 ||mrpdata.net^
 ||mt48.net^
 ||mxpnl.com^
@@ -6208,6 +6217,7 @@ _mongo_stats/
 ||sitedataprocessing.com^
 ||sixtrk.com^
 ||sjpf.io^
+||soapfighters.com^
 ||solutionshindsight.net^
 ||speedyfox.io^
 ||speedyrhino.co^
@@ -6411,6 +6421,7 @@ _mongo_stats/
 ||affistats.com^$third-party
 ||afftrack.pro^$third-party
 ||afsanalytics.com^$third-party
+||afterclick.co^$third-party
 ||agentanalytics.com^$third-party
 ||agentinteractive.com^$third-party
 ||agilecrm.com^$third-party
@@ -6459,6 +6470,7 @@ _mongo_stats/
 ||analyticswizard.com^$third-party
 ||analytik.xyz^$third-party
 ||analytk.com^$third-party
+||analyzz.com^$third-party
 ||anametrix.com^$third-party
 ||anametrix.net^$third-party
 ||angelfishstats.com^$third-party
@@ -8646,6 +8658,7 @@ _mongo_stats/
 ||truconversion.com^$third-party
 ||truehits.in.th^$third-party
 ||truehits1.gits.net.th^$third-party
+||truffle.one^$third-party
 ||truoptik.com^$third-party
 ||trysera.com^$third-party
 ||tscounter.com^$third-party
@@ -12071,6 +12084,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||connext-cdn.azureedge.net^
 ||consensu.org/?log=
 ||consensu.org/geoip
+||console.uxlens.com^
 ||contactatonce.com/GetAgentStatusImage.aspx?
 ||contactatonce.com/VisitorContext.aspx?
 ||container.pepperjam.com^$third-party
@@ -15048,6 +15062,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||alicdn.com/AWSC/et/
 ||aliexpress.com/ts?
 ||alipay.com/web/bi.do?ref=
+||aljazeera.com/thirdparty/nr.js
 ||allaboutberlin.com/whoisthere.js
 ||allevents.in/actracker/
 ||alljapanesepass.com/ascripts/gcu.js
@@ -30579,7 +30594,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||guce.advertising.com/collectIdentifiers$~third-party
 @@||healthgateway.gov.bc.ca/snowplow.js$~third-party
 @@||hearstapps.com/static/comscore.$script,domain=womenshealthmag.com
-@@||helidon.io/docs/v3/pages/mp/metrics/metrics.js$~third-party
+@@||helidon.io/docs/*/metrics/metrics$~third-party,xmlhttprequest
 @@||hello.myfonts.net/count/$stylesheet,domain=cfr.org|furniturevillage.co.uk|luggagehero.com
 @@||herokuapp.com/api/analytics$domain=madeincookware.com
 @@||hirosystems.vscode-unpkg.net/*/clarity-lsp/$domain=github.dev|vscode.dev
@@ -31038,6 +31053,8 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||tag.aticdn.net/583901/at.js$script,domain=tv5monde.com
 @@||tag.aticdn.net^*/smarttag.js$domain=gouv.fr|mon.compteczam.fr
 @@||tra.scds.pmdstatic.net/sourcepoint/$domain=businessinsider.fr|voici.fr
+@@||trustcommander.net/iab-tcfapi/tcfapi.js$script,domain=tf1info.fr
+@@||trustcommander.net/privacy/*/privacy$script,domain=tf1info.fr
 @@||ultimedia.com/api/widget/getwidget/$xmlhttprequest,domain=ouest-france.fr
 @@||vuplay.co.uk/stats/adobe/*/AppMeasurement.js$script,domain=radioplus.be
 @@||vuplay.co.uk/stats/adobe/*/VisitorAPI.js$script,domain=radioplus.be
