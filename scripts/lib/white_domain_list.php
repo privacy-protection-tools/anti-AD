@@ -380,6 +380,7 @@ return array(
     'sofire.baidu.com' => 0, #728
     'c.youdao.com' => 0, #729
     'button.like.co' => 0, #737
+    'wgo.mmstat.com' => 0, #730
 
 
 
