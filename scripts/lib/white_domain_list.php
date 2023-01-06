@@ -379,6 +379,7 @@ return array(
     'sfp.safe.baidu.com' => 0, #728
     'sofire.baidu.com' => 0, #728
     'c.youdao.com' => 0, #729
+    'button.like.co' => 0, #737
 
 
 
