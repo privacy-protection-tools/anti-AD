@@ -374,6 +374,7 @@ return array(
     'mini2015.qq.com' => 0, #710
     'alimama.com' => 0, #710
     'hqq.tv' => 0, #725
+    'gift.douyucdn.cn' => 0, #745
 
 
 
