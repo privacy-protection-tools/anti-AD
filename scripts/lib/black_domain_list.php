@@ -1233,6 +1233,9 @@ return array(
     'todesk.com' => array( // #704
         'st.todesk.com',
     ),
+    '189.cn' => array( // #526
+        'webwebfenxi.189.cn',
+    ),
     
     // 批量添加域名
     '0202.com.tw' =>array('0202.com.tw', 'www.0202.com.tw'),
