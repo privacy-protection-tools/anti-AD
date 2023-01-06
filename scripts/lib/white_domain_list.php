@@ -375,6 +375,7 @@ return array(
     'alimama.com' => 0, #710
     'hqq.tv' => 0, #725
     'gift.douyucdn.cn' => 0, #745
+    'urldefense.com' => 0, #741
 
 
 
