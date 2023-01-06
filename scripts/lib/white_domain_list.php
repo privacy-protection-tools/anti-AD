@@ -381,6 +381,7 @@ return array(
     'c.youdao.com' => 0, #729
     'button.like.co' => 0, #737
     'wgo.mmstat.com' => 0, #730
+    'eroterest.net' => 0, #731
 
 
 
