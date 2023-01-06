@@ -376,6 +376,8 @@ return array(
     'hqq.tv' => 0, #725
     'gift.douyucdn.cn' => 0, #745
     'urldefense.com' => 0, #741
+    'sfp.safe.baidu.com' => 0, #728
+    'sofire.baidu.com' => 0, #728
 
 
 
