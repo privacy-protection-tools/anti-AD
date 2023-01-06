@@ -158,7 +158,6 @@ $ARR_REGEX_LIST = array(
     '/^(\S+\.)?sax[\dns]?\.sina\.com\.cn/' => null,
     '/^(\S+\.)?delivery([\d]{2}|dom|modo).com$/' => null,
     '/^(\S+\.)?[c-s]ads(abs|abz|ans|anz|ats|atz|del|ecs|ecz|ims|imz|ips|ipz|kis|kiz|oks|okz|one|pms|pmz)\.com/' => null,
-    '/^(\S+\.)?[0-9a-z\-]{26,}\.(com|net|cn)(\.cn)?$/' => null, //超长域名
     '/^(\S+\.)?11599[\da-z]{2,20}\.com$/' => null, //"澳门新葡京"系列
     '/^(\S+\.)?61677[\da-z]{0,20}\.com$/' => null, //"澳门新葡京"系列
     '/^(\S+\.)?[0-9a-f]{15,}\.com$/' => null, //15个字符以上的16进制域名
