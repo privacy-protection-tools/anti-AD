@@ -258,6 +258,7 @@ $ARR_WHITE_RULE_LIST = array(
     '@@||h-adashx.ut.dingtalk.com^' => 1, // #662
     '@@||ads.95516.com^' => 1, // #695
     '@@||track.bankcomm.com^' => 1, // #714
+    '@@||tongji.koowo.cn^' => 1, // #742
 );
 
 //针对上游赦免规则anti-AD不予赦免的规则，即赦免名单的黑名单
