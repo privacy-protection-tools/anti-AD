@@ -378,6 +378,7 @@ return array(
     'urldefense.com' => 0, #741
     'sfp.safe.baidu.com' => 0, #728
     'sofire.baidu.com' => 0, #728
+    'c.youdao.com' => 0, #729
 
 
 
