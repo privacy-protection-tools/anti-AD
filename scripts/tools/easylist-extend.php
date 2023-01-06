@@ -118,7 +118,6 @@ $ARR_MERGED_WILD_LIST = array(
     'pingfore*.*' => null,
     'socdm*.*' => null,
     'supersonicads*.*' => null,
-    'tracking*.*' => null,
     'usage*.*' => null,
     'wlmonitor*.*' => null,
     'zjtoolbar*.*' => null,
