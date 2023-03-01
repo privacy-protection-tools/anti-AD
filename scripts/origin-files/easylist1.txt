@@ -1,8 +1,8 @@
-! Checksum: nHbDr0ZUv5hd9Af7CK8UYA
+! Checksum: bDp2QtyqhHxEWQRPQK/X8g
 ! Title: AdGuard Chinese filter (Optimized)
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.0.81.54
-! TimeUpdated: 2023-02-28T16:31:40+00:00
+! Version: 2.0.81.64
+! TimeUpdated: 2023-03-01T16:31:19+00:00
 ! Expires: 4 days (update frequency)
 #%#var AG_onLoad=function(func){if(document.readyState==="complete"||document.readyState==="interactive")func();else if(document.addEventListener)document.addEventListener("DOMContentLoaded",func);else if(document.attachEvent)document.attachEvent("DOMContentLoaded",func)};
 #%#var AG_removeElementById = function(id) { var element = document.getElementById(id); if (element && element.parentNode) { element.parentNode.removeChild(element); }};
@@ -332,6 +332,8 @@
 ||two.fsylr.com^
 ||ad.juksy.com^
 ||ads.tvb.com^
+@@/adview_*_ads_300x250.js$domain=yaociyuan.bid
+yaociyuan.bid#%#//scriptlet('set-constant', 'killads', 'true')
 520cc.cc#%#//scriptlet('prevent-setTimeout', 'myModal')
 520cc.cc#%#//scriptlet('set-constant', 'all520dddaaa2022ccc', 'true')
 @@||520click.com/ad.php$stealth
@@ -811,6 +813,12 @@ ipv6.baidu.com,m.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###resul
 ||alicdn.com^$image,domain=m.k1k.cc|thcdy.co|27k.cc|1024pa.com|hg6384.com-www.6u7u.com|4080kan.com|dy686.net
 ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###content_left > .result ~ div:not([class]):not([style])
 /^(?!.*(bootstrapcdn.com|cdn.ampproject.org|cloudflare.com|cdn.staticfile.org|disqus.com|disquscdn.com|dmca.com|ebacdn.com|facebook.net|fastlylb.net|fbcdn.net|fluidplayer.com|fontawesome.com|github.io|google.com|googleapis.com|googletagmanager.com|gstatic.com|jquery.com|jsdelivr.net|jwpcdn.com|jwplatform.com|polyfill.io|recaptcha.net|shrink.pe|twitter.com|ulogin.ru|unpkg.com|userapi.com|vidazoo.com|vk.com|yandex.|yastatic.net|ytimg.com|zencdn.net|player|youtube.com|cackle.me|googleoptimize.com|vuukle.com|chatango.com|twimg.com|google-analytics.com|hcaptcha.com|raincaptcha.com|media-imdb.com|blogger.com|hwcdn.net|instagram.com|wp.com)).*$/$third-party,script,domain=yemancomic.com|qimiaoxiaoshuo.com|gaofuwu.org|nxpaaq.com|dengbi2.com|92hm.top
+||zztongyun.com/static/js/sh.min.js
+fqzww.net##a[onclick="qinlintes11t2()"]
+yaociyuan.bid##.w-ad
+yaociyuan.bid##.board a[target="_blank"] > img
+yaociyuan.bid##.content a[target="_blank"] > img
+||996000996.xyz/ga/$image,domain=yaociyuan.bid
 ||520xingyun.com/images/*.gif$domain=mcpcourse.com
 netfly.tv##.tg-container
 zhongce.sina.com.cn##div[class^="side-btns-jifen"]
@@ -2777,6 +2785,7 @@ nfmovies.com#@?#div[id]:-abp-has(>img[onclick="openurl()"])
 ://rou*/_next/static/chunks/pages/home-
 ://s.htkk*.top:$script,third-party
 ://seai*/ads/float.js
+://xingkong6688s.oss-
 :1010/openV5.js
 :10443/$script,subdocument,third-party
 :12289/o.js$script,third-party
@@ -3728,6 +3737,7 @@ newduba.cn###jq_youxi
 ||9fh6m.cn^
 ||a-ads.com^
 ||aaaesme.cn^
+||accommodatingremindauntie.com^
 ||afdplay.xyz^
 ||afx001.pw^
 ||agkacg.xyz^
@@ -3756,6 +3766,7 @@ newduba.cn###jq_youxi
 ||banhui.xyz^
 ||bavxxf.xyz^
 ||bddwm.com^
+||beatricecathy.com^
 ||bfdaawe.top^
 ||bgcnhux.cn^
 ||bgjjwl.cn^
@@ -3845,6 +3856,7 @@ newduba.cn###jq_youxi
 ||ewmvim.xyz^
 ||ewrwf.com^
 ||ezfxpuo.cn^
+||ezwxia.xyz^
 ||f9s6.top^
 ||fangfeng009.xyz^
 ||fangyaomin.site^
@@ -3884,6 +3896,7 @@ newduba.cn###jq_youxi
 ||gskbzle.cn^
 ||guangdongtaiji.com^
 ||guge.red^
+||guoandong.ltd^
 ||guode.cyou^
 ||guuds.cyou^
 ||guyu8855.club^
@@ -3908,6 +3921,7 @@ newduba.cn###jq_youxi
 ||hhaobcj.cn^
 ||hibaby.ren^
 ||hiqrnyn.cn^
+||hkbzl.hk^
 ||hmpubc.xyz^
 ||hndhas.com^
 ||hnrjign.cn^
@@ -4099,8 +4113,10 @@ newduba.cn###jq_youxi
 ||ofgysy.xyz^
 ||ogkfuw.xyz^
 ||ohmpyq.xyz^
+||oiqdjksgpo.com^
 ||okew.top^
 ||okmwfq.xyz^
+||okoc.top^
 ||okod.top^
 ||okoy.top^
 ||okwa.top^
@@ -4212,6 +4228,7 @@ newduba.cn###jq_youxi
 ||shhaiya.com^
 ||shidaiheima.ltd^
 ||shikongbb.com^
+||siejp.cyou^
 ||sige20221230.xyz^
 ||siuscs.xyz^
 ||sixarwr.cn^
@@ -4277,6 +4294,7 @@ newduba.cn###jq_youxi
 ||udifvi.cn^
 ||ufynxmf.cn^
 ||ukutuy.xyz^
+||uniway.cn.com^
 ||unmnkkq.cn^
 ||uowfag.xyz^
 ||uwumr.cn^
@@ -4306,7 +4324,9 @@ newduba.cn###jq_youxi
 ||wdasa.top^
 ||wdmdejd.cn^
 ||weieo.cyou^
+||weighcb.com^
 ||weiqu.cyou^
+||wfndponfd.com^
 ||whrgsmi.cn^
 ||wjl58.icu^
 ||wooledswards.com^
@@ -4346,6 +4366,7 @@ newduba.cn###jq_youxi
 ||xkjcpl.cn^
 ||xkqit.com^
 ||xmmnsl.com^
+||xnrcnz.xyz^
 ||xopew.cyou^
 ||xrewo.xyz^
 ||xryjyfb.cn^
@@ -14513,6 +14534,7 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||meiyouad.com/user/admin?
 ||meizhou.cn/comm/mygg/
 ||meizhou.com/images/topbanner
+||mestrip.com/widgets/
 ||metvb.com/js/bofangwei.js
 ||mfacelive.com/Scripts/social/openchannel_min.js
 ||mfav88.com/yinzi/
