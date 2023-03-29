@@ -44,6 +44,10 @@ return array(
         'rcgi.video.qq.com',
         'rlog.video.qq.com',
         'ad.browser.qq.com', // #682
+        'rdelivery.qq.com', // #764
+        'aedns.weixin.qq.com', // #764
+        'date.ab.qq.com', // #764
+        'report.nfa.qq.com', // #764
     ),
     'openstorage.cn' => array(
         'iflyad.bjb.openstorage.cn'
