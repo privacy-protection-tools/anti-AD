@@ -1322,6 +1322,11 @@ return [
         "v2-lm.adukwai.com",
         "v4-lm.adukwai.com",
     ],
+    "diwodiwo.xyz" => [
+        // #775
+        "ad-display.diwodiwo.xyz",
+        "ad-channel.diwodiwo.xyz",
+    ],
 
     // 批量添加域名
     "0202.com.tw" => ["0202.com.tw", "www.0202.com.tw"],
