@@ -387,6 +387,7 @@ return array(
     'vaserviece.10jqka.com.cn' => 0, #765
     'chkaja.com' => 0, #774
     'short-video.kakamobi.cn' => 0, #758
+    'qiyukf.com' => 0, #754
 
 
 
