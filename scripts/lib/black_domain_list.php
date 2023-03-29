@@ -3,6 +3,7 @@
 
 //这个文件主要定义针对hosts文件中不能泛域名解析而优化减少生成行数
 //对于个性化屏蔽的域名，全部移动到block_domains.root.conf中管理
+// Formatter: https://www.duplichecker.com/php-formatter
 
 return [
     "f2pool.com" => ["openvpn.f2pool.com"],
@@ -1281,6 +1282,45 @@ return [
     "189.cn" => [
         // #526
         "webwebfenxi.189.cn",
+    ],
+    "dutils.com" => [
+        // #768
+        "api-c.dutils.com",
+        "api-d.dutils.com",
+        "api-devs.dutils.com",
+        "api-df.dutils.com",
+        "api-error.dutils.com",
+        "api-exc.dutils.com",
+        "api-fc.dutils.com",
+        "api-fd.dutils.com",
+        "api-gd.dutils.com",
+        "devs-data.dutils.com",
+        "jp-api-fc.dutils.com",
+        "jp-devs-data.dutils.com",
+        "m.mpl.dutils.com",
+        "h.m.mpl.dutils.com",
+        "us-api-d.dutils.com",
+        "us-api-fc.dutils.com",
+        "us-devs-data.dutils.com",
+        "www.dutils.com",
+    ],
+    "gifshow.com" => [
+        // #768
+        "gdfp.gifshow.com",
+        "log-sdk.gifshow.com",
+        "ad.partner.gifshow.com",
+        "ulog-sdk.gifshow.com",
+    ],
+    "adukwai.com" => [
+        // #768
+        "adukwai.com",
+        "p1-jx.adukwai.com",
+        "p1-lm.adukwai.com",
+        "p2-jx.adukwai.com",
+        "p2-lm.adukwai.com",
+        "v1-lm.adukwai.com",
+        "v2-lm.adukwai.com",
+        "v4-lm.adukwai.com",
     ],
 
     // 批量添加域名
