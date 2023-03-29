@@ -76,7 +76,6 @@ return [
     "dnset.com" => ["dnset.com"],
     "yiqifa.com" => ["yiqifa.com"],
     "kankan.com" => [
-        "cpm.cm.kankan.com",
         "float.kankan.com",
         "stat.kankan.com",
     ],
