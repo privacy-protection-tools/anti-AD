@@ -386,7 +386,7 @@ return array(
     'act.vip.iqiyi.com' => 0, #760
     'vaserviece.10jqka.com.cn' => 0, #765
     'chkaja.com' => 0, #774
-    
+    'short-video.kakamobi.cn' => 0, #758
 
 
 
