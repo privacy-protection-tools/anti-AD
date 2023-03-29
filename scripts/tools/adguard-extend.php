@@ -519,6 +519,7 @@ $ARR_WHITE_RULE_BLK_LIST = array(
     '@@||zbj.com^' => null,
     '@@||zeplin.io^' => null,
     '@@||zippyshare.com^' => null,
+    '@@||ads.tiktok.com^' => null,
 );
 
 //针对上游通配符规则中anti-AD不予采信的规则，即通配符黑名单
