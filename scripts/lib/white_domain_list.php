@@ -382,6 +382,11 @@ return array(
     'button.like.co' => 0, #737
     'wgo.mmstat.com' => 0, #730
     'eroterest.net' => 0, #731
+    'click.redditmail.com' => 0, #753
+    'act.vip.iqiyi.com' => 0, #760
+    'vaserviece.10jqka.com.cn' => 0, #765
+    'chkaja.com' => 0, #774
+    
 
 
 
