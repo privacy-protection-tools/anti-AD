@@ -209,7 +209,7 @@ class writerFormat{
         'format' => 'host-suffix,{DOMAIN},reject',
         'header' => "#TITLE=anti-AD\n#VER={DATE}\n#URL={URL}\n#TOTAL_LINES={COUNT}\n",
         'full_domain' => 0,
-        'name' => 'surge',
+        'name' => 'quanx',
         'filename' => '../anti-ad-quanx.txt',
         'whitelist_attached' => array(
             'base-dead-hosts.txt' =>array(
