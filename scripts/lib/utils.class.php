@@ -6,15 +6,16 @@
  * @author gently
  */
 
-class utils{
-
+class utils
+{
     /**
      * http get 方法，一般用于下载文件
      *
      * @param $url
      * @return bool|string
      */
-    public static function http_get($url){
+    public static function http_get($url)
+    {
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_HTTPGET, 1);
@@ -22,7 +23,7 @@ class utils{
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
         curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_USERAGENT, '^_^ angent 2.2.5/' . phpversion());
+        curl_setopt($ch, CURLOPT_USERAGENT, "^_^ angent 2.2.5/" . phpversion());
         $result = curl_exec($ch);
         $errno = curl_errno($ch);
         curl_close($ch);
@@ -37,26 +38,27 @@ class utils{
      * @param $arr2
      * @return array
      */
-    public static function array_merge_plus($arr1, $arr2){
-        if(!is_array($arr1)){
-            $arr1 = array();
+    public static function array_merge_plus($arr1, $arr2)
+    {
+        if (!is_array($arr1)) {
+            $arr1 = [];
         }
 
-        if(!is_array($arr2)){
-            $arr2 = array();
+        if (!is_array($arr2)) {
+            $arr2 = [];
         }
 
         $arr1 = array_merge_recursive($arr1, $arr2);
 
-        $arr_result = array();
-        foreach($arr1 as $key => $val){
-            $arr_result[$key] = array();
+        $arr_result = [];
+        foreach ($arr1 as $key => $val) {
+            $arr_result[$key] = [];
 
-            if(!is_array($val)){
+            if (!is_array($val)) {
                 continue;
             }
 
-            foreach($val as $k => $v){
+            foreach ($val as $k => $v) {
                 $arr_result[$key][$k] = is_array($v) ? array_sum($v) : $v;
             }
         }
