@@ -24,6 +24,7 @@ jobs:
           git config --global user.name "GitHub Action[bot]"
           git checkout adlist-maker
           /bin/bash ./scripts/build-list.sh
+          ls -l ../anti*
           git stash -u
           git checkout master
           git checkout stash@{0}^3 -- adblock-for-dnsmasq.conf
