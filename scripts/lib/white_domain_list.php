@@ -68,7 +68,6 @@ return [
     "gsp2.baidu.com" => 0, //百度贴吧相关
     "gsp3.baidu.com" => 0, //百度贴吧相关
     "sp0.baidu.com" => 0, //百度翻译资源
-    "sp1.baidu.com" => 0, //百度翻译资源
     "sp2.baidu.com" => 0, //百度翻译资源
     "c0.ifengimg.com" => 0, //凤凰网视频异常
     "7moor.com" => 0, //山姆会员客服异常
