@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202304011811
+! Version: 202304041323
 ! Title: EasyPrivacy
-! Last modified: 01 Apr 2023 18:11 UTC
+! Last modified: 04 Apr 2023 13:23 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -91,6 +91,7 @@
 .click/track?
 .cn/jc.gif?
 .cn/sl.gif?
+.com/_.gif?
 .com/analytics?
 .com/bt/s.png?b=
 .com/clk?
@@ -116,6 +117,7 @@
 .com/stats.aspx?
 .com/track?$~object
 .com/tracking?
+.com/vtrack|
 .content_tracking.
 .d-engine.js
 .de/h.gif?
@@ -246,6 +248,7 @@
 /acbeacon2.
 /accessanalyzer/tracker?
 /AccessCounter/*
+/accesstracking/*
 /accip_script.js
 /acclog.cgi?
 /acecounter/*
@@ -504,6 +507,7 @@
 /analytics/dfa.
 /analytics/dist/*
 /analytics/embed/*
+/analytics/engine/*
 /analytics/event
 /analytics/final.
 /analytics/frame.
@@ -4191,6 +4195,7 @@
 /tailtarget.js
 /talpa-analytics/*
 /TargetAnalyticsAPI-
+/targetemsecure.
 /taxtag.js
 /tblz_sailthru/*
 /tbuy/tracker/*
@@ -7690,6 +7695,7 @@ _mongo_stats/
 ||pro6e.com^$third-party
 ||proclivitysystems.com^$third-party
 ||profilesnitch.com^$third-party
+||profitmetrics.io^$third-party
 ||programmatictrader.com^$third-party
 ||projectsunblock.com^$third-party
 ||promotionengine.com^$third-party
@@ -9860,6 +9866,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||shinesavage.com^
 ||shinestuart.com^
 ||shiveringspot.com^
+||shiverscissors.com^
 ||shockinggrass.com^$third-party
 ||shockingship.com^
 ||shopbreakfast.com^
@@ -12753,6 +12760,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||relaymedia.com/ping?$third-party
 ||removeads.workers.dev^
 ||replyat.com/gadgetpagecounter.asp?
+||reporting-api.gannettinnovation.com^
 ||reporting.cdndex.io^
 ||reporting.singlefeed.com^
 ||reports-api.sqreen.io^
@@ -14840,6 +14848,8 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||c.x.oanda.com^
 ||c.xbox.com^
 ||c.ypcdn.com^$domain=yellowpages.com
+||cambash.com/api/events
+||cambash.com/api/metrics
 ||campsaver.com/nelmio-js-logger/
 ||canstockphoto.com/monitor/
 ||canstockphoto.com/server.php?rqst=track
@@ -15038,6 +15048,8 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||facebook.com/search/web/instrumentation.php?
 ||facebook.com/xti.php?
 ||fanatics.com/api/track
+||fancentro.com/lapi/statisticWriter/
+||fancentro.com/trck-
 ||fansedge.com/api/track
 ||fansshare.com/t.gif
 ||faphouse.com/collector/
@@ -15167,7 +15179,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||icgp.ie/overview/js/tracker.php
 ||idiva.com/analytics_
 ||iedc.fitbit.com^
-||ign.com/metrics/
 ||ih.newegg.com^
 ||iheart.com/api/v3/playback/reporting
 ||ihg.com/logging/
@@ -15297,6 +15308,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||mat6tube.com/stats
 ||mcc-tags.cisco.com^
 ||mcloud.to/log/
+||mcloud.to/ping/
 ||mcs-va.tiktokv.com^
 ||mdmpix.com/js/connector.php?
 ||medium.com/_/batch
@@ -15336,6 +15348,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||motorsport.com/stat/
 ||mov.t-mobile.com/p/js/1.js
 ||movetv.com/sa-events
+||mparticle.weather.com/identity/
 ||mps.nbcuni.com/request/page/json/params/*&adunits=$xmlhttprequest
 ||mr.homedepot.ca^
 ||msg-intl.qy.net^$image
@@ -15901,6 +15914,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||visitors.sourcingmap.com^
 ||visualstudio.com/v2/track
 ||vivid.money/projectx/$ping
+||vizcloud.co/ping/
 ||vk.com/js/lib/px.js
 ||vortex.hulu.com^
 ||vrbo.com/pdp/logger?
@@ -16111,6 +16125,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||z680.beaumontenterprise.com^
 ||zion.qbo.intuit.com^
 ! PerimeterX
+|zazzle.de/svc/px
 ||anthropologie.com/XgWM9nuH/init.js
 ||apartmenttherapy.com/jAYekY18/init.js
 ||auctionzip.com/eKtvxkQ2/init.js
@@ -16181,10 +16196,21 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||whois.com/js/gtmDataLayer.js
 ||wine-searcher.com/K6S8okp3/init.js
 ||worthpoint.com/lIUjcOwl/init.js
-||zazzle.ca/a0o07ort/init.js
-||zazzle.co.uk/a0o07ort/init.js
-||zazzle.com.au/a0o07ort/init.js
-||zazzle.com/a0o07ort/init.js
+||zazzle.ca/botdefender/init.js
+||zazzle.ca/svc/px
+||zazzle.co.nz/botdefender/init.js
+||zazzle.co.nz/svc/px
+||zazzle.co.uk/botdefender/init.js
+||zazzle.co.uk/svc/px
+||zazzle.com.au/botdefender/init.js
+||zazzle.com.au/svc/px
+||zazzle.com/botdefender/init.js
+||zazzle.com/svc/px
+||zazzle.de/botdefender/init.js
+||zazzle.es/botdefender/init.js
+||zazzle.es/svc/px
+||zazzle.fr/botdefender/init.js
+||zazzle.fr/svc/px
 ||zillow.com/HYx10rg3/init.js
 ||zoominfo.com/osx7m0dx/init.js
 ! Consent/GDPR tracking
@@ -29600,6 +29626,9 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||paginegialle.it/engagement.js
 ||pornolupo.org/track.js
 ||ppcdn.it/iol/tracklib.3.js
+||raiplay.it/hit-service/
+||raiplay.it/tracking/
+||raiplaysound.it/hit-service/
 ||repstatic.it^*/nielsen_static_mapping_repubblica_
 ||sa.sky.it^
 ||seat.it/cgi-bin/getcod.cgi?
@@ -30159,7 +30188,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||bgp.he.net/images/flags/*.gif?$image,~third-party
 @@||bioaksxter.com/files/*/Tracking.min.js$script,~third-party
 @@||bjjhq.com/HttpCombiner.ashx?$script,~third-party
-@@||blackcircles.ca^*/gtm.js$~third-party
+@@||blackcircles.ca^$script,~third-party
 @@||bluecare.express/js/tracking/$script,~third-party
 @@||bluecore.com/triggermail.js$script,domain=fcpeuro.com
 @@||bluesky-soft.com/common/script/ga.js$script,~third-party
@@ -30447,8 +30476,6 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||noxgroup.com/noxinfluencer/sensor_sdk/$script,domain=noxinfluencer.com
 @@||nsfw.xxx/vendor/fingerprint/fingerprint2.min.js$script,~third-party
 @@||numerade.com/static/videojs-event-tracking$~third-party
-@@||nyt.com/analytics/json-$script,domain=nytimes.com
-@@||nyt.com/bi/js/tagx/tagx.js$domain=nytimes.com
 @@||nytimes.com/games-assets/*/analytics.js$~third-party
 @@||nytimes.com^*/EventTracker.js$~third-party
 @@||oakley.com^*/tealium.js$~third-party
@@ -30691,7 +30718,6 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||kohls.com/b/ss/$image
 @@||metrics.ancestry.com/b/ss/$image
 @@||omns.americanexpress.com/b/ss/
-@@||oms.dowjoneson.com/b/ss/$image,domain=wsj.com
 @@||omtrdc.net/b/ss/$image,domain=britishairways.com|costco.com|halifax-online.co.uk|logmein.com|macworld.com|msnbc.com|nbc.com|pcworld.com|techhive.com|usanetwork.com
 @@||omtrdc.net/rest/$xmlhttprequest
 ! Allowlists to fix broken pages of tracking companies
