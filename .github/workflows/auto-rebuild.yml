@@ -28,7 +28,7 @@ jobs:
           git checkout master
           git checkout stash@{0}^3 -- adblock-for-dnsmasq.conf
           git checkout stash@{0}^3 -- anti-ad-*
-          git add * -a
+          git add * -A
           git commit -am "Auto renew the anti-AD list."
           git stash clear
       - name: push
