@@ -1326,6 +1326,19 @@ return [
         "ad-display.diwodiwo.xyz",
         "ad-channel.diwodiwo.xyz",
     ],
+    "126.net" => [
+        "ads.music.126.net", // #784
+    ],
+    "bcebos.com" => [
+        "mobads-pre-config.cdn.bcebos.com", // #784
+    ],
+    "xhscdn.com" => [
+        "ads-img-al.xhscdn.com", // #784
+    ],
+    "cmbchina.com" => [
+        "mbads.paas.cmbchina.com", // #784
+    ],
+
 
     // 批量添加域名
     "0202.com.tw" => ["0202.com.tw", "www.0202.com.tw"],
