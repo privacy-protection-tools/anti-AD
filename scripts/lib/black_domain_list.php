@@ -1335,6 +1335,9 @@ return [
     "cmbchina.com" => [
         "mbads.paas.cmbchina.com", // #784
     ],
+    "heytapimage.com" => [
+        "img-c.heytapimage.com", // #789
+    ],
 
     "2mdn-cn.net" => ["2mdn-cn.net"],
     "admob-cn.com" => ["admob-cn.com"],
