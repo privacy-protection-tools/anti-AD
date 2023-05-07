@@ -1,8 +1,8 @@
-! Checksum: lm6NmCPTaySzaodsA1jO/g
+! Checksum: p0F5XOcT2GHeSDtFOgobww
 ! Title: AdGuard Chinese filter (Optimized)
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.0.88.2
-! TimeUpdated: 2023-05-04T17:02:56+00:00
+! Version: 2.0.88.27
+! TimeUpdated: 2023-05-07T17:02:54+00:00
 ! Expires: 4 days (update frequency)
 #%#var AG_onLoad=function(func){if(document.readyState==="complete"||document.readyState==="interactive")func();else if(document.addEventListener)document.addEventListener("DOMContentLoaded",func);else if(document.attachEvent)document.attachEvent("DOMContentLoaded",func)};
 #%#var AG_removeElementById = function(id) { var element = document.getElementById(id); if (element && element.parentNode) { element.parentNode.removeChild(element); }};
@@ -15,6 +15,7 @@
 #%#var AG_abortOnPropertyRead=function(a,b){var c=Math.random().toString(36).substr(2,8);AG_defineProperty(a,{beforeGet:function(){b&&console.warn("AdGuard aborted property read: "+a);throw new ReferenceError(c);}});var d=window.onerror;window.onerror=function(e){if("string"===typeof e&&-1!==e.indexOf(c))return b&&console.warn("AdGuard has caught window.onerror: "+a),!0;if(d instanceof Function)return d.apply(this,arguments)}};
 #%#var AG_abortInlineScript=function(g,b,c){var d=function(){if("currentScript"in document)return document.currentScript;var a=document.getElementsByTagName("script");return a[a.length-1]},e=Math.random().toString(36).substr(2,8),h=d();AG_defineProperty(b,{beforeGet:function(){var a=d();if(a instanceof HTMLScriptElement&&a!==h&&""===a.src&&g.test(a.textContent))throw c&&console.warn("AdGuard aborted execution of an inline script"),new ReferenceError(e);}});var f=window.onerror;window.onerror=function(a){if("string"===typeof a&&-1!==a.indexOf(e))return c&&console.warn("AdGuard has caught window.onerror: "+b),!0;if(f instanceof Function)return f.apply(this,arguments)}};
 #%#var AG_setConstant=function(e,a){if("undefined"===a)a=void 0;else if("false"===a)a=!1;else if("true"===a)a=!0;else if("noopFunc"===a)a=function(){};else if("trueFunc"===a)a=function(){return!0};else if("falseFunc"===a)a=function(){return!1};else if(/^\d+$/.test(a)){if(a=parseFloat(a),isNaN(a)||32767<Math.abs(a))return}else return;var b=!1;AG_defineProperty(e,{get:function(){return a},set:function(c){if(b)var d=!0;else void 0!==c&&void 0!==a&&typeof c!==typeof a&&(b=!0),d=b;d&&(a=c)}})};
+||w94.1qlgi.top^
 ||ad.zui.com^
 ||pnez8.rut6m.xyz^
 ||eq.af31f.site^
@@ -592,6 +593,8 @@ nfmovies.com#$#a[onclick*="openurl"][target="_blank"] img[src^="/static/"] { pos
 nivod5.tv,nivod4.tv#?#.img-list > .img-item:-abp-has(> a[href*=".ad_click"])
 nivod5.tv,nivod4.tv#$?#.img-list > .img-item:-abp-has(> a[href*=".ad_click"]) { remove: true; }
 nivod5.tv,nivod4.tv#$?#a.focus_title_inner[href*=".ad_click"] { remove: true; }
+m.nivod5.tv,m.nivod4.tv#?##hellBoy > li[track-by="$index"] > div[style] > .show-div:-abp-has(> .show-card > .update-play:contains(/^AD$/))
+m.nivod5.tv,m.nivod4.tv#?#.slider-group > .nut-swiper > .nut-swiper-inner > .nut-swiper-item:-abp-has(> .swiper-page > span:contains(/^AD/))
 hdmoli.com#?#.row > div.myui-panel:-abp-has(div[style^="text-align:"] > a[href][target="_blank"] > img#index_banner)
 bilibili.com#?#.bili-video-card:-abp-has(.bili-video-card__info--ad) > .bili-video-card__wrap
 bilibili.com#?#.bili-video-card:-abp-has(.bili-video-card__info--creative-ad) > .bili-video-card__wrap
@@ -692,6 +695,7 @@ csdn.net#?#aside > div.slide-outer:-abp-has(> div.box > div[adsid])
 csdn.net#?##feedlist_id > li:-abp-has(> div[id^="kp_box_"])
 ##.Zi_ad_a_H
 ##a[href^="https://adm.beimg.com/"]
+htmanga4.top#%#//scriptlet('abort-on-property-read', 'tips')
 nivod5.tv,nivod4.tv#%#//scriptlet('set-constant', 'pageData.__banners.0.commercial.mediaUrl', '')
 nivod5.tv,nivod4.tv#%#//scriptlet('set-constant', 'pageData.__banners.0.commercial.jumpUrl', '')
 nivod5.tv,nivod4.tv#%#//scriptlet('set-constant', 'pageData.__banners.0.commercial.title', '')
@@ -2092,6 +2096,7 @@ iyf.tv##vg-player.ng-star-inserted > vg-pause-ads + div.caption.show > .inner
 adguard.com,adguard.app##.hello_from_adguard_chinese
 ||101.qq.com/js/base.js$replace=/(el\.getAttribute\("type"\) === "text\/javascript")/\(\$1 && !el\.getAttribute\("nonce"\)\)/
 ||acs.youku.com/*/mtop.youku.play.ups.appinfo.get/*/?jsv=$replace=/("ad":\{)[\s\S]*?(\}\,"playlog")/\$1\$2/,important
+||lensdump.com/i/*.gif$badfilter
 twinsyang.net#@#.Zi_ad_a_H
 dep-family.hccg.gov.tw#@#.ad_1
 dep-family.hccg.gov.tw#@#.ad_2
@@ -2846,7 +2851,6 @@ nfmovies.com#@?#div[id]:-abp-has(>img[onclick="openurl()"])
 /xuanfusige.js
 /xxd.php?id=$script,third-party
 /xxgg/goodad.js
-/xyz123d/*
 /ylnew/*.js$image
 /ylqq/*.add
 /yryy/css/javamy.js
@@ -2873,7 +2877,6 @@ nfmovies.com#@?#div[id]:-abp-has(>img[onclick="openurl()"])
 ://seai*/ads/float.js
 ://xingkong6688s.oss-
 :1010/openV5.js
-:10443/$script,subdocument,third-party
 :12289/o.js$script,third-party
 :12443/*/*-*-*.$script,third-party
 :18443/*/*-*-*.html$subdocument,third-party
@@ -2881,7 +2884,6 @@ nfmovies.com#@?#div[id]:-abp-has(>img[onclick="openurl()"])
 :2048/b.js
 :2048/jsb?
 :4443/ty/x-$script,third-party
-:45324/cd/$subdocument,third-party
 :52789/gg/
 :538/attachment/js/
 :538/attachment/xjdb.jpg
@@ -3171,7 +3173,6 @@ newduba.cn###jq_youxi
 ###tanx-fold-main
 ###taotaole
 ###td_tpc > .ads
-###test333
 ###textggs
 ###timedfuo
 ###top-gg-container
@@ -3264,6 +3265,7 @@ newduba.cn###jq_youxi
 ##.add-gg
 ##.addddddwarp
 ##.adlistcss
+##.adpc > .module
 ##.ads > a > img[src*=".sinaimg."]
 ##.ads-after-content
 ##.ads-after-header
@@ -3663,7 +3665,6 @@ newduba.cn###jq_youxi
 ##a[onclick^="_czc."] > .ads
 ##a[onclick^="_czc.push(['_trackEvent', '广告"]
 ##a[onclick^="javascript:pc_"] > img[src*=".alicdn.com"]
-##a[style$="2147483647;"][ontouchstart]
 ##a[target="_bank"] > img[src*=".360buyimg.com"][style="width:100%;height:auto;"]
 ##a[target="_blank"] > img.king
 ##a[target="_blank"] > img[height="120px"][src*=".c-ctrip.com"][src$=".gif"]
@@ -3730,7 +3731,6 @@ newduba.cn###jq_youxi
 ##script + a[href^="https://l.hyenadata.com/"]
 ##script + a[target="_bank"] > img[src*=".c-ctrip.com"][style="width:100%;height:auto;"]
 ##script + div[id^="a-loading-"]
-##script + div[style="width:300px;height:300px;position:fixed;bottom:0;left:0;z-index:2147483647;"]
 ##script[src="/js/sy2.js"] + div[align="center"]
 ##script[src="/template/kuhei2/skin/base.js"] + #couplet
 ##span[title="neteasefooter"]
@@ -3743,6 +3743,7 @@ newduba.cn###jq_youxi
 /\.(cc|com|top|xyz)\/i\/v$/$third-party,xmlhttprequest
 /\.(com|cn|top|xyz)\/(j|K)\/[0-9]{6}$/$script,third-party
 /\.(cyou|ink)\/[a-z]{4}_[0-9]{5}_[a-z]{5}js\?/$script,third-party
+||103.71.154.76^
 ||118.107.47.88^
 ||121.204.246.*.gif
 ||143.92.60.44^
@@ -3770,13 +3771,17 @@ newduba.cn###jq_youxi
 ||1512a.com^
 ||16niao20230125.live^
 ||18so.vip^
+||1qlgi.top^
 ||230579.top^
 ||234mx.club^
 ||331qka.cn^
+||36nl.com^
 ||39nw.com^
 ||4388888.xyz^
+||47zoz.xyz^
 ||480img.com^
 ||4cjh.xyz^
+||5251m.xyz^
 ||52qd.club^
 ||5xur.top^
 ||7067.top^
@@ -3802,7 +3807,9 @@ newduba.cn###jq_youxi
 ||acbe.club^
 ||aceik.xyz^
 ||acqc9.com^
+||acsc10.com^
 ||adbtwyxl96.fun^
+||adcd7.com^
 ||agwdac.xyz^
 ||aircraft-fapi.club^
 ||ajjgune.cn^
@@ -3826,8 +3833,10 @@ newduba.cn###jq_youxi
 ||bekcd.xyz^
 ||bekco.xyz^
 ||betgdr.xyz^
+||bjcpjab.cn^
 ||bjwh8.xyz^
 ||bkae.top^
+||blue-rain.com.cn^
 ||blxfqq.com^
 ||bovhzz.xyz^
 ||boyi.info^
@@ -3849,11 +3858,13 @@ newduba.cn###jq_youxi
 ||cge.cc^
 ||chaozhunbb.xyz^
 ||chenyuzhou1.cn^
+||chenze1.cn^
 ||chnuuee.xyz^
 ||cjbpqq.com^
 ||cjcvd6.com^
 ||ck33.top^
 ||clkdus.xyz^
+||cloudsong.xyz^
 ||cnmmcjn.cn^
 ||cnucpaq.xyz^
 ||codeice.xyz^
@@ -3867,11 +3878,13 @@ newduba.cn###jq_youxi
 ||dertyhsf.xyz^
 ||dgfqqq.com^
 ||diekd.xyz^
+||dkcwnsu.xyz^
 ||doccd.xyz^
 ||donku.club^
 ||dqazwsxd.xyz^
 ||dsctnsn.xyz^
 ||dshapv.xyz^
+||dszhqww.cn^
 ||dtjhtp.xyz^
 ||dtnhjzl.xyz^
 ||dyhnbgtsl.xyz^
@@ -3888,6 +3901,7 @@ newduba.cn###jq_youxi
 ||exwxrfz.cn^
 ||falal.cn^
 ||fangguanjia.xyz^
+||fcied.xyz^
 ||feiju12138.xyz^
 ||feild.xyz^
 ||ffbjhl.xyz^
@@ -3912,6 +3926,8 @@ newduba.cn###jq_youxi
 ||gpqicw.xyz^
 ||grxeyig.xyz^
 ||grxwqq.com^
+||guzhimian.fun^
+||gwide.xyz^
 ||gwvzgjb.cn^
 ||gxemtes.xyz^
 ||gykyec.xyz^
@@ -3927,6 +3943,7 @@ newduba.cn###jq_youxi
 ||hgpdoa.cn^
 ||hhrnxr.xyz^
 ||himeneko.ink^
+||hoiea.xyz^
 ||hsili.ltd^
 ||hsrgnac.cn^
 ||huangji1.cn^
@@ -3961,11 +3978,14 @@ newduba.cn###jq_youxi
 ||jiuba20230320.live^
 ||jlzz.name^
 ||jndyl.xyz^
+||jnmaeun.xyz^
+||joplopr.cn^
 ||jstimiz.xyz^
 ||jvkckeg.cn^
 ||jvmxrug.xyz^
 ||jwjdpab.cn^
 ||jwronx.xyz^
+||jxncs1.com^
 ||jyxfvp.xyz^
 ||kabuto.pro^
 ||kayzqar.cn^
@@ -3985,10 +4005,14 @@ newduba.cn###jq_youxi
 ||lcjyll.xyz^
 ||ledni.xyz^
 ||lendc.xyz^
+||lesenjiaoyu.xyz^
 ||lianxi.link^
 ||linuozhiyao.xyz^
+||lmlzht.xyz^
 ||lnnjnv.xyz^
+||lqglqq.com^
 ||luckydino.ren^
+||lwh147.xyz^
 ||lwtqqq.com^
 ||lxbbs.fun^
 ||lxyl66.cn^
@@ -4001,6 +4025,7 @@ newduba.cn###jq_youxi
 ||mhegew.xyz^
 ||mindopu.com^
 ||moend.xyz^
+||momoguoji.xyz^
 ||mrbtkyn.xyz^
 ||mrgecm.xyz^
 ||mrruuov.cn^
@@ -4042,7 +4067,9 @@ newduba.cn###jq_youxi
 ||pqxyqq.com^
 ||prlioxb.cn^
 ||prtlth.xyz^
+||pvjlfjz.cn^
 ||qatuaad.cn^
+||qfblqq.com^
 ||qfdtqq.com^
 ||qhvszsl.cn^
 ||qianjiao45wde15.xyz^
@@ -4069,8 +4096,10 @@ newduba.cn###jq_youxi
 ||rszqtry.cn^
 ||rtdxqq.com^
 ||rtjmln.xyz^
+||sanguine.ren^
 ||sbyueyue.xyz^
 ||scrvw3.com^
+||sectn.xyz^
 ||semaobf1.com^
 ||sh6ss7.top^
 ||shangyuan.ltd^
@@ -4081,17 +4110,21 @@ newduba.cn###jq_youxi
 ||smlmupi.cn^
 ||smmmqq.com^
 ||sozrrkx.xyz^
+||srkl.pw^
 ||svrojrv.cn^
 ||szsbiw.xyz^
 ||tc911.vip^
 ||tffulllist.shop^
 ||tfonlyuse.shop^
 ||tianma704.ltd^
+||tlhlpcb.xyz^
 ||tmochyf.cn^
 ||tpjmqq.com^
 ||tqdpqq.com^
+||ttpybz.xyz^
 ||tuhipkz.xyz^
 ||turifb.xyz^
+||twnafj.xyz^
 ||txphjl.xyz^
 ||tzmhqll.cn^
 ||u1010.com^
@@ -4139,6 +4172,7 @@ newduba.cn###jq_youxi
 ||wvwl.cn^
 ||wwgqqq.com^
 ||wwqfqq.com^
+||wx001.online^
 ||wxxmt.xyz^
 ||wyjbvoz.xyz^
 ||wyynike.cn^
@@ -4161,6 +4195,7 @@ newduba.cn###jq_youxi
 ||xueyugaoyuan.xyz^
 ||xunjie.fun^
 ||xyjcpcb.cn^
+||xyzyqq.com^
 ||yanghetp.com^
 ||yangyuqing.xyz^
 ||yankuoyyds.com^
@@ -4180,10 +4215,12 @@ newduba.cn###jq_youxi
 ||zdkdwk.buzz^
 ||zdlnhv.xyz^
 ||zdo-bdg.xyz^
+||zdobdg.fyi^
 ||zdyuoae.xyz^
 ||zgyvg.top^
 ||zhalinyyds.com^
 ||zhemu.xyz^
+||zhixin.host^
 ||zhoubo01.cn^
 ||zhouduanyyds.com^
 ||zhuxiao11.cn^
@@ -4197,7 +4234,6 @@ newduba.cn###jq_youxi
 ||zrrnqq.com^
 ||zsblog.vip^
 ||zscgoqt.cn^
-##.btn[href*="/viphktv.com/"]
 ##[class][onclick*=".ununxsxs.top"]
 ##a[href$=".120ydrayy.com"]
 ##a[href$="/1c626.com"]
@@ -7420,7 +7456,6 @@ newduba.cn###jq_youxi
 ||lo9b.top^
 ||loganfeels.com^
 ||loispp.com^
-||lolmp4.com^$third-party
 ||lomo.cool^
 ||looktt.xyz^
 ||loopd.cyou^
@@ -10303,7 +10338,7 @@ $popup,third-party,domain=76fengyun.com|avsdown.com|downdv.com|downdvs.com|downh
 ||yy18.info^*thanks$popup
 $image,third-party,domain=lady1.top
 $script,third-party,domain=52movieba.com|66s.cc|ab126.com|audio699.com|btsow.cfd|kan-tv.com|m.supfree.net|xiaoheimi.net
-$script,third-party,websocket,domain=52codes.net|m.ting56.com
+$script,third-party,websocket,domain=52codes.net
 $websocket,domain=5nj.com|cechi8.com
 .194007.com/4058.gif
 .gif|$domain=7mshipin.org|viidii.info
@@ -10420,7 +10455,6 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||100ksw.com/inc/doc-
 ||100xuexi.com/CssModel/*Layout.js
 ||100yangsheng.com/a1/a.js
-||100ydy.cc/js/kupin/
 ||1010pic.com/scripts/hd/yueyue
 ||1010pic.com/static/js/allpc.js
 ||1024down.com/images/*.gif
@@ -10557,7 +10591,6 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||19vcd.com/mid/
 ||1fzw.com/content/templates/zjbnew/yxj.js
 ||1ketang.com/Runtime/js/play
-||1stchina.net/static/js/jquery.in.
 ||1x6666.com/img/
 ||2008mm.com^*.js
 ||2008xxx.com:888
@@ -10735,7 +10768,6 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||5068.com/websleft.js
 ||51.com/up/bdfmt/
 ||510mall.com//image/
-||511.la^*.gif$domain=meiju11.com
 ||5118.com/g/
 ||512ms.com/webggwhtml/
 ||51688.cc/ya/
@@ -10939,7 +10971,6 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||8684.com/com/sys_ad_
 ||8684.com/local/bdadv.
 ||8684.com/shuang11/
-||86cg.me/sys
 ||86saohu.com/api/cctvs/show?
 ||86uk.com/uploads/*0.gif
 ||86uk.com/uploads/*0x
@@ -10982,8 +11013,6 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||91danji.com/js/lmt.js
 ||91hs005.xyz^*.gif
 ||91jbz.com/file/script/A
-||91meijuw.com/6666/
-||91meijuw.com/template/pingg_tpl/images/*400X400.
 ||91nrtt.com/vod/
 ||91p20.space/fans/
 ||91p49.com/*.mp4
@@ -11495,7 +11524,6 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||bcquan.me/front/*_ad
 ||bcquan.me/front/*_game
 ||bcquan.me/front/home/render
-||bd2020.co/gg/
 ||bdimg.com/brands/yxtg/source/juhe-v2.js
 ||bdimg.com/muzhi/adwap/top-banner.jpg
 ||bdimg.com/newmap/static/common/images/nav-ad_
@@ -11588,9 +11616,6 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||bmp1.ali213.net/pubjs/index_sc_utf8.js
 ||bmp2.ali213.net/js/
 ||bnextmedia.com.tw/feed/fetch.js
-||bnman.net/static/manhua/bd/
-||bnman.net^*/com1
-||bnman.net^*/com2
 ||boardx.huanqiu.com^
 ||boce.com/statics/img/img27b.png
 ||bodu365.co/t/
@@ -11606,6 +11631,7 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||bp.blogspot.com^$domain=avmimi.com
 ||bp.blogspot.com^*/s1600/dealer
 ||bpimg.com/4851/19f7543667f26682.jpg
+||bqg126.com/js/hf
 ||bqg23.cc/js/hf
 ||bqiapp.com/api/config/ad?
 ||brand.sogou.com/micro?yyid=
@@ -11703,7 +11729,6 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||cdn.galacg.me/img/*.gif
 ||cdn.galacg.me/img/*.jpg
 ||cdn.haokongbu1.com^*.js
-||cdn.imvkan.com^
 ||cdn.shdsp.net/ad
 ||cdn.wo.cc/wo.js
 ||cdn.wuyou.ca^
@@ -12101,8 +12126,6 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||duboku.net/static/images/20201111
 ||duboku.net/static/images/yabo
 ||dufile.com/jsa/
-||duodada.com/111/
-||duodada.com/333/
 ||duouoo.com/vss/right-ssd.js
 ||duouoo.com/vss/wz
 ||dup.baidustatic.com^
@@ -12117,7 +12140,6 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||dy2018.com/jsdd/
 ||dy6d.com/js/hf
 ||dy8c.com/JieShaoBu-secret/uploads/hongbao
-||dybee.tv^*.php
 ||dybz44.com/js/html
 ||dydab.com^
 ||dyguo.com/pc/*0.js
@@ -13076,10 +13098,8 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||kan98.com/statics/js/k2017/kan98.js
 ||kanbook.net/static/js_union/
 ||kancloud.cn/ad/
-||kangaroobro.com/bn.js
 ||kanguba.com/file/js/main.asp
 ||kanjiantu.com/images/*.gif
-||kanjuba1.com/js/bbk/
 ||kanjuwo.com/js/6
 ||kanjuwo.com/js/8
 ||kankanmi.com/js/zjgg
@@ -13228,7 +13248,6 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||lianyexiuchang.cc/img/2f2372e9bf205df0.png
 ||lianyexiuchang.cc/img/97da89108eb659fc.gif
 ||lianyexiuchang.cc/js/
-||liaocao.com/vod/0*.gif
 ||liaoxuefeng.com/files/attachments/00144*/0
 ||libfre.obs.cn-east-3.myhuaweicloud.com^
 ||licai18.com/henyepweb/
@@ -13277,7 +13296,6 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||loli.net/2020/06/17/gpRx7AzGwI4kQmV.gif
 ||loli.net/2020/06/17/vGALJ4mQx26T75u.gif
 ||loli.net^$domain=1090ys8.com|520film.net|9kanqq.com|acglover.me|hdsky.me|magnet2048.com|nulltm.com
-||lolmp4.com/template/lolmp4/images/jquery.
 ||lolshipin.com/zt/sxx/
 ||longdidi.top^*.js
 ||longzhu.com/i/api/playpage/recommendPop?
@@ -13399,8 +13417,6 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||mfacelive.com/Scripts/social/openchannel_min.js
 ||mfav88.com/yinzi/
 ||mg21.com/wp-content/uploads/ad/
-||mh1234.com/gd/g_js/
-||mh1234.com^*/wap*.js
 ||mh3666.com^*.jsonp
 ||mianbao99.com/a/mianbao
 ||micaitu.net/js/dibu.js
@@ -13693,7 +13709,6 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||phpernote.com/ali
 ||phpstudyimg.com/all/hrl.gif
 ||phpstudyimg.com/all/xiaojieqiantie.gif
-||pianjicdn.com^*.php
 ||pianyuan.org/zfb.
 ||piaodown.com/xtm/
 ||piaohua.com/js/yzz/$script
@@ -13768,7 +13783,7 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||pstatp.com/origin/1381500009611bc201d61
 ||pstatp.com/origin/13816000374e83a453717.jpg
 ||pstatp.com/origin/fef20000e7013b3511b6
-||pstatp.com^$domain=5217kdy1.xyz|ahah3.com|i5qs.com|manhua123.net
+||pstatp.com^$domain=5217kdy1.xyz|ahah3.com|i5qs.com
 ||psyzg.com/Public/Home/images/tuhe_240_236.gif
 ||ptbus.com/s.js
 ||ptfish.com/*/ad$image,object
@@ -13805,7 +13820,6 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||qhyy8.com/template/default_wap/html/public/img/*.gif
 ||qianhua.*/data/attachment/portal/
 ||qianzhan.com/qiye/images/qcm_
-||qihengprint.cn/mxstatic/js/1.js
 ||qilanxiaozhu.*/data/attachment/portal/
 ||qiming360.com/mingJs/xmKu_
 ||qimm.org/Uploads/ad/
@@ -13814,8 +13828,6 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||qingkai.com/gg_img/
 ||qingkong.net/skin/htcs/images/980.jpg
 ||qingsedhh.com/images/gg.gif
-||qiqivoip.com/333/
-||qishenga.com^*.gif$domain=meiju11.com
 ||qiuw.com/static/xin-ad.js
 ||qiuyi.cn/Baojian/
 ||qixingquan.com/api.php?mod=ad&adid=
@@ -13886,7 +13898,6 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||qqjia.com/dan.js
 ||qqjia.com/images/ad
 ||qqk19.com/data/content
-||qqpian.com/8hgae/
 ||qqtn.com/js/*0.js
 ||qqtn.com/js/downinfo-
 ||qqtn.com/js/html/down_
@@ -13949,7 +13960,6 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||rouman5.com/cps/*.gif
 ||rouman5.com/hlw.jpg
 ||rryy99.com/statics/js/stat.js
-||rsdown.cn/statics/images/rs-banner.jpg
 ||ruanyifeng.com/9he/
 ||rugao35.com/Public/config/Couplet/Index
 ||ruguoapp.com^$domain=aixiaoju.com
@@ -14267,10 +14277,8 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||taobaocdn.com^$image,domain=cnblogs.com
 ||taoguba.com.cn/res/js/tgbgg/
 ||taosq.net/public/250x250.jpg
-||taotaoxiang.*/111/
-||taotaoxiang.cc/333/
-||taozib8.com/a*.js
-||taozib8.com/sys
+||taozi888.com/a*.js
+||taozi888.com/sys
 ||taporn.com/d/
 ||tb58.net/plugin.php?id=tb58_
 ||tbcdn.cn/mm/tanxssp-custom/sina_
@@ -14319,7 +14327,6 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||tigtag.com/styles/phpcms/js/tigtag/ads.js
 ||tiimg.com^$domain=678cn.com
 ||timecn.cn/image/alipay.jpg
-||ting56.com/xiezhewan/
 ||tingchina.com/images/aibaoliang.gif
 ||tingchina.com/js/*220-
 ||tingchina.com/js/760
@@ -14558,7 +14565,6 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||x-resource05.com/media_orange/server-img/*_1200_120.
 ||x6img.com^$domain=picturedata.org
 ||xav*.icu/base/js/other.js
-||xb20.tv/js/m-
 ||xbiqu5.com/12345678.
 ||xbiqugexx.com/static/js/wap.js
 ||xc.macd.cn^
@@ -14739,7 +14745,6 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||yy18.info/yyads/
 ||yy8090.vip/js/abc/
 ||yybx.oss-cn-hangzhou.aliyuncs.com^
-||yyo876.com^*.php
 ||yywz123.com/file/A*.js
 ||yzdh44.com/js/
 ||yzpsb.net/1.js
@@ -15062,7 +15067,6 @@ qzone.qq.com###app_ads
 dmzj.com###app_home_ad
 dmzj.com###app_manhua
 hao123.com###append
-913e.com###appnote
 qzone.qq.com###appstore_sidebar_l
 qzone.qq.com###appstore_sidebar_r
 jdbbs.com###archy5
@@ -15097,7 +15101,7 @@ ifeng.com###baidualading
 1111.baidu.com,bdimg.com,tieba.baidu.com,tieba.com,xingqu.baidu.com###baiduweishiDown
 newsmth.net###ban_ner
 ufanw.com###banne
-18avhub.com,18avtube.com,adultwefong.com,aicoin.cn,aicoin.net.cn,avmimi.com,fsdpp.cn,mangahax.com,mm-cg.com,sports.qq.com,suopao.org,timecn.cn,ting56.com,txzqw.me,youxi.baidu.com###banner
+18avhub.com,18avtube.com,adultwefong.com,aicoin.cn,aicoin.net.cn,avmimi.com,fsdpp.cn,mangahax.com,mm-cg.com,sports.qq.com,suopao.org,timecn.cn,txzqw.me,youxi.baidu.com###banner
 cwyuni.tw###banner > h2
 iwan.baidu.com###banner-box
 iwan.baidu.com###banner-info
@@ -15410,13 +15414,11 @@ brushes8.com###flxgg
 gamer.com.tw###flyRightBox
 gamer.com.tw###flySalve
 juxia.com###fmt
-bd2020.co###fmtdiv
 apk.tw###focus
 news.qq.com###focus-bar
 qq.com###focus_jordon
 fuliba2023.net,fuliba23.net,uliba.net###focusslide
 bitauto.com###folieAdNews
-913e.com###footad_913e
 jxedt.com###footer
 ttzmz.vip###footer > div[style]
 zhujiceping.com###footer-widget-box
@@ -16053,8 +16055,6 @@ t.qq.com###talkList > li[ispopula="1"][tv="2"]
 tongren.gov.cn###tanchukuang
 kdslife.com###tao
 histock.tw###tbadword
-kengso.com###tbk_left
-kengso.com###tbk_right
 40407.com###tcdgg
 3g.qq.com###template_gdt_div1
 pchome.com.tw###test2
@@ -16585,7 +16585,6 @@ fang.com,soufun.com##.add1200
 chinanews.com##.add3
 chinanews.com##.add4
 x6g.com##.addd
-manhua123.net##.addg
 kuaihou.com##.address_like
 mydrivers.com##.adds
 3dmgame.com##.addvide300
@@ -16876,7 +16875,7 @@ baidu.com##.bds-list-ads
 pinshan.com##.bea_adv2
 eastday.com##.beforegg
 smzdm.com##.beiwo
-3h3.com,downxia.com,rsdown.cn##.bendown
+3h3.com,downxia.com##.bendown
 javhd.com##.benefits-list-holder
 muchong.com##.bg > .wrapper:nth-child(14) > .forum_Post_index
 novipnoad.com##.bg-ad
@@ -17144,7 +17143,6 @@ docin.com##.cpro_mod
 qq.com##.cps_inner
 1111.baidu.com,bdimg.com,tieba.baidu.com,tieba.com,xingqu.baidu.com##.cps_wrap
 opdown.com##.cq-recom
-rsdown.cn##.cq-tips
 51credit.com##.credit-box
 nfuwow.com##.crightbtad
 bkill.com##.cross-ad
@@ -17580,8 +17578,6 @@ opdown.com##.gxxz-btn
 codejie.net##.h--banner
 codejie.net##.h-ad-banner
 21cn.com##.h-gg
-ting56.com##.h1000
-ting56.com##.h336
 mumayi.com##.h80
 jjwxc.net##.h8px + div[align="center"]
 cnblogs.com##.h_ads
@@ -17949,7 +17945,6 @@ eol.cn##.listAd
 nick18.com,niko18.com##.list_ads
 en8848.com.cn##.list_adv
 qunar.com##.list_promotion_bar
-rsdown.cn##.listaddr
 opdown.com##.listaddrs
 58.com##.listpage_detail
 kpzpw.com##.littlebanner
@@ -18965,10 +18960,8 @@ ifeng.com##.vAdbox
 ifeng.com##.v_adbox
 2345.com##.v_picConBox.height214
 douyu.com##.vcode9-sign
-poxiaotv.net##.vdbto,.qptp + a,[onclick],.qpgdo
 suibiankan.co##.vddb + a,.vddb,.vddb_qq,style + div[id],a > video
 taoziba.cc##.vddb2 + a
-6090ba.com##.vdgd + a
 vgtime.com##.vgart_top
 lenovo.com.cn##.video
 iqiyi.com##.video-ad_left
@@ -19002,7 +18995,7 @@ baidu.com##.w-question-list[data-sign]
 shm.com.cn##.w1000.surround
 pc841.com##.w1050
 516qq.cn##.w1100
-pc841.com,ting56.com##.w300
+pc841.com##.w300
 weishangshijie.cn##.w_bzb_1
 1111.baidu.com,bdimg.com,tieba.baidu.com,tieba.com,xingqu.baidu.com##.wanle_tab_tip
 baidu.com##.wapAd
@@ -19195,11 +19188,9 @@ sinolub.com##[id^="xker"]
 3322.cc##[onclick*=".gsxzq."]
 32r.com##[onclick*="@"]
 42xz.com##[onclick*="godownload"]
-1stchina.net,86cg.me,duodada.com,liaocao.tv,nicotv.me,poxiaotv.com,taotaoxiang.vip##[onclick]
+liaocao.tv,nicotv.me##[onclick]
 nfmovies.com##[onclick^="openurl()"]
 duonaolive.com##[onclick^="track"]
-6090ba.com,duodada.com,fny4.cc##[ontouchstart]
-duodada.com##[style*="position: fixed; left: 0px;"]
 iplaysoft.com##[style*="width:3"][style*="height:2"]
 fffdm.com##[style^="width"][style*="height"]
 kisssub.org##a > img[src*=".0o0.ooo/"]
@@ -19260,7 +19251,7 @@ ruanyifeng.com##a[href*=".ke.qq.com"]
 doudoudm.site##a[href*=".kxyike.com/"]
 gucheng.com##a[href*=".liaogu.com"]
 apprcn.com##a[href*=".lizhi."]
-jitashe.org,mumujita.com##a[href*=".makeding.com/"]
+jitashe.org##a[href*=".makeding.com/"]
 sina.cn##a[href*=".maozhuar.com"]
 douyu.com##a[href*=".miaozhen.com"]
 iqiyi.com##a[href*=".oppo."]
@@ -19269,7 +19260,7 @@ v.qq.com##a[href*=".renrendai.com"]
 makepolo.com##a[href*=".rong360.com"]
 ccav5.com##a[href*=".sinaimg."]
 chdbits.co##a[href*=".taobao"]
-52movieba.com,acglala.me,acglala.net,awaker.cn,bimiacg4.net,bimiacg5.net,ccav1.com,cdsoso.me,cgown.com,cn163.net,comicat.org,cosersuki.org,cupfox.app,dzbhdm.net,epinv.com,eroacg.com,galacg.me,gmgard.com,haochi123.com,hexieshe.cn,hexieshe.com,hexieshe.xyz,hggard.com,hmghmg.com,hmoe11.net,htcui.com,idanmu.ee,ifenpaidy.com,jitapu.com,jitashe.org,jiyingw.vip,kelatv.com,kisssub.org,kuaikan33.com,languang.co,llss.bz,meijutt.net,mtrend.cn,mydrivers.com,mzh.ren,nxing.cn,oyksoft.com,souxue8.com,speedtest.cn,tingroom.com,whsir.com,xxshe.info,xxshe.xyz##a[href*=".taobao.com"]
+52movieba.com,acglala.me,acglala.net,awaker.cn,bimiacg4.net,bimiacg5.net,ccav1.com,cdsoso.me,cgown.com,cn163.net,comicat.org,cosersuki.org,cupfox.app,dzbhdm.net,epinv.com,eroacg.com,galacg.me,gmgard.com,haochi123.com,hexieshe.cn,hexieshe.com,hexieshe.xyz,hggard.com,hmghmg.com,hmoe11.net,htcui.com,idanmu.ee,ifenpaidy.com,jitapu.com,jitashe.org,jiyingw.vip,kelatv.com,kisssub.org,languang.co,llss.bz,meijutt.net,mtrend.cn,mydrivers.com,mzh.ren,nxing.cn,oyksoft.com,souxue8.com,speedtest.cn,tingroom.com,whsir.com,xxshe.info,xxshe.xyz##a[href*=".taobao.com"]
 rouman5.com##a[href*=".tapdb.net"]
 boke112.com##a[href*=".tencent.com"]
 acgdoge.net,acglala.me,chinalawedu.com,douyu.com,dzbhdm.net,gmgard.com,hggard.com,iqiyi.com,jinti.com##a[href*=".tmall.com"]
@@ -19400,7 +19391,6 @@ chinacsbs.com##a[href^="/plus/view.php?aid="]
 96weixin.com##a[href^="/show/ads/"]
 fx112.com##a[href^="/union."]
 jrlt.cc##a[href^="ad."]
-ixinshijue.com##a[href^="http"] > img[src*=".pstatp."]
 boniu123.cc##a[href^="http"] > img[src*="/bn_"]
 yigujin.cn##a[href^="http"]:not([href$=".html"]) > img[src*="/tp/"]
 55188.com##a[href^="http"]:not([href*=".55188."]) > img[src*="/portal/"]
@@ -19494,7 +19484,6 @@ wandhi.com##a[style="display: inline-block;position: relative"]
 hanjutv2020.com##a[style="width: 1120px;height: 70px;overflow: hidden;display: block;"]
 houdao.com##a[style^="background:url"]
 html-js.com##a[style^="margin-top:20px;"]
-dybee.tv##a[style^="position: fixed;bottom:"]
 chchzhan.com,xxizhan.com##a[style^="position:fixed;z-index:"]
 nfstar.net##a[target="_blank"] > .img-responsive
 tmioe.com##a[target="_blank"] > img[src*=".sinaimg.cn"]
@@ -19529,22 +19518,18 @@ bilibili.com#?#.video-card-common:-abp-has(>.card-pic>a[href*="cm.bilibili.com"]
 bing.com#?#li[class="b_algo"]:-abp-has(.b_attribution[data-partnertag]+p[class])
 api.so.lianmeng.360.cn,pos.baidu.com##body
 qzwb.com##body > .area[style^="height:60px;"]
-qger.net##body > :not(div):not(header):not(img):not(ocjx):not(span):not(ui)
-1024pz.com,2cycomic.com,whnyd.com,xcyy.tv,yemancomic.com##body > a
+1024pz.com,2cycomic.com,whnyd.com,yemancomic.com##body > a
 bkill.com##body > a:first-child
 ygdy8.cc##body > a[href^="/"]
 fastadmin.net##body > a[target="_blank"]
 2cycomic.com,yemancomic.com##body > div > center
 1111.baidu.com,bdimg.com,tieba.baidu.com,tieba.com,xingqu.baidu.com##body > div[ad-dom-img]
-bd2020.co##body > div[id^="z"]
 tiexue.net##body > div[onclick]
 dytt5.net##body > div[style="overflow: hidden;"]:nth-child(3)
 hdwan.net##body > div[style]
 wendu.cn##body > div[style^="width:1000px;"]
 18h.avmimi.com##body > p[align="center"]:first-child
 btmovi.in##body > span[style]
-xcyy.tv##body > style + [id]
-xcyy.tv##body > style + [id] + img
 zjst.net##body > style ~ *,.vod-gd
 ahtv.cn##body > table[style^="text-align:center; width:960px;"]
 18h.avmimi.com##body > table[width="100%"]:nth-child(2)
@@ -19870,7 +19855,7 @@ bilibili.com##div[style*="height:"][data-loc-id]
 taiwan.cn##div[style*="height:250px;padding:5px 17px 5px 18px;"]
 bccn.net##div[style*="height:90"]
 qiyeku.com##div[style*="height:90px;"]
-789ys.com,calmlab.com,ruanyifeng.com##div[style*="important"]
+789ys.com,ruanyifeng.com##div[style*="important"]
 sina.com.tw##div[style*="min-height"][style*="250px"]
 939394.xyz##div[style*="position: fixed;"]
 esu.moe,esu.wiki##div[style*="position: relative; max-height: 400px;"]
@@ -20004,7 +19989,6 @@ gucheng.com##img[data-mv-ad]
 eworldship.com##img[height="70"]
 jspoo.com##img[id^="float_img_"]
 bukaivip.com##img[onclick]
-jhhrm.com##img[onerror*="/ad/"]
 jiligame.com##img[onerror="zhurl($(this))"]
 939394.xyz##img[src*=".xyz"][src*=".gif"]
 novipnoad.com##img[src*="/bd/"] + span
@@ -20062,7 +20046,7 @@ user.qzone.qq.com##li[id^="fct_20050606_"]
 3g.qq.com##li[id^="feed-omgad-"]
 13mv.com##li[id^="media_image-"]
 rjfcw.cn##li[style*="1200px"]
-nmgk2.com,zzkdhb.com##li[style*="important"]
+zzkdhb.com##li[style*="important"]
 linkedin.com#?#.core-rail > div > div[id^="ember"]:-abp-has(.feed-shared-actor__description span:-abp-contains(/促銷內容|广告/))
 linkedin.com#?#.core-rail > div > div[id^="ember"]:-abp-has(.feed-shared-actor__sub-description span:-abp-contains(/促銷內容|广告/))
 mongoing.com#?#.widget_custom_html:-abp-has(> .custom-html-widget > a[href^="http"]:not([href*="mongoing.com"]))
@@ -20316,6 +20300,7 @@ chinatimes.com#@#.page_ad
 fjsen.com,nuomi.com#@#.right-ad
 perfectmatch.tw#@#.right_ad
 360zbz.com#@#.rightad
+edu.sh.gov.cn#@#.short-ad
 muve.org.tw#@#.sponsor-area
 muve.org.tw#@#.sponsor-wrap
 zdface.com#@#.top-ad
@@ -21236,7 +21221,7 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com##style[id^="s-"] + 
 ||t*.baidu.com/it/u=*,*&fm=76$third-party
 !#BaiduUnion
 /css_js/*$domain=aiyangedu.com|duanmeiwen.com|jy135.com|oh100.com|qunzou.com|ruiwen.com|unjs.com|yjbys.com|yuwenmi.com
-?*=*=*=$subdocument,domain=00cha.com|01fy.cn|06ps.com|08160.cn|0s.net.cn|10000xing.cn|100how.com|1010jiajiao.com|1024sj.com|11467.com|114piaowu.com|120ask.com|16xx8.com|192ly.com|1ppt.com|1ting.com|201980.com|21hubei.com|23yy.com|263y.com|2hanju.com|2liang.net|315hyw.com|32r.com|32xp.com|360changshi.com|360doc.cn|360zuowen.com|39.net|4aqq.com|5000yan.com|515fa.com|51edu.com|51sxue.com|51test.net|51zxw.net|52wubi.com|52zxw.com|5djiaren.com|5h.com|5nd.com|5seestar.com|64foot.com|66law.cn|7y7.com|800400.net|86huoche.com|8794.cn|911cha.com|91jucai.com|91zhongkao.com|949949.com|9553.com|99.com.cn|9939.com|9ht.com|ab126.com|admin5.com|aihami.com|aiyangedu.com|aizhan.com|ankangwang.com|annhe.net|apple886.com|arpun.com|askci.com|aspku.com|atobo.com|b2b168.com|b2b6.com|babihu.com|baicaolu.net|baotang5.com|baoxianzx.com|bbdj.com|bendibao.com|bianzhile.com|blog.sina.cn|boosj.com|bu-shen.com|bytravel.cn|c1km4.com|chajiaotong.com|chazidian.com|china.com|chinacar.com.cn|chinakaoyan.com|chinawj.com.cn|chuiyue.com|cidianwang.com|cjcp.com.cn|cnbanbao.cn|cncn.com|cnkang.com|cnlinfo.net|coozhi.com|cr173.com|csai.cn|cyyangqiguan.com|d17.cc|d1xz.net|daquan.com|dayfund.cn|dgzj.com|diangon.com|ditiezu.com|diyifanwen.com|diyju.com|dugoogle.com|dxsbb.com|eastday.com|enterdesk.com|exam58.com|fangdaijisuanqi.com|faxingzhan.com|friok.com|fun48.com|game234.com|gaosan.com|gaotie.cn|gucheng.com|gugu5.com|guidaye.com|gulongbbs.com|gushiwen.cn|hc23.com|hqhot.com|huangye88.com|hxnews.com|hydcd.com|icauto.com.cn|idongde.com|isanxia.com|ixinwei.com|ixiunv.com|jeasyui.net|jf258.com|jianbihua.com|jianbihuadq.com|jinbaodm.com|jingdianlaoge.com|jintang114.org|jj20.com|jy135.com|latiaozixun.net|liuxue86.com|m.douban.com|makepolo.com|mama.cn|meishij.net|mipcache.bdstatic.com|miyudaquan.com|mmyuer.com|nanhuwang.com|oh100.com|pansoso.com|phb123.com|pig66.com|pikacn.com|pingguolv.com|pingshu8.com|ppzuowen.com|qcrx.cn|qcwxjs.com|qizuang.com|qm120.com|qncye.com|qqzhi.com|quwenqushi.com|riji.cn|riji100zi.com|rr95.com|ruiwen.com|sc115.com|shadafang.com|shangc.net|shenchuang.com|souid.com|ssqzj.com|szdushi.com.cn|szhk.com|tvmao.com|uzuzuz.com|weather.com.cn|webshu.net|wenkuxiazai.com|wenshenxiu.com|wenzhangba.com|wmxa.cn|woyaogexing.com|xiachufang.com|xiangha.com|xiao84.com|xiaole8.com|xiegw.cn|xywy.com|xzbu.com|yanyue.cn|yaozui.com|yellowurl.cn|yiqig.cn|yiyouliao.com|yjbys.com|yuwenmi.com|yxlady.com|yyrtv.com|zdface.com|zhifure.com|zhongyoo.com|zixuntop.com|ziyuanm.com|zjbiz.net|zuowen8.com|zuowenku.net|zuowenwang.net
+?*=*=*=$subdocument,domain=00cha.com|01fy.cn|06ps.com|08160.cn|0s.net.cn|10000xing.cn|100how.com|1010jiajiao.com|1024sj.com|11467.com|114piaowu.com|120ask.com|16xx8.com|192ly.com|1ppt.com|1ting.com|201980.com|21hubei.com|263y.com|2hanju.com|2liang.net|315hyw.com|32r.com|32xp.com|360changshi.com|360doc.cn|360zuowen.com|39.net|4aqq.com|5000yan.com|515fa.com|51edu.com|51sxue.com|51test.net|51zxw.net|52wubi.com|52zxw.com|5djiaren.com|5h.com|5nd.com|5seestar.com|64foot.com|66law.cn|7y7.com|800400.net|86huoche.com|8794.cn|911cha.com|91jucai.com|91zhongkao.com|949949.com|9553.com|99.com.cn|9939.com|9ht.com|ab126.com|admin5.com|aihami.com|aiyangedu.com|aizhan.com|ankangwang.com|annhe.net|apple886.com|arpun.com|askci.com|aspku.com|atobo.com|b2b168.com|b2b6.com|babihu.com|baicaolu.net|baotang5.com|baoxianzx.com|bbdj.com|bendibao.com|bianzhile.com|blog.sina.cn|boosj.com|bu-shen.com|bytravel.cn|c1km4.com|chajiaotong.com|chazidian.com|china.com|chinacar.com.cn|chinakaoyan.com|chinawj.com.cn|chuiyue.com|cidianwang.com|cjcp.com.cn|cnbanbao.cn|cncn.com|cnkang.com|cnlinfo.net|coozhi.com|cr173.com|csai.cn|cyyangqiguan.com|d17.cc|d1xz.net|daquan.com|dayfund.cn|dgzj.com|diangon.com|ditiezu.com|diyifanwen.com|diyju.com|dugoogle.com|dxsbb.com|eastday.com|enterdesk.com|exam58.com|fangdaijisuanqi.com|faxingzhan.com|friok.com|fun48.com|game234.com|gaosan.com|gaotie.cn|gucheng.com|gugu5.com|guidaye.com|gulongbbs.com|gushiwen.cn|hc23.com|hqhot.com|huangye88.com|hxnews.com|hydcd.com|icauto.com.cn|idongde.com|isanxia.com|ixinwei.com|ixiunv.com|jeasyui.net|jf258.com|jianbihua.com|jianbihuadq.com|jinbaodm.com|jingdianlaoge.com|jintang114.org|jj20.com|jy135.com|latiaozixun.net|liuxue86.com|m.douban.com|makepolo.com|mama.cn|meishij.net|mipcache.bdstatic.com|miyudaquan.com|mmyuer.com|nanhuwang.com|oh100.com|pansoso.com|phb123.com|pig66.com|pikacn.com|pingguolv.com|pingshu8.com|ppzuowen.com|qcrx.cn|qcwxjs.com|qizuang.com|qm120.com|qncye.com|qqzhi.com|quwenqushi.com|riji.cn|riji100zi.com|rr95.com|ruiwen.com|sc115.com|shadafang.com|shangc.net|shenchuang.com|souid.com|ssqzj.com|szdushi.com.cn|szhk.com|tvmao.com|uzuzuz.com|weather.com.cn|webshu.net|wenkuxiazai.com|wenshenxiu.com|wenzhangba.com|wmxa.cn|woyaogexing.com|xiachufang.com|xiangha.com|xiao84.com|xiaole8.com|xiegw.cn|xywy.com|xzbu.com|yanyue.cn|yaozui.com|yellowurl.cn|yiqig.cn|yiyouliao.com|yjbys.com|yuwenmi.com|yxlady.com|yyrtv.com|zdface.com|zhifure.com|zhongyoo.com|zixuntop.com|ziyuanm.com|zjbiz.net|zuowen8.com|zuowenku.net|zuowenwang.net
 ||003store.com^
 ||0512s.com^$third-party
 ||0755rc.com^$third-party
@@ -21335,7 +21320,6 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com##style[id^="s-"] + 
 ||5.gzfenda.com^
 ||50m.gkcyc.com^
 ||51dengshan.cn^
-||51ertong.com^
 ||51gxqm.com^
 ||51yhzp.com^$third-party
 ||58tg.com^$third-party
@@ -21430,7 +21414,6 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com##style[id^="s-"] + 
 ||a1.twtym.com^
 ||a1.yaozui.com^
 ||a1.zhanzhang.net^
-||a15d55423.5tps.xyz^
 ||a3.jandan.net^
 ||aa.gushiwen.org^
 ||aa.xiangxiangmf.com^
@@ -21662,7 +21645,6 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com##style[id^="s-"] + 
 ||dm.pw0.cn^
 ||dm.riji.cn^
 ||dm.sanwen.net^
-||dm.sg92.com^
 ||dm.taobaojuhuasuan.cn^
 ||dm.wenshenxiu.com^
 ||dm.zjut.cc^
@@ -21718,7 +21700,6 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com##style[id^="s-"] + 
 ||fpb1.kedabai.com^
 ||fpb1.tabuzhe.com^
 ||fpbone.ihowguide.com^
-||fwccw.com^
 ||fxjs.2541.com^
 ||g.3lian.com^
 ||g.gegeyingshi.com^
@@ -21817,10 +21798,8 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com##style[id^="s-"] + 
 ||jiyan.net^
 ||jke1.jianke.com^
 ||jquery.envi-met.com.cn^
-||js.23yy.com^
 ||js.263y.com^
 ||js.92aliyun.com^
-||js.chetan.com^
 ||js.jianbihuadq.com^
 ||js.kt250.com^
 ||js.mscto.com^
@@ -21856,7 +21835,6 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com##style[id^="s-"] + 
 ||kuk8.com^$third-party
 ||kuku99.com^$third-party
 ||kxji.com^$third-party
-||laobaigushi.com^
 ||lczk.cn^$third-party
 ||leabd.douguo.com^
 ||liangpinge.com^$third-party
@@ -21869,7 +21847,6 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com##style[id^="s-"] + 
 ||lm1.tuliu.com^
 ||lm1.wkpcw.cn^
 ||love.furenkeji.com^
-||lraa.xiaoniutui.com^
 ||luolikong.net^$third-party
 ||lv.myapks.com^
 ||lynr.com^
@@ -21952,9 +21929,7 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com##style[id^="s-"] + 
 ||ql.uzuzuz.com^
 ||qpb*.sohu.com^
 ||qqhuhu.com^
-||qqwwmm.com^
 ||qujishu.com^
-||qwxcs.com^$third-party
 ||r.99waiyu.com^
 ||rabc1.iteye.com^
 ||rc.ie13.com^
@@ -22053,7 +22028,6 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com##style[id^="s-"] + 
 ||w11.zhongkaohelp.com^
 ||w18.9939.com^
 ||w3.ting55.com^
-||w3c.5txs.com^
 ||wap001.bytravel.cn^
 ||wap1.laogu.wang^
 ||web8.net^$third-party
@@ -22068,8 +22042,6 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com##style[id^="s-"] + 
 ||wmbd.gamersky.com^
 ||wmeng.feihuadns.com^
 ||wneia.iaskhot.com^
-||wodenongtian.com^
-||wodeshougong.com^
 ||wr.yiyouliao.com^
 ||ws.wenshenxiu.com^
 ||wshufa.com^$third-party
@@ -22094,7 +22066,6 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com##style[id^="s-"] + 
 ||y.ruosi6.cn^
 ||y1.spreton.com^
 ||y66xvgo5i.chuimg.com^
-||yan.zhouguanchen.com^
 ||ydjs.luyouwang.com^
 ||yi.ximizi.com^
 ||yijiuningyia.gushiwen.org^
@@ -22107,7 +22078,6 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com##style[id^="s-"] + 
 ||ys.muhoujiemi.com^
 ||ys630.com^$third-party
 ||ysdm*.ys137.com.cn^
-||ysxywj.com^
 ||ytelc.com^$third-party
 ||yueka.com^
 ||yunzuowen.com^$third-party
@@ -22247,11 +22217,6 @@ dlkoo.com##ins[id^="tanxssp-outer-conmm_"]
 ||dnvodcdn.me/fast/*.mp4
 ||flyv.tv/a/$xmlhttprequest
 ||s1-a1.dnvodcdn.me^*.svg
-!#dybee.tv
-$script,third-party,domain=dybee.tv
-@@||bdimg.com/libs/$domain=dybee.tv
-@@||cdn.staticfile.org^$script,domain=dybee.tv
-||dybee.tv/gg
 !#e
 !#f
 !#g
@@ -22343,15 +22308,11 @@ smjb.net##div[style*="height: 50%"]
 ||biquge99.cc/js/dj
 ||bookrb.com/images/jtt
 ||d3iih5w7xp5hdg.cloudfront.net^
-||ddyueshu.com/js/dj
-||ddyueshu.com/js/pfad
 ||disixs.com/js/app_wap.
 ||disixs.com/js/gg
 ||dobiez.com/statics/wap_v1/js/qwd.
 ||duanwenxue.com/functions/
 ||etongxs.com/mb/meng/
-||feiszw.com/style/t.js
-||feiszw.com/style/w.js
 ||fzxiaoshuo.com/source/
 ||ibiquge.la/base
 ||iwurexs.com/hello/
@@ -22463,7 +22424,6 @@ $image,third-party,domain=258zw.com
 ##[class][onclick^="window.location.href"][onclick*=".bcebos."]
 ##[class][onclick^="window.location.href"][onclick*=".pypyj.com"]
 ##[class][onclick^="window.location.href"][onclick*=".yueshuapp.com"]
-_uwisajs?$script,third-party
 ##a[href*=".516624.com/"]
 ##a[href*=".com/tg.html?id="]
 ##a[href*=".ssmh"][href*="?u="]
@@ -22478,20 +22438,20 @@ _uwisajs?$script,third-party
 ##script + [id][style="width:100%;height:auto;min-height:120px;position:relative;display:block;"]
 $script,subdocument,~third-party,websocket,xmlhttprequest,domain=m.6666xsw.com|m.biqugee6.com|m.bqg99.cc|m.chenkuan.com|m.jmshuwu.net|wodexiaoshuoh.com
 !#Novels
-$script,subdocument,third-party,websocket,xmlhttprequest,domain=00ksw.com|0794.org|114zww.com|123duw.com|123wx.cc|126shu.org|12zw.net|138txt.net|147xiaoshuo.com|16kxsw.com|17k.com|1biqu.com|1biqug.com|1kanshu.org|1pwx.com|230book.net|23hh.com|23qb.com|23qb.net|23sk.net|23us.tw|23uswx.com|23wxx.com|23xstxt.net|24kwx.net|2kxs.org|33yq.org|360xs.com|3kzww.com|3yt.com|477zw.com|4gxs.cc|50zw.co|50zw.com|50zww.net|52biquge.com|52bqg.net|52shuku123.net|52xs.net|55shuba.com|56shuku.la|59xs.com|630shu.net|6666xsw.com|67shu.net|69kshu.win|69shu.org|69zww.com|7017k.net|777zw.net|77dushu.la|77xsw.cc|7kzw.org|8181zw.com|81book.com|81new.cc|81zw.me|863zw.co|8yydstxt226.com|93xscc.com|98xiaoshuo.com|99mk.info|9tiefu.com|a6ksw.net|abcxs.net|aidusk.com|aixiaxs.com|aixiaxs.net|aixs.la|anshuge.com|b520.cc|b5200.net|bamxs.com|baoshuu.com|baoshuxuan.com|bbiquge.cc|bequgew.com|bequmo.com|bimixsw.com|biqiuge8.cc|biqudd.com|biqudu.tv|biquge775.com|biquge98.net|biquge99.cc|biqugecd.com|biqugee6.com|biqugesc.org|biqugewu.net|biqugse.com|biquka.com|biqukt.com|biquluo.org|biqupai.com|biququ.info|biqusan.com|biqusk.com|biqutsxs.com|biquzw.la|bisowu.cc|bisowx.com|bixia66.com|bjsxjy.com|bodekang.net|bookbao.me|boquku.com|bqg999.net|bqwxg8.com|bqxs520.com|bshuku.com|bxwx.live|bxwx00.com|bxwx888.org|changduzw.com|chenkuan.com|clwx666.com|damengzhu1.com|ddbqgtxt.cc|dengbi2.com|disixs.com|diyibanzhu9.pro|dizishu.com|dobiez.com|doupocangqiong.la|dpcq1.com|dpcq1.net|duanwenxue.com|etongxs.com|feiszw.com|fx11.cc|fyxfcw.com|gaofuwu.org|gdbzkz.org|gllmh.com|guanshu.cc|hongyeshuzhai.com|huanyue1234.com|hybquge.com|ibiqu.org|ibiquge.la|ibiquta.com|ibiquw.com|ibotaodz.com|idzs.org|ijjjxs.net|ishisetianxia.com|ishubao.org|ivipxs.com|iwurexs.com|ixs.la|ixs5200.com|ixsw.org|ixuanshu.org|jcdf99.com|jianlaixiaoshuo.com|jieshengit.com|jiezhong.cc|jingwubook.com|jmshuwu.net|kanshu5.net|kanshushi.com|kbiquge8.com|kbqg5200.com|kchao.net|kenshuzw.com|lansezw.com|lewen123.com|lewenge.org|lewxs.com|liewenn.com|longzu5.net|luoqiu.io|luoqiuzw.com|maxreader.la|mcmssc.com|meiguixsw.com|mhtwxw.com|mhtxs.la|mijiashe.com|mingrenteahouse.com|mishug.com|mozhua2.com|mqxs.com|nbw.la|nuanyuehanxing.com|oldtimesxs.cc|panqis.cc|paoshu8.com|paoshuzw.com|piaotian.la|piaotian5.net|pksge.com|prpcoin.com|qianrenge.cc|qiqidu.net|qishula.com|qishuta.info|qiuyelou.com|qqxsnew.net|qqxsw.so|qr1234.com|quge66.com|ranwen.la|rizhaoxs.com|rmipoz.com|roushuwu6.com|rr3r.com|sbooktxt.com|sdhckt.com|sdhear.com|shanhaimiwenlu.com|shenshuxs.net|shenzu.org|shixiaolong.com|shu008.com|shubaowang.cc|shuhaiwu.com|shumi.la|shumil.co|shuquso.com|shuyy8.com|silukeke.com|silukex.com|siluwx.org|sinodan.cc|sjks88.com|soduha.la|sthuojia.org|stxsw.com|sxcnw.net|sytxt.cc|ting56.cc|tpsge.com|trxs.cc|ttzw.tv|tutengzw.com|txtduo.com|txtshuku.org|txtwan.com|tycqzw.com|tysk.cc|u33.cc|u33.me|viviyzw.com|wenxuem.com|wenxuemi.cc|whzh-xs.com|wodexiaoshuoh.com|wolaido.com|x23us.me|x23us.us|x81zw.co|xbiquge.so|xbiqugela.com|xbiqugexx.com|xbiquke.com|xbxwx.cc|xdingdian.cc|xhtxt.cc|xhytd.com|xiaoshuwu5.com|xiashuyun.com|xiaxs.la|xinqingdou.net|xinremenxs.com|xinxs.la|xiushukong.com|xqianqian.com|xquge6.com|xs5200.com|xs7788.com|xs98.com|xsb-xs.com|xstt5.com|xszww8.net|xuanjiezhimen.org|xuessex.com|xunsilu.org|xwdsc.com|xxbiqudu.com|xyb3.net|xygwh.cc|xyuanzunxs.com|xyusk.com|yemancomic.com|ygshu.com|yingsx.com|ymxwx.com|yqd6.com|ysxs8.vip|yunhaixianzong.com|yunxs.com|yuyougu.com|zhuishubox.com|zydu3.com|zzs5.com
-/\/\w{8}\/\w{10}\./$script,~third-party,domain=00ksw.com|0794.org|114zww.com|123duw.com|123wx.cc|126shu.org|12zw.net|138txt.net|147xiaoshuo.com|16kxsw.com|17k.com|1biqu.com|1biqug.com|1kanshu.org|1pwx.com|230book.net|23hh.com|23qb.com|23qb.net|23sk.net|23us.tw|23uswx.com|23wxx.com|23xstxt.net|24kwx.net|2kxs.org|33yq.org|360xs.com|3kzww.com|3yt.com|477zw.com|4gxs.cc|50zw.co|50zw.com|50zww.net|52biquge.com|52bqg.net|52shuku123.net|52xs.net|55shuba.com|56shuku.la|59xs.com|630shu.net|6666xsw.com|67shu.net|69kshu.win|69shu.org|69zww.com|7017k.net|777zw.net|77dushu.la|77xsw.cc|7kzw.org|81book.com|81new.cc|81zw.me|863zw.co|8yydstxt226.com|93xscc.com|98xiaoshuo.com|99mk.info|9tiefu.com|a6ksw.net|abcxs.net|aidusk.com|aixiaxs.com|aixiaxs.net|aixs.la|anshuge.com|b520.cc|b5200.net|bamxs.com|baoshuu.com|baoshuxuan.com|bbiquge.cc|bequgew.com|bequmo.com|bimixsw.com|biqiuge8.cc|biqudd.com|biqudu.tv|biquge775.com|biquge98.net|biquge99.cc|biqugecd.com|biqugee6.com|biqugesc.org|biqugewu.net|biqugse.com|biquka.com|biqukt.com|biquluo.org|biqupai.com|biququ.info|biqusan.com|biqusk.com|biqutsxs.com|biquzw.la|bisowx.com|bixia66.com|bjsxjy.com|bodekang.net|bookbao.me|boquku.com|bqg999.net|bqwxg8.com|bqxs520.com|bshuku.com|bxwx.live|bxwx00.com|bxwx888.org|changduzw.com|chenkuan.com|clwx666.com|damengzhu1.com|ddbqgtxt.cc|dengbi2.com|disixs.com|diyibanzhu9.pro|dizishu.com|dobiez.com|doupocangqiong.la|dpcq1.com|dpcq1.net|duanwenxue.com|etongxs.com|feiszw.com|fx11.cc|fyxfcw.com|gaofuwu.org|gdbzkz.org|gllmh.com|guanshu.cc|hongyeshuzhai.com|huanyue1234.com|hybquge.com|ibiqu.org|ibiquge.la|ibiquta.com|ibiquw.com|ibotaodz.com|idzs.org|ijjjxs.net|ishisetianxia.com|ishubao.org|ivipxs.com|iwurexs.com|ixs.la|ixs5200.com|ixsw.org|ixuanshu.org|jcdf99.com|jianlaixiaoshuo.com|jieshengit.com|jiezhong.cc|jingwubook.com|jmshuwu.net|kanshu5.net|kanshushi.com|kbiquge8.com|kbqg5200.com|kchao.net|kenshuzw.com|lansezw.com|lewen123.com|lewenge.org|lewxs.com|liewenn.com|longzu5.net|luoqiu.io|luoqiuzw.com|maxreader.la|mcmssc.com|meiguixsw.com|mhtxs.la|mijiashe.com|mingrenteahouse.com|mishug.com|mozhua2.com|mqxs.com|nbw.la|nuanyuehanxing.com|oldtimesxs.cc|panqis.cc|paoshu8.com|paoshuzw.com|piaotian.la|piaotian5.net|pksge.com|prpcoin.com|qianrenge.cc|qiqidu.net|qishula.com|qishuta.info|qiuyelou.com|qqxsnew.net|qqxsw.so|qr1234.com|quge66.com|ranwen.la|rizhaoxs.com|rmipoz.com|roushuwu6.com|rr3r.com|sbooktxt.com|sdhckt.com|sdhear.com|shanhaimiwenlu.com|shenshuxs.net|shenzu.org|shixiaolong.com|shu008.com|shubaowang.cc|shuhaiwu.com|shumi.la|shumil.co|shuquso.com|shuyy8.com|silukeke.com|silukex.com|siluwx.org|sinodan.cc|sjks88.com|soduha.la|sthuojia.org|stxsw.com|sxcnw.net|sytxt.cc|ting56.cc|tpsge.com|trxs.cc|ttzw.tv|tutengzw.com|txtduo.com|txtshuku.org|txtwan.com|tycqzw.com|tysk.cc|u33.cc|u33.me|viviyzw.com|wenxuem.com|wenxuemi.cc|whzh-xs.com|wodexiaoshuoh.com|wolaido.com|x23us.me|x23us.us|x81zw.co|xbiquge.so|xbiqugela.com|xbiqugexx.com|xbiquke.com|xbxwx.cc|xdingdian.cc|xhtxt.cc|xhytd.com|xiaoshuwu5.com|xiashuyun.com|xiaxs.la|xinqingdou.net|xinremenxs.com|xinxs.la|xiushukong.com|xqianqian.com|xquge6.com|xs5200.com|xs7788.com|xs98.com|xsb-xs.com|xstt5.com|xszww8.net|xuanjiezhimen.org|xuessex.com|xunsilu.org|xwdsc.com|xxbiqudu.com|xyb3.net|xygwh.cc|xyuanzunxs.com|xyusk.com|yemancomic.com|ygshu.com|yingsx.com|ymxwx.com|yqd6.com|ysxs8.vip|yunhaixianzong.com|yunxs.com|yuyougu.com|zhuishubox.com|zydu3.com|zzs5.com
+$script,subdocument,third-party,websocket,xmlhttprequest,domain=00ksw.com|0794.org|114zww.com|123duw.com|123wx.cc|126shu.org|12zw.net|138txt.net|147xiaoshuo.com|16kxsw.com|17k.com|1biqu.com|1biqug.com|1kanshu.org|1pwx.com|230book.net|23hh.com|23qb.com|23qb.net|23sk.net|23us.tw|23wxx.com|23xstxt.net|24kwx.net|2kxs.org|33yq.org|360xs.com|3yt.com|477zw.com|4gxs.cc|50zw.co|50zw.com|50zww.net|52biquge.com|52bqg.net|52shuku123.net|52xs.net|55shuba.com|56shuku.la|59xs.com|630shu.net|6666xsw.com|67shu.net|69kshu.win|69shu.org|69zww.com|7017k.net|777zw.net|77xsw.cc|8181zw.com|81book.com|81new.cc|81zw.me|8yydstxt226.com|93xscc.com|98xiaoshuo.com|99mk.info|9tiefu.com|a6ksw.net|abcxs.net|aixiaxs.com|aixiaxs.net|aixs.la|anshuge.com|b520.cc|b5200.net|bamxs.com|baoshuu.com|bbiquge.cc|bequgew.com|bequmo.com|bimixsw.com|biqiuge8.cc|biqudd.com|biqudu.tv|biquge775.com|biquge98.net|biquge99.cc|biqugecd.com|biqugee6.com|biqugesc.org|biqugewu.net|biqugse.com|biquka.com|biqukt.com|biquluo.org|biqupai.com|biququ.info|biqusk.com|biqutsxs.com|biquzw.la|bisowu.cc|bisowx.com|bixia66.com|bjsxjy.com|bodekang.net|bookbao.me|boquku.com|bqg999.net|bqwxg8.com|bshuku.com|bxwx.live|bxwx00.com|bxwx888.org|changduzw.com|chenkuan.com|clwx666.com|damengzhu1.com|ddbqgtxt.cc|disixs.com|diyibanzhu9.pro|dizishu.com|dobiez.com|doupocangqiong.la|dpcq1.com|dpcq1.net|duanwenxue.com|etongxs.com|fx11.cc|fyxfcw.com|gaofuwu.org|gdbzkz.org|gllmh.com|guanshu.cc|hongyeshuzhai.com|huanyue1234.com|ibiqu.org|ibiquge.la|ibiquta.com|ibotaodz.com|idzs.org|ijjjxs.net|ishisetianxia.com|ishubao.org|ivipxs.com|iwurexs.com|ixs.la|ixsw.org|ixuanshu.org|jcdf99.com|jianlaixiaoshuo.com|jieshengit.com|jiezhong.cc|jingwubook.com|jmshuwu.net|kanshu5.net|kanshushi.com|kbiquge8.com|kbqg5200.com|kchao.net|lansezw.com|lewen123.com|lewenge.org|lewxs.com|liewenn.com|longzu5.net|luoqiu.io|luoqiuzw.com|maxreader.la|mcmssc.net|meiguixsw.com|mhtwxw.com|mhtxs.la|mijiashe.com|mingrenteahouse.com|mishug.com|mozhua2.com|mqxs.com|nbw.la|nuanyuehanxing.com|oldtimesxs.cc|panqis.cc|paoshu8.com|paoshuzw.com|piaotian.la|piaotian5.net|pksge.com|prpcoin.com|qianrenge.cc|qiqidu.net|qishula.com|qishuta.info|qiuyelou.com|qqxsnew.net|qqxsw.so|qr1234.com|quge66.com|ranwen.la|rizhaoxs.com|rmipoz.com|roushuwu6.com|rr3r.com|sbooktxt.com|sdhckt.com|sdhear.com|shanhaimiwenlu.com|shenshuxs.net|shenzu.org|shixiaolong.com|shu008.com|shubaowang.cc|shuhaiwu.com|shumi.la|shumil.co|shuquso.com|shuyy8.com|silukeke.com|silukex.com|siluwx.org|sinodan.cc|sjks88.com|soduha.la|sthuojia.org|stxsw.com|sxcnw.net|sytxt.cc|ting56.cc|tpsge.com|trxs.cc|ttzw.tv|tutengzw.com|txtduo.com|txtshuku.org|txtwan.com|tycqzw.com|tysk.cc|u33.cc|u33.me|viviyzw.com|wenxuem.com|wenxuemi.cc|whzh-xs.com|wodexiaoshuoh.com|wolaido.com|x23us.me|x23us.us|x81zw.co|xbiquge.so|xbiqugela.com|xbiqugexx.com|xbiquke.com|xbxwx.cc|xdingdian.cc|xhtxt.cc|xhytd.com|xiaoshuwu5.com|xiashuyun.com|xiaxs.la|xinqingdou.net|xinremenxs.com|xinxs.la|xiushukong.com|xqianqian.com|xquge6.com|xs5200.com|xs7788.com|xs98.com|xsb-xs.com|xstt5.com|xszww8.net|xuanjiezhimen.org|xuessex.com|xunsilu.org|xwdsc.com|xxbiqudu.com|xygwh.cc|xyuanzunxs.com|xyusk.com|yemancomic.com|ygshu.com|yingsx.com|ymxwx.com|yqd6.com|ysxs8.vip|yunhaixianzong.com|yunxs.com|yuyougu.com|zhuishubox.com|zydu3.com|zzs5.com
+/\/\w{8}\/\w{10}\./$script,~third-party,domain=00ksw.com|0794.org|114zww.com|123duw.com|123wx.cc|126shu.org|12zw.net|138txt.net|147xiaoshuo.com|16kxsw.com|17k.com|1biqu.com|1biqug.com|1kanshu.org|1pwx.com|230book.net|23hh.com|23qb.com|23qb.net|23sk.net|23us.tw|23wxx.com|23xstxt.net|24kwx.net|2kxs.org|33yq.org|360xs.com|3yt.com|477zw.com|4gxs.cc|50zw.co|50zw.com|50zww.net|52biquge.com|52bqg.net|52shuku123.net|52xs.net|55shuba.com|56shuku.la|59xs.com|630shu.net|6666xsw.com|67shu.net|69kshu.win|69shu.org|69zww.com|7017k.net|777zw.net|77xsw.cc|81book.com|81new.cc|81zw.me|8yydstxt226.com|93xscc.com|98xiaoshuo.com|99mk.info|9tiefu.com|a6ksw.net|abcxs.net|aixiaxs.com|aixiaxs.net|aixs.la|anshuge.com|b520.cc|b5200.net|bamxs.com|baoshuu.com|bbiquge.cc|bequgew.com|bequmo.com|bimixsw.com|biqiuge8.cc|biqudd.com|biqudu.tv|biquge775.com|biquge98.net|biquge99.cc|biqugecd.com|biqugee6.com|biqugesc.org|biqugewu.net|biqugse.com|biquka.com|biqukt.com|biquluo.org|biqupai.com|biququ.info|biqusk.com|biqutsxs.com|biquzw.la|bisowx.com|bixia66.com|bjsxjy.com|bodekang.net|bookbao.me|boquku.com|bqg999.net|bqwxg8.com|bshuku.com|bxwx.live|bxwx00.com|bxwx888.org|changduzw.com|chenkuan.com|clwx666.com|damengzhu1.com|ddbqgtxt.cc|disixs.com|diyibanzhu9.pro|dizishu.com|dobiez.com|doupocangqiong.la|dpcq1.com|dpcq1.net|duanwenxue.com|etongxs.com|fx11.cc|fyxfcw.com|gaofuwu.org|gdbzkz.org|gllmh.com|guanshu.cc|hongyeshuzhai.com|huanyue1234.com|ibiqu.org|ibiquge.la|ibiquta.com|ibotaodz.com|idzs.org|ijjjxs.net|ishisetianxia.com|ishubao.org|ivipxs.com|iwurexs.com|ixs.la|ixsw.org|ixuanshu.org|jcdf99.com|jianlaixiaoshuo.com|jieshengit.com|jiezhong.cc|jingwubook.com|jmshuwu.net|kanshu5.net|kanshushi.com|kbiquge8.com|kbqg5200.com|kchao.net|lansezw.com|lewen123.com|lewenge.org|lewxs.com|liewenn.com|longzu5.net|luoqiu.io|luoqiuzw.com|maxreader.la|mcmssc.net|meiguixsw.com|mhtxs.la|mijiashe.com|mingrenteahouse.com|mishug.com|mozhua2.com|mqxs.com|nbw.la|nuanyuehanxing.com|oldtimesxs.cc|panqis.cc|paoshu8.com|paoshuzw.com|piaotian.la|piaotian5.net|pksge.com|prpcoin.com|qianrenge.cc|qiqidu.net|qishula.com|qishuta.info|qiuyelou.com|qqxsnew.net|qqxsw.so|qr1234.com|quge66.com|ranwen.la|rizhaoxs.com|rmipoz.com|roushuwu6.com|rr3r.com|sbooktxt.com|sdhckt.com|sdhear.com|shanhaimiwenlu.com|shenshuxs.net|shenzu.org|shixiaolong.com|shu008.com|shubaowang.cc|shuhaiwu.com|shumi.la|shumil.co|shuquso.com|shuyy8.com|silukeke.com|silukex.com|siluwx.org|sinodan.cc|sjks88.com|soduha.la|sthuojia.org|stxsw.com|sxcnw.net|sytxt.cc|ting56.cc|tpsge.com|trxs.cc|ttzw.tv|tutengzw.com|txtduo.com|txtshuku.org|txtwan.com|tycqzw.com|tysk.cc|u33.cc|u33.me|viviyzw.com|wenxuem.com|wenxuemi.cc|whzh-xs.com|wodexiaoshuoh.com|wolaido.com|x23us.me|x23us.us|x81zw.co|xbiquge.so|xbiqugela.com|xbiqugexx.com|xbiquke.com|xbxwx.cc|xdingdian.cc|xhtxt.cc|xhytd.com|xiaoshuwu5.com|xiashuyun.com|xiaxs.la|xinqingdou.net|xinremenxs.com|xinxs.la|xiushukong.com|xqianqian.com|xquge6.com|xs5200.com|xs7788.com|xs98.com|xsb-xs.com|xstt5.com|xszww8.net|xuanjiezhimen.org|xuessex.com|xunsilu.org|xwdsc.com|xxbiqudu.com|xygwh.cc|xyuanzunxs.com|xyusk.com|yemancomic.com|ygshu.com|yingsx.com|ymxwx.com|yqd6.com|ysxs8.vip|yunhaixianzong.com|yunxs.com|yuyougu.com|zhuishubox.com|zydu3.com|zzs5.com
 @@.com/ad.aspx|$domain=xdingdian.cc
 @@||bcebos.com^$script,domain=biququ.info|jingwubook.com
-@@||bdimg.com/libs/$domain=00ksw.com|147xiaoshuo.com|1biqug.com|23xstxt.net|24kwx.net|52biquge.com|8181zw.com|abcxs.net|b520.cc|b5200.net|biqiuge8.cc|biquge99.cc|biqugecd.com|biqugewu.net|boquku.com|bqg999.net|bqwxg8.com|bxwx.live|ddbqgtxt.cc|gdbzkz.org|huanyue1234.com|ibiquw.com|paoshu8.com|piaotian5.net|qianrenge.cc|quge66.com|shuyy8.com|sytxt.cc|ttzw.tv|txtwan.com|u33.me|viviyzw.com|x23us.me|xiaoshuwu5.com|xinxs.la|xqianqian.com|xxbiqudu.com|xygwh.cc|ygshu.com|ymxwx.com|yuyougu.com
+@@||bdimg.com/libs/$domain=00ksw.com|147xiaoshuo.com|1biqug.com|23xstxt.net|24kwx.net|52biquge.com|8181zw.com|abcxs.net|b520.cc|b5200.net|biqiuge8.cc|biquge99.cc|biqugecd.com|biqugewu.net|boquku.com|bqg999.net|bqwxg8.com|bxwx.live|ddbqgtxt.cc|gdbzkz.org|huanyue1234.com|paoshu8.com|piaotian5.net|qianrenge.cc|quge66.com|shuyy8.com|sytxt.cc|ttzw.tv|txtwan.com|u33.me|viviyzw.com|x23us.me|xiaoshuwu5.com|xinxs.la|xqianqian.com|xxbiqudu.com|xygwh.cc|ygshu.com|ymxwx.com|yuyougu.com
 @@||bdstatic.com^$domain=17k.com|bxwx888.org
-@@||c.mipcdn.com^$domain=77dushu.la|prpcoin.com
+@@||c.mipcdn.com^$domain=prpcoin.com
 @@||cdn.bcebos.com^*/$script,domain=24kwx.net|fyxfcw.com
 @@||cdn.bootcss.com^$script,domain=59xs.com|biqudd.com|gllmh.com|luoqiuzw.com|u33.me|xbiqugela.com|xhtxt.cc|xiaoshuwu5.com|ysxs8.vip
 @@||cdn.jsdelivr.net^$script,domain=yemancomic.com
 @@||cdn.staticfile.org^$script,domain=00ksw.com|147xiaoshuo.com|biququ.info|bookbao.me|bxwx.live|shenzu.org
 @@||dnsgom.net/public/$domain=jingwubook.com|xwdsc.com
 @@||jsqsjn.com^$script,domain=fyxfcw.com
-@@||libs.baidu.com^$domain=0794.org|12zw.net|138txt.net|1biqu.com|1kanshu.org|230book.net|23hh.com|23sk.net|23wxx.com|33yq.org|3yt.com|52biquge.com|56shuku.la|777zw.net|81book.com|81zw.me|99mk.info|aidusk.com|aixs.la|anshuge.com|baoshuu.com|bequmo.com|bimixsw.com|biqiuge8.cc|biqudu.tv|biquge775.com|biquge98.net|biqugecd.com|biqugee6.com|biquka.com|biqukt.com|biqusan.com|biqutsxs.com|biquzw.la|bodekang.net|bshuku.com|bxwx.live|bxwx.org|damengzhu1.com|disixs.com|gdbzkz.org|guanshu.cc|hongyeshuzhai.com|hybquge.com|ibiquge.la|ibiquta.com|ibotaodz.com|ishisetianxia.com|ishubao.org|ivipxs.com|iwurexs.com|ixs.la|ixsw.org|ixuanshu.org|jianlaixiaoshuo.com|liewenn.com|mhtxs.la|paoshu8.com|paoshuzw.com|pksge.com|qianrenge.cc|qishuta.info|qiuyelou.com|qr1234.com|shenshuxs.net|shu008.com|shuhaiwu.com|shumil.co|silukex.com|siluwx.org|sthuojia.org|ttzw.tv|tutengzw.com|txtshuku.org|tycqzw.com|u33.cc|wenxuem.com|x23us.me|x81zw.co|xbiquke.com|xdingdian.cc|xiaoshuwu5.com|xiaxs.la|xinxs.la|xquge6.com|xs5200.com|xs98.com|xszww8.net|xuessex.com|xyusk.com|yqd6.com|yunxs.com|zjsw.org|zzs5.com
+@@||libs.baidu.com^$domain=0794.org|12zw.net|138txt.net|1biqu.com|1kanshu.org|230book.net|23hh.com|23sk.net|23wxx.com|33yq.org|3yt.com|52biquge.com|56shuku.la|777zw.net|81book.com|81zw.me|99mk.info|aixs.la|anshuge.com|baoshuu.com|bequmo.com|bimixsw.com|biqiuge8.cc|biqudu.tv|biquge775.com|biquge98.net|biqugecd.com|biqugee6.com|biquka.com|biqukt.com|biqutsxs.com|biquzw.la|bodekang.net|bshuku.com|bxwx.live|bxwx.org|damengzhu1.com|disixs.com|gdbzkz.org|guanshu.cc|hongyeshuzhai.com|ibiquge.la|ibiquta.com|ibotaodz.com|ishisetianxia.com|ishubao.org|ivipxs.com|iwurexs.com|ixs.la|ixsw.org|ixuanshu.org|jianlaixiaoshuo.com|liewenn.com|mhtxs.la|paoshu8.com|paoshuzw.com|pksge.com|qianrenge.cc|qishuta.info|qiuyelou.com|qr1234.com|shenshuxs.net|shu008.com|shuhaiwu.com|shumil.co|silukex.com|siluwx.org|sthuojia.org|ttzw.tv|tutengzw.com|txtshuku.org|tycqzw.com|u33.cc|wenxuem.com|x23us.me|x81zw.co|xbiquke.com|xdingdian.cc|xiaoshuwu5.com|xiaxs.la|xinxs.la|xquge6.com|xs5200.com|xs98.com|xszww8.net|xuessex.com|xyusk.com|yqd6.com|yunxs.com|zjsw.org|zzs5.com
 @@||zmtt.net^$script,domain=luoqiuzw.com
 |http:$script,third-party,xmlhttprequest,domain=m.733.so|m.umei.cc
 |https:$script,third-party,xmlhttprequest,domain=m.733.so|m.umei.cc
@@ -22867,7 +22827,7 @@ fqsousou.com,kengso.com#@#.user-share
 @@||sinajs.cn/open/analytics/js/suda.js$domain=weibo.com|~widget.weibo.com
 @@||sinajs.cn/open/api/js/wb.js$domain=sc.sina.com.cn
 @@||sogou.com/pv.gif?*&stype=showskinpanel
-@@||sohu.com/cityjson$domain=114shouji.com|51credit.com|castech.com|eduyun.cn|ems.com.cn|jdboshi.com|jialingmm.net|lcm88.com|meiju11.com|mop.com|platinum-pen.com.cn|shouji.com.cn|skk.moe|vivo.com.cn
+@@||sohu.com/cityjson$domain=114shouji.com|51credit.com|castech.com|eduyun.cn|ems.com.cn|jdboshi.com|jialingmm.net|lcm88.com|mop.com|platinum-pen.com.cn|shouji.com.cn|skk.moe|vivo.com.cn
 @@||sohu.com/integration-api/mix/region/*&refer=http
 @@||soufunimg.com/count/uvbforpc.js
 @@||stjscn.s-msn.com/portal/hp/2011/udctrack.
@@ -22877,7 +22837,6 @@ fqsousou.com,kengso.com#@#.user-share
 @@||tce.alicdn.com^$domain=alimama.com
 @@||threatbook.cn/public/asset/js/zhugeIo.
 @@||tianxun.com/min/f=
-@@||ting56.com/css/tongji.js
 @@||tmall.com/add?
 @@||tracklog.58.com/referrer$~third-party
 @@||udn.com/mall/images/spacer.gif?
