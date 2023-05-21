@@ -1331,12 +1331,25 @@ return [
     ],
     "xhscdn.com" => [
         "ads-img-al.xhscdn.com", // #784
+        "ads-img-qc.xhscdn.com", // #793
+        "ads-video-al.xhscdn.com", // #793
+        "ads-video-qc.xhscdn.com", // #793
     ],
     "cmbchina.com" => [
         "mbads.paas.cmbchina.com", // #784
     ],
     "heytapimage.com" => [
         "img-c.heytapimage.com", // #789
+    ],
+    "google.cn" => [
+        "ads.google.cn", // #793
+        "adsense.google.cn", // #793
+    ],
+    "azureedge.net" => [
+        "advertiseonbing.azureedge.net", // #793
+    ],
+    "duoduo.link" => [
+         "ad.duoduo.link", // #793
     ],
 
     "2mdn-cn.net" => ["2mdn-cn.net"],
