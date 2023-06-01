@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202305311245
+! Version: 202306011628
 ! Title: EasyPrivacy
-! Last modified: 31 May 2023 12:45 UTC
+! Last modified: 01 Jun 2023 16:28 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -984,7 +984,6 @@
 /comscore-json/*
 /comscore-min.js
 /comscore-pageview-
-/comscore.
 /comscore/pageview_
 /comscore/streamsense.
 /comscore?
@@ -4042,6 +4041,7 @@
 /tracking-pixel/*
 /tracking-portlet/*
 /tracking.*/impression?
+/tracking.jsp?sid=
 /tracking/?c_
 /tracking/?ID=
 /tracking/addview/*
@@ -6595,7 +6595,6 @@ _mongo_stats/
 ||ipaddresslabs.com^$third-party
 ||ipapi.co^$third-party
 ||ipcatch.com^$third-party
-||ipdata.co^$third-party
 ||iper2.com^$third-party
 ||iperceptions.com^$third-party
 ||ipfind.com^$third-party
@@ -12253,6 +12252,8 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||qq.com/heatmap/
 ||qq.com/ping.js?
 ||qq.com/stats?
+||qualtrics.com/jfe/$script
+||qualtrics.com/sie/$script
 ||qualtrics.com/WRSiteInterceptEngine/?Q_Impress=$third-party
 ||qualtrics.com^*/metrics
 ||quantcast.com/?log
@@ -12607,6 +12608,8 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||telemetry.reembed.com^
 ||telemetry.soundcloud.com^
 ||telemetry.tableausoftware.com^
+||terabox.fun/api/analytics
+||terabox.fun/api/getsyscfg?*web_share_ads_adsterra_config
 ||th.bing.com/th/*&riu=$image,third-party
 ||the-group.net/aether/
 ||themesltd.com/online-users-counter/$third-party
@@ -13045,6 +13048,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||d28g9g3vb08y70.cloudfront.net^
 ||d2cpw6kwpff7n5.cloudfront.net^
 ||d2ef20sk9hi1u3.cloudfront.net^
+||d2ezz24t9nm0vu.cloudfront.net^
 ||d2gbtcuv3w9qyv.cloudfront.net^
 ||d2ibu2ug0mt5qp.cloudfront.net^
 ||d2j1fszo1axgmp.cloudfront.net^
@@ -13125,6 +13129,9 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||dxwgpw0lkcum5.cloudfront.net^
 ||dy2xcjk8s1dbz.cloudfront.net^
 ||dyv1bugovvq1g.cloudfront.net^
+! firebase
+||firebase.googleapis.com^$domain=terabox.fun
+||firebaseinstallations.googleapis.com^$domain=terabox.fun
 ! taboola
 ||am-vid-events.taboola.com^
 ||convsgmp.taboola.com^
@@ -13227,7 +13234,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||shield.sitelock.com^$third-party
 ||shopperapproved.com^$third-party
 ||siteintercept.allegiancetech.com^
-||siteintercept.qualtrics.com^$third-party
 ||smart-widget-assets.ekomiapps.de^$third-party
 ||trust-provider.com^*/trustlogo.js$third-party
 ||trusted-web-seal.cybertrust.ne.jp^
@@ -13421,6 +13427,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||c.woopic.com/tools/pdb.min.js
 ||caast.tv/v1/record.gif?
 ||calcul-pagerank.fr/client/$third-party
+||canalplus-bo.net/web/*/tracker/?
 ||capping.sirius.press^
 ||cdn-files.prsmedia.fr^*/xiti/
 ||ced-ns.sascdn.com/diff/js/smart.js
@@ -14975,6 +14982,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||porzo.com/js/analytics
 ||potterybarnkids.com/pkimgs/*/external/thirdparty.js
 ||prairiedog.hashnode.com^
+||pravda.com.ua/counter/
 ||prescouter.com/pd.js
 ||priceline.com/pws/v1/ace/impression/
 ||priceline.com/svcs/mkt/tag/
@@ -34082,7 +34090,6 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=szukajka.tv|thepira
 @@||fast.fonts.net/jsapi/core/mt.js$script,domain=eclecticbars.co.uk|gables.com|itsolutions-inc.com|senate.gov
 @@||firebase.google.com/docs/analytics/$~third-party
 @@||friendbuy.com^$domain=butcherbox.com
-@@||gem.cbc.ca/public/vendor/comscore.js$script,~third-party
 @@||geoip-db.com/jsonp/$script,third-party
 @@||geoip.cookieyes.com/geoip/checker/result.php$domain=marktechpost.com
 @@||geolocation-db.com/jsonp$script,domain=parts.hp.com
@@ -34100,7 +34107,6 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=szukajka.tv|thepira
 @@||hyper.ag/api/sites/*/analytics/$~third-party
 @@||ibm.com/software/reports/compatibility/clarity-reports/js/$script,~third-party
 @@||identity.mparticle.com^$xmlhttprequest
-@@||images.news18.com^*/comscore.min.js$script,~third-party
 @@||imgur.com/min/px.js$~third-party
 @@||indeed.com/rpc/log/myjobs/$~third-party
 @@||ingest.sentry.io/api/$xmlhttprequest,domain=orionprotocol.io|tesco.com
@@ -34116,7 +34122,6 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=szukajka.tv|thepira
 @@||kameleoon.eu/kameleoon.js$script,domain=buttercloth.com
 @@||kaptcha.com/collect/sdk?$domain=palmettostatearmory.com|wyze.com
 @@||kaxsdc.com/collect/sdk$xmlhttprequest,domain=vanillaereward.com
-@@||kissfm.es/wp-content/themes/kissfm/assets/js/comscore.js$~third-party
 @@||kohls.com/ecustservice/js/sitecatalyst.js$script,~third-party
 @@||lacoste.com^*/click-analytics.js$~third-party
 @@||languagecloud.sdl.com/node_modules/fingerprintjs2/dist/fingerprint2.min.js$~third-party
@@ -34128,7 +34133,6 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=szukajka.tv|thepira
 @@||level.travel/tracker/tracker.js$script,~third-party
 @@||linksynergy.com/minified_logic.js$third-party,xmlhttprequest
 @@||listrakbi.com^$image,script,stylesheet,domain=sks-bottle.com
-@@||live.bbc.co.uk^*/comscore.js$~third-party
 @@||live.rezync.com^$script,domain=batteriesplus.com
 @@||logging.apache.org^$~third-party
 @@||logo.clearbit.com^$image,third-party
@@ -34225,7 +34229,6 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=szukajka.tv|thepira
 @@||shopify.com/shopifycloud/boomerang/shopify-boomerang-$domain=rydewear.com
 @@||signalshares.com/webtrends.min.js$script,~third-party
 @@||simcotools.app/assets/adsense-*.js$~third-party
-@@||siteintercept.qualtrics.com^$domain=homedepot.com
 @@||smartrevise.online/css/analytics.min.css$~third-party
 @@||smartrevise.online/js/teacher.analytics.min.js$~third-party
 @@||smushcdn.com^*/1.gif$domain=retrounlim.com
