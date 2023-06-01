@@ -399,6 +399,7 @@ return [
     "www.mairuan.net" => 0, #772
     "ldmnq.com" => 0, #787
     "heytapimage.com" => 0, #779, #780
+    "fexclick.baidu.com" => 0, #790
     "iflow.uczzd.cn" => 0, // uc搞笑段子
     "m.uczzd.cn" => 0, // uc搞笑段子
     "puds.ucweb.com" => 0, // uc小游戏
