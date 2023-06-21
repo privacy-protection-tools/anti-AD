@@ -1351,6 +1351,9 @@ return [
     "duoduo.link" => [
          "ad.duoduo.link", // #793
     ],
+    "pangolin-sdk-toutiao1.com" => [
+        "pangolin-sdk-toutiao1.com", // #800
+    ],
 
     "2mdn-cn.net" => ["2mdn-cn.net"],
     "admob-cn.com" => ["admob-cn.com"],
