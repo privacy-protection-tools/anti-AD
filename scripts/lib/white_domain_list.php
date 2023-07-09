@@ -404,6 +404,7 @@ return [
     "huluxia.com" => 0, #798
     "ucweb.com" => 0, #801
     "yule.sohu.com" => 0, // #802
+    "zoosnet.net" => 0, // #811
     "weworkremotely.com" => 0, // #803
     "iflow.uczzd.cn" => 0, // uc搞笑段子
     "m.uczzd.cn" => 0, // uc搞笑段子
