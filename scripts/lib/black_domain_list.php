@@ -1354,6 +1354,12 @@ return [
     "pangolin-sdk-toutiao1.com" => [
         "pangolin-sdk-toutiao1.com", // #800
     ],
+    "hubcloud.com.cn" => [
+        "sdktmp.hubcloud.com.cn", // #813
+    ],
+    "beizi.biz" => [
+        "sdk.beizi.biz", // #813
+    ],
 
     "2mdn-cn.net" => ["2mdn-cn.net"],
     "admob-cn.com" => ["admob-cn.com"],
