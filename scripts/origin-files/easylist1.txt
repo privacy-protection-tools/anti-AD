@@ -1,8 +1,8 @@
-! Checksum: maz4jQhToEafN6MZXHVcmw
+! Checksum: I0UuvbvR09EdobTkM3OrHQ
 ! Title: AdGuard Chinese filter (Optimized)
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.0.95.26
-! TimeUpdated: 2023-08-04T16:31:14+00:00
+! Version: 2.0.95.48
+! TimeUpdated: 2023-08-07T16:31:30+00:00
 ! Expires: 4 days (update frequency)
 #%#var AG_onLoad=function(func){if(document.readyState==="complete"||document.readyState==="interactive")func();else if(document.addEventListener)document.addEventListener("DOMContentLoaded",func);else if(document.attachEvent)document.attachEvent("DOMContentLoaded",func)};
 #%#var AG_removeElementById = function(id) { var element = document.getElementById(id); if (element && element.parentNode) { element.parentNode.removeChild(element); }};
@@ -643,6 +643,7 @@ nivod5.tv,nivod4.tv#$?#a.focus_title_inner[href*=".ad_click"] { remove: true; }
 m.nivod5.tv,m.nivod4.tv#?##hellBoy > li[track-by="$index"] > div[style] > .show-div:has(> .show-card > .update-play:contains(/^AD$/))
 m.nivod5.tv,m.nivod4.tv#?#.slider-group > .nut-swiper > .nut-swiper-inner > .nut-swiper-item:has(> .swiper-page > span:contains(/^AD/))
 hdmoli.com#?#.row > div.myui-panel:has(div[style^="text-align:"] > a[href][target="_blank"] > img#index_banner)
+bilibili.com#?#.container > div[class*="-card"]:has(div[style="display: none !important;"])
 bilibili.com#?#.bili-video-card:has(.bili-video-card__info--ad) > .bili-video-card__wrap
 bilibili.com#?#.bili-video-card:has(.bili-video-card__info--creative-ad) > .bili-video-card__wrap
 bilibili.com#$?#.bili-video-card:has(.bili-video-card__info--ad) > .bili-video-card__skeleton { visibility: visible !important; }
@@ -922,6 +923,13 @@ ipv6.baidu.com,m.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###resul
 ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###content_left > .result ~ div:not([class]):not([style])
 /^(?!.*(sharecast.ws|bunnycdn.ru|bootstrapcdn.com|cdn.ampproject.org|cloudflare.com|cdn.staticfile.org|disqus.com|disquscdn.com|dmca.com|ebacdn.com|facebook.net|fastlylb.net|fbcdn.net|fluidplayer.com|fontawesome.com|github.io|google.com|googleapis.com|googletagmanager.com|gstatic.com|jquery.com|jsdelivr.net|jwpcdn.com|jwplatform.com|polyfill.io|recaptcha.net|shrink.pe|twitter.com|ulogin.ru|unpkg.com|userapi.com|vidazoo.com|vk.com|yandex.|yastatic.net|ytimg.com|zencdn.net|player|youtube.com|cackle.me|googleoptimize.com|vuukle.com|chatango.com|twimg.com|google-analytics.com|hcaptcha.com|raincaptcha.com|media-imdb.com|blogger.com|hwcdn.net|instagram.com|wp.com|imgsmail.ru)).*$/$third-party,script,_____,domain=manshuxs.com|yemancomic.com|qimiaoxiaoshuo.com|gaofuwu.org|nxpaaq.com|dengbi2.com|92hm.top
 $script,third-party,denyallow=sharecast.ws|bunnycdn.ru|bootstrapcdn.com|cdn.ampproject.org|cloudflare.com|cdn.staticfile.org|disqus.com|disquscdn.com|dmca.com|ebacdn.com|facebook.net|fastlylb.net|fbcdn.net|fluidplayer.com|fontawesome.com|github.io|google.com|googleapis.com|googletagmanager.com|gstatic.com|jquery.com|jsdelivr.net|jwpcdn.com|jwplatform.com|polyfill.io|recaptcha.net|shrink.pe|twitter.com|ulogin.ru|unpkg.com|userapi.com|vidazoo.com|vk.com|yastatic.net|ytimg.com|zencdn.net|youtube.com|cackle.me|googleoptimize.com|vuukle.com|chatango.com|twimg.com|google-analytics.com|hcaptcha.com|raincaptcha.com|media-imdb.com|blogger.com|hwcdn.net|instagram.com|wp.com|fastcomments.com|plyr.io,_____,domain=wap.ishuquge.la|m.91zww.com|592mh.top|dubuxiaoshuo.com|clm410.buzz
+||res.vps234.com/resources/images/hosting-promotion/
+imnks.com##.adTags
+||imnks.com/ad2023/$image
+porn5f.com##.alb_320x250
+porn5f.com##.mobframe
+porn5f.com##.preroll-adv-two
+porn5f.com###dprecommend
 iyf.tv##.video-player + div[class*=" "] > div.block
 jin10.com##.top-ad
 promodj.com##.banner_carousel
@@ -2377,6 +2385,7 @@ nfmovies.com#@?#div[id]:-abp-has(>img[onclick="openurl()"])
 @@||nfmovies.com/static/side.jpg$xmlhttprequest,domain=nfmovies.com
 -*-*-*-*.panda^$script,third-party
 -1316632262.cos.
+-1316899192.cos.
 -1688-wp-media/ads/
 -90mh-gg.
 .bid/ads/
@@ -2770,6 +2779,7 @@ nfmovies.com#@?#div[id]:-abp-has(>img[onclick="openurl()"])
 /javhd-jp-970x170.jpg
 /jdzjgg/*
 /jfjs/ad.js
+/jianpian.obs.cn-
 /jianshen8/images/plan_banner_
 /js/aa.htm$script
 /js/aahome.htm
@@ -3954,10 +3964,12 @@ newduba.cn###jq_youxi
 ||23.234.217.11^
 ||23.234.217.12^
 ##a[href*=".f2ocoin.com/"]
+##a[href*=".n7.org.cn"]
 ##a[href*=".pcjx365.com/"]
 ##a[href*="/9966699.vip"]
 ##a[href*="/mug749.vip"]
 ||1267a.xyz^
+||1378a.xyz^
 ||1379a.xyz^
 ||1u5gy.xyz^
 ||3400.org^
@@ -3967,6 +3979,7 @@ newduba.cn###jq_youxi
 ||52kuwang.cn^
 ||777aa999aa.com^
 ||8861198.com^
+||89mtdab.xyz^
 ||a8age.com^
 ||a9able.com^
 ||abdluv.xyz^
@@ -3988,6 +4001,7 @@ newduba.cn###jq_youxi
 ||bifyeldv.top^
 ||bkhblj.xyz^
 ||bkjlf58.com^
+||bnds4.site^
 ||bnds8.site^
 ||bnfyzszm.icu^
 ||boewgph.icu^
@@ -4002,14 +4016,17 @@ newduba.cn###jq_youxi
 ||c9r05q.com^
 ||caider.fun^
 ||canser1.top^
+||canser5.top^
 ||ccnim.xyz^
 ||cdmjur.xyz^
+||cfdns.vip^
 ||chiese.site^
 ||ciadre.fun^
 ||cix0wk.com^
 ||connectreadoasis.com^
 ||csedasdme.xyz^
 ||cslbahf.top^
+||ctquh0q.xyz^
 ||cuioxbqi.com^
 ||cxsh.cn.com^
 ||cyq3noz.icu^
@@ -4024,9 +4041,11 @@ newduba.cn###jq_youxi
 ||dehaer.site^
 ||destc8.icu^
 ||dffrahax.com^
+||dfgpifa.com^
 ||dfgymtx.icu^
 ||dgayibf.icu^
 ||dghhot.com^
+||dghkpp.xyz^
 ||dhjrvj.xyz^
 ||dhkipdsc.xyz^
 ||dojyiu8.com^
@@ -4035,11 +4054,13 @@ newduba.cn###jq_youxi
 ||dstbekdf.xyz^
 ||dstbunkfw.xyz^
 ||duoying.vip^$third-party
+||dwfjtz.xyz^
 ||dyeperd.icu^
 ||dzkwj0y.xyz^
 ||eamqbaqzaewwq.top^
 ||eers0cy.com^
 ||eghyahl.cn^
+||eheb8.cn^
 ||ejolul.xyz^
 ||ekdky.cn^
 ||enhad.xyz^
@@ -4056,17 +4077,21 @@ newduba.cn###jq_youxi
 ||eyq3nog.icu^
 ||falsarywaybung.com^
 ||fantuan.name^
+||fcbqxt.xyz^
 ||fddxbn.xyz^
 ||feiln.xyz^
+||fengyukun03.cn^
 ||fhglcpf.icu^
 ||fjsytjs.cn^
 ||fjtroip.cn^
+||foirkrt.icu^
 ||fszpzd.xyz^
 ||fuliwang.cc^
 ||fvxlhn.xyz^
 ||fwepd.xyz^
 ||fwzvlp.xyz^
 ||ggdrfh5.com^
+||gghmef7.com^
 ||ghland.site^
 ||gjipd.xyz^
 ||gkjmev3.com^
@@ -4077,8 +4102,10 @@ newduba.cn###jq_youxi
 ||gw1jvhs.com^
 ||gyq3bew.icu^
 ||gyutmrp.com^
+||hacde3.icu^
 ||hanwdsii.com^
 ||hasgde.site^
+||hbqabbg.cn^
 ||hdfdsdaw.com^
 ||hdpdrandpd.xyz^
 ||hegk01a.top^
@@ -4089,6 +4116,7 @@ newduba.cn###jq_youxi
 ||hghjks2.com^
 ||hikykhz.icu^
 ||hiqua.xyz^
+||hjgkr0g.xyz^
 ||hjkiguy.com^
 ||hkkeafj.cn^
 ||hlnr9q.icu^
@@ -4131,6 +4159,7 @@ newduba.cn###jq_youxi
 ||jochenanabata.guru^
 ||jokerlulm.com^
 ||jpqed.xyz^
+||jpush0b.xyz^
 ||jpvrbt.xyz^
 ||jrmrijv.icu^
 ||jslbaha.top^
@@ -4140,6 +4169,7 @@ newduba.cn###jq_youxi
 ||jutwzssh.icu^
 ||jvjlkih.com^
 ||jzdgn.cn^
+||jzdwl4.cn^
 ||jzixypd.icu^
 ||jzxpxj.xyz^
 ||kahgjjd.com^
@@ -4149,11 +4179,13 @@ newduba.cn###jq_youxi
 ||kklpe.xyz^
 ||kl91ccp.com^
 ||kljslku.com^
+||klufjdo.com^
 ||knjmhmk.com^
 ||kodfn.xyz^
 ||kqubxdb.cn^
 ||kslbahd.top^
 ||kv8899.com^
+||kwcmrfb.cn^
 ||kxm1b0u.com^
 ||kyplpw.com^
 ||kyq3hky.icu^
@@ -4173,6 +4205,7 @@ newduba.cn###jq_youxi
 ||lkmhn.com^
 ||llpuhx.xyz^
 ||lmnpd.xyz^
+||lqjinx.xyz^
 ||lrlsrz.xyz^
 ||lrqpyhn.icu^
 ||lskmipb.icu^
@@ -4182,13 +4215,16 @@ newduba.cn###jq_youxi
 ||metaversemolecule.com^
 ||mifyeldx.top^
 ||misapopait.com^
+||mkjnha.com^
 ||mlstx.cn^
 ||mmead.xyz^
+||mnhknds.com^
 ||moobtcnse.xyz^
 ||mrqbuf.xyz^
 ||mt4v4.com^
 ||mvamnng.cn^
 ||mvgucp.com^
+||naqiwjj.icu^
 ||ncgqmzm.cn^
 ||nektonsrutate.com^
 ||ngbthf.xyz^
@@ -4196,6 +4232,7 @@ newduba.cn###jq_youxi
 ||nieae.xyz^
 ||nifyeldc.top^
 ||njogejt.icu^
+||nmdotj.xyz^
 ||nmkghh.com^
 ||nnfyxd.xyz^
 ||nnqwe.xyz^
@@ -4206,6 +4243,7 @@ newduba.cn###jq_youxi
 ||nunxhv.com^
 ||nxhwvt.xyz^
 ||oifyeldk.top^
+||oijmds.com^
 ||oiunga.com^
 ||okmhmkjnm.com^
 ||one6u.xyz^
@@ -4238,6 +4276,7 @@ newduba.cn###jq_youxi
 ||qselic.top^
 ||qwdbsjnql.com^
 ||rabuagc.cn^
+||rdbousn.cn^
 ||rddsjx.xyz^
 ||rdufuxr.icu^
 ||relafp.xyz^
@@ -4297,6 +4336,7 @@ newduba.cn###jq_youxi
 ||uxtruz.xyz^
 ||uyq3ruf.icu^
 ||v1gyb.xyz^
+||vcydyzd.icu^
 ||vhjxrj.xyz^
 ||vmdlxj.xyz^
 ||vnfsbl.xyz^
@@ -4305,10 +4345,12 @@ newduba.cn###jq_youxi
 ||vrr.name^
 ||vvdzucs.cn^
 ||vvwuqxp.icu^
+||vwfppr.xyz^
 ||vxhtxt.xyz^
 ||wddsva0.com^
 ||wnzle.com^
 ||wsdfame.com^
+||wslbahe.top^
 ||wubizigeng.com^
 ||wuye3d.com^
 ||wyq3rum.icu^
@@ -4331,6 +4373,7 @@ newduba.cn###jq_youxi
 ||xtbzff.xyz^
 ||xukang09.cn^
 ||xukou.net^
+||yegziyf.cn^
 ||yh18h8s.com^
 ||yhhnjg.com^
 ||yjnhndt.com^
@@ -11942,6 +11985,7 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||inszu.com/js/qian/
 ||inte.sogou.com^
 ||iocoder.cn/alert/js/alert.js
+||ip.sb/assets/images/*_ads.
 ||ip138.com/banner/
 ||ip138.com/idc/
 ||ipeen.com.tw/js/frame/ad-actions.js
@@ -12522,6 +12566,7 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||mitbbs.ca/ad_
 ||mitbbs.com/ad_
 ||miwifi.com^*ads/
+||mixer.sina.cn^
 ||mixer.video.iqiyi.com/jp/mixin/resources/
 ||mkd88.cc/16.32.jpg
 ||mm.nwell.net^
@@ -12810,6 +12855,7 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||picsuperfast.xyz/imageUpload/images/*AD_
 ||picuphost.com^$domain=mmload.info
 ||picyq.com/index.php/Home/run/get_ad/
+||pierrebotton.com/global/
 ||piimg.com/508806/d53a8d13a40f814d.gif
 ||piimg.com^$domain=kisssub.org|lsjsoso.me
 ||pincai.com/js/pubuliu.
@@ -13156,6 +13202,7 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||shulihua.net/js/yegonggao.js
 ||shuowan.com/Public/shuo/20160119/569dafddd13be.jpg
 ||sihbb.com/yang/
+||sina.cn/check?
 ||sina.cn/cm/sinaads_
 ||sina.cn/interface/*_game_wap_home_mid_list_in.
 ||sina.cn^*/impress?
@@ -13665,7 +13712,6 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||xghylt.com/api.php?mod=ad&adid=
 ||xhymsq.com/data/attachment/portal/
 ||xiacaidd.com/xiacai/ad/
-||xiakedy.org/js/jquery.
 ||xianshuabao.com/ashx/pt.ashx?cmd=record&filter=&order=all&
 ||xiaobaipan.com/tb.html
 ||xiaobi*.com/layer/layer.js
@@ -16091,6 +16137,7 @@ cnblogs.com##.c_ad_block
 121xz.com##.c_money
 kdnet.net##.c_spread
 lenniu.com##.caClass
+sina.cn##.callApp_fl_btn
 hao.360.cn##.cangbao_redbags
 duba.com##.car_ads
 pixabay.com##.carbon-ad
@@ -16773,7 +16820,6 @@ hupu.com##.hupu-shihuo-hot
 hupu.com##.hupushihuo
 hutool.cn##.hutool-top-ad
 iqiyi.com##.hwLink
-xiakedy.org##.hy-details-qrcode
 warting.com##.hz2
 52pk.com##.hz_adv
 99.com.cn##.hzh_botleft
@@ -17570,6 +17616,7 @@ portablesoft.org##.rightside > :nth-child(n+2)
 5588.tv##.ringhttu
 biz.ifeng.com##.riodel
 xxxxx520.com##.ripro_gg_wrap
+ip.sb##.rivencloud_ads
 iqiyi.com##.rm-header-ad
 iqiyi.com##.rm-logo-ad
 ithome.com##.rm-modal-bg
@@ -17963,6 +18010,7 @@ meizhou.com##.top + .w1000
 2345.com##.top > .fred
 toolfk.com##.top > div[style="font-size: 12px;text-align: center;margin-top:6px;"]
 midifan.com##.top-aaa
+jin10.com##.top-ad
 10jqka.com.cn##.top-ad-box
 baidu.com##.top-ad-cont
 vansky.com##.top-ad-link
@@ -21788,6 +21836,7 @@ yunpan.com#@#.share-new
 189.cn#@#.share-panel
 youdao.com#@#.share-text
 aiqicha.baidu.com,xinmin.cn#@#.share-title
+iyf.tv#@#.share-top
 yunpan.com#@#.share-wrapper
 wantgoo.com#@#.shareBtns
 cger.com,pcsoft.com.cn#@#.share_box
@@ -21924,6 +21973,7 @@ fqsousou.com,kengso.com#@#.user-share
 @@||geo.query.yahoo.com^$xmlhttprequest,domain=tw.autos.yahoo.com|tw.buy.yahoo.com
 @@||gias.jd.com/js/td.js
 @@||gifshow.com/rest/wd/common/log/collect/acfun
+@@||gk.sina.cn/v1/gkmatch?
 @@||google-analytics.com/analytics.js$domain=citytalk.tw|ebb.io|komica.org|lenovo.com.cn|linetv.tw|maminews.com.tw|support.amd.com
 @@||google-analytics.com/plugins/ua/ec.js$domain=lenovo.com.cn
 @@||google-analytics.com/plugins/ua/linkid.js$domain=support.amd.com
