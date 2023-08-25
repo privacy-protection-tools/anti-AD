@@ -409,6 +409,7 @@ return [
     "sqdd.myapp.com" => 0, // #814
     "eco.taobao.com" => 0, // #815
     "input.shouji.sogou.com" => 0, // #822
+    "ccmeng.com" => 0, // #830
     "iflow.uczzd.cn" => 0, // uc搞笑段子
     "m.uczzd.cn" => 0, // uc搞笑段子
     "puds.ucweb.com" => 0, // uc小游戏
