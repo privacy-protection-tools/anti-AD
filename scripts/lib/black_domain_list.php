@@ -1360,6 +1360,9 @@ return [
     "beizi.biz" => [
         "sdk.beizi.biz", // #813
     ],
+    "mobileservice.cn" => [
+        "zxid-m.mobileservice.cn", // #816
+    ],
 
     "2mdn-cn.net" => ["2mdn-cn.net"],
     "admob-cn.com" => ["admob-cn.com"],
