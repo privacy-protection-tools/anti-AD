@@ -1362,6 +1362,17 @@ return [
     "mobileservice.cn" => [
         "zxid-m.mobileservice.cn", // #816
     ],
+    "kakao.com" => [
+        "play.kakao.com", // #833
+    ],
+    "kgslb.com" => [
+        "p1-play.kgslb.com", // #833
+    ],
+    "edge4k.com" => [
+        "p1-play.edge4k.com", // #833
+        "p2-play.edge4k.com", // #833
+    ],
+    
 
     "2mdn-cn.net" => ["2mdn-cn.net"],
     "admob-cn.com" => ["admob-cn.com"],
