@@ -261,6 +261,7 @@ $ARR_WHITE_RULE_LIST = array(
     '@@||adverts.1foo.com^' => 1, // #782
     '@@||track.4px.com^' => 1, // #796
     '@@||ads.smartmidea.net^' => 1, // #807
+    '@@||widget.ezidebit.com.au^' => 1, // #834
 );
 
 //针对上游赦免规则anti-AD不予赦免的规则，即赦免名单的黑名单
