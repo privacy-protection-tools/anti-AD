@@ -146,7 +146,6 @@ return [
         "lc-push.zhihu.com",
         "sugar.zhihu.com",
         "appcloud2.in.zhihu.com",
-        "appcloud2.zhihu.com",
         "zhihu-web-analytics.zhihu.com",
         "event.zhihu.com",
         "udd1i5.zhihu.com", #395
