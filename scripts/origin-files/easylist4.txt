@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202311011736
+! Version: 202311041636
 ! Title: EasyPrivacy
-! Last modified: 01 Nov 2023 17:36 UTC
+! Last modified: 04 Nov 2023 16:36 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -16,10 +16,7 @@
 ! 
 ! -----------------General tracking systems-----------------!
 ! *** easylist:easyprivacy/easyprivacy_general.txt ***
-&action=confection_send_data&
 &action=js_stats&
-&action=js_stats_
-&callback=hitStats_
 &ev=PageView&
 &event=view&
 &EventType=DataDealImpression&
@@ -164,7 +161,6 @@
 /adm_tracking.js
 /adobe-analytics-$domain=~business.adobe.com
 /adobe-analytics.js
-/adobe-analytics/*$script
 /adobe-analytics2.js
 /adobe-prd/*
 /adobe.visitor-
@@ -439,12 +435,10 @@
 /beacon/user-data
 /beacon/v1/batch?
 /beacon?cust=
-/beaconconfigs/*
-/beacons-external.
 /beacons?data=
 /behavior/web/pv?
-/benchmarketingsmarttag/*
-/better-analytics/*
+/benchmarketingsmarttag/get?
+/better-analytics/js/loader.php
 /bf.gif?ac=
 /bineos.min.js
 /bing-bat.js
@@ -457,20 +451,12 @@
 /blank.gif?*%
 /blank.gif?*&
 /blogcounter.js
-/bluekai.
-/bluekai/*
-/blueKaiAnalytics.
-/bluekaicookieinfo.
-/BlueKaiPixel/*
-/bluetracker/*
-/bm-bam-trk.
+/bluekai.js
 /bom/analytics/*
 /boomerang-latest.js
 /boomerang-latest.min.js
-/boomerang-minified-
 /boomerang.js
 /boomerang/beacon
-/boomLogger.
 /boomr.js
 /boost-sd-analytic.js
 /boost_stats.php
@@ -478,21 +464,19 @@
 /botd.gif?
 /bower_components/fp/fp.js
 /bpsma.js
-/branchMetrics.
+/branchMetrics.js
 /brandAnalytics.js
-/brightcove/tracking/*
 /brightedge.js
 /brightspot/analytics/*
 /brightTag-min.js
 /browserinfo?f.sid=
-/bsp-analytics.
+/bsp-analytics.min.
 /bstat.js
 /btrack.php?
-/buffermetrics/*
 /bugcounter.php?
-/bundle.tracking.
+/bundle-analytics.js
+/bundle.tracking.js
 /bundle/analytics.
-/bundles/metrics.
 /bunsen/events/*
 /busting/facebook-tracking/*
 /busting/google-tracking/*
@@ -518,7 +502,7 @@
 /cdn-cgi/zaraz/*
 /cdn_cookie_service.html
 /cedexis.js
-/cedexis/*
+/cedexis.radar.js
 /census/RecordHit
 /certifica-js14.js
 /certifica.js
@@ -576,30 +560,23 @@
 /clickrecord.php?
 /clicks/servlet/*
 /clickscript.js
-/clickstats.
+/clickstats.php
 /clickstream.aspx?
 /clickstream.js
 /clickstream/visit?
-/clicktag.
-/ClickTail.
-/clicktale-
-/clicktale.
-/clicktale/*
-/clicktale_
-/clicktalecdn.
-/ClickTrack.
+/clicktag.js
+/ClickTail.js
+/clicktale.js
+/ClickTrack.js
 /clicktrack?
-/clicktracker.
-/clicktracking.
-/clicktracking/*
+/clicktracker.js
+/clicktracker.php
+/clicktracking.js
 /clicky.js
 /client-metrics/?target
-/client.rum.
 /client_pathlog.asp?
 /clientele/reports/*
-/clientEventLog/*
-/clientlib-analytics-
-/clientPageLog/*
+/clientlib-analytics-core.
 /clientstat?
 /cls_report?
 /cms.gif?
@@ -607,7 +584,7 @@
 /cmslog.dll?
 /cn-fe-stats/*
 /cn-track?
-/cnstats.
+/cnstats.js
 /cnstats/*
 /cnt-combined.php?
 /cnt.aspx?
@@ -616,11 +593,10 @@
 /cnt/cnt.php?
 /cnt/start.php?
 /cnt_js.php?
-/cntpixel.
 /cnvtr.js
 /cocoon-master/lib/analytics/access.
-/CofinaHits.
-/cohesion-latest.
+/CofinaHits.js
+/cohesion-latest.min.js
 /coinhive.min.js
 /coinimp-cache/*
 /collect.gif?
@@ -942,7 +918,7 @@
 /fp/tags.js
 /fp/top_fp.
 /fp2.compressed.js
-/fp2.min.js
+/fp2.min.js$domain=~spweb.auction.co.kr
 /fp_204?
 /fpc/cookie_js.php
 /fpcookie?
@@ -2018,7 +1994,7 @@
 /shareCounts.
 /shared/sentry/*
 /sherlock.gif?
-/shinystat.
+/shinystat.cgi
 /shinystat_
 /shopify-boomerang-
 /shopify-event.gif?
@@ -2405,6 +2381,7 @@
 /tracking-cookie.js
 /tracking-events.js
 /tracking-links.js
+/tracking.asmx/AddTrack?
 /tracking.jsp?sid=
 /tracking/airdog
 /tracking/common.html
@@ -2515,7 +2492,6 @@
 /uds/stats?
 /uecomscore_cmp_event_mundo.js
 /uem-ep.js
-/ui/analytics/*
 /uisprime/track
 /umami.js
 /umg-analytics/*
@@ -2561,6 +2537,7 @@
 /vecapture.js
 /vendor/analytics.js
 /vendor/analytics/*
+/vendor/cedexis/*
 /vendor/xtcore.js
 /vestigo/v1/measure
 /vglnk.js
@@ -2754,6 +2731,7 @@
 ://analytics.*/pageview/
 ://beacon.*/track
 ://blue.*/script.js
+://client.rum.
 ://collect.*/pageview
 ://collector.*/event
 ://elqtrk.
@@ -3150,6 +3128,7 @@ _mongo_stats/
 ||adstk.io^
 ||adultium.com^
 ||agkn.com^
+||agma-analytics.de^
 ||allvideometrika.com^
 ||alpha1trk.com^
 ||altopd.com^
@@ -3598,7 +3577,7 @@ _mongo_stats/
 ||admantx.com^$third-party
 ||admaster.com.cn^$third-party
 ||admetric.io^$third-party
-||adobedtm.com^$third-party,domain=~adobe.com
+||adobedtm.com^$third-party,domain=~adobe.com|~costco.com
 ||adobetag.com^$third-party
 ||adobetarget.com^$third-party
 ||adoftheyear.com^$third-party
@@ -5191,6 +5170,7 @@ _mongo_stats/
 ||portfold.com^$third-party
 ||posst.co^$third-party
 ||postaffiliatepro.com^$third-party
+||posthog.com^$third-party
 ||prchecker.info^$third-party
 ||prebidmanager.com^$third-party
 ||precisioncounter.com^$third-party
@@ -9438,6 +9418,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||clickiocdn.com/utr/
 ||clicks.dealer.com^
 ||clicks.tyuwq.com^
+||clicktalecdn.sslcs.cdngc.net^
 ||clickthru.lefbc.com^$third-party
 ||clicktime.symantec.com^$script,third-party
 ||clicktracker.iscan.nl^
@@ -9828,6 +9809,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||ex.co/content/monetization/legacy-pixels/
 ||exacttarget.com^$~subdocument,third-party
 ||excite.ie/?click_in=
+||exitgames.com/photon/m/?ping
 ||exitintel.com/log/$third-party
 ||expedia.com/static/default/default/scripts/siteAnalytics.js
 ||expedia.com/vaclog/
@@ -10862,6 +10844,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||stats.mpthemes.net^
 ||stats.nebula.fi^
 ||stats.netbopdev.co.uk^
+||stats.netdriven.com^
 ||stats.olark.com^
 ||stats.ozwebsites.biz^
 ||stats.phoenix-widget.com^
@@ -12844,6 +12827,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||beacon.shutterfly.com^
 ||beacon.walmart.com^
 ||beacon.wikia-services.com^
+||bearblog.dev/hit/
 ||beforeitsnews.com/core/ajax/counter/count.php^
 ||behance.net/log
 ||behance.net/v2/logs
@@ -12895,6 +12879,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||carsandbids.com/a/p
 ||cbc.ca/g/stats/
 ||centerblog.net/stats.js
+||ch3ngl0rd.com/hit/
 ||change.org/api-proxy/-/bandit/pull
 ||change.org/api-proxy/-/et
 ||change.org/api-proxy/-/event_tracker
@@ -13068,6 +13053,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||eurogamer-uk.eurogamer.net^
 ||event-api.reverb.com^
 ||event-collector.moviesanywhere.com^
+||event.platform.tunein.com^
 ||eventlog.jackpot.de^
 ||events-prod.autolist.com^
 ||events-tracker.deliveroo.net^
@@ -13901,6 +13887,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||tradingview.com/ping
 ||treatment.grammarly.com^
 ||tredir.go.com^
+||tripadvisor.*/BALinkImpressionTracking/
 ||tripadvisor.*/CookiePingback?
 ||tripadvisor.*/GARecord^
 ||tripadvisor.*/MetricsAjax
@@ -13959,6 +13946,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||video.mobile.yahoo.com/log|$xmlhttprequest
 ||views.arabnews.com^
 ||views.asura.gg^
+||views.asurascans.com^
 ||vimeo.com/ablincoln/
 ||vimeocdn.com/js_opt/logging_combined.min.js
 ||visualstudio.com/v2/track
@@ -31834,6 +31822,7 @@ arketing.indianadunes.com^
 ||2dehands.be/px/
 ||aa.hwigroup.com^$domain=hardware.info
 ||analytics.rambla.be^
+||api.rtl.nl/monitoring/
 ||bc34.wijnvoordeel.nl^
 ||bol.com/tracking/
 ||businessinsider.nl^*/tr.php
@@ -32609,6 +32598,7 @@ arketing.indianadunes.com^
 @@||c.lytics.io/api/tag/$script,domain=time.com
 @@||c.paypal.com/da/r/fb.js$script
 @@||c.webtrends-optimize.com/acs/$script,domain=tvlicensing.co.uk
+@@||canadacomputers.com/templates/ccnew/assets/js/jquery.browser-fingerprint-$~third-party
 @@||cdc.gov/jscript/metrics/adobe/launch/$script,~third-party
 @@||cdn-net.com/cc.js
 @@||cdn.heapanalytics.com^$script,domain=libertymutual.com
@@ -32703,6 +32693,7 @@ arketing.indianadunes.com^
 @@||ipapi.co/json/$xmlhttprequest,domain=168.dailymaverick.co.za|audius.co
 @@||ipinfo.io/?token=$domain=assurancemortgage.com|webtv.ert.gr
 @@||ipv4.seeip.org/jsonip$domain=empire-streaming.app
+@@||join.southerncross.co.nz/quote/_assets/js/sx/app/helpers/gtm.js
 @@||js-agent.newrelic.com^$domain=alliantcreditunion.com|giftcards.com|kapwing.com
 @@||js.captcha-display.com/xhr_tag.js$script,domain=auth.garena.com
 @@||js.datadome.co/tags.js$script,domain=sso.garena.com
