@@ -1372,6 +1372,10 @@ return [
         "p1-play.edge4k.com", // #833
         "p2-play.edge4k.com", // #833
     ],
+    "trackingio.com" => [
+        "trackingio.com", // #857
+        "www.trackingio.com", // #857
+    ],
     
 
     "2mdn-cn.net" => ["2mdn-cn.net"],
