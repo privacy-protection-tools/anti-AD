@@ -1189,6 +1189,12 @@ return [
     "weibo.com" => [
         "fastimage.uve.weibo.com", // #629
     ],
+    "telecome.cn" => [
+        "telecome.cn", // #844
+    ],
+    "unioncom.cc" => [
+        "unioncom.cc", // #844
+    ],
     "50union.com" => [
         // #644
         "50union.com",
