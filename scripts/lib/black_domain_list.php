@@ -1382,7 +1382,9 @@ return [
         "trackingio.com", // #857
         "www.trackingio.com", // #857
     ],
-    
+    "mihoyo.com" => [
+        "hkrpg-log-upload.mihoyo.com", // #843
+    ], 
 
     "2mdn-cn.net" => ["2mdn-cn.net"],
     "admob-cn.com" => ["admob-cn.com"],
