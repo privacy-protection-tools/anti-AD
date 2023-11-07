@@ -414,6 +414,7 @@ return [
     "api-secure.solvemedia.com" => 0, // #827
     "code.sms.mob.com" => 0, // #855
     "loginfra.com" => 0, // #826
+    "api.open.uc.cn" => 0, // #845
     "iflow.uczzd.cn" => 0, // uc搞笑段子
     "m.uczzd.cn" => 0, // uc搞笑段子
     "puds.ucweb.com" => 0, // uc小游戏
