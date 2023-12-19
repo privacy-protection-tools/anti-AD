@@ -235,7 +235,7 @@ return [
     ],
 
     "kingsoft-office-service.com" => ["abroad-ad.kingsoft-office-service.com"],
-    "amap.com" => ["logs.amap.com", "dualstack-logs.amap.com"],
+    "amap.com" => ["logs.amap.com", "dualstack-logs.amap.com", "v6-adashx.ut.amap.com"],
     "tt114.net" => ["tt114.net"], //例如http://www.tt114.net/html/tlink.html
     "taobao.com" => [
         "ip.taobao.com",
@@ -244,6 +244,7 @@ return [
         "acs.m.taobao.com",
         "acs.wapa.taobao.com",
         "openjmacs.m.taobao.com",
+        "v6-adashx.ut.taobao.com", // #859
     ],
     "aiclk.com" => ["aiclk.com"],
     "5ubei.com" => ["5ubei.com"], //统计类例如http://dnm.5ubei.com:7098/hlink.html
@@ -1195,6 +1196,19 @@ return [
     "unioncom.cc" => [
         "unioncom.cc", // #844
     ],
+    "hubcloud.com.cn" => [
+        "hubcloud.com.cn", // #859
+        "api.htp.hubcloud.com.cn", //#859
+        "res1.hubcloud.com.cn", // #859
+        "v.adx.hubcloud.com.cn", // #859
+    ],
+    "cainiao.com" => [
+        "v6-adashx.ut.cainiao.com", //#859
+    ],
+    "ele.me" => [
+        "v6-adashx.ut.ele.me", //#859
+    ],
+    
     "50union.com" => [
         // #644
         "50union.com",
@@ -1364,6 +1378,7 @@ return [
     ],
     "beizi.biz" => [
         "sdk.beizi.biz", // #813
+        "api-htp.beizi.biz", // #859
     ],
     "mobileservice.cn" => [
         "zxid-m.mobileservice.cn", // #816
@@ -1382,9 +1397,32 @@ return [
         "trackingio.com", // #857
         "www.trackingio.com", // #857
     ],
+    "quark.cn" => [
+        "applog.lc.quark.cn", // #859
+        "adtrack.quark.cn", // #859
+        "track.lc.quark.cn", // #859
+    ],
+    "aligames.com" => [
+        "cddp-track.aligames.com", // #859
+    ],
+    "aispeech.com" => [
+        "log.aispeech.com", // #859
+    ],
+    "xiaomi.net" => [
+        "sentry.d.xiaomi.net", // #859
+    ],
+    "wps.cn" => [
+        "co-sentry.wps.cn", // #859
+    ],
+    "zdmimg.com" => [
+        "sentry-monitor-new.zdmimg.com", // #859
+    ],
     "mihoyo.com" => [
         "hkrpg-log-upload.mihoyo.com", // #843
-    ], 
+    ],
+    "volceapplog.com" => [
+        "volceapplog.com", // #859
+    ],
 
     "2mdn-cn.net" => ["2mdn-cn.net"],
     "admob-cn.com" => ["admob-cn.com"],
