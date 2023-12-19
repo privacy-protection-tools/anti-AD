@@ -415,6 +415,8 @@ return [
     "code.sms.mob.com" => 0, // #855
     "loginfra.com" => 0, // #826
     "api.open.uc.cn" => 0, // #845
+    "statsig.com" => 0, // #869, #860
+    "api.statsig.com" => 0, // #869, #860
     "iflow.uczzd.cn" => 0, // uc搞笑段子
     "m.uczzd.cn" => 0, // uc搞笑段子
     "puds.ucweb.com" => 0, // uc小游戏
