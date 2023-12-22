@@ -231,7 +231,7 @@ return [
     "kpstaticbj.wx.ckjr001.com" => 0, // #433
     "www.supportxmr.com.cdn.cloudflare.net" => 0, // #436
     "www.supportxmr.com" => 0, // #436
-    "supportxmr.com" => 0, // #436
+    "supportxmr.com" => 0, // #436, #490
     "pool.supportxmr.com" => 0, // #436
     "pool-de.supportxmr.com" => 0, // #436
     "minergate.com" => 0, // #439
@@ -270,9 +270,8 @@ return [
     "fp.tongdun.net" => 0, // #480
     "kaptcha.com" => 0, // #481
     "dfcfw.com" => 0, // #482
-    "msedge.net" => 0, // #478
+    "msedge.net" => 0, // #478, #671
     "ecard.shenzhentong.com" => 0, // #486
-    "supportxmr.com" => 0, // #490
     "minexmr.com" => 0, // #490
     "appdownload.alicdn.com" => 0, // #491
     "pv.sohu.com" => 0, // #493
@@ -356,7 +355,6 @@ return [
     "ctrip.com" => 0, #666
     "sv.aq.qq.com" => 0, #664
     "nmobi.kuwo.cn" => 0, #665
-    "msedge.net" => 0, #671
     "govdelivery.com" => 0, #674
     "meipian7.cn" => 0, #672
     "jimdo.com" => 0, #675

@@ -1005,7 +1005,7 @@ return [
         "windows.pkkjxs.cn",
     ],
     "telegram-cn.org" => [
-        #431
+        #431, #616
         "telegram-cn.org",
         "www.telegram-cn.org",
     ],
@@ -1066,8 +1066,8 @@ return [
         "pubsub02.oray.net",
     ],
     "bcebos.com" => [
-        // #489
-        "staticsns.cdn.bcebos.com",
+        "staticsns.cdn.bcebos.com", // #489
+        "mobads-pre-config.cdn.bcebos.com", // #784
     ],
     "pglstatp-toutiao.com" => [
         // #494
@@ -1172,14 +1172,8 @@ return [
     "teledai.com" => [
         "teledai.com", // #616
     ],
-    "telegramim.org" => [
-        "telegramim.org", // #616
-    ],
     "telegmcn.org" => [
         "telegmcn.org", // #616
-    ],
-    "telegram-cn.org" => [
-        "telegram-cn.org", // #616
     ],
     "ali213.net" => [
         "click.ali213.net", // #633
@@ -1200,6 +1194,7 @@ return [
         "hubcloud.com.cn", // #859
         "api.htp.hubcloud.com.cn", //#859
         "res1.hubcloud.com.cn", // #859
+        "sdktmp.hubcloud.com.cn", // #813
         "v.adx.hubcloud.com.cn", // #859
     ],
     "cainiao.com" => [
@@ -1345,9 +1340,6 @@ return [
     "126.net" => [
         "ads.music.126.net", // #784
     ],
-    "bcebos.com" => [
-        "mobads-pre-config.cdn.bcebos.com", // #784
-    ],
     "xhscdn.com" => [
         "ads-img-al.xhscdn.com", // #784
         "ads-img-qc.xhscdn.com", // #793
@@ -1372,9 +1364,6 @@ return [
     ],
     "pangolin-sdk-toutiao1.com" => [
         "pangolin-sdk-toutiao1.com", // #800
-    ],
-    "hubcloud.com.cn" => [
-        "sdktmp.hubcloud.com.cn", // #813
     ],
     "beizi.biz" => [
         "sdk.beizi.biz", // #813
