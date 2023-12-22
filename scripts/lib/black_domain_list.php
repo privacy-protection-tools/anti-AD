@@ -129,7 +129,6 @@ return [
     ],
     "youdao.com" => ["corp.youdao.com"],
     "crsspxl.com" => ["crsspxl.com"],
-    "talkingdata.net" => ["talkingdata.net"],
     "kejet.net" => ["kejet.net"],
     "moad.cn" => ["moad.cn"],
     "images9999.com" => ["images9999.com"],
