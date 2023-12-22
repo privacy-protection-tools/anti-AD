@@ -41,6 +41,12 @@ return [
         "aedns.weixin.qq.com", // #764
         "date.ab.qq.com", // #764
         "report.nfa.qq.com", // #764
+        "wnsmusic.qq.com", // #847
+        "tmeadbak.y.qq.com", // #847
+        "ugcup.music.qq.com", // #847
+        "ad.tencentmusic.com", // #847
+        "ipv6.kg.qq.com", // #847
+        "tmeadbak.y.qq.com", // #847
     ],
     "openstorage.cn" => ["iflyad.bjb.openstorage.cn"],
     "analysys.cn" => ["analysys.cn"],
@@ -244,6 +250,7 @@ return [
         "acs.wapa.taobao.com",
         "openjmacs.m.taobao.com",
         "v6-adashx.ut.taobao.com", // #859
+        "wcp.taobao.com", // #847
     ],
     "aiclk.com" => ["aiclk.com"],
     "5ubei.com" => ["5ubei.com"], //统计类例如http://dnm.5ubei.com:7098/hlink.html
@@ -323,6 +330,12 @@ return [
         "stnetsdk.vivo.com.cn",
         "stsdk.vivo.com.cn",
         "vcardsdkservice.vivo.com.cn",
+        "h5.vivo.com.cn", // #847
+        "browser.vivo.com.cn", // #847
+        "zhan.vivo.com.cn", // #847
+        "onewsvod.com", // #847
+        "yidianzixun.com", // #847
+        "ads-marketing-vivofs.vivo.com.cn", // #847
     ],
     "vnet.cn" => ["vnet.cn"], //互联星空
     "wannaplay.cn" => ["h5.wannaplay.cn"], //游戏广告
@@ -865,7 +878,13 @@ return [
         // #253
         "c4frc.info",
     ],
-    "163.com" => ["crash.163.com"],
+    "163.com" => [
+        "crash.163.com",
+        "httpdns.music.163.com", // #847
+        "netapm.music.163.com", // #847
+        "ipv6.music.163.com", // #847
+        "ipv4.music.163.com", // #847
+    ],
     "360.cn" => ["mclean.f.360.cn", "vconf.f.360.cn"],
     "gsgsr.xyz" => ["gsgsr.xyz", "www.gsgsr.xyz", "gdp.gsgsr.xyz"],
     "zmzfile.com" => [
@@ -1073,8 +1092,10 @@ return [
         "pglstatp-toutiao.com",
     ],
     "netease.com" => [
-        // #496
-        "mam6.netease.com",
+        "mam6.netease.com", // #496
+        "httpdns-sdk.n.netease.com", // #847
+        "httpdns.n.netease.com", // #847
+        "nstool.netease.com", // #847
     ],
     "cibntv.net" => [
         // #507
@@ -1338,6 +1359,7 @@ return [
     ],
     "126.net" => [
         "ads.music.126.net", // #784
+        "iadmusicmat.music.126.net", // #847
     ],
     "xhscdn.com" => [
         "ads-img-al.xhscdn.com", // #784
@@ -1415,6 +1437,31 @@ return [
         "nishub1.10010.com", // #866
         "enrichgw.10010.com", // #866
     ],
+    "inkuai.com" => [
+        "apidns.kwd.inkuai.com", // #847
+    ],
+    "httpdns.pro" => [
+        "kuaishou.httpdns.pro", // #847
+        "httpdns.pro", // #847
+    ],
+    "ksyun.com" => [
+        "hdns.ksyun.com", // #847
+    ],
+    "qq.com.cn" => [
+        "dns.weixin.qq.com.cn", // #847
+    ],
+    "cdnhwc2.com" => [
+        "httpdns.c.cdnhwc2.com", // #847
+    ],
+    "alicdn.com" => [
+        "httpdns.alicdn.com", // #847
+    ],
+    "onethingpcs.com" => [
+        "natdetection.onethingpcs.com", // #847
+    ],
+    "kuaishouzt.com" => [
+        "kuaishouzt.com", // #847
+    ],
 
     "2mdn-cn.net" => ["2mdn-cn.net"],
     "admob-cn.com" => ["admob-cn.com"],
@@ -1446,7 +1493,6 @@ return [
     "1001movies.com" => ["1001movies.com", "www.1001movies.com"],
     "1008691.com" => ["1008691.com", "www.1008691.com"],
     "123counters.com" => ["123counters.com", "www.123counters.com"],
-    "crash.163.com" => ["crash.163.com", "www.crash.163.com"],
     "166f.com" => ["166f.com", "www.166f.com"],
     "17chezhan.com" => ["17chezhan.com", "www.17chezhan.com"],
     "17youzi.com" => ["17youzi.com", "www.17youzi.com"],
