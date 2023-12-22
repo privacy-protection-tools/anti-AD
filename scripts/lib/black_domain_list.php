@@ -1412,6 +1412,10 @@ return [
     "volceapplog.com" => [
         "volceapplog.com", // #859
     ],
+    "10010.com" => [
+        "nishub1.10010.com", // #866
+        "enrichgw.10010.com", // #866
+    ],
 
     "2mdn-cn.net" => ["2mdn-cn.net"],
     "admob-cn.com" => ["admob-cn.com"],
