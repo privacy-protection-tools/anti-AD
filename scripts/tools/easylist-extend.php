@@ -268,6 +268,8 @@ $ARR_WHITE_RULE_LIST = array(
     '@@||ad.nl^' => 1, // #841
     '@@||api.slightcommunicativeinterconnectedness.xyz^' => 1, // #873
     '@@||openxlab.org.cn^' => 1, // #876
+    '@@||tracking.dpd.de^' => 1, // #877
+    
 );
 
 //针对上游赦免规则anti-AD不予赦免的规则，即赦免名单的黑名单
