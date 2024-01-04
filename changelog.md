@@ -1,5 +1,8 @@
 # anti-AD change log
 
+#### v4.5.2 (2022.12.15)
+- 项目代码切换到PHP 8，不完全兼容旧版本PHP
+
 #### v4.5.1 (2021.05.31)
 - 移动构建脚本到[另一个分支](https://github.com/privacy-protection-tools/anti-AD/tree/adlist-maker)，让默认分支看起来更干净
 - github Actions的针对性优化，优化自动构建逻辑
