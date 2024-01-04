@@ -6,8 +6,6 @@
 
 本工具是通过域名解析层来屏蔽广告和保护隐私的，其将各大著名的hosts，ad filter lists，adblock list等的列表进行合并去重，再进行一系列的抽象化，例如主动剔除失效域名、easylist优化模糊匹配、增强的黑白名单机制等措施，最终生成期望的高命中率列表。
 
-**请注意：本项目代码已切换到PHP 8，有问题[请告诉我](https://github.com/privacy-protection-tools/anti-AD/issues/new/choose) --2022.12.15**
-
 ## 快速使用(使用官网地址，速度更稳定)
 
 | 文件 	| raw 	| 官网地址 	| 适用于 	|
@@ -22,6 +20,9 @@
 | `anti-ad-smartdns.conf` 	| [link](https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-smartdns.conf) 	| [官网地址🚀](https://anti-ad.net/anti-ad-for-smartdns.conf) | SmartDNS ([白名单](https://raw.githubusercontent.com/privacy-protection-tools/dead-horse/master/anti-ad-white-for-smartdns.txt)) 	|
 
 ## 版本历史
+
+#### v4.5.2 (2022.12.15)
+- 项目代码切换到PHP 8，不完全兼容旧版本PHP
 
 #### v4.5.1 (2021.05.31)
 - 移动构建脚本到[另一个分支](https://github.com/privacy-protection-tools/anti-AD/tree/adlist-maker)，让默认分支看起来更干净
