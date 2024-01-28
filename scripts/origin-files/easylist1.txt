@@ -1,9 +1,9 @@
-! Checksum: 0doQEUwkPLhznTOwcX+OkA
-! Diff-Path: ../patches/224_optimized/224_optimized-s-1706182625-3600.patch
+! Checksum: bqcnFqBdfVKyCqdHPbgTbg
+! Diff-Path: ../patches/224_optimized/224_optimized-s-1706459788-3600.patch
 ! Title: AdGuard Chinese filter (Optimized)
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.9.16
-! TimeUpdated: 2024-01-25T11:32:34+00:00
+! Version: 2.1.9.34
+! TimeUpdated: 2024-01-28T16:32:19+00:00
 ! Expires: 12 hours (update frequency)
 #%#var AG_onLoad=function(func){if(document.readyState==="complete"||document.readyState==="interactive")func();else if(document.addEventListener)document.addEventListener("DOMContentLoaded",func);else if(document.attachEvent)document.attachEvent("DOMContentLoaded",func)};
 #%#var AG_removeElementById = function(id) { var element = document.getElementById(id); if (element && element.parentNode) { element.parentNode.removeChild(element); }};
@@ -3720,6 +3720,7 @@ newduba.cn###jq_youxi
 ##.ad_footerbanner
 ##.ad_headerbanner
 ##.ad_hf
+##.ad_pc
 ##.ad_right_1
 ##.ad_right_2
 ##.ad_thread
@@ -3972,6 +3973,7 @@ newduba.cn###jq_youxi
 ##.pagecon + .ad1
 ##.partialViewSlider-outerwrapper
 ##.pasuAD
+##.pause-ad
 ~dongman8.com##.pc_acmsd
 ##.pccb > .ng-star-inserted
 ##.pcd_ad
@@ -4124,6 +4126,7 @@ newduba.cn###jq_youxi
 ##a[href*=".com?intr="]
 ~shenguangai.com##a[href*=".shenguangai.com/"]
 ##a[href*=".taobao.com"] > .top1
+##a[href*=".taobao.com"] > img[src*=".tucao."]
 ~umeng.com##a[href*=".umeng.com"]:not([href="http://www.umeng.com/"]) > img
 ##a[href*=".xyz:"] > img[src*=".qlogo.cn"]
 ##a[href*="/23.224.188."]
@@ -4262,9 +4265,11 @@ newduba.cn###jq_youxi
 ##a[href*=".sudun.com/"]
 ##a[href*="/abg0066.com"]
 ##a[href*="/dsf188.cc"]
+##a[href*="/dsf66.cc"]
 ##a[href*="/dsf88.cc"]
 ##a[href*="/hgcool360.top"]
 ##a[href*="/hgcoolaa.top"]
+||052db.website^
 ||055g.com^
 ||05826.online^
 ||05pg9z.com^
@@ -4290,6 +4295,7 @@ newduba.cn###jq_youxi
 ||1kfnsra.com^
 ||1kqfzwd.com^
 ||1mxabnt.com^
+||1ng2l.space^
 ||1qkmxbt.com^
 ||1sk27.fun^
 ||1t24.com^$third-party
@@ -4315,6 +4321,7 @@ newduba.cn###jq_youxi
 ||415677.com^
 ||44180055.cn^
 ||44jui.top^
+||4imk5.online^
 ||4wfe3.icu^
 ||53ynh.xyz^
 ||5698tp.com^
@@ -4357,6 +4364,7 @@ newduba.cn###jq_youxi
 ||9g659.xyz^
 ||9i8i.com^
 ||9j9zo.cyou^
+||9t51o.icu^
 ||a4bj6.xyz^
 ||a99hz.space^
 ||aa889988aa.com^
@@ -4366,6 +4374,7 @@ newduba.cn###jq_youxi
 ||aapubcti.xyz^
 ||abcd789.com^
 ||abe1.cn^
+||abqdgu.xyz^
 ||acemof.top^
 ||acsegt86.shop^
 ||actrqdr.cn^
@@ -4484,6 +4493,7 @@ newduba.cn###jq_youxi
 ||bpztsxx.com^
 ||bqjqripb.xyz^
 ||bqxexj.xyz^
+||brookssa.com^
 ||brorzpj.cn^
 ||bsvkfwth.xyz^
 ||btfjjwt.xyz^
@@ -4524,6 +4534,8 @@ newduba.cn###jq_youxi
 ||cgqwgv.icu^
 ||chbheroq.xyz^
 ||cheda6.icu^
+||chgpuxim.xyz^
+||chnvgdkw.xyz^
 ||chrtds.xyz^
 ||chubsxmg.xyz^
 ||cjndvoglik.xyz^
@@ -4544,7 +4556,9 @@ newduba.cn###jq_youxi
 ||corcztpc.xyz^
 ||courtoyz.com^
 ||cpddgcr.xyz^
+||cpdronhu.xyz^
 ||cpffkbpq.xyz^
+||cpkxahje.xyz^
 ||cpmlwhra.xyz^
 ||cprdmnlo.xyz^
 ||cpyjyhny.xyz^
@@ -4567,11 +4581,13 @@ newduba.cn###jq_youxi
 ||dbpxivi.xyz^
 ||dcdglb.xyz^
 ||ddkh59.com^
+||ddllhqj.xyz^
 ||ddvoht.xyz^
 ||deanth.xyz^
 ||demifa.top^
 ||df-long.cn^
 ||df63x.xyz^
+||dfejqmh.cn^
 ||dfg6.top^
 ||dfninp.xyz^
 ||dfxvkgz.xyz^
@@ -4582,6 +4598,7 @@ newduba.cn###jq_youxi
 ||djponj.xyz^
 ||dkvakldvnsv.com^
 ||dkyd6.xyz^
+||dmdnlr.xyz^
 ||dnfnpff.xyz^
 ||dnn1300.top^
 ||dotuij.top^
@@ -4603,6 +4620,7 @@ newduba.cn###jq_youxi
 ||dwadwere.xyz^
 ||dwerzv.xyz^
 ||dwfdsfkw.xyz^
+||dwfohh.xyz^
 ||dwhyjwrw.xyz^
 ||dwq661.biz^
 ||dxxwdz.xyz^
@@ -4676,6 +4694,7 @@ newduba.cn###jq_youxi
 ||fmzifaqi.xyz^
 ||foizico.cn^
 ||fol9v.xyz^
+||fopksr.icu^
 ||fortxfq.cn^
 ||fotaxf.xyz^
 ||fotrbx.xyz^
@@ -4685,6 +4704,7 @@ newduba.cn###jq_youxi
 ||fqfclmlo.xyz^
 ||fqtljn.xyz^
 ||fsgiosi.com^
+||ftdbtko.xyz^
 ||ftzzbx.xyz^
 ||fuvbbjl.xyz^
 ||fv77e.icu^
@@ -4699,6 +4719,7 @@ newduba.cn###jq_youxi
 ||fznxvf.xyz^
 ||g0fc3.com^
 ||g2ak5.com^
+||gaipuzui.com^
 ||gaopinoa.cn^
 ||gbc27.online^
 ||gcbtgh26.xyz^
@@ -4807,6 +4828,7 @@ newduba.cn###jq_youxi
 ||hkvuzv.xyz^
 ||hltkl.fun^
 ||hltqsbl.cn^
+||hmlkppk.cn^
 ||hnkhgw.com^
 ||holdntlc.com^
 ||holmesmind.com^
@@ -4926,11 +4948,13 @@ newduba.cn###jq_youxi
 ||jxeyhgw.cn^
 ||jxpjlb.xyz^
 ||jxuhurp.icu^
+||jyewkb.icu^
 ||jzlso.xyz^
 ||k6syi.space^
 ||kaaqgf.icu^
 ||kaezakkjt.com^
 ||kafuzcxr.xyz^
+||kaurieseluxate.com^
 ||kbayke.xyz^
 ||kbbrptv.xyz^
 ||kbzs88.com^
@@ -4942,6 +4966,7 @@ newduba.cn###jq_youxi
 ||kekmhvbb.xyz^
 ||kemas.top^
 ||kfckcu.xyz^
+||kfctds59.shop^
 ||kflybplr.xyz^
 ||kfpicimage.xyz^
 ||kggikf.icu^
@@ -5000,6 +5025,7 @@ newduba.cn###jq_youxi
 ||kydzfldt.xyz^
 ||kyikdee.cn^
 ||kyjwtxei.xyz^
+||kykqss.xyz^
 ||kymahuxv.xyz^
 ||kzelzfnj.xyz^
 ||kznizrhd.xyz^
@@ -5026,6 +5052,7 @@ newduba.cn###jq_youxi
 ||lih6e.site^
 ||limopf.top^
 ||linj.top^
+||lioyfmp.cn^
 ||liujiahao6.cn^
 ||liuyi22.cn^
 ||liuyuhuaa.cn^
@@ -5112,10 +5139,12 @@ newduba.cn###jq_youxi
 ||mnfhxszj.xyz^
 ||mnfse.cn^
 ||mnhncf.cn^
+||mnorkc.xyz^
 ||mnvxdkd.xyz^
 ||mogtrmjz.xyz^
 ||moqsxdpx.xyz^
 ||motcmn.icu^
+||motsjnv.cn^
 ||mpgsqk.xyz^
 ||mphcrjth.xyz^
 ||mphhgat.xyz^
@@ -5172,6 +5201,7 @@ newduba.cn###jq_youxi
 ||newpgqnfapkamg.xyz^
 ||nfldgbt.xyz^
 ||nhcdn.cn^
+||niticl.icu^
 ||nixqvd.xyz^
 ||njppuaj.cn^
 ||njpyrn.xyz^
@@ -5187,6 +5217,7 @@ newduba.cn###jq_youxi
 ||nrfhbd.xyz^
 ||nrzzaep.xyz^
 ||nshypdry.xyz^
+||nszort.xyz^
 ||ntlzvrv.xyz^
 ||ntrwnd.xyz^
 ||nubcdaqa.xyz^
@@ -5205,6 +5236,7 @@ newduba.cn###jq_youxi
 ||oe3.top^
 ||oehcxmhk.xyz^
 ||oektiu.xyz^
+||ogmjhve.cn^
 ||ogouawc.cn^
 ||ogxstqna.xyz^
 ||ohdvafp.xyz^
@@ -5219,6 +5251,7 @@ newduba.cn###jq_youxi
 ||operqr.top^
 ||oprece.xyz^
 ||opszt.com^
+||opwofty.cn^
 ||oq8.top^
 ||oqvucp.icu^
 ||orbxiul.xyz^
@@ -5271,6 +5304,7 @@ newduba.cn###jq_youxi
 ||pugxfvm.cn^
 ||pupsjr.xyz^
 ||pvnzrr.xyz^
+||pvpdbth.xyz^
 ||pxxnejx.xyz^
 ||pzcogpj.icu^
 ||pzwjonv.icu^
@@ -5290,6 +5324,7 @@ newduba.cn###jq_youxi
 ||qmwx4.xyz^
 ||qoqoangry.com^
 ||qoswfds.cn^
+||qqainj.cn^
 ||qqvlsr.icu^
 ||qqyjis.xyz^
 ||qsfbmol.cn^
@@ -5332,8 +5367,11 @@ newduba.cn###jq_youxi
 ||rkds10.icu^
 ||rkds2.icu^
 ||rkds5.icu^
+||rlhtnnm.xyz^
+||rmduuv.icu^
 ||rmhfrtnd.com^$third-party
 ||rmnsdh.xyz^
+||rmxizma.cn^
 ||rntdqwc.xyz^
 ||roio.top^
 ||ronm.top^
@@ -5368,6 +5406,7 @@ newduba.cn###jq_youxi
 ||scqaaf.cn^
 ||sd2ua.icu^
 ||sdjbcjsbdjk.com^
+||sdjbvjsbvjz.com^
 ||sdkjnbjksbnkjs.com^
 ||sdklcnskvbks.com^
 ||sdtsad.com^
@@ -5422,6 +5461,7 @@ newduba.cn###jq_youxi
 ||szpnp.cn^
 ||tae0t.site^
 ||tafuzcxr.xyz^
+||tajdad.cn^
 ||tatyboy.top^
 ||tbdwtn.xyz^
 ||tc8ji.website^
@@ -5466,6 +5506,7 @@ newduba.cn###jq_youxi
 ||tqrznqs.cn^
 ||tqznjujv.xyz^
 ||trdmtx.xyz^
+||trf6b.top^
 ||trojangfw.xyz^
 ||trrmkzesvyqrary.com^
 ||tsvkfwth.xyz^
@@ -5568,6 +5609,7 @@ newduba.cn###jq_youxi
 ||valerieavisnba.com^
 ||valerieurania.com^
 ||vbzrkme.xyz^
+||vcbppb.xyz^
 ||vcjczwnc.xyz^
 ||vdggsd001.com^
 ||vdggsd002.com^
@@ -5587,6 +5629,7 @@ newduba.cn###jq_youxi
 ||vdggsd016.com^
 ||vdggsd017.com^
 ||vdtxlt.xyz^
+||vfvad.top^
 ||vggg5.space^
 ||vgjaxnuw.xyz^
 ||vhhxnb.xyz^
@@ -5645,6 +5688,7 @@ newduba.cn###jq_youxi
 ||wqnwdjjc.xyz^
 ||wqvbuj.icu^
 ||wrtjojn.xyz^
+||wsadad.cn^
 ||wsyfsg.xyz^
 ||wuruigroup.com^
 ||wutsldsk.xyz^
@@ -5661,6 +5705,7 @@ newduba.cn###jq_youxi
 ||wyoaij.icu^
 ||wyohm.xyz^
 ||wzzlnld.xyz^
+||x1fyw.icu^
 ||x2y22.fun^
 ||xafuzcxr.xyz^
 ||xcholvbc.xyz^
@@ -5678,6 +5723,8 @@ newduba.cn###jq_youxi
 ||xg6hb.xyz^
 ||xgrcfz.xyz^
 ||xhbheroq.xyz^
+||xhgpuxim.xyz^
+||xhnvgdkw.xyz^
 ||xhubsxmg.xyz^
 ||xiaobizaizi1.top^
 ||xiaohuishu.top^
@@ -5702,8 +5749,10 @@ newduba.cn###jq_youxi
 ||xogtrmjz.xyz^
 ||xoojqxh.icu^
 ||xoqsxdpx.xyz^
+||xpdronhu.xyz^
 ||xpffkbpq.xyz^
 ||xphcrjth.xyz^
+||xpkxahje.xyz^
 ||xprdmnlo.xyz^
 ||xpyerxzn.xyz^
 ||xpyjyhny.xyz^
@@ -5749,7 +5798,9 @@ newduba.cn###jq_youxi
 ||yfzpxnb.xyz^
 ||ygfgzmzo.xyz^
 ||yhbheroq.xyz^
+||yhgpuxim.xyz^
 ||yhlzadr.xyz^
+||yhnvgdkw.xyz^
 ||yhtpsy8888.cc^
 ||yhubsxmg.xyz^
 ||yivkzvog.xyz^
@@ -5764,7 +5815,9 @@ newduba.cn###jq_youxi
 ||yohnoirs.com^
 ||yongzhen8.com^
 ||ypcngw.xyz^
+||ypdronhu.xyz^
 ||ypffkbpq.xyz^
+||ypkxahje.xyz^
 ||yprdmnlo.xyz^
 ||ypyjyhny.xyz^
 ||yqlxwb.icu^
@@ -5780,6 +5833,7 @@ newduba.cn###jq_youxi
 ||yxcrcc.xyz^
 ||yxptcrss.xyz^
 ||yxrxsov.xyz^
+||yzmcok.xyz^
 ||z0a1b2c3d4.com^
 ||z1wfe.top^
 ||z3p9f.xyz^
@@ -5825,16 +5879,6 @@ newduba.cn###jq_youxi
 ||zzbmxl.xyz^
 ||zzyy17.top^
 ||zzyy18.top^
-||tajdad.cn^
-||ftdbtko.xyz^
-||yhnvgdkw.xyz^
-||abqdgu.xyz^
-||052db.website^
-||nszort.xyz^
-||chnvgdkw.xyz^
-||fopksr.icu^
-||ogmjhve.cn^
-||xhnvgdkw.xyz^
 ||zzyy19.top^
 ||zzyy20.top^
 ##[style*="sotv.me"]
@@ -13441,7 +13485,6 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||tt1069.com/script.min.js
 ||tt1069.com/t0602.js
 ||ttavav6.com/zz/
-||tucao.cam/uploadfile/*/300-86.
 ||tui.gtimg.com//res/
 ||tui555.com/public/gong/js/a_
 ||tuicool.com/images/upload/aliyun
@@ -13925,6 +13968,7 @@ itavcn.com###ADE
 sina.com.cn###AD_Background_Wall_BG
 sina.com.cn###AD_Background_Wall_BG_Link
 sina.com.cn###AD_Background_Wall_Banner
+csgoob.com###ADback
 aiyingshi.tv###ADmask
 51cto.com###ADsList
 esu.moe,esu.wiki###ASSPC
@@ -14731,7 +14775,7 @@ dmzj.com###khdDown
 0597kk.com###kk_head_ad
 0597kk.com###kk_oTransContainer2
 1m3d.com###klp_adtop
-zhenniu.vip###klp_hdp
+zn508.com###klp_hdp
 baidu.com###knowledge-answer
 csdn.net###kp_box_476
 csdn.net###kp_box_58
@@ -14971,6 +15015,7 @@ macfans.org###portal_block_180
 hcbbs.com###portal_block_2652
 jdbbs.com###portal_block_2826
 fuyang.net###portal_block_474
+1point3acres.com###portal_block_479
 fuyang.net###portal_block_502
 mpyit.com###post-0
 unwire.hk###post-sidebar-ad
@@ -15374,7 +15419,7 @@ yahoo.com##.GeminiPortalStreamAd_handleViewport
 3dmgame.com##.Gmaeinfobtn_tab > span
 zhihu.com##.GoodsRecommendCard
 downg.com##.Gs_d[href$=".exe"]
-52fzwg.com,79tao.com,hqol.cn,icabbs.com,k7d.com,kxdao.net,mcncc.com,sunwy.org,twunbbs.com,wnflb.com,wnflb2023.com,wnflb66.com,xkeba.com,zhenniu.vip##.GzList
+52fzwg.com,79tao.com,hqol.cn,icabbs.com,k7d.com,kxdao.net,mcncc.com,sunwy.org,twunbbs.com,wnflb.com,wnflb2023.com,wnflb66.com,xkeba.com,zn508.com##.GzList
 le.com##.H-tg
 chinaz.com##.HeaderAdvert
 diyifanwen.com##.Hzh1
@@ -15501,7 +15546,7 @@ zuimeia.com##.activity-poster:not([href*="zuimeia."])
 bilibili.com##.activity-slider[style="width: 1220px;"]
 1111.baidu.com,bdimg.com,tieba.baidu.com,tieba.com,xingqu.baidu.com##.activity_iframe_container
 2345.com##.acts11-sidefixed
-100ec.cn,159i.com,1905.com,22vd.com,2345.cn,234fang.com,265g.com,3gsc.com.cn,52youpiao.com,72g.com,8se.me,acg.bz,acg13.cn,acgbenzi.com,baiduyunpan.net,baike.com,bbs-mychat.com,cdyee.com,ce.cn,chinaqking.com,chinatimes.com,chinatruck.org,chinaz.com,cnforex.com,cnsoftnews.com,codepub.com,cq.xinhuanet.com,cxryun.cn,dav01.com,discuss.com.hk,djwma.com,dmzj.com,dmzj1.com,douban.com,dzwww.com,eastday.com,fengniao.com,focus.cn,fx112.com,gongkong.com,henan100.com,honglingjin.co.uk,house.jschina.com.cn,iciba.com,ifeng.com,ipeen.com.tw,isharebest.com,itavcn.com,jojf.cn,jrj.com.cn,kumi.cn,landian.vip,landiannews.com,lawtv.com.cn,lieyunwang.com,lncn.org,loveshang.com,ltn.com.tw,luo8.com,maxpda.com,mm111.net,moxing.net,mvcat.com,ncdiy.com,neotv.com.cn,newsmth.net,njdaily.cn,pc0359.cn,people.com.cn,pharmnet.com.cn,pixnet.net,pptv.com,ptbus.com,qncye.com,r3sub.com,sogou.com,sozi.cn,toolfk.com,tv.sohu.com,u-car.com.tw,weather.com.cn,xchina.fun,xianbao.fun,yawin.cn,yb983.com,ydss.cn,yesky.com,yiche.com,yqxxs.com,zhihu.com,ziyuanyo.com##.ad
+100ec.cn,159i.com,1905.com,22vd.com,2345.cn,234fang.com,265g.com,3gsc.com.cn,52youpiao.com,72g.com,8se.me,acg.bz,acg13.cn,acgbenzi.com,baiduyunpan.net,baike.com,bbs-mychat.com,cdyee.com,ce.cn,chinaqking.com,chinatimes.com,chinatruck.org,chinaz.com,cnforex.com,cnsoftnews.com,codepub.com,cq.xinhuanet.com,cxryun.cn,dav01.com,discuss.com.hk,djwma.com,dmzj.com,dmzj1.com,douban.com,dzwww.com,eastday.com,fengniao.com,focus.cn,fx112.com,gongkong.com,henan100.com,honglingjin.co.uk,house.jschina.com.cn,iciba.com,ifeng.com,ipeen.com.tw,isharebest.com,itavcn.com,jojf.cn,jrj.com.cn,kumi.cn,landian.vip,landiannews.com,lawtv.com.cn,lieyunwang.com,lncn.org,loveshang.com,ltn.com.tw,luo8.com,maxpda.com,mm111.net,moxing.net,mvcat.com,ncdiy.com,neotv.com.cn,newsmth.net,njdaily.cn,pc0359.cn,people.com.cn,pharmnet.com.cn,pixnet.net,pptv.com,ptbus.com,qncye.com,r3sub.com,sogou.com,sozi.cn,tmioe.com,toolfk.com,tv.sohu.com,u-car.com.tw,weather.com.cn,xchina.fun,xianbao.fun,yawin.cn,yb983.com,ydss.cn,yesky.com,yiche.com,yqxxs.com,zhihu.com,ziyuanyo.com##.ad
 cqmmgo.com##.ad-160x40
 19lou.com,ihome99.com##.ad-190x60
 cqmmgo.com##.ad-230x60
@@ -15806,7 +15851,7 @@ dimtown.com##.aggd
 wmzhe.com##.aibyte_ad
 moe.best##.alert
 5217kdy1.xyz##.alert-success + center
-eetop.cn,tucao.cam##.alert_windows
+eetop.cn##.alert_windows
 ali213.net##.ali-photo-carousel-pic > li > a[href*=".fhyx."]
 phpvar.com##.aliPic
 sm.cn##.ali_row[ad_aid]
@@ -16742,7 +16787,6 @@ youivr.com##.header-widget-region
 iqiyi.com##.headerLink01
 iqiyi.com##.headerLink02
 jiegeng.com##.header__item--fr
-tucao.cam##.header_rmb
 seehd.so##.header_wrap + .tac + table[align="center"]
 aguitar.cn,guitarchina.com##.headerbanner
 aguitar.cn##.headerbanner2
@@ -17048,6 +17092,8 @@ muzhi.baidu.com##.leftnest
 ifeng.com##.leftpopad
 2dfan.com,galge.fun##.leftside-bg
 axios-js.com##.lessonlist
+csgoob.com##.lg\:basis-1
+csgoob.com##.lg\:sticky.lg\:top-22 > .card-shadow:not(.py-4)
 vansky.com##.liAds
 lywww.com##.lianmengclass
 hao.360.com##.licai-right
@@ -19095,6 +19141,7 @@ eastmoney.com##div[style="width: 300px; height: 250px; margin-top: 10px;"]
 zol.com.cn##div[style="width: 300px; height: 250px; position: fixed; right: 0px; bottom: 0px; z-index: 9999; display: block;"]
 yeeyi.com##div[style="width: 300px; margin-right: -30px; position: relative; top: 0px;"] > a
 tuwan.com##div[style="width: 360px;margin-top:10px;"]
+1point3acres.com##div[style="width: 450px; min-height: 210px;"]
 jijidown.com##div[style="width: 500px;"]:last-child
 jijidown.com##div[style="width: 525px;"]:last-child
 pixnet.net##div[style="width: 620px; height: 250px; padding-bottom: 10px;"]
@@ -19263,7 +19310,7 @@ itkeyword.com##p[style="line-height:1.4; margin-top:8px; margin-bottom:10px;"]
 ruanyifeng.com##p[style="text-align:center;font-size: 16px;"]
 zzkdhb.com##p[style^="width: 100%; margin: 0px;"]
 isiyuan.net#?##page-list > ul > .layui-row:-abp-has(.ad)
-zhenniu.vip#?##portal_block_69_content > li:-abp-has(a[href^="http"])
+zn508.com#?##portal_block_69_content > li:-abp-has(a[href^="http"])
 ruanyifeng.com#?#.asset-content > p:-abp-contains(/二维|助教|0 元|报名费|原价/) + p + p > img
 ruanyifeng.com#?#.asset-content > p:-abp-contains(/二维|助教|0 元|报名费|原价/) + p > img
 runoob.com#?#.sidebar-box:-abp-has(.re-600160)
@@ -19346,6 +19393,7 @@ enread.com##td[width="326"][height="250"]
 sdzbcg.com##td[width="580"][height="279"] > table:nth-child(2n-1)
 62422.cn##td[width="760"][height="75"]
 cartoonmad.com##td[width="890"] > table > tbody > tr > td[colspan="4"][height="126"]
+taiwanus.net##td[width="900"] + td[width="320"]
 mgbbs.cn##td[width="960"][height="60"]
 ningmengzhibo.com##th[style="width: 80px;"][colspan="3"]
 toutiao.com#?#.has_action:-abp-has(> .icon_ad)
@@ -19362,7 +19410,7 @@ weibo.com#?#.card-wrap:-abp-has(>.card-top>.s-fr:-abp-contains(广告))
 weibo.com#?#.card-wrap:-abp-has(>.card>i[style*="%E5%B9%"])
 weibo.com#?#.vue-recycle-scroller__item-view:-abp-has(.wbpro-ad-tag:-abp-contains(广告))
 weibo.com#?#.vue-recycle-scroller__item-view:-abp-has(.wbpro-auth-tag>div:-abp-contains(热推))
-weibo.com#?#.vue-recycle-scroller__item-view:-abp-has(div[class^="head-info_authtag_"]>img[src^="data"])
+weibo.com#?#.vue-recycle-scroller__item-view:-abp-has(div[class*="head-info_"]>img[src^="data"])
 weibo.com#?#.vue-recycle-scroller__item-view:-abp-has(img[class^="head-info_authicon_"][src^="data"])
 weibo.com#?#.vue-recycle-scroller__item-view:-abp-has(span[class^="wbpro-icon-search"]:-abp-contains(/商|上新|好物/))
 weibo.com#?#.wbpro-side-panel:-abp-has(span[class^="wbpro-icon-search"]:-abp-contains(商))
@@ -21187,7 +21235,6 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com##style[id^="s-"] + 
 ||v1.phb123.com^
 ||v1.taksh.cn^
 ||v1.wphonelife.com^
-||ve.kj-cy.cn^
 ||vip.panggugu.com^
 ||vjie.com^$third-party
 ||vv1.pyhfxdm.cn^
