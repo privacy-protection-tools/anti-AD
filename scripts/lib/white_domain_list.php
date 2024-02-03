@@ -415,6 +415,7 @@ return [
     "api.open.uc.cn" => 0, // #845
     "statsig.com" => 0, // #869, #860
     "api.statsig.com" => 0, // #869, #860
+    "up.cm.ksmobile.com" => 0, // #880
     "iflow.uczzd.cn" => 0, // uc搞笑段子
     "m.uczzd.cn" => 0, // uc搞笑段子
     "puds.ucweb.com" => 0, // uc小游戏
