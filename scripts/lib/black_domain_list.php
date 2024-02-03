@@ -27,6 +27,9 @@ return [
         "httpdns.bcelive.com", //一个不支持https的httpdns服务，并不能反制运营商劫持
     ],
     "tencentmusic.com" => ["ad.tencentmusic.com"],
+    "tencent.com" => [
+        "tpstelemetry.tencent.com", // #883
+    ],
     "qq.com" => [
         "bugly.qq.com",
         "openmsf.3g.qq.com",
@@ -1682,7 +1685,11 @@ return [
     //一些电视盒子相关的屏蔽列表
     "tuiapple.com" => ["activity.tuiapple.com"],
     "tudou.com" => ["ad.api.3g.tudou.com"],
-    "youku.com" => ["ad.api.3g.youku.com", "ad.api.mobile.youku.com"],
+    "youku.com" => [
+        "ad.api.3g.youku.com",
+        "ad.api.mobile.youku.com",
+        "pcapp-data-collect.youku.com", // #884
+    ],
     "sohu.com" => ["agn.aty.sohu.com"],
     "gitv.tv" => ["api.cupid.ptqy.gitv.tv"],
     "tatagou.com.cn" => ["api.tatagou.com.cn"],
