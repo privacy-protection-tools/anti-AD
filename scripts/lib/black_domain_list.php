@@ -535,7 +535,10 @@ return [
     ],
     "twitter.com" => ["p.twitter.com"],
     "nsimg.net" => ["m2.nsimg.net"],
-    "microsoft.com" => ["mobile.pipe.aria.microsoft.com"],
+    "microsoft.com" => [
+        "mobile.pipe.aria.microsoft.com",
+        "events.data.microsoft.com", // #882
+    ],
     "leixjun.com" => [
         //恶意诱导下载app
         "leixjun.com",
