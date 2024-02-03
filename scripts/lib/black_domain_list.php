@@ -44,7 +44,6 @@ return [
         "wnsmusic.qq.com", // #847
         "tmeadbak.y.qq.com", // #847
         "ugcup.music.qq.com", // #847
-        "ad.tencentmusic.com", // #847
         "ipv6.kg.qq.com", // #847
         "tmeadbak.y.qq.com", // #847
     ],
