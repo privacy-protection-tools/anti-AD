@@ -133,6 +133,8 @@ $ARR_MERGED_WILD_LIST = array(
     '*us*watcab*.blob.core.windows.net' => null,
     'xn--wxtr9fwyxk9c.*' => null,
     'tuiguang.*' => null,
+    '*.xsph.ru' => null,
+    '*.page.link' => null,
 );
 
 $ARR_REGEX_LIST = array(
