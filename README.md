@@ -50,6 +50,7 @@ anti-AD在自我认知上始终是一个非主流的小众项目。此项目一�
 
 ## Special Thanks To
 
+- [malware-filter/urlhaus-filter](https://gitlab.com/malware-filter/urlhaus-filter) - Malicious URL blocklist,来自 [#858](https://github.com/privacy-protection-tools/anti-AD/issues/858)
 - [AdguardTeam/AdguardFilters](https://github.com/AdguardTeam/AdguardFilters) - AdGuard Content Blocking Filters
 - [fanboy-annoyance](https://easylist.to/easylist/fanboy-annoyance.txt) - 优秀的easylist列表
 - [notracking/hosts-blocklists-scripts](https://github.com/notracking/hosts-blocklists-scripts) - 提供无效域名和无效hosts列表
