@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202402191651
+! Version: 202402221533
 ! Title: EasyPrivacy
-! Last modified: 19 Feb 2024 16:51 UTC
+! Last modified: 22 Feb 2024 15:33 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -177,6 +177,7 @@
 /aff_i?offer_id=
 /aff_land?referrer
 /affiliate-tracker.js
+/affiliate:link_visit?
 /affiliatetracking.js
 /aftrack.asp
 /aggbug.aspx?
@@ -3216,6 +3217,7 @@ omni.soundestlink.com$image
 ||k5a.io^
 ||krxd.net^
 ||kspotson.de^
+||ldgnrtn.com^
 ||ldnlyap.com^
 ||leadhit.io^
 ||liveyield.com^
@@ -3292,6 +3294,7 @@ omni.soundestlink.com$image
 ||rapidpanda.io^
 ||rapidzebra.io^
 ||realtimely.io^
+||reportic.app^
 ||rezync.com^
 ||rfpx1.com^
 ||rkdms.com^
@@ -3321,6 +3324,7 @@ omni.soundestlink.com$image
 ||stat.ovh^
 ||statisticplatform.com^
 ||statisticsplatform.com^
+||stats.rip^
 ||summerhamster.com^
 ||superpointlesshamsters.com^
 ||t13.io^
@@ -7019,6 +7023,7 @@ omni.soundestlink.com$image
 ||nappyattack.com^
 ||nappyneck.com^
 ||neatshade.com^
+||nebulacrescent.com^
 ||nebulousripple.com^
 ||necessarywax.com^
 ||needlessnorth.com^
@@ -9381,6 +9386,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||ccexperimentsstatic.oracleoutsourcing.com^
 ||cdn-channels-pixel.ex.co^
 ||cdn-ds.com/analytics/
+||cdn.one.store/xdomain_cookie.html
 ||cdn.sourcesync.io/open-pixel/source-pixel.js
 ||cdn.usefathom.com^
 ||cdnjs.work/metrics.js
@@ -9940,6 +9946,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||glam.com^*/log.act?
 ||gleam.io/seen?
 ||gleam.io^$script,third-party
+||global.localizecdn.com/api/lib/*.gif?
 ||global.ssl.fastly.net/native/
 ||gml-grp.com^*&affid=$subdocument,third-party
 ||go.activengage.com^
@@ -11154,6 +11161,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||tracking.wisepops.com^
 ||tracking1.brandmentions.com^
 ||tracking2.channeladvisor.com^
+||trackingapi.trendemon.com/api/events/pageview?
 ||trackjs.com/agent/$script,third-party
 ||trackjs.com/releases/current/tracker.js
 ||trackjs.com/usage.gif?
@@ -11377,6 +11385,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ! https://d3ward.github.io/toolz/adblock.html
 ||adsdk.yandex.ru^
 ||analytics-api.samsunghealthcn.com^
+||analytics.b2.ai^
 ||analytics.mobile.yandex.net^
 ||analytics.samsungknox.com^
 ||app.chat.xiaomi.net^$third-party
@@ -12125,7 +12134,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||tvid.in/log/
 ! Indonesian
 ||mediaquark.com/tracker.js
-||tracker.oval.id^
+||oval.id/tracker/
 ! Italian
 ||alice.it/cnt/
 ||analytics.competitoor.com^
@@ -12617,6 +12626,8 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||collector.schibsted.io^
 ||eniro.com/pixel/
 ||evt-api.ntm.eu^
+||impression-tracker-service-5eimuebuhq-lz.a.run.app^
+||pji.nu/libs/pjpixel/
 ||vizzit.se^$third-party
 ! Tajik
 ||pixel.smartmedia.tj^
@@ -12997,6 +13008,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||dev.to/fallback_activity_recorder
 ||developer.mozilla.org/submit/
 ||df.infra.shopee.
+||df.infra.sz.shopee.
 ||dhl.com/g8Dj6P8TAg/
 ||dhresource.com/dhs/fob/js/common/track/$domain=dhgate.com
 ||digg.com/library/tracker.js
@@ -13943,6 +13955,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||tripadvisor.*/wm/record
 ||tripcdn.com/bee/collect$domain=trip.com
 ||trivago.com/tracking/
+||trk.decido.io^
 ||trk.tirto.id^
 ||trumba.com/et.aspx?
 ||trx3.famousfix.com^
@@ -14403,8 +14416,11 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=thepiratebay.org|vi
 ! #if ext_ublock
 
 ! GPC
-weather.com##+js(set, Navigator.prototype.globalPrivacyControl, false)
-weather.com##+js(set, navigator.globalPrivacyControl, false)
+weather.com,ubereats.com##+js(set, Navigator.prototype.globalPrivacyControl, false)
+weather.com,ubereats.com##+js(set, navigator.globalPrivacyControl, false)
+! chartbeat.js redirect
+||static.chartbeat.com/js/chartbeat_mab.js$script,redirect=chartbeat.js
+||static.chartbeat.com/js/chartbeat.js$script,redirect=chartbeat.js
 ! Admiral popups
 247sports.com,androidpolice.com,bringmethenews.com,mensjournal.com,arstechnica.com,audiotools.pro,audizine.com,blackenterprise.com,boston.com,britannica.com,cattime.com,cbr.com,cheatsheet.com,collider.com,comingsoon.net,cwtv.com,dogtime.com,download.mokeedev.com,esportstales.com,forums.hfboards.com,freep.com,fresnobee.com,gamerant.com,gbatemp.net,golfdigest.com,grabify.link,hancinema.net,hemmings.com,howtogeek.com,ijr.com,informazionefiscale.it,inquirer.net,insider-gaming.com,knowyourmeme.com,magesypro.pro,makeuseof.com,money.it,motorbiscuit.com,movieweb.com,nationalreview.com,nbcnews.com,neopets.com,nofilmschool.com,nypost.com,omg.blog,order-order.com,pastes.io,playstationlifestyle.net,pwinsider.com,savvytime.com,screenrant.com,siliconera.com,simpleflying.com,sporcle.com,stealthoptional.com,techlicious.com,technicpack.net,thedraftnetwork.com,thefashionspot.com,thegamer.com,thenerdstash.com,titantv.com,topspeed.com,twinfinite.net,usatoday.com,videogamer.com,wnd.com,worldpopulationreview.com,wral.com,wrestlezone.com,wrestlinginc.com,xda-developers.com##+js(acis, document.createElement, admiral)
 gbatemp.net##+js(set, admiral, noopFunc)
@@ -47148,7 +47164,6 @@ abema.tv##+js(rmnt, script, NREUM)
 ||link.nextlevelsports.com^
 ||link.nilclub.com^
 ||link.notifications.busuu.app^
-||link.nubank.com.br^
 ||link.nutty.chat^
 ||link.offers.kodakmoments.com^
 ||link.olympya.com^
@@ -48735,6 +48750,8 @@ abema.tv##+js(rmnt, script, NREUM)
 ||analytics.allovoisins.com^
 ||analytics.clubic.com^
 ||api.odysee.com/locale/get
+||api.ouedkniss.com/health/
+||api.ouedkniss.com^*&xTrackId=
 ||api.tacotax.fr/v2/amplitude_trackers
 ||batiactu.com/cap_
 ||bmly.impots.gouv.fr^
@@ -49410,6 +49427,7 @@ abema.tv##+js(rmnt, script, NREUM)
 ||tekoki-fuzoku-joho.com/js/ALinkPrepare_
 ||tower.jp/bundle/beacon
 ||track.buyma.com^
+||tracking.ai.rakuten.co.jp^
 ||tracking.game8.jp^
 ||tracking.gnavi.co.jp^
 ||travel.co.jp/js/analysis.js
@@ -49734,6 +49752,7 @@ abema.tv##+js(rmnt, script, NREUM)
 ||ai.idg.se^
 ||ax.idg.se^
 ||blocket.se/js/trafikfonden.js
+||bonmed.se/monitoring?
 ||falkenbergtorget.se/sc.gif?
 ||fusion.bonniertidskrifter.se^
 ||gx.idg.se^
@@ -50166,8 +50185,12 @@ abema.tv##+js(rmnt, script, NREUM)
 @@||ingest.sentry.io/api/$xmlhttprequest,domain=orionprotocol.io|play.tv3.lv|tesco.com|tesco.hu
 ! ! ci-mpsnare.iovation.com
 @@||ci-mpsnare.iovation.com/snare.js$domain=equifax.ca
+! ! lightning.cnn.com
+@@||lightning.cnn.com^$script,domain=wfmz.com
 ! ! tag.aticdn.net
 @@||tag.aticdn.net^$script,domain=gouv.fr|rte.ie|tv5monde.com|uktvplay.co.uk|visaconcierge.eu|yourstory.com
+! ! cdn.optimizely.com/public
+@@||cdn.optimizely.com/public/*.json/tag.js$domain=mobile.de
 ! ! omtrdc.net
 @@||omtrdc.net^*/mbox/json?$xmlhttprequest,domain=absa.co.za|att.com|pnc.com|vodafone.it
 ! ! tags.tiqcdn.com
