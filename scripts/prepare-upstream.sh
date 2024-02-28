@@ -43,6 +43,16 @@ curl --connect-timeout 60 -s -o - https://raw.githubusercontent.com/ACL4SSR/ACL4
 curl --connect-timeout 60 -s -o - https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list \
  | grep -F 'DOMAIN-SUFFIX,' | sed 's/DOMAIN-SUFFIX,/127.0.0.1 /g' >./origin-files/hosts998.txt
 
+wget -qO /tmp/geodata.tar.gz 'https://github.com/v2fly/domain-list-community/archive/master.tar.gz'
+# shellcheck disable=SC2181
+if [ $? -ne 0 ]; then
+  echo '下载失败，请重试'
+  exit 1
+fi
+tar xzf /tmp/geodata.tar.gz -C /tmp
+cat /tmp/domain-list-community-master/data/*-ads | grep -E '^(full:)?([^#:]+)( @ads)?$' \
+| sed -e 's/^full://g' -e 's/ @ads$//g' -e 's/^/127.0.0.1 /g' >./origin-files/hosts997.txt
+rm -rf /tmp/geodata.tar.gz /tmp/domain-list-community-master
 
 for i in "${!easylist[@]}"
 do
