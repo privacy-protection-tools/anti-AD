@@ -68,7 +68,6 @@ $ARR_MERGED_WILD_LIST = array(
     'ablen*.tk' => null,
     'darking*.tk' => null,
     'doubleclick*.xyz' => null,
-    'thepiratebay.*' => null,
     'adserver.*' => null,
     'clientlog*.music.163.com' => null,
     'brucelead*.com' => null,
