@@ -271,6 +271,9 @@ $ARR_WHITE_RULE_LIST = array(
     '@@||api.slightcommunicativeinterconnectedness.xyz^' => 1, // #873
     '@@||openxlab.org.cn^' => 1, // #876
     '@@||tracking.dpd.de^' => 1, // #877
+    '@@||star.c10r.facebook.com^' => 1, // #892
+    '@@||www.fbsbx.com^' => 1, // #892
+    '@@||star.fallback.c10r.facebook.com^' => 1, // #892
     
 );
 
