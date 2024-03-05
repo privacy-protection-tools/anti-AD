@@ -416,6 +416,8 @@ return [
     "statsig.com" => 0, // #869, #860
     "api.statsig.com" => 0, // #869, #860
     "up.cm.ksmobile.com" => 0, // #880
+    "star.fallback.c10r.facebook.com" => 0, // #892
+    "star.c10r.facebook.com" => 0, // #892
     "iflow.uczzd.cn" => 0, // uc搞笑段子
     "m.uczzd.cn" => 0, // uc搞笑段子
     "puds.ucweb.com" => 0, // uc小游戏
