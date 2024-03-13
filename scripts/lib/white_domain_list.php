@@ -418,6 +418,7 @@ return [
     "up.cm.ksmobile.com" => 0, // #880
     "star.fallback.c10r.facebook.com" => 0, // #892
     "star.c10r.facebook.com" => 0, // #892
+    "icanhazip.com" => 0, // #899
     "iflow.uczzd.cn" => 0, // uc搞笑段子
     "m.uczzd.cn" => 0, // uc搞笑段子
     "puds.ucweb.com" => 0, // uc小游戏
