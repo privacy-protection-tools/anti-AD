@@ -11,6 +11,7 @@ easylist=(
   "https://easylist.to/easylist/fanboy-annoyance.txt"
   "https://easylist.to/easylist/easyprivacy.txt"
   "https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt"
+  "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/AWAvenue-Ads-Rule.txt"
 )
 
 hosts=(
