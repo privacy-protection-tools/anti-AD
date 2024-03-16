@@ -50,6 +50,7 @@ anti-AD在自我认知上始终是一个非主流的小众项目。此项目一�
 
 ## Special Thanks To
 
+- [TG-Twilight/AWAvenue-Ads-Rule](https://github.com/TG-Twilight/AWAvenue-Ads-Rule) - 秋风广告规则,干掉所有无良广告 (来自[#897](https://github.com/privacy-protection-tools/anti-AD/issues/897))
 - [malware-filter/urlhaus-filter](https://gitlab.com/malware-filter/urlhaus-filter) - Malicious URL blocklist,来自 [#858](https://github.com/privacy-protection-tools/anti-AD/issues/858)
 - [AdguardTeam/AdguardFilters](https://github.com/AdguardTeam/AdguardFilters) - AdGuard Content Blocking Filters
 - [fanboy-annoyance](https://easylist.to/easylist/fanboy-annoyance.txt) - 优秀的easylist列表
@@ -67,7 +68,3 @@ anti-AD在自我认知上始终是一个非主流的小众项目。此项目一�
 - [easylist.to](https://easylist.to/) - 感谢提供出色的easylist
 - [ZeroDot1/CoinBlockerLists](https://gitlab.com/ZeroDot1/CoinBlockerLists) - 屏蔽恶意劫持挖矿
 - [crazy-max/WindowsSpyBlocker](https://github.com/crazy-max/WindowsSpyBlocker/) - to block spying and tracking on Windows systems.
-
-## 本项目使用PHPStorm开发，特此感谢
-
-[![phpstorm](./others/icon-phpstorm.png)](https://www.jetbrains.com/zh-cn/opensource/)
