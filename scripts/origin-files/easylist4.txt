@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202403161613
+! Version: 202403191712
 ! Title: EasyPrivacy
-! Last modified: 16 Mar 2024 16:13 UTC
+! Last modified: 19 Mar 2024 17:12 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -120,6 +120,7 @@
 /_stat/log_
 /_tracking/*
 /_vercel/insights/script.js
+/_vercel/speed-insights/script.js
 /_visitcount?
 /a.gif?
 /a/performance_timing/*
@@ -802,6 +803,7 @@
 /estat.js
 /estatistica.js
 /eta/events?
+/eta/guid?
 /eumcollector/beacons/*
 /eva-analytics.min.js
 /event-log?
@@ -1779,6 +1781,7 @@
 /pxrc.php
 /pxre.php
 /pxtrack.js
+/qapcore.js
 /qlitics.js
 /qtracker-v3-min.js
 /quant.js
@@ -3119,7 +3122,6 @@ omni.soundestlink.com$image
 ||cntxtfl.com^
 ||confiant-integrations.net^
 ||convead.io^
-||conversationalsdevelopment.nl^
 ||convertlink.com^
 ||cpx.to^
 ||crwdcntrl.net^
@@ -9250,6 +9252,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||api.bit.ly/*/clicks?$third-party
 ||api.blink.net/a/
 ||api.collarity.com/cws/*http
+||api.country.is^$third-party
 ||api.iris.tv/update
 ||api.wipmania.com^
 ||apibaza.com/pixel/
@@ -10849,6 +10852,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||spindl.link/events
 ||spiral.world/events/
 ||splunkcloud.com/services/collector/
+||spot.im/v1.0.0/conversation/realtime/read
 ||spotpass.com/api/log
 ||spread.ly^*/statistics.php
 ||spresso.com/pim/public/events
@@ -11628,6 +11632,9 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||urc.taboolasyndication.com^
 ||vidstat.taboola.com^
 ||wf.taboola.com^
+! Ad-Shield
+! https://github.com/uBlockOrigin/uAssets/issues/9717
+/^https:\/\/cdn\.jsdelivr\.net\/npm\/[-a-z_]{4,22}@latest\/dist\/script\.min\.js$/$script,third-party
 ! wix
 ||frog.wix.com/da-client?
 ||frog.wix.com/fed?
@@ -12307,6 +12314,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||bvr.ast.snva.jp^
 ||bvr.snva.jp^
 ||c-rings.net^$script,third-party
+||cdn.ad-platform.jmty.jp^
 ||clipkit.co/clipkit_assets/beacon-
 ||cloudfunctions.net/trackEvent
 ||cnobi.jp^*/js/imp.
@@ -12891,6 +12899,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||b629.electronicdesign.com^
 ||ba-bamail.com/handlers/stats.ashx
 ||backcountry.com/api/log
+||backend.academy.cs.cmu.edu/api/v0/track/
 ||baidu.com/static/h.gif
 ||baidu.com^*/mwb2.gif?
 ||baidu.com^*/wb.gif?
@@ -13119,6 +13128,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||dubz.live/analytics/
 ||duckduckgo.com/t/
 ||dumpster.cam4.com^
+||e.quizlet.com^
 ||e.used.ca/event
 ||e.zg-api.com/event$domain=zillow.com
 ||e2ma.net/track/
@@ -13134,6 +13144,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||eharmony.co.uk/bd/
 ||eighten-bloc-party.thebrowser.company/script.js
 ||ejlytics.editorji.com^
+||el.quizlet.com^
 ||elitesingles.com/cs/tp.png?
 ||embed.reddit.com/svc/shreddit
 ||engagefront.meteomedia.com^
@@ -13309,6 +13320,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||gumtree.com.au/tracking/
 ||gurgle.pcmag.com^
 ||gurgle.spiceworks.com^
+||hacksplaining.com/track
 ||hankookilbo.com/service/kt/trk.js$script,domain=koreatimes.co.kr
 ||harryrosen.com/analytics/
 ||health-metrics-api.setapp.com^
@@ -14023,6 +14035,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||track.netzero.net^
 ||track.sodapdf.com^
 ||track.thesaurus.com^
+||track.ttsave.app^
 ||track.ultimate-guitar.com^
 ||tracker.affiliate.iqbroker.com^
 ||tracker.nbcuas.com^
@@ -44500,7 +44513,6 @@ abema.tv##+js(rmnt, script, NREUM)
 ||9b55.pandasuite.io^
 ||9bdb.pandasuite.io^
 ||9kvnwwkj.pandasuite.io^
-||_tcp.academyofconsciousleadership.net^
 ||a-t.topya.com^
 ||a.a23.in^
 ||a.careangel.com^
