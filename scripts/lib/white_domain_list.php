@@ -419,6 +419,7 @@ return [
     "star.fallback.c10r.facebook.com" => 0, // #892
     "star.c10r.facebook.com" => 0, // #892
     "icanhazip.com" => 0, // #899
+    "ib.snssdk.com" => 0, // #905
     "audid-api.taobao.com" => 0, // #906
     "iflow.uczzd.cn" => 0, // uc搞笑段子
     "m.uczzd.cn" => 0, // uc搞笑段子
