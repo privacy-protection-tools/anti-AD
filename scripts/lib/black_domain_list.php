@@ -1107,6 +1107,7 @@ return [
     "cibntv.net" => [
         // #507
         "vali-g1.cp31.ott.cibntv.net",
+        "ykad-data.cp31.ott.cibntv.net", // #914
     ],
     "byteimg.com" => [
         "p6-ad-sign.byteimg.com", // #513
@@ -1690,6 +1691,7 @@ return [
         "ad.api.3g.youku.com",
         "ad.api.mobile.youku.com",
         "pcapp-data-collect.youku.com", // #884
+        "valo.atm.youku.com", // #914
     ],
     "sohu.com" => ["agn.aty.sohu.com"],
     "gitv.tv" => ["api.cupid.ptqy.gitv.tv"],
