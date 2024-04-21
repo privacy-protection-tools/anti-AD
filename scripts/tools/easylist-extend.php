@@ -274,6 +274,9 @@ $ARR_WHITE_RULE_LIST = array(
     '@@||star.c10r.facebook.com^' => 1, // #892
     '@@||www.fbsbx.com^' => 1, // #892
     '@@||star.fallback.c10r.facebook.com^' => 1, // #892
+    '@@||api.ads.tvb.com^' => 1, // #911
+    '@@||img.ads.tvb.com^' => 1, // #911
+    '@@||ads.cdn.tvb.com^' => 1, // #911
     
 );
 
