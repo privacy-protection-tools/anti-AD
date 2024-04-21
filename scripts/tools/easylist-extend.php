@@ -277,6 +277,7 @@ $ARR_WHITE_RULE_LIST = array(
     '@@||api.ads.tvb.com^' => 1, // #911
     '@@||img.ads.tvb.com^' => 1, // #911
     '@@||ads.cdn.tvb.com^' => 1, // #911
+    '@@||ads.console.aliyun.com^' => 1, // #912
     
 );
 
