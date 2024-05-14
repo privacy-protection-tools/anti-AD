@@ -117,7 +117,7 @@ cat dead-hosts*.txt | grep -v -E "^(#|\!)" \
  | uniq >base-dead-hosts.txt
 
 
-cat easylist*.txt | grep -E "^\|\|[^\*\^]+?\^" | sort | uniq >base-src-easylist.txt
+cat easylist*.txt | grep -E "^\|\|[-0-9a-zA-Z\.:]+\^" | sort | uniq >base-src-easylist.txt
 cat easylist*.txt | grep -E "^\|\|?([^\^=\/:]+)?\*([^\^=\/:]+)?\^" | sort | uniq >wildcard-src-easylist.txt
 cat easylist*.txt | grep -E "^@@\|\|?[^\^=\/:]+?\^([^\/=\*]+)?$" | sort | uniq >whiterule-src-easylist.txt
 
