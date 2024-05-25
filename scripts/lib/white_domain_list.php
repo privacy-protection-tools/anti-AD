@@ -429,6 +429,8 @@ return [
     "ads.console.aliyun.com" => 0, // #912
     "mcdn.bilivideo.cn" => 0, // #918
     "deliver.kuwo.cn" => 0, // #917
+    "log.snssdk.com" => 0, // #920
+    "i.snssdk.com" => 0, // #920
     "iflow.uczzd.cn" => 0, // uc搞笑段子
     "m.uczzd.cn" => 0, // uc搞笑段子
     "puds.ucweb.com" => 0, // uc小游戏
