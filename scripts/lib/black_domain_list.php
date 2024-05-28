@@ -1467,9 +1467,6 @@ return [
     "onethingpcs.com" => [
         "natdetection.onethingpcs.com", // #847
     ],
-    "kuaishouzt.com" => [
-        "kuaishouzt.com", // #847
-    ],
 
     "2mdn-cn.net" => ["2mdn-cn.net"],
     "admob-cn.com" => ["admob-cn.com"],
