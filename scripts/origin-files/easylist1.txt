@@ -1,9 +1,9 @@
-! Checksum: N3F4IUXFaiugFrufXLnW6A
-! Diff-Path: ../patches/224_optimized/224_optimized-s-1717151730-3600.patch
+! Checksum: ZCDrtKk0dbfkm0bUC7lYQA
+! Diff-Path: ../patches/224_optimized/224_optimized-s-1717259736-3600.patch
 ! Title: AdGuard Chinese filter (Optimized)
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.16.74
-! TimeUpdated: 2024-05-31T10:33:02+00:00
+! Version: 2.1.16.79
+! TimeUpdated: 2024-06-01T16:33:46+00:00
 ! Expires: 12 hours (update frequency)
 #%#var AG_onLoad=function(func){if(document.readyState==="complete"||document.readyState==="interactive")func();else if(document.addEventListener)document.addEventListener("DOMContentLoaded",func);else if(document.attachEvent)document.attachEvent("DOMContentLoaded",func)};
 #%#var AG_removeElementById = function(id) { var element = document.getElementById(id); if (element && element.parentNode) { element.parentNode.removeChild(element); }};
@@ -2430,6 +2430,7 @@ nfmovies.com#@?#div[id]:-abp-has(>img[onclick="openurl()"])
 -*-*-*-*.alpha^$script,third-party
 -*-*-*-*.as^$script,third-party
 -*-*-*-*.panda^$script,third-party
+ws://*/api/wss/GetNotReadCount$third-party
 -1316632262.cos.
 -1316899192.cos.
 .top/ad/
@@ -4079,6 +4080,7 @@ newduba.cn###jq_youxi
 ##script[src="/js/sy2.js"] + div[align="center"]
 ##span[title="neteasefooter"]
 ##.aiboav-ads
+##A[href="javascript:;"][onclick^="todkjermyd"]
 ##style + .a-loading
 ##style + .need_grid_img
 ##style + .vdgdo
@@ -4152,6 +4154,16 @@ newduba.cn###jq_youxi
 ||dfgfdffg.cn^
 ||xwdjnj.xyz^
 ||bfjsliv.top^
+||sseudorassb.com^
+||fdswrgg.cn^
+||vutjnt.xyz^
+||mgmuye.xyz^
+||zqgixxp.icu^
+||dssdfsf.cn^
+||cpgou.cn^
+||af9dc9.xyz^
+||goole20.shop^
+||fzpzrqou.icu^
 ##a[href*=".68hantang.com"]
 ##a[href*=".asd245796.com:"]
 ##a[href*=".asd252466.com:"]
@@ -13621,7 +13633,7 @@ hxsame.hexun.com$domain=~quote.hexun.com
 szxx.com.cn###A0
 mydrivers.com##.vwE9JmqU
 mydrivers.com##.yTv3AMqP
-mydrivers.com#?#li:-abp-has(>.titl+:-abp-contains(推广))
+mydrivers.com#?#li:-abp-has(>.titl+:-abp-contains(/推*广/))
 iqiyi.com##div[class^="video-slide_threeImagePages"]>a[href^="http"]:not([href*="iqiyi.com"])>div
 iqiyi.com##div[class^="video-slide_normal"]>a[href^="http"]:not([href*="iqiyi.com"]) div[class^="video-slide_row"]
 iqiyi.com##div[class^="video-slide_normal"]>a[href^="http"]:not([href*="iqiyi.com"])>div>img
