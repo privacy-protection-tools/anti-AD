@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202406041646
+! Version: 202406071800
 ! Title: EasyPrivacy
-! Last modified: 04 Jun 2024 16:46 UTC
+! Last modified: 07 Jun 2024 18:00 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -9648,6 +9648,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||cloudfunctions.net/ingest?
 ||cloudfunctions.net/sendwebpush-analytics
 ||cloudfunctions.net/vanalytics
+||cloudmetrics.xenforo.com^
 ||cltgtstor001.blob.core.windows.net^
 ||clustrmaps.com/counter/$third-party
 ||cmail19.com/t/$image,third-party
@@ -10278,6 +10279,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||isacglobal.com/sa.js
 ||isitelab.io/ite_sitecomV1ANA.min.js
 ||iterable.com/analytics.js
+||iturl.in/analytics?
 ||iubenda.com/write?
 ||iyisayfa.net/inc.php?
 ||jailbaitchan.com/tp/
@@ -12526,6 +12528,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||log000.goo.ne.jp^
 ||logger.torimochi-ad.net^
 ||macromill.com/imp/
+||metrics.streaks.jp^
 ||mofa.go.jp^*/count.cgi?
 ||monipla.com/launch.js
 ||moshimo.com^*/impression?
@@ -14822,6 +14825,9 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=thepiratebay.org|vi
 ! easyprivacy_specific_uBO.txt
 ! #if ext_ublock
 
+! https://github.com/AdguardTeam/AdguardFilters/issues/180750
+||pcoptimizedsettings.com/wp-content/plugins/koko-analytics/$script,redirect=noop.js,important
+||pcoptimizedsettings.com/wp-content/uploads/breeze/google/gtag.js$script,redirect=noop.js,important
 ! GPC
 weather.com,ubereats.com##+js(set, Navigator.prototype.globalPrivacyControl, false)
 weather.com,ubereats.com##+js(set, navigator.globalPrivacyControl, false)
@@ -50095,6 +50101,7 @@ abema.tv##+js(rmnt, script, NREUM)
 ||nikkei.com/.resources/tracking/
 ||nvapi.nicovideo.jp/v1/bandit-machine/
 ||odsyms15.com/impression?
+||portal.kotodaman.jp/api/otel/v1/logs
 ||pvtag.yahoo.co.jp^
 ||pw.gigazine.net^
 ||pzd.rakuten.co.jp^
@@ -50117,6 +50124,7 @@ abema.tv##+js(rmnt, script, NREUM)
 ||seesaawiki.jp/img/rainman.gif?
 ||service.webgoto.net/*?wAnalytics
 ||so-zou.jp/js/ga.js
+||ssai.api.streaks.jp/*/ad_info?
 ||stats.nhk.or.jp^
 ||sy.amebame.com^
 ||sy.ameblo.jp^
@@ -50753,6 +50761,8 @@ abema.tv##+js(rmnt, script, NREUM)
 @@||paypal.com/xoplatform/logger/api/logger$domain=play.leagueofkingdoms.com
 @@||paypalobjects.com/*/pageView.js$script,domain=paypal.com
 @@||paypalobjects.com/web/*/gAnalytics.js$script,domain=paypal.com
+@@||pcoptimizedsettings.com/wp-content/plugins/koko-analytics/$~third-party
+@@||pcoptimizedsettings.com/wp-content/uploads/breeze/google/gtag.js$~third-party
 @@||pendo.io/agent/static/$script,domain=recruiting.adp.com
 @@||plantyn.com/optiext/optiextension.dll$~third-party
 @@||plausible.io/js/plausible.js$script,domain=sammobile.com
