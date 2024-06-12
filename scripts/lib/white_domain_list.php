@@ -432,6 +432,7 @@ return [
     "log.snssdk.com" => 0, // #920
     "i.snssdk.com" => 0, // #920
     "mime.baidu.com" => 0, // #923
+    "staticsns.cdn.bcebos.com" => 0, // #925
     
     
     "iflow.uczzd.cn" => 0, // uc搞笑段子
