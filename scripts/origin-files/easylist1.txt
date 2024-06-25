@@ -1,9 +1,9 @@
-! Checksum: fVht2l/P5YiE1E0AFPHtjw
-! Diff-Path: ../patches/224_optimized/224_optimized-s-1719059731-3600.patch
+! Checksum: PvL1ZYV49kGCPKqe4pcTrQ
+! Diff-Path: ../patches/224_optimized/224_optimized-s-1719315387-3600.patch
 ! Title: AdGuard Chinese filter (Optimized)
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.17.81
-! TimeUpdated: 2024-06-22T12:33:24+00:00
+! Version: 2.1.17.93
+! TimeUpdated: 2024-06-25T11:33:47+00:00
 ! Expires: 12 hours (update frequency)
 #%#var AG_onLoad=function(func){if(document.readyState==="complete"||document.readyState==="interactive")func();else if(document.addEventListener)document.addEventListener("DOMContentLoaded",func);else if(document.attachEvent)document.attachEvent("DOMContentLoaded",func)};
 #%#var AG_removeElementById = function(id) { var element = document.getElementById(id); if (element && element.parentNode) { element.parentNode.removeChild(element); }};
@@ -238,6 +238,7 @@
 ||two.fsylr.com^
 ||ad.juksy.com^
 ||ads.tvb.com^
+manwa.fun#%#//scriptlet("prevent-setTimeout", "/alert\('请关闭.*Chrome/")
 sports.qq.com#@#.txp_ad_center
 ||baomidou.com/_astro/CheckAdBlocked.*.js
 baomidou.com#%#//scriptlet('set-constant', '_AdBlockInit', 'noopFunc')
@@ -288,10 +289,6 @@ yaociyuan.bid#%#//scriptlet('set-constant', 'killads', 'true')
 520cc.cc#%#//scriptlet('set-constant', 'all520dddaaa2022ccc', 'true')
 @@||520click.com/ad.php$stealth
 @@||520click.com/ad.php$domain=520cc.cc
-manwa.me#@#.ad-area
-manwa.me#$#.ad-area { position: absolute !important; left: -3000px !important; }
-||manwa.me/static/custom/files/300X250.gif$image,redirect=1x1-transparent.gif,important
-@@||manwa.me/static/custom/files/300X250.gif
 colamanga.com#%#//scriptlet("prevent-setTimeout", "loadErrorTip")
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=googlesyndication-adsbygoogle,domain=wuyong.fun,important
 renfei.net#$#.ant-modal-root { display: none !important; }
@@ -301,8 +298,6 @@ ldqk.xyz#@#.google-ad
 ekamus.info#%#//scriptlet("prevent-setTimeout", "ins.adsbygoogle")
 ekamus.info#%#//scriptlet("set-constant", "isAdsDisplayed", "true")
 ekamus.info#$#.adsbygoogle { height: 1px !important; }
-||manwa.fun/static/upload/ads/$image,redirect=1x1-transparent.gif,important
-@@||manwa.fun/static/upload/ads/*.gif?$image,~third-party
 dyxs23.com,dyxs20.com,dyxs15.com,dyxs14.com,dyxs13.com,dyxs12.com,dyxs11.com##.popupicon
 hkcards.com#@##ad-slot
 ||freedidi.com/wp-content/plugins/death-luhubaoyu/
@@ -680,6 +675,8 @@ ipv6.baidu.com,m.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###resul
 ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###content_left > .result ~ div:not([class]):not([style])
 /^(?!.*(rsc.cdn77.org|linkvertise.com|fastly.net|statically.io|sharecast.ws|b-cdn.net|bunnycdn.ru|bootstrapcdn.com|cdn.ampproject.org|cloudflare.com|cdn.staticfile.org|disqus.com|disquscdn.com|dmca.com|ebacdn.com|facebook.net|fastlylb.net|fbcdn.net|fluidplayer.com|fontawesome.com|github.io|google.com|googleapis.com|googletagmanager.com|gstatic.com|jquery.com|jsdelivr.net|jwpcdn.com|jwplatform.com|polyfill.io|recaptcha.net|shrink.pe|twitter.com|ulogin.ru|unpkg.com|userapi.com|vidazoo.com|(\/\/|\.)vk\.com|yandex.|yastatic.net|ytimg.com|zencdn.net|player|youtube.com|cackle.me|googleoptimize.com|vuukle.com|chatango.com|twimg.com|google-analytics.com|hcaptcha.com|raincaptcha.com|media-imdb.com|blogger.com|hwcdn.net|instagram.com|wp.com|imgsmail.ru|cdn.cloudflare.net|(\/\/|\.)x\.com)).*$/$third-party,script,_____,domain=manshuxs.com|yemancomic.com|qimiaoxiaoshuo.com|gaofuwu.org|nxpaaq.com|dengbi2.com|92hm.top|634.tv|myhaitang.cc|ckplayer.vip
 $script,third-party,denyallow=fastly.net|statically.io|sharecast.ws|b-cdn.net|bunnycdn.ru|bootstrapcdn.com|cdn.ampproject.org|cloudflare.com|cdn.staticfile.org|disqus.com|disquscdn.com|dmca.com|ebacdn.com|facebook.net|fastlylb.net|fbcdn.net|fluidplayer.com|fontawesome.com|github.io|google.com|googleapis.com|googletagmanager.com|gstatic.com|jquery.com|jsdelivr.net|jwpcdn.com|jwplatform.com|polyfill.io|recaptcha.net|shrink.pe|twitter.com|ulogin.ru|unpkg.com|userapi.com|vidazoo.com|vk.com|yastatic.net|ytimg.com|zencdn.net|youtube.com|cackle.me|googleoptimize.com|vuukle.com|chatango.com|twimg.com|google-analytics.com|hcaptcha.com|raincaptcha.com|media-imdb.com|blogger.com|hwcdn.net|instagram.com|wp.com|fastcomments.com|plyr.io|yhdmjx.com|yinghuazy.xyz|x.com,_____,domain=wap.dmwenku.com|m.wfxs.tw|h.fkxs.net|wap.ishuquge.la|m.91zww.com|592mh.top|dubuxiaoshuo.com|clm410.buzz|bookbl.com|shuku99.com|qiyoudy2.com|1yydstxt178.com|rouman5.com|feijisu20.com|iqb5.org|ntdm9.com|wap.xkushu.com|spoilertop.com|booktxts.com|bixia33.com|rouwenwu19.com|91porny.com|yznnw.com|vodtw.la|ckplayer.vip
+manwa.fun#%#//scriptlet('remove-attr', 'style', '.two-ad-area')
+manwa.fun###detail > div:has(> div.ad-area-close)
 pan.baidu.com##.wp-side-options
 mydown.yesky.com##.rightGg
 mydown.yesky.com##.main_left_advertisement
@@ -4135,6 +4132,38 @@ newduba.cn###jq_youxi
 ||67.21.92.163^
 ||107.167.16.14^
 ||cupfox.app^$third-party
+||talyrt.xyz^
+||okagcw.xyz^
+||vtlyrj.xyz^
+||saeo.cn^
+||edoshbw.top^
+||blciqbk.icu^
+||ycgfdf.cn^
+||birtw.cn^
+||fmjjvb.xyz^
+||awyuge.xyz^
+||ddnzpr.xyz^
+||uessnah.icu^
+||wdoshbe.top^
+||663008888.com^
+||uutytp.com^
+||w0057.com^
+||doujs03.xyz^
+||6pznpz.com^
+||baijs02.xyz^
+||baijs03.xyz^
+||google-js-01.xyz^
+||google-js-02.xyz^
+||ryhuzj.xyz^
+||afopr.cn^
+||qdoshby.top^
+||eyislow.top^
+||miwfkm.xyz^
+||dnpalh.xyz^
+||cresqoirz.com^
+||mcighme.icu^
+||hvuqkb.cn^
+||wyisloe.top^
 ||8878tp.com^
 ||ccccc66kkkkk.com^
 ||ccccc78kkkkk.com^
@@ -20297,13 +20326,13 @@ guailie.com#@#.google-ad
 !#7
 !#8
 !#91porny.com
-91porny.org,haijiao35.com,jiuse.io###main > div[id^="rd"]
+91porny.org,x9av7.com,jiuse.io###main > div[id^="rd"]
 ###playerJsvLayer.jsv-layer
-91porny.com,9s102.xyz,jiuse205.com,jiuse390.xyz,jiuse970.com##.container-fluid.p-0[class*="mb-"]
+91porny.com##.container-fluid.p-0[class*="mb-"]
 ##.fixed-bottom.jsv.jsv-g1
-91porny.org,haijiao35.com,jiuse.io##.footer + .block
-91porny.com,9s102.xyz,jiuse205.com,jiuse390.xyz,jiuse970.com##.jsv-g1
-91porny.org,jiuse.io,haijiao35.com#?#.card:-abp-has(>.card-image>a[href^="http"])
+91porny.org,x9av7.com,jiuse.io##.footer + .block
+91porny.com##.jsv-g1
+91porny.org,jiuse.io,x9av7.com#?#.card:-abp-has(>.card-image>a[href^="http"])
 ##header + #main:nth-child(n+4) .container-fluid.mb-0.p-0
 ##header + #main:nth-child(n+4) .container-fluid.mb-3.p-0
 ##header + #main:nth-child(n+4) > div[id^="po-s"]:not(#po-shd)
