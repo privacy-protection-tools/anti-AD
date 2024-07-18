@@ -19,6 +19,15 @@
 | `anti-ad-clash.yaml` 	| [link](https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-clash.yaml) 	| [官网地址🚀](https://anti-ad.net/clash.yaml)	| Clash Premium。 ([白名单](https://raw.githubusercontent.com/privacy-protection-tools/dead-horse/master/anti-ad-white-for-clash.yaml))	|
 | `anti-ad-smartdns.conf` 	| [link](https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-smartdns.conf) 	| [官网地址🚀](https://anti-ad.net/anti-ad-for-smartdns.conf) | SmartDNS ([白名单](https://raw.githubusercontent.com/privacy-protection-tools/dead-horse/master/anti-ad-white-for-smartdns.txt)) 	|
 
+
+## 争议域名
+
+一些域名可能与广告/跟踪有关，但部分情况下它们发挥着其他的作用，拦截它们可能会造成额外的问题。本项目对部分此类有争议的域名做了整理和简单说明，您可根据自己的需要自行添加额外规则放行或拦截相关域名。
+
+[点此查看](./discretion/README.md)
+
+欢迎 anti-AD 用户贡献和完善这部分内容。
+
 ## 版本历史
 
 #### v4.5.2 (2022.12.15)
