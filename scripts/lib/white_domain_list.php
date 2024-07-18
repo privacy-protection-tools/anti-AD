@@ -435,6 +435,7 @@ return [
     "staticsns.cdn.bcebos.com" => 0, // #925
     "oauth-login-drcn.platform.dbankcloud.com" => 0, // #929
     "firebaseinstallations.googleapis.com" => 0, // #931
+    "a0.app.xiaomi.com" => 0, // #932
     
     
     "iflow.uczzd.cn" => 0, // uc搞笑段子
