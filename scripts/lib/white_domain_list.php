@@ -434,6 +434,7 @@ return [
     "mime.baidu.com" => 0, // #923
     "staticsns.cdn.bcebos.com" => 0, // #925
     "oauth-login-drcn.platform.dbankcloud.com" => 0, // #929
+    "firebaseinstallations.googleapis.com" => 0, // #931
     
     
     "iflow.uczzd.cn" => 0, // uc搞笑段子
