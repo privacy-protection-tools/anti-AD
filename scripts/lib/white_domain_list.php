@@ -436,6 +436,7 @@ return [
     "oauth-login-drcn.platform.dbankcloud.com" => 0, // #929
     "firebaseinstallations.googleapis.com" => 0, // #931
     "a0.app.xiaomi.com" => 0, // #932
+    "https-filtering-check.adtidy.org" => 0, // #937
     
     
     "iflow.uczzd.cn" => 0, // uc搞笑段子
