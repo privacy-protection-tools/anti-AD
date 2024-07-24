@@ -437,7 +437,7 @@ return [
     "firebaseinstallations.googleapis.com" => 0, // #931
     "a0.app.xiaomi.com" => 0, // #932
     "https-filtering-check.adtidy.org" => 0, // #937
-    
+    "jnn-pa.googleapis.com" => 0, // #940
     
     "iflow.uczzd.cn" => 0, // uc搞笑段子
     "m.uczzd.cn" => 0, // uc搞笑段子
