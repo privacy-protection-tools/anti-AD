@@ -11,14 +11,31 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v4.1.1
     - name: clone the website
       run: git clone https://github.com/privacy-protection-tools/anti-ad.github.io.git ~/website
-    - name: copy some list files
+
+    - name: Install sing-box
+      env:
+        DEBIAN_FRONTEND: noninteractive
+      run: |
+        sudo curl -fsSL https://sing-box.app/gpg.key -o /etc/apt/keyrings/sagernet.asc
+        sudo chmod a+r /etc/apt/keyrings/sagernet.asc
+        echo "deb [arch=`dpkg --print-architecture` signed-by=/etc/apt/keyrings/sagernet.asc] https://deb.sagernet.org/ * *" | sudo tee /etc/apt/sources.list.d/sagernet.list > /dev/null
+        sudo apt-get update
+        sudo apt-get install sing-box-beta
+
+    - name: Compile sing-box rule-set
+      run: |
+        sing-box rule-set convert --type adguard ./anti-ad-adguard.txt --output ./anti-ad-for-sing-box.srs
+        echo '========================================'
+        sha256sum ./anti-ad-for-sing-box.srs
+        echo '========================================'
+
+    - name: Copy some list files
       run: |
         cp ./anti-ad-easylist.txt ~/website/docs/easylist.txt
         cp ./anti-ad-easylist.txt.md5 ~/website/docs/easylist.txt.md5
@@ -31,6 +48,8 @@ jobs:
         cp ./anti-ad-surge2.txt ~/website/docs/surge2.txt
         cp ./anti-ad-clash.yaml ~/website/docs/clash.yaml
         cp ./anti-ad-domains.txt ~/website/docs/domains.txt
+        cp ./anti-ad-for-sing-box.srs ~/website/docs/anti-ad-for-sing-box.srs
+
     - name: Commit files
       run: |
         cd ~/website
@@ -38,6 +57,7 @@ jobs:
         git config --local user.name "GitHub Action"
         git add .
         git commit -m "pull newest list." -a
+
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
