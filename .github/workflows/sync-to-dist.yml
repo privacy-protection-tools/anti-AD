@@ -30,9 +30,9 @@ jobs:
 
     - name: Compile sing-box rule-set
       run: |
-        sing-box rule-set convert --type adguard ./anti-ad-adguard.txt --output ./anti-ad-for-sing-box.srs
+        sing-box rule-set convert --type adguard ./anti-ad-adguard.txt --output ./anti-ad-sing-box.srs
         echo '========================================'
-        sha256sum ./anti-ad-for-sing-box.srs
+        sha256sum ./anti-ad-sing-box.srs
         echo '========================================'
 
     - name: Copy some list files
@@ -48,7 +48,7 @@ jobs:
         cp ./anti-ad-surge2.txt ~/website/docs/surge2.txt
         cp ./anti-ad-clash.yaml ~/website/docs/clash.yaml
         cp ./anti-ad-domains.txt ~/website/docs/domains.txt
-        cp ./anti-ad-for-sing-box.srs ~/website/docs/anti-ad-for-sing-box.srs
+        cp ./anti-ad-sing-box.srs ~/website/docs/anti-ad-sing-box.srs
 
     - name: Commit files
       run: |
