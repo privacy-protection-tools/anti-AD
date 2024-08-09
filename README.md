@@ -18,7 +18,7 @@
 | `anti-ad-surge2.txt` 	| [link](https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge2.txt) 	| [官网地址🚀](https://anti-ad.net/surge2.txt)	| Surge或其他工具，DOMAIN-SET 格式性能更好。 	|
 | `anti-ad-clash.yaml` 	| [link](https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-clash.yaml) 	| [官网地址🚀](https://anti-ad.net/clash.yaml)	| Clash Premium。 ([白名单](https://raw.githubusercontent.com/privacy-protection-tools/dead-horse/master/anti-ad-white-for-clash.yaml))	|
 | `anti-ad-smartdns.conf` 	| [link](https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-smartdns.conf) 	| [官网地址🚀](https://anti-ad.net/anti-ad-for-smartdns.conf) | SmartDNS ([白名单](https://raw.githubusercontent.com/privacy-protection-tools/dead-horse/master/anti-ad-white-for-smartdns.txt)) 	|
-
+| `anti-ad-sing-box.srs` 	| [link](https://raw.githubusercontent.com/privacy-protection-tools/anti-ad.github.io/master/docs/anti-ad-sing-box.srs) 	| [官网地址🚀](https://anti-ad.net/anti-ad-sing-box.srs) 	| sing-box（二进制文件，仅支持`1.10.0-alpha.25`及以上版本） 	|
 
 ## 争议域名
 
