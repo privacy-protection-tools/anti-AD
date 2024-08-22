@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202408191615
+! Version: 202408221546
 ! Title: EasyPrivacy
-! Last modified: 19 Aug 2024 16:15 UTC
+! Last modified: 22 Aug 2024 15:46 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -324,6 +324,7 @@
 /api/ipv4check?
 /api/log-visit
 /api/metrics/collect
+/api/metrics/event
 /api/pageactivity
 /api/pageview?
 /api/pagevisits
@@ -1046,6 +1047,7 @@
 /google_analitycs.js
 /google_analytics3_v2.js
 /google_analytics4.js
+/google_analytics_gtag.js$script
 /google_tag.data_layer.js
 /google_tag.script.js
 /google_tag/*
@@ -5764,7 +5766,6 @@ omni.soundestlink.com$image
 ||va-endpoint.com^$third-party
 ||valuedopinions.co.uk^$third-party
 ||vbanalytics.com^$third-party
-||vbt.io^$third-party
 ||vdna-assets.com^$third-party
 ||veduy.com^$third-party
 ||veille-referencement.com^$third-party
@@ -7796,6 +7797,7 @@ omni.soundestlink.com$image
 ||shyseed.com^
 ||sickflock.com^
 ||sicksmash.com^
+||sierrakermit.com^
 ||signaturepod.com^
 ||silentcredit.com^
 ||silentwrench.com^
@@ -10854,6 +10856,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||noflake-aggregator-http.narvar.com^
 ||nojscontainer.pepperjam.com^$third-party
 ||nol.yahoo.com^
+||nosto.com/analytics/
 ||notyf.com/pixel/
 ||nova.dice.net^
 ||nr.static.mmcdn.com^
@@ -13121,6 +13124,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||stat.ringier.sk^
 ||tipsport.sk/c/1x1.php?
 ! Slovene
+||cpx.smind.si^
 ! Spanish
 ||1to1.bbva.com^
 ||ab.blogs.es^
@@ -13181,12 +13185,16 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ! Turkish
 ||0.myikas.com^
 ||analitik.bik.gov.tr^
+||analytics.cdnstr.com^$third-party
+||analytics.faprika.net^
 ||analytics.kkb.com.tr^
+||analytics.turk.pro^$third-party
 ||c.keltis.com^
 ||collector.wawlabs.com^
 ||hulyagedikci.com/vhit.php?
 ||iyzipay.com/buyer-protection/assets/js/analytics.js
 ||izinal.com/log
+||log.collectaction.com^
 ||sayac.kapital.com.tr^
 ||statistics.daktilo.com^
 ||stats.vidyome.com^
@@ -13227,7 +13235,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||aax-eu-dub.amazon.com^$script
 ||aax-us-iad.amazon.com^$script
 ||ab-machine.forbes.com^
-||ab.chatgpt.com^
+||ab.chatgpt.com/v1/rgstr
 ||ab.fanatical.com^
 ||abcnews.com/assets/dtci/js/abcnews_visitorId.js
 ||abcnews.com/assets/dtci/js/at.js
@@ -13372,6 +13380,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||atrack.allposters.com^
 ||ats.alot.com^
 ||audacy.com/data-events/
+||aulart.com/wp-admin/admin-ajax.php?data_send=pageView
 ||aurum.tirto.id^
 ||auth.services.adobe.com/signin/v1/audit
 ||autotrader.com/*/pep?pixallId
@@ -13431,6 +13440,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||boomerang.dell.com^
 ||box.com/index.php?rm=box_gen204_batch_record
 ||brightside.me/metric-collector
+||browse-privately.net/event/
 ||browsealoud.com/plus/scripts/$script
 ||builder.io/api/v1/track
 ||buondua.com/hit/
@@ -13470,7 +13480,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||change.org/api-proxy/-/event_tracker
 ||channel.io/front/v*/channels/*/events
 ||chatfuel.com/cf-analytics/
-||chatgpt.com/ces/
+||chatgpt.com/ces/v1/t
 ||chatroll.com/t.gif
 ||chewy.com/api/event/
 ||chickadvisor.com/js/detect.min.js
@@ -13701,6 +13711,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||evs.icy-lake.kickstarter.com^
 ||evs.sgmt.loom.com^$script
 ||excess.duolingo.com/batch
+||exp.notion.so^
 ||expedia.*/cl/
 ||experiences.wyng.com/api/*/event-api/events
 ||exporntoons.net/api/stats?
@@ -14224,6 +14235,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||pks-analytics.raenonx.cc^
 ||pl.letsblock.it^
 ||plausible.bots.gg^
+||plausible.corsme.com^
 ||plausible.dragonfru.it^
 ||plausible.omgapi.org^
 ||plausible.safing.io^
@@ -14648,6 +14660,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||tracking.engineering.cloud.seek.com.au^
 ||tracking.game8.co^
 ||tracking.hsn.com^
+||tracking.peopleareeverything.com^
 ||tracking.rocketleague.com^
 ||tracking.shopstyle.co.uk^
 ||tracking.shopstyle.com^
@@ -52065,7 +52078,6 @@ mustar.meitetsu.co.jp##body[style="opacity: 0;"]:style(opacity: 1 !important;)
 ||mng.jiji.com/cookie.html
 ||muragon.com/js/normal/gtag-event.js
 ||mwed.jp/assets/packs/js/measurements/
-||newsdig.tbs.co.jp/op/analytics.js
 ||next.rikunabi.com/api/logRecommendRealtimeI2AV2
 ||nhk.or.jp^*/bc.js
 ||nicoad.nicovideo.jp/*/instream/tracking/
@@ -52153,6 +52165,7 @@ mustar.meitetsu.co.jp##body[style="opacity: 0;"]:style(opacity: 1 !important;)
 ||log.kinolights.com^
 ||log.tossinvest.com^
 ||log.zdnet.co.kr^
+||naver.com/jackpotlog/
 ||naver.com/PostView.nhn?$image
 ||nil.naver.com^
 ||nlog.naver.com^
@@ -52167,6 +52180,7 @@ mustar.meitetsu.co.jp##body[style="opacity: 0;"]:style(opacity: 1 !important;)
 ||stat.tiara.kakao.com^
 ||stat.tiara.tistory.com^
 ||stat.wanted.jobs^
+||tivan.naver.com^
 ||track.tiara.daum.net^
 ||track.tiara.kakao.com^
 ||tracker.cauly.co.kr^
