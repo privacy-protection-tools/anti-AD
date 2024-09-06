@@ -339,7 +339,7 @@ return [
     "jsinfo.net" => 0, #613
     "uol.com.br" => 0, #632
     "ntalker.com" => 0, #626
-    "img.shouji.sogou.com" => 0, #623
+    "shouji.sogou.com" => 1, #623, #822, #952
     "mo.res.wpscdn.cn" => 0, #636
     "qhres2.com" => 0, #638
     "rumble.com" => 0, #639
@@ -406,7 +406,6 @@ return [
     "weworkremotely.com" => 0, // #803
     "sqdd.myapp.com" => 0, // #814
     "eco.taobao.com" => 0, // #815
-    "input.shouji.sogou.com" => 0, // #822
     "ccmeng.com" => 0, // #830
     "cupfox.app" => 0, // #829
     "api-secure.solvemedia.com" => 0, // #827
