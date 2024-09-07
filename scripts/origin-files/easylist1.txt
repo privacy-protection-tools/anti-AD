@@ -1,9 +1,9 @@
-! Checksum: FQnPph5LzNPnVUhu5VxNpQ
-! Diff-Path: ../patches/224_optimized/224_optimized-s-1725471460-3600.patch
+! Checksum: 8p9cZIN6GBr3Wv84iHp3hA
+! Diff-Path: ../patches/224_optimized/224_optimized-s-1725716185-3600.patch
 ! Title: AdGuard Chinese filter (Optimized)
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.21.35
-! TimeUpdated: 2024-09-04T17:33:36+00:00
+! Version: 2.1.21.50
+! TimeUpdated: 2024-09-07T13:33:17+00:00
 ! Expires: 12 hours (update frequency)
 #%#var AG_onLoad=function(func){if(document.readyState==="complete"||document.readyState==="interactive")func();else if(document.addEventListener)document.addEventListener("DOMContentLoaded",func);else if(document.attachEvent)document.attachEvent("DOMContentLoaded",func)};
 #%#var AG_removeElementById = function(id) { var element = document.getElementById(id); if (element && element.parentNode) { element.parentNode.removeChild(element); }};
@@ -4091,6 +4091,9 @@ newduba.cn###jq_youxi
 ##img[src*=".sinaimg."][style="width:150px;height:300px"]
 ##script + #coupletBox
 ##script + #rbbox
+##.push-slider[clickmode="cpt"]
+##.push-bottom-container[clickmode="cpt"]
+##a[href*="xchina.click/prepare."]
 ###dip[href*=".tmall.com"]
 ###index_banner[src*=".meituan.net"]
 ##script + .header_rmb
@@ -4120,6 +4123,34 @@ newduba.cn###jq_youxi
 ||38.33.15.*.gif
 ||67.21.92.*.gif
 ||cupfox.app^$third-party
+||azenco.xyz^
+||g11edashb1.fun^
+||lzzqfj.xyz^
+||fppcrl.xyz^
+||dxwksqa.icu^
+||yuqmok.xyz^
+||212ehae.fun^
+||brutvncv.top^
+||dsaewew21.fun^
+||diendh.xyz^
+||geddsashb3.fun^
+||grewash1b.fun^
+||kzcayec.icu^
+||tqbrnd.xyz^
+||udeias.xyz^
+||fq03.shop^
+||jy05.shop^
+||lrutvncl.top^
+||gesvfvfhhb6.fun^
+||wxmmji.xyz^
+||orutvnck.top^
+||gedxssashb8.fun^
+||cosouy.xyz^
+||gedafdshb7.fun^
+||irgxwk.xyz^
+||zeddjv.xyz^
+||gqwwshbdd1.fun^
+||rgmmeff.icu^
 ||nsfsfn.xyz^
 ||wfijsc.xyz^
 ||ge3shbdf1.fun^
@@ -4131,6 +4162,7 @@ newduba.cn###jq_youxi
 ||urutvnct.top^
 ||gcvcdashb2.fun^
 ||imgoss1380.top^
+||vfvrld.xyz^
 ||nlrsrx.xyz^
 ||gbndash2.fun^
 ||geqshb22.fun^
@@ -6164,7 +6196,6 @@ newduba.cn###jq_youxi
 ##a[href*="/mug749.vip"]
 ##a[href*="/tg.602.com/"]
 ##a[href*="/uu5566.cn.com/"]
-##a[href*="/xchina.info/redirect/ad"]
 ##a[href*="/yigeyuming3880.top"]
 ##a[href*="nnqp.vip"]
 ~upupoo.com##a[href^="http://www.upupoo.com"]
@@ -8714,7 +8745,7 @@ $third-party,xmlhttprequest,domain=subhd.tv|subhdtw.com|xyg688.com|xyg688.xyz|zz
 /images/sgcrwj*.jpg
 /img/skin/*_bg.$domain=firefox.com.cn|firefoxchina.cn
 /img/skin/tao$domain=firefox.com.cn|firefoxchina.cn
-/jquery.modal.$domain=1909.me|8se.me|litu100.xyz
+/jquery.modal.$domain=1909.me|8se.me
 /mydisplay.$domain=400gb.com|bego.cc|ctfile.com|pipipan.com
 /o.js$domain=tptoon.com
 /r/video/*$domain=youxi.baidu.com
@@ -12780,9 +12811,7 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||xc.mydrivers.com^
 ||xcar.com.cn/dsp/ad
 ||xchina.*/plugins/jquery.modal/
-||xchina.co/upload/ad/
-||xchina.life/ad/
-||xchina.pro/upload/ad/
+||xchina.*/ad/
 ||xcmfu.com/cp.
 ||xdcad.net/source/plugin/disad/disad.js
 ||xdf.cn/v4/js/leyus/
@@ -14659,7 +14688,7 @@ zuimeia.com##.activity-poster:not([href*="zuimeia."])
 bilibili.com##.activity-slider[style="width: 1220px;"]
 1111.baidu.com,bdimg.com,tieba.baidu.com,tieba.com,xingqu.baidu.com##.activity_iframe_container
 2345.com##.acts11-sidefixed
-100ec.cn,159i.com,1905.com,22vd.com,2345.cn,234fang.com,3gsc.com.cn,52youpiao.com,72g.com,8se.me,acg.bz,acg13.cn,acgbenzi.com,baiduyunpan.net,baike.com,bbs-mychat.com,cdyee.com,ce.cn,chinaqking.com,chinatimes.com,chinatruck.org,chinaz.com,cnforex.com,cnsoftnews.com,codepub.com,cq.xinhuanet.com,cxryun.cn,dav01.com,discuss.com.hk,djwma.com,dmzj.com,dmzj1.com,dngz.net,douban.com,dzwww.com,eastday.com,fengniao.com,focus.cn,fx112.com,gongkong.com,henan100.com,honglingjin.co.uk,house.jschina.com.cn,iciba.com,ifeng.com,ipeen.com.tw,isharebest.com,itavcn.com,jojf.cn,jrj.com.cn,kumi.cn,landiannews.com,lawtv.com.cn,lieyunwang.com,lncn.org,loveshang.com,ltn.com.tw,luo8.com,maxpda.com,mm111.net,moxing.net,mvcat.com,ncdiy.com,neotv.com.cn,newsmth.net,njdaily.cn,pc0359.cn,people.com.cn,pharmnet.com.cn,pixnet.net,pptv.com,ptbus.com,qncye.com,r3sub.com,sogou.com,sozi.cn,tmioe.com,toolfk.com,tv.sohu.com,u-car.com.tw,weather.com.cn,xchina.fun,xianbao.fun,yawin.cn,yb983.com,ydss.cn,yesky.com,yiche.com,yqxxs.com,zhihu.com,ziyuanyo.com##.ad
+100ec.cn,159i.com,1905.com,22vd.com,2345.cn,234fang.com,3gsc.com.cn,52youpiao.com,72g.com,8se.me,acg.bz,acg13.cn,acgbenzi.com,baiduyunpan.net,baike.com,bbs-mychat.com,cdyee.com,ce.cn,chinaqking.com,chinatimes.com,chinatruck.org,chinaz.com,cnforex.com,cnsoftnews.com,codepub.com,cq.xinhuanet.com,cxryun.cn,dav01.com,discuss.com.hk,djwma.com,dmzj.com,dmzj1.com,dngz.net,douban.com,dzwww.com,eastday.com,fengniao.com,focus.cn,fx112.com,gongkong.com,henan100.com,honglingjin.co.uk,house.jschina.com.cn,iciba.com,ifeng.com,ipeen.com.tw,isharebest.com,itavcn.com,jojf.cn,jrj.com.cn,kumi.cn,landiannews.com,lawtv.com.cn,lieyunwang.com,lncn.org,loveshang.com,ltn.com.tw,luo8.com,maxpda.com,mm111.net,moxing.net,mvcat.com,ncdiy.com,neotv.com.cn,newsmth.net,njdaily.cn,pc0359.cn,people.com.cn,pharmnet.com.cn,pixnet.net,pptv.com,ptbus.com,qncye.com,r3sub.com,sogou.com,sozi.cn,tmioe.com,toolfk.com,tv.sohu.com,u-car.com.tw,weather.com.cn,xianbao.fun,yawin.cn,yb983.com,ydss.cn,yesky.com,yiche.com,yqxxs.com,zhihu.com,ziyuanyo.com##.ad
 cqmmgo.com##.ad-160x40
 19lou.com,ihome99.com##.ad-190x60
 cqmmgo.com##.ad-230x60
@@ -16647,8 +16676,9 @@ speedtest.cn##.pub-ad
 anquan.org##.pub_side_ad
 doudoudm.site,ezdmw.com##.public_ad
 abmedia.io##.pum
-8se.me,litu100.xyz##.push-bottom
-1909.me,8se.me,crxs.me,litu100.xyz,xchina.biz,xchina.co,xchina.pro##.push-top
+8se.me##.push-bottom
+1909.me,8se.me,crxs.me,xchina.biz,xchina.co##.media
+1909.me,8se.me,crxs.me,xchina.biz,xchina.co##.push-top
 cnplugins.com##.pushbox1
 zol.com.cn##.pv-mol_ask
 sogou.com##.pz-widget-flash-container
@@ -17656,7 +17686,6 @@ ithome.com##a[href*="/lapin."]
 ithome.com##a[href*="/lapin."] + .ad
 jandan.net##a[href*="/money.php?"]
 ikjzd.com##a[href*="/redirect-ad-url?"]
-xchina.fun##a[href*="/redirect/ad-"]
 e0575.cn##a[href*="/showad.php?"]
 bt1207ma.xyz##a[href*="/uuribao.com/"]
 bt1207ma.xyz##a[href*="/uuribao.com/"] + .caption
@@ -17906,7 +17935,6 @@ win0168.com##div.item
 duonaolive.com##div.nav-mobile
 baidu.com,bdimg.com,tieba.com##div.thread_item_box[style="position: relative;"]
 weibo.com##div[ad-data]
-xchina.fun##div[adid]
 fx168.com##div[adisload]
 hao123.com##div[alog-alias="hot-goods"]
 anjuke.com,sunofbeach.net##div[class$="-ad"]
@@ -18911,7 +18939,6 @@ android-doc.com,apk.tw,chaojizhibo.net,chtoen.com,dizhishengcheng.com,doitwell.t
 @@||aobi.100bt.com/play/ad/ad*.swf
 @@||api.ads.tvb.com^
 @@||apk.tw^*/ads.js$script,~third-party
-@@||apkpure.com^$generichide
 @@||app-advertise.zhihuishu.com^
 @@||appledaily.com.hk/admedia/
 @@||appledaily.com.tw^*_ad_logo.
