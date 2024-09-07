@@ -889,8 +889,8 @@ return [
         "crash.163.com",
         "httpdns.music.163.com", // #847
         "netapm.music.163.com", // #847
-        "ipv6.music.163.com", // #847
-        "ipv4.music.163.com", // #847
+        // "ipv6.music.163.com", // #847, #948
+        // "ipv4.music.163.com", // #847, #948
     ],
     "360.cn" => ["mclean.f.360.cn", "vconf.f.360.cn"],
     "gsgsr.xyz" => ["gsgsr.xyz", "www.gsgsr.xyz", "gdp.gsgsr.xyz"],
@@ -1227,7 +1227,7 @@ return [
     "ele.me" => [
         "v6-adashx.ut.ele.me", //#859
     ],
-    
+
     "50union.com" => [
         // #644
         "50union.com",
@@ -1475,7 +1475,7 @@ return [
         "bootcss.com", // #938
         "www.bootcss.com", // #938
     ],
-    
+
     "staticfile.net" => [
         "staticfile.net", // #938
         "www.staticfile.net", // #938
