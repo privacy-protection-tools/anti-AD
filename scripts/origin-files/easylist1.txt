@@ -1,9 +1,9 @@
-! Checksum: wHARFNZ3n9ROmE1Sa+zAGQ
-! Diff-Path: ../patches/224_optimized/224_optimized-s-1725982686-3600.patch
+! Checksum: UZqbo3HP2CPTdfT09OkmuQ
+! Diff-Path: ../patches/224_optimized/224_optimized-s-1726234652-3600.patch
 ! Title: AdGuard Chinese filter (Optimized)
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.21.66
-! TimeUpdated: 2024-09-10T15:33:36+00:00
+! Version: 2.1.21.79
+! TimeUpdated: 2024-09-13T13:33:39+00:00
 ! Expires: 12 hours (update frequency)
 #%#var AG_onLoad=function(func){if(document.readyState==="complete"||document.readyState==="interactive")func();else if(document.addEventListener)document.addEventListener("DOMContentLoaded",func);else if(document.attachEvent)document.attachEvent("DOMContentLoaded",func)};
 #%#var AG_removeElementById = function(id) { var element = document.getElementById(id); if (element && element.parentNode) { element.parentNode.removeChild(element); }};
@@ -2229,6 +2229,8 @@ csdn.net###footerRightAds
 ||c.mipcdn.com/static/*/mip-ad/mip-ad.js
 ||mycodes.net/js/*.js
 /js/hf*.js?v=$script,domain=bqgaa.com|bi25.cc
+huya.com#$##banner > a ~ .banner-close { display: none !important; }
+huya.com#%#//scriptlet('remove-attr', 'style', '#banner[style*="background-image:url"]')
 18comic.org,18comic.vip##div[class="row"][style="display: flex;flex-wrap: wrap;"]
 18comic.org,18comic.vip##div[data-group^="photo_center_games_"]
 18comic.org,18comic.vip##div[data-group^="skyscraper_"]
@@ -2320,7 +2322,8 @@ adguard.info,adguard.com,adguard.app##.hello_from_adguard_apps
 !+ PLATFORM(windows, mac, android)
 ||101.qq.com/js/base.js$replace=/(el\.getAttribute\("type"\) === "text\/javascript")/\(\$1 && !el\.getAttribute\("nonce"\)\)/
 ||acs.youku.com/*/mtop.youku.play.ups.appinfo.get/*/?jsv=$replace=/("ad":\{)[\s\S]*?(\}\,"playlog")/\$1\$2/,important
-@@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=nowplayer.now.com
+huya.com#@##banner
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=nowplayer.now.com,important
 !+ PLATFORM(windows, mac, android)
 @@||s1-static.msstatic.com/mfe/huya_main/*.html$xmlhttprequest,elemhide,jsinject,content,extension,domain=huya.com
 ||360doc.com^*.html?t=$badfilter
@@ -2328,7 +2331,7 @@ adguard.info,adguard.com,adguard.app##.hello_from_adguard_apps
 @@||republicbharat.com/_app/immutable/assets/FloatAd.*.css$domain=republicbharat.com
 app.n26.com#@#.bl > .gg
 @@||research.hchs.hc.edu.tw/*/banner.php$domain=research.hchs.hc.edu.tw
-||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima3,domain=now.com,important
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima3,domain=news.now.com,important
 @@||api.val.qq.com/go/agame/resource/banner?bannerid=aclos_website_banner$domain=val.qq.com
 ||cdn77.org^*.mp4$badfilter
 mfa.gov.cn,fmprc.gov.cn#@#.adbox2
@@ -2713,7 +2716,7 @@ bmvc2020-conference.com#@#div[id][style="width: 100%;"] > iframe[scrolling="no"]
 /Code/pccpcv.php
 /code/pop_cpf.
 /code/popjs.
-/common/cf/*$image,object,domain=~dahuaiji.com
+/common/cf/*$image,object,domain=~ztgame.com
 /conch/asset/js/atop.js
 /conch/asset/js/open-vb.
 /content.php?id=148&type=g|$xmlhttprequest
@@ -4129,6 +4132,32 @@ newduba.cn###jq_youxi
 ||38.33.15.*.gif
 ||67.21.92.*.gif
 ||cupfox.app^$third-party
+||cgskys.xyz^
+||nroeoxk.icu^
+||gdd08.com^
+||jhlnlt.xyz^
+||nhjn788.fun^
+||kdicked.top^
+||fq05.shop^
+||jy07.shop^
+||egesdashb8.fun^
+||iuuwuk.xyz^
+||vdsdsf2.fun^
+||jxjpnd.xyz^
+||uyyquln.icu^
+||jdickea.top^
+||bnrk7esglquispx2lsluttlm.xyz^
+||fsijngnfsfk.com^
+||uhuf56.fun^
+||wiwlqc.xyz^
+||baigamp.icu^
+||bnhorn.xyz^
+||gvvedashb6.fun^
+||uqykeq.xyz^
+||vxcvd67.fun^
+||idickeo.top^
+||28t1ya.cn^
+||vfdvdg67.fun^
 ||595image.com^
 ||73336zubo25326.com^
 ||bapa215.top^
@@ -12523,6 +12552,7 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||53bk.com/Baokan/Comja/changepic.
 ||xindingwealth.com/js/39.
 ||ufile.cc/pps.js
+||dajiadu8.com/17mb/script/ad.js
 szxx.com.cn###A0
 39.net##.banner_g
 dcfever.com##.trading_top_banner
