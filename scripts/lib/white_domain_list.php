@@ -438,6 +438,7 @@ return [
     "https-filtering-check.adtidy.org" => 0, // #937
     "jnn-pa.googleapis.com" => 0, // #940
     "migc.g.mi.com" => 0, // #942
+    "clientlog3.music.163.com" => 0, // #954
 
     "iflow.uczzd.cn" => 0, // uc搞笑段子
     "m.uczzd.cn" => 0, // uc搞笑段子
