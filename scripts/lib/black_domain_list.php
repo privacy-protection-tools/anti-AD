@@ -1484,6 +1484,9 @@ return [
         "staticfile.org", // #938
         "www.staticfile.org", // #938
     ],
+    "anythinktech.com" => [
+        "adx-os.anythinktech.com", // #958
+    ],
 
     "2mdn-cn.net" => ["2mdn-cn.net"],
     "admob-cn.com" => ["admob-cn.com"],
