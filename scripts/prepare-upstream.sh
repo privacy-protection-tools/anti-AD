@@ -77,18 +77,18 @@ echo "$upstreamHead" >./origin-files/upstream-hosts.txt
 echo "$upstreamHead" >./origin-files/upstream-strict-hosts.txt
 echo "$upstreamHead" >./origin-files/upstream-dead-hosts.txt
 echo "$upstreamHead" >./origin-files/upstream-easylist.txt
-echo "$upstreamHead" >./origin-files/upstream-wildcard-src-easylist.txt
-echo "$upstreamHead" >./origin-files/upstream-whiterule-src-easylist.txt
+echo "$upstreamHead" >./origin-files/upstream-wildcard-easylist.txt
+echo "$upstreamHead" >./origin-files/upstream-whiterule-easylist.txt
 
 for listfile in ./raw-sources/hosts*; do
 	echo "# $listfile" >>./origin-files/upstream-hosts.txt
-	tr -d '\r' <"$listfile" | grep -v -E "^((#.*)|(\s*))$" | grep -v -E "^[0-9\.:]+\s+(ip6\-)?(localhost|loopback)$" |
+	tr -d '\r' <"$listfile" | grep -v -E "^((#.*)|(\s*))$" | grep -v -E "^[0-9\.:]+\s+(ip6\-)?(broadcasthost|localhost|loopback)$" |
 		sed -e 's/0.0.0.0/127.0.0.1/g' -e 's/::/127.0.0.1/g' | sort -u >>./origin-files/upstream-hosts.txt
 done
 
 for listfile in ./raw-sources/strict-hosts*; do
 	echo "# $listfile" >>./origin-files/upstream-strict-hosts.txt
-	tr -d '\r' <"$listfile" | grep -v -E "^((#.*)|(\s*))$" | grep -v -E "^[0-9\.:]+\s+(ip6\-)?(localhost|loopback)$" |
+	tr -d '\r' <"$listfile" | grep -v -E "^((#.*)|(\s*))$" | grep -v -E "^[0-9\.:]+\s+(ip6\-)?(broadcasthost|localhost|loopback)$" |
 		sed -e 's/0.0.0.0/127.0.0.1/g' -e 's/::/127.0.0.1/g' | sort -u >>./origin-files/upstream-strict-hosts.txt
 done
 
@@ -101,11 +101,11 @@ for listfile in ./raw-sources/easylist*; do
 	echo "# $listfile" >>./origin-files/upstream-easylist.txt
 	tr -d '\r' <"$listfile" | grep -E "^\|\|[^\*\^]+?\^" | sort -u >>./origin-files/upstream-easylist.txt
 
-	echo "# $listfile" >>./origin-files/upstream-wildcard-src-easylist.txt
-	tr -d '\r' <"$listfile" | grep -E "^\|\|?([^\^=\/:]+)?\*([^\^=\/:]+)?\^" | sort -u >>./origin-files/upstream-wildcard-src-easylist.txt
+	echo "# $listfile" >>./origin-files/upstream-wildcard-easylist.txt
+	tr -d '\r' <"$listfile" | grep -E "^\|\|?([^\^=\/:]+)?\*([^\^=\/:]+)?\^" | sort -u >>./origin-files/upstream-wildcard-easylist.txt
 
-	echo "# $listfile" >>./origin-files/upstream-whiterule-src-easylist.txt
-	tr -d '\r' <"$listfile" | grep -E "^@@\|\|?[^\^=\/:]+?\^([^\/=\*]+)?$" | sort -u >>./origin-files/upstream-whiterule-src-easylist.txt
+	echo "# $listfile" >>./origin-files/upstream-whiterule-easylist.txt
+	tr -d '\r' <"$listfile" | grep -E "^@@\|\|?[^\^=\/:]+?\^([^\/=\*]+)?$" | sort -u >>./origin-files/upstream-whiterule-easylist.txt
 done
 rm -r ./raw-sources
 
@@ -114,7 +114,7 @@ sed '/^#/d' ./origin-files/upstream-hosts.txt | sort -u >./origin-files/base-src
 sed '/^#/d' ./origin-files/upstream-strict-hosts.txt | sort -u >./origin-files/base-src-strict-hosts.txt
 sed '/^#/d' ./origin-files/upstream-dead-hosts.txt | sort -u >./origin-files/base-dead-hosts.txt
 sed '/^#/d' ./origin-files/upstream-easylist.txt | sort -u >./origin-files/base-src-easylist.txt
-sed '/^#/d' ./origin-files/upstream-wildcard-src-easylist.txt | sort -u >./origin-files/wildcard-src-easylist.txt
-sed '/^#/d' ./origin-files/upstream-whiterule-src-easylist.txt | sort -u >./origin-files/whiterule-src-easylist.txt
+sed '/^#/d' ./origin-files/upstream-wildcard-easylist.txt | sort -u >./origin-files/wildcard-src-easylist.txt
+sed '/^#/d' ./origin-files/upstream-whiterule-easylist.txt | sort -u >./origin-files/whiterule-src-easylist.txt
 
 cd ../
