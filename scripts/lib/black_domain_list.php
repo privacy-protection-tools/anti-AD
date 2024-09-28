@@ -237,7 +237,14 @@ return [
         "firevent.jd.com", // #428
     ],
     "ixigua.com" => [
+        "v1-ad.ixigua.com",
         "v3-ad.ixigua.com", //移动广告
+        "v6-ad.ixigua.com",
+        "v9-ad.ixigua.com",
+        "v1-dc-ad.ixigua.com",
+        "v3-dc-ad.ixigua.com",
+        "v6-dc-ad.ixigua.com",
+        "v9-dc-ad.ixigua.com",
     ],
     "huan.tv" => [
         "ads.huan.tv", //广告
