@@ -1,0 +1,36 @@
+name: 新增拦截
+description: "我发现了需要拦截的域名"
+title: "[新增拦截]"
+labels: ["新增"]
+body:
+  - type: checkboxes
+    attributes:
+      label: 注意事项
+      description: 请浏览勾选以下事项，无效 issue 将被关闭
+      options:
+        - label: 我将提供清晰明确的问题描述
+          required: true
+        - label: 我做过简单测试，确认相关域名被拦截后不会出现明显问题
+          required: false
+
+  - type: input
+    attributes:
+      label: 域名
+      description: 请提供希望拦截的域名（列表）
+      placeholder: ad.example.com
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 问题描述
+      description: 请说明该域名出现的场景，为什么应当被拦截
+      value: |
+          1. 出现场景：
+
+          2. 拦截理由：
+
+          3. 截图、附件等（如有）：
+    validations:
+      required: true
+
