@@ -1,4 +1,4 @@
-name: 报告误拦截
+name: 报告误杀
 description: "我发现了 被误杀/不应被拦截 的域名"
 title: "[误杀]"
 labels: 误杀
@@ -9,9 +9,9 @@ body:
       description: 请浏览勾选以下事项，无效 issue 将被关闭
       options:
         - label: 我做了简单验证，确定问题由 anti-AD 列表造成
-          required: true
+          required: false
         - label: 我近期更新过 anti-AD 列表，当前版本仍存在问题
-          required: true
+          required: false
         - label: 我将提供清晰明确的问题描述
           required: true
 
@@ -53,7 +53,7 @@ body:
   - type: input
     attributes:
       label: 误杀域名
-      description: 请提供不应被拦截的域名
+      description: 请提供不应被拦截的域名（列表）
       placeholder: ad.example.com / 我不清楚
     validations:
       required: true
