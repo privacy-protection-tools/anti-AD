@@ -20,15 +20,15 @@ body:
       label: 使用的规则
       description: 请选择你使用的 anti-AD 列表
       options:
-        - anti-ad-dnsmasq.conf
-        - anti-ad-easylist.txt
         - anti-ad-adguard.txt
+        - anti-ad-clash.yaml
+        - anti-ad-dnsmasq.conf
         - anti-ad-domains.txt
+        - anti-ad-easylist.txt
+        - anti-ad-sing-box.srs
+        - anti-ad-smartdns.conf
         - anti-ad-surge.txt
         - anti-ad-surge2.txt
-        - anti-ad-clash.yaml
-        - anti-ad-smartdns.conf
-        - anti-ad-sing-box.srs
         - 其他（请在描述中说明）
     validations:
       required: true
@@ -38,14 +38,15 @@ body:
       label: 使用的拦截工具
       description: 请选择你使用的拦截工具
       options:
-        - dnsmasq
         - AdGuard
         - AdGuardHome
-        - Pi-Hole
-        - Surge
         - Clash/Meta/Mihomo
-        - SmartDNS
+        - dnsmasq
+        - Pi-Hole
+        - Quantumult X
         - sing-box
+        - SmartDNS
+        - Surge
         - 其他
     validations:
       required: false
