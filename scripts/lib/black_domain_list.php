@@ -29,6 +29,7 @@ return [
     "tencentmusic.com" => ["ad.tencentmusic.com"],
     "tencent.com" => [
         "tpstelemetry.tencent.com", // #883
+        "report.meeting.tencent.com", // #966
     ],
     "qq.com" => [
         "bugly.qq.com",
@@ -1493,6 +1494,37 @@ return [
     ],
     "anythinktech.com" => [
         "adx-os.anythinktech.com", // #958
+    ],
+    "bhbapp.cn" => [
+        "sentry.bhbapp.cn", // #966
+    ],
+    "chinacloudsites.cn" => [
+        "pcmactivity.chinacloudsites.cn", // #966
+    ],
+    "fzzixun.com" => [
+        "simulatelab-datasink.fzzixun.com", // #966
+    ],
+    "geelark.cn" => [
+        "cooper.geelark.cn", // #966
+        "datasink.geelark.cn", // #966
+    ],
+    "geelark.com" => [
+        "datasink.geelark.com", // #966
+    ],
+    "linkfox.com" => [
+        "datasink.linkfox.com", // #966
+    ],
+    "meituan.net" => [
+        "dreport.meituan.net", // #966
+        "babel-statistics-android.dreport.meituan.net", // #966
+    ],
+    "yximgs.com" => [
+        "tob-tracker.yximgs.com", // #966
+    ],
+    "ziniao.com" => [
+        "datasink.ziniao.com", // #966
+        "logs-collect.ziniao.com", // #966
+        "test-cb-log.ziniao.com", // #966
     ],
 
     "2mdn-cn.net" => ["2mdn-cn.net"],
