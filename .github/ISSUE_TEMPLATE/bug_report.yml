@@ -1,0 +1,73 @@
+name: 报告误拦截
+description: "我发现了 被误杀/不应被拦截 的域名"
+title: "[误杀]"
+labels: 误杀
+body:
+  - type: checkboxes
+    attributes:
+      label: 注意事项
+      description: 请浏览勾选以下事项，无效 issue 将被关闭
+      options:
+        - label: 我做了简单验证，确定问题由 anti-AD 列表造成
+          required: true
+        - label: 我近期更新过 anti-AD 列表，当前版本仍存在问题
+          required: true
+        - label: 我确认将提供详细清楚的问题描述
+          required: true
+
+  - type: dropdown
+    attributes:
+      label: 使用的规则
+      description: 请选择你使用的 anti-AD 列表
+      options:
+        - anti-ad-dnsmasq.conf
+        - anti-ad-easylist.txt
+        - anti-ad-adguard.txt
+        - anti-ad-domains.txt
+        - anti-ad-surge.txt
+        - anti-ad-surge2.txt
+        - anti-ad-clash.yaml
+        - anti-ad-smartdns.conf
+        - anti-ad-sing-box.srs
+        - 其他（请在描述中说明）
+    validations:
+      required: true
+
+  - type: dropdown
+    attributes:
+      label: 使用的拦截工具
+      description: 请选择你使用的广告拦截工具
+      options:
+        - dnsmasq
+        - AdGuard
+        - AdGuardHome
+        - Pi-Hole
+        - Surge
+        - Clash/Meta/Mihomo
+        - SmartDNS
+        - sing-box
+        - 其他
+    validations:
+      required: false
+
+  - type: input
+    attributes:
+      label: 涉及域名
+      description: 请提供不应被拦截的域名
+      placeholder: example.com/我不清楚
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 问题描述
+      description: 请说明该域名被拦截后的影响，尽可能准确清晰
+      value: |
+          1. 问题发生时间：
+          
+          2. 该域名影响的软件/平台/功能是：
+
+          2. 截图、附件等（如有）：
+    validations:
+      required: true
+
