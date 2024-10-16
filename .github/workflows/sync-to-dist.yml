@@ -26,8 +26,7 @@ jobs:
         sudo chmod a+r /etc/apt/keyrings/sagernet.asc
         echo "deb [arch=`dpkg --print-architecture` signed-by=/etc/apt/keyrings/sagernet.asc] https://deb.sagernet.org/ * *" | sudo tee /etc/apt/sources.list.d/sagernet.list > /dev/null
         sudo apt-get update
-        # Switch to stable version if sing-box 1.10.0 released
-        sudo apt-get install sing-box-beta
+        sudo apt-get install sing-box
 
     - name: Compile sing-box rule-set
       run: |
