@@ -28,12 +28,36 @@ jobs:
         sudo apt-get update
         sudo apt-get install sing-box
 
-    - name: Compile sing-box rule-set
+    - name: Install mihomo
+      env:
+        DEBIAN_FRONTEND: noninteractive
+      run: |
+        case "$(uname -m)" in
+        'x86_64') ARCH='amd64' ;;
+        'x86' | 'i686' | 'i386') ARCH='386' ;;
+        'aarch64' | 'arm64') ARCH='arm64' ;;
+        'armv7l') ARCH='armv7' ;;
+        'riscv64') ARCH='riscv64' ;;
+        's390x') ARCH='s390x' ;;
+        *) ARCH='unknown' ;;
+        esac
+        echo "The architecture is: $ARCH"
+        [ "$ARCH" = 'unknown' ] || {
+          MIHOMO_VER=$(wget -q -O - 'https://github.com/MetaCubeX/mihomo/releases/download/Prerelease-Alpha/version.txt')
+          # e.g. alpha-3e966e8
+          URL='https://github.com/MetaCubeX/mihomo/releases/download/Prerelease-Alpha/mihomo-linux-'$ARCH'-'$MIHOMO_VER'.deb'
+          # e.g. https://github.com/MetaCubeX/mihomo/releases/download/Prerelease-Alpha/mihomo-linux-amd64-alpha-3e966e8.deb
+          wget -q -O ./mihomo.deb "$URL"
+          sudo apt install ./mihomo.deb
+          rm -f ./mihomo.deb
+        }
+
+    - name: Compile binaries for sing-box/mihomo
       run: |
         sing-box rule-set convert --type adguard ./anti-ad-adguard.txt --output ./anti-ad-sing-box.srs
-        echo '========================================'
         sha256sum ./anti-ad-sing-box.srs
-        echo '========================================'
+        mihomo convert-ruleset domain yaml ./anti-ad-clash.yaml ./anti-ad-mihomo.mrs
+        sha256sum ./anti-ad-mihomo.mrs
 
     - name: Copy some list files
       run: |
@@ -47,6 +71,7 @@ jobs:
         cp ./anti-ad-surge.txt ~/website/docs/surge.txt
         cp ./anti-ad-surge2.txt ~/website/docs/surge2.txt
         cp ./anti-ad-clash.yaml ~/website/docs/clash.yaml
+        cp ./anti-ad-mihomo.mrs ~/website/docs/mihomo.mrs
         cp ./anti-ad-domains.txt ~/website/docs/domains.txt
         cp ./anti-ad-sing-box.srs ~/website/docs/anti-ad-sing-box.srs
 
