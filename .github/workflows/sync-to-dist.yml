@@ -48,14 +48,16 @@ jobs:
           URL='https://github.com/MetaCubeX/mihomo/releases/download/Prerelease-Alpha/mihomo-linux-'$ARCH'-'$MIHOMO_VER'.deb'
           # e.g. https://github.com/MetaCubeX/mihomo/releases/download/Prerelease-Alpha/mihomo-linux-amd64-alpha-3e966e8.deb
           wget -q -O ./mihomo.deb "$URL"
-          sudo apt install ./mihomo.deb
+          sudo apt-get install ./mihomo.deb
           rm -f ./mihomo.deb
         }
 
     - name: Compile binaries for sing-box/mihomo
       run: |
+        echo 'Compiling sing-box rule-set...'
         sing-box rule-set convert --type adguard ./anti-ad-adguard.txt --output ./anti-ad-sing-box.srs
         sha256sum ./anti-ad-sing-box.srs
+        echo 'Compiling mihomo ruleset...'
         mihomo convert-ruleset domain yaml ./anti-ad-clash.yaml ./anti-ad-mihomo.mrs
         sha256sum ./anti-ad-mihomo.mrs
 
