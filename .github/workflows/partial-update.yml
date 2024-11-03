@@ -1,0 +1,139 @@
+name: Partial update
+
+on:
+  push:
+    branches:
+      - adlist-maker
+    paths:
+      - '**.php'
+      - 'scripts/origin-files/anti-ad-origin-block.txt'
+      - 'scripts/origin-files/some-else.txt'
+      - 'scripts/origin-files/yhosts-latest.txt'
+
+jobs:
+  partial-build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Get source code from master
+      uses: actions/checkout@v4
+      with:
+        ref: master
+        path: master
+
+    - name: Get source code from adlist-maker
+      uses: actions/checkout@v4
+      with:
+        ref: adlist-maker
+        path: adlist-maker
+
+    - name: Build anti-AD lists
+      working-directory: adlist-maker
+      run: |
+        /bin/bash ./scripts/build-list.sh
+
+    - name: Commit anti-AD changes
+      run: |
+        mv -f ./adlist-maker/adblock-for-dnsmasq.conf ./master/
+        mv -f ./adlist-maker/anti-ad-* ./master/
+        cd ./master
+        git config user.email "action@github.com"
+        git config user.name "GitHub Action[bot]"
+        git add .
+        git commit -m "Auto renew anti-AD lists" -m "without upstream changes"
+        git push
+
+  sync:
+    if: github.repository == 'privacy-protection-tools/anti-AD'
+    needs: partial-build
+    runs-on: ubuntu-latest
+    steps:
+    - name: Get source code from master
+      uses: actions/checkout@v4
+      with:
+        ref: master
+        path: master
+
+    - name: Get source code from website
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.PERSON_TOKEN }}
+        repository: privacy-protection-tools/anti-ad.github.io
+        ref: master
+        path: website
+
+    - name: Install sing-box
+      env:
+        DEBIAN_FRONTEND: noninteractive
+      run: |
+        sudo curl -fsSL https://sing-box.app/gpg.key -o /etc/apt/keyrings/sagernet.asc
+        sudo chmod a+r /etc/apt/keyrings/sagernet.asc
+        echo "deb [arch=`dpkg --print-architecture` signed-by=/etc/apt/keyrings/sagernet.asc] https://deb.sagernet.org/ * *" | sudo tee /etc/apt/sources.list.d/sagernet.list > /dev/null
+        sudo apt-get update
+        sudo apt-get install sing-box
+
+    - name: Install mihomo
+      env:
+        DEBIAN_FRONTEND: noninteractive
+      run: |
+        case "$(uname -m)" in
+        'x86_64') ARCH='amd64' ;;
+        'x86' | 'i686' | 'i386') ARCH='386' ;;
+        'aarch64' | 'arm64') ARCH='arm64' ;;
+        'armv7l') ARCH='armv7' ;;
+        'riscv64') ARCH='riscv64' ;;
+        's390x') ARCH='s390x' ;;
+        *) ARCH='unknown' ;;
+        esac
+        echo "The architecture is: $ARCH"
+        [ "$ARCH" = 'unknown' ] || {
+          MIHOMO_VER=$(wget -q -O - 'https://github.com/MetaCubeX/mihomo/releases/download/Prerelease-Alpha/version.txt')
+          # e.g. alpha-3e966e8
+          URL='https://github.com/MetaCubeX/mihomo/releases/download/Prerelease-Alpha/mihomo-linux-'$ARCH'-'$MIHOMO_VER'.deb'
+          # e.g. https://github.com/MetaCubeX/mihomo/releases/download/Prerelease-Alpha/mihomo-linux-amd64-alpha-3e966e8.deb
+          wget -q -O ./mihomo.deb "$URL"
+          sudo apt-get install ./mihomo.deb
+          rm -f ./mihomo.deb
+        }
+
+    - name: Compile binary for sing-box/mihomo
+      working-directory: master
+      run: |
+        if [ "$(which sing-box 2>/dev/null)"x = 'x' ]; then
+          echo 'sing-box not available.'
+        else
+          echo 'Compiling sing-box rule-set...'
+          sing-box rule-set convert --type adguard ./anti-ad-adguard.txt --output ./anti-ad-sing-box.srs
+          sha256sum ./anti-ad-sing-box.srs
+        fi
+        if [ "$(which mihomo 2>/dev/null)"x = 'x' ]; then
+          echo 'mihomo not available.'
+        else
+          echo 'Compiling mihomo ruleset...'
+          mihomo convert-ruleset domain yaml ./anti-ad-clash.yaml ./anti-ad-mihomo.mrs
+          sha256sum ./anti-ad-mihomo.mrs
+        fi
+
+    - name: Update website files
+      run: |
+        cp -f ./master/anti-ad-easylist.txt ./website/docs/easylist.txt
+        cp -f ./master/anti-ad-easylist.txt.md5 ./website/docs/easylist.txt.md5
+        cp -f ./master/anti-ad-adguard.txt ./website/docs/adguard.txt
+        cp -f ./master/anti-ad-adguard.txt.md5 ./website/docs/adguard.txt.md5
+        cp -f ./master/adblock-for-dnsmasq.conf ./website/docs/dnsmasq.conf
+        cp -f ./master/adblock-for-dnsmasq.conf ./website/docs/anti-ad-for-dnsmasq.conf
+        cp -f ./master/anti-ad-smartdns.conf ./website/docs/anti-ad-for-smartdns.conf
+        cp -f ./master/anti-ad-surge.txt ./website/docs/surge.txt
+        cp -f ./master/anti-ad-surge2.txt ./website/docs/surge2.txt
+        cp -f ./master/anti-ad-clash.yaml ./website/docs/clash.yaml
+        cp -f ./master/anti-ad-domains.txt ./website/docs/domains.txt
+        [ -s './master/anti-ad-sing-box.srs' ] && cp -f ./master/anti-ad-sing-box.srs ./website/docs/anti-ad-sing-box.srs
+        [ -s './master/anti-ad-mihomo.mrs' ] && cp -f ./master/anti-ad-mihomo.mrs ./website/docs/mihomo.mrs
+
+    - name: Commit to website
+      working-directory: website
+      run: |
+        git config user.email "action@github.com"
+        git config user.name "GitHub Action[bot]"
+        git add .
+        git commit -m "Sync latest lists"
+        git push
