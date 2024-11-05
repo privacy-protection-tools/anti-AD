@@ -1111,7 +1111,7 @@ return [
         "mam6.netease.com", // #496
         "httpdns-sdk.n.netease.com", // #847
         "httpdns.n.netease.com", // #847
-        "nstool.netease.com", // #847
+        // "nstool.netease.com", // #847, #967
     ],
     "cibntv.net" => [
         // #507
