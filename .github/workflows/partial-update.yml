@@ -91,9 +91,9 @@ jobs:
         [ "$ARCH" = 'unknown' ] || {
           MIHOMO_VER=$(wget -q -O - 'https://github.com/MetaCubeX/mihomo/releases/download/Prerelease-Alpha/version.txt')
           # e.g. alpha-3e966e8
-          URL='https://github.com/MetaCubeX/mihomo/releases/download/Prerelease-Alpha/mihomo-linux-'$ARCH'-'$MIHOMO_VER'.deb'
+          MIHOMO_URL='https://github.com/MetaCubeX/mihomo/releases/download/Prerelease-Alpha/mihomo-linux-'$ARCH'-'$MIHOMO_VER'.deb'
           # e.g. https://github.com/MetaCubeX/mihomo/releases/download/Prerelease-Alpha/mihomo-linux-amd64-alpha-3e966e8.deb
-          wget -q -O ./mihomo.deb "$URL"
+          wget -q -O ./mihomo.deb "$MIHOMO_URL"
           sudo apt-get install ./mihomo.deb
           rm -f ./mihomo.deb
         }
