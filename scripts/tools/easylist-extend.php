@@ -282,6 +282,7 @@ $ARR_WHITE_RULE_LIST = array(
     '@@||login-sh.aki-game.com^' => 1, // #945
     '@@||rocket.chat^' => 1, // #957
     '@@||usageapi.*.oraclecloud.com^' => 1, // #961
+    '@@||track.vontron.com^' => 1, // #985
 );
 
 //针对上游赦免规则anti-AD不予赦免的规则，即赦免名单的黑名单
