@@ -13,7 +13,11 @@ return [
     "cnzz.cn" => ["cnzz.cn"],
     "inmobi.cn" => ["inmobi.cn"],
     "aliapp.org" => ["aliapp.org"],
-    "snssdk.com" => ["bds.snssdk.com", "xlog.snssdk.com"],
+    "snssdk.com" => [
+        "bds.snssdk.com",
+        "xlog.snssdk.com",
+        "gecko.snssdk.com", // #989
+    ],
     "51togic.com" => [
         "customstat.video.51togic.com",
         "ad.video.51togic.com",
@@ -268,6 +272,7 @@ return [
         "openjmacs.m.taobao.com",
         "v6-adashx.ut.taobao.com", // #859
         "wcp.taobao.com", // #847
+        "gaode-jmacs.m.taobao.com", // #989
     ],
     "aiclk.com" => ["aiclk.com"],
     "5ubei.com" => ["5ubei.com"], //统计类例如http://dnm.5ubei.com:7098/hlink.html
@@ -1499,6 +1504,8 @@ return [
     ],
     "anythinktech.com" => [
         "adx-os.anythinktech.com", // #958
+        "cn-api.anythinktech.com", // #989
+        "datk.anythinktech.com", // #989
     ],
     "bhbapp.cn" => [
         "sentry.bhbapp.cn", // #966
@@ -1533,6 +1540,24 @@ return [
     ],
     "163yun.com" => [
         "ye.dun.163yun.com", // #971
+    ],
+    "birdgesdk.com" => [
+        "aa.birdgesdk.com", // #989
+    ],
+    "mssdk-bu.bytedance.com" => [
+        "mssdk-bu.bytedance.com", // #989
+    ],
+    "pinduoduo.com" => [
+        "dspsdk.pinduoduo.com", // #989
+    ],
+    "toutiao.com" => [
+        "dm-hl.toutiao.com", // #989
+    ],
+    "volces.com" => [
+        "apmplus.volces.com", // #989
+    ],
+    "volctrack.com" => [
+        "volctrack.com", // #989
     ],
 
     "2mdn-cn.net" => ["2mdn-cn.net"],
