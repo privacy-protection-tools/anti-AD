@@ -1559,6 +1559,9 @@ return [
     "volctrack.com" => [
         "volctrack.com", // #989
     ],
+    "brg0.com" => [
+        "brg0.com", // #970
+    ],
 
     "2mdn-cn.net" => ["2mdn-cn.net"],
     "admob-cn.com" => ["admob-cn.com"],
