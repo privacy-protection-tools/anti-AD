@@ -200,6 +200,7 @@ $ARR_WHITE_RULE_LIST = array(
     '@@||ads.privacy.qq.com^' => 1, // #546
     '@@||rocket.chat^' => 1, // #957
     '@@||usageapi.*.oraclecloud.com^' => 1, // #961
+    '@@||download.falco.org^' => 1, // #993
 );
 
 //针对上游赦免规则anti-AD不予赦免的规则，即赦免名单的黑名单
