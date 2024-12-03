@@ -21,9 +21,11 @@
 | `anti-ad-sing-box.srs` 	| [link](https://raw.githubusercontent.com/privacy-protection-tools/anti-ad.github.io/master/docs/anti-ad-sing-box.srs) 	| [官网地址🚀](https://anti-ad.net/anti-ad-sing-box.srs) 	| sing-box（二进制文件，需`1.10.0`及以上版本） 	|
 | `mihomo.mrs` 	| [link](https://raw.githubusercontent.com/privacy-protection-tools/anti-ad.github.io/master/docs/mihomo.mrs) 	| [官网地址🚀](https://anti-ad.net/mihomo.mrs) 	| mihomo（二进制文件，需`1.18.7`及以上版本） 	|
 
+`anti-ad-easylist.txt` 包含正则规则，适用于 AdGuardHome，请勿在 AdGuard/uBlock Origin 等能够匹配 URL 路径的工具中使用（特定 URL 可能被错误拦截）
+
 ## 争议域名
 
-一些域名可能与广告/跟踪有关，但部分情况下它们发挥着其他的作用，拦截它们可能会造成额外的问题。本项目对部分此类有争议的域名做了整理和简单说明，您可根据自己的需要自行添加额外规则放行或拦截相关域名。
+一些域名可能与广告/跟踪有关，但部分情况下它们还有其他的作用，拦截它们可能会造成额外的问题。本项目对部分此类有争议的域名做了整理和简单说明，您可根据自己的需要自行添加额外规则放行或拦截相关域名。
 
 [点此查看](./discretion/README.md)
 
