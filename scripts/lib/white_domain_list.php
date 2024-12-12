@@ -444,6 +444,7 @@ return [
     "c.paypal.com" => 0, // #965
     "cc.map.qq.com" => 0, // #974
     "xp.apple.com" => 0, // #991, #972
+    "pkoplink.com" => 0, // #998
 
     "iflow.uczzd.cn" => 0, // uc搞笑段子
     "m.uczzd.cn" => 0, // uc搞笑段子
