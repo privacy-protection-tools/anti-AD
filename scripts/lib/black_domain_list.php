@@ -67,7 +67,11 @@ return [
     "adview.cn" => ["adview.cn"],
     "wrating.com" => ["wrating.com"],
     "umengcloud.com" => ["umengcloud.com", "ulogs.umengcloud.com"],
-    "umeng.com" => ["umeng.com", "alogs.umeng.com"],
+    "umeng.com" => [
+        "umeng.com",
+        "alogs.umeng.com",
+        "utoken.umeng.com", // #1006
+    ],
     "umeng.co" => ["umeng.co"],
     "dftoutiao.com" => ["dftoutiao.com"],
     "miaozhen.com" => ["miaozhen.com"],
@@ -1561,6 +1565,21 @@ return [
     ],
     "brg0.com" => [
         "brg0.com", // #970
+    ],
+    "doglobal.net" => [
+        // #1006
+        "doglobal.net",
+        "api-es.doglobal.net",
+    ],
+    "yfanads.cn" => [
+        "yfanads.cn", // #1006
+    ],
+    "yfanads.com" => [
+        // #1006
+        "yfanads.com",
+        "adx-data.yfanads.com",
+        "api.yfanads.com",
+        "tracker.yfanads.com",
     ],
 
     "2mdn-cn.net" => ["2mdn-cn.net"],
