@@ -210,6 +210,7 @@ return [
     "mazu.3g.qq.com" => 0, // #340
     "umiwi.com" => 0, // #341
     "xmpush.xiaomi.com" => 0, // #343
+    "app.chat.xiaomi.net" => 0, // https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1726
     "doublecklick.net" => 1, // 拼写错误的域名，https://github.com/privacy-protection-tools/anti-AD/pull/347/files
     "issuecdn.baidupcs.com" => 0, // #350
     "duiba.com.cn" => 0, // #352
