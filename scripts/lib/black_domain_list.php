@@ -53,7 +53,6 @@ return [
         "tmeadbak.y.qq.com", // #847
         "ugcup.music.qq.com", // #847
         "ipv6.kg.qq.com", // #847
-        "tmeadbak.y.qq.com", // #847
     ],
     "openstorage.cn" => ["iflyad.bjb.openstorage.cn"],
     "analysys.cn" => ["analysys.cn"],
@@ -359,10 +358,9 @@ return [
         "h5.vivo.com.cn", // #847
         "browser.vivo.com.cn", // #847
         "zhan.vivo.com.cn", // #847
-        "onewsvod.com", // #847
-        "yidianzixun.com", // #847
         "ads-marketing-vivofs.vivo.com.cn", // #847
     ],
+    "onewsvod.com" => ["onewsvod.com"], // #847
     "vnet.cn" => ["vnet.cn"], //互联星空
     "wannaplay.cn" => ["h5.wannaplay.cn"], //游戏广告
     "waps.cn" => ["waps.cn"], //广告商
@@ -1548,7 +1546,7 @@ return [
     "birdgesdk.com" => [
         "aa.birdgesdk.com", // #989
     ],
-    "mssdk-bu.bytedance.com" => [
+    "bytedance.com" => [
         "mssdk-bu.bytedance.com", // #989
     ],
     "pinduoduo.com" => [
