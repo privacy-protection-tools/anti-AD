@@ -53,6 +53,7 @@ return [
         "tmeadbak.y.qq.com", // #847
         "ugcup.music.qq.com", // #847
         "ipv6.kg.qq.com", // #847
+        "log.node.minigame.qq.com", // #1012
     ],
     "openstorage.cn" => ["iflyad.bjb.openstorage.cn"],
     "analysys.cn" => ["analysys.cn"],
