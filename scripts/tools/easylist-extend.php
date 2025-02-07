@@ -285,6 +285,8 @@ $ARR_WHITE_RULE_LIST = array(
     '@@||track.vontron.com^' => 1, // #985
     '@@||download.falco.org^' => 1, // #993
     '@@||ad-block.dns.adguard.com^' => 1, // #1002
+    '@@||tracking.doordash.com^' => 1, // #1011
+    '@@||app.powerbi.com^' => 1, // #1011
 );
 
 //针对上游赦免规则anti-AD不予赦免的规则，即赦免名单的黑名单
