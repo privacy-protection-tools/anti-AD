@@ -1580,6 +1580,17 @@ return [
         "api.yfanads.com",
         "tracker.yfanads.com",
     ],
+    "adanxing.com" => [
+        // #1015
+        "adanxing.com",
+        "statics.adanxing.com",
+    ],
+    "kuaishou.com" => [
+        "promotion-partner.kuaishou.com", // #1015
+    ],
+    "qttunion.com" => [
+        "api.qttunion.com", // #1015
+    ],
 
     "2mdn-cn.net" => ["2mdn-cn.net"],
     "admob-cn.com" => ["admob-cn.com"],
