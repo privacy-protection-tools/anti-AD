@@ -142,6 +142,15 @@ $ARR_REGEX_LIST = array(
 
 //对通配符匹配或正则匹配增加的额外赦免规则
 $ARR_WHITE_RULE_LIST = array(
+/**
+ * 激进的 track(ing) 规则已被关闭，不再需要这些明确加白
+ * '@@||track.cpau.info^' => 1, // #251
+ * '@@||track.toggl.com^' => 1, // #307
+ * '@@||tracking-protection.cdn.mozilla.net^' => 1, // #407
+ * '@@||trackings.post.japanpost.jp^' => 1, // #441
+ * '@@||track.aliexpress.com^' => 1, // #446
+ * '@@||tracking.doordash.com^' => 1, // #1011
+ */
     '@@||tongji.*kuwo.cn^' => 0,
     '@@||tracking.epicgames.com^' => 0,
     '@@||tracker.eu.org^' => 1, //强制加白，BT tracker，有形如2.tracker.eu.org的域
@@ -165,11 +174,9 @@ $ARR_WHITE_RULE_LIST = array(
     '@@||api.ad-gone.com^' => 1, // #207
     '@@||news-app.abumedia.yql.yahoo.com^' => 1, // #206
     '@@||meizu.coapi.moji.com^' => 1, // #217
-    '@@||track.cpau.info^' => 1, // #251
     '@@||passport.bobo.com^' => 1, // #265
     '@@||stat.jseea.cn^' => 1, // #279
     '@@||widget.intercom.io^' => 1, // #280
-    '@@||track.toggl.com^' => 1, // #307
     '@@||www.msftconnecttest.com^' => 1, // #327
     '@@||storage.live.com^' => 1, // #333
     '@@||skyapi.onedrive.live.com^' => 1, // #333
@@ -182,7 +189,6 @@ $ARR_WHITE_RULE_LIST = array(
     '@@||ad.cityu.edu.hk^' => 1, // #398
     '@@||edge-enterprise.activity.windows.com^' => 1, // #401
     '@@||edge.activity.windows.com^' => 1, // #401
-    '@@||tracking-protection.cdn.mozilla.net^' => 1, // #407
     '@@||skydrivesync.policies.live.net^' => 1, // #409
     '@@||dxcloud.episerver.net^' => 1, // #418
     '@@||static3.iask.cn^' => 1, // #429
@@ -191,8 +197,6 @@ $ARR_WHITE_RULE_LIST = array(
     '@@||dw.iask.com.cn^' => 1, // #429
     '@@||settings-win.data.microsoft.com^' => 1, // #426
     '@@||insideruser.microsoft.com^' => 1, // #426
-    '@@||trackings.post.japanpost.jp^' => 1, // #441
-    '@@||track.aliexpress.com^' => 1, // #446
     '@@||s.mvconf.f.360.cn^' => 1, // #462
     '@@||api.huangye.miui.com^' => 1, // #476
     '@@||future.biz.weibo.com^' => 1, // #527
@@ -202,7 +206,6 @@ $ARR_WHITE_RULE_LIST = array(
     '@@||usageapi.*.oraclecloud.com^' => 1, // #961
     '@@||download.falco.org^' => 1, // #993
     '@@||ad-block.dns.adguard.com^' => 1, // #1002
-    '@@||tracking.doordash.com^' => 1, // #1011
     '@@||app.powerbi.com^' => 1, // #1011
 );
 
