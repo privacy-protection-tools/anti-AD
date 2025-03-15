@@ -265,7 +265,12 @@ return [
     ],
 
     "kingsoft-office-service.com" => ["abroad-ad.kingsoft-office-service.com"],
-    "amap.com" => ["logs.amap.com", "dualstack-logs.amap.com", "v6-adashx.ut.amap.com"],
+    "amap.com" => [
+        "logs.amap.com",
+        "dualstack-logs.amap.com",
+        "v6-adashx.ut.amap.com",
+        "h-adashx.ut.amap.com", // #1026
+    ],
     "tt114.net" => ["tt114.net"], //例如http://www.tt114.net/html/tlink.html
     "taobao.com" => [
         "ip.taobao.com",
@@ -2186,6 +2191,10 @@ return [
         "applogios.uc.cn", // uc log
         "gjapplog.uc.cn", // #442
         "applog.ucdns.uc.cn", // #442
+        "applog-perf.uc.cn", // #1026
+        "adashx.ut.uc.cn", // #1026
+        "h-adashx.ut.uc.cn", // #1026
+        "s-adashx.ut.uc.cn", // #1026
     ],
     "sm.cn" => [
         // dns日志提取
