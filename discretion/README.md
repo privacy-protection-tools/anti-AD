@@ -33,6 +33,23 @@ anti-AD 已默认拦截相关域名，若您希望使用免密码一键登录功
 
 但也有部分用户主动与相关企业合作，通过主动提供 PCDN 服务从相关企业处获得奖励。
 
+## 广告/数据收集服务商的官网/文档被拦截
+
+非广告、数据收集等不影响用户体验的内容不是 anti-AD 拦截的目标，但部分用于拦截广告、数据收集的规则可能会同时拦截相关服务商的非广告内容，例如官网/文档等。
+
+这里指的是专门的广告或数据收集分析公司，受影响的主要是广告、数据收集行业从业者，或是网站站长、程序开发等特定群体，对普通用户基本没有影响，通常不会被视作“误杀”。
+
+相关规则可能来自上游，官网/文档被拦截的原因一般是相关服务商将非广告内容放在与广告资源相同的域名下，特定规则在拦截广告资源的同时也就拦截了对应的官网/文档。由于广告商的页面不是多数用户需要的内容，这类被拦截的域名对普通用户来说就是广告/数据收集跟踪者，放行会影响拦截效果，更是默许了这种广告商可能的规避广告拦截的手段。
+
+作为一个以拦截广告、隐私收集为目标的项目，没理由向广告商提供方便。业内人员应慎重使用广告拦截服务，可以自己放行相关域名。
+
+相关 issues: [#973], [#1008], [#1019], [#1032]
+
+[#973]:https://github.com/privacy-protection-tools/anti-AD/issues/973
+[#1008]:https://github.com/privacy-protection-tools/anti-AD/issues/1008
+[#1019]:https://github.com/privacy-protection-tools/anti-AD/issues/1019
+[#1032]:https://github.com/privacy-protection-tools/anti-AD/issues/1032
+
 ## 个别域名情况说明
 
 - `mmstat.com`
@@ -59,7 +76,7 @@ anti-AD 已默认拦截相关域名，若您希望使用免密码一键登录功
 
 - `activity.windows.com`
 
-微软域名，与数据收集跟踪有关，已被拦截
+微软域名，与数据收集跟踪有关，曾被上游拦截而引入 anti-AD
 
 拦截后可能影响部分微软服务运行，已有 Microsoft Edge、Microsoft Authenticator 同步功能无法工作的报告，已加白其子域名 `edge.activity.windows.com` 和 `edge-enterprise.activity.windows.com`
 
