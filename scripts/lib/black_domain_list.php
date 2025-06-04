@@ -1596,6 +1596,12 @@ return [
     "qttunion.com" => [
         "api.qttunion.com", // #1015
     ],
+    "qm989.com" => [
+        // #1045
+        "a6-remad.qm989.com",
+        "a-qmad.qm989.com",
+        "t-remad.qm989.com",
+    ],
 
     "2mdn-cn.net" => ["2mdn-cn.net"],
     "admob-cn.com" => ["admob-cn.com"],
