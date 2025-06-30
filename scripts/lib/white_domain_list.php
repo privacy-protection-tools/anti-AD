@@ -449,6 +449,7 @@ return [
     "r.stripe.com" => 0, // #1033
     "data.vod.itc.cn" => 0, // #1038
     "similarweb.com" => 0, // #1039
+    "analytics.meituan.net" => 0, // #1052
 
     "iflow.uczzd.cn" => 0, // uc搞笑段子
     "m.uczzd.cn" => 0, // uc搞笑段子
