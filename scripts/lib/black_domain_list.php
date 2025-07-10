@@ -1383,9 +1383,9 @@ return [
         "v4-lm.adukwai.com",
     ],
     "diwodiwo.xyz" => [
-        // #775
-        "ad-display.diwodiwo.xyz",
-        "ad-channel.diwodiwo.xyz",
+        "ad-display.diwodiwo.xyz", // #775
+        "ad-channel.diwodiwo.xyz", // #775
+        "pica-ad-api.diwodiwo.xyz", // #1056
     ],
     "126.net" => [
         "ads.music.126.net", // #784
@@ -1601,9 +1601,6 @@ return [
         "a6-remad.qm989.com",
         "a-qmad.qm989.com",
         "t-remad.qm989.com",
-    ],
-    "diwodiwo.xyz" => [
-        "pica-ad-api.diwodiwo.xyz", // #1056
     ],
 
     "2mdn-cn.net" => ["2mdn-cn.net"],
