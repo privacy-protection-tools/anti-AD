@@ -1602,6 +1602,9 @@ return [
         "a-qmad.qm989.com",
         "t-remad.qm989.com",
     ],
+    "diwodiwo.xyz" => [
+        "pica-ad-api.diwodiwo.xyz", // #1056
+    ],
 
     "2mdn-cn.net" => ["2mdn-cn.net"],
     "admob-cn.com" => ["admob-cn.com"],
