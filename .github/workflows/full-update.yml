@@ -96,12 +96,13 @@ jobs:
         echo "The architecture is: $ARCH"
         [ "$ARCH" = 'unknown' ] || {
           MIHOMO_VER=$(wget -q -O - 'https://github.com/MetaCubeX/mihomo/releases/download/Prerelease-Alpha/version.txt')
-          # e.g. alpha-3e966e8
-          MIHOMO_URL='https://github.com/MetaCubeX/mihomo/releases/download/Prerelease-Alpha/mihomo-linux-'$ARCH'-'$MIHOMO_VER'.deb'
-          # e.g. https://github.com/MetaCubeX/mihomo/releases/download/Prerelease-Alpha/mihomo-linux-amd64-alpha-3e966e8.deb
-          wget -q -O ./mihomo.deb "$MIHOMO_URL"
-          sudo apt-get install ./mihomo.deb
-          rm -f ./mihomo.deb
+          # e.g. alpha-1a84153
+          MIHOMO_URL='https://github.com/MetaCubeX/mihomo/releases/download/Prerelease-Alpha/mihomo-linux-'$ARCH'-'$MIHOMO_VER'.gz'
+          # e.g. https://github.com/MetaCubeX/mihomo/releases/download/Prerelease-Alpha/mihomo-linux-amd64-alpha-1a84153.gz
+          wget -q -O ./mihomo.gz "$MIHOMO_URL"
+          gunzip ./mihomo.gz
+          mv ./mihomo-linux* ./mihomo
+          chmod +x ./mihomo
         }
 
     - name: Compile binary for sing-box/mihomo
@@ -114,12 +115,12 @@ jobs:
           sing-box rule-set convert --type adguard ./anti-ad-adguard.txt --output ./anti-ad-sing-box.srs
           sha256sum ./anti-ad-sing-box.srs
         fi
-        if [ "$(which mihomo 2>/dev/null)"x = 'x' ]; then
-          echo 'mihomo not available.'
-        else
+        if [ -x '../mihomo' ]; then
           echo 'Compiling mihomo ruleset...'
-          mihomo convert-ruleset domain yaml ./anti-ad-clash.yaml ./anti-ad-mihomo.mrs
+          ../mihomo convert-ruleset domain yaml ./anti-ad-clash.yaml ./anti-ad-mihomo.mrs
           sha256sum ./anti-ad-mihomo.mrs
+        else
+          echo 'mihomo not available.'
         fi
 
     - name: Update website files
