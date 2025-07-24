@@ -797,11 +797,11 @@ return [
         "ubibibi.com",
         "www.ubibibi.com",
     ],
-    "uc123.com" => [
-        // #234
+    /*"uc123.com" => [
+        // #234, #1059
         "uc123.com",
         "www.uc123.com",
-    ],
+    ],*/
     "ucdesk.cn" => [
         // #234
         "ucdesk.cn",
