@@ -452,6 +452,7 @@ return [
     "analytics.meituan.net" => 0, // #1052
     "zynga.com" => 0, // #1060
     "zyngaplayersupport.com" => 0, // #1060
+    "adukwai.com" => 0, // #1063
 
     "iflow.uczzd.cn" => 0, // uc搞笑段子
     "m.uczzd.cn" => 0, // uc搞笑段子

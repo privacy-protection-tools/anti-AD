@@ -1372,12 +1372,17 @@ return [
         "ulog-sdk.gifshow.com",
     ],
     "adukwai.com" => [
-        // #768
-        "adukwai.com",
+        // #768 #1063
+        //"adukwai.com",
+        "p1-ad.adukwai.com",
         "p1-jx.adukwai.com",
-        "p1-lm.adukwai.com",
+        //"p1-lm.adukwai.com",
+        "p2-ad.adukwai.com",
         "p2-jx.adukwai.com",
         "p2-lm.adukwai.com",
+        "p3-ad.adukwai.com",
+        "p4-ad.adukwai.com",
+        "p5-ad.adukwai.com",
         "v1-lm.adukwai.com",
         "v2-lm.adukwai.com",
         "v4-lm.adukwai.com",

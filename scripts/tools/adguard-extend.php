@@ -207,6 +207,7 @@ $ARR_WHITE_RULE_LIST = array(
     '@@||download.falco.org^' => 1, // #993
     '@@||ad-block.dns.adguard.com^' => 1, // #1002
     '@@||app.powerbi.com^' => 1, // #1011
+    '@@||tube.e.kuaishou.com^' => 1, // #1063
 );
 
 //针对上游赦免规则anti-AD不予赦免的规则，即赦免名单的黑名单
