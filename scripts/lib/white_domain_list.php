@@ -275,7 +275,6 @@ return [
     "ecard.shenzhentong.com" => 0, // #486
     "minexmr.com" => 0, // #490
     "appdownload.alicdn.com" => 0, // #491
-    "pv.sohu.com" => 0, // #493
     "zconfig.alibabausercontent.com" => 0, // #495
     "proofpoint.com" => 0, // #497
     "mini.eastday.com" => 0, // #500
@@ -453,6 +452,30 @@ return [
     "zynga.com" => 0, // #1060
     "zyngaplayersupport.com" => 0, // #1060
     "adukwai.com" => 0, // #1063
+
+    // upstream-white-easylist 中选取的一些应放行域名
+    "a1.itc.cn" => 0,
+    "adx.yiche.com" => 0,
+    "changyan.sohu.com" => 0,
+    "ecma.bdimg.com" => 0,
+    "gk.sina.cn" => 0,
+    "pv.sohu.com" => 0, // #493
+    "sax.sina.com.cn" => 0,
+    "statcounter.com" => 0,
+    "tf.360.cn" => 0,
+    /* upstream-white-easylist 源规则
+      @@||a1.itc.cn/pv/js/spv.
+      @@||adx.yiche.com/cityindex.ashx
+      @@||changyan.sohu.com/debug/cookie?
+      @@||ecma.bdimg.com/holmes/*.svg
+      @@||gk.sina.cn/v1/gkmatch?
+      @@||pv.sohu.com/suv/
+      @@||sax.sina.com.cn/video/newimpress?
+      @@||statcounter.com/js//fusioncharts.charts.js
+      @@||statcounter.com/js/fusioncharts.js
+      @@||www.statcounter.com/images/$image,third-party
+      @@||tf.360.cn/e/wb?
+    */
 
     "iflow.uczzd.cn" => 0, // uc搞笑段子
     "m.uczzd.cn" => 0, // uc搞笑段子
