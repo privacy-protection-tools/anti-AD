@@ -41,10 +41,14 @@ for i in "${!easylist[@]}"; do
 	echo "Start to download easylist-${i}..."
 	tMark="$(date +'%Y-%m-%d %H:%M:%S %Z')"
 	curl -o "./raw-sources/easylist-${i}.txt" --connect-timeout 60 -s "${easylist[$i]}"
+	echo -e "! easylist-${i} $tMark\n! ${easylist[$i]}" >>./origin-files/upstream-white-easylist.txt
+	tr -d '\r' <"./raw-sources/easylist-${i}.txt" |
+		grep -E '^@@\|\|?[a-zA-Z0-9\.\*-]+\.[a-zA-Z\*]+(\^|\/)([^=]+)?$' |
+		sed -e "/\^\$elemhide$/d" -e "/\^\$generichide$/d" |
+		LC_ALL=C sort -u >>./origin-files/upstream-white-easylist.txt
 	echo -e "! easylist-${i} $tMark\n! ${easylist[$i]}" >>./origin-files/upstream-easylist.txt
 	tr -d '\r' <"./raw-sources/easylist-${i}.txt" |
-		grep -E '^(@@)?\|\|?[a-zA-Z0-9\.\*-]+\.[a-zA-Z\*]+\^(\$[^=]+)?$' |
-		sed -e "/\^\$elemhide$/d" -e "/\^\$generichide$/d" |
+		grep -E '^\|\|?[a-zA-Z0-9\.\*-]+\.[a-zA-Z\*]+\^(\$[^=]+)?$' |
 		LC_ALL=C sort -u >>./origin-files/upstream-easylist.txt
 done
 
@@ -124,8 +128,8 @@ sed -r -e '/^!/d' -e 's=^\|\|?=||=' ./origin-files/upstream-easylist.txt |
 	grep -E '^\|\|[a-zA-Z0-9\.-]+\.[a-zA-Z]+\^(\$[^~]+)?$' | LC_ALL=C sort -u >./origin-files/base-src-easylist.txt
 sed -r -e '/^!/d' -e 's=^\|\|?=||=' ./origin-files/upstream-easylist.txt |
 	grep -E '\|\|([a-zA-Z0-9\.\*-]+)?\*([a-zA-Z0-9\.\*-]+)?\^(\$[^~]+)?$' | LC_ALL=C sort -u >./origin-files/wildcard-src-easylist.txt
-sed -r -e '/^!/d' -e 's=^@@\|\|?=@@||=' ./origin-files/upstream-easylist.txt |
-	grep -E '^@@\|\|[a-zA-Z0-9\.-]+\.[a-zA-Z]+\^' | LC_ALL=C sort -u >./origin-files/whiterule-src-easylist.txt
+sed -r -e '/^!/d' -e 's=^@@\|\|?=@@||=' ./origin-files/upstream-white-easylist.txt |
+	grep -E '^@@\|\|[a-zA-Z0-9\.-]+\.[a-zA-Z]+\^(\$[^=]+)?$' | LC_ALL=C sort -u >./origin-files/whiterule-src-easylist.txt
 sed '/^#/d' ./origin-files/upstream-hosts.txt | LC_ALL=C sort -u >./origin-files/base-src-hosts.txt
 sed '/^#/d' ./origin-files/upstream-strict-hosts.txt | LC_ALL=C sort -u >./origin-files/base-src-strict-hosts.txt
 sed '/^#/d' ./origin-files/upstream-dead-hosts.txt | LC_ALL=C sort -u >./origin-files/base-dead-hosts.txt
