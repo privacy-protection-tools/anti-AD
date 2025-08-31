@@ -19,7 +19,6 @@ easylist=(
 )
 hosts=(
 	'https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-hosts-online.txt'
-	'https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts'
 	'https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt'
 )
 strict_hosts=(
@@ -99,6 +98,10 @@ Hosts-Processer <./raw-sources/hosts-origin-block.txt >>./origin-files/upstream-
 tr -d '\r' <./origin-files/yhosts-latest.txt >./raw-sources/hosts-yhosts.txt
 echo -e "# hosts-yhosts-latest $tMark\n# ./scripts/origin-files/yhosts-latest.txt @adlist-maker" >>./origin-files/upstream-hosts.txt
 Hosts-Processer <./raw-sources/hosts-yhosts.txt >>./origin-files/upstream-hosts.txt
+
+tr -d '\r' <./origin-files/adwars-latest.txt >./raw-sources/hosts-adwars.txt
+echo -e "# hosts-adwars-latest $tMark\n# ./scripts/origin-files/adwars-latest.txt @adlist-maker" >>./origin-files/upstream-hosts.txt
+Hosts-Processer <./raw-sources/hosts-adwars.txt >>./origin-files/upstream-hosts.txt
 
 for i in "${!strict_hosts[@]}"; do
 	echo "Start to download strict_hosts-${i}..."
