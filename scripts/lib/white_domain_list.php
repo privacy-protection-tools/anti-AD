@@ -449,8 +449,8 @@ return [
     "data.vod.itc.cn" => 0, // #1038
     "similarweb.com" => 0, // #1039
     "analytics.meituan.net" => 0, // #1052
-    "zynga.com" => 0, // #1060
-    "zyngaplayersupport.com" => 0, // #1060
+    //"zynga.com" => 0, // #1060
+    //"zyngaplayersupport.com" => 0, // #1060
     "adukwai.com" => 0, // #1063
 
     // upstream-white-easylist 中选取的一些应放行域名
@@ -462,6 +462,7 @@ return [
     "pv.sohu.com" => 0, // #493
     "sax.sina.com.cn" => 0,
     "statcounter.com" => 0,
+    "www.statcounter.com" => 0,
     "tf.360.cn" => 0,
     /* upstream-white-easylist 源规则
       @@||a1.itc.cn/pv/js/spv.
