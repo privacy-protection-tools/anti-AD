@@ -73,7 +73,6 @@ return [
         "utoken.umeng.com", // #1006
     ],
     "umeng.co" => ["umeng.co"],
-    "dftoutiao.com" => ["dftoutiao.com"],
     "miaozhen.com" => ["miaozhen.com"],
     "rubiconproject.com" => ["rubiconproject.com"],
     "adsame.com" => ["adsame.com"],
@@ -128,7 +127,6 @@ return [
     "coin-hive.com" => ["coin-hive.com"],
     "coinhive.com" => ["coinhive.com"],
     "igexin.com" => ["igexin.com"],
-    "tanx.com" => ["tanx.com"],
     "smartadserver.com" => ["smartadserver.com"],
     "imrworldwide.com" => ["imrworldwide.com"],
     "fastclick.net" => ["fastclick.net"],
@@ -166,7 +164,7 @@ return [
     ],
     "zhihu.com" => [
         "lc-push.zhihu.com",
-        "sugar.zhihu.com",
+        //"sugar.zhihu.com", #380
         "appcloud2.in.zhihu.com",
         "zhihu-web-analytics.zhihu.com",
         "event.zhihu.com",
@@ -188,9 +186,10 @@ return [
     "51y5.net" => [
         "51y5.net", //wifi万能钥匙的推广
     ],
+    /* fe69f2fe9506a5ac02ccd1c1833ad76cab6e27fd
     "com.com" => [
         "com.com", //来自ublock的规则，恶意域名 https://isc.sans.edu/diary/.COM.COM+Used+For+Malicious+Typo+Squatting/20019
-    ],
+    ],*/
     "consensu.org" => [
         "consensu.org", //广告网址，例如：https://vendorlist.consensu.org/vendorlist.json
     ],
@@ -208,7 +207,6 @@ return [
     "tradetracker.net" => [
         "tradetracker.net", //广告联盟
     ],
-    "rambler.ru" => ["rambler.ru"],
     "zhanzhang.net" => [
         "zhanzhang.net", //网络推广
     ],
@@ -246,7 +244,6 @@ return [
     ],
     "jd.com" => [
         "mercury.jd.com", //大数据收集，用户行为埋点上报
-        "wl.jd.com",
         "blackhole.m.jd.com", // #428
         "firevent.jd.com", // #428
     ],
@@ -276,7 +273,7 @@ return [
         "ip.taobao.com",
         "fourier.taobao.com",
         "accscdn.m.taobao.com",
-        "acs.m.taobao.com",
+        //"acs.m.taobao.com", #92
         "acs.wapa.taobao.com",
         "openjmacs.m.taobao.com",
         "v6-adashx.ut.taobao.com", // #859
@@ -633,7 +630,6 @@ return [
     ],
     "yiche.com" => [
         // 易车ad
-        "adx.yiche.com",
         "log.ycapp.yiche.com",
     ],
     "csheaven.com" => [
@@ -1109,7 +1105,7 @@ return [
         "pubsub02.oray.net",
     ],*/
     "bcebos.com" => [
-        "staticsns.cdn.bcebos.com", // #489
+        //"staticsns.cdn.bcebos.com", // #489, #925
         "mobads-pre-config.cdn.bcebos.com", // #784
     ],
     "pglstatp-toutiao.com" => [
@@ -1243,9 +1239,9 @@ return [
         "sdktmp.hubcloud.com.cn", // #813
         "v.adx.hubcloud.com.cn", // #859
     ],
-    "cainiao.com" => [
-        "v6-adashx.ut.cainiao.com", //#859
-    ],
+    /*"cainiao.com" => [
+        "v6-adashx.ut.cainiao.com", //#859, #904
+    ],*/
     "ele.me" => [
         "v6-adashx.ut.ele.me", //#859
     ],
