@@ -1098,10 +1098,6 @@ return [
         "qutaovip.com",
         "api-ads.qutaovip.com",
     ],
-    "7moor.com" => [
-        // #464
-        "7moor.com",
-    ],
     /*"oray.com" => [
         // #464, #1067
         "tk.oray.com",
