@@ -1102,16 +1102,16 @@ return [
         // #464
         "7moor.com",
     ],
-    "oray.com" => [
-        // #464
+    /*"oray.com" => [
+        // #464, #1067
         "tk.oray.com",
         "sl-tk.oray.com",
     ],
     "oray.net" => [
-        // #464
+        // #464, #1067
         "sl-log.oray.net",
         "pubsub02.oray.net",
-    ],
+    ],*/
     "bcebos.com" => [
         "staticsns.cdn.bcebos.com", // #489
         "mobads-pre-config.cdn.bcebos.com", // #784
