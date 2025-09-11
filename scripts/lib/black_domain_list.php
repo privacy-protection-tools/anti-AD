@@ -1604,6 +1604,8 @@ return [
         "a-qmad.qm989.com",
         "t-remad.qm989.com",
     ],
+    "ietheivaicai.com" => ["ietheivaicai.com"], //NiuLink PCDN
+    "nexusedgeio.com" => ["nexusedgeio.com"], //PPIO PCDN
 
     "2mdn-cn.net" => ["2mdn-cn.net"],
     "admob-cn.com" => ["admob-cn.com"],
