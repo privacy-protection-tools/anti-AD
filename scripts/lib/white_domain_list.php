@@ -452,6 +452,7 @@ return [
     //"zynga.com" => 0, // #1060
     //"zyngaplayersupport.com" => 0, // #1060
     "adukwai.com" => 0, // #1063
+    "snowflake.qq.com" => 0, // #1068
 
     // upstream-white-easylist 中选取的一些应放行域名
     "a1.itc.cn" => 0,
