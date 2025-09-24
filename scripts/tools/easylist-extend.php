@@ -291,6 +291,7 @@ $ARR_WHITE_RULE_LIST = array(
     '@@||ad-block.dns.adguard.com^' => 1, // #1002
     '@@||app.powerbi.com^' => 1, // #1011
     '@@||tube.e.kuaishou.com^' => 1, // #1063
+    '@@||widgets.wp.com^' => 1, // #1071
 );
 
 //针对上游赦免规则anti-AD不予赦免的规则，即赦免名单的黑名单
