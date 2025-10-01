@@ -1609,6 +1609,9 @@ return [
     "oppomobile.com" => [
         "api.open.oppomobile.com", // #1070
     ],
+    "alibabachengdun.com" => [
+        "mum.alibabachengdun.com", // #1073
+    ],
 
     "2mdn-cn.net" => ["2mdn-cn.net"],
     "admob-cn.com" => ["admob-cn.com"],
