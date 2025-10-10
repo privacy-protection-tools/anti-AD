@@ -73,6 +73,11 @@ return [
         "utoken.umeng.com", // #1006
     ],
     "umeng.co" => ["umeng.co"],
+    "puata.info" => [
+        // umeng
+        "puata.info",
+        "yumao.puata.info",
+    ],
     "miaozhen.com" => ["miaozhen.com"],
     "rubiconproject.com" => ["rubiconproject.com"],
     "adsame.com" => ["adsame.com"],
