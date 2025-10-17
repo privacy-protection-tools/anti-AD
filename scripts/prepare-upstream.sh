@@ -23,7 +23,8 @@ hosts=(
 )
 strict_hosts=(
 	'https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt'
-	'https://zerodot1.gitlab.io/CoinBlockerLists/hosts_browser'
+	# Not available anymore, see https://github.com/WaLLy3K/wally3k.github.io/issues/215
+	# 'https://zerodot1.gitlab.io/CoinBlockerLists/hosts_browser'
 )
 dead_hosts=(
 	'https://raw.githubusercontent.com/notracking/hosts-blocklists-scripts/master/domains.dead.txt'
