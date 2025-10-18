@@ -52,6 +52,14 @@ anti-AD 已默认拦截相关域名，若您希望使用免密码一键登录功
 
 ## 个别域名情况说明
 
+- `browsercfg-drcn.cloud.dbankcloud.cn`
+
+华为域名，涉及收集用户访问站点数据上报并禁止访问特定网站，已被拦截。拦截后可能导致华为浏览器翻译功能不可用
+
+相关 issues: [#1069]
+
+[#1069]:https://github.com/privacy-protection-tools/anti-AD/issues/1069
+
 - `mmstat.com`
 
 阿里系域名，已被加白。有明显的收集统计资料行为，但拦截后可能出现此类问题：1. 优酷视频播放异常；2. 淘宝等 App 验证码无法显示； 3. 某些阿里系 App 登录异常
