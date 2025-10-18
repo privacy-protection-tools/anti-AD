@@ -454,6 +454,8 @@ return [
     "adukwai.com" => 0, // #1063
     "snowflake.qq.com" => 0, // #1068
     "onelink.me" => 0, // #1074
+    "ac.dun.163.com" => 0, // #1014
+    "ac.dun.163yun.com" => 0, // #1014
 
     // upstream-white-easylist 中选取的一些应放行域名
     "a1.itc.cn" => 0,
