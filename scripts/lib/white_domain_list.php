@@ -456,6 +456,7 @@ return [
     "onelink.me" => 0, // #1074
     "ac.dun.163.com" => 0, // #1014
     "ac.dun.163yun.com" => 0, // #1014
+    "scarf.sh" => 0, // #957, #993, #1076
 
     // upstream-white-easylist 中选取的一些应放行域名
     "a1.itc.cn" => 0,
