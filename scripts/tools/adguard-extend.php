@@ -170,7 +170,6 @@ $ARR_WHITE_RULE_LIST = array(
     '@@||sdkapi.sms.mob.com^' => 1, // 短信验证码 #127
     '@@||stats.gov.cn^' => 1, // 国家统计局 #144
     '@@||tj.gov.cn^' => 1,
-    '@@||sax.sina.com.cn^' => 1, // #155
     '@@||api.ad-gone.com^' => 1, // #207
     '@@||news-app.abumedia.yql.yahoo.com^' => 1, // #206
     '@@||meizu.coapi.moji.com^' => 1, // #217

@@ -465,7 +465,7 @@ return [
     "ecma.bdimg.com" => 0,
     "gk.sina.cn" => 0,
     "pv.sohu.com" => 0, // #493
-    "sax.sina.com.cn" => 0,
+    "sax.sina.com.cn" => 0, // #155
     "statcounter.com" => 0,
     "www.statcounter.com" => 0,
     "tf.360.cn" => 0,
