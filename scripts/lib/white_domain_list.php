@@ -387,14 +387,6 @@ return [
     "qiyukf.com" => 0, #754
     "amdc.m.taobao.com" => 0, #778
     "jiagu.360.cn" => 0, #788
-    "mairuan.com" => 0, #772
-    "www.mairuan.com" => 0, #772
-    "mairuan.com.cn" => 0, #772
-    "www.mairuan.com.cn" => 0, #772
-    "mairuan.cn" => 0, #772
-    "www.mairuan.cn" => 0, #772
-    "mairuan.net" => 0, #772
-    "www.mairuan.net" => 0, #772
     "ldmnq.com" => 0, #787
     "heytapimage.com" => 0, #779, #780
     "fexclick.baidu.com" => 0, #790
