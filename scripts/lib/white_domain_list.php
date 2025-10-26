@@ -210,7 +210,6 @@ return [
     "umiwi.com" => 0, // #341
     "xmpush.xiaomi.com" => 0, // #343
     "app.chat.xiaomi.net" => 0, // https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1726
-    "doublecklick.net" => 1, // 拼写错误的域名，https://github.com/privacy-protection-tools/anti-AD/pull/347/files
     "issuecdn.baidupcs.com" => 0, // #350
     "duiba.com.cn" => 0, // #352
     "trib.al" => 0, // #357
@@ -276,7 +275,6 @@ return [
     "appdownload.alicdn.com" => 0, // #491
     "zconfig.alibabausercontent.com" => 0, // #495
     "proofpoint.com" => 0, // #497
-    "mini.eastday.com" => 0, // #500
     "dftoutiao.com" => 0, // #500
     "dcms.1688.com" => 0, // #499
     "da.mmarket.com" => 0, // #501
