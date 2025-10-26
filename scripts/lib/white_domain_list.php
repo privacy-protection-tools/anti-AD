@@ -109,7 +109,6 @@ return [
     "acs.m.taobao.com" => 0, // #92
     "perfops.net" => 0, // #96
     "msg.video.qiyi.com" => 0, // #93
-    "img.zuoyebang.cc" => 0, // 作业帮拍照搜题
     "data.video.iqiyi.com" => 0, // 爱奇艺电视投屏
     "cp81.ott.cibntv.net" => 0, // CIBN云视听异常 #107
     "sj.uukanshu.com" => 0, // 误杀 #110
@@ -320,7 +319,8 @@ return [
     "pic.imgdb.cn" => 0, #565
     "ip-tracker.org" => 0, #578
     "is.snssdk.com" => 0, #579
-    "down.360safe.com" => 0, #577
+    "down.360safe.com" => 0, #169, #577
+    "update.360safe.com" => 0, #169
     "soup.v.qq.com" => 0, #576
     "live-trace.bilibili.com" => 0, #561, #517
     "live800.com" => 0, #573
