@@ -1508,9 +1508,11 @@ return [
         "www.staticfile.org", // #938
     ],
     "anythinktech.com" => [
+        "anythinktech.com",
         "adx-os.anythinktech.com", // #958
         "cn-api.anythinktech.com", // #989
         "datk.anythinktech.com", // #989
+        "apiv4.anythinktech.com", // #1078
     ],
     "bhbapp.cn" => [
         "sentry.bhbapp.cn", // #966
