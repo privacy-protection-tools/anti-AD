@@ -1609,6 +1609,30 @@ return [
     "alibabachengdun.com" => [
         "mum.alibabachengdun.com", // #1073
     ],
+    "adfunlink.com" => [
+        "adfunlink.com", // #1080
+    ],
+    "adintl.cn" => [
+        "adintl.cn", // #1080
+    ],
+    "bidtoolads.com" => [
+        "bidtoolads.com", // #1080
+    ],
+    "hanlanad.com" => [
+        "hanlanad.com", // #1080
+    ],
+    "takuad.com" => [
+        "takuad.com", // #1080
+    ],
+    "tobidad.com" => [
+        "tobidad.com", // #1080
+    ],
+    "toponad.com" => [
+        "toponad.com", // #1080
+    ],
+    "uyunad.com" => [
+        "uyunad.com", // #1080
+    ],
 
     "2mdn-cn.net" => ["2mdn-cn.net"],
     "admob-cn.com" => ["admob-cn.com"],
