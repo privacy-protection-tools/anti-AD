@@ -1633,6 +1633,15 @@ return [
     "uyunad.com" => [
         "uyunad.com", // #1080
     ],
+    "qidianad.com" => [
+        "qidianad.com", // #1080
+    ],
+    "shenshiads.com" => [
+        "shenshiads.com", // #1080
+    ],
+    "tradplusad.com" => [
+        "tradplusad.com", // #1080
+    ],
 
     "2mdn-cn.net" => ["2mdn-cn.net"],
     "admob-cn.com" => ["admob-cn.com"],
