@@ -1642,6 +1642,15 @@ return [
     "tradplusad.com" => [
         "tradplusad.com", // #1080
     ],
+    "juphaufaigna.net" => [
+        "juphaufaigna.net", // #1082
+    ],
+    "thirairtoaboats.net" => [
+        "thirairtoaboats.net", // #1082
+    ],
+    "wichoaltaisheel.net" => [
+        "wichoaltaisheel.net", // #1082
+    ],
 
     "2mdn-cn.net" => ["2mdn-cn.net"],
     "admob-cn.com" => ["admob-cn.com"],
