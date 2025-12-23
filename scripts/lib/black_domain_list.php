@@ -1651,6 +1651,15 @@ return [
     "wichoaltaisheel.net" => [
         "wichoaltaisheel.net", // #1082
     ],
+    "statisticslinks.com" => [
+        // #1090
+        "statisticslinks.com",
+        "datk.statisticslinks.com",
+        "tk.statisticslinks.com",
+    ],
+    "tanx.com" => [
+        "sdk-config.tanx.com", // #1090
+    ],
 
     "2mdn-cn.net" => ["2mdn-cn.net"],
     "admob-cn.com" => ["admob-cn.com"],
