@@ -1660,6 +1660,9 @@ return [
     "tanx.com" => [
         "sdk-config.tanx.com", // #1090
     ],
+    "xiaomixiaoai.com" => [
+        "tracker.xiaomixiaoai.com", // #1095
+    ],
 
     "2mdn-cn.net" => ["2mdn-cn.net"],
     "admob-cn.com" => ["admob-cn.com"],
