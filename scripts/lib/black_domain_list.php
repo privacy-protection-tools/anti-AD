@@ -12,7 +12,7 @@ return [
     "cnzz.net" => ["cnzz.net"],
     "cnzz.cn" => ["cnzz.cn"],
     "inmobi.cn" => ["inmobi.cn"],
-    "aliapp.org" => ["aliapp.org"],
+    // #1094 "aliapp.org" => ["aliapp.org"],
     "snssdk.com" => [
         "bds.snssdk.com",
         "xlog.snssdk.com",
