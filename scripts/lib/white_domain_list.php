@@ -451,6 +451,7 @@ return [
     "systeme.io" => 0, // #1089
     "tdid.m.qq.com" => 0, // #1092
     "analysis.windows.net" => 0, // #1097
+    "tbsone.imtt.qq.com" => 0, // #1098
 
     // upstream-white-easylist 中选取的一些应放行域名
     "a1.itc.cn" => 0,
