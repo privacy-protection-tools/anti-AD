@@ -32,7 +32,7 @@ dead_hosts=(
 )
 ACL4SSR_BanAD_URL='https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list'
 ACL4SSR_BanProgramAD_URL='https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list'
-V2Fly_DLC_URL='https://github.com/v2fly/domain-list-community/archive/master.tar.gz'
+V2Fly_DLCADS_URL='https://raw.githubusercontent.com/v2fly/domain-list-community/release/category-ads-all.txt'
 
 # The script uses '^[a-zA-Z0-9\.-]+\.[a-zA-Z]+$' to match a domain in many cases
 # Some punny code (top) domains, like 'example.xn--q9jyb4c', will be ignored
@@ -81,15 +81,12 @@ curl --connect-timeout 60 -s -o - "$ACL4SSR_BanProgramAD_URL" | tr -d '\r' |
 echo -e "# hosts-ACL4SSR-BanProgramAD $tMark\n# $ACL4SSR_BanProgramAD_URL" >>./origin-files/upstream-hosts.txt
 LC_ALL=C sort -u ./raw-sources/hosts-ACL4SSR-BanProgramAD.txt >>./origin-files/upstream-hosts.txt
 
-echo "Start to download $V2Fly_DLC_URL"
+echo "Start to download $V2Fly_DLCADS_URL"
 tMark="$(date +'%Y-%m-%d %H:%M:%S %Z')"
-wget -qO ./raw-sources/geodata.tar.gz "$V2Fly_DLC_URL"
-tar -xzf ./raw-sources/geodata.tar.gz -C ./raw-sources
-cat ./raw-sources/domain-list-community-master/data/*-ads | tr -d '\r' |
-	grep -E '^(full:)?([a-zA-Z0-9\.-]+\.[a-zA-Z]+)(\s+@ads)?$' |
-	sed -r 's/^(full:)?([a-zA-Z0-9\.-]+\.[a-zA-Z]+)([[:space:]]*@ads)?$/127.0.0.1 \2/' >./raw-sources/hosts-v2fly-dlcads.txt
-rm -rf ./raw-sources/geodata.tar.gz ./raw-sources/domain-list-community-master
-echo -e "# hosts-v2fly-dlcads $tMark\n# $V2Fly_DLC_URL" >>./origin-files/upstream-hosts.txt
+curl --connect-timeout 60 -s -o - "$V2Fly_DLCADS_URL" | tr -d '\r' |
+    grep -E '^(domain|full):[a-zA-Z0-9\.-]+\.[a-zA-Z]+(:@ads)?$' |
+    sed -r 's/^(domain|full):([^:]+)(:@ads)?$/127.0.0.1 \2/' >./raw-sources/hosts-v2fly-dlcads.txt
+echo -e "# hosts-v2fly-dlcads $tMark\n# $V2Fly_DLCADS_URL" >>./origin-files/upstream-hosts.txt
 LC_ALL=C sort -u ./raw-sources/hosts-v2fly-dlcads.txt >>./origin-files/upstream-hosts.txt
 
 tr -d '\r' <./origin-files/anti-ad-origin-block.txt >./raw-sources/hosts-origin-block.txt
