@@ -1663,6 +1663,9 @@ return [
     "xiaomixiaoai.com" => [
         "tracker.xiaomixiaoai.com", // #1095
     ],
+    "metricslinks.com" => [
+        "metricslinks.com", // #1104
+    ],
 
     "2mdn-cn.net" => ["2mdn-cn.net"],
     "admob-cn.com" => ["admob-cn.com"],
