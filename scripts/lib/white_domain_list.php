@@ -455,6 +455,7 @@ return [
     "7x24s.com" => 0, // #1102
     "un-acs.youku.com" => 0, // #1106
     "d3g.qq.com" => 0, // #1107
+    "usercentrics.eu" => 0, // #1108
 
     // upstream-white-easylist 中选取的一些应放行域名
     "a1.itc.cn" => 0,
