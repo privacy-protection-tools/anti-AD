@@ -395,7 +395,6 @@ $ARR_WHITE_RULE_BLK_LIST = array(
     '@@||nodkey.xyz^' => null,
     '@@||oiihk.com^' => null,
     '@@||olgame.tw^' => null,
-    '@@||ondemand.sas.com^' => null,
     '@@||optout.networkadvertising.org^' => null,
     '@@||panjiachen.github.io^' => null,
     '@@||pass.1688.com^' => null,
