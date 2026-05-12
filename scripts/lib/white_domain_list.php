@@ -460,6 +460,7 @@ return [
     "cnt.mail.netbk.co.jp" => 0, // #1115
     "9wee.com" => 0, // #1117
     "sysdig.com" => 0, // #1119
+    "figshare.com" => 0, // #1127
 
     // upstream-white-easylist 中选取的一些应放行域名
     "a1.itc.cn" => 0,
