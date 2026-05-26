@@ -17,6 +17,8 @@ return [
         "bds.snssdk.com",
         "xlog.snssdk.com",
         "gecko.snssdk.com", // #989
+        "log.snssdk.com", // #1131
+        "os-mon.snssdk.com", // #1131
     ],
     "51togic.com" => [
         "customstat.video.51togic.com",
