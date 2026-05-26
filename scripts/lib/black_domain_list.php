@@ -1674,6 +1674,9 @@ return [
         "adn-plus.com.cn", // #1123
         "ad-api.adn-plus.com.cn", // #1123
     ],
+    "f3531.top" => [
+        "f3531.top", // #1132
+    ],
 
     "2mdn-cn.net" => ["2mdn-cn.net"],
     "admob-cn.com" => ["admob-cn.com"],
