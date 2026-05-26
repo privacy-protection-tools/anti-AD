@@ -18,7 +18,6 @@ return [
         "xlog.snssdk.com",
         "gecko.snssdk.com", // #989
         "applog.snssdk.com", // #1131
-        "log.snssdk.com", // #1131
         "os-mon.snssdk.com", // #1131
     ],
     "51togic.com" => [
