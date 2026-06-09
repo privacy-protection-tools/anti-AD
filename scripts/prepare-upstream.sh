@@ -49,6 +49,7 @@ for i in "${!easylist[@]}"; do
 	echo -e "! easylist-${i} $tMark\n! ${easylist[$i]}" >>./origin-files/upstream-easylist.txt
 	tr -d '\r' <"./raw-sources/easylist-${i}.txt" |
 		grep -E '^\|\|?[a-zA-Z0-9\.\*-]+\.[a-zA-Z\*]+\^(\$[^=]+)?$' |
+		sed -e "/\$subdocument,third-party/d" -e "/,subdocument,third-party/d" |
 		LC_ALL=C sort -u >>./origin-files/upstream-easylist.txt
 done
 
