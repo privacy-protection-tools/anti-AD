@@ -369,10 +369,12 @@ return [
         "stnetsdk.vivo.com.cn",
         "stsdk.vivo.com.cn",
         "vcardsdkservice.vivo.com.cn",
-        "h5.vivo.com.cn", // #847
         "browser.vivo.com.cn", // #847
-        "zhan.vivo.com.cn", // #847
         "ads-marketing-vivofs.vivo.com.cn", // #847
+        /* https://github.com/hagezi/dns-blocklists/issues/7391
+        "h5.vivo.com.cn", // #847
+        "zhan.vivo.com.cn", // #847
+        */
     ],
     "onewsvod.com" => ["onewsvod.com"], // #847
     "vnet.cn" => ["vnet.cn"], //互联星空
