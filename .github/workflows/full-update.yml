@@ -10,13 +10,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Get source code from master
-      uses: actions/checkout@v6
+      uses: actions/checkout@v7
       with:
         ref: master
         path: master
 
     - name: Get source code from adlist-maker
-      uses: actions/checkout@v6
+      uses: actions/checkout@v7
       with:
         ref: adlist-maker
         path: adlist-maker
@@ -57,13 +57,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Get source code from master
-      uses: actions/checkout@v6
+      uses: actions/checkout@v7
       with:
         ref: master
         path: master
 
     - name: Get source code from website
-      uses: actions/checkout@v6
+      uses: actions/checkout@v7
       with:
         token: ${{ secrets.PERSON_TOKEN }}
         repository: privacy-protection-tools/anti-ad.github.io
