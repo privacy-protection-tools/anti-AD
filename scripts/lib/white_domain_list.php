@@ -462,6 +462,7 @@ return [
     "sysdig.com" => 0, // #1119
     "figshare.com" => 0, // #1127
     "dlswbr.baidu.com" => 0, // #926 #953 #1137
+    "ue.yeyoucdn.com" => 0, // #1144
 
     // upstream-white-easylist 中选取的一些应放行域名
     "a1.itc.cn" => 0,
