@@ -465,6 +465,7 @@ return [
     "ue.yeyoucdn.com" => 0, // #1144
     "onetrust.com" => 0, // #1145
     "geolocation.onetrust.com" => 0, // #1145
+    "transcend.io" => 0, // #1146
 
     // upstream-white-easylist 中选取的一些应放行域名
     "a1.itc.cn" => 0,
