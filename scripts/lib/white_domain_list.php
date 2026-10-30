@@ -467,6 +467,7 @@ return [
     "geolocation.onetrust.com" => 0, // #1145
     "transcend.io" => 0, // #1146
     "izatcloud.net" => 0, // #1150
+    "datadome.co" => 0, // #1153
 
     // upstream-white-easylist 中选取的一些应放行域名
     "a1.itc.cn" => 0,
