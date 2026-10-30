@@ -472,26 +472,48 @@ return [
     // upstream-white-easylist 中选取的一些应放行域名
     "a1.itc.cn" => 0,
     "adx.yiche.com" => 0,
+    "cdn.segment.com" => 0,
     "changyan.sohu.com" => 0,
     "ecma.bdimg.com" => 0,
+    "ensighten.com" => 0,
+    "gemius.pl" => 0,
     "gk.sina.cn" => 0,
+    "gs.statcounter.com" => 0,
+    "litix.io" => 0,
+    "omtrdc.net" => 0,
+    "pladform.ru" => 0,
     "pv.sohu.com" => 0, // #493
     "sax.sina.com.cn" => 0, // #155
+    "segment.com" => 0,
+    "src.litix.io" => 0,
     "statcounter.com" => 0,
-    "www.statcounter.com" => 0,
     "tf.360.cn" => 0,
+    "www.statcounter.com" => 0,
     /* upstream-white-easylist 源规则
       @@||a1.itc.cn/pv/js/spv.
       @@||adx.yiche.com/cityindex.ashx
+      @@||cdn.segment.com/analytics-next/
+      @@||cdn.segment.com/next-integrations/integrations/
+      @@||cdn.segment.com/v1/projects/
       @@||changyan.sohu.com/debug/cookie?
-      @@||ecma.bdimg.com/holmes/*.svg
+      @@||ecma.bdimg.com/holmes/[asterisk].svg
+      @@||ensighten.com^[asterisk]/code/$script
+      @@||ensighten.com^[asterisk]/serverComponent.php?$script
+      @@||gemius.pl/gplayer.js$script,third-party
+      @@||gemius.pl/gstream.js
       @@||gk.sina.cn/v1/gkmatch?
+      @@||gs.statcounter.com/chart.php$script,third-party
+      @@||omtrdc.net/rest/$xmlhttprequest
+      @@||pladform.ru/dive/$xmlhttprequest
+      @@||pladform.ru/player$subdocument
       @@||pv.sohu.com/suv/
       @@||sax.sina.com.cn/video/newimpress?
+      @@||src.litix.io/shakaplayer/[asterisk]/shakaplayer-mux.js
+      @@||src.litix.io/videojs/[asterisk]/videojs-mux.js
       @@||statcounter.com/js//fusioncharts.charts.js
       @@||statcounter.com/js/fusioncharts.js
-      @@||www.statcounter.com/images/$image,third-party
       @@||tf.360.cn/e/wb?
+      @@||www.statcounter.com/images/$image,third-party
     */
 
     "iflow.uczzd.cn" => 0, // uc搞笑段子
